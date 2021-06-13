@@ -24,7 +24,7 @@ var bench = require( '@stdlib/bench' );
 var hasDataViewSupport = require( '@stdlib/assert/has-dataview-support' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var isDataView = require( '@stdlib/assert/is-dataview' );
-var ArrayBuffer = require( '@stdlib/array/buffer' );
+var ArrayBuffer = require( './../../buffer' );
 var pkg = require( './../package.json' ).name;
 var ctor = require( './../lib' );
 

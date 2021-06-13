@@ -22,7 +22,7 @@
 
 import { ArrayLike, TypedArray } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/object';
-import ArrayBuffer = require( '@stdlib/array/buffer' );
+import ArrayBuffer = require( './../../../buffer' );
 import Complex128 = require( '@stdlib/complex/float64' );
 
 /**

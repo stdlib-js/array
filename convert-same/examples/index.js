@@ -18,8 +18,8 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/array/dtypes' );
-var ctors = require( '@stdlib/array/ctors' );
+var dtypes = require( './../../dtypes' );
+var ctors = require( './../../ctors' );
 var randu = require( '@stdlib/random/base/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var convertArraySame = require( './../lib' );

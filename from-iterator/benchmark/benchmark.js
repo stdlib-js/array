@@ -22,7 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
-var array2iterator = require( '@stdlib/array/to-iterator' );
+var array2iterator = require( './../../to-iterator' );
 var pkg = require( './../package.json' ).name;
 var iterator2array = require( './../lib' );
 

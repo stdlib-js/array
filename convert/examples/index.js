@@ -18,7 +18,7 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/array/dtypes' );
+var dtypes = require( './../../dtypes' );
 var randu = require( '@stdlib/random/base/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var convertArray = require( './../lib' );

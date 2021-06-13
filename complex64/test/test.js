@@ -22,8 +22,8 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var ArrayBuffer = require( '@stdlib/array/buffer' );
-var Float32Array = require( '@stdlib/array/float32' );
+var ArrayBuffer = require( './../../buffer' );
+var Float32Array = require( './../../float32' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArrayBuffer = require( '@stdlib/assert/is-arraybuffer' );
 var Complex64 = require( '@stdlib/complex/float32' );

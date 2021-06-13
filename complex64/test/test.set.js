@@ -23,8 +23,8 @@
 var tape = require( 'tape' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var ArrayBuffer = require( '@stdlib/array/buffer' );
-var Float32Array = require( '@stdlib/array/float32' );
+var ArrayBuffer = require( './../../buffer' );
+var Float32Array = require( './../../float32' );
 var Complex64 = require( '@stdlib/complex/float32' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );

@@ -23,7 +23,7 @@
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Array = require( './../../float64' );
 var pkg = require( './../package.json' ).name;
 var toJSON = require( './../lib' );
 

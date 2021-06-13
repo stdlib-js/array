@@ -21,8 +21,8 @@
 var proc = require( 'process' );
 var hasArrayBufferSupport = require( '@stdlib/assert/has-arraybuffer-support' );
 var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
-var Uint8Array = require( '@stdlib/array/uint8' );
+var Float64Array = require( './../../float64' );
+var Uint8Array = require( './../../uint8' );
 var toBinaryString = require( '@stdlib/number/uint8/base/to-binary-string' );
 var ArrayBuffer = require( './../lib' );
 

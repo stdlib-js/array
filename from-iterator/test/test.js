@@ -23,8 +23,8 @@
 var tape = require( 'tape' );
 var noop = require( '@stdlib/utils/noop' );
 var randu = require( '@stdlib/random/iter/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
-var array2iterator = require( '@stdlib/array/to-iterator' );
+var Float64Array = require( './../../float64' );
+var array2iterator = require( './../../to-iterator' );
 var iterator2array = require( './../lib' );
 
 

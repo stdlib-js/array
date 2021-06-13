@@ -18,7 +18,7 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/array/dtypes' );
+var dtypes = require( './../../dtypes' );
 var safeCasts = require( './../lib' );
 
 var DTYPES;

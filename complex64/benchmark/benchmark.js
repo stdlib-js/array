@@ -21,8 +21,8 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var ArrayBuffer = require( '@stdlib/array/buffer' );
-var Float32Array = require( '@stdlib/array/float32' );
+var ArrayBuffer = require( './../../buffer' );
+var Float32Array = require( './../../float32' );
 var isArrayBuffer = require( '@stdlib/assert/is-arraybuffer' );
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var ITERATOR_SYMBOL = require( '@stdlib/symbol/iterator' );

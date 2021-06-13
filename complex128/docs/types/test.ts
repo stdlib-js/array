@@ -20,7 +20,7 @@
 
 import Complex128Array = require( './index' );
 import Complex128 = require( '@stdlib/complex/float64' );
-import ArrayBuffer = require( '@stdlib/array/buffer' );
+import ArrayBuffer = require( './../../../buffer' );
 import real = require( '@stdlib/complex/real' );
 import imag = require( '@stdlib/complex/imag' );
 

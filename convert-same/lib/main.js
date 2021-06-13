@@ -21,8 +21,8 @@
 // MODULES //
 
 var isCollection = require( '@stdlib/assert/is-collection' );
-var getType = require( '@stdlib/array/dtype' );
-var ctors = require( '@stdlib/array/ctors' );
+var getType = require( './../../dtype' );
+var ctors = require( './../../ctors' );
 
 
 // MAIN //

@@ -19,7 +19,7 @@
 'use strict';
 
 var Complex64 = require( '@stdlib/complex/float32' );
-var Float32Array = require( '@stdlib/array/float32' );
+var Float32Array = require( './../../float32' );
 var Complex64Array = require( './../lib' );
 
 var arr;

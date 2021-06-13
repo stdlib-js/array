@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Array = require( './../../float64' );
 var randu = require( '@stdlib/random/base/randu' );
 var pkg = require( './../package.json' ).name;
 var toJSON = require( './../lib' );

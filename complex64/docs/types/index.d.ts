@@ -23,7 +23,7 @@
 import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 import { ArrayLike, TypedArray } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/object';
-import ArrayBuffer = require( '@stdlib/array/buffer' );
+import ArrayBuffer = require( './../../../buffer' );
 import Complex64 = require( '@stdlib/complex/float32' );
 
 // Define a union type representing both iterable and non-iterable iterators:

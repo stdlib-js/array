@@ -18,7 +18,7 @@
 
 'use strict';
 
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Array = require( './../../float64' );
 var randu = require( '@stdlib/random/iter/randu' );
 var iterator2array = require( './../lib' );
 

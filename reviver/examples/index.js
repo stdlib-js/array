@@ -18,9 +18,9 @@
 
 'use strict';
 
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Array = require( './../../float64' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
-var toJSON = require( '@stdlib/array/to-json' );
+var toJSON = require( './../../to-json' );
 var reviver = require( './../lib' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );

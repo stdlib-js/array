@@ -21,9 +21,9 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/array/typed-complex-dtypes' );
-var Complex128Array = require( '@stdlib/array/complex128' );
-var Complex64Array = require( '@stdlib/array/complex64' );
+var dtypes = require( './../../typed-complex-dtypes' );
+var Complex128Array = require( './../../complex128' );
+var Complex64Array = require( './../../complex64' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var ctors = require( './../lib' );
 

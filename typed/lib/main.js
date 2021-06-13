@@ -21,7 +21,7 @@
 // MODULES //
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var ctors = require( '@stdlib/array/typed-ctors' );
+var ctors = require( './../../typed-ctors' );
 
 
 // MAIN //

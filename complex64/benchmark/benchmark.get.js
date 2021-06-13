@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var Float32Array = require( '@stdlib/array/float32' );
+var Float32Array = require( './../../float32' );
 var Complex64 = require( '@stdlib/complex/float32' );
 var isComplex64 = require( '@stdlib/assert/is-complex64' );
 var isArray = require( '@stdlib/assert/is-array' );

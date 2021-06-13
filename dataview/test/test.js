@@ -27,7 +27,7 @@ var instanceOf = require( '@stdlib/assert/instance-of' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var hasProp = require( '@stdlib/assert/has-property' );
 var NODE_VERSION = require( '@stdlib/process/node-version' );
-var ArrayBuffer = require( '@stdlib/array/buffer' );
+var ArrayBuffer = require( './../../buffer' );
 var polyfill = require( './../lib/polyfill.js' );
 var Ctor = require( './../lib' );
 

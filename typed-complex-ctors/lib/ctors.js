@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var Complex128Array = require( '@stdlib/array/complex128' );
-var Complex64Array = require( '@stdlib/array/complex64' );
+var Complex128Array = require( './../../complex128' );
+var Complex64Array = require( './../../complex64' );
 
 
 // MAIN //

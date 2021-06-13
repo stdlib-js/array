@@ -23,8 +23,8 @@ var IS_LITTLE_ENDIAN = require( '@stdlib/assert/is-little-endian' );
 var toBinaryString = require( '@stdlib/number/uint8/base/to-binary-string' );
 var hasDataViewSupport = require( '@stdlib/assert/has-dataview-support' );
 var randu = require( '@stdlib/random/base/randu' );
-var Uint8Array = require( '@stdlib/array/uint8' );
-var ArrayBuffer = require( '@stdlib/array/buffer' );
+var Uint8Array = require( './../../uint8' );
+var ArrayBuffer = require( './../../buffer' );
 var DataView = require( './../lib' );
 
 if ( !hasDataViewSupport() ) {

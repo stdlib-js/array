@@ -26,7 +26,7 @@ var isFunction = require( '@stdlib/assert/is-function' );
 var isPositiveZero = require( '@stdlib/assert/is-positive-zero' ).isPrimitive;
 var isNegativeZero = require( '@stdlib/assert/is-negative-zero' ).isPrimitive;
 var Complex64 = require( '@stdlib/complex/float32' );
-var Float32Array = require( '@stdlib/array/float32' );
+var Float32Array = require( './../../float32' );
 var Complex64Array = require( './../lib' );
 
 

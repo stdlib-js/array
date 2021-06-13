@@ -18,7 +18,7 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/array/typed-complex-dtypes' );
+var dtypes = require( './../../typed-complex-dtypes' );
 var ctors = require( './../lib' );
 
 var DTYPES = dtypes();

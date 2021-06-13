@@ -23,7 +23,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike, TypedArray } from '@stdlib/types/array';
-import ArrayBuffer = require( '@stdlib/array/buffer' );
+import ArrayBuffer = require( './../../../buffer' );
 
 type DType = 'float64' | 'float32' | 'int32' | 'uint32' | 'int16' | 'uint16' | 'int8' | 'uint8' | 'uint8c'; // tslint:disable-line:max-line-length
 

@@ -23,16 +23,16 @@
 var tape = require( 'tape' );
 var copy = require( '@stdlib/utils/copy' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
-var toJSON = require( '@stdlib/array/to-json' );
-var Float64Array = require( '@stdlib/array/float64' );
-var Float32Array = require( '@stdlib/array/float32' );
-var Int32Array = require( '@stdlib/array/int32' );
-var Uint32Array = require( '@stdlib/array/uint32' );
-var Int16Array = require( '@stdlib/array/int16' );
-var Uint16Array = require( '@stdlib/array/uint16' );
-var Int8Array = require( '@stdlib/array/int8' );
-var Uint8Array = require( '@stdlib/array/uint8' );
-var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
+var toJSON = require( './../../to-json' );
+var Float64Array = require( './../../float64' );
+var Float32Array = require( './../../float32' );
+var Int32Array = require( './../../int32' );
+var Uint32Array = require( './../../uint32' );
+var Int16Array = require( './../../int16' );
+var Uint16Array = require( './../../uint16' );
+var Int8Array = require( './../../int8' );
+var Uint8Array = require( './../../uint8' );
+var Uint8ClampedArray = require( './../../uint8c' );
 var reviver = require( './../lib' );
 
 

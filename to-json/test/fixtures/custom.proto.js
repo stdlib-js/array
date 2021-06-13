@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Array = require( './../../../float64' );
 var defineProperty = require( '@stdlib/utils/define-property' );
 
 

@@ -21,7 +21,7 @@
 // MODULES //
 
 var isCollection = require( '@stdlib/assert/is-collection' );
-var ctors = require( '@stdlib/array/ctors' );
+var ctors = require( './../../ctors' );
 
 
 // MAIN //

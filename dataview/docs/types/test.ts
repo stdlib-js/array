@@ -19,7 +19,7 @@
 // tslint:disable: no-construct
 // tslint:disable: no-unused-expression
 
-import ArrayBuffer = require( '@stdlib/array/buffer' );
+import ArrayBuffer = require( './../../../buffer' );
 import DataView = require( './index' );
 
 
