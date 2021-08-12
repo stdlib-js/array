@@ -15,6 +15,7 @@
   ],
   "main": "lib/index.js",
   "directories": {
+    "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
@@ -35,22 +36,22 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert": "^0.0.x",
-    "@stdlib/blas": "^0.0.x",
-    "@stdlib/complex": "^0.0.x",
-    "@stdlib/constants": "^0.0.x",
-    "@stdlib/math": "^0.0.x",
-    "@stdlib/symbol": "^0.0.x",
-    "@stdlib/types": "^0.0.x",
-    "@stdlib/utils": "^0.0.x"
+    "@stdlib/assert": "github:stdlib-js/assert",
+    "@stdlib/blas": "github:stdlib-js/blas",
+    "@stdlib/complex": "github:stdlib-js/complex",
+    "@stdlib/constants": "github:stdlib-js/constants",
+    "@stdlib/math": "github:stdlib-js/math",
+    "@stdlib/symbol": "github:stdlib-js/symbol",
+    "@stdlib/types": "github:stdlib-js/types",
+    "@stdlib/utils": "github:stdlib-js/utils"
   },
   "devDependencies": {
-    "@stdlib/bench": "^0.0.x",
-    "@stdlib/buffer": "^0.0.x",
-    "@stdlib/iter": "^0.0.x",
-    "@stdlib/number": "^0.0.x",
-    "@stdlib/process": "^0.0.x",
-    "@stdlib/random": "^0.0.x",
+    "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/buffer": "github:stdlib-js/buffer",
+    "@stdlib/iter": "github:stdlib-js/iter",
+    "@stdlib/number": "github:stdlib-js/number",
+    "@stdlib/process": "github:stdlib-js/process",
+    "@stdlib/random": "github:stdlib-js/random",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
