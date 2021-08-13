@@ -28,15 +28,19 @@ import convertArray = require( './../../convert' );
 import convertArraySame = require( './../../convert-same' );
 import arrayCtors = require( './../../ctors' );
 import DataView = require( './../../dataview' );
+import datespace = require( './../../datespace' );
 import arrayDataType = require( './../../dtype' );
 import arrayDataTypes = require( './../../dtypes' );
 import filledarray = require( './../../filled' );
 import Float32Array = require( './../../float32' );
 import Float64Array = require( './../../float64' );
 import iterator2array = require( './../../from-iterator' );
+import incrspace = require( './../../incrspace' );
 import Int8Array = require( './../../int8' );
 import Int16Array = require( './../../int16' );
 import Int32Array = require( './../../int32' );
+import linspace = require( './../../linspace' );
+import logspace = require( './../../logspace' );
 import arrayMinDataType = require( './../../min-dtype' );
 import arrayNextDataType = require( './../../next-dtype' );
 import typedarraypool = require( './../../pool' );
@@ -267,6 +271,36 @@ interface Namespace {
 	DataView: typeof DataView;
 
 	/**
+	* Generates an array of linearly spaced dates.
+	*
+	* @param start - start time as either a `Date` object, Unix timestamp, JavaScript timestamp, or date string
+	* @param stop - stop time as either a `Date` object, Unix timestamp, JavaScript timestamp, or date string
+	* @param length - output array length (default: 100)
+	* @param options - function options
+	* @param options.round - specifies how sub-millisecond times should be rounded: [ 'floor', 'ceil', 'round' ] (default: 'floor' )
+	* @throws length argument must a positive integer
+	* @throws must provide valid options
+	* @returns array of dates
+	*
+	* @example
+	* var stop = '2014-12-02T07:00:54.973Z';
+	* var start = new Date( stop ) - 60000;
+	*
+	* var arr = ns.datespace( start, stop, 6 );
+	* // returns [...]
+	*
+	* @example
+	* // Equivalent of Math.ceil():
+	* var arr = ns.datespace( 1417503655000, 1417503655001, 3, { 'round': 'ceil' } );
+	* // returns [...]
+	*
+	* // Equivalent of Math.round():
+	* var arr = ns.datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
+	* // returns [...]
+	*/
+	datespace: typeof datespace;
+
+	/**
 	* Returns the data type of an array.
 	*
 	* ## Notes
@@ -360,6 +394,21 @@ interface Namespace {
 	iterator2array: typeof iterator2array;
 
 	/**
+	* Generates a linearly spaced numeric array using a provided increment.
+	*
+	* @param x1 - first array value
+	* @param x2 - array element bound
+	* @param increment - increment (default: 1)
+	* @throws length of created array must be less than `4294967295` (`2**32 - 1`)
+	* @returns linearly spaced numeric array
+	*
+	* @example
+	* var arr = ns.incrspace( 0, 11, 2 );
+	* // returns [ 0, 2, 4, 6, 8, 10 ]
+	*/
+	incrspace: typeof incrspace;
+
+	/**
 	* Typed array constructor which returns a typed array representing an array of twos-complement 8-bit signed integers in the platform byte order.
 	*/
 	Int8Array: typeof Int8Array;
@@ -373,6 +422,36 @@ interface Namespace {
 	* Typed array constructor which returns a typed array representing an array of twos-complement 32-bit signed integers in the platform byte order.
 	*/
 	Int32Array: typeof Int32Array;
+
+	/**
+	* Generates a linearly spaced numeric array.
+	*
+	* @param x1 - first array value
+	* @param x2 - last array value
+	* @param len - length of output array (default: 100)
+	* @throws third argument must be a nonnegative integer
+	* @returns linearly spaced numeric array
+	*
+	* @example
+	* var arr = ns.linspace( 0, 100, 6 );
+	* // returns [ 0, 20, 40, 60, 80, 100 ]
+	*/
+	linspace: typeof linspace;
+
+	/**
+	* Generates a logarithmically spaced numeric array.
+	*
+	* @param a - exponent of start value
+	* @param b - exponent of end value
+	* @param len - length of output array (default: 10)
+	* @throws third argument must be a nonnegative integer
+	* @returns logarithmically spaced numeric array
+	*
+	* @example
+	* var arr = ns.logspace( 0, 2, 6 );
+	* // returns [ 1, ~2.5, ~6.31, ~15.85, ~39.81, 100 ]
+	*/
+	logspace: typeof logspace;
 
 	/**
 	* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
