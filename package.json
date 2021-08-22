@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Arrays.",
   "license": "Apache-2.0",
   "author": {
@@ -36,14 +36,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert": "github:stdlib-js/assert",
-    "@stdlib/blas": "github:stdlib-js/blas",
-    "@stdlib/complex": "github:stdlib-js/complex",
-    "@stdlib/constants": "github:stdlib-js/constants",
-    "@stdlib/math": "github:stdlib-js/math",
-    "@stdlib/symbol": "github:stdlib-js/symbol",
-    "@stdlib/types": "github:stdlib-js/types",
-    "@stdlib/utils": "github:stdlib-js/utils"
+    "@stdlib/assert": "github:stdlib-js/assert#main",
+    "@stdlib/blas": "github:stdlib-js/blas#main",
+    "@stdlib/complex": "github:stdlib-js/complex#main",
+    "@stdlib/constants": "github:stdlib-js/constants#main",
+    "@stdlib/math": "github:stdlib-js/math#main",
+    "@stdlib/symbol": "github:stdlib-js/symbol#main",
+    "@stdlib/types": "github:stdlib-js/types#main",
+    "@stdlib/utils": "github:stdlib-js/utils#main"
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench",
