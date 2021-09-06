@@ -213,6 +213,14 @@ while ( true ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator`][@stdlib/array/from-iterator
+-   [`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]: https://github.com/stdlib-js/array/tree/main/to-iterator-right`][@stdlib/array/to-iterator-right
+-   [`@stdlib/array/to-sparse-iterator`][@stdlib/array/to-sparse-iterator]: https://github.com/stdlib-js/array/tree/main/to-sparse-iterator`][@stdlib/array/to-sparse-iterator
+
 </section>
 
 <!-- /.related -->
@@ -221,7 +229,15 @@ while ( true ) {
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator
+
 [@stdlib/array/to-iterator-right]: https://github.com/stdlib-js/array/tree/main/to-iterator-right
+
+[@stdlib/array/to-sparse-iterator]: https://github.com/stdlib-js/array/tree/main/to-sparse-iterator
+
+<!-- </related-links> -->
 
 </section>
 

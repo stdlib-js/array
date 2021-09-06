@@ -184,6 +184,13 @@ for ( i = 0; i < bytes.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/buffer`][@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer`][@stdlib/array/buffer
+-   [`@stdlib/array/typed`][@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed`][@stdlib/array/typed
+
 </section>
 
 <!-- /.related -->
@@ -193,6 +200,14 @@ for ( i = 0; i < bytes.length; i++ ) {
 <section class="links">
 
 [mdn-dataview]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView
+
+<!-- <related-links> -->
+
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer
+
+[@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed
+
+<!-- </related-links> -->
 
 </section>
 

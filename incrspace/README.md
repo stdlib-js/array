@@ -122,6 +122,13 @@ console.log( out.join( '\n' ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/linspace`][@stdlib/array/linspace]: https://github.com/stdlib-js/array/tree/main/linspace`][@stdlib/array/linspace
+-   [`@stdlib/array/logspace`][@stdlib/array/logspace]: https://github.com/stdlib-js/array/tree/main/logspace`][@stdlib/array/logspace
+
 </section>
 
 <!-- /.related -->
@@ -131,6 +138,14 @@ console.log( out.join( '\n' ) );
 <section class="links">
 
 [@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn
+
+<!-- <related-links> -->
+
+[@stdlib/array/linspace]: https://github.com/stdlib-js/array/tree/main/linspace
+
+[@stdlib/array/logspace]: https://github.com/stdlib-js/array/tree/main/logspace
+
+<!-- </related-links> -->
 
 </section>
 

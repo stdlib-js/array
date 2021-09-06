@@ -125,6 +125,13 @@ bool = isdtype( 'beep' );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-dtypes`][@stdlib/array/typed-dtypes
+-   [`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]: list of ndarray data types.
+
 </section>
 
 <!-- /.related -->
@@ -132,6 +139,14 @@ bool = isdtype( 'beep' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-dtypes
+
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+
+<!-- </related-links> -->
 
 </section>
 

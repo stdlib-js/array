@@ -218,6 +218,13 @@ while ( true ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator`][@stdlib/array/from-iterator
+-   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator`][@stdlib/array/to-iterator
+
 </section>
 
 <!-- /.related -->
@@ -227,6 +234,14 @@ while ( true ) {
 <section class="links">
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
+
+<!-- <related-links> -->
+
+[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator
+
+[@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator
+
+<!-- </related-links> -->
 
 </section>
 

@@ -123,6 +123,16 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/convert`][@stdlib/array/convert]: https://github.com/stdlib-js/array/tree/main/convert`][@stdlib/array/convert
+-   [`@stdlib/array/convert-same`][@stdlib/array/convert-same]: https://github.com/stdlib-js/array/tree/main/convert-same`][@stdlib/array/convert-same
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
+-   [`@stdlib/array/same-kind-casts`][@stdlib/array/same-kind-casts]: https://github.com/stdlib-js/array/tree/main/same-kind-casts`][@stdlib/array/same-kind-casts
+-   [`@stdlib/ndarray/safe-casts`][@stdlib/ndarray/safe-casts]: return a list of ndarray data types to which a provided ndarray data type can be safely cast.
+
 </section>
 
 <!-- /.related -->
@@ -131,7 +141,19 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/array/convert]: https://github.com/stdlib-js/array/tree/main/convert
+
+[@stdlib/array/convert-same]: https://github.com/stdlib-js/array/tree/main/convert-same
+
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
+
+[@stdlib/array/same-kind-casts]: https://github.com/stdlib-js/array/tree/main/same-kind-casts
+
+[@stdlib/ndarray/safe-casts]: https://github.com/stdlib-js/ndarray-safe-casts
+
+<!-- </related-links> -->
 
 </section>
 

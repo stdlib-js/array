@@ -293,6 +293,13 @@ while ( true ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator`][@stdlib/array/to-iterator
+-   [`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]: https://github.com/stdlib-js/array/tree/main/to-strided-iterator`][@stdlib/array/to-strided-iterator
+
 </section>
 
 <!-- /.related -->
@@ -300,6 +307,14 @@ while ( true ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator
+
+[@stdlib/array/to-strided-iterator]: https://github.com/stdlib-js/array/tree/main/to-strided-iterator
+
+<!-- </related-links> -->
 
 </section>
 

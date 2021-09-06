@@ -226,6 +226,12 @@ json = toJSON( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/reviver`][@stdlib/array/reviver]: https://github.com/stdlib-js/array/tree/main/reviver`][@stdlib/array/reviver
+
 </section>
 
 <!-- /.related -->
@@ -254,7 +260,11 @@ json = toJSON( arr );
 
 [@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c
 
+<!-- <related-links> -->
+
 [@stdlib/array/reviver]: https://github.com/stdlib-js/array/tree/main/reviver
+
+<!-- </related-links> -->
 
 </section>
 

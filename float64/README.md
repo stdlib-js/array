@@ -1427,6 +1427,20 @@ console.log( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/buffer`][@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer`][@stdlib/array/buffer
+-   [`@stdlib/array/float32`][@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32`][@stdlib/array/float32
+-   [`@stdlib/array/int16`][@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16`][@stdlib/array/int16
+-   [`@stdlib/array/int32`][@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32`][@stdlib/array/int32
+-   [`@stdlib/array/int8`][@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8`][@stdlib/array/int8
+-   [`@stdlib/array/uint16`][@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16`][@stdlib/array/uint16
+-   [`@stdlib/array/uint32`][@stdlib/array/uint32]: https://github.com/stdlib-js/array/tree/main/uint32`][@stdlib/array/uint32
+-   [`@stdlib/array/uint8`][@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8`][@stdlib/array/uint8
+-   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c`][@stdlib/array/uint8c
+
 </section>
 
 <!-- /.related -->
@@ -1437,7 +1451,27 @@ console.log( arr );
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
+<!-- <related-links> -->
+
 [@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer
+
+[@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32
+
+[@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16
+
+[@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32
+
+[@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8
+
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16
+
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array/tree/main/uint32
+
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8
+
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c
+
+<!-- </related-links> -->
 
 </section>
 

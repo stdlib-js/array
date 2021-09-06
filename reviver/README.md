@@ -110,6 +110,12 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/to-json`][@stdlib/array/to-json]: https://github.com/stdlib-js/array/tree/main/to-json`][@stdlib/array/to-json
+
 </section>
 
 <!-- /.related -->
@@ -118,7 +124,11 @@ console.log( out );
 
 <section class="links">
 
+<!-- <related-links> -->
+
 [@stdlib/array/to-json]: https://github.com/stdlib-js/array/tree/main/to-json
+
+<!-- </related-links> -->
 
 </section>
 

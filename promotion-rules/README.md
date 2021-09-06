@@ -134,6 +134,14 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
+-   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts`][@stdlib/array/safe-casts
+-   [`@stdlib/ndarray/promotion-rules`][@stdlib/ndarray/promotion-rules]: return the ndarray data type with the smallest size and closest kind to which ndarray data types can be safely cast.
+
 </section>
 
 <!-- /.related -->
@@ -142,7 +150,15 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="links">
 
+<!-- <related-links> -->
+
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
+
+[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts
+
+[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray-promotion-rules
+
+<!-- </related-links> -->
 
 </section>
 

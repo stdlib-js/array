@@ -122,6 +122,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/complex64`][@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64`][@stdlib/array/complex64
+-   [`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]: create a complex number.
+-   [`@stdlib/complex/float64`][@stdlib/complex/float64]: 128-bit complex number.
+
 </section>
 
 <!-- /.related -->
@@ -129,6 +137,16 @@ console.log( out );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64
+
+[@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx
+
+[@stdlib/complex/float64]: https://github.com/stdlib-js/complex-float64
+
+<!-- </related-links> -->
 
 </section>
 

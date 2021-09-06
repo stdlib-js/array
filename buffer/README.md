@@ -228,6 +228,22 @@ for ( i = 0; i < bytes.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]: buffer.
+-   [`@stdlib/array/float32`][@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32`][@stdlib/array/float32
+-   [`@stdlib/array/float64`][@stdlib/array/float64]: https://github.com/stdlib-js/array/tree/main/float64`][@stdlib/array/float64
+-   [`@stdlib/array/int16`][@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16`][@stdlib/array/int16
+-   [`@stdlib/array/int32`][@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32`][@stdlib/array/int32
+-   [`@stdlib/array/int8`][@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8`][@stdlib/array/int8
+-   [`@stdlib/array/shared-buffer`][@stdlib/array/shared-buffer]: https://github.com/stdlib-js/array/tree/main/shared-buffer`][@stdlib/array/shared-buffer
+-   [`@stdlib/array/uint16`][@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16`][@stdlib/array/uint16
+-   [`@stdlib/array/uint32`][@stdlib/array/uint32]: https://github.com/stdlib-js/array/tree/main/uint32`][@stdlib/array/uint32
+-   [`@stdlib/array/uint8`][@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8`][@stdlib/array/uint8
+-   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c`][@stdlib/array/uint8c
+
 </section>
 
 <!-- /.related -->
@@ -237,6 +253,32 @@ for ( i = 0; i < bytes.length; i++ ) {
 <section class="links">
 
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
+
+<!-- <related-links> -->
+
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
+
+[@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32
+
+[@stdlib/array/float64]: https://github.com/stdlib-js/array/tree/main/float64
+
+[@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16
+
+[@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32
+
+[@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8
+
+[@stdlib/array/shared-buffer]: https://github.com/stdlib-js/array/tree/main/shared-buffer
+
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16
+
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array/tree/main/uint32
+
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8
+
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c
+
+<!-- </related-links> -->
 
 </section>
 

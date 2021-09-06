@@ -156,6 +156,13 @@ console.log( arr.join( '\n' ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/linspace`][@stdlib/array/linspace]: https://github.com/stdlib-js/array/tree/main/linspace`][@stdlib/array/linspace
+-   [`@stdlib/array/logspace`][@stdlib/array/logspace]: https://github.com/stdlib-js/array/tree/main/logspace`][@stdlib/array/logspace
+
 </section>
 
 <!-- /.related -->
@@ -165,6 +172,14 @@ console.log( arr.join( '\n' ) );
 <section class="links">
 
 [mdn-date-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+<!-- <related-links> -->
+
+[@stdlib/array/linspace]: https://github.com/stdlib-js/array/tree/main/linspace
+
+[@stdlib/array/logspace]: https://github.com/stdlib-js/array/tree/main/logspace
+
+<!-- </related-links> -->
 
 </section>
 

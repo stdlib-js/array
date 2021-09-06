@@ -441,6 +441,12 @@ console.log( 'nbytes: %d', typedarray.nbytes );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/typed`][@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed`][@stdlib/array/typed
+
 </section>
 
 <!-- /.related -->
@@ -452,6 +458,12 @@ console.log( 'nbytes: %d', typedarray.nbytes );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
+
+<!-- <related-links> -->
+
+[@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed
+
+<!-- </related-links> -->
 
 </section>
 

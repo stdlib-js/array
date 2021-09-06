@@ -123,6 +123,12 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/convert-same`][@stdlib/array/convert-same]: https://github.com/stdlib-js/array/tree/main/convert-same`][@stdlib/array/convert-same
+
 </section>
 
 <!-- /.related -->
@@ -130,6 +136,12 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/array/convert-same]: https://github.com/stdlib-js/array/tree/main/convert-same
+
+<!-- </related-links> -->
 
 </section>
 

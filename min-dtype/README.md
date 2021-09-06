@@ -121,6 +121,14 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
+-   [`@stdlib/array/promotion-rules`][@stdlib/array/promotion-rules]: https://github.com/stdlib-js/array/tree/main/promotion-rules`][@stdlib/array/promotion-rules
+-   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts`][@stdlib/array/safe-casts
+
 </section>
 
 <!-- /.related -->
@@ -129,7 +137,15 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="links">
 
+<!-- <related-links> -->
+
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
+
+[@stdlib/array/promotion-rules]: https://github.com/stdlib-js/array/tree/main/promotion-rules
+
+[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts
+
+<!-- </related-links> -->
 
 </section>
 
