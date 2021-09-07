@@ -445,7 +445,7 @@ console.log( 'nbytes: %d', typedarray.nbytes );
 
 ## See Also
 
--   [`@stdlib/array/typed`][@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed`][@stdlib/array/typed
+-   [`@stdlib/array/typed`][@stdlib/array/typed]: create a typed array.
 
 </section>
 

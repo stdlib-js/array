@@ -123,7 +123,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/typed-ctors`][@stdlib/array/typed-ctors]: https://github.com/stdlib-js/array/tree/main/typed-ctors`][@stdlib/array/typed-ctors
+-   [`@stdlib/array/typed-ctors`][@stdlib/array/typed-ctors]: typed array constructors.
 
 </section>
 

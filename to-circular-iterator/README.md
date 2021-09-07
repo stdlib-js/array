@@ -297,8 +297,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator`][@stdlib/array/to-iterator
--   [`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]: https://github.com/stdlib-js/array/tree/main/to-strided-iterator`][@stdlib/array/to-strided-iterator
+-   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: create an iterator from an array-like object.
+-   [`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]: create an iterator from a strided array-like object.
 
 </section>
 

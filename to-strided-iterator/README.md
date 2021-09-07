@@ -222,8 +222,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator`][@stdlib/array/from-iterator
--   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator`][@stdlib/array/to-iterator
+-   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
+-   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: create an iterator from an array-like object.
 
 </section>
 

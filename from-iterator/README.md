@@ -196,7 +196,7 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: https://github.com/stdlib-js/array/tree/main/to-iterator`][@stdlib/array/to-iterator
+-   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: create an iterator from an array-like object.
 -   [`@stdlib/iter/to-array-view`][@stdlib/iter/to-array-view]: fill an array-like object view with values returned from an iterator.
 
 </section>

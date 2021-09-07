@@ -127,10 +127,10 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/convert`][@stdlib/array/convert]: https://github.com/stdlib-js/array/tree/main/convert`][@stdlib/array/convert
--   [`@stdlib/array/convert-same`][@stdlib/array/convert-same]: https://github.com/stdlib-js/array/tree/main/convert-same`][@stdlib/array/convert-same
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
--   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts`][@stdlib/array/safe-casts
+-   [`@stdlib/array/convert`][@stdlib/array/convert]: convert an array to an array of a different data type.
+-   [`@stdlib/array/convert-same`][@stdlib/array/convert-same]: convert an array to the same data type as a second input array.
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
+-   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: return a list of array data types to which a provided array data type can be safely cast.
 -   [`@stdlib/ndarray/same-kind-casts`][@stdlib/ndarray/same-kind-casts]: return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same kind.
 
 </section>

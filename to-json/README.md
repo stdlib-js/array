@@ -230,7 +230,7 @@ json = toJSON( arr );
 
 ## See Also
 
--   [`@stdlib/array/reviver`][@stdlib/array/reviver]: https://github.com/stdlib-js/array/tree/main/reviver`][@stdlib/array/reviver
+-   [`@stdlib/array/reviver`][@stdlib/array/reviver]: revive a JSON-serialized typed array.
 
 </section>
 

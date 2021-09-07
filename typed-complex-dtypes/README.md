@@ -121,8 +121,8 @@ bool = isdtype( 'beep' );
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
--   [`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-dtypes`][@stdlib/array/typed-dtypes
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
+-   [`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]: list of typed array data types.
 -   [`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]: list of ndarray data types.
 
 </section>

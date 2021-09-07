@@ -138,7 +138,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/convert`][@stdlib/array/convert]: https://github.com/stdlib-js/array/tree/main/convert`][@stdlib/array/convert
+-   [`@stdlib/array/convert`][@stdlib/array/convert]: convert an array to an array of a different data type.
 
 </section>
 

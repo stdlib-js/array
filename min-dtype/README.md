@@ -125,9 +125,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
--   [`@stdlib/array/promotion-rules`][@stdlib/array/promotion-rules]: https://github.com/stdlib-js/array/tree/main/promotion-rules`][@stdlib/array/promotion-rules
--   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts`][@stdlib/array/safe-casts
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
+-   [`@stdlib/array/promotion-rules`][@stdlib/array/promotion-rules]: return the array data type with the smallest size and closest kind to which array data types can be safely cast.
+-   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: return a list of array data types to which a provided array data type can be safely cast.
 
 </section>
 

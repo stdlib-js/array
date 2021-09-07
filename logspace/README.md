@@ -88,8 +88,8 @@ console.log( out.join( '\n' ) );
 
 ## See Also
 
--   [`@stdlib/array/incrspace`][@stdlib/array/incrspace]: https://github.com/stdlib-js/array/tree/main/incrspace`][@stdlib/array/incrspace
--   [`@stdlib/array/linspace`][@stdlib/array/linspace]: https://github.com/stdlib-js/array/tree/main/linspace`][@stdlib/array/linspace
+-   [`@stdlib/array/incrspace`][@stdlib/array/incrspace]: generate a linearly spaced numeric array using a provided increment.
+-   [`@stdlib/array/linspace`][@stdlib/array/linspace]: generate a linearly spaced numeric array.
 
 </section>
 

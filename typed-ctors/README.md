@@ -122,7 +122,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/ctors`][@stdlib/array/ctors]: https://github.com/stdlib-js/array/tree/main/ctors`][@stdlib/array/ctors
+-   [`@stdlib/array/ctors`][@stdlib/array/ctors]: array constructors.
 
 </section>
 

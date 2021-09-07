@@ -233,16 +233,16 @@ for ( i = 0; i < bytes.length; i++ ) {
 ## See Also
 
 -   [`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]: buffer.
--   [`@stdlib/array/float32`][@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32`][@stdlib/array/float32
--   [`@stdlib/array/float64`][@stdlib/array/float64]: https://github.com/stdlib-js/array/tree/main/float64`][@stdlib/array/float64
--   [`@stdlib/array/int16`][@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16`][@stdlib/array/int16
--   [`@stdlib/array/int32`][@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32`][@stdlib/array/int32
--   [`@stdlib/array/int8`][@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8`][@stdlib/array/int8
--   [`@stdlib/array/shared-buffer`][@stdlib/array/shared-buffer]: https://github.com/stdlib-js/array/tree/main/shared-buffer`][@stdlib/array/shared-buffer
--   [`@stdlib/array/uint16`][@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16`][@stdlib/array/uint16
--   [`@stdlib/array/uint32`][@stdlib/array/uint32]: https://github.com/stdlib-js/array/tree/main/uint32`][@stdlib/array/uint32
--   [`@stdlib/array/uint8`][@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8`][@stdlib/array/uint8
--   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c`][@stdlib/array/uint8c
+-   [`@stdlib/array/float32`][@stdlib/array/float32]: float32Array.
+-   [`@stdlib/array/float64`][@stdlib/array/float64]: Float64Array.
+-   [`@stdlib/array/int16`][@stdlib/array/int16]: Int16Array.
+-   [`@stdlib/array/int32`][@stdlib/array/int32]: Int32Array.
+-   [`@stdlib/array/int8`][@stdlib/array/int8]: Int8Array.
+-   [`@stdlib/array/shared-buffer`][@stdlib/array/shared-buffer]: sharedArrayBuffer.
+-   [`@stdlib/array/uint16`][@stdlib/array/uint16]: Uint16Array.
+-   [`@stdlib/array/uint32`][@stdlib/array/uint32]: Uint32Array.
+-   [`@stdlib/array/uint8`][@stdlib/array/uint8]: Uint8Array.
+-   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: Uint8ClampedArray.
 
 </section>
 

@@ -128,8 +128,8 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/dtype`][@stdlib/array/dtype]: https://github.com/stdlib-js/array/tree/main/dtype`][@stdlib/array/dtype
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
+-   [`@stdlib/array/dtype`][@stdlib/array/dtype]: return the data type of an array.
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
 
 </section>
 

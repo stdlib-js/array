@@ -1426,15 +1426,15 @@ console.log( arr );
 
 ## See Also
 
--   [`@stdlib/array/buffer`][@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer`][@stdlib/array/buffer
--   [`@stdlib/array/float32`][@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32`][@stdlib/array/float32
--   [`@stdlib/array/float64`][@stdlib/array/float64]: https://github.com/stdlib-js/array/tree/main/float64`][@stdlib/array/float64
--   [`@stdlib/array/int16`][@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16`][@stdlib/array/int16
--   [`@stdlib/array/int32`][@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32`][@stdlib/array/int32
--   [`@stdlib/array/int8`][@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8`][@stdlib/array/int8
--   [`@stdlib/array/uint16`][@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16`][@stdlib/array/uint16
--   [`@stdlib/array/uint8`][@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8`][@stdlib/array/uint8
--   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c`][@stdlib/array/uint8c
+-   [`@stdlib/array/buffer`][@stdlib/array/buffer]: arrayBuffer.
+-   [`@stdlib/array/float32`][@stdlib/array/float32]: float32Array.
+-   [`@stdlib/array/float64`][@stdlib/array/float64]: float64Array.
+-   [`@stdlib/array/int16`][@stdlib/array/int16]: int16Array.
+-   [`@stdlib/array/int32`][@stdlib/array/int32]: int32Array.
+-   [`@stdlib/array/int8`][@stdlib/array/int8]: int8Array.
+-   [`@stdlib/array/uint16`][@stdlib/array/uint16]: uint16Array.
+-   [`@stdlib/array/uint8`][@stdlib/array/uint8]: uint8Array.
+-   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: uint8ClampedArray.
 
 </section>
 

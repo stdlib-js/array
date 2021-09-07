@@ -114,7 +114,7 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/array/to-json`][@stdlib/array/to-json]: https://github.com/stdlib-js/array/tree/main/to-json`][@stdlib/array/to-json
+-   [`@stdlib/array/to-json`][@stdlib/array/to-json]: return a JSON representation of a typed array.
 
 </section>
 

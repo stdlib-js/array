@@ -188,8 +188,8 @@ for ( i = 0; i < bytes.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/buffer`][@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer`][@stdlib/array/buffer
--   [`@stdlib/array/typed`][@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed`][@stdlib/array/typed
+-   [`@stdlib/array/buffer`][@stdlib/array/buffer]: arrayBuffer.
+-   [`@stdlib/array/typed`][@stdlib/array/typed]: create a typed array.
 
 </section>
 

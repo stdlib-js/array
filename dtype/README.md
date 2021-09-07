@@ -128,7 +128,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
 
 </section>
 

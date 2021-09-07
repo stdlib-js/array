@@ -217,9 +217,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator`][@stdlib/array/from-iterator
--   [`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]: https://github.com/stdlib-js/array/tree/main/to-iterator-right`][@stdlib/array/to-iterator-right
--   [`@stdlib/array/to-sparse-iterator`][@stdlib/array/to-sparse-iterator]: https://github.com/stdlib-js/array/tree/main/to-sparse-iterator`][@stdlib/array/to-sparse-iterator
+-   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
+-   [`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]: create an iterator from an array-like object, iterating from right to left.
+-   [`@stdlib/array/to-sparse-iterator`][@stdlib/array/to-sparse-iterator]: create an iterator from a sparse array-like object.
 
 </section>
 

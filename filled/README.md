@@ -216,7 +216,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/typed`][@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed`][@stdlib/array/typed
+-   [`@stdlib/array/typed`][@stdlib/array/typed]: create a typed array.
 
 </section>
 

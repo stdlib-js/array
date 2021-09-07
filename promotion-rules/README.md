@@ -138,8 +138,8 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes`][@stdlib/array/dtypes
--   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts`][@stdlib/array/safe-casts
+-   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
+-   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: return a list of array data types to which a provided array data type can be safely cast.
 -   [`@stdlib/ndarray/promotion-rules`][@stdlib/ndarray/promotion-rules]: return the ndarray data type with the smallest size and closest kind to which ndarray data types can be safely cast.
 
 </section>
