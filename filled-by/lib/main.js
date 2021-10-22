@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ var isObject = require( '@stdlib/assert/is-object' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var ctors = require( './../../ctors' );
-var gfill = require( '@stdlib/blas/ext/base/gfill' );
+var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
 var hasIteratorSymbolSupport = require( '@stdlib/assert/has-iterator-symbol-support' );
 var ITERATOR_SYMBOL = require( '@stdlib/symbol/iterator' );
 
@@ -45,17 +45,18 @@ var HAS_ITERATOR_SYMBOL = hasIteratorSymbolSupport();
 *
 * @private
 * @param {NonNegativeInteger} len - array length
-* @param {*} value - fill value
+* @param {Callback} clbk - callback function
+* @param {*} thisArg - callback function execution context
 * @returns {Array} filled array
 */
-function filled( len, value ) {
+function filledArray( len, clbk, thisArg ) {
 	var arr;
 	var i;
 
 	// Manually push elements in order to ensure "fast" elements...
 	arr = [];
 	for ( i = 0; i < len; i++ ) {
-		arr.push( value );
+		arr.push( clbk.call( thisArg, i ) );
 	}
 	return arr;
 }
@@ -64,19 +65,23 @@ function filled( len, value ) {
 * Creates a filled "generic" array from an iterator.
 *
 * @private
-* @param {Iterator} it - iterator
-* @param {*} value - fill value
+* @param {Iterable} it - iterator
+* @param {Callback} clbk - callback function
+* @param {*} thisArg - callback function execution context
 * @returns {Array} filled array
 */
-function filledIterator( it, value ) {
+function filledArrayIterator( it, clbk, thisArg ) {
 	var arr;
+	var i;
 	var v;
 
 	arr = [];
+	i = -1;
 	while ( true ) {
+		i += 1;
 		v = it.next();
 		if ( hasOwnProp( v, 'value' ) ) {
-			arr.push( value );
+			arr.push( clbk.call( thisArg, i ) );
 		}
 		if ( v.done ) {
 			break;
@@ -89,104 +94,190 @@ function filledIterator( it, value ) {
 // MAIN //
 
 /**
-* Creates a filled array.
+* Creates a filled array according to a provided callback function.
 *
-* @param {*} [value] - fill value
 * @param {(NonNegativeInteger|TypedArray|ArrayLikeObject|ArrayBuffer|Iterable)} [arg] - a length, typed array, array-like object, buffer, or iterable
 * @param {NonNegativeInteger} [byteOffset=0] - byte offset
 * @param {NonNegativeInteger} [length] - view length
 * @param {string} [dtype="float64"] - data type
+* @param {Callback} clbk - callback to invoke
+* @param {*} [thisArg] - callback execution context
 * @throws {TypeError} must provide a recognized data type
 * @throws {TypeError} must provide a length, typed array, array-like object, buffer, or iterable
+* @throws {TypeError} callback argument must be a function.
 * @throws {Error} creating a generic array from an `ArrayBuffer` is not supported
 * @returns {(TypedArray|Array)} array or typed array
 *
 * @example
-* var arr = filledarray();
+* var randu = require( '@stdlib/random/base/randu' );
+*
+* var arr = filledarrayBy( randu );
 * // returns <Float64Array>
 *
 * @example
-* var arr = filledarray( 1.0, 2 );
+* function clbk() {
+*     return 1.0;
+* }
+*
+* var arr = filledarrayBy( 2, clbk );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var arr = filledarray( 1.0, 2, 'float32' );
+* function clbk() {
+*     return 1.0;
+* }
+*
+* var arr = filledarrayBy( 2, 'float32', clbk );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 *
 * @example
-* var arr = filledarray( 1.0, 2, 'generic' );
+* function clbk() {
+*     return 1.0;
+* }
+*
+* var arr = filledarrayBy( 2, 'generic', clbk );
 * // returns [ 1.0, 1.0 ]
 *
 * @example
-* var arr = filledarray( 1.0, [ 0.5, 0.5 ] );
+* function clbk() {
+*     return 1.0;
+* }
+*
+* var arr = filledarrayBy( [ 0.5, 0.5 ], clbk );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var arr = filledarray( 1, [ 5, -3 ], 'int32' );
+* function clbk() {
+*     return 1;
+* }
+*
+* var arr = filledarrayBy( [ 5, -3 ], 'int32', clbk );
 * // returns <Int32Array>[ 1, 1 ]
 *
 * @example
-* var arr1 = filledarray( 2, [ 5, 3 ], 'int32' );
-* var arr2 = filledarray( 1.0, arr1 );
+* function clbk1() {
+*     return 10;
+* }
+*
+* function clbk2() {
+*     return 1.0;
+* }
+*
+* var arr1 = filledarrayBy( [ 5, 3 ], 'int32', clbk1 );
+* var arr2 = filledarrayBy( arr1, clbk2 );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var arr1 = filledarray( 2, [ 5, 3 ], 'int32' );
-* var arr2 = filledarray( 1, arr1, 'uint32' );
-* // returns <Uint32Array>[ 1, 1 ]
+* function clbk1() {
+*     return 1.0;
+* }
+*
+* function clbk2() {
+*     return 2;
+* }
+*
+* var arr1 = filledarrayBy( [ 5, 3 ], 'int32', clbk1 );
+* var arr2 = filledarrayBy( arr1, 'uint32', clbk2 );
+* // returns <Uint32Array>[ 2, 2 ]
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
+* function clbk() {
+*     return 1.0;
+* }
+*
 * var buf = new ArrayBuffer( 16 );
-* var arr = filledarray( 1.0, buf );
+* var arr = filledarrayBy( buf, clbk );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
+* function clbk() {
+*     return 1.0;
+* }
+*
 * var buf = new ArrayBuffer( 16 );
-* var arr = filledarray( 1.0, buf, 'float32' );
+* var arr = filledarrayBy( buf, 'float32', clbk );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0 ]
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
+* function clbk() {
+*     return 1.0;
+* }
+*
 * var buf = new ArrayBuffer( 16 );
-* var arr = filledarray( 1.0, buf, 8 );
+* var arr = filledarrayBy( buf, 8, clbk );
 * // returns <Float64Array>[ 1.0 ]
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
+* function clbk() {
+*     return 1.0;
+* }
+*
 * var buf = new ArrayBuffer( 16 );
-* var arr = filledarray( 1.0, buf, 8, 'float32' );
+* var arr = filledarrayBy( buf, 8, 'float32', clbk );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
+* function clbk() {
+*     return 1.0;
+* }
+*
 * var buf = new ArrayBuffer( 32 );
-* var arr = filledarray( 1.0, buf, 8, 2 );
+* var arr = filledarrayBy( buf, 8, 2, clbk );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
+* function clbk() {
+*     return 1;
+* }
+*
 * var buf = new ArrayBuffer( 32 );
-* var arr = filledarray( 1, buf, 8, 2, 'int32' );
+* var arr = filledarrayBy( buf, 8, 2, 'int32', clbk );
 * // returns <Int32Array>[ 1, 1 ]
 */
-function filledarray() {
-	var value;
+function filledarrayBy() {
+	var thisArg;
 	var nargs;
 	var dtype;
+	var clbk;
 	var ctor;
 	var arr;
 	var len;
 	var arg;
 
 	nargs = arguments.length;
+	nargs -= 1;
+
+	// Determine whether the last argument is a callback or "this" context...
+	if ( isFunction( arguments[ nargs ] ) ) {
+		// If the last argument is a function, we need to check the next-to-last argument, and, if the next-to-last argument is a function, assume that the next-to-last argument is the callback and the last argument is a "this" context...
+		if ( isFunction( arguments[ nargs-1 ] ) ) {
+			thisArg = arguments[ nargs ];
+			nargs -= 1;
+			clbk = arguments[ nargs ];
+		} else {
+			// "this" context is left undefined...
+			clbk = arguments[ nargs ];
+		}
+	} else {
+		thisArg = arguments[ nargs ];
+		nargs -= 1;
+		clbk = arguments[ nargs ];
+		if ( !isFunction( clbk ) ) {
+			throw new TypeError( 'invalid argument. Callback argument must be a function. Value: `' + clbk + '`.' );
+		}
+	}
 	nargs -= 1;
 	if ( nargs >= 0 && isString( arguments[ nargs ] ) ) {
 		dtype = arguments[ nargs ];
@@ -199,19 +290,18 @@ function filledarray() {
 		throw new TypeError( 'invalid argument. Must provide a recognized data type. Value: `'+dtype+'`.' );
 	}
 	if ( dtype === 'generic' ) {
-		if ( nargs <= 0 ) {
+		if ( nargs < 0 ) {
 			return [];
 		}
-		value = arguments[ 0 ];
-		arg = arguments[ 1 ];
-		if ( nargs === 1 ) {
+		arg = arguments[ 0 ];
+		if ( nargs === 0 ) {
 			if ( isNonNegativeInteger( arg ) ) {
 				len = arg;
 			} else if ( isCollection( arg ) ) {
 				len = arg.length;
 			}
 			if ( len !== void 0 ) {
-				return filled( len, value );
+				return filledArray( len, clbk, thisArg );
 			}
 			if ( isArrayBuffer( arg ) ) {
 				throw new Error( 'invalid arguments. Creating a generic array from an ArrayBuffer is not supported.' );
@@ -227,7 +317,7 @@ function filledarray() {
 				if ( !isFunction( arg.next ) ) {
 					throw new TypeError( 'invalid argument. Must provide a length, typed array, array-like object, or an iterable.' );
 				}
-				return filledIterator( arg, value );
+				return filledArrayIterator( arg, clbk, thisArg );
 			}
 			throw new TypeError( 'invalid argument. Must provide a length, typed array, array-like object, or an iterable. Value: `'+arg+'`.' );
 		} else if ( isArrayBuffer( arg ) ) {
@@ -235,24 +325,37 @@ function filledarray() {
 		}
 		throw new TypeError( 'invalid argument. Must provide a length, typed array, array-like object, or an iterable. Value: `'+arg+'`.' );
 	}
-	if ( nargs <= 0 ) {
+	if ( nargs < 0 ) {
 		return new ctor( 0 );
 	}
-	if ( nargs === 1 ) {
-		arr = new ctor( arguments[1] );
-	} else if ( nargs === 2 ) {
-		arr = new ctor( arguments[1], arguments[2] );
+	if ( nargs === 0 ) {
+		arr = new ctor( arguments[0] );
+	} else if ( nargs === 1 ) {
+		arr = new ctor( arguments[0], arguments[1] );
 	} else {
-		arr = new ctor( arguments[1], arguments[2], arguments[3] );
+		arr = new ctor( arguments[0], arguments[1], arguments[2] );
 	}
-	value = arguments[ 0 ];
-	if ( arr.length > 0 && value !== 0 ) { // we only need to fill a typed array if the fill value isn't zero, as typed arrays are always zero-initialized
-		gfill( arr.length, value, arr, 1 );
+	if ( arr.length > 0 ) {
+		gfillBy( arr.length, arr, 1, callback );
 	}
 	return arr;
+
+	/**
+	* Callback which wraps a provided callback and is invoked for each array element.
+	*
+	* @private
+	* @param {*} value - element value
+	* @param {NonNegativeInteger} aidx - array index
+	* @param {NonNegativeInteger} sidx - strided index
+	* @param {Collection} array - input array/collection
+	* @returns {*} callback return value
+	*/
+	function callback( value, aidx ) {
+		return clbk.call( thisArg, aidx );
+	}
 }
 
 
 // EXPORTS //
 
-module.exports = filledarray;
+module.exports = filledarrayBy;
