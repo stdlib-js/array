@@ -166,6 +166,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`convertArray( arr, dtype )`][@stdlib/array/convert]</span><span class="delimiter">: </span><span class="description">convert an array to an array of a different data type.</span>
 -   <span class="signature">[`DataView( buffer[, byteOffset[, byteLength]] )`][@stdlib/array/dataview]</span><span class="delimiter">: </span><span class="description">constructor which returns a data view representing a provided array buffer.</span>
 -   <span class="signature">[`arrayDataType( array )`][@stdlib/array/dtype]</span><span class="delimiter">: </span><span class="description">return the data type of an array.</span>
+-   <span class="signature">[`filledarrayBy()`][@stdlib/array/filled-by]</span><span class="delimiter">: </span><span class="description">create a filled array according to a provided callback function.</span>
 -   <span class="signature">[`filledarray()`][@stdlib/array/filled]</span><span class="delimiter">: </span><span class="description">create a filled array.</span>
 -   <span class="signature">[`iterator2array( iterator[, out][, mapFcn[, thisArg]] )`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
 -   <span class="signature">[`arrayMinDataType( value )`][@stdlib/array/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum array data type of the closest "kind" necessary for storing a provided scalar value.</span>
@@ -295,6 +296,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/dataview]: https://github.com/stdlib-js/array/tree/main/dataview
 
 [@stdlib/array/dtype]: https://github.com/stdlib-js/array/tree/main/dtype
+
+[@stdlib/array/filled-by]: https://github.com/stdlib-js/array/tree/main/filled-by
 
 [@stdlib/array/filled]: https://github.com/stdlib-js/array/tree/main/filled
 
