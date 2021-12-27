@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,9 +22,9 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var isCollection = require( '@stdlib/assert/is-collection' );
+var isArray = require( '@stdlib/assert/is-array' );
 var pkg = require( './../package.json' ).name;
-var convertArray = require( './../lib' );
+var filled = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -34,17 +34,9 @@ var convertArray = require( './../lib' );
 *
 * @private
 * @param {PositiveInteger} len - array length
-* @param {string} dtype - data type
 * @returns {Function} benchmark function
 */
-function createBenchmark( len, dtype ) {
-	var arr;
-	var i;
-
-	arr = [];
-	for ( i = 0; i < len; i++ ) {
-		arr.push( i );
-	}
+function createBenchmark( len ) {
 	return benchmark;
 
 	/**
@@ -59,14 +51,14 @@ function createBenchmark( len, dtype ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = convertArray( arr, dtype );
+			out = filled( i, len );
 			if ( out.length !== len ) {
 				b.fail( 'unexpected length' );
 			}
 		}
 		b.toc();
-		if ( !isCollection( out ) ) {
-			b.fail( 'should return an array-like object' );
+		if ( !isArray( out ) ) {
+			b.fail( 'should return an array' );
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
@@ -94,35 +86,8 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 
-		f = createBenchmark( len, 'generic' );
-		bench( pkg+':len='+len+',dtype=generic', f );
-
-		f = createBenchmark( len, 'float64' );
-		bench( pkg+':len='+len+',dtype=float64', f );
-
-		f = createBenchmark( len, 'float32' );
-		bench( pkg+':len='+len+',dtype=float32', f );
-
-		f = createBenchmark( len, 'int32' );
-		bench( pkg+':len='+len+',dtype=int32', f );
-
-		f = createBenchmark( len, 'int16' );
-		bench( pkg+':len='+len+',dtype=int16', f );
-
-		f = createBenchmark( len, 'int8' );
-		bench( pkg+':len='+len+',dtype=int8', f );
-
-		f = createBenchmark( len, 'uint32' );
-		bench( pkg+':len='+len+',dtype=uint32', f );
-
-		f = createBenchmark( len, 'uint16' );
-		bench( pkg+':len='+len+',dtype=uint16', f );
-
-		f = createBenchmark( len, 'uint8' );
-		bench( pkg+':len='+len+',dtype=uint8', f );
-
-		f = createBenchmark( len, 'uint8c' );
-		bench( pkg+':len='+len+',dtype=uint8c', f );
+		f = createBenchmark( len );
+		bench( pkg+':len='+len, f );
 	}
 }
 
