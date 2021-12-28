@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,23 +18,31 @@
 
 'use strict';
 
-/**
-* Generate a linearly spaced numeric array using a provided increment.
-*
-* @module @stdlib/array/incrspace
-*
-* @example
-* var incrspace = require( '@stdlib/array/incrspace' );
-*
-* var arr = incrspace( 0, 11, 2 );
-* // returns [ 0, 2, 4, 6, 8, 10 ]
-*/
-
 // MODULES //
 
-var main = require( './main.js' );
+var bench = require( '@stdlib/bench' );
+var isArray = require( '@stdlib/assert/is-array' );
+var pkg = require( './../package.json' ).name;
+var incrspace = require( './../lib' );
 
 
-// EXPORTS //
+// MAIN //
 
-module.exports = main;
+bench( pkg, function benchmark( b ) {
+	var i;
+	var v;
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		v = incrspace( i, i+100, 1 );
+		if ( typeof v !== 'object' ) {
+			b.fail( 'should return an array' );
+		}
+	}
+	b.toc();
+	if ( !isArray( v ) ) {
+		b.fail( 'should return an array' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});

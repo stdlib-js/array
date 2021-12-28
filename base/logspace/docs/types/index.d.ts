@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,25 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
 /**
-* Generate a linearly spaced numeric array using a provided increment.
+* Generates a logarithmically spaced numeric array.
 *
-* @module @stdlib/array/incrspace
+* @param a - exponent of start value
+* @param b - exponent of end value
+* @param len - length of output array
+* @returns logarithmically spaced numeric array
 *
 * @example
-* var incrspace = require( '@stdlib/array/incrspace' );
-*
-* var arr = incrspace( 0, 11, 2 );
-* // returns [ 0, 2, 4, 6, 8, 10 ]
+* var arr = logspace( 0, 2, 6 );
+* // returns [ 1, ~2.5, ~6.31, ~15.85, ~39.81, 100 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function logspace( x1: number, x2: number, len: number ): Array<number>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = logspace;

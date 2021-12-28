@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,15 +19,15 @@
 'use strict';
 
 /**
-* Generate a linearly spaced numeric array using a provided increment.
+* Generate a logarithmically spaced numeric array.
 *
-* @module @stdlib/array/incrspace
+* @module @stdlib/array/base/logspace
 *
 * @example
-* var incrspace = require( '@stdlib/array/incrspace' );
+* var logspace = require( '@stdlib/array/base/logspace' );
 *
-* var arr = incrspace( 0, 11, 2 );
-* // returns [ 0, 2, 4, 6, 8, 10 ]
+* var arr = logspace( 0, 2, 6 );
+* // returns [ 1, ~2.5, ~6.31, ~15.85, ~39.81, 100 ]
 */
 
 // MODULES //

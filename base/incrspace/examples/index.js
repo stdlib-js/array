@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,23 +18,21 @@
 
 'use strict';
 
-/**
-* Generate a linearly spaced numeric array using a provided increment.
-*
-* @module @stdlib/array/incrspace
-*
-* @example
-* var incrspace = require( '@stdlib/array/incrspace' );
-*
-* var arr = incrspace( 0, 11, 2 );
-* // returns [ 0, 2, 4, 6, 8, 10 ]
-*/
+var incrspace = require( './../lib' );
 
-// MODULES //
+console.log( '\nIncrement 2:' );
+var out = incrspace( 0, 10, 2 );
+console.log( out.join( '\n' ) );
 
-var main = require( './main.js' );
+console.log( '\nIncrement 2:' );
+out = incrspace( 0, 11, 2 );
+console.log( out.join( '\n' ) );
 
+console.log( '\nIncrement 0.02:' );
+out = incrspace( 0, 1.01, 0.02 );
+console.log( out.join( '\n' ) );
 
-// EXPORTS //
-
-module.exports = main;
+// Create an array using a negative increment:
+console.log( '\nDecremented values:' );
+out = incrspace( 10, 0, -2 );
+console.log( out.join( '\n' ) );

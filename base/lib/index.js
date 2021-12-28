@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 
 /**
+* @name incrspace
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/incrspace}
+*/
+setReadOnly( ns, 'incrspace', require( './../../base/incrspace' ) );
+
+/**
 * @name linspace
 * @memberof ns
 * @readonly
@@ -53,6 +62,15 @@ setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 * @see {@link module:@stdlib/array/base/linspace}
 */
 setReadOnly( ns, 'linspace', require( './../../base/linspace' ) );
+
+/**
+* @name logspace
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/logspace}
+*/
+setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 
 /**
 * @name ones

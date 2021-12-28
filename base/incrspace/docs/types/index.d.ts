@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,25 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
 /**
-* Generate a linearly spaced numeric array using a provided increment.
+* Generates a linearly spaced numeric array according to a provided increment.
 *
-* @module @stdlib/array/incrspace
+* @param x1 - first array value
+* @param x2 - array element bound
+* @param increment - increment
+* @returns linearly spaced numeric array
 *
 * @example
-* var incrspace = require( '@stdlib/array/incrspace' );
-*
 * var arr = incrspace( 0, 11, 2 );
 * // returns [ 0, 2, 4, 6, 8, 10 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrspace( x1: number, x2: number, increment: number ): Array<number>; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrspace;
