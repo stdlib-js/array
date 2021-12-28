@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 
 /**
+* @name linspace
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/linspace}
+*/
+setReadOnly( ns, 'linspace', require( './../../base/linspace' ) );
+
+/**
 * @name ones
 * @memberof ns
 * @readonly
