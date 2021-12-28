@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,38 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+import ones = require( './index' );
 
-// MAIN //
 
-/**
-* Returns a filled "generic" array.
-*
-* @param {*} value - fill value
-* @param {NonNegativeInteger} len - array length
-* @returns {Array} filled array
-*
-* @example
-* var out = filled( 0.0, 3 );
-* // returns [ 0.0, 0.0, 0.0 ]
-*
-* @example
-* var out = filled( 'beep', 3 );
-* // returns [ 'beep', 'beep', 'beep' ]
-*/
-function filled( value, len ) {
-	var arr;
-	var i;
+// TESTS //
 
-	// Manually push elements in order to ensure "fast" elements...
-	arr = [];
-	for ( i = 0; i < len; i++ ) {
-		arr.push( value );
-	}
-	return arr;
+// The function returns an array...
+{
+	ones( 3 ); // $ExpectType number[]
 }
 
+// The compiler throws an error if the function is provided an argument which is not a number...
+{
+	ones( 'abc' ); // $ExpectError
+	ones( true ); // $ExpectError
+	ones( false ); // $ExpectError
+	ones( null ); // $ExpectError
+	ones( [] ); // $ExpectError
+	ones( {} ); // $ExpectError
+	ones( ( x: number ): number => x ); // $ExpectError
+}
 
-// EXPORTS //
-
-module.exports = filled;
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	ones(); // $ExpectError
+	ones( 3, 2 ); // $ExpectError
+}

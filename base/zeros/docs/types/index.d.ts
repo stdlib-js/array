@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,38 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
-
-// MAIN //
+// TypeScript Version: 2.0
 
 /**
-* Returns a filled "generic" array.
+* Returns a zero-filled "generic" array.
 *
-* @param {*} value - fill value
-* @param {NonNegativeInteger} len - array length
-* @returns {Array} filled array
+* @param len - array length
+* @returns output array
 *
 * @example
-* var out = filled( 0.0, 3 );
+* var out = zeros( 3 );
 * // returns [ 0.0, 0.0, 0.0 ]
-*
-* @example
-* var out = filled( 'beep', 3 );
-* // returns [ 'beep', 'beep', 'beep' ]
 */
-function filled( value, len ) {
-	var arr;
-	var i;
-
-	// Manually push elements in order to ensure "fast" elements...
-	arr = [];
-	for ( i = 0; i < len; i++ ) {
-		arr.push( value );
-	}
-	return arr;
-}
+declare function zeros( len: number ): Array<number>;
 
 
 // EXPORTS //
 
-module.exports = filled;
+export = zeros;

@@ -45,6 +45,24 @@ var ns = {};
 */
 setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 
+/**
+* @name ones
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ones}
+*/
+setReadOnly( ns, 'ones', require( './../../base/ones' ) );
+
+/**
+* @name zeros
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/zeros}
+*/
+setReadOnly( ns, 'zeros', require( './../../base/zeros' ) );
+
 
 // EXPORTS //
 

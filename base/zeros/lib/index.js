@@ -18,36 +18,23 @@
 
 'use strict';
 
-// MAIN //
-
 /**
-* Returns a filled "generic" array.
+* Create a zero-filled "generic" array.
 *
-* @param {*} value - fill value
-* @param {NonNegativeInteger} len - array length
-* @returns {Array} filled array
+* @module @stdlib/array/base/zeros
 *
 * @example
-* var out = filled( 0.0, 3 );
+* var zeros = require( '@stdlib/array/base/zeros' );
+*
+* var out = zeros( 3 );
 * // returns [ 0.0, 0.0, 0.0 ]
-*
-* @example
-* var out = filled( 'beep', 3 );
-* // returns [ 'beep', 'beep', 'beep' ]
 */
-function filled( value, len ) {
-	var arr;
-	var i;
 
-	// Manually push elements in order to ensure "fast" elements...
-	arr = [];
-	for ( i = 0; i < len; i++ ) {
-		arr.push( value );
-	}
-	return arr;
-}
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = filled;
+module.exports = main;

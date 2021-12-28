@@ -18,36 +18,18 @@
 
 'use strict';
 
-// MAIN //
+var gfill = require( '@stdlib/blas/ext/base/gfill' ).ndarray;
+var zeros = require( './../lib' );
 
-/**
-* Returns a filled "generic" array.
-*
-* @param {*} value - fill value
-* @param {NonNegativeInteger} len - array length
-* @returns {Array} filled array
-*
-* @example
-* var out = filled( 0.0, 3 );
-* // returns [ 0.0, 0.0, 0.0 ]
-*
-* @example
-* var out = filled( 'beep', 3 );
-* // returns [ 'beep', 'beep', 'beep' ]
-*/
-function filled( value, len ) {
-	var arr;
-	var i;
+// Create a zero-filled array:
+var arr = zeros( 10 );
 
-	// Manually push elements in order to ensure "fast" elements...
-	arr = [];
-	for ( i = 0; i < len; i++ ) {
-		arr.push( value );
-	}
-	return arr;
-}
+// Fill element pairs with the same value...
+gfill( 2, 1.0, arr, 1, 0 );
+gfill( 2, 2.0, arr, 1, 2 );
+gfill( 2, 3.0, arr, 1, 4 );
+gfill( 2, 4.0, arr, 1, 6 );
+gfill( 2, 5.0, arr, 1, 8 );
 
-
-// EXPORTS //
-
-module.exports = filled;
+console.log( arr );
+// => [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0 ]

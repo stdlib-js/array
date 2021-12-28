@@ -18,36 +18,23 @@
 
 'use strict';
 
-// MAIN //
-
 /**
-* Returns a filled "generic" array.
+* Create a "generic" array filled with ones.
 *
-* @param {*} value - fill value
-* @param {NonNegativeInteger} len - array length
-* @returns {Array} filled array
+* @module @stdlib/array/base/ones
 *
 * @example
-* var out = filled( 0.0, 3 );
-* // returns [ 0.0, 0.0, 0.0 ]
+* var ones = require( '@stdlib/array/base/ones' );
 *
-* @example
-* var out = filled( 'beep', 3 );
-* // returns [ 'beep', 'beep', 'beep' ]
+* var out = ones( 3 );
+* // returns [ 1.0, 1.0, 1.0 ]
 */
-function filled( value, len ) {
-	var arr;
-	var i;
 
-	// Manually push elements in order to ensure "fast" elements...
-	arr = [];
-	for ( i = 0; i < len; i++ ) {
-		arr.push( value );
-	}
-	return arr;
-}
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = filled;
+module.exports = main;
