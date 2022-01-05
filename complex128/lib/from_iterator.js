@@ -38,21 +38,21 @@ var imag = require( '@stdlib/complex/imag' );
 function fromIterator( it ) {
 	var out;
 	var v;
+	var z;
 
 	out = [];
 	while ( true ) {
 		v = it.next();
-		if ( v.value ) {
-			if ( isArrayLikeObject( v.value ) ) {
-				out.push( v.value[0], v.value[1] );
-			} else if ( isComplexLike( v.value ) ) {
-				out.push( real( v.value ), imag( v.value ) );
-			} else {
-				return new TypeError( 'invalid argument. An iterator must return either a two-element array containing real and imaginary components or a complex number. Value: `'+v.value+'`.' );
-			}
-		}
 		if ( v.done ) {
 			break;
+		}
+		z = v.value;
+		if ( isArrayLikeObject( z ) && z.length >= 2 ) {
+			out.push( z[ 0 ], z[ 1 ] );
+		} else if ( isComplexLike( z ) ) {
+			out.push( real( z ), imag( z ) );
+		} else {
+			return new TypeError( 'invalid argument. An iterator must return either a two-element array containing real and imaginary components or a complex number. Value: `'+z+'`.' );
 		}
 	}
 	return out;

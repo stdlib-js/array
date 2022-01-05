@@ -31,6 +31,8 @@ var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
 var Float32Array = require( './../../float32' );
 var Float64Array = require( './../../float64' );
+var Complex64Array = require( './../../complex64' );
+var Complex128Array = require( './../../complex128' );
 var typeName = require( './../lib/type.js' );
 
 
@@ -56,7 +58,9 @@ tape( 'if provided a typed array, the function returns the closest typed array t
 		new Uint16Array( [ 5, 3 ] ),
 		new Int8Array( [ 5, 3 ] ),
 		new Uint8Array( [ 5, 3 ] ),
-		new Uint8ClampedArray( [ 5, 3 ] )
+		new Uint8ClampedArray( [ 5, 3 ] ),
+		new Complex64Array( [ 5.0, 3.0 ] ),
+		new Complex128Array( [ 5.0, 3.0 ] )
 	];
 
 	expected = [
@@ -68,7 +72,9 @@ tape( 'if provided a typed array, the function returns the closest typed array t
 		'Uint16Array',
 		'Int8Array',
 		'Uint8Array',
-		'Uint8ClampedArray'
+		'Uint8ClampedArray',
+		'Complex64Array',
+		'Complex128Array'
 	];
 
 	for ( i = 0; i < values.length; i++ ) {
@@ -96,7 +102,9 @@ tape( 'if provided a typed array from a different realm, the function returns th
 		new Uint16Array( [ 5, 3 ] ),
 		new Int8Array( [ 5, 3 ] ),
 		new Uint8Array( [ 5, 3 ] ),
-		new Uint8ClampedArray( [ 5, 3 ] )
+		new Uint8ClampedArray( [ 5, 3 ] ),
+		new Complex64Array( [ 5.0, 3.0 ] ),
+		new Complex128Array( [ 5.0, 3.0 ] )
 	];
 
 	expected = [
@@ -108,7 +116,9 @@ tape( 'if provided a typed array from a different realm, the function returns th
 		'Uint16Array',
 		'Int8Array',
 		'Uint8Array',
-		'Uint8ClampedArray'
+		'Uint8ClampedArray',
+		'Complex64Array',
+		'Complex128Array'
 	];
 
 	for ( i = 0; i < values.length; i++ ) {

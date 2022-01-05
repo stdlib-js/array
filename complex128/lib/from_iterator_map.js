@@ -40,25 +40,24 @@ var imag = require( '@stdlib/complex/imag' );
 function fromIteratorMap( it, clbk, thisArg ) {
 	var out;
 	var v;
+	var z;
 	var i;
 
 	out = [];
 	i = 0;
 	while ( true ) {
 		v = it.next();
-		i += 1;
-		if ( v.value ) {
-			v = clbk.call( thisArg, v.value, i );
-			if ( isArrayLikeObject( v ) ) {
-				out.push( v[ 0 ], v[ 1 ] );
-			} else if ( isComplexLike( v ) ) {
-				out.push( real( v ), imag( v ) );
-			} else {
-				return new TypeError( 'invalid argument. Callback must return either a two-element array containing real and imaginary components or a complex number. Value: `'+v+'`.' );
-			}
-		}
 		if ( v.done ) {
 			break;
+		}
+		i += 1;
+		z = clbk.call( thisArg, v.value, i );
+		if ( isArrayLikeObject( z ) ) {
+			out.push( z[ 0 ], z[ 1 ] );
+		} else if ( isComplexLike( z ) ) {
+			out.push( real( z ), imag( z ) );
+		} else {
+			return new TypeError( 'invalid argument. Callback must return either a two-element array containing real and imaginary components or a complex number. Value: `'+z+'`.' );
 		}
 	}
 	return out;

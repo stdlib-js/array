@@ -29,6 +29,8 @@ var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
 var Float32Array = require( './../../float32' );
 var Float64Array = require( './../../float64' );
+var Complex64Array = require( './../../complex64' );
+var Complex128Array = require( './../../complex128' );
 
 
 // MAIN //
@@ -42,7 +44,9 @@ var CTORS = [
 	[ Uint16Array, 'Uint16Array' ],
 	[ Int8Array, 'Int8Array' ],
 	[ Uint8Array, 'Uint8Array' ],
-	[ Uint8ClampedArray, 'Uint8ClampedArray' ]
+	[ Uint8ClampedArray, 'Uint8ClampedArray' ],
+	[ Complex64Array, 'Complex64Array' ],
+	[ Complex128Array, 'Complex128Array' ]
 ];
 
 

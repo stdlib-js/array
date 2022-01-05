@@ -23,7 +23,7 @@
 var isFunction = require( '@stdlib/assert/is-function' );
 var isCollection = require( '@stdlib/assert/is-collection' );
 var isIteratorLike = require( '@stdlib/assert/is-iterator-like' );
-var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var arraylike2object = require( './../../base/arraylike2object' );
 
 
 // MAIN //
@@ -55,6 +55,7 @@ function iterator2array() {
 	var fcn;
 	var out;
 	var len;
+	var set;
 	var i;
 	var v;
 
@@ -87,49 +88,42 @@ function iterator2array() {
 			while ( true ) {
 				i += 1;
 				v = iterator.next();
-				if ( hasOwnProp( v, 'value' ) ) {
-					out.push( fcn.call( thisArg, v.value, i ) );
-				}
 				if ( v.done ) {
 					break;
 				}
+				out.push( fcn.call( thisArg, v.value, i ) );
 			}
 			return out;
 		}
 		while ( true ) {
 			v = iterator.next();
-			if ( hasOwnProp( v, 'value' ) ) {
-				out.push( v.value );
-			}
 			if ( v.done ) {
 				break;
 			}
+			out.push( v.value );
 		}
 		return out;
 	}
 	len = out.length;
+	set = arraylike2object( out ).setter;
 	if ( fcn ) {
 		while ( i < len-1 ) {
 			i += 1;
 			v = iterator.next();
-			if ( hasOwnProp( v, 'value' ) ) {
-				out[ i ] = fcn.call( thisArg, v.value, i );
-			}
 			if ( v.done ) {
 				break;
 			}
+			set( out, i, fcn.call( thisArg, v.value, i ) );
 		}
 		return out;
 	}
 	while ( i < len-1 ) {
 		i += 1;
 		v = iterator.next();
-		if ( hasOwnProp( v, 'value' ) ) {
-			out[ i ] = v.value;
-		}
 		if ( v.done ) {
 			break;
 		}
+		set( out, i, v.value );
 	}
 	return out;
 }

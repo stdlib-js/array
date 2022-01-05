@@ -27,6 +27,8 @@ var Uint16Array = require( './../../uint16' );
 var Int8Array = require( './../../int8' );
 var Uint8Array = require( './../../uint8' );
 var Uint8ClampedArray = require( './../../uint8c' );
+var Complex64Array = require( './../../complex64' );
+var Complex128Array = require( './../../complex128' );
 var toJSON = require( './../lib' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
@@ -43,6 +45,24 @@ console.log( toJSON( arr ) );
 /* =>
 	{
 		'type': 'Float32Array',
+		'data': [ 5.0, -3.0 ]
+	}
+*/
+
+arr = new Complex128Array( [ 5.0, -3.0 ] );
+console.log( toJSON( arr ) );
+/* =>
+	{
+		'type': 'Complex128Array',
+		'data': [ 5.0, -3.0 ]
+	}
+*/
+
+arr = new Complex64Array( [ 5.0, -3.0 ] );
+console.log( toJSON( arr ) );
+/* =>
+	{
+		'type': 'Complex64Array',
 		'data': [ 5.0, -3.0 ]
 	}
 */
