@@ -55,6 +55,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 
 /**
+* @name filledBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/filled-by}
+*/
+setReadOnly( ns, 'filledBy', require( './../../base/filled-by' ) );
+
+/**
 * @name incrspace
 * @memberof ns
 * @readonly
