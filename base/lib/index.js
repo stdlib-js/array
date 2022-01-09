@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) );
 
 /**
+* @name copy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/copy}
+*/
+setReadOnly( ns, 'copy', require( './../../base/copy' ) );
+
+/**
 * @name filled
 * @memberof ns
 * @readonly
