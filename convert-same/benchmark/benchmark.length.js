@@ -32,6 +32,8 @@ var Uint32Array = require( './../../uint32' );
 var Uint16Array = require( './../../uint16' );
 var Uint8Array = require( './../../uint8' );
 var Uint8ClampedArray = require( './../../uint8c' );
+var Complex64Array = require( './../../complex64' );
+var Complex128Array = require( './../../complex128' );
 var pkg = require( './../package.json' ).name;
 var convertArraySame = require( './../lib' );
 
@@ -132,6 +134,12 @@ function main() {
 
 		f = createBenchmark( len, new Uint8ClampedArray( 0 ) );
 		bench( pkg+':len='+len+',dtype=uint8c', f );
+
+		f = createBenchmark( len, new Complex128Array( 0 ) );
+		bench( pkg+':len='+len+',dtype=complex128', f );
+
+		f = createBenchmark( len, new Complex64Array( 0 ) );
+		bench( pkg+':len='+len+',dtype=complex64', f );
 	}
 }
 
