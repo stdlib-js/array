@@ -31,6 +31,8 @@ var Uint16Array = require( './../../uint16' );
 var Uint32Array = require( './../../uint32' );
 var Uint8Array = require( './../../uint8' );
 var Uint8ClampedArray = require( './../../uint8c' );
+var Complex64Array = require( './../../complex64' );
+var Complex128Array = require( './../../complex128' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var ctors = require( './../lib' );
 
@@ -58,7 +60,9 @@ tape( 'the function returns typed array constructors', function test( t ) {
 		'uint16',
 		'uint32',
 		'uint8',
-		'uint8c'
+		'uint8c',
+		'complex64',
+		'complex128'
 	];
 	expected = [
 		Float64Array,
@@ -69,7 +73,9 @@ tape( 'the function returns typed array constructors', function test( t ) {
 		Uint16Array,
 		Uint32Array,
 		Uint8Array,
-		Uint8ClampedArray
+		Uint8ClampedArray,
+		Complex64Array,
+		Complex128Array
 	];
 	for ( i = 0; i < dtypes.length; i++ ) {
 		ctor = ctors( dtypes[ i ] );
