@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,23 +23,23 @@
 var tape = require( 'tape' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var Complex64 = require( '@stdlib/complex/float32' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
-var Complex64Array = require( './../lib' );
+var Complex128 = require( '@stdlib/complex/float32' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+var Complex128Array = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof Complex64Array, 'function', 'main export is a function' );
+	t.strictEqual( typeof Complex128Array, 'function', 'main export is a function' );
 	t.end();
 });
 
 tape( 'attached to the prototype of the main export is a `get` method for returning an array element', function test( t ) {
-	t.strictEqual( hasOwnProp( Complex64Array.prototype, 'get' ), true, 'has property' );
-	t.strictEqual( isFunction( Complex64Array.prototype.get ), true, 'has method' );
+	t.strictEqual( hasOwnProp( Complex128Array.prototype, 'get' ), true, 'has property' );
+	t.strictEqual( isFunction( Complex128Array.prototype.get ), true, 'has method' );
 	t.end();
 });
 
@@ -48,7 +48,7 @@ tape( 'the method throws an error if invoked with a `this` context which is not 
 	var arr;
 	var i;
 
-	arr = new Complex64Array( 5 );
+	arr = new Complex128Array( 5 );
 
 	values = [
 		'5',
@@ -78,7 +78,7 @@ tape( 'the method throws an error if provided an index argument which is not a n
 	var arr;
 	var i;
 
-	arr = new Complex64Array( 10 );
+	arr = new Complex128Array( 10 );
 
 	values = [
 		'5',
@@ -110,7 +110,7 @@ tape( 'the method returns `undefined` if provided an index which exceeds array d
 	var v;
 	var i;
 
-	arr = new Complex64Array( 10 );
+	arr = new Complex128Array( 10 );
 	for ( i = 0; i < arr.length; i++ ) {
 		v = arr.get( arr.length+i );
 		t.strictEqual( v, void 0, 'returns expected value for index '+(arr.length+i) );
@@ -125,14 +125,14 @@ tape( 'the method returns an array element', function test( t ) {
 
 	arr = [];
 	for ( i = 0; i < 10; i++ ) {
-		arr.push( new Complex64( i, -i ) );
+		arr.push( new Complex128( i, -i ) );
 	}
-	arr = new Complex64Array( arr );
+	arr = new Complex128Array( arr );
 
 	for ( i = 0; i < arr.length; i++ ) {
 		v = arr.get( i );
-		t.strictEqual( realf( v ), i, 'returns expected real component for index '+i );
-		t.strictEqual( imagf( v ), -i, 'returns expected imaginary component for index '+i );
+		t.strictEqual( real( v ), i, 'returns expected real component for index '+i );
+		t.strictEqual( imag( v ), -i, 'returns expected imaginary component for index '+i );
 	}
 	t.end();
 });

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,34 +22,34 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var Float32Array = require( './../../float32' );
-var Complex128Array = require( './../../complex128' );
+var Float64Array = require( './../../float64' );
+var Complex64Array = require( './../../complex64' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128 = require( '@stdlib/complex/float64' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
-var Complex64Array = require( './../lib' );
+var Complex128Array = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof Complex64Array, 'function', 'main export is a function' );
+	t.strictEqual( typeof Complex128Array, 'function', 'main export is a function' );
 	t.end();
 });
 
 tape( 'attached to the main export is a `from` method for creating a complex number array from an array-like object or iterable', function test( t ) {
 	var arr;
 
-	t.strictEqual( hasOwnProp( Complex64Array, 'from' ), true, 'has property' );
-	t.strictEqual( isFunction( Complex64Array.from ), true, 'has method' );
+	t.strictEqual( hasOwnProp( Complex128Array, 'from' ), true, 'has property' );
+	t.strictEqual( isFunction( Complex128Array.from ), true, 'has method' );
 
-	arr = Complex64Array.from( [] );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns an instance' );
+	arr = Complex128Array.from( [] );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns an instance' );
 
 	t.end();
 });
@@ -76,7 +76,7 @@ tape( 'the method throws an error if invoked with a `this` context which is not 
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from.call( value, [] );
+			return Complex128Array.from.call( value, [] );
 		};
 	}
 });
@@ -86,7 +86,7 @@ tape( 'the method throws an error if invoked with a `this` context which is not 
 	var i;
 
 	values = [
-		Complex64,
+		Complex128,
 		function noop() {}
 	];
 	for ( i = 0; i < values.length; i++ ) {
@@ -96,7 +96,7 @@ tape( 'the method throws an error if invoked with a `this` context which is not 
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from.call( value, [] );
+			return Complex128Array.from.call( value, [] );
 		};
 	}
 });
@@ -123,7 +123,7 @@ tape( 'the method throws an error if not provided an iterable or array-like obje
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value );
+			return Complex128Array.from( value );
 		};
 	}
 });
@@ -150,7 +150,7 @@ tape( 'the method throws an error if not provided an iterable or array-like obje
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -181,7 +181,7 @@ tape( 'the method throws an error if not provided an iterable or array-like obje
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk, {} );
+			return Complex128Array.from( value, clbk, {} );
 		};
 	}
 
@@ -212,7 +212,7 @@ tape( 'the method throws an error if provided a second argument which is not a f
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( [], value );
+			return Complex128Array.from( [], value );
 		};
 	}
 });
@@ -239,7 +239,7 @@ tape( 'the method throws an error if provided a second argument which is not a f
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( [], value, {} );
+			return Complex128Array.from( [], value, {} );
 		};
 	}
 });
@@ -250,75 +250,75 @@ tape( 'the method returns a complex number array', function test( t ) {
 	var v;
 
 	// Generic array:
-	arr = Complex64Array.from( [] );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [] );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( [ 1.0, 2.0, 3.0, 4.0 ] );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ 1.0, 2.0, 3.0, 4.0 ] );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 2, 'returns expected value' );
 
 	// Generic array containing complex numbers:
-	arr = Complex64Array.from( [ new Complex64( 1.0, 1.0 ) ] );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ new Complex128( 1.0, 1.0 ) ] );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	z = new Complex64( 1.0, 0.0 );
+	z = new Complex128( 1.0, 0.0 );
 	z.valueOf = valueOf( z );
-	arr = Complex64Array.from( [ z, 1.0 ] );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ z, 1.0 ] );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	z = new Complex64( 1.0, 0.0 );
+	z = new Complex128( 1.0, 0.0 );
 	z.valueOf = valueOf( z );
-	arr = Complex64Array.from( [ 1.0, z ] );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ 1.0, z ] );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
 	// Typed array:
-	arr = Complex64Array.from( new Float32Array( 0 ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Float64Array( 0 ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Float32Array( [ 1.0, 1.0 ] ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Float64Array( [ 1.0, 1.0 ] ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
 	// Complex typed array:
-	arr = Complex64Array.from( new Complex64Array( 0 ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex64Array( 0 ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex64Array( [ 1.0, 1.0 ] ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex64Array( [ 1.0, 1.0 ] ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex128Array( 0 ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex128Array( 0 ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex128Array( [ 1.0, 1.0 ] ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex128Array( [ 1.0, 1.0 ] ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
@@ -333,13 +333,13 @@ tape( 'the method returns a complex number array', function test( t ) {
 });
 
 tape( 'the method returns a complex number array (iterable)', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var iter1;
 	var iter2;
 	var arr;
 	var v;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -349,8 +349,8 @@ tape( 'the method returns a complex number array (iterable)', function test( t )
 		'i': 0,
 		'N': 4
 	};
-	arr = Complex64Array.from( createIterable( iter1 ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( createIterable( iter1 ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, iter1.N, 'returns expected value' );
@@ -360,8 +360,8 @@ tape( 'the method returns a complex number array (iterable)', function test( t )
 		'i': 0,
 		'N': 4
 	};
-	arr = Complex64Array.from( createIterable( iter2 ) );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( createIterable( iter2 ) );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, iter2.N, 'returns expected value' );
@@ -398,7 +398,7 @@ tape( 'the method returns a complex number array (iterable)', function test( t )
 		iter2.i += 1;
 		if ( iter2.i <= iter2.N ) {
 			return {
-				'value': new Complex64( 1.0, 1.0 )
+				'value': new Complex128( 1.0, 1.0 )
 			};
 		}
 		return {
@@ -413,105 +413,105 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 	var v;
 
 	// Generic array:
-	arr = Complex64Array.from( [], clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [], clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( [ 1.0, 2.0, 3.0, 4.0 ], clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ 1.0, 2.0, 3.0, 4.0 ], clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 2, 'returns expected value' );
 
 	// Generic array containing complex numbers:
-	arr = Complex64Array.from( [ new Complex64( 1.0, 1.0 ) ], clbk2 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ new Complex128( 1.0, 1.0 ) ], clbk2 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	arr = Complex64Array.from( [ new Complex64( 1.0, 1.0 ) ], clbk3a );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ new Complex128( 1.0, 1.0 ) ], clbk3a );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	z = new Complex64( 1.0, 0.0 );
+	z = new Complex128( 1.0, 0.0 );
 	z.valueOf = valueOf( z );
-	arr = Complex64Array.from( [ z, 1.0 ], clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ z, 1.0 ], clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	z = new Complex64( 1.0, 0.0 );
+	z = new Complex128( 1.0, 0.0 );
 	z.valueOf = valueOf( z );
-	arr = Complex64Array.from( [ 1.0, z ], clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ 1.0, z ], clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
 	// Typed array:
-	arr = Complex64Array.from( new Float32Array( 0 ), clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Float64Array( 0 ), clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Float32Array( [ 1.0, 1.0 ] ), clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Float64Array( [ 1.0, 1.0 ] ), clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
 	// Complex typed array:
-	arr = Complex64Array.from( new Complex64Array( 0 ), clbk3a );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex64Array( 0 ), clbk3a );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex64Array( [ 1.0, 1.0 ] ), clbk3a );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex64Array( [ 1.0, 1.0 ] ), clbk3a );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex64Array( 0 ), clbk3b );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex64Array( 0 ), clbk3b );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex64Array( [ 1.0, 1.0 ] ), clbk3b );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex64Array( [ 1.0, 1.0 ] ), clbk3b );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex128Array( 0 ), clbk4a );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex128Array( 0 ), clbk4a );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex128Array( [ 1.0, 1.0 ] ), clbk4a );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex128Array( [ 1.0, 1.0 ] ), clbk4a );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex128Array( 0 ), clbk4b );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex128Array( 0 ), clbk4b );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 0, 'returns expected value' );
 
-	arr = Complex64Array.from( new Complex128Array( [ 1.0, 1.0 ] ), clbk4b );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( new Complex128Array( [ 1.0, 1.0 ] ), clbk4b );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, 1, 'returns expected value' );
@@ -533,7 +533,7 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 	}
 
 	function clbk3a( v ) {
-		return new Complex64( realf(v)*2.0, imagf(v)*2.0 );
+		return new Complex128( realf(v)*2.0, imagf(v)*2.0 );
 	}
 
 	function clbk3b( v ) {
@@ -541,7 +541,7 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 	}
 
 	function clbk4a( v ) {
-		return new Complex64( real(v)*2.0, imag(v)*2.0 );
+		return new Complex128( real(v)*2.0, imag(v)*2.0 );
 	}
 
 	function clbk4b( v ) {
@@ -550,13 +550,13 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 });
 
 tape( 'the method supports providing a "map" function which is invoked for each iterated value', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var iter1;
 	var iter2;
 	var arr;
 	var v;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -566,8 +566,8 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 		'i': 0,
 		'N': 4
 	};
-	arr = Complex64Array.from( createIterable( iter1 ), clbk1 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( createIterable( iter1 ), clbk1 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, iter1.N, 'returns expected value' );
@@ -577,8 +577,8 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 		'i': 0,
 		'N': 4
 	};
-	arr = Complex64Array.from( createIterable( iter2 ), clbk2 );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( createIterable( iter2 ), clbk2 );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 
 	v = arr.length;
 	t.strictEqual( v, iter2.N, 'returns expected value' );
@@ -621,7 +621,7 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 		iter2.i += 1;
 		if ( iter2.i <= iter2.N ) {
 			return {
-				'value': new Complex64( 1.0, 1.0 )
+				'value': new Complex128( 1.0, 1.0 )
 			};
 		}
 		return {
@@ -630,7 +630,7 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 	}
 
 	function clbk2( v ) {
-		return new Complex64( realf(v)*2.0, imagf(v)*2.0 );
+		return new Complex128( real(v)*2.0, imag(v)*2.0 );
 	}
 });
 
@@ -641,16 +641,16 @@ tape( 'the method supports providing a `this` context for a provided map functio
 	ctx = {
 		'count': 0
 	};
-	arr = Complex64Array.from( [ 1.0, 2.0, 3.0, 4.0 ], clbk1, ctx );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( [ 1.0, 2.0, 3.0, 4.0 ], clbk1, ctx );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 	t.strictEqual( ctx.count, 4, 'returns expected value' );
 
 	ctx = {
 		'count': 0
 	};
-	arr = [ new Complex64( 1.0, 1.0 ), new Complex64( -1.0, -1.0 ) ];
-	arr = Complex64Array.from( arr, clbk2, ctx );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = [ new Complex128( 1.0, 1.0 ), new Complex128( -1.0, -1.0 ) ];
+	arr = Complex128Array.from( arr, clbk2, ctx );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 	t.strictEqual( ctx.count, 2, 'returns expected value' );
 
 	t.end();
@@ -662,17 +662,17 @@ tape( 'the method supports providing a `this` context for a provided map functio
 
 	function clbk2( v ) {
 		this.count += 1; // eslint-disable-line no-invalid-this
-		return new Complex64( realf(v)*2.0, imagf(v)*2.0 );
+		return new Complex128( real(v)*2.0, imag(v)*2.0 );
 	}
 });
 
 tape( 'the method supports providing a `this` context for a provided map function (iterable)', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var iter;
 	var ctx;
 	var arr;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -686,8 +686,8 @@ tape( 'the method supports providing a `this` context for a provided map functio
 		'count': 0
 	};
 
-	arr = Complex64Array.from( createIterable( iter ), clbk, ctx );
-	t.strictEqual( arr instanceof Complex64Array, true, 'returns expected value' );
+	arr = Complex128Array.from( createIterable( iter ), clbk, ctx );
+	t.strictEqual( arr instanceof Complex128Array, true, 'returns expected value' );
 	t.strictEqual( ctx.count, 4, 'returns expected value' );
 
 	t.end();
@@ -732,14 +732,14 @@ tape( 'the method throws an error if provided a generic array-like object having
 
 	values = [
 		[ 1, 2, 3 ],
-		new Float32Array( [ 1, 2, 3 ] ),
+		new Float64Array( [ 1, 2, 3 ] ),
 		{
 			'length': 3,
 			'0': 1,
 			'1': 2,
 			'2': 3
 		},
-		[ new Complex64( 1.0, 1.0 ), 1.0, 1.0 ]
+		[ new Complex128( 1.0, 1.0 ), 1.0, 1.0 ]
 	];
 	for ( i = 0; i < values.length; i++ ) {
 		t.throws( badValue( values[i] ), RangeError, 'throws an error when provided an array-like object having a length equal to '+values[i] );
@@ -748,7 +748,7 @@ tape( 'the method throws an error if provided a generic array-like object having
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value );
+			return Complex128Array.from( value );
 		};
 	}
 });
@@ -759,14 +759,14 @@ tape( 'the method throws an error if provided a generic array-like object having
 
 	values = [
 		[ 1, 2, 3 ],
-		new Float32Array( [ 1, 2, 3 ] ),
+		new Float64Array( [ 1, 2, 3 ] ),
 		{
 			'length': 3,
 			'0': 1,
 			'1': 2,
 			'2': 3
 		},
-		[ new Complex64( 1.0, 1.0 ), 1.0, 1.0 ]
+		[ new Complex128( 1.0, 1.0 ), 1.0, 1.0 ]
 	];
 	for ( i = 0; i < values.length; i++ ) {
 		t.throws( badValue( values[i] ), RangeError, 'throws an error when provided an array-like object having a length equal to '+values[i] );
@@ -775,7 +775,7 @@ tape( 'the method throws an error if provided a generic array-like object having
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -785,11 +785,11 @@ tape( 'the method throws an error if provided a generic array-like object having
 });
 
 tape( 'the method throws an error if provided a non-iterable object (non-ES2015+)', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var values;
 	var i;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport
 	});
 
@@ -808,7 +808,7 @@ tape( 'the method throws an error if provided a non-iterable object (non-ES2015+
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value );
+			return Complex128Array.from( value );
 		};
 	}
 
@@ -818,11 +818,11 @@ tape( 'the method throws an error if provided a non-iterable object (non-ES2015+
 });
 
 tape( 'the method throws an error if provided a non-iterable object (ES2015+)', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var values;
 	var i;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -854,7 +854,7 @@ tape( 'the method throws an error if provided a non-iterable object (ES2015+)', 
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value );
+			return Complex128Array.from( value );
 		};
 	}
 
@@ -872,11 +872,11 @@ tape( 'the method throws an error if provided a non-iterable object (ES2015+)', 
 });
 
 tape( 'the method throws an error if provided an iterable object which does not return complex numbers or arrays of real and imaginary components', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var values;
 	var i;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -896,7 +896,7 @@ tape( 'the method throws an error if provided an iterable object which does not 
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value );
+			return Complex128Array.from( value );
 		};
 	}
 
@@ -928,11 +928,11 @@ tape( 'the method throws an error if provided an iterable object which does not 
 });
 
 tape( 'the method throws an error if provided an iterable object which does not return an array-like object containing at least two elements', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var values;
 	var i;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -952,7 +952,7 @@ tape( 'the method throws an error if provided an iterable object which does not 
 
 	function badValue( value ) {
 		return function badValue() {
-			return Complex64Array.from( value );
+			return Complex128Array.from( value );
 		};
 	}
 
@@ -989,8 +989,8 @@ tape( 'the method throws an error if provided a complex number source array and 
 	var i;
 
 	values = [
-		[ new Complex64( 1.0, 1.0 ) ],
-		[ new Complex64( 1.0, 1.0 ), new Complex64( -1.0, -1.0 ) ]
+		[ new Complex128( 1.0, 1.0 ) ],
+		[ new Complex128( 1.0, 1.0 ), new Complex128( -1.0, -1.0 ) ]
 	];
 	clbks = [
 		clbk1,
@@ -1003,7 +1003,7 @@ tape( 'the method throws an error if provided a complex number source array and 
 
 	function badValue( value, clbk ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -1022,8 +1022,8 @@ tape( 'the method throws an error if provided a complex number source array and 
 	var i;
 
 	values = [
-		[ new Complex64( 1.0, 1.0 ) ],
-		[ new Complex64( 1.0, 1.0 ), new Complex64( -1.0, -1.0 ) ]
+		[ new Complex128( 1.0, 1.0 ) ],
+		[ new Complex128( 1.0, 1.0 ), new Complex128( -1.0, -1.0 ) ]
 	];
 	clbks = [
 		clbk1,
@@ -1036,7 +1036,7 @@ tape( 'the method throws an error if provided a complex number source array and 
 
 	function badValue( value, clbk ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -1055,8 +1055,8 @@ tape( 'the method throws an error if provided a complex number source array and 
 	var i;
 
 	values = [
-		new Complex64Array( [ 1.0, 1.0 ] ),
-		new Complex64Array( [ 1.0, 1.0, -1.0, -1.0 ] )
+		new Complex128Array( [ 1.0, 1.0 ] ),
+		new Complex128Array( [ 1.0, 1.0, -1.0, -1.0 ] )
 	];
 	clbks = [
 		clbk1,
@@ -1069,7 +1069,7 @@ tape( 'the method throws an error if provided a complex number source array and 
 
 	function badValue( value, clbk ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -1088,8 +1088,8 @@ tape( 'the method throws an error if provided a complex number source array and 
 	var i;
 
 	values = [
-		new Complex64Array( [ 1.0, 1.0 ] ),
-		new Complex64Array( [ 1.0, 1.0, -1.0, -1.0 ] )
+		new Complex128Array( [ 1.0, 1.0 ] ),
+		new Complex128Array( [ 1.0, 1.0, -1.0, -1.0 ] )
 	];
 	clbks = [
 		clbk1,
@@ -1102,7 +1102,7 @@ tape( 'the method throws an error if provided a complex number source array and 
 
 	function badValue( value, clbk ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -1116,12 +1116,12 @@ tape( 'the method throws an error if provided a complex number source array and 
 });
 
 tape( 'the method throws an error if provided a "map" function which does not return complex numbers or arrays of real and imaginary components (iterable)', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var values;
 	var clbks;
 	var i;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -1145,7 +1145,7 @@ tape( 'the method throws an error if provided a "map" function which does not re
 
 	function badValue( value, clbk ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -1175,7 +1175,7 @@ tape( 'the method throws an error if provided a "map" function which does not re
 
 	function next2() {
 		return {
-			'value': new Complex64( 1.0, 1.0 )
+			'value': new Complex128( 1.0, 1.0 )
 		};
 	}
 
@@ -1185,12 +1185,12 @@ tape( 'the method throws an error if provided a "map" function which does not re
 });
 
 tape( 'the method throws an error if provided a "map" function which does not return an array containing at least two elements (iterable)', function test( t ) {
-	var Complex64Array;
+	var Complex128Array;
 	var values;
 	var clbks;
 	var i;
 
-	Complex64Array = proxyquire( './../lib/main.js', {
+	Complex128Array = proxyquire( './../lib/main.js', {
 		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
 		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
 	});
@@ -1214,7 +1214,7 @@ tape( 'the method throws an error if provided a "map" function which does not re
 
 	function badValue( value, clbk ) {
 		return function badValue() {
-			return Complex64Array.from( value, clbk );
+			return Complex128Array.from( value, clbk );
 		};
 	}
 
@@ -1244,7 +1244,7 @@ tape( 'the method throws an error if provided a "map" function which does not re
 
 	function next2() {
 		return {
-			'value': new Complex64( 1.0, 1.0 )
+			'value': new Complex128( 1.0, 1.0 )
 		};
 	}
 
