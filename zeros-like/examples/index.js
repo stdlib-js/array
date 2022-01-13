@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,20 +18,20 @@
 
 'use strict';
 
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var dtypes = require( './../../typed-real-dtypes' );
-var filledarrayBy = require( './../lib' );
+var dtypes = require( './../../dtypes' );
+var zeros = require( './../../zeros' );
+var zerosLike = require( './../lib' );
 
-// Create a pseudorandom number generator:
-var rand = discreteUniform( 0, 100 );
+// Create a zero-filled array:
+var x = zeros( 4, 'complex128' );
 
 // Get a list of array data types:
 var dt = dtypes();
 
-// Generate filled arrays...
-var arr;
+// Generate additional zero-filled arrays...
+var y;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-	arr = filledarrayBy( 10, dt[ i ], rand );
-	console.log( arr );
+	y = zerosLike( x, dt[ i ] );
+	console.log( y );
 }

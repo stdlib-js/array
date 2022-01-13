@@ -19,7 +19,7 @@
 'use strict';
 
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var dtypes = require( './../../typed-dtypes' );
+var dtypes = require( './../../typed-real-dtypes' );
 var filledarray = require( './../lib' );
 
 // Generate a random number:

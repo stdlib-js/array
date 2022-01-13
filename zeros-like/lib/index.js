@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,20 +18,29 @@
 
 'use strict';
 
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var dtypes = require( './../../typed-real-dtypes' );
-var filledarrayBy = require( './../lib' );
+/**
+* Create a zero-filled array having the same length and data type as a provided input array.
+*
+* @module @stdlib/array/zeros-like
+*
+* @example
+* var zerosLike = require( '@stdlib/array/zeros-like' );
+*
+* var arr = zerosLike( [ 0.0, 0.0 ] );
+* // returns [ 0.0, 0.0 ]
+*
+* @example
+* var zerosLike = require( '@stdlib/array/zeros-like' );
+*
+* var arr = zerosLike( [ 0.0, 0.0 ], 'float32' );
+* // returns <Float32Array>[ 0.0, 0.0 ]
+*/
 
-// Create a pseudorandom number generator:
-var rand = discreteUniform( 0, 100 );
+// MODULES //
 
-// Get a list of array data types:
-var dt = dtypes();
+var main = require( './main.js' );
 
-// Generate filled arrays...
-var arr;
-var i;
-for ( i = 0; i < dt.length; i++ ) {
-	arr = filledarrayBy( 10, dt[ i ], rand );
-	console.log( arr );
-}
+
+// EXPORTS //
+
+module.exports = main;
