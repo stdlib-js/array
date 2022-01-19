@@ -21,13 +21,15 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex128Array, Complex64Array, AnyArray, DataType } from '@stdlib/types/array';
+import { ComplexLike } from '@stdlib/types/object';
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -35,17 +37,18 @@ import { Complex128Array, Complex64Array, AnyArray, DataType } from '@stdlib/typ
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'float64' );
-* // returns <Float64Array>[ 0.0, 0.0 ]
+* var y = fullLike( x, 1.0, 'float64' );
+* // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'float64' ): Float64Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float64Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -53,17 +56,22 @@ declare function zerosLike( x: AnyArray, dtype: 'float64' ): Float64Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'float32' );
-* // returns <Float32Array>[ 0.0, 0.0 ]
+* var y = fullLike( x, 1.0, 'float32' );
+* // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'float32' ): Float32Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float32Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
+*
+* ## Notes
+*
+* -   If provided a number, the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -71,17 +79,22 @@ declare function zerosLike( x: AnyArray, dtype: 'float32' ): Float32Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'complex128' );
+* var y = fullLike( x, 1.0, 'complex128' );
 * // returns <Complex128Array>
 */
-declare function zerosLike( x: AnyArray, dtype: 'complex128' ): Complex128Array;
+declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'complex128' ): Complex128Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
+*
+* ## Notes
+*
+* -   If provided a number, the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -89,17 +102,18 @@ declare function zerosLike( x: AnyArray, dtype: 'complex128' ): Complex128Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'complex64' );
+* var y = fullLike( x, 1.0, 'complex64' );
 * // returns <Complex64Array>
 */
-declare function zerosLike( x: AnyArray, dtype: 'complex64' ): Complex64Array;
+declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'complex64' ): Complex64Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -107,17 +121,18 @@ declare function zerosLike( x: AnyArray, dtype: 'complex64' ): Complex64Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'int32' );
-* // returns <Int32Array>[ 0, 0 ]
+* var y = fullLike( x, 1, 'int32' );
+* // returns <Int32Array>[ 1, 1 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'int32' ): Int32Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'int32' ): Int32Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -125,17 +140,18 @@ declare function zerosLike( x: AnyArray, dtype: 'int32' ): Int32Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'int16' );
-* // returns <Int16Array>[ 0, 0 ]
+* var y = fullLike( x, 1, 'int16' );
+* // returns <Int16Array>[ 1, 1 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'int16' ): Int16Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'int16' ): Int16Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -143,17 +159,37 @@ declare function zerosLike( x: AnyArray, dtype: 'int16' ): Int16Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'int8' );
-* // returns <Int8Array>[ 0, 0 ]
+* var y = fullLike( x, 1, 'int8' );
+* // returns <Int8Array>[ 1, 1 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'int8' ): Int8Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'int8' ): Int8Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
+*
+* @example
+* var zeros = require( `@stdlib/array/zeros` );
+*
+* var x = zeros( 2, 'float64' );
+* // returns <Float64Array>[ 0, 0 ]
+*
+* var y = fullLike( x, 1, 'uint32' );
+* // returns <Uint32Array>[ 1, 1 ]
+*/
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint32' ): Uint32Array; // tslint:disable-line:max-line-length
+
+/**
+* Creates a filled array having the same length as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param value - fill value
+* @param dtype - data type
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -161,17 +197,18 @@ declare function zerosLike( x: AnyArray, dtype: 'int8' ): Int8Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'uint32' );
-* // returns <Uint32Array>[ 0, 0 ]
+* var y = fullLike( x, 1, 'uint16' );
+* // returns <Uint16Array>[ 1, 1 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'uint32' ): Uint32Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint16' ): Uint16Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -179,17 +216,18 @@ declare function zerosLike( x: AnyArray, dtype: 'uint32' ): Uint32Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'uint16' );
-* // returns <Uint16Array>[ 0, 0 ]
+* var y = fullLike( x, 1, 'uint8' );
+* // returns <Uint8Array>[ 1, 1 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'uint16' ): Uint16Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint8' ): Uint8Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -197,17 +235,18 @@ declare function zerosLike( x: AnyArray, dtype: 'uint16' ): Uint16Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'uint8' );
-* // returns <Uint8Array>[ 0, 0 ]
+* var y = fullLike( x, 1, 'uint8c' );
+* // returns <Uint8ClampedArray>[ 1, 1 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'uint8' ): Uint8Array;
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint8c' ): Uint8ClampedArray; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
+* Creates a filled array having the same length as a provided input array.
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -215,31 +254,13 @@ declare function zerosLike( x: AnyArray, dtype: 'uint8' ): Uint8Array;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'uint8c' );
-* // returns <Uint8ClampedArray>[ 0, 0 ]
+* var y = fullLike( x, 1.0, 'generic' );
+* // returns [ 1.0, 1.0 ]
 */
-declare function zerosLike( x: AnyArray, dtype: 'uint8c' ): Uint8ClampedArray;
+declare function fullLike( x: AnyArray, value: any, dtype: 'generic' ): Array<any>; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length as a provided input array.
-*
-* @param x - input array from which to derive the output array length
-* @param dtype - data type
-* @returns zero-filled array
-*
-* @example
-* var zeros = require( `@stdlib/array/zeros` );
-*
-* var x = zeros( 2, 'float64' );
-* // returns <Float64Array>[ 0.0, 0.0 ]
-*
-* var y = zerosLike( x, 'generic' );
-* // returns [ 0.0, 0.0 ]
-*/
-declare function zerosLike( x: AnyArray, dtype: 'generic' ): Array<number>;
-
-/**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -257,8 +278,9 @@ declare function zerosLike( x: AnyArray, dtype: 'generic' ): Array<number>;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -266,13 +288,13 @@ declare function zerosLike( x: AnyArray, dtype: 'generic' ): Array<number>;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x );
-* // returns <Float64Array>[ 0.0, 0.0 ]
+* var y = fullLike( x, 1.0 );
+* // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function zerosLike( x: Float64Array, dtype?: DataType ): Float64Array;
+declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): Float64Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -290,8 +312,9 @@ declare function zerosLike( x: Float64Array, dtype?: DataType ): Float64Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -299,13 +322,13 @@ declare function zerosLike( x: Float64Array, dtype?: DataType ): Float64Array;
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x );
-* // returns <Float32Array>[ 0.0, 0.0 ]
+* var y = fullLike( x, 1.0 );
+* // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function zerosLike( x: Float32Array, dtype?: DataType ): Float32Array;
+declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): Float32Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -322,9 +345,14 @@ declare function zerosLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
 * -   `generic`: generic JavaScript values
 *
+* ## Notes
+*
+* -   If provided a number, the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
+*
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -332,13 +360,13 @@ declare function zerosLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * var x = zeros( 2, 'complex128' );
 * // returns <Complex128Array>
 *
-* var y = zerosLike( x );
+* var y = fullLike( x, 1.0 );
 * // returns <Complex128Array>
 */
-declare function zerosLike( x: Complex128Array, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Complex128Array, value: number | ComplexLike, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -355,9 +383,14 @@ declare function zerosLike( x: Complex128Array, dtype?: DataType ): Complex128Ar
 * -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
 * -   `generic`: generic JavaScript values
 *
+* ## Notes
+*
+* -   If provided a number, the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
+*
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -365,13 +398,13 @@ declare function zerosLike( x: Complex128Array, dtype?: DataType ): Complex128Ar
 * var x = zeros( 2, 'complex64' );
 * // returns <Complex64Array>
 *
-* var y = zerosLike( x );
+* var y = fullLike( x, 1.0 );
 * // returns <Complex64Array>
 */
-declare function zerosLike( x: Complex64Array, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Complex64Array, value: number | ComplexLike, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -389,8 +422,9 @@ declare function zerosLike( x: Complex64Array, dtype?: DataType ): Complex64Arra
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -398,13 +432,13 @@ declare function zerosLike( x: Complex64Array, dtype?: DataType ): Complex64Arra
 * var x = zeros( 2, 'int32' );
 * // returns <Int32Array>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Int32Array>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Int32Array>[ 1, 1 ]
 */
-declare function zerosLike( x: Int32Array, dtype?: DataType ): Int32Array;
+declare function fullLike( x: Int32Array, value: number, dtype?: DataType ): Int32Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -422,8 +456,9 @@ declare function zerosLike( x: Int32Array, dtype?: DataType ): Int32Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -431,13 +466,13 @@ declare function zerosLike( x: Int32Array, dtype?: DataType ): Int32Array;
 * var x = zeros( 2, 'int16' );
 * // returns <Int16Array>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Int16Array>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Int16Array>[ 1, 1 ]
 */
-declare function zerosLike( x: Int16Array, dtype?: DataType ): Int16Array;
+declare function fullLike( x: Int16Array, value: number, dtype?: DataType ): Int16Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -455,8 +490,9 @@ declare function zerosLike( x: Int16Array, dtype?: DataType ): Int16Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -464,13 +500,13 @@ declare function zerosLike( x: Int16Array, dtype?: DataType ): Int16Array;
 * var x = zeros( 2, 'int8' );
 * // returns <Int8Array>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Int8Array>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Int8Array>[ 1, 1 ]
 */
-declare function zerosLike( x: Int8Array, dtype?: DataType ): Int8Array;
+declare function fullLike( x: Int8Array, value: number, dtype?: DataType ): Int8Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -488,8 +524,9 @@ declare function zerosLike( x: Int8Array, dtype?: DataType ): Int8Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -497,13 +534,13 @@ declare function zerosLike( x: Int8Array, dtype?: DataType ): Int8Array;
 * var x = zeros( 2, 'uint32' );
 * // returns <Uint32Array>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Uint32Array>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Uint32Array>[ 1, 1 ]
 */
-declare function zerosLike( x: Uint32Array, dtype?: DataType ): Uint32Array;
+declare function fullLike( x: Uint32Array, value: number, dtype?: DataType ): Uint32Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -521,8 +558,9 @@ declare function zerosLike( x: Uint32Array, dtype?: DataType ): Uint32Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -530,13 +568,13 @@ declare function zerosLike( x: Uint32Array, dtype?: DataType ): Uint32Array;
 * var x = zeros( 2, 'uint16' );
 * // returns <Uint16Array>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Uint16Array>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Uint16Array>[ 1, 1 ]
 */
-declare function zerosLike( x: Uint16Array, dtype?: DataType ): Uint16Array;
+declare function fullLike( x: Uint16Array, value: number, dtype?: DataType ): Uint16Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -554,8 +592,9 @@ declare function zerosLike( x: Uint16Array, dtype?: DataType ): Uint16Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -563,13 +602,13 @@ declare function zerosLike( x: Uint16Array, dtype?: DataType ): Uint16Array;
 * var x = zeros( 2, 'uint8' );
 * // returns <Uint8Array>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Uint8Array>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Uint8Array>[ 1, 1 ]
 */
-declare function zerosLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
+declare function fullLike( x: Uint8Array, value: number, dtype?: DataType ): Uint8Array; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -587,8 +626,9 @@ declare function zerosLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -596,13 +636,13 @@ declare function zerosLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
 * var x = zeros( 2, 'uint8c' );
 * // returns <Uint8ClampedArray>[ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns <Uint8ClampedArray>[ 0, 0 ]
+* var y = fullLike( x, 1 );
+* // returns <Uint8ClampedArray>[ 1, 1 ]
 */
-declare function zerosLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function fullLike( x: Uint8ClampedArray, value: number, dtype?: DataType ): Uint8ClampedArray; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -620,8 +660,9 @@ declare function zerosLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8Clamp
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -629,13 +670,13 @@ declare function zerosLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8Clamp
 * var x = zeros( 2, 'generic' );
 * // returns [ 0, 0 ]
 *
-* var y = zerosLike( x );
-* // returns [ 0, 0 ]
+* var y = fullLike( x, 1.0 );
+* // returns [ 1.0, 1.0 ]
 */
-declare function zerosLike( x: Array<any>, dtype?: DataType ): Array<number>;
+declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<any>; // tslint:disable-line:max-line-length
 
 /**
-* Creates a zero-filled array having the same length and data type as a provided input array.
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * The function supports the following data types:
 *
@@ -653,8 +694,9 @@ declare function zerosLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
+* @param value - fill value
 * @param dtype - data type
-* @returns zero-filled array
+* @returns filled array
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -662,8 +704,8 @@ declare function zerosLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x );
-* // returns <Float64Array>[ 0.0, 0.0 ]
+* var y = fullLike( x, 1.0 );
+* // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
 * var zeros = require( `@stdlib/array/zeros` );
@@ -671,12 +713,12 @@ declare function zerosLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var y = zerosLike( x, 'float32' );
-* // returns <Float32Array>[ 0.0, 0.0 ]
+* var y = fullLike( x, 1.0, 'float32' );
+* // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function zerosLike( x: AnyArray, dtype?: DataType ): AnyArray;
+declare function fullLike( x: AnyArray, value: any, dtype?: DataType ): AnyArray; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
 
-export = zerosLike;
+export = fullLike;

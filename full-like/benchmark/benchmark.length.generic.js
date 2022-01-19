@@ -25,7 +25,7 @@ var pow = require( '@stdlib/math/base/special/pow' );
 var isArray = require( '@stdlib/assert/is-array' );
 var zeros = require( './../../zeros' );
 var pkg = require( './../package.json' ).name;
-var zerosLike = require( './../lib' );
+var fullLike = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -53,7 +53,7 @@ function createBenchmark( len ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			arr = zerosLike( x );
+			arr = fullLike( x, 1.0 );
 			if ( arr.length !== len ) {
 				b.fail( 'unexpected length' );
 			}

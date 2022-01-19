@@ -20,15 +20,21 @@
 
 // MODULES //
 
-var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
-var ctors = require( './../../ctors' );
-var gzeros = require( './../../base/zeros' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var Complex64 = require( '@stdlib/complex/float32' );
+var full = require( './../../full' );
+
+
+// VARIABLES //
+
+var Z128 = new Complex128( 1.0, 0.0 );
+var Z64 = new Complex64( 1.0, 0.0 );
 
 
 // MAIN //
 
 /**
-* Creates a zero-filled array having a specified length.
+* Creates an array filled with ones and having a specified length.
 *
 * @param {NonNegativeInteger} length - array length
 * @param {string} [dtype="float64"] - data type
@@ -37,35 +43,33 @@ var gzeros = require( './../../base/zeros' );
 * @returns {(TypedArray|Array|ComplexArray)} array or typed array
 *
 * @example
-* var arr = zeros( 2 );
-* // returns <Float64Array>[ 0.0, 0.0 ]
+* var arr = ones( 2 );
+* // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var arr = zeros( 2, 'float32' );
-* // returns <Float32Array>[ 0.0, 0.0 ]
+* var arr = ones( 2, 'float32' );
+* // returns <Float32Array>[ 1.0, 1.0 ]
 */
-function zeros( length ) {
+function ones( length ) {
 	var dtype;
-	var ctor;
-	if ( !isNonNegativeInteger( length ) ) {
-		throw new TypeError( 'invalid argument. First argument must be a nonnegative integer. Value: `' + length + '`.' );
-	}
+	var value;
+
 	if ( arguments.length > 1 ) {
 		dtype = arguments[ 1 ];
 	} else {
 		dtype = 'float64';
 	}
-	if ( dtype === 'generic' ) {
-		return gzeros( length );
+	if ( dtype === 'complex128' ) {
+		value = Z128;
+	} else if ( dtype === 'complex64' ) {
+		value = Z64;
+	} else {
+		value = 1;
 	}
-	ctor = ctors( dtype );
-	if ( ctor === null ) {
-		throw new TypeError( 'invalid argument. Second argument must be a recognized data type. Value: `' + dtype + '`.' );
-	}
-	return new ctor( length ); // WARNING: we assume that, apart from 'generic', the constructors for supported array data types are zero-filled by default
+	return full( length, value, dtype );
 }
 
 
 // EXPORTS //
 
-module.exports = zeros;
+module.exports = ones;

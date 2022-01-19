@@ -22,10 +22,10 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var isArray = require( '@stdlib/assert/is-array' );
-var zeros = require( './../../zeros' );
+var isTypedArrayLike = require( '@stdlib/assert/is-typed-array-like' );
+var Complex128 = require( '@stdlib/complex/float64' );
 var pkg = require( './../package.json' ).name;
-var zerosLike = require( './../lib' );
+var full = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -38,7 +38,6 @@ var zerosLike = require( './../lib' );
 * @returns {Function} benchmark function
 */
 function createBenchmark( len ) {
-	var x = zeros( len, 'generic' );
 	return benchmark;
 
 	/**
@@ -49,18 +48,21 @@ function createBenchmark( len ) {
 	*/
 	function benchmark( b ) {
 		var arr;
+		var v;
 		var i;
+
+		v = new Complex128( 1.0, 2.0 );
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			arr = zerosLike( x );
+			arr = full( len, v, 'complex128' );
 			if ( arr.length !== len ) {
 				b.fail( 'unexpected length' );
 			}
 		}
 		b.toc();
-		if ( !isArray( arr ) ) {
-			b.fail( 'should return an array' );
+		if ( !isTypedArrayLike( arr ) ) {
+			b.fail( 'should return a typed array' );
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
@@ -88,7 +90,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+':dtype=generic,len='+len, f );
+		bench( pkg+':dtype=complex128,len='+len, f );
 	}
 }
 
