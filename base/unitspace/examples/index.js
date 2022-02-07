@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,27 +18,22 @@
 
 'use strict';
 
-// MODULES //
+var sort2hp = require( '@stdlib/blas/ext/base/gsort2hp' );
+var filledBy = require( './../../../base/filled-by' );
+var randu = require( '@stdlib/random/base/randu' );
+var unitspace = require( './../lib' );
 
-var DTYPES = require( './dtypes.json' );
+// Generate an array of random numbers:
+var x = filledBy( 10, randu );
 
+// Generate an array of indices:
+var idx = unitspace( 0, x.length );
 
-// MAIN //
+// Create a temporary array to avoid mutation:
+var tmp = x.slice();
 
-/**
-* Returns a list of array data types.
-*
-* @returns {StringArray} list of array data types
-*
-* @example
-* var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
-*/
-function dtypes() {
-	return DTYPES.slice();
-}
+// Sort the index array according to the sort order of `x`:
+sort2hp( x.length, 1, tmp, 1, idx, 1 );
 
-
-// EXPORTS //
-
-module.exports = dtypes;
+console.log( x );
+console.log( idx );

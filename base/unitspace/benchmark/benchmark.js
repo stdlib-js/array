@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,25 +20,29 @@
 
 // MODULES //
 
-var DTYPES = require( './dtypes.json' );
+var bench = require( '@stdlib/bench' );
+var isArray = require( '@stdlib/assert/is-array' );
+var pkg = require( './../package.json' ).name;
+var unitspace = require( './../lib' );
 
 
 // MAIN //
 
-/**
-* Returns a list of array data types.
-*
-* @returns {StringArray} list of array data types
-*
-* @example
-* var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
-*/
-function dtypes() {
-	return DTYPES.slice();
-}
+bench( pkg, function benchmark( b ) {
+	var i;
+	var v;
 
-
-// EXPORTS //
-
-module.exports = dtypes;
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		v = unitspace( i, i+100 );
+		if ( typeof v !== 'object' ) {
+			b.fail( 'should return an array' );
+		}
+	}
+	b.toc();
+	if ( !isArray( v ) ) {
+		b.fail( 'should return an array' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});

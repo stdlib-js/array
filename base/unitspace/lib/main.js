@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,27 +18,36 @@
 
 'use strict';
 
-// MODULES //
-
-var DTYPES = require( './dtypes.json' );
-
-
 // MAIN //
 
 /**
-* Returns a list of array data types.
+* Generates a linearly spaced numeric array whose elements increment by 1.
 *
-* @returns {StringArray} list of array data types
+* @param {number} x1 - first array value
+* @param {number} x2 - array element bound
+* @returns {Array} linearly spaced numeric array
 *
 * @example
-* var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
+* var arr = unitspace( 0, 6 );
+* // returns [ 0, 1, 2, 3, 4, 5 ]
 */
-function dtypes() {
-	return DTYPES.slice();
+function unitspace( x1, x2 ) {
+	var arr;
+	var len;
+	var i;
+
+	len = x2 - x1;
+	if ( len <= 1 ) {
+		return [ x1 ];
+	}
+	arr = [ x1 ];
+	for ( i = 1; i < len; i++ ) {
+		arr.push( x1 + i );
+	}
+	return arr;
 }
 
 
 // EXPORTS //
 
-module.exports = dtypes;
+module.exports = unitspace;

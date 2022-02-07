@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2021 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,25 +18,25 @@ limitations under the License.
 
 -->
 
-# incrspace
+# unitspace
 
-> Generate a linearly spaced numeric array according to a provided increment.
+> Generate a linearly spaced numeric array whose elements increment by 1.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var incrspace = require( '@stdlib/array/base/incrspace' );
+var unitspace = require( '@stdlib/array/base/unitspace' );
 ```
 
-#### incrspace( start, stop, increment )
+#### unitspace( start, stop, increment )
 
-Generates a linearly spaced numeric `array` according to a provided `increment`.
+Generates a linearly spaced numeric `array` whose elements increment by `1`.
 
 ```javascript
-var arr = incrspace( 0, 11, 2 );
-// returns [ 0, 2, 4, 6, 8, 10 ]
+var arr = unitspace( 0, 6 );
+// returns [ 0, 1, 2, 3, 4, 5 ]
 ```
 
 </section>
@@ -50,8 +50,8 @@ var arr = incrspace( 0, 11, 2 );
 -   The output `array` is guaranteed to include the `start` value but does **not** include the `stop` value. Beware that values subsequent to the `start` value are subject to floating-point errors. Hence,
 
     ```javascript
-    var arr = incrspace( 0.1, 0.5, 0.2 );
-    // returns [ 0.1, ~0.3 ]
+    var arr = unitspace( -0.7, 1 );
+    // returns [ -0.7, ~0.3 ]
     ```
 
     where `arr[1]` is only guaranteed to be approximately equal to `0.3`.
@@ -62,7 +62,7 @@ var arr = incrspace( 0, 11, 2 );
     var roundn = require( '@stdlib/math/base/special/roundn' );
     
     // Create an array subject to floating-point errors:
-    var arr = incrspace( 0, 1.01, 0.02 );
+    var arr = unitspace( -10.7, 11.7 );
 
     // Round each value to the nearest hundredth:
     var i;
@@ -84,20 +84,25 @@ var arr = incrspace( 0, 11, 2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/base/incrspace' );
+var sort2hp = require( '@stdlib/blas/ext/base/gsort2hp' );
+var filledBy = require( '@stdlib/array/base/filled-by' );
+var randu = require( '@stdlib/random/base/randu' );
+var unitspace = require( '@stdlib/array/base/unitspace' );
 
-var out = incrspace( 0, 10, 2 );
-console.log( out.join( '\n' ) );
+// Generate an array of random numbers:
+var x = filledBy( 10, randu );
 
-out = incrspace( 0, 11, 2 );
-console.log( out.join( '\n' ) );
+// Generate an array of indices:
+var idx = unitspace( 0, x.length );
 
-out = incrspace( 0, 1.01, 0.02 );
-console.log( out.join( '\n' ) );
+// Create a temporary array to avoid mutation:
+var tmp = x.slice();
 
-// Create an array using a negative increment:
-out = incrspace( 10, 0, -2 );
-console.log( out.join( '\n' ) );
+// Sort the index array according to the sort order of `x`:
+sort2hp( x.length, 1, tmp, 1, idx, 1 );
+
+console.log( x );
+console.log( idx );
 ```
 
 </section>

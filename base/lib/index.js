@@ -109,6 +109,15 @@ setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 setReadOnly( ns, 'ones', require( './../../base/ones' ) );
 
 /**
+* @name unitspace
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/unitspace}
+*/
+setReadOnly( ns, 'unitspace', require( './../../base/unitspace' ) );
+
+/**
 * @name zeros
 * @memberof ns
 * @readonly
