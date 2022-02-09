@@ -46,10 +46,20 @@ var arr = linspace( 0.0, 100.0, 0 );
 // returns <Float64Array>[]
 ```
 
-If `length` is `1`, the function returns an array containing `start`, but not `stop`.
+If `length` is `1`, the function returns an array containing `stop`, but not `start`, when `endpoint` is `true`; otherwise, the function returns an array containing `start`, but not `stop`.
 
 ```javascript
 var arr = linspace( 0.0, 100.0, 1 );
+// returns <Float64Array>[ 100.0 ]
+
+arr = linspace( 0.0, 100.0, 1, {
+    'endpoint': true
+});
+// returns <Float64Array>[ 100.0 ]
+
+arr = linspace( 0.0, 100.0, 1, {
+    'endpoint': false
+});
 // returns <Float64Array>[ 0.0 ]
 ```
 
@@ -62,8 +72,8 @@ var arr = linspace( 0.0, -100.0, 6 );
 
 The function accepts the following `options`:
 
--   **dtype**: output array data type. Must be a [floating-point data type][@stdlib/array/typed-float-dtypes] or "generic". If either `start` or `stop` is a complex number, the default output array data type is `'complex128'`; otherwise, the default output array data type is `'float64'`.
--   **endpoint**: `boolean` indicating whether to include the `stop` value in the output array. This option is only applicable when `length` is greater than `1`. If `false`, the function generates `length + 1` linearly spaced values over the interval `[start, stop]` and only writes `length` values to the output array, thus excluding `stop` from the output array. Accordingly, for a fixed `length`, the spacing between adjacent values in the output array changes depending on the value of `endpoint`. Default: `true`.
+-   **dtype**: output array data type. Must be a [floating-point data type][@stdlib/array/typed-float-dtypes] or `'generic'`. If either `start` or `stop` is a complex number, the default output array data type is `'complex128'`; otherwise, the default output array data type is `'float64'`.
+-   **endpoint**: `boolean` indicating whether to include the `stop` value in the output array. If `false`, the function generates `length + 1` linearly spaced values over the interval `[start, stop]` and only writes `length` values to the output array, thus excluding `stop` from the output array. Accordingly, for a fixed `length`, the spacing between adjacent values in the output array changes depending on the value of `endpoint`. Default: `true`.
 
 By default, the function generates a linearly spaced array over the closed interval `[start, stop]`. To generate linearly spaced values over the half-open interval `[start, stop)`, set the `endpoint` option to `false`.
 
@@ -147,11 +157,21 @@ var arr = linspace.assign( 0.0, 100.0, [] );
 // returns []
 ```
 
-If the provided output array contains a single element, the function writes the `start` value, but not `stop`.
+If the provided output array contains a single element, the function writes the `stop` value, but not `start`, when `endpoint` is `true`; otherwise, the function writes the `start` value, but not `stop`.
 
 ```javascript
 var arr = linspace.assign( 0.0, 100.0, [ -10.0 ] );
-// returns <Float64Array>[ 0.0 ]
+// returns [ 100.0 ]
+
+arr = linspace.assign( 0.0, 100.0, [ -10.0 ], {
+    'endpoint': true
+});
+// returns [ 100.0 ]
+
+arr = linspace.assign( 0.0, 100.0, [ -10.0 ], {
+    'endpoint': false
+});
+// returns [ 0.0 ]
 ```
 
 For real-valued `start` and `stop`, if `start` is less than `stop`, the output array will contain ascending values, and, if `start` is greater than `stop`, the output array will contain descending values.
@@ -166,7 +186,7 @@ var arr = linspace.assign( 0.0, -100.0, out );
 
 The function accepts the following `options`:
 
--   **endpoint**: `boolean` indicating whether to include the `stop` value in the output array. This option is only applicable when the output array length is greater than `1`. If `false`, the function generates `N + 1` linearly spaced values (where `N` is the length of the provided output array) over the interval `[start, stop]` and only writes `N` values to the output array, thus excluding `stop` from the output array. Accordingly, for a fixed `N`, the spacing between adjacent values in the output array changes depending on the value of `endpoint`. Default: `true`.
+-   **endpoint**: `boolean` indicating whether to include the `stop` value in the output array. If `false`, the function generates `N + 1` linearly spaced values (where `N` is the length of the provided output array) over the interval `[start, stop]` and only writes `N` values to the output array, thus excluding `stop` from the output array. Accordingly, for a fixed `N`, the spacing between adjacent values in the output array changes depending on the value of `endpoint`. Default: `true`.
 
 By default, the function generates a linearly spaced array over the closed interval `[start, stop]`. To generate linearly spaced values over the half-open interval `[start, stop)`, set the `endpoint` option to `false`.
 
@@ -211,19 +231,20 @@ var arr = linspace.assign( 0.0, 100.0, out, opts );
     var roundn = require( '@stdlib/math/base/special/roundn' );
 
     // Create an array subject to floating-point rounding errors:
-    var arr = linspace( 0.0, 1.0, 21, {
+    var arr = linspace( 0.0, 1.0, 3, {
         'dtype': 'generic'
     });
 
     // Round each value to the nearest hundredth:
     var i;
     for ( i = 0; i < arr.length; i++ ) {
-        out[ i ] = roundn( arr[ i ], -2 );
+        arr[ i ] = roundn( arr[ i ], -2 );
     }
-    console.log( out.join( '\n' ) );
+    console.log( arr );
+    // => [ 0.0, 0.5, 1.0 ]
     ```
 
--   For both functions, if both `start` and `stop` are real-valued, the output array data type may be any [floating-point data type][@stdlib/array/typed-float-dtypes] or "generic". However, if either `start` or `stop` are complex numbers, the output array type must be a [complex floating-point data type][@stdlib/array/typed-complex-dtypes] or "generic".
+-   For both functions, if both `start` and `stop` are real-valued, the output array data type may be any [floating-point data type][@stdlib/array/typed-float-dtypes] or `'generic'`. However, if either `start` or `stop` are complex numbers, the output array type must be a [complex floating-point data type][@stdlib/array/typed-complex-dtypes] or `'generic'`.
 
 -   While the `assign` method accepts any array-like object for the output array when both `start` and `stop` are real-valued, providing an integer-valued typed array (e.g., [`Int32Array`][@stdlib/array/int32], etc) is not encouraged due to potential rounding errors during value generation and assignment and, thus, irregular spacing between adjacent values. Instead, consider using [`incrspace`][@stdlib/array/incrspace].
 
