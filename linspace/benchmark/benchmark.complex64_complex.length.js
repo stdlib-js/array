@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var randu = require( '@stdlib/random/base/randu' );
-var isArray = require( '@stdlib/assert/is-array' );
+var isArrayLikeObject = require( '@stdlib/assert/is-array-like-object' );
+var Complex64 = require( '@stdlib/complex/float32' );
 var pkg = require( './../package.json' ).name;
 var linspace = require( './../lib' );
 
@@ -47,21 +47,29 @@ function createBenchmark( len ) {
 	* @param {Benchmark} b - benchmark instance
 	*/
 	function benchmark( b ) {
+		var opts;
+		var x1;
 		var x2;
 		var v;
 		var i;
 
+		opts = {
+			'dtype': 'complex64'
+		};
+
+		x1 = new Complex64( 0.0, 0.0 );
+		x2 = new Complex64( 100.0, 10.0 );
+
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			x2 = randu() * 10.0;
-			v = linspace( 0.0, x2, len );
+			v = linspace( x1, x2, len, opts );
 			if ( typeof v !== 'object' ) {
-				b.fail( 'should return an array' );
+				b.fail( 'should return an array-like object' );
 			}
 		}
 		b.toc();
-		if ( !isArray( v ) ) {
-			b.fail( 'should return an array' );
+		if ( !isArrayLikeObject( v ) ) {
+			b.fail( 'should return an array-like object' );
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
@@ -89,7 +97,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+':len='+len, f );
+		bench( pkg+'::complex:dtype=complex64,len='+len, f );
 	}
 }
 

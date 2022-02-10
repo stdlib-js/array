@@ -24,19 +24,27 @@ var bench = require( '@stdlib/bench' );
 var isArrayLikeObject = require( '@stdlib/assert/is-array-like-object' );
 var Complex128 = require( '@stdlib/complex/float64' );
 var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128Array = require( './../../complex128' );
+var Complex64Array = require( './../../complex64' );
+var Float64Array = require( './../../float64' );
+var Float32Array = require( './../../float32' );
+var zeros = require( './../../base/zeros' );
 var pkg = require( './../package.json' ).name;
 var linspace = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+'::default,real', function benchmark( b ) {
+bench( pkg+'::real:assign:dtype=float64', function benchmark( b ) {
+	var out;
 	var v;
 	var i;
 
+	out = new Float64Array( 10 );
+
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( 0.0, 100.0, 10 );
+		v = linspace.assign( 0.0, 100.0, out );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array-like object' );
 		}
@@ -49,18 +57,65 @@ bench( pkg+'::default,real', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::default,complex', function benchmark( b ) {
+bench( pkg+'::real:assign:dtype=float32', function benchmark( b ) {
+	var out;
+	var v;
+	var i;
+
+	out = new Float32Array( 10 );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		v = linspace.assign( 0.0, 100.0, out );
+		if ( typeof v !== 'object' ) {
+			b.fail( 'should return an array-like object' );
+		}
+	}
+	b.toc();
+	if ( !isArrayLikeObject( v ) ) {
+		b.fail( 'should return an array-like object' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( pkg+'::real:assign:dtype=generic', function benchmark( b ) {
+	var out;
+	var v;
+	var i;
+
+	out = zeros( 10 );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		v = linspace.assign( 0.0, 100.0, out );
+		if ( typeof v !== 'object' ) {
+			b.fail( 'should return an array-like object' );
+		}
+	}
+	b.toc();
+	if ( !isArrayLikeObject( v ) ) {
+		b.fail( 'should return an array-like object' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( pkg+'::complex:assign:dtype=generic', function benchmark( b ) {
+	var out;
 	var x1;
 	var x2;
 	var v;
 	var i;
+
+	out = zeros( 10 );
 
 	x1 = new Complex128( 0.0, 0.0 );
 	x2 = new Complex128( 100.0, 10.0 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( x1, x2, 10 );
+		v = linspace.assign( x1, x2, out );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array-like object' );
 		}
@@ -73,18 +128,16 @@ bench( pkg+'::default,complex', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::real:dtype=float64', function benchmark( b ) {
-	var opts;
+bench( pkg+'::real:assign:dtype=complex128', function benchmark( b ) {
+	var out;
 	var v;
 	var i;
 
-	opts = {
-		'dtype': 'float64'
-	};
+	out = new Complex128Array( 10 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( 0.0, 100.0, 10, opts );
+		v = linspace.assign( 0.0, 100.0, out );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array-like object' );
 		}
@@ -97,71 +150,21 @@ bench( pkg+'::real:dtype=float64', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::real:dtype=float32', function benchmark( b ) {
-	var opts;
-	var v;
-	var i;
-
-	opts = {
-		'dtype': 'float32'
-	};
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( 0.0, 100.0, 10, opts );
-		if ( typeof v !== 'object' ) {
-			b.fail( 'should return an array-like object' );
-		}
-	}
-	b.toc();
-	if ( !isArrayLikeObject( v ) ) {
-		b.fail( 'should return an array-like object' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+'::real:dtype=generic', function benchmark( b ) {
-	var opts;
-	var v;
-	var i;
-
-	opts = {
-		'dtype': 'generic'
-	};
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( 0.0, 100.0, 10, opts );
-		if ( typeof v !== 'object' ) {
-			b.fail( 'should return an array-like object' );
-		}
-	}
-	b.toc();
-	if ( !isArrayLikeObject( v ) ) {
-		b.fail( 'should return an array-like object' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+'::complex:dtype=generic', function benchmark( b ) {
-	var opts;
+bench( pkg+'::complex:assign:dtype=complex128', function benchmark( b ) {
+	var out;
 	var x1;
 	var x2;
 	var v;
 	var i;
 
-	opts = {
-		'dtype': 'generic'
-	};
+	out = new Complex128Array( 10 );
 
 	x1 = new Complex128( 0.0, 0.0 );
 	x2 = new Complex128( 100.0, 10.0 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( x1, x2, 10, opts );
+		v = linspace.assign( x1, x2, out );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array-like object' );
 		}
@@ -174,18 +177,16 @@ bench( pkg+'::complex:dtype=generic', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::real:dtype=complex128', function benchmark( b ) {
-	var opts;
+bench( pkg+'::real:assign:dtype=complex64', function benchmark( b ) {
+	var out;
 	var v;
 	var i;
 
-	opts = {
-		'dtype': 'complex128'
-	};
+	out = new Complex64Array( 10 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( 0.0, 100.0, 10, opts );
+		v = linspace.assign( 0.0, 100.0, out );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array-like object' );
 		}
@@ -198,76 +199,21 @@ bench( pkg+'::real:dtype=complex128', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::complex:dtype=complex128', function benchmark( b ) {
-	var opts;
+bench( pkg+'::complex:assign:dtype=complex64', function benchmark( b ) {
+	var out;
 	var x1;
 	var x2;
 	var v;
 	var i;
 
-	opts = {
-		'dtype': 'complex128'
-	};
-
-	x1 = new Complex128( 0.0, 0.0 );
-	x2 = new Complex128( 100.0, 10.0 );
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( x1, x2, 10, opts );
-		if ( typeof v !== 'object' ) {
-			b.fail( 'should return an array-like object' );
-		}
-	}
-	b.toc();
-	if ( !isArrayLikeObject( v ) ) {
-		b.fail( 'should return an array-like object' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+'::real:dtype=complex64', function benchmark( b ) {
-	var opts;
-	var v;
-	var i;
-
-	opts = {
-		'dtype': 'complex64'
-	};
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( 0.0, 100.0, 10, opts );
-		if ( typeof v !== 'object' ) {
-			b.fail( 'should return an array-like object' );
-		}
-	}
-	b.toc();
-	if ( !isArrayLikeObject( v ) ) {
-		b.fail( 'should return an array-like object' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+'::complex:dtype=complex64', function benchmark( b ) {
-	var opts;
-	var x1;
-	var x2;
-	var v;
-	var i;
-
-	opts = {
-		'dtype': 'complex64'
-	};
+	out = new Complex64Array( 10 );
 
 	x1 = new Complex64( 0.0, 0.0 );
 	x2 = new Complex64( 100.0, 10.0 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = linspace( x1, x2, 10, opts );
+		v = linspace.assign( x1, x2, out );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array-like object' );
 		}
