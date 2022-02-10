@@ -72,7 +72,7 @@ var arr = linspace( 0.0, -100.0, 6 );
 
 The function accepts the following `options`:
 
--   **dtype**: output array data type. Must be a [floating-point data type][@stdlib/array/typed-float-dtypes] or `'generic'`. If either `start` or `stop` is a complex number, the default output array data type is `'complex128'`; otherwise, the default output array data type is `'float64'`.
+-   **dtype**: output array data type. Must be a [floating-point data type][@stdlib/array/typed-float-dtypes] or `'generic'`. If both `start` and `stop` are the same type (either `'float64'`, `'complex64'`, or `'complex128'`), the default output array data type is the same type as the input values (either `'float64'`, `'complex64'`, or `'complex128'`, respectively). Otherwise, the default output array data type is `'complex128'`.
 -   **endpoint**: `boolean` indicating whether to include the `stop` value in the output array. If `false`, the function generates `length + 1` linearly spaced values over the interval `[start, stop]` and only writes `length` values to the output array, thus excluding `stop` from the output array. Accordingly, for a fixed `length`, the spacing between adjacent values in the output array changes depending on the value of `endpoint`. Default: `true`.
 
 By default, the function generates a linearly spaced array over the closed interval `[start, stop]`. To generate linearly spaced values over the half-open interval `[start, stop)`, set the `endpoint` option to `false`.
@@ -218,7 +218,7 @@ var arr = linspace.assign( 0.0, 100.0, out, opts );
 
     where `M` is the number of values to generate. Accordingly, values may not be evenly spaced due to floating-point rounding errors.
 
--   When the output array length is greater than `1` and `endpoint` is `true`, the output array is guaranteed to include the `start` and `stop` values. Beware, however, that values between the `start` and `stop` are subject to floating-point rounding errors. Hence,
+-   When the output array length is greater than `1` and `endpoint` is `true`, the output array is guaranteed to include the `start` and `stop` values. Beware, however, that values between `start` and `stop` are subject to floating-point rounding errors. Hence,
 
     ```javascript
     var arr = linspace( 0.0, 1.0, 3 );
