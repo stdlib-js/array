@@ -24,38 +24,30 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/array/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -122,7 +114,7 @@ The namespace contains functions to create arrays pre-filled with spaced values:
 
 -   <span class="signature">[`datespace( start, stop[, length][, opts] )`][@stdlib/array/datespace]</span><span class="delimiter">: </span><span class="description">generate an array of linearly spaced dates.</span>
 -   <span class="signature">[`incrspace( start, stop[, increment] )`][@stdlib/array/incrspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array using a provided increment.</span>
--   <span class="signature">[`linspace( start, stop[, length] )`][@stdlib/array/linspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array.</span>
+-   <span class="signature">[`linspace( start, stop, length[, options] )`][@stdlib/array/linspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced array over a specified interval.</span>
 -   <span class="signature">[`logspace( a, b[, length] )`][@stdlib/array/logspace]</span><span class="delimiter">: </span><span class="description">generate a logarithmically spaced numeric array.</span>
 
 </div>
@@ -136,8 +128,14 @@ You can use the following functions to retrieve a list of available data types:
 <div class="namespace-toc">
 
 -   <span class="signature">[`arrayDataTypes()`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
--   <span class="signature">[`typedarrayComplexDataTypes()`][@stdlib/array/typed-complex-dtypes]</span><span class="delimiter">: </span><span class="description">list of complex typed array data types.</span>
+-   <span class="signature">[`complexarrayDataTypes()`][@stdlib/array/typed-complex-dtypes]</span><span class="delimiter">: </span><span class="description">list of complex typed array data types.</span>
 -   <span class="signature">[`typedarrayDataTypes()`][@stdlib/array/typed-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array data types.</span>
+-   <span class="signature">[`floatarrayDataTypes()`][@stdlib/array/typed-float-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array floating-point data types.</span>
+-   <span class="signature">[`intarrayDataTypes()`][@stdlib/array/typed-integer-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array integer data types.</span>
+-   <span class="signature">[`realarrayDataTypes()`][@stdlib/array/typed-real-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array data types.</span>
+-   <span class="signature">[`realarrayFloatDataTypes()`][@stdlib/array/typed-real-float-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array real-valued floating-point data types.</span>
+-   <span class="signature">[`intarraySignedDataTypes()`][@stdlib/array/typed-signed-integer-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array signed integer data types.</span>
+-   <span class="signature">[`intarrayUnsignedDataTypes()`][@stdlib/array/typed-unsigned-integer-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array unsigned integer data types.</span>
 
 </div>
 
@@ -155,8 +153,14 @@ Furthermore, the namespace contains utility functions to retrieve a given constr
 <div class="namespace-toc">
 
 -   <span class="signature">[`arrayCtors( dtype )`][@stdlib/array/ctors]</span><span class="delimiter">: </span><span class="description">array constructors.</span>
--   <span class="signature">[`typedarrayComplexCtors( dtype )`][@stdlib/array/typed-complex-ctors]</span><span class="delimiter">: </span><span class="description">complex typed array constructors.</span>
+-   <span class="signature">[`complexarrayCtors( dtype )`][@stdlib/array/typed-complex-ctors]</span><span class="delimiter">: </span><span class="description">complex typed array constructors.</span>
 -   <span class="signature">[`typedarrayCtors( dtype )`][@stdlib/array/typed-ctors]</span><span class="delimiter">: </span><span class="description">typed array constructors.</span>
+-   <span class="signature">[`floatarrayCtors( dtype )`][@stdlib/array/typed-float-ctors]</span><span class="delimiter">: </span><span class="description">floating-point typed array constructors.</span>
+-   <span class="signature">[`intarrayCtors( dtype )`][@stdlib/array/typed-integer-ctors]</span><span class="delimiter">: </span><span class="description">integer-valued typed array constructors.</span>
+-   <span class="signature">[`realarrayCtors( dtype )`][@stdlib/array/typed-real-ctors]</span><span class="delimiter">: </span><span class="description">typed array constructors.</span>
+-   <span class="signature">[`realarrayFloatCtors( dtype )`][@stdlib/array/typed-real-float-ctors]</span><span class="delimiter">: </span><span class="description">real-valued floating-point typed array constructors.</span>
+-   <span class="signature">[`intarraySignedCtors( dtype )`][@stdlib/array/typed-signed-integer-ctors]</span><span class="delimiter">: </span><span class="description">signed integer typed array constructors.</span>
+-   <span class="signature">[`intarrayUnsignedCtors( dtype )`][@stdlib/array/typed-unsigned-integer-ctors]</span><span class="delimiter">: </span><span class="description">unsigned integer typed array constructors.</span>
 
 </div>
 
@@ -176,6 +180,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`base`][@stdlib/array/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) array utilities.</span>
 -   <span class="signature">[`Complex128Array()`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">128-bit complex number array.</span>
 -   <span class="signature">[`Complex64Array()`][@stdlib/array/complex64]</span><span class="delimiter">: </span><span class="description">64-bit complex number array.</span>
 -   <span class="signature">[`convertArraySame( x, y )`][@stdlib/array/convert-same]</span><span class="delimiter">: </span><span class="description">convert an array to the same data type as a second input array.</span>
@@ -185,8 +190,12 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`filledarrayBy()`][@stdlib/array/filled-by]</span><span class="delimiter">: </span><span class="description">create a filled array according to a provided callback function.</span>
 -   <span class="signature">[`filledarray()`][@stdlib/array/filled]</span><span class="delimiter">: </span><span class="description">create a filled array.</span>
 -   <span class="signature">[`iterator2array( iterator[, out][, mapFcn[, thisArg]] )`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="signature">[`afullLike( x, value[, dtype] )`][@stdlib/array/full-like]</span><span class="delimiter">: </span><span class="description">create a filled array having the same length and data type as a provided array.</span>
+-   <span class="signature">[`afull( length, value[, dtype] )`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
 -   <span class="signature">[`arrayMinDataType( value )`][@stdlib/array/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum array data type of the closest "kind" necessary for storing a provided scalar value.</span>
 -   <span class="signature">[`arrayNextDataType( [dtype] )`][@stdlib/array/next-dtype]</span><span class="delimiter">: </span><span class="description">return the next larger array data type of the same kind.</span>
+-   <span class="signature">[`aonesLike( x[, dtype] )`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
+-   <span class="signature">[`aones( length[, dtype] )`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
 -   <span class="signature">[`typedarraypool()`][@stdlib/array/pool]</span><span class="delimiter">: </span><span class="description">allocate typed arrays from a typed array memory pool.</span>
 -   <span class="signature">[`arrayPromotionRules( [dtype1, dtype2] )`][@stdlib/array/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the array data type with the smallest size and closest "kind" to which array data types can be **safely** cast.</span>
 -   <span class="signature">[`reviveTypedArray( key, value )`][@stdlib/array/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized typed array.</span>
@@ -202,6 +211,10 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`stridedarray2iterator( N, src, stride, offset[, mapFcn[, thisArg]] )`][@stdlib/array/to-strided-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from a strided array-like object.</span>
 -   <span class="signature">[`arrayview2iteratorRight( src[, begin[, end]][, mapFcn[, thisArg]] )`][@stdlib/array/to-view-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view, iterating from right to left.</span>
 -   <span class="signature">[`arrayview2iterator( src[, begin[, end]][, mapFcn[, thisArg]] )`][@stdlib/array/to-view-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view.</span>
+-   <span class="signature">[`complexarray()`][@stdlib/array/typed-complex]</span><span class="delimiter">: </span><span class="description">create a complex number typed array.</span>
+-   <span class="signature">[`realarray()`][@stdlib/array/typed-real]</span><span class="delimiter">: </span><span class="description">create a typed array.</span>
+-   <span class="signature">[`azerosLike( x[, dtype] )`][@stdlib/array/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having the same length and data type as a provided array.</span>
+-   <span class="signature">[`azeros( length[, dtype] )`][@stdlib/array/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having a specified length.</span>
 
 </div>
 
@@ -219,21 +232,11 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -319,6 +322,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
+[@stdlib/array/base]: https://github.com/stdlib-js/array/tree/main/base
+
 [@stdlib/array/complex128]: https://github.com/stdlib-js/array/tree/main/complex128
 
 [@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64
@@ -337,9 +342,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator
 
+[@stdlib/array/full-like]: https://github.com/stdlib-js/array/tree/main/full-like
+
+[@stdlib/array/full]: https://github.com/stdlib-js/array/tree/main/full
+
 [@stdlib/array/min-dtype]: https://github.com/stdlib-js/array/tree/main/min-dtype
 
 [@stdlib/array/next-dtype]: https://github.com/stdlib-js/array/tree/main/next-dtype
+
+[@stdlib/array/ones-like]: https://github.com/stdlib-js/array/tree/main/ones-like
+
+[@stdlib/array/ones]: https://github.com/stdlib-js/array/tree/main/ones
 
 [@stdlib/array/pool]: https://github.com/stdlib-js/array/tree/main/pool
 
@@ -371,17 +384,49 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/to-view-iterator]: https://github.com/stdlib-js/array/tree/main/to-view-iterator
 
+[@stdlib/array/typed-complex]: https://github.com/stdlib-js/array/tree/main/typed-complex
+
+[@stdlib/array/typed-real]: https://github.com/stdlib-js/array/tree/main/typed-real
+
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array/tree/main/zeros-like
+
+[@stdlib/array/zeros]: https://github.com/stdlib-js/array/tree/main/zeros
+
 [@stdlib/array/ctors]: https://github.com/stdlib-js/array/tree/main/ctors
 
 [@stdlib/array/typed-complex-ctors]: https://github.com/stdlib-js/array/tree/main/typed-complex-ctors
 
 [@stdlib/array/typed-ctors]: https://github.com/stdlib-js/array/tree/main/typed-ctors
 
+[@stdlib/array/typed-float-ctors]: https://github.com/stdlib-js/array/tree/main/typed-float-ctors
+
+[@stdlib/array/typed-integer-ctors]: https://github.com/stdlib-js/array/tree/main/typed-integer-ctors
+
+[@stdlib/array/typed-real-ctors]: https://github.com/stdlib-js/array/tree/main/typed-real-ctors
+
+[@stdlib/array/typed-real-float-ctors]: https://github.com/stdlib-js/array/tree/main/typed-real-float-ctors
+
+[@stdlib/array/typed-signed-integer-ctors]: https://github.com/stdlib-js/array/tree/main/typed-signed-integer-ctors
+
+[@stdlib/array/typed-unsigned-integer-ctors]: https://github.com/stdlib-js/array/tree/main/typed-unsigned-integer-ctors
+
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
 
 [@stdlib/array/typed-complex-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-complex-dtypes
 
 [@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-dtypes
+
+[@stdlib/array/typed-float-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-float-dtypes
+
+[@stdlib/array/typed-integer-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-integer-dtypes
+
+[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-real-dtypes
+
+[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-real-float-dtypes
+
+[@stdlib/array/typed-signed-integer-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-signed-integer-dtypes
+
+[@stdlib/array/typed-unsigned-integer-dtypes]: https://github.com/stdlib-js/array/tree/main/typed-unsigned-integer-dtypes
 
 [@stdlib/array/datespace]: https://github.com/stdlib-js/array/tree/main/datespace
 
