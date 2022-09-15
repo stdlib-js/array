@@ -20,15 +20,15 @@
 
 var Float64Array = require( './../../float64' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
-var toJSON = require( './../../to-json' );
-var reviver = require( './../lib' );
+var typedarray2json = require( './../../to-json' );
+var reviveTypedArray = require( './../lib' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
-var str = JSON.stringify( toJSON( arr ) );
+var str = JSON.stringify( typedarray2json( arr ) );
 console.log( str );
 // => '{"type":"Float64Array","data":[5,3]}'
 
-var out = parseJSON( str, reviver );
+var out = parseJSON( str, reviveTypedArray );
 if ( out instanceof Error ) {
 	throw out;
 }
