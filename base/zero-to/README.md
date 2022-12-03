@@ -18,24 +18,41 @@ limitations under the License.
 
 -->
 
-# unitspace
+# zeroTo
 
-> Generate a linearly spaced numeric array whose elements increment by 1.
+> Generate a linearly spaced numeric array whose elements increment by 1 starting from zero.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var unitspace = require( '@stdlib/array/base/unitspace' );
+var zeroTo = require( '@stdlib/array/base/zero-to' );
 ```
 
-#### unitspace( start, stop )
+#### zeroTo( n )
 
-Generates a linearly spaced numeric `array` whose elements increment by `1`.
+Generates a linearly spaced numeric array whose elements increment by `1` starting from zero.
 
 ```javascript
-var arr = unitspace( 0, 6 );
+var arr = zeroTo( 6 );
+// returns [ 0, 1, 2, 3, 4, 5 ]
+```
+
+If `n <= 0`, the function returns an empty array.
+
+```javascript
+var arr = zeroTo( 0 );
+// returns []
+
+arr = zeroTo( -1 );
+// returns []
+```
+
+If `n` is a non-integer value greater than zero, the function returns an array having `ceil(n)` elements.
+
+```javascript
+var arr = zeroTo( 5.1 );
 // returns [ 0, 1, 2, 3, 4, 5 ]
 ```
 
@@ -44,34 +61,6 @@ var arr = unitspace( 0, 6 );
 <!-- /.usage -->
 
 <section class="notes">
-
-### Notes
-
--   The output `array` is guaranteed to include the `start` value but does **not** include the `stop` value. Beware that values subsequent to the `start` value are subject to floating-point errors. Hence,
-
-    ```javascript
-    var arr = unitspace( -0.7, 1 );
-    // returns [ -0.7, ~0.3 ]
-    ```
-
-    where `arr[1]` is only guaranteed to be approximately equal to `0.3`.
-
-    If you desire more control over element precision, consider using [roundn][@stdlib/math/base/special/roundn]:
-
-    ```javascript
-    var roundn = require( '@stdlib/math/base/special/roundn' );
-    
-    // Create an array subject to floating-point errors:
-    var arr = unitspace( -10.7, 11.7 );
-
-    // Round each value to the nearest hundredth:
-    var i;
-    for ( i = 0; i < arr.length; i++ ) {
-        arr[ i ] = roundn( arr[ i ], -2 );
-    }
-
-    console.log( arr.join( '\n' ) );
-    ```
 
 </section>
 
@@ -87,13 +76,13 @@ var arr = unitspace( 0, 6 );
 var sort2hp = require( '@stdlib/blas/ext/base/gsort2hp' );
 var filledBy = require( '@stdlib/array/base/filled-by' );
 var randu = require( '@stdlib/random/base/randu' );
-var unitspace = require( '@stdlib/array/base/unitspace' );
+var zeroTo = require( '@stdlib/array/base/zero-to' );
 
 // Generate an array of random numbers:
 var x = filledBy( 10, randu );
 
 // Generate an array of indices:
-var idx = unitspace( 0, x.length );
+var idx = zeroTo( x.length );
 
 // Create a temporary array to avoid mutation:
 var tmp = x.slice();
@@ -120,8 +109,6 @@ console.log( idx );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn
 
 </section>
 

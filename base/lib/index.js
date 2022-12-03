@@ -118,6 +118,15 @@ setReadOnly( ns, 'ones', require( './../../base/ones' ) );
 setReadOnly( ns, 'unitspace', require( './../../base/unitspace' ) );
 
 /**
+* @name zeroTo
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/zero-to}
+*/
+setReadOnly( ns, 'zeroTo', require( './../../base/zero-to' ) );
+
+/**
 * @name zeros
 * @memberof ns
 * @readonly
