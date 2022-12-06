@@ -18,21 +18,18 @@
 
 'use strict';
 
-// MAIN //
+var filledBy = require( './../../../filled-by' );
+var randu = require( '@stdlib/random/base/randu' );
+var copy = require( './../lib' );
 
-/**
-* Sets an array element.
-*
-* @private
-* @param {Collection} x - input array
-* @param {NonNegativeInteger} idx - element index
-* @param {*} value - value to set
-*/
-function setter( x, idx, value ) {
-	x[ idx ] = value;
-}
+// Create a Float64Array:
+var arr = filledBy( 10, 'float64', randu );
 
+// Copy elements to a generic array:
+var out = copy( arr );
 
-// EXPORTS //
+// Retrieve the first element:
+var x = out[ 0 ];
+// returns <number>
 
-module.exports = setter;
+console.log( '%d', x );

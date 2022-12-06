@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,23 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+import copy = require( './index' );
 
-// MAIN //
 
-/**
-* Returns an array element.
-*
-* @private
-* @param {Collection} x - input array
-* @param {NonNegativeInteger} idx - element index
-* @returns {*} element
-*/
-function getter( x, idx ) {
-	return x[ idx ];
+// TESTS //
+
+// The function returns an array...
+{
+	copy( [ 1, 2, 3 ] ); // $ExpectType any[]
 }
 
+// The compiler throws an error if the function is provided an argument which is not a collection...
+{
+	copy( 5 ); // $ExpectError
+	copy( true ); // $ExpectError
+	copy( false ); // $ExpectError
+	copy( null ); // $ExpectError
+	copy( {} ); // $ExpectError
+}
 
-// EXPORTS //
-
-module.exports = getter;
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	copy(); // $ExpectError
+	copy( [ 1, 2, 3 ], 2 ); // $ExpectError
+}

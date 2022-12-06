@@ -23,7 +23,9 @@
 var isFunction = require( '@stdlib/assert/is-function' );
 var isCollection = require( '@stdlib/assert/is-collection' );
 var isIteratorLike = require( '@stdlib/assert/is-iterator-like' );
-var arraylike2object = require( './../../base/arraylike2object' );
+var accessorSetter = require( './../../base/accessor-setter' );
+var setter = require( './../../base/setter' );
+var dtype = require( './../../dtype' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -57,6 +59,7 @@ function iterator2array() {
 	var out;
 	var len;
 	var set;
+	var dt;
 	var i;
 	var v;
 
@@ -106,7 +109,12 @@ function iterator2array() {
 		return out;
 	}
 	len = out.length;
-	set = arraylike2object( out ).setter;
+	dt = dtype( out );
+	if ( out.get && out.set ) { // Note: intentional weak check for marginal perf gain
+		set = accessorSetter( dt );
+	} else {
+		set = setter( dt );
+	}
 	if ( fcn ) {
 		while ( i < len-1 ) {
 			i += 1;

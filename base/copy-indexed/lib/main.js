@@ -21,18 +21,29 @@
 // MAIN //
 
 /**
-* Sets an array element using an accessor method.
+* Copies the elements of an indexed array-like object to a new "generic" array.
 *
-* @private
 * @param {Collection} x - input array
-* @param {NonNegativeInteger} idx - element index
-* @param {*} value - value to set
+* @returns {Array} output array
+*
+* @example
+* var out = copy( [ 1, 2, 3 ] );
+* // returns [ 1, 2, 3 ]
 */
-function setter( x, idx, value ) {
-	x.set( value, idx );
+function copy( x ) {
+	var out;
+	var len;
+	var i;
+
+	len = x.length;
+	out = [];
+	for ( i = 0; i < len; i++ ) {
+		out.push( x[ i ] ); // ensure "fast" elements
+	}
+	return out;
 }
 
 
 // EXPORTS //
 
-module.exports = setter;
+module.exports = copy;

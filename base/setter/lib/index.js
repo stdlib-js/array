@@ -18,21 +18,29 @@
 
 'use strict';
 
-// MAIN //
-
 /**
-* Returns an array element using an accessor method.
+* Return an accessor function for setting an element in an indexed array-like object.
 *
-* @private
-* @param {Collection} x - input array
-* @param {NonNegativeInteger} idx - element index
-* @returns {*} element
+* @module @stdlib/array/base/setter
+*
+* @example
+* var dtype = require( '@stdlib/array/dtype' );
+* var set = require( '@stdlib/array/base/setter' );
+*
+* var arr = [ 1, 2, 3, 4 ];
+*
+* var set = setter( dtype( arr ) );
+* set( arr, 2, 10 );
+*
+* var v = arr[ 2 ];
+* // returns 10
 */
-function getter( x, idx ) {
-	return x.get( idx );
-}
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = getter;
+module.exports = main;
