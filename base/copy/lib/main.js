@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var isAccessorArray = require( './../../../base/assert/is-accessor-array' );
 var accessorGetter = require( './../../../base/accessor-getter' );
 var getter = require( './../../../base/getter' );
 var dtype = require( './../../../dtype' );
@@ -48,7 +49,7 @@ function copy( x ) {
 	dt = dtype( x );
 
 	// Resolve an accessor for retrieving input array elements:
-	if ( x.get && x.set ) { // Note: intentional weak check for a marginal perf gain
+	if ( isAccessorArray( x ) ) {
 		get = accessorGetter( dt );
 	} else {
 		get = getter( dt );

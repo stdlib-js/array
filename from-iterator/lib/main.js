@@ -23,6 +23,7 @@
 var isFunction = require( '@stdlib/assert/is-function' );
 var isCollection = require( '@stdlib/assert/is-collection' );
 var isIteratorLike = require( '@stdlib/assert/is-iterator-like' );
+var isAccessorArray = require( './../../base/assert/is-accessor-array' );
 var accessorSetter = require( './../../base/accessor-setter' );
 var setter = require( './../../base/setter' );
 var dtype = require( './../../dtype' );
@@ -110,7 +111,7 @@ function iterator2array() {
 	}
 	len = out.length;
 	dt = dtype( out );
-	if ( out.get && out.set ) { // Note: intentional weak check for marginal perf gain
+	if ( isAccessorArray( out ) ) {
 		set = accessorSetter( dt );
 	} else {
 		set = setter( dt );

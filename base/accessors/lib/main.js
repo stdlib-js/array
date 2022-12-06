@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var isAccessorArray = require( './../../../base/assert/is-accessor-array' );
 var getter = require( './../../../base/getter' );
 var setter = require( './../../../base/setter' );
 var accessorGetter = require( './../../../base/accessor-getter' );
@@ -58,7 +59,7 @@ var dtype = require( './../../../dtype' );
 */
 function accessors( x ) {
 	var dt = dtype( x );
-	if ( x.get && x.set ) { // Note: intentional weak check, as we don't explicitly check for functions for (perhaps marginally) better performance
+	if ( isAccessorArray( x ) ) {
 		return {
 			'accessorProtocol': true,
 			'accessors': [
