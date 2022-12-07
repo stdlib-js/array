@@ -37,6 +37,33 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name accessorGetter
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/accessor-getter}
+*/
+setReadOnly( ns, 'accessorGetter', require( './../../base/accessor-getter' ) );
+
+/**
+* @name accessorSetter
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/accessor-setter}
+*/
+setReadOnly( ns, 'accessorSetter', require( './../../base/accessor-setter' ) );
+
+/**
+* @name accessors
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/accessors}
+*/
+setReadOnly( ns, 'accessors', require( './../../base/accessors' ) );
+
+/**
 * @name arraylike2object
 * @memberof ns
 * @readonly
@@ -46,6 +73,15 @@ var ns = {};
 setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) );
 
 /**
+* @name assert
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/array/base/assert}
+*/
+setReadOnly( ns, 'assert', require( './../../base/assert' ) );
+
+/**
 * @name copy
 * @memberof ns
 * @readonly
@@ -53,6 +89,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 * @see {@link module:@stdlib/array/base/copy}
 */
 setReadOnly( ns, 'copy', require( './../../base/copy' ) );
+
+/**
+* @name copyIndexed
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/copy-indexed}
+*/
+setReadOnly( ns, 'copyIndexed', require( './../../base/copy-indexed' ) );
 
 /**
 * @name filled
@@ -71,6 +116,15 @@ setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 * @see {@link module:@stdlib/array/base/filled-by}
 */
 setReadOnly( ns, 'filledBy', require( './../../base/filled-by' ) );
+
+/**
+* @name getter
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/getter}
+*/
+setReadOnly( ns, 'getter', require( './../../base/getter' ) );
 
 /**
 * @name incrspace
@@ -107,6 +161,24 @@ setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 * @see {@link module:@stdlib/array/base/ones}
 */
 setReadOnly( ns, 'ones', require( './../../base/ones' ) );
+
+/**
+* @name setter
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/setter}
+*/
+setReadOnly( ns, 'setter', require( './../../base/setter' ) );
+
+/**
+* @name take
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/take}
+*/
+setReadOnly( ns, 'take', require( './../../base/take' ) );
 
 /**
 * @name unitspace
