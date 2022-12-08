@@ -21,34 +21,30 @@
 // MAIN //
 
 /**
-* Returns the Cartesian product.
+* Returns the Cartesian square.
 *
-* @param {ArrayLikeObject} x1 - first input array
-* @param {ArrayLikeObject} x2 - second input array
+* @param {ArrayLikeObject} x - input array
 * @returns {Array<Array>} list of ordered tuples comprising the Cartesian product
 *
 * @example
-* var x1 = [ 1, 2, 3 ];
-* var x2 = [ 4, 5 ];
+* var x = [ 1, 2 ];
 *
-* var out = cartesianProduct( x1, x2 );
-* // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
+* var out = cartesianSquare( x );
+* // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-function cartesianProduct( x1, x2 ) {
+function cartesianSquare( x ) {
 	var out;
-	var M;
 	var N;
 	var v;
 	var i;
 	var j;
 
-	M = x1.length;
-	N = x2.length;
+	N = x.length;
 	out = [];
-	for ( i = 0; i < M; i++ ) {
-		v = x1[ i ];
+	for ( i = 0; i < N; i++ ) {
+		v = x[ i ];
 		for ( j = 0; j < N; j++ ) {
-			out.push( [ v, x2[ j ] ] );
+			out.push( [ v, x[ j ] ] );
 		}
 	}
 	return out;
@@ -57,4 +53,4 @@ function cartesianProduct( x1, x2 ) {
 
 // EXPORTS //
 
-module.exports = cartesianProduct;
+module.exports = cartesianSquare;

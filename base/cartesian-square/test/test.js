@@ -21,50 +21,50 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var cartesianProduct = require( './../lib' );
+var cartesianSquare = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof cartesianProduct, 'function', 'main export is a function' );
+	t.strictEqual( typeof cartesianSquare, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function returns the Cartesian product', function test( t ) {
+tape( 'the function returns the Cartesian square', function test( t ) {
 	var expected;
 	var actual;
 
-	actual = cartesianProduct( [ 1, 2 ], [ 3, 4 ] );
-	expected = [ [ 1, 3 ], [ 1, 4 ], [ 2, 3 ], [ 2, 4 ] ];
+	actual = cartesianSquare( [ 1, 2 ] );
+	expected = [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ];
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = cartesianProduct( [ 1 ], [ 3, 4 ] );
-	expected = [ [ 1, 3 ], [ 1, 4 ] ];
+	actual = cartesianSquare( [ 1 ] );
+	expected = [ [ 1, 1 ] ];
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = cartesianProduct( [ 1, 2 ], [ 3 ] );
-	expected = [ [ 1, 3 ], [ 2, 3 ] ];
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	actual = cartesianProduct( [ 1, 2 ], [ 3, 4, 5 ] );
-	expected = [ [ 1, 3 ], [ 1, 4 ], [ 1, 5 ], [ 2, 3 ], [ 2, 4 ], [ 2, 5 ] ];
+	actual = cartesianSquare( [ 1, 2, 3 ] );
+	expected = [
+		[ 1, 1 ],
+		[ 1, 2 ],
+		[ 1, 3 ],
+		[ 2, 1 ],
+		[ 2, 2 ],
+		[ 2, 3 ],
+		[ 3, 1 ],
+		[ 3, 2 ],
+		[ 3, 3 ]
+	];
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	t.end();
 });
 
-tape( 'the function returns an empty array if provided one or more empty arrays', function test( t ) {
+tape( 'the function returns an empty array if provided an empty array', function test( t ) {
 	var actual;
 
-	actual = cartesianProduct( [], [] );
-	t.deepEqual( actual, [], 'returns expected value' );
-
-	actual = cartesianProduct( [ 1, 2 ], [] );
-	t.deepEqual( actual, [], 'returns expected value' );
-
-	actual = cartesianProduct( [], [ 3, 4 ] );
+	actual = cartesianSquare( [] );
 	t.deepEqual( actual, [], 'returns expected value' );
 
 	t.end();
