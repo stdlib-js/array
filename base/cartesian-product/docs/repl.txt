@@ -1,6 +1,6 @@
 
-{{alias}}( x1, x2[, ...xN] )
-    Returns the n-fold Cartesian product.
+{{alias}}( x1, x2 )
+    Returns the Cartesian product.
 
     If provided one or more empty arrays, the function returns an empty array.
 
@@ -11,9 +11,6 @@
 
     x2: ArrayLikeObject
         Second input array.
-
-    xN: ...ArrayLikeObject (optional)
-        Additional input arrays.
 
     Returns
     -------

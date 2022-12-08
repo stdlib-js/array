@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,34 +16,28 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection } from '@stdlib/types/object';
+'use strict';
 
 /**
-* Returns the n-fold Cartesian product.
+* Return the Cartesian product.
 *
-* ## Notes
-*
-* -   If provided one or more empty arrays, the function returns an empty array.
-*
-* @param x1 - first input array
-* @param x2 - second input array
-* @param xN - additional input arrays
-* @returns Cartesian product
+* @module @stdlib/array/base/cartesian-product
 *
 * @example
+* var cartesianProduct = require( '@stdlib/array/base/cartesian-product' );
+*
 * var x1 = [ 1, 2, 3 ];
 * var x2 = [ 4, 5 ];
 *
-* var out = nCartesianProduct( x1, x2 );
+* var out = cartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function nCartesianProduct( x1: Collection, x2: Collection, ...xN: Array<Collection> ): Array<Array<any>>; // tslint:disable-line:max-line-length
+
+// MAIN //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = nCartesianProduct;
+module.exports = main;

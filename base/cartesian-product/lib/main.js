@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,34 +16,45 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+'use strict';
 
-/// <reference types="@stdlib/types"/>
-
-import { Collection } from '@stdlib/types/object';
+// MAIN //
 
 /**
-* Returns the n-fold Cartesian product.
+* Returns the Cartesian product.
 *
-* ## Notes
-*
-* -   If provided one or more empty arrays, the function returns an empty array.
-*
-* @param x1 - first input array
-* @param x2 - second input array
-* @param xN - additional input arrays
-* @returns Cartesian product
+* @param {ArrayLikeObject} x1 - first input array
+* @param {ArrayLikeObject} x2 - second input array
+* @returns {Array<Array>} list of ordered tuples comprising the n-fold Cartesian product
 *
 * @example
 * var x1 = [ 1, 2, 3 ];
 * var x2 = [ 4, 5 ];
 *
-* var out = nCartesianProduct( x1, x2 );
+* var out = cartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function nCartesianProduct( x1: Collection, x2: Collection, ...xN: Array<Collection> ): Array<Array<any>>; // tslint:disable-line:max-line-length
+function cartesianProduct( x1, x2 ) {
+	var out;
+	var M;
+	var N;
+	var v;
+	var i;
+	var j;
+
+	M = x1.length;
+	N = x2.length;
+	out = [];
+	for ( i = 0; i < M; i++ ) {
+		v = x1[ i ];
+		for ( j = 0; j < N; j++ ) {
+			out.push( [ v, x2[ j ] ] );
+		}
+	}
+	return out;
+}
 
 
 // EXPORTS //
 
-export = nCartesianProduct;
+module.exports = cartesianProduct;

@@ -23,7 +23,7 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Returns the n-fold Cartesian product.
+* Returns the Cartesian product.
 *
 * ## Notes
 *
@@ -31,19 +31,18 @@ import { Collection } from '@stdlib/types/object';
 *
 * @param x1 - first input array
 * @param x2 - second input array
-* @param xN - additional input arrays
 * @returns Cartesian product
 *
 * @example
 * var x1 = [ 1, 2, 3 ];
 * var x2 = [ 4, 5 ];
 *
-* var out = nCartesianProduct( x1, x2 );
+* var out = cartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function nCartesianProduct( x1: Collection, x2: Collection, ...xN: Array<Collection> ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function cartesianProduct( x1: Collection, x2: Collection ): Array<Array<any>>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
 
-export = nCartesianProduct;
+export = cartesianProduct;

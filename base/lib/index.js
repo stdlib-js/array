@@ -82,6 +82,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name cartesianProduct
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cartesian-product}
+*/
+setReadOnly( ns, 'cartesianProduct', require( './../../base/cartesian-product' ) );
+
+/**
 * @name copy
 * @memberof ns
 * @readonly

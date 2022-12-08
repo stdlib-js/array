@@ -19,12 +19,11 @@
 'use strict';
 
 var linspace = require( './../../../base/linspace' );
-var nCartesianProduct = require( './../lib' );
+var cartesianProduct = require( './../lib' );
 
 var x1 = linspace( 0, 5, 6 );
 var x2 = linspace( 10, 15, 6 );
-var x3 = linspace( 20, 25, 6 );
 
-var out = nCartesianProduct( x1, x2, x3 );
+var out = cartesianProduct( x1, x2 );
 console.log( out );
-// => [ [ 0, 10, 20 ], [ 0, 10, 21 ], ... ]
+// => [ [ 0, 10 ], [ 0, 11 ], ..., [ 5, 14 ], [ 5, 15 ] ]

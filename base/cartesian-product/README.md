@@ -18,27 +18,27 @@ limitations under the License.
 
 -->
 
-# nCartesianProduct
+# cartesianProduct
 
-> Return the n-fold [Cartesian product][cartesian-product].
+> Return the [Cartesian product][cartesian-product].
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var nCartesianProduct = require( '@stdlib/array/base/n-cartesian-product' );
+var cartesianProduct = require( '@stdlib/array/base/cartesian-product' );
 ```
 
-#### nCartesianProduct( x1, x2\[, ...xN] )
+#### cartesianProduct( x1, x2 )
 
-Returns the n-fold [Cartesian product][cartesian-product].
+Returns the [Cartesian product][cartesian-product].
 
 ```javascript
 var x1 = [ 1, 2, 3 ];
 var x2 = [ 4, 5 ];
 
-var out = nCartesianProduct( x1, x2 );
+var out = cartesianProduct( x1, x2 );
 // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 ```
 
@@ -48,7 +48,7 @@ If provided one or more empty arrays, the function returns an empty array.
 var x1 = [ 1, 2, 3, 4 ];
 var x2 = [];
 
-var out = nCartesianProduct( x1, x2 );
+var out = cartesianProduct( x1, x2 );
 // returns []
 ```
 
@@ -70,14 +70,13 @@ var out = nCartesianProduct( x1, x2 );
 
 ```javascript
 var linspace = require( '@stdlib/array/base/linspace' );
-var nCartesianProduct = require( '@stdlib/array/base/n-cartesian-product' );
+var cartesianProduct = require( '@stdlib/array/base/cartesian-product' );
 
 var x1 = linspace( 0, 5, 6 );
 var x2 = linspace( 10, 15, 6 );
-var x3 = linspace( 20, 25, 6 );
 
-var out = nCartesianProduct( x1, x2, x3 );
-// returns [ [ 0, 10, 20 ], [ 0, 10, 21 ], ... ]
+var out = cartesianProduct( x1, x2 );
+// returns [ [ 0, 10 ], [ 0, 11 ], ..., [ 5, 14 ], [ 5, 15 ] ]
 ```
 
 </section>
