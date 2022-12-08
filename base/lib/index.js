@@ -154,6 +154,15 @@ setReadOnly( ns, 'linspace', require( './../../base/linspace' ) );
 setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 
 /**
+* @name nCartesianProduct
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/n-cartesian-product}
+*/
+setReadOnly( ns, 'nCartesianProduct', require( './../../base/n-cartesian-product' ) );
+
+/**
 * @name ones
 * @memberof ns
 * @readonly

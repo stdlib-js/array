@@ -20,28 +20,30 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
-* Takes element from an array.
+* Returns the n-fold Cartesian product.
 *
 * ## Notes
 *
-* -   The function does **not** perform bounds checking. If an index is less than zero or greater than the maximum index of `x`, the value of the corresponding element in the output array is undefined.
+* -   If one or more input arrays are empty, the function returns an empty array.
 *
-* @param x - input array
-* @param indices - list of element indices
-* @returns output array
+* @param x1 - first input array
+* @param x2 - second input array
+* @param xN - additional input arrays
+* @returns Cartesian product
 *
 * @example
-* var x = [ 1, 2, 3, 4 ];
+* var x1 = [ 1, 2, 3 ];
+* var x2 = [ 4, 5 ];
 *
-* var y = take( x, [ 1, 3 ] );
-* // returns [ 2, 4 ]
+* var out = nCartesianProduct( x1, x2 );
+* // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function take<T>( x: ArrayLike<T>, indices: ArrayLike<number> ): Array<T>; // tslint:disable-line:max-line-length
+declare function nCartesianProduct( x1: Collection, x2: Collection, ...xN: Array<Collection> ): Array<Array<any>>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
 
-export = take;
+export = nCartesianProduct;
