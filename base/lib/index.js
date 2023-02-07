@@ -226,6 +226,15 @@ setReadOnly( ns, 'setter', require( './../../base/setter' ) );
 setReadOnly( ns, 'take', require( './../../base/take' ) );
 
 /**
+* @name toAccessorArray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/to-accessor-array}
+*/
+setReadOnly( ns, 'toAccessorArray', require( './../../base/to-accessor-array' ) );
+
+/**
 * @name unitspace
 * @memberof ns
 * @readonly
