@@ -24,20 +24,30 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ArrayBuffer, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, afull, afullLike, anans, anansLike, aones, aonesLike, array2iterator, array2iteratorRight, arrayCtors, arrayDataType, arrayDataTypes, arrayMinDataType, arrayNextDataType, arrayPromotionRules, arraySafeCasts, arraySameKindCasts, arrayShape, arrayview2iterator, arrayview2iteratorRight, azeros, azerosLike, base, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convertArray, convertArraySame, datespace, filledarray, filledarrayBy, floatarrayCtors, floatarrayDataTypes, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, reviveTypedArray, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarraypool } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -183,6 +193,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`afullLike( x, value[, dtype] )`][@stdlib/array/full-like]</span><span class="delimiter">: </span><span class="description">create a filled array having the same length and data type as a provided array.</span>
 -   <span class="signature">[`afull( length, value[, dtype] )`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
 -   <span class="signature">[`arrayMinDataType( value )`][@stdlib/array/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum array data type of the closest "kind" necessary for storing a provided scalar value.</span>
+-   <span class="signature">[`anansLike( x[, dtype] )`][@stdlib/array/nans-like]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having the same length and data type as a provided array.</span>
+-   <span class="signature">[`anans( length[, dtype] )`][@stdlib/array/nans]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having a specified length.</span>
 -   <span class="signature">[`arrayNextDataType( [dtype] )`][@stdlib/array/next-dtype]</span><span class="delimiter">: </span><span class="description">return the next larger array data type of the same kind.</span>
 -   <span class="signature">[`aonesLike( x[, dtype] )`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
 -   <span class="signature">[`aones( length[, dtype] )`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
@@ -223,8 +235,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -250,7 +262,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -337,6 +349,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/full]: https://github.com/stdlib-js/array/tree/main/full
 
 [@stdlib/array/min-dtype]: https://github.com/stdlib-js/array/tree/main/min-dtype
+
+[@stdlib/array/nans-like]: https://github.com/stdlib-js/array/tree/main/nans-like
+
+[@stdlib/array/nans]: https://github.com/stdlib-js/array/tree/main/nans
 
 [@stdlib/array/next-dtype]: https://github.com/stdlib-js/array/tree/main/next-dtype
 
