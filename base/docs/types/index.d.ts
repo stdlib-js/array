@@ -21,6 +21,7 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
+import AccessorArray = require( './../../../base/accessor' );
 import accessorGetter = require( './../../../base/accessor-getter' );
 import accessorSetter = require( './../../../base/accessor-setter' );
 import accessors = require( './../../../base/accessors' );
@@ -41,6 +42,7 @@ import nCartesianProduct = require( './../../../base/n-cartesian-product' );
 import ones = require( './../../../base/ones' );
 import setter = require( './../../../base/setter' );
 import take = require( './../../../base/take' );
+import toAccessorArray = require( './../../../base/to-accessor-array' );
 import unitspace = require( './../../../base/unitspace' );
 import zeroTo = require( './../../../base/zero-to' );
 import zeros = require( './../../../base/zeros' );
@@ -49,6 +51,21 @@ import zeros = require( './../../../base/zeros' );
 * Interface describing the `base` namespace.
 */
 interface Namespace {
+	/**
+	* Accessor array constructor.
+	*
+	* @param arr - input array
+	* @returns accessor array
+	*
+	* @example
+	* var arr = new ns.AccessorArray( [ 1, 2, 3 ] );
+	* // returns <ns.AccessorArray>
+	*
+	* var v = arr.get( 0 );
+	* // returns 1
+	*/
+	AccessorArray: typeof AccessorArray;
+
 	/**
 	* Returns an accessor function for retrieving an element from an array-like object supporting the get/set protocol.
 	*
@@ -420,6 +437,31 @@ interface Namespace {
 	* // returns [ 2, 4 ]
 	*/
 	take: typeof take;
+
+	/**
+	* Converts an array-like object to a minimal array-like object supporting the accessor protocol.
+	*
+	* ## Notes
+	*
+	* -   If a provided array-like object already supports the accessor protocol, the function returns the provided array-like object; otherwise, the function wraps the provided value in a object which uses accessors for getting and setting elements.
+	*
+	* @param arr - input array
+	* @returns accessor array
+	*
+	* @example
+	* var arr = ns.toAccessorArray( [ 1, 2, 3 ] );
+	* // returns <AccessorArray>
+	*
+	* var v = arr.get( 0 );
+	* // returns 1
+	*
+	* @example
+	* var Complex128Array = require( `@stdlib/array/complex128` );
+	*
+	* var arr = ns.toAccessorArray( new Complex128Array( 10 ) );
+	* // returns <Complex128Array>
+	*/
+	toAccessorArray: typeof toAccessorArray;
 
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1.
