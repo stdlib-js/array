@@ -193,6 +193,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`afullLike( x, value[, dtype] )`][@stdlib/array/full-like]</span><span class="delimiter">: </span><span class="description">create a filled array having the same length and data type as a provided array.</span>
 -   <span class="signature">[`afull( length, value[, dtype] )`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
 -   <span class="signature">[`arrayMinDataType( value )`][@stdlib/array/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum array data type of the closest "kind" necessary for storing a provided scalar value.</span>
+-   <span class="signature">[`anansLike( x[, dtype] )`][@stdlib/array/nans-like]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having the same length and data type as a provided array.</span>
+-   <span class="signature">[`anans( length[, dtype] )`][@stdlib/array/nans]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having a specified length.</span>
 -   <span class="signature">[`arrayNextDataType( [dtype] )`][@stdlib/array/next-dtype]</span><span class="delimiter">: </span><span class="description">return the next larger array data type of the same kind.</span>
 -   <span class="signature">[`aonesLike( x[, dtype] )`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
 -   <span class="signature">[`aones( length[, dtype] )`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
@@ -347,6 +349,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/full]: https://github.com/stdlib-js/array/tree/main/full
 
 [@stdlib/array/min-dtype]: https://github.com/stdlib-js/array/tree/main/min-dtype
+
+[@stdlib/array/nans-like]: https://github.com/stdlib-js/array/tree/main/nans-like
+
+[@stdlib/array/nans]: https://github.com/stdlib-js/array/tree/main/nans
 
 [@stdlib/array/next-dtype]: https://github.com/stdlib-js/array/tree/main/next-dtype
 
