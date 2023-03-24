@@ -52,6 +52,7 @@
     "@stdlib/bench": "github:stdlib-js/bench#main",
     "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/console": "github:stdlib-js/console#main",
+    "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
     "@stdlib/number": "github:stdlib-js/number#main",
     "@stdlib/process": "github:stdlib-js/process#main",
     "@stdlib/random": "github:stdlib-js/random#main",
