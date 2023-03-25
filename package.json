@@ -38,10 +38,12 @@
   "dependencies": {
     "@stdlib/assert": "github:stdlib-js/assert#main",
     "@stdlib/blas": "github:stdlib-js/blas#main",
+    "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/complex": "github:stdlib-js/complex#main",
     "@stdlib/constants": "github:stdlib-js/constants#main",
     "@stdlib/iter": "github:stdlib-js/iter#main",
     "@stdlib/math": "github:stdlib-js/math#main",
+    "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
     "@stdlib/strided": "github:stdlib-js/strided#main",
     "@stdlib/string": "github:stdlib-js/string#main",
     "@stdlib/symbol": "github:stdlib-js/symbol#main",
@@ -50,9 +52,7 @@
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench#main",
-    "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/console": "github:stdlib-js/console#main",
-    "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
     "@stdlib/number": "github:stdlib-js/number#main",
     "@stdlib/process": "github:stdlib-js/process#main",
     "@stdlib/random": "github:stdlib-js/random#main",
