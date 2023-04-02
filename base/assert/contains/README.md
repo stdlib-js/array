@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2022 The Stdlib Authors.
+Copyright (c) 2023 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# copy
+# contains
 
-> Copy the elements of an array-like object to a new "generic" array.
+> Test if an array contains a provided search value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,20 +37,34 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var copy = require( '@stdlib/array/base/copy' );
+var contains = require( '@stdlib/array/base/assert/contains' );
 ```
 
-#### copy( x )
+#### contains( x, value )
 
-Copies the elements of an array-like object to a new "generic" array.
+Tests if an array contains a provided search value.
 
 ```javascript
 var x = [ 1, 2, 3 ];
 
-var out = copy( x );
-// returns [ 1, 2, 3 ]
+var out = contains( x, 2 );
+// returns true
+```
 
-var bool = ( out === x );
+#### contains.factory( x )
+
+Returns a function which tests if an array contains a provided search value.
+
+```javascript
+var x = [ 1, 2, 3 ];
+
+var fcn = contains.factory( x );
+// returns <Function>
+
+var out = fcn( 2 );
+// returns true
+
+out = fcn( 4 );
 // returns false
 ```
 
@@ -75,29 +89,21 @@ var bool = ( out === x );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
-var copy = require( '@stdlib/array/base/copy' );
+var AccessorArray = require( '@stdlib/array/base/accessor' );
+var contains = require( '@stdlib/array/base/assert/contains' );
 
-// Create a complex number array:
-var arr = new Complex64Array( 10 );
+// Create an accessor array:
+var arr = new AccessorArray( [ 1, 2, 3, 4 ] );
 
-// Copy elements to a generic array:
-var out = copy( arr );
+// Check whether the array contains various values...
+var bool = contains( arr, 2 );
+// returns true
 
-// Retrieve the first element:
-var z = out[ 0 ];
-// returns <Complex64>
+bool = contains( arr, 4 );
+// returns true
 
-var re = realf( z );
-// returns 0.0
-
-var im = imagf( z );
-// returns 0.0
-
-console.log( '%d + %di', re, im );
-// => '0 + 0i'
+bool = contains( arr, 9 );
+// returns false
 ```
 
 </section>

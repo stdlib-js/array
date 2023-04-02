@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,27 +16,23 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+'use strict';
 
-/// <reference types="@stdlib/types"/>
+var AccessorArray = require( './../../../../base/accessor' );
+var contains = require( './../lib' );
 
-import { Collection } from '@stdlib/types/object';
+// Create an accessor array:
+var arr = new AccessorArray( [ 1, 2, 3, 4 ] );
 
-/**
-* Copies the elements of an array-like object to a new "generic" array.
-*
-* @param x - input array
-* @returns output array
-*
-* @example
-* var x = [ 1, 2, 3 ];
-*
-* var out = copy( x );
-* // returns [ 1, 2, 3 ]
-*/
-declare function copy( x: Collection ): Array<any>;
+// Check whether the array contains various values...
+var bool = contains( arr, 2 );
+console.log( bool );
+// => true
 
+bool = contains( arr, 4 );
+console.log( bool );
+// => true
 
-// EXPORTS //
-
-export = copy;
+bool = contains( arr, 9 );
+console.log( bool );
+// => false

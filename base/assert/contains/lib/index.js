@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,27 +16,32 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection } from '@stdlib/types/object';
+'use strict';
 
 /**
-* Copies the elements of an array-like object to a new "generic" array.
+* Test if an array contains a provided search value.
 *
-* @param x - input array
-* @returns output array
+* @module @stdlib/array/base/assert/contains
 *
 * @example
-* var x = [ 1, 2, 3 ];
+* var contains = require( '@stdlib/array/base/assert/contains' );
 *
-* var out = copy( x );
-* // returns [ 1, 2, 3 ]
+* var out = contains( [ 1, 2, 3 ], 2 );
+* // returns true
 */
-declare function copy( x: Collection ): Array<any>;
+
+var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
+var main = require( './main.js' );
+var factory = require( './factory.js' );
+
+
+// MAIN //
+
+setReadOnly( main, 'factory', factory );
 
 
 // EXPORTS //
 
-export = copy;
+module.exports = main;
+
+// exports: { "factory": "main.factory" }
