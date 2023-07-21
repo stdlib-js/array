@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,27 +16,35 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection } from '@stdlib/types/object';
+'use strict';
 
 /**
-* Returns the last element of an array-like object.
+* Flatten a three-dimensional nested array.
 *
-* @param arr - input array
-* @returns last element
+* @module @stdlib/array/base/flatten3d
 *
 * @example
-* var arr = [ 1, 2, 3 ];
+* var flatten3d = require( '@stdlib/array/base/flatten3d' );
 *
-* var out = last( x );
-* // returns 3
+* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
+*
+* var out = flatten3d( x, [ 2, 1, 2 ], false );
+* // returns [ 1, 2, 3, 4 ]
+*
+* @example
+* var flatten3d = require( '@stdlib/array/base/flatten3d' );
+*
+* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
+*
+* var out = flatten3d( x, [ 2, 1, 2 ], true );
+* // returns [ 1, 3, 2, 4 ]
 */
-declare function last<T = unknown>( arr: Collection<T> ): T;
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = last;
+module.exports = main;

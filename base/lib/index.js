@@ -154,6 +154,51 @@ setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 setReadOnly( ns, 'filledBy', require( './../../base/filled-by' ) );
 
 /**
+* @name flatten
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten}
+*/
+setReadOnly( ns, 'flatten', require( './../../base/flatten' ) );
+
+/**
+* @name flatten2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten2d}
+*/
+setReadOnly( ns, 'flatten2d', require( './../../base/flatten2d' ) );
+
+/**
+* @name flatten3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten3d}
+*/
+setReadOnly( ns, 'flatten3d', require( './../../base/flatten3d' ) );
+
+/**
+* @name flatten4d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten4d}
+*/
+setReadOnly( ns, 'flatten4d', require( './../../base/flatten4d' ) );
+
+/**
+* @name flatten5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten5d}
+*/
+setReadOnly( ns, 'flatten5d', require( './../../base/flatten5d' ) );
+
+/**
 * @name getter
 * @memberof ns
 * @readonly
@@ -170,6 +215,15 @@ setReadOnly( ns, 'getter', require( './../../base/getter' ) );
 * @see {@link module:@stdlib/array/base/incrspace}
 */
 setReadOnly( ns, 'incrspace', require( './../../base/incrspace' ) );
+
+/**
+* @name last
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/last}
+*/
+setReadOnly( ns, 'last', require( './../../base/last' ) );
 
 /**
 * @name linspace
