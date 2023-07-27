@@ -16,12 +16,14 @@
 * limitations under the License.
 */
 
+/* eslint-disable max-len */
+
 'use strict';
 
 // MAIN //
 
 /**
-* Flattens a three-dimensional nested array and assigns elements to a provided output array.
+* Flattens a three-dimensional nested array according to a callback function.
 *
 * ## Notes
 *
@@ -30,28 +32,32 @@
 * @param {Array<Array<Collection>>} x - input nested array
 * @param {NonNegativeIntegerArray} shape - array shape
 * @param {boolean} colexicographic - specifies whether to flatten array values in colexicographic order
-* @param {Collection} out - output array
-* @param {integer} stride - output array stride
-* @param {NonNegativeInteger} offset - output array index offset
-* @returns {Collection} output array
+* @param {Function} clbk - callback function
+* @param {*} [thisArg] - callback execution context
+* @returns {Array} flattened array
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
+* function scale( v ) {
+*     return v * 2;
+* }
 *
 * var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
 *
-* var out = flatten3d( x, [ 2, 1, 2 ], false, new Float64Array( 4 ), 1, 0 );
-* // returns <Float64Array>[ 1, 2, 3, 4 ]
+* var out = flatten3dBy( x, [ 2, 1, 2 ], false, scale );
+* // returns [ 2, 4, 6, 8 ]
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
+* function scale( v ) {
+*     return v * 2;
+* }
 *
 * var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
 *
-* var out = flatten3d( x, [ 2, 1, 2 ], true, new Float64Array( 4 ), 1, 0 );
-* // returns <Float64Array>[ 1, 3, 2, 4 ]
+* var out = flatten3dBy( x, [ 2, 1, 2 ], true, scale );
+* // returns [ 2, 6, 4, 8 ]
 */
-function flatten3d( x, shape, colexicographic, out, stride, offset ) {
+function flatten3dBy( x, shape, colexicographic, clbk, thisArg ) {
+	var out;
 	var S0;
 	var S1;
 	var S2;
@@ -60,21 +66,21 @@ function flatten3d( x, shape, colexicographic, out, stride, offset ) {
 	var i2;
 	var a0;
 	var a1;
-	var io;
 
 	// Extract loop variables:
 	S0 = shape[ 2 ]; // for nested arrays, the last dimensions have the fastest changing indices
 	S1 = shape[ 1 ];
 	S2 = shape[ 0 ];
 
+	// Initialize an output array:
+	out = [];
+
 	// Iterate over the array dimensions...
-	io = offset;
 	if ( colexicographic ) {
 		for ( i0 = 0; i0 < S0; i0++ ) {
 			for ( i1 = 0; i1 < S1; i1++ ) {
 				for ( i2 = 0; i2 < S2; i2++ ) {
-					out[ io ] = x[ i2 ][ i1 ][ i0 ]; // equivalent to storing in column-major (Fortran-style) order
-					io += stride;
+					out.push( clbk.call( thisArg, x[ i2 ][ i1 ][ i0 ], [ i2, i1, i0 ], x ) ); // equivalent to storing in column-major (Fortran-style) order
 				}
 			}
 		}
@@ -85,8 +91,7 @@ function flatten3d( x, shape, colexicographic, out, stride, offset ) {
 		for ( i1 = 0; i1 < S1; i1++ ) {
 			a0 = a1[ i1 ];
 			for ( i0 = 0; i0 < S0; i0++ ) {
-				out[ io ] = a0[ i0 ]; // equivalent to storing in row-major (C-style) order
-				io += stride;
+				out.push( clbk.call( thisArg, a0[ i0 ], [ i2, i1, i0 ], x ) ); // equivalent to storing in row-major (C-style) order
 			}
 		}
 	}
@@ -96,4 +101,4 @@ function flatten3d( x, shape, colexicographic, out, stride, offset ) {
 
 // EXPORTS //
 
-module.exports = flatten3d;
+module.exports = flatten3dBy;

@@ -190,6 +190,15 @@ setReadOnly( ns, 'flatten2dBy', require( './../../base/flatten2d-by' ) );
 setReadOnly( ns, 'flatten3d', require( './../../base/flatten3d' ) );
 
 /**
+* @name flatten3dBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten3d-by}
+*/
+setReadOnly( ns, 'flatten3dBy', require( './../../base/flatten3d-by' ) );
+
+/**
 * @name flatten4d
 * @memberof ns
 * @readonly

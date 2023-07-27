@@ -23,9 +23,9 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Two-dimensional nested array.
+* Three-dimensional nested array.
 */
-type Array2D<T> = Array<Collection<T>>;
+type Array3D<T> = Array<Array<Collection<T>>>;
 
 /**
 * Nullary callback function.
@@ -59,7 +59,7 @@ type Binary<T, U> = ( value: T, indices: Array<number> ) => U;
 * @param arr - input array
 * @returns result
 */
-type Ternary<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => U;
+type Ternary<T, U> = ( value: T, indices: Array<number>, arr: Array3D<T> ) => U;
 
 /**
 * Callback function.
@@ -72,11 +72,11 @@ type Ternary<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => U;
 type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
-* Interface describing `flatten2dBy`.
+* Interface describing `flatten3dBy`.
 */
-interface Flatten2dBy {
+interface Flatten3dBy {
 	/**
-	* Flattens a two-dimensional nested array according to a callback function.
+	* Flattens a three-dimensional nested array according to a callback function..
 	*
 	* ## Notes
 	*
@@ -94,9 +94,9 @@ interface Flatten2dBy {
 	*     return v * 2;
 	* }
 	*
-	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
 	*
-	* var out = flatten2dBy( x, [ 2, 2 ], false, scale );
+	* var out = flatten3dBy( x, [ 2, 1, 2 ], false, scale );
 	* // returns [ 2, 4, 6, 8 ]
 	*
 	* @example
@@ -104,16 +104,15 @@ interface Flatten2dBy {
 	*     return v * 2;
 	* }
 	*
-	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
 	*
-	* var out = flatten2dBy( x, [ 2, 2 ], true, scale );
+	* var out = flatten3dBy( x, [ 2, 1, 2 ], true, scale );
 	* // returns [ 2, 6, 4, 8 ]
 	*/
-	<T = unknown, U = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Array<U>;
-
+	<T = unknown, U = unknown>( x: Array3D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Array<T>;
 
 	/**
-	* Flattens a two-dimensional nested array according to a callback function and assigns elements to a provided output array.
+	* Flattens a three-dimensional nested array according to a callback function and assigns elements to a provided output array.
 	*
 	* ## Notes
 	*
@@ -136,9 +135,9 @@ interface Flatten2dBy {
 	*     return v * 2;
 	* }
 	*
-	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
 	*
-	* var out = flatten2dBy( x, [ 2, 2 ], false, new Float64Array( 4 ), 1, 0, scale );
+	* var out = flatten3dBy.assign( x, [ 2, 1, 2 ], false, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 4, 6, 8 ]
 	*
 	* @example
@@ -148,16 +147,16 @@ interface Flatten2dBy {
 	*     return v * 2;
 	* }
 	*
-	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
 	*
-	* var out = flatten2dBy( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
+	* var out = flatten3dBy.assign( x, [ 2, 1, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 6, 4, 8 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<U | V>;
 }
 
 /**
-* Flattens a two-dimensional nested array according to a callback function.
+* Flattens a three-dimensional nested array according to a callback function.
 *
 * ## Notes
 *
@@ -171,28 +170,28 @@ interface Flatten2dBy {
 * @returns flattened array
 *
 * @example
+* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
+*
 * function scale( v ) {
 *     return v * 2;
 * }
 *
-* var x = [ [ 1, 2 ], [ 3, 4 ] ];
-*
-* var out = flatten2dBy( x, [ 2, 2 ], false, scale );
+* var out = flatten3dBy( x, [ 2, 1, 2 ], false, scale );
 * // returns [ 2, 4, 6, 8 ]
 *
 * @example
+* var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
+*
 * function scale( v ) {
 *     return v * 2;
 * }
 *
-* var x = [ [ 1, 2 ], [ 3, 4 ] ];
-*
-* var out = flatten2dBy( x, [ 2, 2 ], true, scale );
+* var out = flatten3dBy( x, [ 2, 1, 2 ], true, scale );
 * // returns [ 2, 6, 4, 8 ]
 */
-declare var flatten2dBy: Flatten2dBy;
+declare var flatten3dBy: Flatten3dBy;
 
 
 // EXPORTS //
 
-export = flatten2dBy;
+export = flatten3dBy;
