@@ -154,6 +154,15 @@ setReadOnly( ns, 'filled', require( './../../base/filled' ) );
 setReadOnly( ns, 'filledBy', require( './../../base/filled-by' ) );
 
 /**
+* @name filled2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/filled2d}
+*/
+setReadOnly( ns, 'filled2d', require( './../../base/filled2d' ) );
+
+/**
 * @name flatten
 * @memberof ns
 * @readonly
