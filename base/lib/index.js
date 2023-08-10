@@ -307,6 +307,15 @@ setReadOnly( ns, 'nCartesianProduct', require( './../../base/n-cartesian-product
 setReadOnly( ns, 'ones', require( './../../base/ones' ) );
 
 /**
+* @name ones2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ones2d}
+*/
+setReadOnly( ns, 'ones2d', require( './../../base/ones2d' ) );
+
+/**
 * @name setter
 * @memberof ns
 * @readonly
