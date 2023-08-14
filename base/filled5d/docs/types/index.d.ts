@@ -23,23 +23,23 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Returns a filled four-dimensional nested array.
+* Returns a filled five-dimensional nested array.
 *
 * @param value - fill value
 * @param shape - array shape
 * @returns output array
 *
 * @example
-* var out = filled4d( 0.0, [ 1, 1, 1, 3 ] );
-* // returns [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ]
+* var out = filled5d( 0.0, [ 1, 1, 1, 1, 3 ] );
+* // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
 *
 * @example
-* var out = filled4d( 'beep', [ 1, 1, 1, 3 ] );
-* // returns [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ]
+* var out = filled5d( 'beep', [ 1, 1, 1, 1, 3 ] );
+* // returns [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ]
 */
-declare function filled4d<T = unknown>( value: T, shape: Collection<number> ): Array<Array<Array<Array<T>>>>;
+declare function filled5d<T = unknown>( value: T, shape: Collection<number> ): Array<Array<Array<Array<Array<T>>>>>;
 
 
 // EXPORTS //
 
-export = filled4d;
+export = filled5d;

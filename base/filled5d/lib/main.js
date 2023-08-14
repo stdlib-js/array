@@ -26,38 +26,62 @@ var filled = require( './../../../base/filled' );
 // MAIN //
 
 /**
-* Returns a filled two-dimensional nested array.
+* Returns a filled five-dimensional nested array.
 *
 * @param {*} value - fill value
 * @param {NonNegativeIntegerArray} shape - array shape
 * @returns {Array} filled array
 *
 * @example
-* var out = filled2d( 0.0, [ 1, 3 ] );
-* // returns [ [ 0.0, 0.0, 0.0 ] ]
+* var out = filled5d( 0.0, [ 1, 1, 1, 1, 3 ] );
+* // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
 *
 * @example
-* var out = filled2d( 'beep', [ 3, 1 ] );
-* // returns [ [ 'beep' ], [ 'beep' ], [ 'beep' ] ]
+* var out = filled5d( 'beep', [ 1, 1, 1, 3, 1 ] );
+* // returns [ [ [ [ [ 'beep' ], [ 'beep' ], [ 'beep' ] ] ] ] ]
 */
-function filled2d( value, shape ) {
-	var arr;
+function filled5d( value, shape ) {
+	var out;
+	var a1;
+	var a2;
+	var a3;
 	var S0;
 	var S1;
-	var i;
+	var S2;
+	var S3;
+	var S4;
+	var i1;
+	var i2;
+	var i3;
+	var i4;
 
-	S0 = shape[ 1 ];
-	S1 = shape[ 0 ];
+	S0 = shape[ 4 ];
+	S1 = shape[ 3 ];
+	S2 = shape[ 2 ];
+	S3 = shape[ 1 ];
+	S4 = shape[ 0 ];
 
 	// Manually push elements in order to ensure "fast" elements...
-	arr = [];
-	for ( i = 0; i < S1; i++ ) {
-		arr.push( filled( value, S0 ) );
+	out = [];
+	for ( i4 = 0; i4 < S4; i4++ ) {
+		a3 = [];
+		for ( i3 = 0; i3 < S3; i3++ ) {
+			a2 = [];
+			for ( i2 = 0; i2 < S2; i2++ ) {
+				a1 = [];
+				for ( i1 = 0; i1 < S1; i1++ ) {
+					a1.push( filled( value, S0 ) );
+				}
+				a2.push( a1 );
+			}
+			a3.push( a2 );
+		}
+		out.push( a3 );
 	}
-	return arr;
+	return out;
 }
 
 
 // EXPORTS //
 
-module.exports = filled2d;
+module.exports = filled5d;
