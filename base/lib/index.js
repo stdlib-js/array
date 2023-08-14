@@ -91,6 +91,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name broadcastArray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/broadcast-array}
+*/
+setReadOnly( ns, 'broadcastArray', require( './../../base/broadcast-array' ) );
+
+/**
 * @name cartesianPower
 * @memberof ns
 * @readonly
