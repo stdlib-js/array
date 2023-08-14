@@ -442,6 +442,15 @@ setReadOnly( ns, 'zeros', require( './../../base/zeros' ) );
 setReadOnly( ns, 'zeros2d', require( './../../base/zeros2d' ) );
 
 /**
+* @name zeros3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/zeros3d}
+*/
+setReadOnly( ns, 'zeros3d', require( './../../base/zeros3d' ) );
+
+/**
 * @name zerosnd
 * @memberof ns
 * @readonly
