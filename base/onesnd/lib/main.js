@@ -26,24 +26,24 @@ var fillednd = require( './../../../base/fillednd' );
 // MAIN //
 
 /**
-* Returns a zero-filled n-dimensional nested array.
+* Returns an n-dimensional nested array filled with ones.
 *
 * @param {NonNegativeIntegerArray} shape - array shape
 * @returns {Array} filled array
 *
 * @example
-* var out = zerosnd( [ 3 ] );
-* // returns [ 0.0, 0.0, 0.0 ]
+* var out = onesnd( [ 3 ] );
+* // returns [ 1.0, 1.0, 1.0 ]
 *
 * @example
-* var out = zerosnd( [ 1, 3 ] );
-* // returns [ [ 0.0, 0.0, 0.0 ] ]
+* var out = onesnd( [ 1, 3 ] );
+* // returns [ [ 1.0, 1.0, 1.0 ] ]
 */
-function zerosnd( shape ) {
-	return fillednd( 0.0, shape );
+function onesnd( shape ) {
+	return fillednd( 1.0, shape );
 }
 
 
 // EXPORTS //
 
-module.exports = zerosnd;
+module.exports = onesnd;

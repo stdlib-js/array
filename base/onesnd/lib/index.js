@@ -18,32 +18,23 @@
 
 'use strict';
 
+/**
+* Create an n-dimensional nested array filled with ones.
+*
+* @module @stdlib/array/base/onesnd
+*
+* @example
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+*
+* var out = onesnd( [ 1, 3 ] );
+* // returns [ [ 1.0, 1.0, 1.0 ] ]
+*/
+
 // MODULES //
 
-var fillednd = require( './../../../base/fillednd' );
-
-
-// MAIN //
-
-/**
-* Returns a zero-filled n-dimensional nested array.
-*
-* @param {NonNegativeIntegerArray} shape - array shape
-* @returns {Array} filled array
-*
-* @example
-* var out = zerosnd( [ 3 ] );
-* // returns [ 0.0, 0.0, 0.0 ]
-*
-* @example
-* var out = zerosnd( [ 1, 3 ] );
-* // returns [ [ 0.0, 0.0, 0.0 ] ]
-*/
-function zerosnd( shape ) {
-	return fillednd( 0.0, shape );
-}
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = zerosnd;
+module.exports = main;

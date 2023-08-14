@@ -18,32 +18,24 @@
 
 'use strict';
 
-// MODULES //
+var onesnd = require( './../lib' );
 
-var fillednd = require( './../../../base/fillednd' );
+var out = onesnd( [ 1, 3 ] );
+console.log( out );
+// => [ [ 1.0, 1.0, 1.0 ] ]
 
+out = onesnd( [ 3, 1 ] );
+console.log( out );
+// => [ [ 1.0 ], [ 1.0 ], [ 1.0 ] ]
 
-// MAIN //
+out = onesnd( [ 1, 1, 3 ] );
+console.log( out );
+// => [ [ [ 1.0, 1.0, 1.0 ] ] ]
 
-/**
-* Returns a zero-filled n-dimensional nested array.
-*
-* @param {NonNegativeIntegerArray} shape - array shape
-* @returns {Array} filled array
-*
-* @example
-* var out = zerosnd( [ 3 ] );
-* // returns [ 0.0, 0.0, 0.0 ]
-*
-* @example
-* var out = zerosnd( [ 1, 3 ] );
-* // returns [ [ 0.0, 0.0, 0.0 ] ]
-*/
-function zerosnd( shape ) {
-	return fillednd( 0.0, shape );
-}
+out = onesnd( [ 1, 3, 1 ] );
+console.log( out );
+// => [ [ [ 1.0 ], [ 1.0 ], [ 1.0 ] ] ]
 
-
-// EXPORTS //
-
-module.exports = zerosnd;
+out = onesnd( [ 1, 1, 1, 3 ] );
+console.log( out );
+// => [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
