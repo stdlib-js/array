@@ -370,6 +370,15 @@ setReadOnly( ns, 'ones', require( './../../base/ones' ) );
 setReadOnly( ns, 'ones2d', require( './../../base/ones2d' ) );
 
 /**
+* @name ones3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ones3d}
+*/
+setReadOnly( ns, 'ones3d', require( './../../base/ones3d' ) );
+
+/**
 * @name onesnd
 * @memberof ns
 * @readonly
