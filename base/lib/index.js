@@ -199,6 +199,15 @@ setReadOnly( ns, 'filled4d', require( './../../base/filled4d' ) );
 setReadOnly( ns, 'filled5d', require( './../../base/filled5d' ) );
 
 /**
+* @name fillednd
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fillednd}
+*/
+setReadOnly( ns, 'fillednd', require( './../../base/fillednd' ) );
+
+/**
 * @name flatten
 * @memberof ns
 * @readonly
