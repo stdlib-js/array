@@ -226,6 +226,15 @@ setReadOnly( ns, 'fillednd', require( './../../base/fillednd' ) );
 setReadOnly( ns, 'flatten', require( './../../base/flatten' ) );
 
 /**
+* @name flattenBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/flatten-by}
+*/
+setReadOnly( ns, 'flattenBy', require( './../../base/flatten-by' ) );
+
+/**
 * @name flatten2d
 * @memberof ns
 * @readonly
