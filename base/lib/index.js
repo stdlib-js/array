@@ -190,6 +190,15 @@ setReadOnly( ns, 'filled2dBy', require( './../../base/filled2d-by' ) );
 setReadOnly( ns, 'filled3d', require( './../../base/filled3d' ) );
 
 /**
+* @name filled3dBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/filled3d-by}
+*/
+setReadOnly( ns, 'filled3dBy', require( './../../base/filled3d-by' ) );
+
+/**
 * @name filled4d
 * @memberof ns
 * @readonly
