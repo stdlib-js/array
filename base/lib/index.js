@@ -388,6 +388,15 @@ setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 setReadOnly( ns, 'nCartesianProduct', require( './../../base/n-cartesian-product' ) );
 
 /**
+* @name oneTo
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/one-to}
+*/
+setReadOnly( ns, 'oneTo', require( './../../base/one-to' ) );
+
+/**
 * @name ones
 * @memberof ns
 * @readonly
