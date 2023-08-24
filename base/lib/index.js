@@ -226,6 +226,15 @@ setReadOnly( ns, 'filled4dBy', require( './../../base/filled4d-by' ) );
 setReadOnly( ns, 'filled5d', require( './../../base/filled5d' ) );
 
 /**
+* @name filled5dBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/filled5d-by}
+*/
+setReadOnly( ns, 'filled5dBy', require( './../../base/filled5d-by' ) );
+
+/**
 * @name fillednd
 * @memberof ns
 * @readonly
