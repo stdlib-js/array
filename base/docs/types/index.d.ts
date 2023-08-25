@@ -27,6 +27,7 @@ import accessorSetter = require( './../../../base/accessor-setter' );
 import accessors = require( './../../../base/accessors' );
 import arraylike2object = require( './../../../base/arraylike2object' );
 import assert = require( './../../../base/assert' );
+import broadcastArray = require( './../../../base/broadcast-array' );
 import cartesianPower = require( './../../../base/cartesian-power' );
 import cartesianProduct = require( './../../../base/cartesian-product' );
 import cartesianSquare = require( './../../../base/cartesian-square' );
@@ -34,7 +35,17 @@ import copy = require( './../../../base/copy' );
 import copyIndexed = require( './../../../base/copy-indexed' );
 import filled = require( './../../../base/filled' );
 import filledBy = require( './../../../base/filled-by' );
+import filled2d = require( './../../../base/filled2d' );
+import filled2dBy = require( './../../../base/filled2d-by' );
+import filled3d = require( './../../../base/filled3d' );
+import filled3dBy = require( './../../../base/filled3d-by' );
+import filled4d = require( './../../../base/filled4d' );
+import filled4dBy = require( './../../../base/filled4d-by' );
+import filled5d = require( './../../../base/filled5d' );
+import filled5dBy = require( './../../../base/filled5d-by' );
+import fillednd = require( './../../../base/fillednd' );
 import flatten = require( './../../../base/flatten' );
+import flattenBy = require( './../../../base/flatten-by' );
 import flatten2d = require( './../../../base/flatten2d' );
 import flatten2dBy = require( './../../../base/flatten2d-by' );
 import flatten3d = require( './../../../base/flatten3d' );
@@ -49,13 +60,24 @@ import last = require( './../../../base/last' );
 import linspace = require( './../../../base/linspace' );
 import logspace = require( './../../../base/logspace' );
 import nCartesianProduct = require( './../../../base/n-cartesian-product' );
+import oneTo = require( './../../../base/one-to' );
 import ones = require( './../../../base/ones' );
+import ones2d = require( './../../../base/ones2d' );
+import ones3d = require( './../../../base/ones3d' );
+import ones4d = require( './../../../base/ones4d' );
+import ones5d = require( './../../../base/ones5d' );
+import onesnd = require( './../../../base/onesnd' );
 import setter = require( './../../../base/setter' );
 import take = require( './../../../base/take' );
 import toAccessorArray = require( './../../../base/to-accessor-array' );
 import unitspace = require( './../../../base/unitspace' );
 import zeroTo = require( './../../../base/zero-to' );
 import zeros = require( './../../../base/zeros' );
+import zeros2d = require( './../../../base/zeros2d' );
+import zeros3d = require( './../../../base/zeros3d' );
+import zeros4d = require( './../../../base/zeros4d' );
+import zeros5d = require( './../../../base/zeros5d' );
+import zerosnd = require( './../../../base/zerosnd' );
 
 /**
 * Interface describing the `base` namespace.
@@ -200,6 +222,68 @@ interface Namespace {
 	assert: typeof assert;
 
 	/**
+	* Broadcasts an array to a specified shape.
+	*
+	* ## Notes
+	*
+	* -   The broadcasted array shares the same data as the input array. As more than one element of a broadcasted array may refer to the same memory location, writing to the broadcasted array may affect multiple elements. If you need to write to the broadcasted array, copy the array before performing operations which may mutate elements.
+	* -   The function throws an error if a provided input shape is incompatible with a provided output shape.
+	*
+	* @param x - input array
+	* @param inShape - input array shape
+	* @param outShape - output array shape
+	* @throws input array cannot have more dimensions than the desired shape
+	* @throws input array dimension sizes must be `1` or equal to the corresponding dimension in the provided output shape
+	* @returns broadcast object
+	*
+	* @example
+	* var x = [ 1, 2 ];
+	*
+	* var out = ns.broadcastArray( x, [ 2 ], [ 2, 2 ] );
+	* // returns {...}
+	*
+	* var shape = out.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var strides = out.strides;
+	* // returns [ 0, 1 ]
+	*
+	* var ref = out.ref;
+	* // returns [ 1, 2 ]
+	*
+	* var bool = ( x === ref );
+	* // returns true
+	*
+	* var data = out.data;
+	* // returns [ [ 1, 2 ] ]
+	*
+	* @example
+	* var x = [ 1, 2 ];
+	*
+	* var out = ns.broadcastArray( x, [ 2 ], [ 2, 1, 2 ] );
+	* // returns {...}
+	*
+	* var data = out.data;
+	* // returns [ [ [ 1, 2 ] ] ]
+	*
+	* var strides = out.strides;
+	* // returns [ 0, 0, 1 ]
+	*
+	* @example
+	* var x = [ [ 1 ], [ 2 ] ];
+	*
+	* var out = ns.broadcastArray( x, [ 2, 1 ], [ 3, 2, 2 ] );
+	* // returns {...}
+	*
+	* var data = out.data;
+	* // returns [ [ [ 1 ], [ 2 ] ] ]
+	*
+	* var strides = out.strides;
+	* // returns [ 0, 1, 0 ]
+	*/
+	broadcastArray: typeof broadcastArray;
+
+	/**
 	* Returns the Cartesian power.
 	*
 	* ## Notes
@@ -319,6 +403,155 @@ interface Namespace {
 	filledBy: typeof filledBy;
 
 	/**
+	* Returns a filled two-dimensional nested array.
+	*
+	* @param value - fill value
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.filled2d( 0.0, [ 1, 3 ] );
+	* // returns [ [ 0.0, 0.0, 0.0 ] ]
+	*
+	* @example
+	* var out = ns.filled2d( 'beep', [ 1, 3 ] );
+	* // returns [ [ 'beep', 'beep', 'beep' ] ]
+	*/
+	filled2d: typeof filled2d;
+
+	/**
+	* Returns a filled two-dimensional nested array according to a provided callback function.
+	*
+	* @param shape - array shape
+	* @param clbk - callback function
+	* @param thisArg - callback function execution context
+	* @returns output array
+	*
+	* @example
+	* var constantFunction = require( `@stdlib/utils/constant-function` );
+	*
+	* var arr = ns.filled2dBy( [ 1, 5 ], constantFunction( 1.0 ) );
+	* // returns [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ]
+	*/
+	filled2dBy: typeof filled2dBy;
+
+	/**
+	* Returns a filled three-dimensional nested array.
+	*
+	* @param value - fill value
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.filled3d( 0.0, [ 1, 1, 3 ] );
+	* // returns [ [ [ 0.0, 0.0, 0.0 ] ] ]
+	*
+	* @example
+	* var out = ns.filled3d( 'beep', [ 1, 1, 3 ] );
+	* // returns [ [ [ 'beep', 'beep', 'beep' ] ] ]
+	*/
+	filled3d: typeof filled3d;
+
+	/**
+	* Returns a filled three-dimensional nested array according to a provided callback function.
+	*
+	* @param shape - array shape
+	* @param clbk - callback function
+	* @param thisArg - callback function execution context
+	* @returns output array
+	*
+	* @example
+	* var constantFunction = require( `@stdlib/utils/constant-function` );
+	*
+	* var arr = ns.filled3dBy( [ 1, 1, 5 ], constantFunction( 1.0 ) );
+	* // returns [ [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ] ]
+	*/
+	filled3dBy: typeof filled3dBy;
+
+	/**
+	* Returns a filled four-dimensional nested array.
+	*
+	* @param value - fill value
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.filled4d( 0.0, [ 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ]
+	*
+	* @example
+	* var out = ns.filled4d( 'beep', [ 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ]
+	*/
+	filled4d: typeof filled4d;
+
+	/**
+	* Returns a filled four-dimensional nested array according to a provided callback function.
+	*
+	* @param shape - array shape
+	* @param clbk - callback function
+	* @param thisArg - callback function execution context
+	* @returns output array
+	*
+	* @example
+	* var constantFunction = require( `@stdlib/utils/constant-function` );
+	*
+	* var arr = ns.filled4dBy( [ 1, 1, 1, 5 ], constantFunction( 1.0 ) );
+	* // returns [ [ [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ] ] ]
+	*/
+	filled4dBy: typeof filled4dBy;
+
+	/**
+	* Returns a filled five-dimensional nested array.
+	*
+	* @param value - fill value
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.filled5d( 0.0, [ 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
+	*
+	* @example
+	* var out = ns.filled5d( 'beep', [ 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ]
+	*/
+	filled5d: typeof filled5d;
+
+	/**
+	* Returns a filled five-dimensional nested array according to a provided callback function.
+	*
+	* @param shape - array shape
+	* @param clbk - callback function
+	* @param thisArg - callback function execution context
+	* @returns output array
+	*
+	* @example
+	* var constantFunction = require( `@stdlib/utils/constant-function` );
+	*
+	* var arr = ns.filled5dBy( [ 1, 1, 1, 1, 5 ], constantFunction( 1.0 ) );
+	* // returns [ [ [ [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ] ] ] ]
+	*/
+	filled5dBy: typeof filled5dBy;
+
+	/**
+	* Returns a filled n-dimensional nested array.
+	*
+	* @param value - fill value
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.fillednd( 0.0, [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ [ [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ] ] ] ] ] ]
+	*
+	* @example
+	* var out = ns.fillednd( 'beep', [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ [ [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ] ] ] ] ] ]
+	*/
+	fillednd: typeof fillednd;
+
+	/**
 	* Flattens an n-dimensional nested array.
 	*
 	* ## Notes
@@ -343,6 +576,42 @@ interface Namespace {
 	* // returns [ 1, 3, 2, 4 ]
 	*/
 	flatten: typeof flatten;
+
+	/**
+	* Flattens an n-dimensional nested array according to a callback function.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
+	*
+	* @param x - input array
+	* @param shape - array shape
+	* @param colexicographic - specifies whether to flatten array values in colexicographic order
+	* @param clbk - callback function
+	* @param thisArg - callback execution context
+	* @returns flattened array
+	*
+	* @example
+	* function scale( v ) {
+	*     return v * 2;
+	* }
+	*
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var out = ns.flattenBy( x, [ 2, 2 ], false, scale );
+	* // returns [ 1, 2, 3, 4 ]
+	*
+	* @example
+	* function scale( v ) {
+	*     return v * 2;
+	* }
+	*
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var out = ns.flattenBy( x, [ 2, 2 ], true, scale );
+	* // returns [ 1, 3, 2, 4 ]
+	*/
+	flattenBy: typeof flattenBy;
 
 	/**
 	* Flattens a two-dimensional nested array.
@@ -685,6 +954,18 @@ interface Namespace {
 	nCartesianProduct: typeof nCartesianProduct;
 
 	/**
+	* Generates a linearly spaced numeric array whose elements increment by 1 starting from one.
+	*
+	* @param n - number of elements
+	* @returns linearly spaced numeric array
+	*
+	* @example
+	* var arr = ns.oneTo( 6 );
+	* // returns [ 1, 2, 3, 4, 5, 6 ]
+	*/
+	oneTo: typeof oneTo;
+
+	/**
 	* Returns a "generic" array filled with ones.
 	*
 	* @param len - array length
@@ -695,6 +976,66 @@ interface Namespace {
 	* // returns [ 1.0, 1.0, 1.0 ]
 	*/
 	ones: typeof ones;
+
+	/**
+	* Returns a two-dimensional nested array filled with ones.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.ones2d( [ 1, 3 ] );
+	* // returns [ [ 1.0, 1.0, 1.0 ] ]
+	*/
+	ones2d: typeof ones2d;
+
+	/**
+	* Returns a three-dimensional nested array filled with ones.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.ones3d( [ 1, 1, 3 ] );
+	* // returns [ [ [ 1.0, 1.0, 1.0 ] ] ]
+	*/
+	ones3d: typeof ones3d;
+
+	/**
+	* Returns a four-dimensional nested array filled with ones.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.ones4d( [ 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
+	*/
+	ones4d: typeof ones4d;
+
+	/**
+	* Returns a five-dimensional nested array filled with ones.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.ones5d( [ 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
+	*/
+	ones5d: typeof ones5d;
+
+	/**
+	* Returns an n-dimensional nested array filled with ones.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.onesnd( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
+	*/
+	onesnd: typeof onesnd;
 
 	/**
 	* Returns an accessor function for setting an element in an indexed array-like object.
@@ -795,6 +1136,66 @@ interface Namespace {
 	* // returns [ 0.0, 0.0, 0.0 ]
 	*/
 	zeros: typeof zeros;
+
+	/**
+	* Returns a zero-filled two-dimensional nested array.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.zeros2d( [ 1, 3 ] );
+	* // returns [ [ 0.0, 0.0, 0.0 ] ]
+	*/
+	zeros2d: typeof zeros2d;
+
+	/**
+	* Returns a zero-filled three-dimensional nested array.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.zeros3d( [ 1, 1, 3 ] );
+	* // returns [ [ [ 0.0, 0.0, 0.0 ] ] ]
+	*/
+	zeros3d: typeof zeros3d;
+
+	/**
+	* Returns a zero-filled four-dimensional nested array.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.zeros4d( [ 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ]
+	*/
+	zeros4d: typeof zeros4d;
+
+	/**
+	* Returns a zero-filled five-dimensional nested array.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.zeros5d( [ 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
+	*/
+	zeros5d: typeof zeros5d;
+
+	/**
+	* Returns a zero-filled n-dimensional nested array.
+	*
+	* @param shape - array shape
+	* @returns output array
+	*
+	* @example
+	* var out = ns.zerosnd( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
+	* // returns [ [ [ [ [ [ [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ] ] ] ] ] ]
+	*/
+	zerosnd: typeof zerosnd;
 }
 
 /**
