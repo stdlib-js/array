@@ -478,6 +478,15 @@ setReadOnly( ns, 'take', require( './../../base/take' ) );
 setReadOnly( ns, 'toAccessorArray', require( './../../base/to-accessor-array' ) );
 
 /**
+* @name unary2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/unary2d}
+*/
+setReadOnly( ns, 'unary2d', require( './../../base/unary2d' ) );
+
+/**
 * @name unitspace
 * @memberof ns
 * @readonly
