@@ -541,6 +541,15 @@ setReadOnly( ns, 'unary3d', require( './../../base/unary3d' ) );
 setReadOnly( ns, 'unary4d', require( './../../base/unary4d' ) );
 
 /**
+* @name unary5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/unary5d}
+*/
+setReadOnly( ns, 'unary5d', require( './../../base/unary5d' ) );
+
+/**
 * @name unitspace
 * @memberof ns
 * @readonly

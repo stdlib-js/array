@@ -26,11 +26,11 @@ var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var identity = require( '@stdlib/math/base/special/identity' );
-var filled3dBy = require( './../../../base/filled3d-by' );
-var zeros3d = require( './../../../base/zeros3d' );
+var filled5dBy = require( './../../../base/filled5d-by' );
+var zeros5d = require( './../../../base/zeros5d' );
 var numel = require( '@stdlib/ndarray/base/numel' );
 var pkg = require( './../package.json' ).name;
-var unary3d = require( './../lib' );
+var unary5d = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -47,8 +47,8 @@ function createBenchmark( shape ) {
 	var x;
 	var y;
 
-	x = filled3dBy( shape, uniform( -100.0, 100.0 ) );
-	y = zeros3d( shape );
+	x = filled5dBy( shape, uniform( -100.0, 100.0 ) );
+	y = zeros5d( shape );
 
 	arrays = [ x, y ];
 
@@ -64,24 +64,30 @@ function createBenchmark( shape ) {
 		var i0;
 		var i1;
 		var i2;
+		var i3;
+		var i4;
 		var i;
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			unary3d( arrays, shape, identity );
-			i2 = i % shape[ 0 ];
-			i1 = i % shape[ 1 ];
-			i0 = i % shape[ 2 ];
-			if ( isnan( arrays[ 1 ][ i2 ][ i1 ][ i0 ] ) ) {
+			unary5d( arrays, shape, identity );
+			i4 = i % shape[ 0 ];
+			i3 = i % shape[ 1 ];
+			i2 = i % shape[ 2 ];
+			i1 = i % shape[ 3 ];
+			i0 = i % shape[ 4 ];
+			if ( isnan( arrays[ 1 ][ i4 ][ i3 ][ i2 ][ i1 ][ i0 ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
 		}
 		b.toc();
 
-		i2 = i % shape[ 0 ];
-		i1 = i % shape[ 1 ];
-		i0 = i % shape[ 2 ];
-		if ( isnan( arrays[ 1 ][ i2 ][ i1 ][ i0 ] ) ) {
+		i4 = i % shape[ 0 ];
+		i3 = i % shape[ 1 ];
+		i2 = i % shape[ 2 ];
+		i1 = i % shape[ 3 ];
+		i0 = i % shape[ 4 ];
+		if ( isnan( arrays[ 1 ][ i4 ][ i3 ][ i2 ][ i1 ][ i0 ] ) ) {
 			b.fail( 'should not return NaN' );
 		}
 		b.pass( 'benchmark finished' );
@@ -109,8 +115,8 @@ function main() {
 	max = 6; // 10^max
 
 	for ( i = min; i <= max; i++ ) {
-		N = floor( pow( pow( 10, i ), 1.0/3.0 ) );
-		sh = [ N, N, N ];
+		N = floor( pow( pow( 10, i ), 1.0/5.0 ) );
+		sh = [ N, N, N, N, N ];
 		f = createBenchmark( sh );
 		bench( pkg+'::equidimensional:size='+numel( sh ), f );
 	}
