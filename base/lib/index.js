@@ -100,6 +100,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'broadcastArray', require( './../../base/broadcast-array' ) );
 
 /**
+* @name bunary2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/broadcasted-unary2d}
+*/
+setReadOnly( ns, 'bunary2d', require( './../../base/broadcasted-unary2d' ) );
+
+/**
 * @name cartesianPower
 * @memberof ns
 * @readonly

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# unary2d
+# bunary2d
 
-> Apply a unary callback to elements in a two-dimensional nested input array and assign results to elements in a two-dimensional nested output array.
+> Apply a unary callback to elements in a [broadcasted][@stdlib/array/base/broadcast-array] nested input array and assign results to elements in a two-dimensional nested output array.
 
 <section class="intro">
 
@@ -33,28 +33,34 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var unary2d = require( '@stdlib/array/base/unary2d' );
+var bunary2d = require( '@stdlib/array/base/broadcasted-unary2d' );
 ```
 
-#### unary2d( arrays, shape, fcn )
+#### bunary2d( arrays, shapes, fcn )
 
-Applies a unary callback to elements in a two-dimensional nested input array and assigns results to elements in a two-dimensional nested output array.
+Applies a unary callback to elements in a [broadcasted][@stdlib/array/base/broadcast-array] nested input array and assigns results to elements in a two-dimensional nested output array.
 
 ```javascript
+var zeros2d = require( '@stdlib/array/base/zeros2d' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
-var x = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];
-var shape = [ 2, 2 ];
+var x = [ [ -1.0, -2.0 ] ];
+var y = zeros2d( [ 2, 2 ] );
 
-// Compute the absolute values in-place:
-unary2d( [ x, x ], shape, abs );
-// x => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+var shapes = [
+    [ 1, 2 ],
+    [ 2, 2 ]
+];
+
+// Compute the absolute values:
+bunary2d( [ x, y ], shapes, abs );
+// y => [ [ 1.0, 2.0 ], [ 1.0, 2.0 ] ]
 ```
 
 The function accepts the following arguments:
 
 -   **arrays**: array-like object containing one input nested array and one output nested array.
--   **shape**: array shape.
+-   **shapes**: array shapes.
 -   **fcn**: unary function to apply.
 
 </section>
@@ -65,7 +71,7 @@ The function accepts the following arguments:
 
 ## Notes
 
--   The function assumes that the input and output arrays have the same shape.
+-   The input and output array shapes must be broadcast [compatible][@stdlib/ndarray/base/broadcast-shapes].
 
 </section>
 
@@ -82,17 +88,20 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled2dBy = require( '@stdlib/array/base/filled2d-by' );
 var zeros2d = require( '@stdlib/array/base/zeros2d' );
 var abs = require( '@stdlib/math/base/special/abs' );
-var unary2d = require( '@stdlib/array/base/unary2d' );
+var bunary2d = require( '@stdlib/array/base/broadcasted-unary2d' );
 
-var shape = [ 3, 3 ];
+var shapes = [
+    [ 1, 3 ],
+    [ 3, 3 ]
+];
 
-var x = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var x = filled2dBy( shapes[ 0 ], discreteUniform( -100, 100 ) );
 console.log( x );
 
-var y = zeros2d( shape );
+var y = zeros2d( shapes[ 1 ] );
 console.log( y );
 
-unary2d( [ x, y ], shape, abs );
+bunary2d( [ x, y ], shapes, abs );
 console.log( y );
 ```
 
@@ -111,6 +120,10 @@ console.log( y );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array/tree/main/base/broadcast-array
+
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
 
 </section>
 
