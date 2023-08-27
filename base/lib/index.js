@@ -91,6 +91,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name binary2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/binary2d}
+*/
+setReadOnly( ns, 'binary2d', require( './../../base/binary2d' ) );
+
+/**
 * @name broadcastArray
 * @memberof ns
 * @readonly
