@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# filled5dBy
+# filledndBy
 
-> Create a filled five-dimensional nested array according to a provided callback function.
+> Create a filled n-dimensional nested array according to a provided callback function.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,20 +37,20 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var filled5dBy = require( '@stdlib/array/base/filled5d-by' );
+var filledndBy = require( '@stdlib/array/base/fillednd-by' );
 ```
 
-#### filled5dBy( shape, clbk\[, thisArg] )
+#### filledndBy( shape, clbk\[, thisArg] )
 
-Returns a filled five-dimensional nested array according to a provided callback function.
+Returns a filled n-dimensional nested array according to a provided callback function.
 
 ```javascript
 function clbk() {
     return 1.0;
 }
 
-var out = filled5dBy( [ 1, 1, 2, 1, 3 ], clbk );
-// returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ], [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
+var out = filledndBy( [ 2, 3 ], clbk );
+// returns [ [ 1.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0 ] ]
 ```
 
 When invoked, a callback function is provided a single argument:
@@ -71,7 +71,7 @@ var ctx = {
     'count': 0
 };
 
-var out = filled5dBy( [ 1, 1, 1, 2, 3 ], clbk, ctx );
+var out = filledndBy( [ 1, 1, 1, 2, 3 ], clbk, ctx );
 // returns [ [ [ [ [ 1.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0 ] ] ] ] ];
 
 var cnt = ctx.count;
@@ -100,22 +100,22 @@ var cnt = ctx.count;
 
 ```javascript
 var constantFunction = require( '@stdlib/utils/constant-function' );
-var filled5dBy = require( '@stdlib/array/base/filled5d-by' );
+var filledndBy = require( '@stdlib/array/base/fillednd-by' );
 
-var out = filled5dBy( [ 1, 1, 1, 1, 3 ], constantFunction( 0.0 ) );
-// returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
+var out = filledndBy( [ 1, 3 ], constantFunction( 0.0 ) );
+// returns [ [ 0.0, 0.0, 0.0 ] ]
 
-out = filled5dBy( [ 1, 1, 1, 3, 1 ], constantFunction( 'beep' ) );
-// returns [ [ [ [ [ 'beep' ], [ 'beep' ], [ 'beep' ] ] ] ] ]
+out = filledndBy( [ 3, 1 ], constantFunction( 'beep' ) );
+// returns [ [ 'beep' ], [ 'beep' ], [ 'beep' ] ]
 
-out = filled5dBy( [ 1, 1, 1, 1, 3 ], constantFunction( null ) );
-// returns [ [ [ [ [ null, null, null ] ] ] ] ]
+out = filledndBy( [ 1, 1, 3 ], constantFunction( null ) );
+// returns [ [ [ null, null, null ] ] ]
 
-out = filled5dBy( [ 1, 1, 1, 3, 1 ], constantFunction( true ) );
-// returns [ [ [ [ [ true ], [ true ], [ true ] ] ] ] ]
+out = filledndBy( [ 1, 3, 1 ], constantFunction( true ) );
+// returns [ [ [ true ], [ true ], [ true ] ] ]
 
-out = filled5dBy( [ 1, 1, 1, 1, 3 ], constantFunction( void 0 ) );
-// returns [ [ [ [ [ undefined, undefined, undefined ] ] ] ] ]
+out = filledndBy( [ 1, 1, 1, 3 ], constantFunction( void 0 ) );
+// returns [ [ [ [ undefined, undefined, undefined ] ] ] ]
 ```
 
 </section>

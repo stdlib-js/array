@@ -280,6 +280,15 @@ setReadOnly( ns, 'filled5dBy', require( './../../base/filled5d-by' ) );
 setReadOnly( ns, 'fillednd', require( './../../base/fillednd' ) );
 
 /**
+* @name filledndBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fillednd-by}
+*/
+setReadOnly( ns, 'filledndBy', require( './../../base/fillednd-by' ) );
+
+/**
 * @name flatten
 * @memberof ns
 * @readonly
@@ -548,6 +557,15 @@ setReadOnly( ns, 'unary4d', require( './../../base/unary4d' ) );
 * @see {@link module:@stdlib/array/base/unary5d}
 */
 setReadOnly( ns, 'unary5d', require( './../../base/unary5d' ) );
+
+/**
+* @name unarynd
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/unarynd}
+*/
+setReadOnly( ns, 'unarynd', require( './../../base/unarynd' ) );
 
 /**
 * @name unitspace
