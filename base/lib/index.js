@@ -136,6 +136,24 @@ setReadOnly( ns, 'bunary2d', require( './../../base/broadcasted-unary2d' ) );
 setReadOnly( ns, 'bunary3d', require( './../../base/broadcasted-unary3d' ) );
 
 /**
+* @name bunary4d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/broadcasted-unary4d}
+*/
+setReadOnly( ns, 'bunary4d', require( './../../base/broadcasted-unary4d' ) );
+
+/**
+* @name bunary5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/broadcasted-unary5d}
+*/
+setReadOnly( ns, 'bunary5d', require( './../../base/broadcasted-unary5d' ) );
+
+/**
 * @name cartesianPower
 * @memberof ns
 * @readonly
