@@ -100,6 +100,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'binary2d', require( './../../base/binary2d' ) );
 
 /**
+* @name binary3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/binary3d}
+*/
+setReadOnly( ns, 'binary3d', require( './../../base/binary3d' ) );
+
+/**
 * @name broadcastArray
 * @memberof ns
 * @readonly
