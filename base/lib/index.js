@@ -163,6 +163,15 @@ setReadOnly( ns, 'bbinary3d', require( './../../base/broadcasted-binary3d' ) );
 setReadOnly( ns, 'bbinary4d', require( './../../base/broadcasted-binary4d' ) );
 
 /**
+* @name bbinary5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/broadcasted-binary5d}
+*/
+setReadOnly( ns, 'bbinary5d', require( './../../base/broadcasted-binary5d' ) );
+
+/**
 * @name bunary2d
 * @memberof ns
 * @readonly
