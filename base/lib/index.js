@@ -127,6 +127,15 @@ setReadOnly( ns, 'binary4d', require( './../../base/binary4d' ) );
 setReadOnly( ns, 'binary5d', require( './../../base/binary5d' ) );
 
 /**
+* @name binarynd
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/binarynd}
+*/
+setReadOnly( ns, 'binarynd', require( './../../base/binarynd' ) );
+
+/**
 * @name broadcastArray
 * @memberof ns
 * @readonly
