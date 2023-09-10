@@ -505,6 +505,15 @@ setReadOnly( ns, 'linspace', require( './../../base/linspace' ) );
 setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 
 /**
+* @name mskunary2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/mskunary2d}
+*/
+setReadOnly( ns, 'mskunary2d', require( './../../base/mskunary2d' ) );
+
+/**
 * @name nCartesianProduct
 * @memberof ns
 * @readonly
