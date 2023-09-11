@@ -505,6 +505,15 @@ setReadOnly( ns, 'linspace', require( './../../base/linspace' ) );
 setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 
 /**
+* @name mskbinary2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/mskbinary2d}
+*/
+setReadOnly( ns, 'mskbinary2d', require( './../../base/mskbinary2d' ) );
+
+/**
 * @name mskunary2d
 * @memberof ns
 * @readonly
