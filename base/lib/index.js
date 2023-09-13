@@ -523,6 +523,15 @@ setReadOnly( ns, 'mskbinary2d', require( './../../base/mskbinary2d' ) );
 setReadOnly( ns, 'mskunary2d', require( './../../base/mskunary2d' ) );
 
 /**
+* @name mskunary3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/mskunary3d}
+*/
+setReadOnly( ns, 'mskunary3d', require( './../../base/mskunary3d' ) );
+
+/**
 * @name nCartesianProduct
 * @memberof ns
 * @readonly
