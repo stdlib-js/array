@@ -27,7 +27,20 @@ import accessorSetter = require( './../../../base/accessor-setter' );
 import accessors = require( './../../../base/accessors' );
 import arraylike2object = require( './../../../base/arraylike2object' );
 import assert = require( './../../../base/assert' );
+import binary2d = require( './../../../base/binary2d' );
+import binary3d = require( './../../../base/binary3d' );
+import binary4d = require( './../../../base/binary4d' );
+import binary5d = require( './../../../base/binary5d' );
+import binarynd = require( './../../../base/binarynd' );
 import broadcastArray = require( './../../../base/broadcast-array' );
+import bbinary2d = require( './../../../base/broadcasted-binary2d' );
+import bbinary3d = require( './../../../base/broadcasted-binary3d' );
+import bbinary4d = require( './../../../base/broadcasted-binary4d' );
+import bbinary5d = require( './../../../base/broadcasted-binary5d' );
+import bunary2d = require( './../../../base/broadcasted-unary2d' );
+import bunary3d = require( './../../../base/broadcasted-unary3d' );
+import bunary4d = require( './../../../base/broadcasted-unary4d' );
+import bunary5d = require( './../../../base/broadcasted-unary5d' );
 import cartesianPower = require( './../../../base/cartesian-power' );
 import cartesianProduct = require( './../../../base/cartesian-product' );
 import cartesianSquare = require( './../../../base/cartesian-square' );
@@ -44,6 +57,7 @@ import filled4dBy = require( './../../../base/filled4d-by' );
 import filled5d = require( './../../../base/filled5d' );
 import filled5dBy = require( './../../../base/filled5d-by' );
 import fillednd = require( './../../../base/fillednd' );
+import filledndBy = require( './../../../base/fillednd-by' );
 import flatten = require( './../../../base/flatten' );
 import flattenBy = require( './../../../base/flatten-by' );
 import flatten2d = require( './../../../base/flatten2d' );
@@ -59,6 +73,9 @@ import incrspace = require( './../../../base/incrspace' );
 import last = require( './../../../base/last' );
 import linspace = require( './../../../base/linspace' );
 import logspace = require( './../../../base/logspace' );
+import mskbinary2d = require( './../../../base/mskbinary2d' );
+import mskunary2d = require( './../../../base/mskunary2d' );
+import mskunary3d = require( './../../../base/mskunary3d' );
 import nCartesianProduct = require( './../../../base/n-cartesian-product' );
 import oneTo = require( './../../../base/one-to' );
 import ones = require( './../../../base/ones' );
@@ -70,6 +87,12 @@ import onesnd = require( './../../../base/onesnd' );
 import setter = require( './../../../base/setter' );
 import take = require( './../../../base/take' );
 import toAccessorArray = require( './../../../base/to-accessor-array' );
+import unary2d = require( './../../../base/unary2d' );
+import unary2dBy = require( './../../../base/unary2d-by' );
+import unary3d = require( './../../../base/unary3d' );
+import unary4d = require( './../../../base/unary4d' );
+import unary5d = require( './../../../base/unary5d' );
+import unarynd = require( './../../../base/unarynd' );
 import unitspace = require( './../../../base/unitspace' );
 import zeroTo = require( './../../../base/zero-to' );
 import zeros = require( './../../../base/zeros' );
@@ -222,6 +245,151 @@ interface Namespace {
 	assert: typeof assert;
 
 	/**
+	* Applies a binary callback to elements in two two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shape - array shape
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shape = [ 2, 2 ];
+	*
+	* var x = ones2d( shape );
+	* var y = ones2d( shape );
+	* var z = zeros2d( shape );
+	*
+	* ns.binary2d( [ x, y, z ], shape, add );
+	*
+	* console.log( z );
+	* // => [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ]
+	*/
+	binary2d: typeof binary2d;
+
+	/**
+	* Applies a binary callback to elements in two three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shape - array shape
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
+	* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shape = [ 2, 2, 2 ];
+	*
+	* var x = ones3d( shape );
+	* var y = ones3d( shape );
+	* var z = zeros3d( shape );
+	*
+	* ns.binary3d( [ x, y, z ], shape, add );
+	*
+	* console.log( z );
+	* // => [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ], [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ]
+	*/
+	binary3d: typeof binary3d;
+
+	/**
+	* Applies a binary callback to elements in two four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shape - array shape
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones4d = require( `@stdlib/array/base/ones4d` );
+	* var zeros4d = require( `@stdlib/array/base/zeros4d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shape = [ 1, 2, 2, 2 ];
+	*
+	* var x = ones4d( shape );
+	* var y = ones4d( shape );
+	* var z = zeros4d( shape );
+	*
+	* ns.binary4d( [ x, y, z ], shape, add );
+	*
+	* console.log( z );
+	* // => [ [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ], [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ] ]
+	*/
+	binary4d: typeof binary4d;
+
+	/**
+	* Applies a binary callback to elements in two five-dimensional nested input arrays and assigns results to elements in a five-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shape - array shape
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones5d = require( `@stdlib/array/base/ones5d` );
+	* var zeros5d = require( `@stdlib/array/base/zeros5d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shape = [ 1, 1, 2, 2, 2 ];
+	*
+	* var x = ones5d( shape );
+	* var y = ones5d( shape );
+	* var z = zeros5d( shape );
+	*
+	* ns.binary5d( [ x, y, z ], shape, add );
+	*
+	* console.log( z );
+	* // => [ [ [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ], [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ] ] ]
+	*/
+	binary5d: typeof binary5d;
+
+	/**
+	* Applies a binary callback to elements in two n-dimensional nested input arrays and assigns results to elements in an n-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shape - array shape
+	* @param fcn - binary callback
+	*
+	* @example
+	* var add = require( `@stdlib/math/base/ops/add` );
+	* var onesnd = require( `@stdlib/array/base/onesnd` );
+	* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+	*
+	* var shape = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ];
+	*
+	* var x = onesnd( shape );
+	* var y = onesnd( shape );
+	* var z = zerosnd( shape );
+	*
+	* ns.binarynd( [ x, y, z ], shape, add );
+	*
+	* console.log( z );
+	* // => [ [ [ [ [ [ [ [ [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ] ] ] ] ] ] ] ] ]
+	*/
+	binarynd: typeof binarynd;
+
+	/**
 	* Broadcasts an array to a specified shape.
 	*
 	* ## Notes
@@ -282,6 +450,274 @@ interface Namespace {
 	* // returns [ 0, 1, 0 ]
 	*/
 	broadcastArray: typeof broadcastArray;
+
+	/**
+	* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shapes must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shapes = [
+	*     [ 1, 2 ],
+	*     [ 2, 1 ],
+	*     [ 2, 2 ]
+	* ];
+	*
+	* var x = ones2d( shapes[ 0 ] );
+	* var y = ones2d( shapes[ 1 ] );
+	* var z = zeros2d( shapes[ 2 ] );
+	*
+	* ns.bbinary2d( [ x, y, z ], shapes, add );
+	*
+	* console.log( z );
+	* // => [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ]
+	*/
+	bbinary2d: typeof bbinary2d;
+
+	/**
+	* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a three-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shapes must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
+	* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shapes = [
+	*     [ 1, 1, 2 ],
+	*     [ 2, 1, 1 ],
+	*     [ 2, 2, 2 ]
+	* ];
+	*
+	* var x = ones3d( shapes[ 0 ] );
+	* var y = ones3d( shapes[ 1 ] );
+	* var z = zeros3d( shapes[ 2 ] );
+	*
+	* ns.bbinary3d( [ x, y, z ], shapes, add );
+	*
+	* console.log( z );
+	* // => [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ],  [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ]
+	*/
+	bbinary3d: typeof bbinary3d;
+
+	/**
+	* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a four-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shapes must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones4d = require( `@stdlib/array/base/ones4d` );
+	* var zeros4d = require( `@stdlib/array/base/zeros4d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shapes = [
+	*     [ 1, 1, 1, 2 ],
+	*     [ 1, 2, 1, 1 ],
+	*     [ 1, 2, 2, 2 ]
+	* ];
+	*
+	* var x = ones4d( shapes[ 0 ] );
+	* var y = ones4d( shapes[ 1 ] );
+	* var z = zeros4d( shapes[ 2 ] );
+	*
+	* ns.bbinary4d( [ x, y, z ], shapes, add );
+	*
+	* console.log( z );
+	* // => [ [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ],  [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ] ]
+	*/
+	bbinary4d: typeof bbinary4d;
+
+	/**
+	* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a five-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shapes must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing two input nested arrays and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones5d = require( `@stdlib/array/base/ones5d` );
+	* var zeros5d = require( `@stdlib/array/base/zeros5d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shapes = [
+	*     [ 1, 1, 1, 1, 2 ],
+	*     [ 1, 1, 2, 1, 1 ],
+	*     [ 1, 1, 2, 2, 2 ]
+	* ];
+	*
+	* var x = ones5d( shapes[ 0 ] );
+	* var y = ones5d( shapes[ 1 ] );
+	* var z = zeros5d( shapes[ 2 ] );
+	*
+	* ns.bbinary5d( [ x, y, z ], shapes, add );
+	*
+	* console.log( z );
+	* // => [ [ [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ],  [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ] ] ]
+	*/
+	bbinary5d: typeof bbinary5d;
+
+	/**
+	* Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shape must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shapes = [
+	*     [ 1, 2 ],
+	*     [ 2, 2 ]
+	* ];
+	*
+	* var x = ones2d( shapes[ 0 ] );
+	* var y = zeros2d( shapes[ 1 ] );
+	*
+	* ns.bunary2d( [ x, y ], shapes, scale );
+	*
+	* console.log( y );
+	* // => [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+	*/
+	bunary2d: typeof bunary2d;
+
+	/**
+	* Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a three-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shape must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
+	* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shapes = [
+	*     [ 1, 1, 2 ],
+	*     [ 1, 2, 2 ]
+	* ];
+	*
+	* var x = ones3d( shapes[ 0 ] );
+	* var y = zeros3d( shapes[ 1 ] );
+	*
+	* ns.bunary3d( [ x, y ], shapes, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ]
+	*/
+	bunary3d: typeof bunary3d;
+
+	/**
+	* Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a four-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shape must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones4d = require( `@stdlib/array/base/ones4d` );
+	* var zeros4d = require( `@stdlib/array/base/zeros4d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shapes = [
+	*     [ 1, 1, 1, 2 ],
+	*     [ 1, 1, 2, 2 ]
+	* ];
+	*
+	* var x = ones4d( shapes[ 0 ] );
+	* var y = zeros4d( shapes[ 1 ] );
+	*
+	* ns.bunary4d( [ x, y ], shapes, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ] ]
+	*/
+	bunary4d: typeof bunary4d;
+
+	/**
+	* Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a five-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The input array shape must be broadcast compatible with the output array shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shapes - array shapes
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones5d = require( `@stdlib/array/base/ones5d` );
+	* var zeros5d = require( `@stdlib/array/base/zeros5d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shapes = [
+	*     [ 1, 1, 1, 1, 2 ],
+	*     [ 1, 1, 1, 2, 2 ]
+	* ];
+	*
+	* var x = ones5d( shapes[ 0 ] );
+	* var y = zeros5d( shapes[ 1 ] );
+	*
+	* ns.bunary5d( [ x, y ], shapes, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ] ] ]
+	*/
+	bunary5d: typeof bunary5d;
 
 	/**
 	* Returns the Cartesian power.
@@ -550,6 +986,22 @@ interface Namespace {
 	* // returns [ [ [ [ [ [ [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ] ] ] ] ] ]
 	*/
 	fillednd: typeof fillednd;
+
+	/**
+	* Creates a filled n-dimensional nested array according to a provided callback function.
+	*
+	* @param shape - array shape
+	* @param clbk - callback function
+	* @param thisArg - callback execution context
+	* @returns output array
+	*
+	* @example
+	* var constantFunction = require( `@stdlib/utils/constant-function` );
+	*
+	* var out = ns.filledndBy( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
+	* // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
+	*/
+	filledndBy: typeof filledndBy;
 
 	/**
 	* Flattens an n-dimensional nested array.
@@ -933,6 +1385,106 @@ interface Namespace {
 	logspace: typeof logspace;
 
 	/**
+	* Applies a binary callback to elements in two two-dimensional nested input arrays according to elements in a two-dimensional nested mask array and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	* -   An element in an input array is "masked" if the corresponding element in the mask array is non-zero.
+	*
+	* @param arrays - array containing two input nested arrays, an input nested mask array, and one output nested array
+	* @param shape - array shape
+	* @param fcn - binary callback
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var shape = [ 2, 2 ];
+	*
+	* var x = ones2d( shape );
+	* var y = ones2d( shape );
+	* var z = zeros2d( shape );
+	*
+	* var mask = [ [ 0, 1 ], [ 0, 0 ] ];
+	*
+	* ns.mskbinary2d( [ x, y, mask, z ], shape, add );
+	*
+	* console.log( z );
+	* // => [ [ 2.0, 0.0 ], [ 2.0, 2.0 ] ]
+	*/
+	mskbinary2d: typeof mskbinary2d;
+
+	/**
+	* Applies a unary callback to elements in a two-dimensional nested input array according to elements in a two-dimensional nested mask array and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	* -   An element in an input array is "masked" if the corresponding element in the mask array is non-zero.
+	*
+	* @param arrays - array containing one input nested array, an input nested mask array, and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 2, 2 ];
+	*
+	* var x = ones2d( shape );
+	* var y = zeros2d( shape );
+	*
+	* var mask = [ [ 0, 1 ], [ 0, 0 ] ];
+	*
+	* ns.mskunary2d( [ x, mask, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ 10.0, 0.0 ], [ 10.0, 10.0 ] ]
+	*/
+	mskunary2d: typeof mskunary2d;
+
+	/**
+	* Applies a unary callback to elements in a three-dimensional nested input array according to elements in a three-dimensional nested mask array and assigns results to elements in a three-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	* -   An element in an input array is "masked" if the corresponding element in the mask array is non-zero.
+	*
+	* @param arrays - array containing one input nested array, an input nested mask array, and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
+	* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 1, 2, 2 ];
+	*
+	* var x = ones3d( shape );
+	* var y = zeros3d( shape );
+	*
+	* var mask = [ [ [ 0, 1 ], [ 0, 0 ] ] ];
+	*
+	* ns.mskunary3d( [ x, mask, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ 10.0, 0.0 ], [ 10.0, 10.0 ] ] ]
+	*/
+	mskunary3d: typeof mskunary3d;
+
+	/**
 	* Returns the n-fold Cartesian product.
 	*
 	* ## Notes
@@ -1099,6 +1651,198 @@ interface Namespace {
 	* // returns <Complex128Array>
 	*/
 	toAccessorArray: typeof toAccessorArray;
+
+	/**
+	* Applies a unary callback to elements in a two-dimensional nested input array and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 2, 2 ];
+	*
+	* var x = ones2d( shape );
+	* var y = zeros2d( shape );
+	*
+	* ns.unary2d( [ x, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+	*/
+	unary2d: typeof unary2d;
+
+	/**
+	* Applies a unary function to each element retrieved from a two-dimensional nested input array according to a callback function and assigns results to elements in a two-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary function to apply to callback return values
+	* @param clbk - callback function
+	* @param thisArg - callback execution context
+	*
+	* @example
+	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	*
+	* function accessor( v ) {
+	*     return v - 2.0;
+	* }
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 2, 2 ];
+	*
+	* var x = ones2d( shape );
+	* var y = zeros2d( shape );
+	*
+	* ns.unary2dBy( [ x, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ -10.0, -10.0 ], [ -10.0, -10.0 ] ]
+	*/
+	unary2dBy: typeof unary2dBy;
+
+	/**
+	* Applies a unary callback to elements in a three-dimensional nested input array and assigns results to elements in a three-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
+	* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 1, 2, 2 ];
+	*
+	* var x = ones3d( shape );
+	* var y = zeros3d( shape );
+	*
+	* ns.unary3d( [ x, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ]
+	*/
+	unary3d: typeof unary3d;
+
+	/**
+	* Applies a unary callback to elements in a four-dimensional nested input array and assigns results to elements in a four-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones4d = require( `@stdlib/array/base/ones4d` );
+	* var zeros4d = require( `@stdlib/array/base/zeros4d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 1, 1, 2, 2 ];
+	*
+	* var x = ones4d( shape );
+	* var y = zeros4d( shape );
+	*
+	* ns.unary4d( [ x, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ] ]
+	*/
+	unary4d: typeof unary4d;
+
+	/**
+	* Applies a unary callback to elements in a five-dimensional nested input array and assigns results to elements in a five-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var ones5d = require( `@stdlib/array/base/ones5d` );
+	* var zeros5d = require( `@stdlib/array/base/zeros5d` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 1, 1, 1, 2, 2 ];
+	*
+	* var x = ones5d( shape );
+	* var y = zeros5d( shape );
+	*
+	* ns.unary5d( [ x, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ] ] ]
+	*/
+	unary5d: typeof unary5d;
+
+	/**
+	* Applies a unary callback to elements in an n-dimensional nested input array and assigns results to elements in an n-dimensional nested output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that the input and output arrays have the same shape.
+	*
+	* @param arrays - array containing one input nested array and one output nested array
+	* @param shape - array shape
+	* @param fcn - unary callback
+	*
+	* @example
+	* var onesnd = require( `@stdlib/array/base/onesnd` );
+	* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+	*
+	* function scale( x ) {
+	*     return x * 10.0;
+	* }
+	*
+	* var shape = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ];
+	*
+	* var x = onesnd( shape );
+	* var y = zerosnd( shape );
+	*
+	* ns.unarynd( [ x, y ], shape, scale );
+	*
+	* console.log( y );
+	* // => [ [ [ [ [ [ [ [ [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ] ] ] ] ] ] ] ] ]
+	*/
+	unarynd: typeof unarynd;
 
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1.
