@@ -649,6 +649,24 @@ setReadOnly( ns, 'ternary2d', require( './../../base/ternary2d' ) );
 setReadOnly( ns, 'ternary3d', require( './../../base/ternary3d' ) );
 
 /**
+* @name ternary4d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ternary4d}
+*/
+setReadOnly( ns, 'ternary4d', require( './../../base/ternary4d' ) );
+
+/**
+* @name ternary5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ternary5d}
+*/
+setReadOnly( ns, 'ternary5d', require( './../../base/ternary5d' ) );
+
+/**
 * @name toAccessorArray
 * @memberof ns
 * @readonly
