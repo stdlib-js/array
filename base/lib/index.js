@@ -640,6 +640,15 @@ setReadOnly( ns, 'take', require( './../../base/take' ) );
 setReadOnly( ns, 'ternary2d', require( './../../base/ternary2d' ) );
 
 /**
+* @name ternary3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ternary3d}
+*/
+setReadOnly( ns, 'ternary3d', require( './../../base/ternary3d' ) );
+
+/**
 * @name toAccessorArray
 * @memberof ns
 * @readonly
