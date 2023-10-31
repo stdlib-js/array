@@ -622,6 +622,15 @@ setReadOnly( ns, 'setter', require( './../../base/setter' ) );
 setReadOnly( ns, 'take', require( './../../base/take' ) );
 
 /**
+* @name ternary2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/ternary2d}
+*/
+setReadOnly( ns, 'ternary2d', require( './../../base/ternary2d' ) );
+
+/**
 * @name toAccessorArray
 * @memberof ns
 * @readonly
