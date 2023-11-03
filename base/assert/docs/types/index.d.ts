@@ -18,8 +18,7 @@
 
 // TypeScript Version: 4.1
 
-/* tslint:disable:max-line-length */
-/* tslint:disable:max-file-line-count */
+/* eslint-disable max-lines */
 
 import contains = require( './../../../../base/assert/contains' );
 import isAccessorArray = require( './../../../../base/assert/is-accessor-array' );
