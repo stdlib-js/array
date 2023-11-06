@@ -24,30 +24,30 @@ import { Array2D } from '@stdlib/types/array';
 import { Shape2D } from '@stdlib/types/ndarray';
 
 /**
-* Quaternary callback.
+* Quinary callback.
 *
 * @param value - input value
 * @returns result
 */
-type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
+type Quinary<T, U, V, W, X, Y> = ( v1: T, v2: U, v3: V, v4: W, v5: X ) => Y;
 
 /**
-* Applies a quaternary callback to elements in four two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+* Applies a quinary callback to elements in five two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
 *
 * ## Notes
 *
 * -   The function assumes that the input and output arrays have the same shape.
 *
-* @param arrays - array containing four input nested arrays and one output nested array
+* @param arrays - array containing five input nested arrays and one output nested array
 * @param shape - array shape
-* @param fcn - quaternary callback
+* @param fcn - quinary callback
 *
 * @example
 * var ones2d = require( `@stdlib/array/base/ones2d` );
 * var zeros2d = require( `@stdlib/array/base/zeros2d` );
 *
-* function add( x, y, z, w ) {
-*     return x + y + z + w;
+* function add( x, y, z, w, v ) {
+*     return x + y + z + w + v;
 * }
 *
 * var shape = [ 2, 2 ];
@@ -56,16 +56,17 @@ type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 * var y = ones2d( shape );
 * var z = ones2d( shape );
 * var w = ones2d( shape );
+* var v = ones2d( shape );
 * var out = zeros2d( shape );
 *
-* quaternary2d( [ x, y, z, w, out ], shape, add );
+* quinary2d( [ x, y, z, w, v, out ], shape, add );
 *
 * console.log( out );
-* // => [ [ 4.0, 4.0 ], [ 4.0, 4.0 ] ]
+* // => [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ]
 */
-declare function quaternary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: [ Array2D<T>, Array2D<U>, Array2D<V>, Array2D<W>, Array2D<X> ], shape: Shape2D, fcn: Quaternary<T, U, V, W, X> ): void;
+declare function quinary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown, Y = unknown>( arrays: [ Array2D<T>, Array2D<U>, Array2D<V>, Array2D<W>, Array2D<X>, Array2D<Y> ], shape: Shape2D, fcn: Quinary<T, U, V, W, X, Y> ): void;
 
 
 // EXPORTS //
 
-export = quaternary2d;
+export = quinary2d;
