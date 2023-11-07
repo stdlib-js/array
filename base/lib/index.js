@@ -667,6 +667,15 @@ setReadOnly( ns, 'strided2array3d', require( './../../base/strided2array3d' ) );
 setReadOnly( ns, 'strided2array4d', require( './../../base/strided2array4d' ) );
 
 /**
+* @name strided2array5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/strided2array5d}
+*/
+setReadOnly( ns, 'strided2array5d', require( './../../base/strided2array5d' ) );
+
+/**
 * @name take
 * @memberof ns
 * @readonly
