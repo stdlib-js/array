@@ -640,6 +640,15 @@ setReadOnly( ns, 'quinary2d', require( './../../base/quinary2d' ) );
 setReadOnly( ns, 'setter', require( './../../base/setter' ) );
 
 /**
+* @name strided2array2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/strided2array2d}
+*/
+setReadOnly( ns, 'strided2array2d', require( './../../base/strided2array2d' ) );
+
+/**
 * @name take
 * @memberof ns
 * @readonly
