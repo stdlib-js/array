@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# strided2array3d
+# strided2array4d
 
-> Convert a strided array to a three-dimensional nested array.
+> Convert a strided array to a four-dimensional nested array.
 
 <section class="intro">
 
@@ -33,21 +33,21 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var strided2array3d = require( '@stdlib/array/base/strided2array3d' );
+var strided2array4d = require( '@stdlib/array/base/strided2array4d' );
 ```
 
-#### strided2array3d( x, shape, strides, offset )
+#### strided2array4d( x, shape, strides, offset )
 
-Converts a strided array to a three-dimensional nested array.
+Converts a strided array to a four-dimensional nested array.
 
 ```javascript
 var x = [ 1, 2, 3, 4, 5, 6 ];
 
-var arr = strided2array3d( x, [ 1, 3, 2 ], [ 6, 2, 1 ], 0 );
-// returns [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ]
+var arr = strided2array4d( x, [ 1, 1, 3, 2 ], [ 6, 6, 2, 1 ], 0 );
+// returns [ [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ] ]
 
-arr = strided2array3d( x, [ 1, 3, 2 ], [ 1, 1, 3 ], 0 );
-// returns [ [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ] ]
+arr = strided2array4d( x, [ 1, 1, 3, 2 ], [ 1, 1, 1, 3 ], 0 );
+// returns [ [ [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ] ] ]
 ```
 
 The function accepts the following arguments:
@@ -81,17 +81,17 @@ The function accepts the following arguments:
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var numel = require( '@stdlib/ndarray/base/numel' );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-var strided2array3d = require( '@stdlib/array/base/strided2array3d' );
+var strided2array4d = require( '@stdlib/array/base/strided2array4d' );
 
-var shape = [ 3, 3, 3 ];
+var shape = [ 1, 3, 3, 3 ];
 
 var x = zeroTo( numel( shape ) );
 console.log( x );
 
-var y = strided2array3d( x, shape, shape2strides( shape, 'row-major' ), 0 );
+var y = strided2array4d( x, shape, shape2strides( shape, 'row-major' ), 0 );
 console.log( y );
 
-y = strided2array3d( x, shape, shape2strides( shape, 'column-major' ), 0 );
+y = strided2array4d( x, shape, shape2strides( shape, 'column-major' ), 0 );
 console.log( y );
 ```
 

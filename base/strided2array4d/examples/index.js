@@ -18,28 +18,18 @@
 
 'use strict';
 
-/**
-* Convert a strided array to a three-dimensional nested array.
-*
-* @module @stdlib/array/base/strided2array3d
-*
-* @example
-* var strided2array3d = require( '@stdlib/array/base/strided2array3d' );
-*
-* var x = [ 1, 2, 3, 4, 5, 6 ];
-*
-* var arr = strided2array3d( x, [ 1, 3, 2 ], [ 6, 2, 1 ], 0 );
-* // returns [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ]
-*
-* arr = strided2array3d( x, [ 1, 3, 2 ], [ 1, 1, 3 ], 0 );
-* // returns [ [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ] ]
-*/
+var zeroTo = require( './../../../base/zero-to' );
+var numel = require( '@stdlib/ndarray/base/numel' );
+var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var strided2array4d = require( './../lib' );
 
-// MODULES //
+var shape = [ 1, 3, 3, 3 ];
 
-var main = require( './main.js' );
+var x = zeroTo( numel( shape ) );
+console.log( x );
 
+var y = strided2array4d( x, shape, shape2strides( shape, 'row-major' ), 0 );
+console.log( y );
 
-// EXPORTS //
-
-module.exports = main;
+y = strided2array4d( x, shape, shape2strides( shape, 'column-major' ), 0 );
+console.log( y );

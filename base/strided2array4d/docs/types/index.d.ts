@@ -20,11 +20,11 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Array3D, ArrayLike } from '@stdlib/types/array';
-import { Shape3D, Strides3D } from '@stdlib/types/ndarray';
+import { Array4D, ArrayLike } from '@stdlib/types/array';
+import { Shape4D, Strides4D } from '@stdlib/types/ndarray';
 
 /**
-* Converts a strided array to a three-dimensional nested array.
+* Converts a strided array to a four-dimensional nested array.
 *
 * ## Notes
 *
@@ -34,23 +34,23 @@ import { Shape3D, Strides3D } from '@stdlib/types/ndarray';
 * @param shape - array shape
 * @param strides - dimension strides
 * @param offset - index of the first indexed value in the input array
-* @returns three-dimensional nested array
+* @returns four-dimensional nested array
 *
 * @example
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 *
-* var arr = strided2array3d( x, [ 1, 3, 2 ], [ 6, 2, 1 ], 0 );
-* // returns [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ]
+* var arr = strided2array4d( x, [ 1, 1, 3, 2 ], [ 6, 6, 2, 1 ], 0 );
+* // returns [ [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ] ]
 *
 * @example
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 *
-* var arr = strided2array3d( x, [ 1, 3, 2 ], [ 1, 1, 3 ], 0 );
-* // returns [ [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ] ]
+* var arr = strided2array4d( x, [ 1, 1, 3, 2 ], [ 1, 1, 1, 3 ], 0 );
+* // returns [ [ [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ] ] ]
 */
-declare function strided2array3d<T = unknown>( x: ArrayLike<T>, shape: Shape3D, strides: Strides3D, offset: number ): Array3D<T>;
+declare function strided2array4d<T = unknown>( x: ArrayLike<T>, shape: Shape4D, strides: Strides4D, offset: number ): Array4D<T>;
 
 
 // EXPORTS //
 
-export = strided2array3d;
+export = strided2array4d;
