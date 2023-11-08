@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ArrayBuffer, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, aempty, aemptyLike, afull, afullLike, anans, anansLike, aones, aonesLike, array2iterator, array2iteratorRight, arrayCtors, arrayDataType, arrayDataTypes, arrayMinDataType, arrayNextDataType, arrayPromotionRules, arraySafeCasts, arraySameKindCasts, arrayShape, arrayview2iterator, arrayview2iteratorRight, azeros, azerosLike, base, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convertArray, convertArraySame, datespace, filledarray, filledarrayBy, floatarrayCtors, floatarrayDataTypes, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, reviveTypedArray, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarraypool } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.1.0-deno/mod.js';
+import { ArrayBuffer, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, aempty, aemptyLike, afull, afullLike, anans, anansLike, aones, aonesLike, array2iterator, array2iteratorRight, arrayCtors, arrayDataType, arrayDataTypes, arrayMinDataType, arrayNextDataType, arrayPromotionRules, arraySafeCasts, arraySameKindCasts, arrayShape, arrayview2iterator, arrayview2iteratorRight, azeros, azerosLike, base, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convertArray, convertArraySame, datespace, filledarray, filledarrayBy, floatarrayCtors, floatarrayDataTypes, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, reviveTypedArray, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarraypool } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
 ```
 
 #### ns
@@ -239,7 +244,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.1.0-deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
