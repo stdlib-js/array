@@ -111,7 +111,7 @@ console.log( y );
 
 <section class="links">
 
-[@stdlib/ndarray/base/assert/is-buffer-length-compatible]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/base/assert/is-buffer-length-compatible]: https://github.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible
 
 </section>
 
