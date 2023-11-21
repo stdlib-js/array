@@ -649,6 +649,15 @@ setReadOnly( ns, 'quaternary2d', require( './../../base/quaternary2d' ) );
 setReadOnly( ns, 'quaternary3d', require( './../../base/quaternary3d' ) );
 
 /**
+* @name quaternary4d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/quaternary4d}
+*/
+setReadOnly( ns, 'quaternary4d', require( './../../base/quaternary4d' ) );
+
+/**
 * @name quinary2d
 * @memberof ns
 * @readonly
