@@ -541,6 +541,15 @@ setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 setReadOnly( ns, 'map2d', require( './../../base/map2d' ) );
 
 /**
+* @name map3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/map3d}
+*/
+setReadOnly( ns, 'map3d', require( './../../base/map3d' ) );
+
+/**
 * @name mskbinary2d
 * @memberof ns
 * @readonly

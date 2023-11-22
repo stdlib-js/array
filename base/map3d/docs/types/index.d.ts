@@ -20,8 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Array2D } from '@stdlib/types/array';
-import { Shape2D } from '@stdlib/types/ndarray';
+import { Array3D } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
 
 /**
 * Callback invoked for each array element.
@@ -45,7 +45,7 @@ type Unary<T, U, V> = ( this: V, value: T ) => U;
 * @param indices - current array element indices
 * @returns result
 */
-type Binary<T, U, V> = ( this: V, value: T, indices: [ number, number ] ) => U;
+type Binary<T, U, V> = ( this: V, value: T, indices: [ number, number, number ] ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -54,7 +54,7 @@ type Binary<T, U, V> = ( this: V, value: T, indices: [ number, number ] ) => U;
 * @param indices - current array element indices
 * @returns result
 */
-type Ternary<T, U, V> = ( this: V, value: T, indices: [ number, number ], array: Array2D<T> ) => U;
+type Ternary<T, U, V> = ( this: V, value: T, indices: [ number, number, number ], array: Array3D<T> ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -71,7 +71,7 @@ type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Tern
 */
 interface Routine {
 	/**
-	* Applies a function to elements in a two-dimensional nested input array and assigns results to elements in a new two-dimensional nested output array.
+	* Applies a function to elements in a three-dimensional nested input array and assigns results to elements in a new three-dimensional nested output array.
 	*
 	* @param x - input nested array
 	* @param shape - array shape
@@ -79,22 +79,22 @@ interface Routine {
 	* @param thisArg - function execution context
 	*
 	* @example
-	* var ones2d = require( `@stdlib/array/base/ones2d` );
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
 	*
 	* function scale( x ) {
 	*     return x * 10.0;
 	* }
 	*
-	* var shape = [ 2, 2 ];
+	* var shape = [ 1, 2, 2 ];
 	*
-	* var x = ones2d( shape );
-	* var y = map2d( x, shape, scale );
-	* // returns [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+	* var x = ones3d( shape );
+	* var y = map3d( x, shape, scale );
+	* // returns [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ]
 	*/
-	<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Shape2D, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array2D<U>;
+	<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, shape: Shape3D, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array3D<U>;
 
 	/**
-	* Applies a function to elements in a two-dimensional nested input array and assigns results to elements in a two-dimensional nested output array.
+	* Applies a function to elements in a three-dimensional nested input array and assigns results to elements in a three-dimensional nested output array.
 	*
 	* @param x - input nested array
 	* @param y - output nested array
@@ -103,29 +103,29 @@ interface Routine {
 	* @param thisArg - function execution context
 	*
 	* @example
-	* var ones2d = require( `@stdlib/array/base/ones2d` );
-	* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+	* var ones3d = require( `@stdlib/array/base/ones3d` );
+	* var zeros3d = require( `@stdlib/array/base/zeros3d` );
 	*
 	* function scale( x ) {
 	*     return x * 10.0;
 	* }
 	*
-	* var shape = [ 2, 2 ];
+	* var shape = [ 1, 2, 2 ];
 	*
-	* var x = ones2d( shape );
-	* var y = zeros2d( shape );
+	* var x = ones3d( shape );
+	* var y = zeros3d( shape );
 	*
-	* var out = map2d.assign( x, y, shape, scale );
-	* // returns [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+	* var out = map3d.assign( x, y, shape, scale );
+	* // returns [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ]
 	*
 	* var bool = ( out === y );
 	* // returns true
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, y: Array2D<U>, shape: Shape2D, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array2D<U>;
+	assign<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, y: Array3D<U>, shape: Shape3D, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array3D<U>;
 }
 
 /**
-* Applies a function to elements in a two-dimensional nested input array and assigns results to elements in a new two-dimensional nested output array.
+* Applies a function to elements in a three-dimensional nested input array and assigns results to elements in a new three-dimensional nested output array.
 *
 * ## Notes
 *
@@ -141,40 +141,40 @@ interface Routine {
 * @param thisArg - function execution context
 *
 * @example
-* var ones2d = require( `@stdlib/array/base/ones2d` );
+* var ones3d = require( `@stdlib/array/base/ones3d` );
 *
 * function scale( x ) {
 *     return x * 10.0;
 * }
 *
-* var shape = [ 2, 2 ];
+* var shape = [ 1, 2, 2 ];
 *
-* var x = ones2d( shape );
-* var y = map2d( x, shape, scale );
-* // returns [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+* var x = ones3d( shape );
+* var y = map3d( x, shape, scale );
+* // returns [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ]
 *
 * @example
-* var ones2d = require( `@stdlib/array/base/ones2d` );
-* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+* var ones3d = require( `@stdlib/array/base/ones3d` );
+* var zeros3d = require( `@stdlib/array/base/zeros3d` );
 *
 * function scale( x ) {
 *     return x * 10.0;
 * }
 *
-* var shape = [ 2, 2 ];
+* var shape = [ 1, 2, 2 ];
 *
-* var x = ones2d( shape );
-* var y = zeros2d( shape );
+* var x = ones3d( shape );
+* var y = zeros3d( shape );
 *
-* var out = map2d.assign( x, y, shape, scale );
-* // returns [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+* var out = map3d.assign( x, y, shape, scale );
+* // returns [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ]
 *
 * var bool = ( out === y );
 * // returns true
 */
-declare var map2d: Routine;
+declare var map3d: Routine;
 
 
 // EXPORTS //
 
-export = map2d;
+export = map3d;
