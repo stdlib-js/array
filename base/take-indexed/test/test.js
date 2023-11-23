@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,10 +21,6 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Complex64Array = require( './../../../complex64' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
-var isComplex64 = require( '@stdlib/assert/is-complex64' );
 var take = require( './../lib' );
 
 
@@ -64,29 +60,6 @@ tape( 'the function takes elements from an array', function test( t ) {
 	expected = [ 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ];
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	t.end();
-});
-
-tape( 'the function takes elements from an array (accessors)', function test( t ) {
-	var expected;
-	var indices;
-	var actual;
-	var x;
-	var v;
-	var i;
-
-	x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	indices = [ 1, 1, 3, 3 ];
-	actual = take( x, indices );
-
-	t.notEqual( actual, x, 'returns different reference' );
-	for ( i = 0; i < indices.length; i++ ) {
-		v = actual[ i ];
-		expected = x.get( indices[ i ] );
-		t.strictEqual( isComplex64( v ), true, 'returns expected value' );
-		t.strictEqual( realf( v ), realf( expected ), 'returns expected value' );
-		t.strictEqual( imagf( v ), imagf( expected ), 'returns expected value' );
-	}
 	t.end();
 });
 

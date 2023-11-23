@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,15 +18,10 @@
 
 'use strict';
 
-// MODULES //
-
-var resolveGetter = require( './../../../base/resolve-getter' );
-
-
 // MAIN //
 
 /**
-* Takes elements from an array.
+* Takes elements from an indexed array.
 *
 * @param {Collection} x - input array
 * @param {NonNegativeIntegerArray} indices - list of indices
@@ -40,17 +35,12 @@ var resolveGetter = require( './../../../base/resolve-getter' );
 * // returns [ 4, 2, 3, 1 ]
 */
 function take( x, indices ) {
-	var get;
 	var out;
 	var i;
 
-	// Resolve an accessor for retrieving input array elements:
-	get = resolveGetter( x );
-
-	// Extract each desired element from the provided array...
 	out = [];
 	for ( i = 0; i < indices.length; i++ ) {
-		out.push( get( x, indices[ i ] ) ); // use `Array#push` to ensure "fast" elements
+		out.push( x[ indices[ i ] ] ); // use `Array#push` to ensure "fast" elements
 	}
 	return out;
 }
