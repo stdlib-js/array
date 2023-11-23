@@ -20,26 +20,27 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape5D } from '@stdlib/types/ndarray';
+import { Array2D } from '@stdlib/types/array';
 
 /**
-* Five-dimensional nested array.
-*/
-type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
-
-/**
-* Returns a five-dimensional nested array filled with ones.
+* Reverses the order of elements along the first dimension of a two-dimensional nested input array.
 *
-* @param shape - array shape
+* ## Notes
+*
+* -   The function does **not** perform a deep copy of nested array elements.
+*
+* @param x - input nested array
 * @returns output array
 *
 * @example
-* var out = ones5d( [ 1, 1, 1, 1, 3 ] );
-* // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
+* var x = [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ];
+*
+* var out = flipud2d( x );
+* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function ones5d( shape: Shape5D ): Array5D<number>;
+declare function flipud2d<T = unknown>( x: Array2D<T> ): Array2D<T>;
 
 
 // EXPORTS //
 
-export = ones5d;
+export = flipud2d;

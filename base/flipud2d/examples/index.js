@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,30 +16,14 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/// <reference types="@stdlib/types"/>
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filled2dBy = require( './../../../base/filled2d-by' );
+var flipud2d = require( './../lib' );
 
-import { Shape5D } from '@stdlib/types/ndarray';
+var x = filled2dBy( [ 3, 3 ], discreteUniform( -50, 50 ) );
+console.log( x );
 
-/**
-* Five-dimensional nested array.
-*/
-type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
-
-/**
-* Returns a five-dimensional nested array filled with ones.
-*
-* @param shape - array shape
-* @returns output array
-*
-* @example
-* var out = ones5d( [ 1, 1, 1, 1, 3 ] );
-* // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
-*/
-declare function ones5d( shape: Shape5D ): Array5D<number>;
-
-
-// EXPORTS //
-
-export = ones5d;
+var y = flipud2d( x );
+console.log( y );

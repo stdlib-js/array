@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,30 +16,38 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/// <reference types="@stdlib/types"/>
-
-import { Shape5D } from '@stdlib/types/ndarray';
+// MAIN //
 
 /**
-* Five-dimensional nested array.
-*/
-type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
-
-/**
-* Returns a five-dimensional nested array filled with ones.
+* Reverses the order of elements along the first dimension of a two-dimensional nested input array.
 *
-* @param shape - array shape
-* @returns output array
+* ## Notes
+*
+* -   The function does **not** perform a deep copy of nested array elements.
+*
+* @param {ArrayLikeObject<Collection>} x - nested input array
+* @returns {Array<Collection>} output array
 *
 * @example
-* var out = ones5d( [ 1, 1, 1, 1, 3 ] );
-* // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
+* var x = [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ];
+*
+* var out = flipud2d( x );
+* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function ones5d( shape: Shape5D ): Array5D<number>;
+function flipud2d( x ) {
+	var out;
+	var i;
+
+	out = [];
+	for ( i = x.length-1; i >= 0; i-- ) {
+		out.push( x[ i ] );
+	}
+	return out;
+}
 
 
 // EXPORTS //
 
-export = ones5d;
+module.exports = flipud2d;
