@@ -20,8 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Array4D } from '@stdlib/types/array';
-import { Shape4D } from '@stdlib/types/ndarray';
+import { Array5D } from '@stdlib/types/array';
+import { Shape5D } from '@stdlib/types/ndarray';
 
 /**
 * Quaternary callback.
@@ -35,7 +35,7 @@ import { Shape4D } from '@stdlib/types/ndarray';
 type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 
 /**
-* Applies a quaternary callback to elements in four four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
+* Applies a quaternary callback to elements in four five-dimensional nested input arrays and assigns results to elements in a five-dimensional nested output array.
 *
 * ## Notes
 *
@@ -47,25 +47,25 @@ type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 *
 * @example
 * var add = require( `@stdlib/math/base/ops/add4` );
-* var ones4d = require( `@stdlib/array/base/ones4d` );
-* var zeros4d = require( `@stdlib/array/base/zeros4d` );
+* var ones5d = require( `@stdlib/array/base/ones5d` );
+* var zeros5d = require( `@stdlib/array/base/zeros5d` );
 *
-* var shape = [ 1, 1, 2, 2 ];
+* var shape = [ 1, 1, 1, 2, 2 ];
 *
-* var x = ones4d( shape );
-* var y = ones4d( shape );
-* var z = ones4d( shape );
-* var w = ones4d( shape );
-* var out = zeros4d( shape );
+* var x = ones5d( shape );
+* var y = ones5d( shape );
+* var z = ones5d( shape );
+* var w = ones5d( shape );
+* var out = zeros5d( shape );
 *
-* quaternary4d( [ x, y, z, w, out ], shape, add );
+* quaternary5d( [ x, y, z, w, out ], shape, add );
 *
 * console.log( out );
-* // => [ [ [ [ 4.0, 4.0 ], [ 4.0, 4.0 ] ] ] ]
+* // => [ [ [ [ [ 4.0, 4.0 ], [ 4.0, 4.0 ] ] ] ] ]
 */
-declare function quaternary4d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: [ Array4D<T>, Array4D<U>, Array4D<V>, Array4D<W>, Array4D<X> ], shape: Shape4D, fcn: Quaternary<T, U, V, W, X> ): void;
+declare function quaternary5d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: [ Array5D<T>, Array5D<U>, Array5D<V>, Array5D<W>, Array5D<X> ], shape: Shape5D, fcn: Quaternary<T, U, V, W, X> ): void;
 
 
 // EXPORTS //
 
-export = quaternary4d;
+export = quaternary5d;
