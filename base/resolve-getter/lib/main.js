@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,42 +20,36 @@
 
 // MODULES //
 
-var resolveGetter = require( './../../../base/resolve-getter' );
+var isAccessorArray = require( './../../../base/assert/is-accessor-array' );
+var accessorGetter = require( './../../../base/accessor-getter' );
+var getter = require( './../../../base/getter' );
+var dtype = require( './../../../dtype' );
 
 
 // MAIN //
 
 /**
-* Copies the elements of an array-like object to a new "generic" array.
+* Returns an accessor function for retrieving an element from an array-like object.
 *
 * @param {Collection} x - input array
-* @returns {Array} output array
+* @returns {Function} accessor
 *
 * @example
-* var out = copy( [ 1, 2, 3 ] );
-* // returns [ 1, 2, 3 ]
+* var arr = [ 1, 2, 3, 4 ];
+*
+* var get = resolveGetter( arr );
+* var v = get( arr, 2 );
+* // returns 3
 */
-function copy( x ) {
-	var out;
-	var len;
-	var get;
-	var i;
-
-	// Resolve an accessor for retrieving input array elements:
-	get = resolveGetter( x );
-
-	// Get the number of elements to copy:
-	len = x.length;
-
-	// Loop over the elements...
-	out = [];
-	for ( i = 0; i < len; i++ ) {
-		out.push( get( x, i ) ); // ensure "fast" elements
+function resolveGetter( x ) {
+	var dt = dtype( x );
+	if ( isAccessorArray( x ) ) {
+		return accessorGetter( dt );
 	}
-	return out;
+	return getter( dt );
 }
 
 
 // EXPORTS //
 
-module.exports = copy;
+module.exports = resolveGetter;

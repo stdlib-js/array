@@ -703,6 +703,15 @@ setReadOnly( ns, 'quaternary5d', require( './../../base/quaternary5d' ) );
 setReadOnly( ns, 'quinary2d', require( './../../base/quinary2d' ) );
 
 /**
+* @name resolveGetter
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/resolve-getter}
+*/
+setReadOnly( ns, 'resolveGetter', require( './../../base/resolve-getter' ) );
+
+/**
 * @name setter
 * @memberof ns
 * @readonly

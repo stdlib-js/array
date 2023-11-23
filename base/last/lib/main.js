@@ -20,10 +20,7 @@
 
 // MODULES //
 
-var isAccessorArray = require( './../../../base/assert/is-accessor-array' );
-var accessorGetter = require( './../../../base/accessor-getter' );
-var getter = require( './../../../base/getter' );
-var dtype = require( './../../../dtype' );
+var resolveGetter = require( './../../../base/resolve-getter' );
 
 
 // MAIN //
@@ -41,17 +38,10 @@ var dtype = require( './../../../dtype' );
 function last( arr ) {
 	var get;
 	var idx;
-	var dt;
-
-	// Resolve the input array data type:
-	dt = dtype( arr );
 
 	// Resolve an accessor for retrieving input array elements:
-	if ( isAccessorArray( arr ) ) {
-		get = accessorGetter( dt );
-	} else {
-		get = getter( dt );
-	}
+	get = resolveGetter( arr );
+
 	// Resolve the last index:
 	idx = arr.length - 1;
 
