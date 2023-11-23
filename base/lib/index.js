@@ -487,6 +487,15 @@ setReadOnly( ns, 'flatten5d', require( './../../base/flatten5d' ) );
 setReadOnly( ns, 'flatten5dBy', require( './../../base/flatten5d-by' ) );
 
 /**
+* @name fliplr2d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fliplr2d}
+*/
+setReadOnly( ns, 'fliplr2d', require( './../../base/fliplr2d' ) );
+
+/**
 * @name flipud2d
 * @memberof ns
 * @readonly
