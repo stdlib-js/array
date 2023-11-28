@@ -121,7 +121,7 @@ console.log( y );
 
 <section class="links">
 
-[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray-index-modes
 
 </section>
 
