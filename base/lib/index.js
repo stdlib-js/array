@@ -802,6 +802,15 @@ setReadOnly( ns, 'takeIndexed', require( './../../base/take-indexed' ) );
 setReadOnly( ns, 'take2d', require( './../../base/take2d' ) );
 
 /**
+* @name take3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/take3d}
+*/
+setReadOnly( ns, 'take3d', require( './../../base/take3d' ) );
+
+/**
 * @name ternary2d
 * @memberof ns
 * @readonly
