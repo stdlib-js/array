@@ -505,6 +505,15 @@ setReadOnly( ns, 'fliplr2d', require( './../../base/fliplr2d' ) );
 setReadOnly( ns, 'fliplr3d', require( './../../base/fliplr3d' ) );
 
 /**
+* @name fliplr4d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fliplr4d}
+*/
+setReadOnly( ns, 'fliplr4d', require( './../../base/fliplr4d' ) );
+
+/**
 * @name flipud2d
 * @memberof ns
 * @readonly
