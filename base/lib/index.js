@@ -397,6 +397,15 @@ setReadOnly( ns, 'fillednd', require( './../../base/fillednd' ) );
 setReadOnly( ns, 'filledndBy', require( './../../base/fillednd-by' ) );
 
 /**
+* @name first
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/first}
+*/
+setReadOnly( ns, 'first', require( './../../base/first' ) );
+
+/**
 * @name flatten
 * @memberof ns
 * @readonly
@@ -782,6 +791,15 @@ setReadOnly( ns, 'resolveGetter', require( './../../base/resolve-getter' ) );
 * @see {@link module:@stdlib/array/base/setter}
 */
 setReadOnly( ns, 'setter', require( './../../base/setter' ) );
+
+/**
+* @name slice
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/slice}
+*/
+setReadOnly( ns, 'slice', require( './../../base/slice' ) );
 
 /**
 * @name strided2array2d
