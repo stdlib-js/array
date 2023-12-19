@@ -60,6 +60,7 @@ import filled5d = require( './../../../base/filled5d' );
 import filled5dBy = require( './../../../base/filled5d-by' );
 import fillednd = require( './../../../base/fillednd' );
 import filledndBy = require( './../../../base/fillednd-by' );
+import first = require( './../../../base/first' );
 import flatten = require( './../../../base/flatten' );
 import flattenBy = require( './../../../base/flatten-by' );
 import flatten2d = require( './../../../base/flatten2d' );
@@ -103,6 +104,7 @@ import quaternary5d = require( './../../../base/quaternary5d' );
 import quinary2d = require( './../../../base/quinary2d' );
 import resolveGetter = require( './../../../base/resolve-getter' );
 import setter = require( './../../../base/setter' );
+import slice = require( './../../../base/slice' );
 import strided2array2d = require( './../../../base/strided2array2d' );
 import strided2array3d = require( './../../../base/strided2array3d' );
 import strided2array4d = require( './../../../base/strided2array4d' );
@@ -1145,6 +1147,20 @@ interface Namespace {
 	* // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
 	*/
 	filledndBy: typeof filledndBy;
+
+	/**
+	* Returns the first element of an array-like object.
+	*
+	* @param arr - input array
+	* @returns first element
+	*
+	* @example
+	* var arr = [ 1, 2, 3 ];
+	*
+	* var out = ns.first( x );
+	* // returns 1
+	*/
+	first: typeof first;
 
 	/**
 	* Flattens an n-dimensional nested array.
@@ -2235,6 +2251,22 @@ interface Namespace {
 	* // returns 3
 	*/
 	setter: typeof setter;
+
+	/**
+	* Returns a shallow copy of a portion of an array.
+	*
+	* @param x - input array
+	* @param start - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4, 5, 6 ];
+	*
+	* var out = ns.slice( x, 0, 3 );
+	* // returns [ 1, 2, 3 ]
+	*/
+	slice: typeof slice;
 
 	/**
 	* Converts a strided array to a two-dimensional nested array.
