@@ -568,6 +568,15 @@ setReadOnly( ns, 'getter', require( './../../base/getter' ) );
 setReadOnly( ns, 'incrspace', require( './../../base/incrspace' ) );
 
 /**
+* @name indexOf
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/index-of}
+*/
+setReadOnly( ns, 'indexOf', require( './../../base/index-of' ) );
+
+/**
 * @name last
 * @memberof ns
 * @readonly
