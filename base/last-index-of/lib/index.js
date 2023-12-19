@@ -18,26 +18,25 @@
 
 'use strict';
 
-var indexOf = require( './../lib' );
+/**
+* Return the index of the last element which equals a provided search element.
+*
+* @module @stdlib/array/base/last-index-of
+*
+* @example
+* var lastIndexOf = require( '@stdlib/array/base/last-index-of' );
+*
+* var x = [ 1, 2, 3, 4 ];
+*
+* var idx = lastIndexOf( x, 2, 3, false );
+* // returns 1
+*/
 
-var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
+// MODULES //
 
-var idx = indexOf( x, 'beep', 0, false );
-console.log( idx );
-// => 2
+var main = require( './main.js' );
 
-idx = indexOf( x, 'bop', 0, false );
-console.log( idx );
-// => -1
 
-idx = indexOf( x, 'foo', 1, false );
-console.log( idx );
-// => 4
+// EXPORTS //
 
-idx = indexOf( x, 'foo', -4, false );
-console.log( idx );
-// => 4
-
-idx = indexOf( x, 'foo', 5, false );
-console.log( idx );
-// => -1
+module.exports = main;

@@ -586,6 +586,15 @@ setReadOnly( ns, 'indexOf', require( './../../base/index-of' ) );
 setReadOnly( ns, 'last', require( './../../base/last' ) );
 
 /**
+* @name lastIndexOf
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/last-index-of}
+*/
+setReadOnly( ns, 'lastIndexOf', require( './../../base/last-index-of' ) );
+
+/**
 * @name linspace
 * @memberof ns
 * @readonly

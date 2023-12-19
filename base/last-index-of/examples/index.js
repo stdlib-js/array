@@ -18,26 +18,26 @@
 
 'use strict';
 
-var indexOf = require( './../lib' );
+var lastIndexOf = require( './../lib' );
 
 var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
-var idx = indexOf( x, 'beep', 0, false );
+var idx = lastIndexOf( x, 'beep', 5, false );
 console.log( idx );
 // => 2
 
-idx = indexOf( x, 'bop', 0, false );
+idx = lastIndexOf( x, 'bop', 5, false );
 console.log( idx );
 // => -1
 
-idx = indexOf( x, 'foo', 1, false );
+idx = lastIndexOf( x, 'foo', 5, false );
 console.log( idx );
 // => 4
 
-idx = indexOf( x, 'foo', -4, false );
+idx = lastIndexOf( x, 'foo', -3, false );
 console.log( idx );
-// => 4
+// => 0
 
-idx = indexOf( x, 'foo', 5, false );
+idx = lastIndexOf( x, 'foo', -50, false );
 console.log( idx );
 // => -1
