@@ -79,7 +79,9 @@ import flipud2d = require( './../../../base/flipud2d' );
 import strided2array = require( './../../../base/from-strided' );
 import getter = require( './../../../base/getter' );
 import incrspace = require( './../../../base/incrspace' );
+import indexOf = require( './../../../base/index-of' );
 import last = require( './../../../base/last' );
+import lastIndexOf = require( './../../../base/last-index-of' );
 import linspace = require( './../../../base/linspace' );
 import logspace = require( './../../../base/logspace' );
 import map2d = require( './../../../base/map2d' );
@@ -1613,6 +1615,36 @@ interface Namespace {
 	incrspace: typeof incrspace;
 
 	/**
+	* Returns the index of the first element which equals a provided search element.
+	*
+	* ## Notes
+	*
+	* -   If unable to find an element which equals a provided search element, the function returns `-1`.
+	* -   If `fromIndex` is less than zero, the starting index is resolved relative to the last array element, with the last array element corresponding to `fromIndex = -1`.
+	*
+	* @param x - input array
+	* @param searchElement - search element
+	* @param fromIndex - starting index (inclusive)
+	* @param equalNaNs - boolean indicating whether NaNs should be considered equal
+	* @returns index
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var idx = ns.indexOf( x, 2, 0, false );
+	* // returns 1
+	*
+	* @example
+	* var Int32Array = require( './../../../int32' );
+	*
+	* var x = new Int32Array( [ 1, 2, 3, 4 ] );
+	*
+	* var idx = ns.indexOf( x, 2, 0, false );
+	* // returns 1
+	*/
+	indexOf: typeof indexOf;
+
+	/**
 	* Returns the last element of an array-like object.
 	*
 	* @param arr - input array
@@ -1625,6 +1657,37 @@ interface Namespace {
 	* // returns 3
 	*/
 	last: typeof last;
+
+	/**
+	* Returns the index of the last element which equals a provided search element.
+	*
+	* ## Notes
+	*
+	* -   The function scans an input array from the starting index to the beginning of the array (i.e., backward).
+	* -   If unable to find an element which equals a provided search element, the function returns `-1`.
+	* -   If `fromIndex` is less than zero, the starting index is resolved relative to the last array element, with the last array element corresponding to `fromIndex = -1`.
+	*
+	* @param x - input array
+	* @param searchElement - search element
+	* @param fromIndex - starting index (inclusive)
+	* @param equalNaNs - boolean indicating whether NaNs should be considered equal
+	* @returns index
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var idx = ns.lastIndexOf( x, 2, 3, false );
+	* // returns 1
+	*
+	* @example
+	* var Int32Array = require( './../../../int32' );
+	*
+	* var x = new Int32Array( [ 1, 2, 3, 4 ] );
+	*
+	* var idx = ns.lastIndexOf( x, 2, 3, false );
+	* // returns 1
+	*/
+	lastIndexOf: typeof lastIndexOf;
 
 	/**
 	* Generates a linearly spaced numeric array.
