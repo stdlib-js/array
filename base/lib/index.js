@@ -838,6 +838,15 @@ setReadOnly( ns, 'quinary3d', require( './../../base/quinary3d' ) );
 setReadOnly( ns, 'quinary4d', require( './../../base/quinary4d' ) );
 
 /**
+* @name quinary5d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/quinary5d}
+*/
+setReadOnly( ns, 'quinary5d', require( './../../base/quinary5d' ) );
+
+/**
 * @name resolveGetter
 * @memberof ns
 * @readonly
