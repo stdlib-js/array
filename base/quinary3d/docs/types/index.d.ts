@@ -20,8 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Array2D } from '@stdlib/types/array';
-import { Shape2D } from '@stdlib/types/ndarray';
+import { Array3D } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
 
 /**
 * Quinary callback.
@@ -36,7 +36,7 @@ import { Shape2D } from '@stdlib/types/ndarray';
 type Quinary<T, U, V, W, X, Y> = ( v1: T, v2: U, v3: V, v4: W, v5: X ) => Y;
 
 /**
-* Applies a quinary callback to elements in five two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+* Applies a quinary callback to elements in five three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
 *
 * ## Notes
 *
@@ -48,26 +48,26 @@ type Quinary<T, U, V, W, X, Y> = ( v1: T, v2: U, v3: V, v4: W, v5: X ) => Y;
 *
 * @example
 * var add = require( `@stdlib/math/base/ops/add5` );
-* var ones2d = require( `@stdlib/array/base/ones2d` );
-* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+* var ones3d = require( `@stdlib/array/base/ones3d` );
+* var zeros3d = require( `@stdlib/array/base/zeros3d` );
 *
-* var shape = [ 2, 2 ];
+* var shape = [ 1, 2, 2 ];
 *
-* var x = ones2d( shape );
-* var y = ones2d( shape );
-* var z = ones2d( shape );
-* var w = ones2d( shape );
-* var v = ones2d( shape );
-* var out = zeros2d( shape );
+* var x = ones3d( shape );
+* var y = ones3d( shape );
+* var z = ones3d( shape );
+* var w = ones3d( shape );
+* var v = ones3d( shape );
+* var out = zeros3d( shape );
 *
-* quinary2d( [ x, y, z, w, v, out ], shape, add );
+* quinary3d( [ x, y, z, w, v, out ], shape, add );
 *
 * console.log( out );
-* // => [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ]
+* // => [ [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ] ]
 */
-declare function quinary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown, Y = unknown>( arrays: [ Array2D<T>, Array2D<U>, Array2D<V>, Array2D<W>, Array2D<X>, Array2D<Y> ], shape: Shape2D, fcn: Quinary<T, U, V, W, X, Y> ): void;
+declare function quinary3d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown, Y = unknown>( arrays: [ Array3D<T>, Array3D<U>, Array3D<V>, Array3D<W>, Array3D<X>, Array3D<Y> ], shape: Shape3D, fcn: Quinary<T, U, V, W, X, Y> ): void;
 
 
 // EXPORTS //
 
-export = quinary2d;
+export = quinary3d;

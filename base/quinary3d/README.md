@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# quinary2d
+# quinary3d
 
-> Apply a quinary callback to elements in five two-dimensional nested input arrays and assign results to elements in a two-dimensional nested output array.
+> Apply a quinary callback to elements in five three-dimensional nested input arrays and assign results to elements in a three-dimensional nested output array.
 
 <section class="intro">
 
@@ -33,24 +33,24 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var quinary2d = require( '@stdlib/array/base/quinary2d' );
+var quinary3d = require( '@stdlib/array/base/quinary3d' );
 ```
 
-#### quinary2d( arrays, shape, fcn )
+#### quinary3d( arrays, shape, fcn )
 
-Applies a quinary callback to elements in five two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+Applies a quinary callback to elements in five three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
 
 ```javascript
 var add = require( '@stdlib/math/base/ops/add5' );
-var zeros2d = require( '@stdlib/array/base/zeros2d' );
+var zeros3d = require( '@stdlib/array/base/zeros3d' );
 
-var x = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
-var out = zeros2d( [ 2, 2 ] );
+var x = [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ];
+var out = zeros3d( [ 1, 2, 2 ] );
 
-var shape = [ 2, 2 ];
+var shape = [ 1, 2, 2 ];
 
-quinary2d( [ x, x, x, x, x, out ], shape, add );
-// out => [ [ 5.0, 10.0 ], [ 15.0, 20.0 ] ]
+quinary3d( [ x, x, x, x, x, out ], shape, add );
+// out => [ [ [ 5.0, 10.0 ], [ 15.0, 20.0 ] ] ]
 ```
 
 The function accepts the following arguments:
@@ -81,32 +81,32 @@ The function accepts the following arguments:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filled2dBy = require( '@stdlib/array/base/filled2d-by' );
-var zeros2d = require( '@stdlib/array/base/zeros2d' );
+var filled3dBy = require( '@stdlib/array/base/filled3d-by' );
+var zeros3d = require( '@stdlib/array/base/zeros3d' );
 var add = require( '@stdlib/math/base/ops/add5' );
-var quinary2d = require( '@stdlib/array/base/quinary2d' );
+var quinary3d = require( '@stdlib/array/base/quinary3d' );
 
-var shape = [ 3, 3 ];
+var shape = [ 3, 3, 3 ];
 
-var x = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var x = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( x );
 
-var y = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var y = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( y );
 
-var z = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var z = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( z );
 
-var w = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var w = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( w );
 
-var v = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var v = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( v );
 
-var out = zeros2d( shape );
+var out = zeros3d( shape );
 console.log( out );
 
-quinary2d( [ x, y, z, w, v, out ], shape, add );
+quinary3d( [ x, y, z, w, v, out ], shape, add );
 console.log( out );
 ```
 

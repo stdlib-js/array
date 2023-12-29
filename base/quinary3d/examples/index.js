@@ -19,30 +19,30 @@
 'use strict';
 
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filled2dBy = require( './../../../base/filled2d-by' );
-var zeros2d = require( './../../../base/zeros2d' );
+var filled3dBy = require( './../../../base/filled3d-by' );
+var zeros3d = require( './../../../base/zeros3d' );
 var add = require( '@stdlib/math/base/ops/add5' );
-var quinary2d = require( './../lib' );
+var quinary3d = require( './../lib' );
 
-var shape = [ 3, 3 ];
+var shape = [ 3, 3, 3 ];
 
-var x = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var x = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( x );
 
-var y = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var y = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( y );
 
-var z = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var z = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( z );
 
-var w = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var w = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( w );
 
-var v = filled2dBy( shape, discreteUniform( -100, 100 ) );
+var v = filled3dBy( shape, discreteUniform( -100, 100 ) );
 console.log( v );
 
-var out = zeros2d( shape );
+var out = zeros3d( shape );
 console.log( out );
 
-quinary2d( [ x, y, z, w, v, out ], shape, add );
+quinary3d( [ x, y, z, w, v, out ], shape, add );
 console.log( out );

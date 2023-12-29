@@ -25,12 +25,12 @@ var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var floor = require( '@stdlib/math/base/special/floor' );
-var filled2dBy = require( './../../../base/filled2d-by' );
-var zeros2d = require( './../../../base/zeros2d' );
+var filled3dBy = require( './../../../base/filled3d-by' );
+var zeros3d = require( './../../../base/zeros3d' );
 var numel = require( '@stdlib/ndarray/base/numel' );
 var add = require( '@stdlib/math/base/ops/add5' );
 var pkg = require( './../package.json' ).name;
-var quinary2d = require( './../lib' );
+var quinary3d = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -51,12 +51,12 @@ function createBenchmark( shape ) {
 	var w;
 	var v;
 
-	x = filled2dBy( shape, uniform( -100.0, 100.0 ) );
-	y = filled2dBy( shape, uniform( -100.0, 100.0 ) );
-	z = filled2dBy( shape, uniform( -100.0, 100.0 ) );
-	w = filled2dBy( shape, uniform( -100.0, 100.0 ) );
-	v = filled2dBy( shape, uniform( -100.0, 100.0 ) );
-	out = zeros2d( shape );
+	x = filled3dBy( shape, uniform( -100.0, 100.0 ) );
+	y = filled3dBy( shape, uniform( -100.0, 100.0 ) );
+	z = filled3dBy( shape, uniform( -100.0, 100.0 ) );
+	w = filled3dBy( shape, uniform( -100.0, 100.0 ) );
+	v = filled3dBy( shape, uniform( -100.0, 100.0 ) );
+	out = zeros3d( shape );
 
 	arrays = [ x, y, z, w, v, out ];
 
@@ -71,22 +71,25 @@ function createBenchmark( shape ) {
 	function benchmark( b ) {
 		var i0;
 		var i1;
+		var i2;
 		var i;
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			quinary2d( arrays, shape, add );
-			i1 = i % shape[ 0 ];
-			i0 = i % shape[ 1 ];
-			if ( isnan( arrays[ 5 ][ i1 ][ i0 ] ) ) {
+			quinary3d( arrays, shape, add );
+			i2 = i % shape[ 0 ];
+			i1 = i % shape[ 1 ];
+			i0 = i % shape[ 2 ];
+			if ( isnan( arrays[ 5 ][ i2 ][ i1 ][ i0 ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
 		}
 		b.toc();
 
-		i1 = i % shape[ 0 ];
-		i0 = i % shape[ 1 ];
-		if ( isnan( arrays[ 5 ][ i1 ][ i0 ] ) ) {
+		i2 = i % shape[ 0 ];
+		i1 = i % shape[ 1 ];
+		i0 = i % shape[ 2 ];
+		if ( isnan( arrays[ 5 ][ i2 ][ i1 ][ i0 ] ) ) {
 			b.fail( 'should not return NaN' );
 		}
 		b.pass( 'benchmark finished' );
@@ -114,10 +117,10 @@ function main() {
 	max = 6; // 10^max
 
 	for ( i = min; i <= max; i++ ) {
-		N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
-		sh = [ N, N ];
+		N = floor( pow( pow( 10, i ), 1.0/3.0 ) );
+		sh = [ N, N, N ];
 		f = createBenchmark( sh );
-		bench( pkg+'::square_matrix:size='+numel( sh ), f );
+		bench( pkg+'::equidimensional:size='+numel( sh ), f );
 	}
 }
 

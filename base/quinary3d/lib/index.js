@@ -19,29 +19,29 @@
 'use strict';
 
 /**
-* Apply a quinary callback to elements in five two-dimensional nested input arrays and assign results to elements in a two-dimensional nested output array.
+* Apply a quinary callback to elements in five three-dimensional nested input arrays and assign results to elements in a three-dimensional nested output array.
 *
-* @module @stdlib/array/base/quinary2d
+* @module @stdlib/array/base/quinary3d
 *
 * @example
-* var ones2d = require( '@stdlib/array/base/ones2d' );
-* var zeros2d = require( '@stdlib/array/base/zeros2d' );
+* var ones3d = require( '@stdlib/array/base/ones3d' );
+* var zeros3d = require( '@stdlib/array/base/zeros3d' );
 * var add = require( '@stdlib/math/base/ops/add5' );
-* var quinary2d = require( '@stdlib/array/base/quinary2d' );
+* var quinary3d = require( '@stdlib/array/base/quinary3d' );
 *
-* var shape = [ 2, 2 ];
+* var shape = [ 1, 2, 2 ];
 *
-* var x = ones2d( shape );
-* var y = ones2d( shape );
-* var z = ones2d( shape );
-* var w = ones2d( shape );
-* var v = ones2d( shape );
-* var out = zeros2d( shape );
+* var x = ones3d( shape );
+* var y = ones3d( shape );
+* var z = ones3d( shape );
+* var w = ones3d( shape );
+* var v = ones3d( shape );
+* var out = zeros3d( shape );
 *
-* quinary2d( [ x, y, z, w, v, out ], shape, add );
+* quinary3d( [ x, y, z, w, v, out ], shape, add );
 *
 * console.log( out );
-* // => [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ]
+* // => [ [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ] ]
 */
 
 // MODULES //

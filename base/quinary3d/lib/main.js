@@ -21,7 +21,7 @@
 // MAIN //
 
 /**
-* Applies a quinary callback to elements in five two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+* Applies a quinary callback to elements in five three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
 *
 * ## Notes
 *
@@ -33,35 +33,43 @@
 * @returns {void}
 *
 * @example
-* var ones2d = require( '@stdlib/array/base/ones2d' );
-* var zeros2d = require( '@stdlib/array/base/zeros2d' );
+* var ones3d = require( '@stdlib/array/base/ones3d' );
+* var zeros3d = require( '@stdlib/array/base/zeros3d' );
 * var add = require( '@stdlib/math/base/ops/add5' );
 *
-* var shape = [ 2, 2 ];
+* var shape = [ 1, 2, 2 ];
 *
-* var x = ones2d( shape );
-* var y = ones2d( shape );
-* var z = ones2d( shape );
-* var w = ones2d( shape );
-* var v = ones2d( shape );
-* var out = zeros2d( shape );
+* var x = ones3d( shape );
+* var y = ones3d( shape );
+* var z = ones3d( shape );
+* var w = ones3d( shape );
+* var v = ones3d( shape );
+* var out = zeros3d( shape );
 *
-* quinary2d( [ x, y, z, w, v, out ], shape, add );
+* quinary3d( [ x, y, z, w, v, out ], shape, add );
 *
 * console.log( out );
-* // => [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ]
+* // => [ [ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ] ]
 */
-function quinary2d( arrays, shape, fcn ) {
+function quinary3d( arrays, shape, fcn ) {
 	var S0;
 	var S1;
+	var S2;
 	var i0;
 	var i1;
+	var i2;
 	var x0;
 	var y0;
 	var z0;
 	var w0;
 	var u0;
 	var v0;
+	var x1;
+	var y1;
+	var z1;
+	var w1;
+	var u1;
+	var v1;
 	var x;
 	var y;
 	var z;
@@ -69,9 +77,10 @@ function quinary2d( arrays, shape, fcn ) {
 	var u;
 	var v;
 
-	S0 = shape[ 1 ];
-	S1 = shape[ 0 ];
-	if ( S0 <= 0 || S1 <= 0 ) {
+	S0 = shape[ 2 ];
+	S1 = shape[ 1 ];
+	S2 = shape[ 0 ];
+	if ( S0 <= 0 || S1 <= 0 || S2 <= 0 ) {
 		return;
 	}
 	x = arrays[ 0 ];
@@ -80,15 +89,23 @@ function quinary2d( arrays, shape, fcn ) {
 	w = arrays[ 3 ];
 	u = arrays[ 4 ];
 	v = arrays[ 5 ];
-	for ( i1 = 0; i1 < S1; i1++ ) {
-		x0 = x[ i1 ];
-		y0 = y[ i1 ];
-		z0 = z[ i1 ];
-		w0 = w[ i1 ];
-		u0 = u[ i1 ];
-		v0 = v[ i1 ];
-		for ( i0 = 0; i0 < S0; i0++ ) {
-			v0[ i0 ] = fcn( x0[ i0 ], y0[ i0 ], z0[ i0 ], w0[ i0 ], u0[ i0 ] );
+	for ( i2 = 0; i2 < S2; i2++ ) {
+		x1 = x[ i2 ];
+		y1 = y[ i2 ];
+		z1 = z[ i2 ];
+		w1 = w[ i2 ];
+		u1 = u[ i2 ];
+		v1 = v[ i2 ];
+		for ( i1 = 0; i1 < S1; i1++ ) {
+			x0 = x1[ i1 ];
+			y0 = y1[ i1 ];
+			z0 = z1[ i1 ];
+			w0 = w1[ i1 ];
+			u0 = u1[ i1 ];
+			v0 = v1[ i1 ];
+			for ( i0 = 0; i0 < S0; i0++ ) {
+				v0[ i0 ] = fcn( x0[ i0 ], y0[ i0 ], z0[ i0 ], w0[ i0 ], u0[ i0 ] ); // eslint-disable-line max-len
+			}
 		}
 	}
 }
@@ -96,4 +113,4 @@ function quinary2d( arrays, shape, fcn ) {
 
 // EXPORTS //
 
-module.exports = quinary2d;
+module.exports = quinary3d;

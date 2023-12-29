@@ -21,16 +21,16 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var zeros2d = require( './../../../base/zeros2d' );
+var zeros3d = require( './../../../base/zeros3d' );
 var add = require( '@stdlib/math/base/ops/add5' );
-var quinary2d = require( './../lib' );
+var quinary3d = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof quinary2d, 'function', 'main export is a function' );
+	t.strictEqual( typeof quinary3d, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -44,34 +44,46 @@ tape( 'the function applies a provided callback to nested input arrays and assig
 	var w;
 	var v;
 
-	shape = [ 2, 2 ];
+	shape = [ 1, 2, 2 ];
 	x = [
-		[ 1.0, 2.0 ],
-		[ 3.0, 4.0 ]
+		[
+			[ 1.0, 2.0 ],
+			[ 3.0, 4.0 ]
+		]
 	];
 	y = [
-		[ 5.0, 6.0 ],
-		[ 7.0, 8.0 ]
+		[
+			[ 5.0, 6.0 ],
+			[ 7.0, 8.0 ]
+		]
 	];
 	z = [
-		[ 9.0, 10.0 ],
-		[ 11.0, 12.0 ]
+		[
+			[ 9.0, 10.0 ],
+			[ 11.0, 12.0 ]
+		]
 	];
 	w = [
-		[ 13.0, 14.0 ],
-		[ 15.0, 16.0 ]
+		[
+			[ 13.0, 14.0 ],
+			[ 15.0, 16.0 ]
+		]
 	];
 	v = [
-		[ 17.0, 18.0 ],
-		[ 19.0, 20.0 ]
+		[
+			[ 17.0, 18.0 ],
+			[ 19.0, 20.0 ]
+		]
 	];
-	out = zeros2d( shape );
+	out = zeros3d( shape );
 
 	expected = [
-		[ 45.0, 50.0 ],
-		[ 55.0, 60.0 ]
+		[
+			[ 45.0, 50.0 ],
+			[ 55.0, 60.0 ]
+		]
 	];
-	quinary2d( [ x, y, z, w, v, out ], shape, add );
+	quinary3d( [ x, y, z, w, v, out ], shape, add );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
@@ -87,31 +99,41 @@ tape( 'the function does not invoke a provided callback if provided a shape havi
 	var w;
 	var v;
 
-	shape = [ 2, 2 ];
+	shape = [ 1, 2, 2 ];
 	x = [
-		[ 1.0, 2.0 ],
-		[ 3.0, 4.0 ]
+		[
+			[ 1.0, 2.0 ],
+			[ 3.0, 4.0 ]
+		]
 	];
 	y = [
-		[ 5.0, 6.0 ],
-		[ 7.0, 8.0 ]
+		[
+			[ 5.0, 6.0 ],
+			[ 7.0, 8.0 ]
+		]
 	];
 	z = [
-		[ 9.0, 10.0 ],
-		[ 11.0, 12.0 ]
+		[
+			[ 9.0, 10.0 ],
+			[ 11.0, 12.0 ]
+		]
 	];
 	w = [
-		[ 13.0, 14.0 ],
-		[ 15.0, 16.0 ]
+		[
+			[ 13.0, 14.0 ],
+			[ 15.0, 16.0 ]
+		]
 	];
 	v = [
-		[ 17.0, 18.0 ],
-		[ 19.0, 20.0 ]
+		[
+			[ 17.0, 18.0 ],
+			[ 19.0, 20.0 ]
+		]
 	];
-	out = zeros2d( shape );
+	out = zeros3d( shape );
 
-	expected = zeros2d( shape );
-	quinary2d( [ x, y, z, w, v, out ], [ 0, 2 ], clbk );
+	expected = zeros3d( shape );
+	quinary3d( [ x, y, z, w, v, out ], [ 0, 2, 2 ], clbk );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
@@ -131,31 +153,95 @@ tape( 'the function does not invoke a provided callback if provided a shape havi
 	var w;
 	var v;
 
-	shape = [ 2, 2 ];
+	shape = [ 1, 2, 2 ];
 	x = [
-		[ 1.0, 2.0 ],
-		[ 3.0, 4.0 ]
+		[
+			[ 1.0, 2.0 ],
+			[ 3.0, 4.0 ]
+		]
 	];
 	y = [
-		[ 5.0, 6.0 ],
-		[ 7.0, 8.0 ]
+		[
+			[ 5.0, 6.0 ],
+			[ 7.0, 8.0 ]
+		]
 	];
 	z = [
-		[ 9.0, 10.0 ],
-		[ 11.0, 12.0 ]
+		[
+			[ 9.0, 10.0 ],
+			[ 11.0, 12.0 ]
+		]
 	];
 	w = [
-		[ 13.0, 14.0 ],
-		[ 15.0, 16.0 ]
+		[
+			[ 13.0, 14.0 ],
+			[ 15.0, 16.0 ]
+		]
 	];
 	v = [
-		[ 17.0, 18.0 ],
-		[ 19.0, 20.0 ]
+		[
+			[ 17.0, 18.0 ],
+			[ 19.0, 20.0 ]
+		]
 	];
-	out = zeros2d( shape );
+	out = zeros3d( shape );
 
-	expected = zeros2d( shape );
-	quinary2d( [ x, y, z, w, v, out ], [ 2, 0 ], clbk );
+	expected = zeros3d( shape );
+	quinary3d( [ x, y, z, w, v, out ], [ 1, 0, 2 ], clbk );
+
+	t.deepEqual( out, expected, 'returns expected value' );
+	t.end();
+
+	function clbk() {
+		t.ok( false, 'should not invoke callback' );
+	}
+});
+
+tape( 'the function does not invoke a provided callback if provided a shape having a third element equal to zero', function test( t ) {
+	var expected;
+	var shape;
+	var out;
+	var x;
+	var y;
+	var z;
+	var w;
+	var v;
+
+	shape = [ 1, 2, 2 ];
+	x = [
+		[
+			[ 1.0, 2.0 ],
+			[ 3.0, 4.0 ]
+		]
+	];
+	y = [
+		[
+			[ 5.0, 6.0 ],
+			[ 7.0, 8.0 ]
+		]
+	];
+	z = [
+		[
+			[ 9.0, 10.0 ],
+			[ 11.0, 12.0 ]
+		]
+	];
+	w = [
+		[
+			[ 13.0, 14.0 ],
+			[ 15.0, 16.0 ]
+		]
+	];
+	v = [
+		[
+			[ 17.0, 18.0 ],
+			[ 19.0, 20.0 ]
+		]
+	];
+	out = zeros3d( shape );
+
+	expected = zeros3d( shape );
+	quinary3d( [ x, y, z, w, v, out ], [ 1, 2, 0 ], clbk );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
