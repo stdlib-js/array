@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,27 +16,28 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+'use strict';
 
 /**
-* Copies the elements of an array-like object to a new "generic" array.
+* Group elements as arrays associated with distinct keys.
 *
-* @param x - input array
-* @returns output array
+* @module @stdlib/array/base/group-values
 *
 * @example
-* var x = [ 1, 2, 3 ];
+* var groupValues = require( '@stdlib/array/base/group-values' );
 *
-* var out = copy( x );
-* // returns [ 1, 2, 3 ]
+* var x = [ 'beep', 'boop', 'foo', 'bar' ];
+* var groups = [ 'b', 'b', 'f', 'b' ];
+*
+* var out = groupValues( x, groups );
+* // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function copy<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): Array<T>;
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = copy;
+module.exports = main;

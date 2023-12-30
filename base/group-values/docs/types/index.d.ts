@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,20 +23,38 @@
 import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Copies the elements of an array-like object to a new "generic" array.
+* Object key.
+*/
+type Key = string | symbol | number;
+
+/**
+* Interface describing returned group results.
+*/
+interface ValuesResults<K, T> {
+	/**
+	* Object properties.
+	*/
+	[key: K]: Array<T>;
+}
+
+
+/**
+* Groups elements as arrays associated with distinct keys.
 *
 * @param x - input array
-* @returns output array
+* @param groups - array defining which group an element in the input array belongs to
+* @returns group results
 *
 * @example
-* var x = [ 1, 2, 3 ];
+* var x = [ 'beep', 'boop', 'foo', 'bar' ];
+* var groups = [ 'b', 'b', 'f', 'b' ];
 *
-* var out = copy( x );
-* // returns [ 1, 2, 3 ]
+* var out = groupValues( x, groups );
+* // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function copy<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): Array<T>;
+declare function groupValues<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, groups: Collection<Key> | AccessorArrayLike<Key> ): ValuesResults<Key, T>;
 
 
 // EXPORTS //
 
-export = copy;
+export = groupValues;

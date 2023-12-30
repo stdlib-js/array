@@ -595,6 +595,15 @@ setReadOnly( ns, 'strided2array', require( './../../base/from-strided' ) );
 setReadOnly( ns, 'getter', require( './../../base/getter' ) );
 
 /**
+* @name groupValues
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/group-values}
+*/
+setReadOnly( ns, 'groupValues', require( './../../base/group-values' ) );
+
+/**
 * @name incrspace
 * @memberof ns
 * @readonly
