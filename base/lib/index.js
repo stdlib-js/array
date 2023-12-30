@@ -91,6 +91,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name bifurcateEntries
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/array/base/bifurcate-entries}
+*/
+setReadOnly( ns, 'bifurcateEntries', require( './../../base/bifurcate-entries' ) );
+
+/**
 * @name bifurcateIndices
 * @memberof ns
 * @readonly
