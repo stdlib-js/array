@@ -91,6 +91,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name bifurcateValues
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/array/base/bifurcate-values}
+*/
+setReadOnly( ns, 'bifurcateValues', require( './../../base/bifurcate-values' ) );
+
+/**
 * @name binary2d
 * @memberof ns
 * @readonly
