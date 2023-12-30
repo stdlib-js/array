@@ -1000,6 +1000,15 @@ setReadOnly( ns, 'ternary5d', require( './../../base/ternary5d' ) );
 setReadOnly( ns, 'toAccessorArray', require( './../../base/to-accessor-array' ) );
 
 /**
+* @name toDeduped
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/to-deduped}
+*/
+setReadOnly( ns, 'toDeduped', require( './../../base/to-deduped' ) );
+
+/**
 * @name unary2d
 * @memberof ns
 * @readonly
