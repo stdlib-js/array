@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,25 +18,39 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
-
-import { Collection } from '@stdlib/types/array';
-
 /**
-* Copies the elements of an indexed array-like object to a new "generic" array.
+* Removes consecutive duplicated values.
+*
+* ## Notes
+*
+* -   The function mutates the input array.
 *
 * @param x - input array
-* @returns output array
+* @param limit - number of allowed consecutive duplicates
+* @param equalNaNs - boolean indicating whether NaNs should be considered equal
+* @returns input array
 *
 * @example
-* var x = [ 1, 2, 3 ];
+* var x = [ 1, 1, 2, 3, 3 ];
 *
-* var out = copy( x );
+* var y = dedupe( x, 1, false );
 * // returns [ 1, 2, 3 ]
+*
+* var bool = ( x === y );
+* // returns true
+*
+* @example
+* var x = [ 1, 1, 1, 2, 1, 1, 3, 3 ];
+*
+* var y = dedupe( x, 2, false );
+* // returns [ 1, 1, 2, 1, 1, 3, 3 ]
+*
+* var bool = ( x === y );
+* // returns true
 */
-declare function copy<T = unknown>( x: Collection<T> ): Array<T>;
+declare function dedupe<T = unknown>( x: Array<T>, limit: number, equalNaNs: boolean ): Array<T>;
 
 
 // EXPORTS //
 
-export = copy;
+export = dedupe;

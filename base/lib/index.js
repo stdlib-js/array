@@ -289,6 +289,15 @@ setReadOnly( ns, 'copy', require( './../../base/copy' ) );
 setReadOnly( ns, 'copyIndexed', require( './../../base/copy-indexed' ) );
 
 /**
+* @name dedupe
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/dedupe}
+*/
+setReadOnly( ns, 'dedupe', require( './../../base/dedupe' ) );
+
+/**
 * @name filled
 * @memberof ns
 * @readonly

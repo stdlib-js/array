@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,27 +16,30 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection } from '@stdlib/types/array';
+'use strict';
 
 /**
-* Copies the elements of an indexed array-like object to a new "generic" array.
+* Remove consecutive duplicated values.
 *
-* @param x - input array
-* @returns output array
+* @module @stdlib/array/base/dedupe
 *
 * @example
-* var x = [ 1, 2, 3 ];
+* var dedupe = require( '@stdlib/array/base/dedupe' );
 *
-* var out = copy( x );
+* var x = [ 1, 1, 2, 3, 3 ];
+*
+* var y = dedupe( x, 1, false );
 * // returns [ 1, 2, 3 ]
+*
+* var bool = ( x === y );
+* // returns true
 */
-declare function copy<T = unknown>( x: Collection<T> ): Array<T>;
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = copy;
+module.exports = main;

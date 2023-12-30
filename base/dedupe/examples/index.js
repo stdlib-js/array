@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,27 +16,19 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/// <reference types="@stdlib/types"/>
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var dedupe = require( './../lib' );
 
-import { Collection } from '@stdlib/types/array';
+// Create an array of random numbers:
+var x = discreteUniform( 30, 0, 5, {
+	'dtype': 'generic'
+});
+// returns [...]
 
-/**
-* Copies the elements of an indexed array-like object to a new "generic" array.
-*
-* @param x - input array
-* @returns output array
-*
-* @example
-* var x = [ 1, 2, 3 ];
-*
-* var out = copy( x );
-* // returns [ 1, 2, 3 ]
-*/
-declare function copy<T = unknown>( x: Collection<T> ): Array<T>;
+// Remove consecutive duplicates:
+var y = dedupe( x, 1, false );
+// returns [...]
 
-
-// EXPORTS //
-
-export = copy;
+console.log( y );
