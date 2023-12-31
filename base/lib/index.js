@@ -640,6 +640,15 @@ setReadOnly( ns, 'groupEntries', require( './../../base/group-entries' ) );
 setReadOnly( ns, 'groupIndices', require( './../../base/group-indices' ) );
 
 /**
+* @name groupIndicesBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/group-indices-by}
+*/
+setReadOnly( ns, 'groupIndicesBy', require( './../../base/group-indices-by' ) );
+
+/**
 * @name groupValues
 * @memberof ns
 * @readonly
