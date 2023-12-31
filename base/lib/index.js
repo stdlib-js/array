@@ -109,6 +109,15 @@ setReadOnly( ns, 'bifurcateEntries', require( './../../base/bifurcate-entries' )
 setReadOnly( ns, 'bifurcateIndices', require( './../../base/bifurcate-indices' ) );
 
 /**
+* @name bifurcateIndicesBy
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/array/base/bifurcate-indices-by}
+*/
+setReadOnly( ns, 'bifurcateIndicesBy', require( './../../base/bifurcate-indices-by' ) );
+
+/**
 * @name bifurcateValues
 * @memberof ns
 * @readonly
