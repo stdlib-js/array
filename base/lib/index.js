@@ -100,6 +100,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'bifurcateEntries', require( './../../base/bifurcate-entries' ) );
 
 /**
+* @name bifurcateEntriesBy
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/array/base/bifurcate-entries-by}
+*/
+setReadOnly( ns, 'bifurcateEntriesBy', require( './../../base/bifurcate-entries-by' ) );
+
+/**
 * @name bifurcateIndices
 * @memberof ns
 * @readonly
