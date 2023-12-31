@@ -23,63 +23,60 @@
 var tape = require( 'tape' );
 var toAccessorArray = require( './../../../base/to-accessor-array' );
 var Float64Array = require( './../../../float64' );
-var groupValuesBy = require( './../lib' );
+var bifurcateValuesBy = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof groupValuesBy, 'function', 'main export is a function' );
+	t.strictEqual( typeof bifurcateValuesBy, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function groups array element values according to an indicator function', function test( t ) {
+tape( 'the function splits array element values into two groups according to an predicate function', function test( t ) {
 	var expected;
 	var out;
 	var x;
 
 	x = [ 'beep', 'boop', 'foo', 'bar' ];
 
-	expected = {
-		'b': [ 'beep', 'boop', 'bar' ],
-		'f': [ 'foo' ]
-	};
-	out = groupValuesBy( x, indicator );
+	expected = [
+		[ 'beep', 'boop', 'bar' ],
+		[ 'foo' ]
+	];
+	out = bifurcateValuesBy( x, predicate );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
 
-	function indicator( v ) {
-		return v[ 0 ];
+	function predicate( v ) {
+		return v[ 0 ] === 'b';
 	}
 });
 
-tape( 'the function groups array element values according to an indicator function (typed arrays)', function test( t ) {
+tape( 'the function splits array element values into two groups according to an predicate function (typed arrays)', function test( t ) {
 	var expected;
 	var out;
 	var x;
 
 	x = new Float64Array( [ 3.14, 4.2, -1.0, -10.2 ] );
 
-	expected = {
-		'1': [ -1.0, -10.2 ],
-		'2': [ 3.14, 4.2 ]
-	};
-	out = groupValuesBy( x, indicator );
+	expected = [
+		[ -1.0, -10.2 ],
+		[ 3.14, 4.2 ]
+	];
+	out = bifurcateValuesBy( x, predicate );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
 
-	function indicator( v, i ) {
-		if ( i < 2 ) {
-			return 2;
-		}
-		return 1;
+	function predicate( v, i ) {
+		return ( i >= 2 );
 	}
 });
 
-tape( 'the function groups array element values according to an indicator function (array-like objects)', function test( t ) {
+tape( 'the function splits array element values into two groups according to an predicate function (array-like objects)', function test( t ) {
 	var expected;
 	var out;
 	var x;
@@ -92,74 +89,52 @@ tape( 'the function groups array element values according to an indicator functi
 		'3': 'bar'
 	};
 
-	expected = {
-		'be': [ 'beep' ],
-		'bo': [ 'boop' ],
-		'fo': [ 'foo' ],
-		'ba': [ 'bar' ]
-	};
-	out = groupValuesBy( x, indicator );
+	expected = [
+		[ 'beep', 'boop', 'bar' ],
+		[ 'foo' ]
+	];
+	out = bifurcateValuesBy( x, predicate );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
 
-	function indicator( v ) {
-		return v.slice( 0, 2 );
+	function predicate( v ) {
+		return v[ 0 ] === 'b';
 	}
 });
 
-tape( 'the function groups array element values according to an indicator function (accessor arrays)', function test( t ) {
+tape( 'the function splits array element values into two groups according to an predicate function (accessor arrays)', function test( t ) {
 	var expected;
 	var out;
 	var x;
 
 	x = toAccessorArray( [ 'beep', 'boop', 'foo', 'bar' ] );
 
-	expected = {
-		'b': [ 'beep', 'boop', 'bar' ],
-		'f': [ 'foo' ]
-	};
-	out = groupValuesBy( x, indicator );
+	expected = [
+		[ 'beep', 'boop', 'bar' ],
+		[ 'foo' ]
+	];
+	out = bifurcateValuesBy( x, predicate );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.end();
 
-	function indicator( v ) {
-		return v[ 0 ];
+	function predicate( v ) {
+		return v[ 0 ] === 'b';
 	}
 });
 
-tape( 'the function groups array element values according to an indicator function (string serialization)', function test( t ) {
-	var expected;
-	var out;
-	var x;
-
-	x = [ 'beep', 'boop', 'foo', 'bar' ];
-
-	expected = {
-		'[object Object]': [ 'beep', 'boop', 'foo', 'bar' ]
-	};
-	out = groupValuesBy( x, indicator );
-
-	t.deepEqual( out, expected, 'returns expected groups' );
-	t.end();
-
-	function indicator() {
-		return {};
-	}
-});
-
-tape( 'the function returns an empty object if provided an empty array', function test( t ) {
+tape( 'the function returns an empty array if provided an empty array', function test( t ) {
 	var expected;
 	var actual;
 
-	expected = {};
-	actual = groupValuesBy( [], indicator );
+	expected = [];
+	actual = bifurcateValuesBy( [], predicate );
 
 	t.deepEqual( actual, expected, 'returns expected value' );
 	t.end();
 
-	function indicator( v ) {
+	function predicate( v ) {
 		t.fail( 'should not be called' );
 		return v;
 	}
@@ -173,21 +148,21 @@ tape( 'the function supports specifying a callback execution context', function 
 
 	x = [ 'beep', 'boop', 'foo', 'bar' ];
 
-	expected = {
-		'b': [ 'beep', 'boop', 'bar' ],
-		'f': [ 'foo' ]
-	};
+	expected = [
+		[ 'beep', 'boop', 'bar' ],
+		[ 'foo' ]
+	];
 	ctx = {
 		'count': 0
 	};
-	out = groupValuesBy( x, indicator, ctx );
+	out = bifurcateValuesBy( x, predicate, ctx );
 
 	t.deepEqual( out, expected, 'returns expected value' );
 	t.strictEqual( ctx.count, x.length, 'returns expected value' );
 	t.end();
 
-	function indicator( v ) {
+	function predicate( v ) {
 		this.count += 1; // eslint-disable-line no-invalid-this
-		return v[ 0 ];
+		return v[ 0 ] === 'b';
 	}
 });

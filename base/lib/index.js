@@ -118,6 +118,15 @@ setReadOnly( ns, 'bifurcateIndices', require( './../../base/bifurcate-indices' )
 setReadOnly( ns, 'bifurcateValues', require( './../../base/bifurcate-values' ) );
 
 /**
+* @name bifurcateValuesBy
+* @memberof ns
+* @readonly
+* @type {Namespace}
+* @see {@link module:@stdlib/array/base/bifurcate-values-by}
+*/
+setReadOnly( ns, 'bifurcateValuesBy', require( './../../base/bifurcate-values-by' ) );
+
+/**
 * @name binary2d
 * @memberof ns
 * @readonly
