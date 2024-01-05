@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,29 +16,37 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/// <reference types="@stdlib/types"/>
-
-import { DataType, DataTypeKind } from '@stdlib/types/array';
+// MAIN //
 
 /**
-* Returns a list of array data types.
+* Returns default array settings.
 *
-* @param kind - data type kind
-* @returns list of array data types
-*
-* @example
-* var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', ... ]
+* @returns {Object} defaults
 *
 * @example
-* var list = dtypes( 'floating_point' );
-* // returns [...]
+* var o = defaults();
+* // returns {...}
 */
-declare function dtypes( kind?: DataTypeKind ): Array<DataType>;
+function defaults() {
+	return {
+		// Data types:
+		'dtypes': {
+			'default': 'float64',
+			'numeric': 'float64',
+			'real': 'float64',
+			'floating_point': 'float64',
+			'real_floating_point': 'float64',
+			'complex_floating_point': 'complex128',
+			'integer': 'int32',
+			'signed_integer': 'int32',
+			'unsigned_integer': 'uint32'
+		}
+	};
+}
 
 
 // EXPORTS //
 
-export = dtypes;
+module.exports = defaults;
