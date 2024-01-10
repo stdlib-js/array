@@ -29,6 +29,7 @@ import convertArraySame = require( './../../convert-same' );
 import arrayCtors = require( './../../ctors' );
 import DataView = require( './../../dataview' );
 import datespace = require( './../../datespace' );
+import arrayDefaults = require( './../../defaults' );
 import arrayDataType = require( './../../dtype' );
 import arrayDataTypes = require( './../../dtypes' );
 import aempty = require( './../../empty' );
@@ -331,6 +332,17 @@ interface Namespace {
 	datespace: typeof datespace;
 
 	/**
+	* Returns default ndarray settings.
+	*
+	* @returns default settings
+	*
+	* @example
+	* var o = ns.arrayDefaults();
+	* // returns {...}
+	*/
+	arrayDefaults: typeof arrayDefaults;
+
+	/**
 	* Returns the data type of an array.
 	*
 	* ## Notes
@@ -352,11 +364,16 @@ interface Namespace {
 	/**
 	* Returns a list of array data types.
 	*
+	* @param kind - data type kind
 	* @returns list of array data types
 	*
 	* @example
 	* var list = ns.arrayDataTypes();
-	* // e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
+	* // e.g., returns [ 'float32', 'float64', ... ]
+	*
+	* @example
+	* var list = ns.arrayDataTypes( 'floating_point' );
+	* // returns [...]
 	*/
 	arrayDataTypes: typeof arrayDataTypes;
 
