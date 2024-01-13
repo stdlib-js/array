@@ -352,6 +352,15 @@ setReadOnly( ns, 'copyIndexed', require( './../../base/copy-indexed' ) );
 setReadOnly( ns, 'dedupe', require( './../../base/dedupe' ) );
 
 /**
+* @name everyBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/every-by}
+*/
+setReadOnly( ns, 'everyBy', require( './../../base/every-by' ) );
+
+/**
 * @name filled
 * @memberof ns
 * @readonly
