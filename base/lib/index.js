@@ -370,6 +370,15 @@ setReadOnly( ns, 'every', require( './../../base/every' ) );
 setReadOnly( ns, 'everyBy', require( './../../base/every-by' ) );
 
 /**
+* @name everyByRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/every-by-right}
+*/
+setReadOnly( ns, 'everyByRight', require( './../../base/every-by-right' ) );
+
+/**
 * @name filled
 * @memberof ns
 * @readonly
