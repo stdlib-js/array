@@ -847,6 +847,15 @@ setReadOnly( ns, 'mskunary3d', require( './../../base/mskunary3d' ) );
 setReadOnly( ns, 'nCartesianProduct', require( './../../base/n-cartesian-product' ) );
 
 /**
+* @name none
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/none}
+*/
+setReadOnly( ns, 'none', require( './../../base/none' ) );
+
+/**
 * @name oneTo
 * @memberof ns
 * @readonly
