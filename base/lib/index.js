@@ -865,6 +865,15 @@ setReadOnly( ns, 'nCartesianProduct', require( './../../base/n-cartesian-product
 setReadOnly( ns, 'none', require( './../../base/none' ) );
 
 /**
+* @name noneBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/none-by}
+*/
+setReadOnly( ns, 'noneBy', require( './../../base/none-by' ) );
+
+/**
 * @name oneTo
 * @memberof ns
 * @readonly
