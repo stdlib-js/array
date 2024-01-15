@@ -142,7 +142,7 @@ bool = isComplex128Array( { 'length': 0 } );
 
 [@stdlib/array/complex128]: https://github.com/stdlib-js/array/tree/main/complex128
 
-[@stdlib/assert/is-complex128array]: https://github.com/stdlib-js/stdlib
+[@stdlib/assert/is-complex128array]: https://github.com/stdlib-js/assert-is-complex128array
 
 <!-- <related-links> -->
 

@@ -142,7 +142,7 @@ bool = isComplex64Array( { 'length': 0 } );
 
 [@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64
 
-[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/stdlib
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
 
 <!-- <related-links> -->
 
