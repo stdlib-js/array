@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,31 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="@stdlib/types"/>
+
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Test whether all elements in an array pass a test implemented by a predicate function.
+* Tests whether at least one element in an array is truthy.
 *
-* @module @stdlib/array/base/every-by
+* ## Notes
+*
+* -   The function immediately returns upon encountering a truthy value.
+* -   If provided an empty collection, the function returns `false`.
+*
+* @param x - input array
+* @returns boolean indicating whether at least one element is truthy
 *
 * @example
-* var everyBy = require( '@stdlib/array/base/every-by' );
+* var x = [ 0, 0, 1, 0 ];
 *
-* function isPositive( v ) {
-*     return v > 0;
-* }
-*
-* var x = [ 1, 2, 3, 4 ];
-*
-* var out = everyBy( x, isPositive );
+* var out = any( x );
 * // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function any<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): boolean;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = any;

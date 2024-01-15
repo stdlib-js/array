@@ -18,29 +18,16 @@
 
 'use strict';
 
-/**
-* Test whether all elements in an array pass a test implemented by a predicate function.
-*
-* @module @stdlib/array/base/every-by
-*
-* @example
-* var everyBy = require( '@stdlib/array/base/every-by' );
-*
-* function isPositive( v ) {
-*     return v > 0;
-* }
-*
-* var x = [ 1, 2, 3, 4 ];
-*
-* var out = everyBy( x, isPositive );
-* // returns true
-*/
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var any = require( './../lib' );
 
-// MODULES //
+var x = bernoulli( 10, 0.1, {
+	'dtype': 'int8'
+} );
+// returns <Int8Array>
 
-var main = require( './main.js' );
+var out = any( x );
+// returns <boolean>
 
-
-// EXPORTS //
-
-module.exports = main;
+console.log( x );
+console.log( out );

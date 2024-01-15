@@ -73,6 +73,15 @@ setReadOnly( ns, 'accessorSetter', require( './../../base/accessor-setter' ) );
 setReadOnly( ns, 'accessors', require( './../../base/accessors' ) );
 
 /**
+* @name any
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/any}
+*/
+setReadOnly( ns, 'any', require( './../../base/any' ) );
+
+/**
 * @name arraylike2object
 * @memberof ns
 * @readonly

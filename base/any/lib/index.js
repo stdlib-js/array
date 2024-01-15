@@ -19,20 +19,16 @@
 'use strict';
 
 /**
-* Test whether all elements in an array pass a test implemented by a predicate function.
+* Test whether at least one element in an array is truthy.
 *
-* @module @stdlib/array/base/every-by
+* @module @stdlib/array/base/any
 *
 * @example
-* var everyBy = require( '@stdlib/array/base/every-by' );
+* var any = require( '@stdlib/array/base/any' );
 *
-* function isPositive( v ) {
-*     return v > 0;
-* }
+* var x = [ 0, 0, 1, 0 ];
 *
-* var x = [ 1, 2, 3, 4 ];
-*
-* var out = everyBy( x, isPositive );
+* var out = any( x );
 * // returns true
 */
 
