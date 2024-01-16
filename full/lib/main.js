@@ -24,7 +24,13 @@ var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).is
 var ctors = require( './../../ctors' );
 var afill = require( './../../base/filled' );
 var gfill = require( '@stdlib/blas/ext/base/gfill' );
+var defaults = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
+
+
+// VARIABLES //
+
+var DEFAULT_DTYPE = defaults.get( 'dtypes.default' );
 
 
 // MAIN //
@@ -57,7 +63,7 @@ function full( length, value ) {
 	if ( arguments.length > 2 ) {
 		dtype = arguments[ 2 ];
 	} else {
-		dtype = 'float64';
+		dtype = DEFAULT_DTYPE;
 	}
 	if ( dtype === 'generic' ) {
 		return afill( value, length );

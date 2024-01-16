@@ -23,7 +23,13 @@
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var ctors = require( './../../ctors' );
 var gzeros = require( './../../base/zeros' );
+var defaults = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
+
+
+// VARIABLES //
+
+var DEFAULT_DTYPE = defaults.get( 'dtypes.default' );
 
 
 // MAIN //
@@ -54,7 +60,7 @@ function zeros( length ) {
 	if ( arguments.length > 1 ) {
 		dtype = arguments[ 1 ];
 	} else {
-		dtype = 'float64';
+		dtype = DEFAULT_DTYPE;
 	}
 	if ( dtype === 'generic' ) {
 		return gzeros( length );

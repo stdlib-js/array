@@ -34,6 +34,7 @@ var reinterpret64 = require( '@stdlib/strided/base/reinterpret-complex64' );
 var reinterpret128 = require( '@stdlib/strided/base/reinterpret-complex128' );
 var accessors = require( './../../base/accessors' );
 var adtype = require( './../../dtype' );
+var ARRAY_DEFAULTS = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
 var ArrayBuffer = require( './../../buffer' );
 var ceil = require( '@stdlib/math/base/special/ceil' );
@@ -49,6 +50,7 @@ var BYTES_PER_ELEMENT = require( './bytes_per_element.json' );
 
 // VARIABLES //
 
+var DEFAULT_DTYPE = ARRAY_DEFAULTS.get( 'dtypes.default' );
 var Complex64Array = ctors( 'complex64' );
 var Complex128Array = ctors( 'complex128' );
 
@@ -222,7 +224,7 @@ function factory( options ) {
 			nargs -= 1;
 			dtype = arguments[ nargs ];
 		} else {
-			dtype = 'float64';
+			dtype = DEFAULT_DTYPE;
 		}
 		ctor = ctors( dtype );
 		if ( ctor === null ) {

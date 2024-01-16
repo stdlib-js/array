@@ -25,7 +25,13 @@ var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
 var ctors = require( './../../typed-ctors' );
 var zeros = require( './../../base/zeros' );
 var bytesPerElement = require( '@stdlib/ndarray/base/bytes-per-element' );
+var defaults = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
+
+
+// VARIABLES //
+
+var DEFAULT_DTYPE = defaults.get( 'dtypes.default' );
 
 
 // MAIN //
@@ -62,7 +68,7 @@ function empty( length ) {
 	if ( arguments.length > 1 ) {
 		dtype = arguments[ 1 ];
 	} else {
-		dtype = 'float64';
+		dtype = DEFAULT_DTYPE;
 	}
 	if ( dtype === 'generic' ) {
 		return zeros( length );
