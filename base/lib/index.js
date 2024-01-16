@@ -1036,6 +1036,15 @@ setReadOnly( ns, 'quinary5d', require( './../../base/quinary5d' ) );
 setReadOnly( ns, 'resolveGetter', require( './../../base/resolve-getter' ) );
 
 /**
+* @name reverse
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/reverse}
+*/
+setReadOnly( ns, 'reverse', require( './../../base/reverse' ) );
+
+/**
 * @name setter
 * @memberof ns
 * @readonly
