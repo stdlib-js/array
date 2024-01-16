@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var AccessorArray = require( './../../../base/accessor' );
 var Float64Array = require( './../../../float64' );
-var anyBy = require( './../lib' );
+var anyByRight = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -44,7 +44,7 @@ function isPositive( value ) {
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof anyBy, 'function', 'main export is a function' );
+	t.strictEqual( typeof anyByRight, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -53,7 +53,7 @@ tape( 'if provided an empty collection, the function returns `false` (generic)',
 	var arr;
 
 	arr = [];
-	out = anyBy( arr, foo );
+	out = anyByRight( arr, foo );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -68,7 +68,7 @@ tape( 'if provided an empty collection, the function returns `false` (typed arra
 	var arr;
 
 	arr = new Float64Array( [] );
-	out = anyBy( arr, foo );
+	out = anyByRight( arr, foo );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -83,7 +83,7 @@ tape( 'if provided an empty collection, the function returns `false` (accessor)'
 	var arr;
 
 	arr = new AccessorArray( [] );
-	out = anyBy( arr, foo );
+	out = anyByRight( arr, foo );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -98,7 +98,7 @@ tape( 'the function returns `true` if at least one element passes a test (generi
 	var arr;
 
 	arr = [ -1, 2, 3 ];
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, true, 'returns expected value' );
 	t.end();
@@ -109,7 +109,7 @@ tape( 'the function returns `true` if at least one element passes a test (typed 
 	var arr;
 
 	arr = new Float64Array( [ -1.0, 2.0, -3.0 ] );
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, true, 'returns expected value' );
 	t.end();
@@ -120,7 +120,7 @@ tape( 'the function returns `true` if at least one element passes a test (access
 	var arr;
 
 	arr = new AccessorArray( [ 1, -2, 3 ] );
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, true, 'returns expected value' );
 	t.end();
@@ -136,7 +136,7 @@ tape( 'the function returns `true` if at least one element passes a test (array-
 		'1': -2,
 		'2': 3
 	};
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, true, 'returns expected value' );
 	t.end();
@@ -147,7 +147,7 @@ tape( 'the function returns `false` if all elements fail a test (generic)', func
 	var arr;
 
 	arr = [ -1, -2, -3 ];
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -158,7 +158,7 @@ tape( 'the function returns `false` if all elements fail a test (typed array)', 
 	var arr;
 
 	arr = new Float64Array( [ -1.0, -2.0, -3.0 ] );
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -169,7 +169,7 @@ tape( 'the function returns `false` if all elements fail a test (accessor)', fun
 	var arr;
 
 	arr = new AccessorArray( [ -1, -2, -3 ] );
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -185,7 +185,7 @@ tape( 'the function returns `false` if all elements fail a test (array-like obje
 		'1': -2,
 		'2': -3
 	};
-	out = anyBy( arr, isPositive );
+	out = anyByRight( arr, isPositive );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -199,11 +199,11 @@ tape( 'the function supports providing an execution context', function test( t )
 	ctx = {
 		'count': 0
 	};
-	arr = [ -1, -2, -3 ];
-	out = anyBy( arr, predicate, ctx );
+	arr = [ -1, 2, -3 ];
+	out = anyByRight( arr, predicate, ctx );
 
-	t.strictEqual( out, false, 'returns expected value' );
-	t.strictEqual( ctx.count, arr.length, 'returns expected value' );
+	t.strictEqual( out, true, 'returns expected value' );
+	t.strictEqual( ctx.count, 2, 'returns expected value' );
 
 	t.end();
 
@@ -221,7 +221,7 @@ tape( 'when performing a linear scan, the function does not skip empty elements 
 	arr = [ 1, , , 4 ]; // eslint-disable-line no-sparse-arrays
 	expected = [ 1, void 0, void 0, 4 ];
 
-	out = anyBy( arr, predicate );
+	out = anyByRight( arr, predicate );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();
@@ -240,7 +240,7 @@ tape( 'when performing a linear scan, the function does not skip empty elements 
 	arr = new AccessorArray( [ 1, , , 4 ] ); // eslint-disable-line no-sparse-arrays
 	expected = [ 1, void 0, void 0, 4 ];
 
-	out = anyBy( arr, predicate );
+	out = anyByRight( arr, predicate );
 
 	t.strictEqual( out, false, 'returns expected value' );
 	t.end();

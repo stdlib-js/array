@@ -91,6 +91,15 @@ setReadOnly( ns, 'any', require( './../../base/any' ) );
 setReadOnly( ns, 'anyBy', require( './../../base/any-by' ) );
 
 /**
+* @name anyByRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/any-by-right}
+*/
+setReadOnly( ns, 'anyByRight', require( './../../base/any-by-right' ) );
+
+/**
 * @name arraylike2object
 * @memberof ns
 * @readonly

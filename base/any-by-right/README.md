@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# anyBy
+# anyByRight
 
-> Test whether at least one element in an array passes a test implemented by a predicate function.
+> Test whether at least one element in an array passes a test implemented by a predicate function, while iterating from right to left.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,12 +37,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var anyBy = require( '@stdlib/array/base/any-by' );
+var anyByRight = require( '@stdlib/array/base/any-by-right' );
 ```
 
-#### anyBy( x, predicate\[, thisArg] )
+#### anyByRight( x, predicate\[, thisArg] )
 
-Tests whether at least one element in an array passes a test implemented by a `predicate` function.
+Tests whether at least one element in an array passes a test implemented by a `predicate` function, while iterating from right to left.
 
 ```javascript
 function isPositive( value ) {
@@ -51,7 +51,7 @@ function isPositive( value ) {
 
 var x = [ 0, 0, 1, 0 ];
 
-var bool = anyBy( x, isPositive );
+var bool = anyByRight( x, isPositive );
 // returns true
 ```
 
@@ -64,7 +64,7 @@ function isPositive( value ) {
 
 var x = [ -1, -2, -3, -4 ];
 
-var bool = anyBy( x, isPositive );
+var bool = anyByRight( x, isPositive );
 // returns false
 ```
 
@@ -88,11 +88,11 @@ var context = {
     'count': 0
 };
 
-var bool = anyBy( x, predicate, context );
+var bool = anyByRight( x, predicate, context );
 // returns true
 
 var cnt = context.count;
-// returns 3
+// returns 2
 ```
 
 </section>
@@ -105,14 +105,7 @@ var cnt = context.count;
 
 ## Notes
 
--   If provided an array-like object having a `some` method (**as defined by the ECMAScript Standard**), the function defers execution to that method and assumes that the method API has the following signature:
-
-    ```text
-    x.some( predicate, thisArg )
-    ```
-
--   If provided an array-like object without a `some` method, the function performs a linear scan and returns immediately upon encountering a truthy return value. Unlike [`Array.prototype.some`][mdn-array-some], when performing a linear scan, the function does **not** skip `undefined` elements.
-
+-   The function performs a linear scan and returns immediately upon encountering a truthy return value. Unlike [`Array.prototype.some`][mdn-array-some], when performing a linear scan, the function does **not** skip `undefined` elements.
 -   If provided an empty array, the function returns `false`.
 
 </section>
@@ -131,14 +124,14 @@ var cnt = context.count;
 var bernoulli = require( '@stdlib/random/array/bernoulli' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var anyBy = require( '@stdlib/array/base/any-by' );
+var anyByRight = require( '@stdlib/array/base/any-by-right' );
 
 var x = bernoulli( 10, 0.1, {
     'dtype': 'int8'
 } );
 // returns <Int8Array>
 
-var out = anyBy( x, naryFunction( isPositiveInteger, 1 ) );
+var out = anyByRight( x, naryFunction( isPositiveInteger, 1 ) );
 // returns <boolean>
 ```
 
