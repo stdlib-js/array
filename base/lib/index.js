@@ -1189,6 +1189,15 @@ setReadOnly( ns, 'toAccessorArray', require( './../../base/to-accessor-array' ) 
 setReadOnly( ns, 'toDeduped', require( './../../base/to-deduped' ) );
 
 /**
+* @name toReversed
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/to-reversed}
+*/
+setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
+
+/**
 * @name unary2d
 * @memberof ns
 * @readonly
