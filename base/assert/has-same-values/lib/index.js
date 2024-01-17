@@ -18,18 +18,26 @@
 
 'use strict';
 
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
-var naryFunction = require( '@stdlib/utils/nary-function' );
-var noneByRight = require( './../lib' );
+/**
+* Test if two arrays have the same values.
+*
+* @module @stdlib/array/base/assert/has-same-values
+*
+* @example
+* var hasSameValues = require( '@stdlib/array/base/assert/has-same-values' );
+*
+* var x = [ 0, 0, 1, 0 ];
+* var y = [ 0, 0, 1, 0 ];
+*
+* var out = hasSameValues( x, y );
+* // returns true
+*/
 
-var x = bernoulli( 10, 0.1, {
-	'dtype': 'int8'
-});
-// returns <Int8Array>
+// MODULES //
 
-var out = noneByRight( x, naryFunction( isPositiveInteger, 1 ) );
-// returns <boolean>
+var main = require( './main.js' );
 
-console.log( x );
-console.log( out );
+
+// EXPORTS //
+
+module.exports = main;

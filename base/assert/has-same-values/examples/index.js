@@ -18,18 +18,21 @@
 
 'use strict';
 
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
-var naryFunction = require( '@stdlib/utils/nary-function' );
-var noneByRight = require( './../lib' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var Complex128Array = require( './../../../../complex128' );
+var hasSameValues = require( './../lib' );
 
-var x = bernoulli( 10, 0.1, {
-	'dtype': 'int8'
-});
-// returns <Int8Array>
+var buf = discreteUniform( 10, 0, 10 );
+// returns <Float64Array>
 
-var out = noneByRight( x, naryFunction( isPositiveInteger, 1 ) );
-// returns <boolean>
+var x = new Complex128Array( buf );
+// returns <Complex128Array>
 
-console.log( x );
+var y = new Complex128Array( buf );
+// returns <Complex128Array>
+
+var out = hasSameValues( x, y );
+// returns true
+
 console.log( out );
+// => true

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# every
+# hasSameValues
 
-> Test whether all elements in an array are truthy.
+> Test if two arrays have the same values.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,17 +37,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var every = require( '@stdlib/array/base/every' );
+var hasSameValues = require( '@stdlib/array/base/assert/has-same-values' );
 ```
 
-#### every( x )
+#### hasSameValues( x, y )
 
-Tests whether all elements in an array are truthy.
+Tests if two arrays have the same values.
 
 ```javascript
-var x = [ 1, 2, 3, 4 ];
+var x = [ 0, 0, 1, 0 ];
+var y = [ 0, 0, 1, 0 ];
 
-var bool = every( x );
+var bool = hasSameValues( x, y );
 // returns true
 ```
 
@@ -61,7 +62,7 @@ var bool = every( x );
 
 ## Notes
 
--   If provided an empty array, the function returns `true`.
+-   If provided arrays of unequal length, the function returns `false`.
 -   The function does **not** skip `undefined` elements and is thus not optimized for sparse arrays.
 
 </section>
@@ -78,15 +79,20 @@ var bool = every( x );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var every = require( '@stdlib/array/base/every' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var hasSameValues = require( '@stdlib/array/base/assert/has-same-values' );
 
-var x = discreteUniform( 10, 0, 10, {
-    'dtype': 'int32'
-});
-// returns <Int32Array>
+var buf = discreteUniform( 10, 0, 10 );
+// returns <Float64Array>
 
-var out = every( x );
-// returns <boolean>
+var x = new Complex128Array( buf );
+// returns <Complex128Array>
+
+var y = new Complex128Array( buf );
+// returns <Complex128Array>
+
+var out = hasSameValues( x, y );
+// returns true
 ```
 
 </section>
