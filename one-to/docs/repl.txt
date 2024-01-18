@@ -1,7 +1,7 @@
 
 {{alias}}( n[, dtype] )
     Generates a linearly spaced numeric array whose elements increment by 1
-    starting from zero.
+    starting from one.
 
     The function supports the following data types:
 
@@ -38,9 +38,9 @@
     Examples
     --------
     > var arr = {{alias}}( 2 )
-    <Float64Array>[ 0.0, 1.0 ]
+    <Float64Array>[ 1.0, 2.0 ]
     > arr = {{alias}}( 2, 'float32' )
-    <Float32Array>[ 0.0, 1.0 ]
+    <Float32Array>[ 1.0, 2.0 ]
 
     See Also
     --------
