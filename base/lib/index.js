@@ -514,6 +514,15 @@ setReadOnly( ns, 'fillednd', require( './../../base/fillednd' ) );
 setReadOnly( ns, 'filledndBy', require( './../../base/fillednd-by' ) );
 
 /**
+* @name filter
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/filter}
+*/
+setReadOnly( ns, 'filter', require( './../../base/filter' ) );
+
+/**
 * @name first
 * @memberof ns
 * @readonly
