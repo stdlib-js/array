@@ -154,6 +154,15 @@ setReadOnly( ns, 'at4d', require( './../../base/at4d' ) );
 setReadOnly( ns, 'at5d', require( './../../base/at5d' ) );
 
 /**
+* @name atnd
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/atnd}
+*/
+setReadOnly( ns, 'atnd', require( './../../base/atnd' ) );
+
+/**
 * @name bifurcateEntries
 * @memberof ns
 * @readonly
