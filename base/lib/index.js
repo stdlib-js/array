@@ -127,6 +127,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'at2d', require( './../../base/at2d' ) );
 
 /**
+* @name at3d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/at3d}
+*/
+setReadOnly( ns, 'at3d', require( './../../base/at3d' ) );
+
+/**
 * @name bifurcateEntries
 * @memberof ns
 * @readonly
