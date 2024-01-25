@@ -118,6 +118,15 @@ setReadOnly( ns, 'arraylike2object', require( './../../base/arraylike2object' ) 
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name at
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/at}
+*/
+setReadOnly( ns, 'at', require( './../../base/at' ) );
+
+/**
 * @name at2d
 * @memberof ns
 * @readonly
