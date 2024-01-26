@@ -35,20 +35,32 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ArrayBuffer, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, aempty, aemptyLike, afull, afullLike, anans, anansLike, aoneTo, aoneToLike, aones, aonesLike, array2iterator, array2iteratorRight, arrayCtors, arrayDataType, arrayDataTypes, arrayDefaults, arrayMinDataType, arrayNextDataType, arrayPromotionRules, arraySafeCasts, arraySameKindCasts, arrayShape, arrayview2iterator, arrayview2iteratorRight, azeroTo, azeroToLike, azeros, azerosLike, base, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convertArray, convertArraySame, datespace, filledarray, filledarrayBy, floatarrayCtors, floatarrayDataTypes, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, reviveTypedArray, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarraypool } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -195,6 +207,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`anansLike( x[, dtype] )`][@stdlib/array/nans-like]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having the same length and data type as a provided array.</span>
 -   <span class="signature">[`anans( length[, dtype] )`][@stdlib/array/nans]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having a specified length.</span>
 -   <span class="signature">[`arrayNextDataType( [dtype] )`][@stdlib/array/next-dtype]</span><span class="delimiter">: </span><span class="description">return the next larger array data type of the same kind.</span>
+-   <span class="signature">[`aoneToLike( x[, dtype] )`][@stdlib/array/one-to-like]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by `1` starting from one and having the same length and data type as a provided input array.</span>
+-   <span class="signature">[`aoneTo( n[, dtype] )`][@stdlib/array/one-to]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by `1` starting from one.</span>
 -   <span class="signature">[`aonesLike( x[, dtype] )`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
 -   <span class="signature">[`aones( length[, dtype] )`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
 -   <span class="signature">[`typedarraypool()`][@stdlib/array/pool]</span><span class="delimiter">: </span><span class="description">allocate typed arrays from a typed array memory pool.</span>
@@ -214,6 +228,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`arrayview2iterator( src[, begin[, end]][, mapFcn[, thisArg]] )`][@stdlib/array/to-view-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view.</span>
 -   <span class="signature">[`complexarray()`][@stdlib/array/typed-complex]</span><span class="delimiter">: </span><span class="description">create a complex number typed array.</span>
 -   <span class="signature">[`realarray()`][@stdlib/array/typed-real]</span><span class="delimiter">: </span><span class="description">create a typed array.</span>
+-   <span class="signature">[`azeroToLike( x[, dtype] )`][@stdlib/array/zero-to-like]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by `1` starting from zero and having the same length and data type as a provided input array.</span>
+-   <span class="signature">[`azeroTo( n[, dtype] )`][@stdlib/array/zero-to]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by `1` starting from zero.</span>
 -   <span class="signature">[`azerosLike( x[, dtype] )`][@stdlib/array/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having the same length and data type as a provided array.</span>
 -   <span class="signature">[`azeros( length[, dtype] )`][@stdlib/array/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having a specified length.</span>
 
@@ -234,8 +250,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -261,7 +277,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -364,6 +380,10 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/next-dtype]: https://github.com/stdlib-js/array/tree/main/next-dtype
 
+[@stdlib/array/one-to-like]: https://github.com/stdlib-js/array/tree/main/one-to-like
+
+[@stdlib/array/one-to]: https://github.com/stdlib-js/array/tree/main/one-to
+
 [@stdlib/array/ones-like]: https://github.com/stdlib-js/array/tree/main/ones-like
 
 [@stdlib/array/ones]: https://github.com/stdlib-js/array/tree/main/ones
@@ -401,6 +421,10 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/typed-complex]: https://github.com/stdlib-js/array/tree/main/typed-complex
 
 [@stdlib/array/typed-real]: https://github.com/stdlib-js/array/tree/main/typed-real
+
+[@stdlib/array/zero-to-like]: https://github.com/stdlib-js/array/tree/main/zero-to-like
+
+[@stdlib/array/zero-to]: https://github.com/stdlib-js/array/tree/main/zero-to
 
 [@stdlib/array/zeros-like]: https://github.com/stdlib-js/array/tree/main/zeros-like
 
