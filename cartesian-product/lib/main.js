@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,9 @@
 
 // MODULES //
 
-var resolveGetter = require( './../../../base/resolve-getter' );
+var isCollection = require( '@stdlib/assert/is-collection' );
+var base = require( './../../base/cartesian-product' );
+var format = require( '@stdlib/string/format' );
 
 
 // MAIN //
@@ -28,8 +30,10 @@ var resolveGetter = require( './../../../base/resolve-getter' );
 /**
 * Returns the Cartesian product.
 *
-* @param {ArrayLikeObject} x1 - first input array
-* @param {ArrayLikeObject} x2 - second input array
+* @param {Collection} x1 - first input array
+* @param {Collection} x2 - second input array
+* @throws {TypeError} first argument must be a collection
+* @throws {TypeError} second argument must be a collection
 * @returns {Array<Array>} list of ordered tuples comprising the Cartesian product
 *
 * @example
@@ -40,28 +44,13 @@ var resolveGetter = require( './../../../base/resolve-getter' );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
 function cartesianProduct( x1, x2 ) {
-	var get1;
-	var get2;
-	var out;
-	var M;
-	var N;
-	var v;
-	var i;
-	var j;
-
-	get1 = resolveGetter( x1 );
-	get2 = resolveGetter( x2 );
-
-	M = x1.length;
-	N = x2.length;
-	out = [];
-	for ( i = 0; i < M; i++ ) {
-		v = get1( x1, i );
-		for ( j = 0; j < N; j++ ) {
-			out.push( [ v, get2( x2, j ) ] );
-		}
+	if ( !isCollection( x1 ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must be an array-like object. Value: `%s`.', x1 ) );
 	}
-	return out;
+	if ( !isCollection( x2 ) ) {
+		throw new TypeError( format( 'invalid argument. Second argument must be an array-like object. Value: `%s`.', x2 ) );
+	}
+	return base( x1, x2 );
 }
 
 

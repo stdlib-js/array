@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,21 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="@stdlib/types"/>
 
-var resolveGetter = require( './../../../base/resolve-getter' );
-
-
-// MAIN //
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns the Cartesian product.
 *
-* @param {ArrayLikeObject} x1 - first input array
-* @param {ArrayLikeObject} x2 - second input array
-* @returns {Array<Array>} list of ordered tuples comprising the Cartesian product
+* ## Notes
+*
+* -   If provided one or more empty arrays, the function returns an empty array.
+*
+* @param x1 - first input array
+* @param x2 - second input array
+* @returns Cartesian product
 *
 * @example
 * var x1 = [ 1, 2, 3 ];
@@ -39,32 +40,9 @@ var resolveGetter = require( './../../../base/resolve-getter' );
 * var out = cartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-function cartesianProduct( x1, x2 ) {
-	var get1;
-	var get2;
-	var out;
-	var M;
-	var N;
-	var v;
-	var i;
-	var j;
-
-	get1 = resolveGetter( x1 );
-	get2 = resolveGetter( x2 );
-
-	M = x1.length;
-	N = x2.length;
-	out = [];
-	for ( i = 0; i < M; i++ ) {
-		v = get1( x1, i );
-		for ( j = 0; j < N; j++ ) {
-			out.push( [ v, get2( x2, j ) ] );
-		}
-	}
-	return out;
-}
+declare function cartesianProduct<T = unknown, U = unknown>( x1: Collection<T> | AccessorArrayLike<T>, x2: Collection<U> | AccessorArrayLike<U> ): Array<[T, U]>;
 
 
 // EXPORTS //
 
-module.exports = cartesianProduct;
+export = cartesianProduct;
