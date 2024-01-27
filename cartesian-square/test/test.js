@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var toAccessorArray = require( './../../../base/to-accessor-array' );
+var toAccessorArray = require( './../../base/to-accessor-array' );
 var cartesianSquare = require( './../lib' );
 
 
@@ -31,6 +31,33 @@ tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
 	t.strictEqual( typeof cartesianSquare, 'function', 'main export is a function' );
 	t.end();
+});
+
+tape( 'the function throws an error if not provided a collection', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			cartesianSquare( value );
+		};
+	}
 });
 
 tape( 'the function returns the Cartesian square (indexed)', function test( t ) {

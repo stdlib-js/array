@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,31 +16,27 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+'use strict';
 
 /**
-* Returns the Cartesian square.
+* Return the Cartesian square.
 *
-* ## Notes
-*
-* -   If provided an empty array, the function returns an empty array.
-*
-* @param x - input array
-* @returns Cartesian product
+* @module @stdlib/array/cartesian-square
 *
 * @example
+* var cartesianSquare = require( '@stdlib/array/cartesian-square' );
+*
 * var x = [ 1, 2 ];
 *
 * var out = cartesianSquare( x );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianSquare<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): Array<Array<T>>;
+
+// MAIN //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = cartesianSquare;
+module.exports = main;

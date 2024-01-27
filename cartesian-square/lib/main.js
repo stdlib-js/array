@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,21 +16,23 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/// <reference types="@stdlib/types"/>
+// MODULES //
 
-import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+var isCollection = require( '@stdlib/assert/is-collection' );
+var base = require( './../../base/cartesian-square' );
+var format = require( '@stdlib/string/format' );
+
+
+// MAIN //
 
 /**
 * Returns the Cartesian square.
 *
-* ## Notes
-*
-* -   If provided an empty array, the function returns an empty array.
-*
-* @param x - input array
-* @returns Cartesian product
+* @param {Collection} x - input array
+* @throws {TypeError} first argument must be a collection
+* @returns {Array<Array>} list of ordered tuples comprising the Cartesian product
 *
 * @example
 * var x = [ 1, 2 ];
@@ -38,9 +40,14 @@ import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 * var out = cartesianSquare( x );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianSquare<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): Array<Array<T>>;
+function cartesianSquare( x ) {
+	if ( !isCollection( x ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must be an array-like object. Value: `%s`.', x ) );
+	}
+	return base( x );
+}
 
 
 // EXPORTS //
 
-export = cartesianSquare;
+module.exports = cartesianSquare;
