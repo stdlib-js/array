@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,33 +16,27 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
-
-/// <reference types="@stdlib/types"/>
-
-import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+'use strict';
 
 /**
-* Returns the Cartesian power.
+* Return the Cartesian power.
 *
-* ## Notes
-*
-* -   If provided an empty array, the function returns an empty array.
-* -   If `n` is less than or equal to zero, the function returns an empty array.
-*
-* @param x - input array
-* @param n - power
-* @returns Cartesian product
+* @module @stdlib/array/cartesian-power
 *
 * @example
+* var cartesianPower = require( '@stdlib/array/cartesian-power' );
+*
 * var x = [ 1, 2 ];
 *
 * var out = cartesianPower( x, 2 );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianPower<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, n: number ): Array<Array<T>>;
+
+// MAIN //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = cartesianPower;
+module.exports = main;
