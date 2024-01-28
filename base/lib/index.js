@@ -928,6 +928,15 @@ setReadOnly( ns, 'mskbinary2d', require( './../../base/mskbinary2d' ) );
 setReadOnly( ns, 'mskfilter', require( './../../base/mskfilter' ) );
 
 /**
+* @name mskreject
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/mskreject}
+*/
+setReadOnly( ns, 'mskreject', require( './../../base/mskreject' ) );
+
+/**
 * @name mskunary2d
 * @memberof ns
 * @readonly
