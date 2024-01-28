@@ -24,8 +24,17 @@ import AccessorArray = require( './../../../base/accessor' );
 import accessorGetter = require( './../../../base/accessor-getter' );
 import accessorSetter = require( './../../../base/accessor-setter' );
 import accessors = require( './../../../base/accessors' );
+import any = require( './../../../base/any' );
+import anyBy = require( './../../../base/any-by' );
+import anyByRight = require( './../../../base/any-by-right' );
 import arraylike2object = require( './../../../base/arraylike2object' );
 import assert = require( './../../../base/assert' );
+import at = require( './../../../base/at' );
+import at2d = require( './../../../base/at2d' );
+import at3d = require( './../../../base/at3d' );
+import at4d = require( './../../../base/at4d' );
+import at5d = require( './../../../base/at5d' );
+import atnd = require( './../../../base/atnd' );
 import bifurcateEntries = require( './../../../base/bifurcate-entries' );
 import bifurcateEntriesBy = require( './../../../base/bifurcate-entries-by' );
 import bifurcateIndices = require( './../../../base/bifurcate-indices' );
@@ -55,6 +64,9 @@ import cartesianSquare = require( './../../../base/cartesian-square' );
 import copy = require( './../../../base/copy' );
 import copyIndexed = require( './../../../base/copy-indexed' );
 import dedupe = require( './../../../base/dedupe' );
+import every = require( './../../../base/every' );
+import everyBy = require( './../../../base/every-by' );
+import everyByRight = require( './../../../base/every-by-right' );
 import filled = require( './../../../base/filled' );
 import filledBy = require( './../../../base/filled-by' );
 import filled2d = require( './../../../base/filled2d' );
@@ -67,6 +79,7 @@ import filled5d = require( './../../../base/filled5d' );
 import filled5dBy = require( './../../../base/filled5d-by' );
 import fillednd = require( './../../../base/fillednd' );
 import filledndBy = require( './../../../base/fillednd-by' );
+import filter = require( './../../../base/filter' );
 import first = require( './../../../base/first' );
 import flatten = require( './../../../base/flatten' );
 import flattenBy = require( './../../../base/flatten-by' );
@@ -105,9 +118,13 @@ import map3d = require( './../../../base/map3d' );
 import map4d = require( './../../../base/map4d' );
 import map5d = require( './../../../base/map5d' );
 import mskbinary2d = require( './../../../base/mskbinary2d' );
+import mskfilter = require( './../../../base/mskfilter' );
 import mskunary2d = require( './../../../base/mskunary2d' );
 import mskunary3d = require( './../../../base/mskunary3d' );
 import nCartesianProduct = require( './../../../base/n-cartesian-product' );
+import none = require( './../../../base/none' );
+import noneBy = require( './../../../base/none-by' );
+import noneByRight = require( './../../../base/none-by-right' );
 import oneTo = require( './../../../base/one-to' );
 import ones = require( './../../../base/ones' );
 import ones2d = require( './../../../base/ones2d' );
@@ -124,6 +141,8 @@ import quinary3d = require( './../../../base/quinary3d' );
 import quinary4d = require( './../../../base/quinary4d' );
 import quinary5d = require( './../../../base/quinary5d' );
 import resolveGetter = require( './../../../base/resolve-getter' );
+import resolveSetter = require( './../../../base/resolve-setter' );
+import reverse = require( './../../../base/reverse' );
 import setter = require( './../../../base/setter' );
 import slice = require( './../../../base/slice' );
 import strided2array2d = require( './../../../base/strided2array2d' );
@@ -140,6 +159,7 @@ import ternary4d = require( './../../../base/ternary4d' );
 import ternary5d = require( './../../../base/ternary5d' );
 import toAccessorArray = require( './../../../base/to-accessor-array' );
 import toDeduped = require( './../../../base/to-deduped' );
+import toReversed = require( './../../../base/to-reversed' );
 import unary2d = require( './../../../base/unary2d' );
 import unary2dBy = require( './../../../base/unary2d-by' );
 import unary3d = require( './../../../base/unary3d' );
@@ -261,6 +281,75 @@ interface Namespace {
 	accessors: typeof accessors;
 
 	/**
+	* Tests whether at least one element in an array is truthy.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a truthy value.
+	* -   If provided an empty collection, the function returns `false`.
+	*
+	* @param x - input array
+	* @returns boolean indicating whether at least one element is truthy
+	*
+	* @example
+	* var x = [ 0, 0, 1, 0 ];
+	*
+	* var out = ns.any( x );
+	* // returns true
+	*/
+	any: typeof any;
+
+	/**
+	* Tests whether at least one element in an array passes a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a truthy return value.
+	* -   If provided an empty collection, the function returns `false`.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements pass a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 0, 0, 1, 0 ];
+	*
+	* var out = ns.anyBy( x, isPositive );
+	* // returns true
+	*/
+	anyBy: typeof anyBy;
+
+	/**
+	* Tests whether at least one element in an array passes a test implemented by a predicate function, while iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a truthy return value.
+	* -   If provided an empty collection, the function returns `false`.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements pass a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 0, 0, 1, 0 ];
+	*
+	* var out = ns.anyByRight( x, isPositive );
+	* // returns true
+	*/
+	anyByRight: typeof anyByRight;
+
+	/**
 	* Converts a one-dimensional array-like object to an object likely to have the same "shape".
 	*
 	* ## Notes
@@ -296,6 +385,143 @@ interface Namespace {
 	* Base array assertion utilities.
 	*/
 	assert: typeof assert;
+
+	/**
+	* Returns an element from an array.
+	*
+	* @param x - input array
+	* @param index - element index
+	* @returns array element
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var v = ns.at( x, 0 );
+	* // returns 1
+	*
+	* v = ns.at( x, 1 );
+	* // returns 2
+	*
+	* v = ns.at( x, -2 );
+	* // returns 3
+	*/
+	at: typeof at;
+
+	/**
+	* Returns an element from a two-dimensional nested array.
+	*
+	* @param x - input array
+	* @param i0 - first dimension index
+	* @param i1 - second dimension index
+	* @returns nested array element
+	*
+	* @example
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var v = ns.at2d( x, 0, 1 );
+	* // returns 2
+	*
+	* v = ns.at2d( x, 1, 0 );
+	* // returns 3
+	*
+	* v = ns.at2d( x, -2, -2 );
+	* // returns 1
+	*/
+	at2d: typeof at2d;
+
+	/**
+	* Returns an element from a three-dimensional nested array.
+	*
+	* @param x - input array
+	* @param i0 - first dimension index
+	* @param i1 - second dimension index
+	* @param i2 - third dimension index
+	* @returns nested array element
+	*
+	* @example
+	* var x = [ [ [ 1, 2 ], [ 3, 4 ] ] ];
+	*
+	* var v = ns.at3d( x, 0, 0, 1 );
+	* // returns 2
+	*
+	* v = ns.at3d( x, 0, 1, 0 );
+	* // returns 3
+	*
+	* v = ns.at3d( x, -1, -2, -2 );
+	* // returns 1
+	*/
+	at3d: typeof at3d;
+
+	/**
+	* Returns an element from a four-dimensional nested array.
+	*
+	* @param x - input array
+	* @param i0 - first dimension index
+	* @param i1 - second dimension index
+	* @param i2 - third dimension index
+	* @param i3 - fourth dimension index
+	* @returns nested array element
+	*
+	* @example
+	* var x = [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ];
+	*
+	* var v = ns.at4d( x, 0, 0, 0, 1 );
+	* // returns 2
+	*
+	* v = ns.at4d( x, 0, 0, 1, 0 );
+	* // returns 3
+	*
+	* v = ns.at4d( x, -1, -1, -2, -2 );
+	* // returns 1
+	*/
+	at4d: typeof at4d;
+
+	/**
+	* Returns an element from a five-dimensional nested array.
+	*
+	* @param x - input array
+	* @param i0 - first dimension index
+	* @param i1 - second dimension index
+	* @param i2 - third dimension index
+	* @param i3 - fourth dimension index
+	* @param i4 - fifth dimension index
+	* @returns nested array element
+	*
+	* @example
+	* var x = [ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ];
+	*
+	* var v = ns.at5d( x, 0, 0, 0, 0, 1 );
+	* // returns 2
+	*
+	* v = ns.at5d( x, 0, 0, 0, 1, 0 );
+	* // returns 3
+	*
+	* v = ns.at5d( x, -1, -1, -1, -2, -2 );
+	* // returns 1
+	*/
+	at5d: typeof at5d;
+
+	/**
+	* Returns an element from an n-dimensional nested array.
+	*
+	* @param x - input array
+	* @param i0 - first dimension index
+	* @param indices - dimension indices
+	* @returns nested array element
+	*
+	* @example
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var v = ns.atnd( x, 0, 1 );
+	* // returns 2
+	*
+	* v = ns.atnd( x, 1, 0 );
+	* // returns 3
+	*
+	* v = ns.atnd( x, -2, -2 );
+	* // returns 1
+	*/
+	atnd: typeof atnd;
 
 	/**
 	* Splits array element entries into two groups.
@@ -1125,6 +1351,75 @@ interface Namespace {
 	dedupe: typeof dedupe;
 
 	/**
+	* Tests whether all elements in an array are truthy.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a non-truthy value.
+	* -   If provided an empty collection, the function returns `true`.
+	*
+	* @param x - input array
+	* @returns boolean indicating whether all elements are truthy
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = ns.every( x );
+	* // returns true
+	*/
+	every: typeof every;
+
+	/**
+	* Tests whether all elements in an array pass a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a non-truthy return value.
+	* -   If provided an empty collection, the function returns `true`.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements pass a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = ns.everyBy( x, isPositive );
+	* // returns true
+	*/
+	everyBy: typeof everyBy;
+
+	/**
+	* Tests whether all elements in an array pass a test implemented by a predicate function, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a non-truthy return value.
+	* -   If provided an empty collection, the function returns `true`.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements pass a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = ns.everyByRight( x, isPositive );
+	* // returns true
+	*/
+	everyByRight: typeof everyByRight;
+
+	/**
 	* Returns a filled "generic" array.
 	*
 	* @param value - fill value
@@ -1321,6 +1616,22 @@ interface Namespace {
 	* // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
 	*/
 	filledndBy: typeof filledndBy;
+
+	/**
+	* Returns a shallow copy of an array containing only those elements which pass a test implemented by a predicate function.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, -2, -3, 4 ];
+	*
+	* var out = ns.filter( x, isPositiveNumber );
+	* // returns [ 1, 4 ]
+	*/
+	filter: typeof filter;
 
 	/**
 	* Returns the first element of an array-like object.
@@ -2284,6 +2595,21 @@ interface Namespace {
 	mskbinary2d: typeof mskbinary2d;
 
 	/**
+	* Returns a new array by applying a mask to a provided input array.
+	*
+	* @param x - input array
+	* @param mask - mask array
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var y = ns.mskfilter( x, [ 0, 1, 0, 1 ] );
+	* // returns [ 2, 4 ]
+	*/
+	mskfilter: typeof mskfilter;
+
+	/**
 	* Applies a unary callback to elements in a two-dimensional nested input array according to elements in a two-dimensional nested mask array and assigns results to elements in a two-dimensional nested output array.
 	*
 	* ## Notes
@@ -2373,6 +2699,75 @@ interface Namespace {
 	nCartesianProduct: typeof nCartesianProduct;
 
 	/**
+	* Tests whether all elements in an array are falsy.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a truthy value.
+	* -   If provided an empty collection, the function returns `true`.
+	*
+	* @param x - input array
+	* @returns boolean indicating whether all elements are falsy
+	*
+	* @example
+	* var x = [ 0, 0, 0, 0 ];
+	*
+	* var out = ns.none( x );
+	* // returns true
+	*/
+	none: typeof none;
+
+	/**
+	* Tests whether all elements in an array fail a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a truthy return value.
+	* -   If provided an empty collection, the function returns `true`.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements fail a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 0, 0, 0, 0 ];
+	*
+	* var out = ns.noneBy( x, isPositive );
+	* // returns true
+	*/
+	noneBy: typeof noneBy;
+
+	/**
+	* Tests whether all elements in an array fail a test implemented by a predicate function, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   The function immediately returns upon encountering a truthy return value.
+	* -   If provided an empty collection, the function returns `true`.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements fail a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 0, 0, 0, 0 ];
+	*
+	* var out = ns.noneByRight( x, isPositive );
+	* // returns true
+	*/
+	noneByRight: typeof noneByRight;
+
+	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1 starting from one.
 	*
 	* @param n - number of elements
@@ -2381,6 +2776,18 @@ interface Namespace {
 	* @example
 	* var arr = ns.oneTo( 6 );
 	* // returns [ 1, 2, 3, 4, 5, 6 ]
+	*
+	* @example
+	* var out = [ 0, 0, 0, 0, 0, 0 ];
+	*
+	* var arr = ns.oneTo.assign( out, 1, 0 );
+	* // returns [ 1, 2, 3, 4, 5, 6 ]
+	*
+	* @example
+	* var out = [ 0, 0, 0, 0, 0, 0 ];
+	*
+	* var arr = ns.oneTo.assign( out, -1, out.length-1 );
+	* // returns [ 6, 5, 4, 3, 2, 1 ]
 	*/
 	oneTo: typeof oneTo;
 
@@ -2722,6 +3129,40 @@ interface Namespace {
 	* // returns 3
 	*/
 	resolveGetter: typeof resolveGetter;
+
+	/**
+	* Returns an accessor function for setting an element in an indexed array-like object.
+	*
+	* @param x - input array
+	* @returns accessor function
+	*
+	* @example
+	* var resolveGetter = require( './../../../base/resolve-getter' );
+	*
+	* var arr = [ 1, 2, 3, 4 ];
+	*
+	* var set = ns.resolveSetter( arr );
+	* set( arr, 2, 10 );
+	*
+	* var get = resolveGetter( arr );
+	* var v = get( arr, 2 );
+	* // returns 10
+	*/
+	resolveSetter: typeof resolveSetter;
+
+	/**
+	* Reverses an array in-place.
+	*
+	* @param x - input array
+	* @returns input array
+	*
+	* @example
+	* var x = [ 1, 2, 3 ];
+	*
+	* var out = ns.reverse( x );
+	* // returns [ 3, 2, 1 ]
+	*/
+	reverse: typeof reverse;
 
 	/**
 	* Returns an accessor function for setting an element in an indexed array-like object.
@@ -3122,6 +3563,31 @@ interface Namespace {
 	toDeduped: typeof toDeduped;
 
 	/**
+	* Returns a new array with elements in reverse order.
+	*
+	* @param x - input array
+	* @returns output array
+	*
+	* @example
+	* var toAccessorArray = require( './../../../base/to-accessor-array' );
+	*
+	* var x = toAccessorArray( [ 1, 2, 3 ] );
+	*
+	* var v = x.get( 0 );
+	* // returns 1
+	*
+	* var out = ns.toReversed( x );
+	* // returns [ 3, 2, 1 ]
+	*
+	* @example
+	* var x = [ 1, 2, 3 ];
+	*
+	* var out = ns.toReversed( x );
+	* // returns [ 3, 2, 1 ]
+	*/
+	toReversed: typeof toReversed;
+
+	/**
 	* Applies a unary callback to elements in a two-dimensional nested input array and assigns results to elements in a two-dimensional nested output array.
 	*
 	* ## Notes
@@ -3335,6 +3801,18 @@ interface Namespace {
 	* @example
 	* var arr = ns.zeroTo( 6 );
 	* // returns [ 0, 1, 2, 3, 4, 5 ]
+	*
+	* @example
+	* var out = [ 0, 0, 0, 0, 0, 0 ];
+	*
+	* var arr = ns.zeroTo.assign( out, 1, 0 );
+	* // returns [ 0, 1, 2, 3, 4, 5 ]
+	*
+	* @example
+	* var out = [ 0, 0, 0, 0, 0, 0 ];
+	*
+	* var arr = ns.zeroTo.assign( out, -1, out.length-1 );
+	* // returns [ 5, 4, 3, 2, 1, 0 ]
 	*/
 	zeroTo: typeof zeroTo;
 
