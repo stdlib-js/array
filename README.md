@@ -35,20 +35,32 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ArrayBuffer, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, acartesianPower, acartesianProduct, acartesianSquare, aempty, aemptyLike, afull, afullLike, anans, anansLike, aoneTo, aoneToLike, aones, aonesLike, array2iterator, array2iteratorRight, arrayCtors, arrayDataType, arrayDataTypes, arrayDefaults, arrayMinDataType, arrayNextDataType, arrayPromotionRules, arraySafeCasts, arraySameKindCasts, arrayShape, arrayview2iterator, arrayview2iteratorRight, aslice, azeroTo, azeroToLike, azeros, azerosLike, base, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convertArray, convertArraySame, datespace, filledarray, filledarrayBy, floatarrayCtors, floatarrayDataTypes, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, reviveTypedArray, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarraypool } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -177,6 +189,9 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <div class="namespace-toc">
 
 -   <span class="signature">[`base`][@stdlib/array/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) array utilities.</span>
+-   <span class="signature">[`acartesianPower( x, n )`][@stdlib/array/cartesian-power]</span><span class="delimiter">: </span><span class="description">return the Cartesian power.</span>
+-   <span class="signature">[`acartesianProduct( x1, x2 )`][@stdlib/array/cartesian-product]</span><span class="delimiter">: </span><span class="description">return the Cartesian product.</span>
+-   <span class="signature">[`acartesianSquare( x )`][@stdlib/array/cartesian-square]</span><span class="delimiter">: </span><span class="description">return the Cartesian square.</span>
 -   <span class="signature">[`Complex128Array()`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">128-bit complex number array.</span>
 -   <span class="signature">[`Complex64Array()`][@stdlib/array/complex64]</span><span class="delimiter">: </span><span class="description">64-bit complex number array.</span>
 -   <span class="signature">[`convertArraySame( x, y )`][@stdlib/array/convert-same]</span><span class="delimiter">: </span><span class="description">convert an array to the same data type as a second input array.</span>
@@ -205,6 +220,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`arraySafeCasts( [dtype] )`][@stdlib/array/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast.</span>
 -   <span class="signature">[`arraySameKindCasts( [dtype] )`][@stdlib/array/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast or cast within the same "kind".</span>
 -   <span class="signature">[`arrayShape( arr )`][@stdlib/array/shape]</span><span class="delimiter">: </span><span class="description">determine (nested) array dimensions.</span>
+-   <span class="signature">[`aslice( x[, start[, end]] )`][@stdlib/array/slice]</span><span class="delimiter">: </span><span class="description">return a shallow copy of a portion of an array.</span>
 -   <span class="signature">[`circarray2iterator( src[, options][, mapFcn[, thisArg]] )`][@stdlib/array/to-circular-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator which repeatedly iterates over the elements of an array-like object.</span>
 -   <span class="signature">[`array2iteratorRight( src[, mapFcn[, thisArg]] )`][@stdlib/array/to-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object, iterating from right to left.</span>
 -   <span class="signature">[`array2iterator( src[, mapFcn[, thisArg]] )`][@stdlib/array/to-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object.</span>
@@ -238,8 +254,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -265,7 +281,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -332,6 +348,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/base]: https://github.com/stdlib-js/array/tree/main/base
 
+[@stdlib/array/cartesian-power]: https://github.com/stdlib-js/array/tree/main/cartesian-power
+
+[@stdlib/array/cartesian-product]: https://github.com/stdlib-js/array/tree/main/cartesian-product
+
+[@stdlib/array/cartesian-square]: https://github.com/stdlib-js/array/tree/main/cartesian-square
+
 [@stdlib/array/complex128]: https://github.com/stdlib-js/array/tree/main/complex128
 
 [@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64
@@ -387,6 +409,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/same-kind-casts]: https://github.com/stdlib-js/array/tree/main/same-kind-casts
 
 [@stdlib/array/shape]: https://github.com/stdlib-js/array/tree/main/shape
+
+[@stdlib/array/slice]: https://github.com/stdlib-js/array/tree/main/slice
 
 [@stdlib/array/to-circular-iterator]: https://github.com/stdlib-js/array/tree/main/to-circular-iterator
 
