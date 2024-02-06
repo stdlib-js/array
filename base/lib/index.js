@@ -460,6 +460,24 @@ setReadOnly( ns, 'everyBy', require( './../../base/every-by' ) );
 setReadOnly( ns, 'everyByRight', require( './../../base/every-by-right' ) );
 
 /**
+* @name fancySlice
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fancy-slice}
+*/
+setReadOnly( ns, 'fancySlice', require( './../../base/fancy-slice' ) );
+
+/**
+* @name fancySliceAssign
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fancy-slice-assign}
+*/
+setReadOnly( ns, 'fancySliceAssign', require( './../../base/fancy-slice-assign' ) );
+
+/**
 * @name filled
 * @memberof ns
 * @readonly

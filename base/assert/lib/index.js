@@ -81,6 +81,33 @@ setReadOnly( ns, 'isComplex64Array', require( './../../../base/assert/is-complex
 */
 setReadOnly( ns, 'isComplex128Array', require( './../../../base/assert/is-complex128array' ) );
 
+/**
+* @name isMostlySafeDataTypeCast
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-mostly-safe-data-type-cast}
+*/
+setReadOnly( ns, 'isMostlySafeDataTypeCast', require( './../../../base/assert/is-mostly-safe-data-type-cast' ) );
+
+/**
+* @name isSafeDataTypeCast
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-safe-data-type-cast}
+*/
+setReadOnly( ns, 'isSafeDataTypeCast', require( './../../../base/assert/is-safe-data-type-cast' ) );
+
+/**
+* @name isSameKindDataTypeCast
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-same-kind-data-type-cast}
+*/
+setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-same-kind-data-type-cast' ) );
+
 
 // EXPORTS //
 

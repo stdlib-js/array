@@ -150,9 +150,9 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="links">
 
-<!-- <related-links> -->
-
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
+
+<!-- <related-links> -->
 
 [@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts
 
