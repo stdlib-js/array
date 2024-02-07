@@ -928,6 +928,24 @@ setReadOnly( ns, 'map4d', require( './../../base/map4d' ) );
 setReadOnly( ns, 'map5d', require( './../../base/map5d' ) );
 
 /**
+* @name minSignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/min-signed-integer-dtype}
+*/
+setReadOnly( ns, 'minSignedIntegerDataType', require( './../../base/min-signed-integer-dtype' ) );
+
+/**
+* @name minUnsignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/min-unsigned-integer-dtype}
+*/
+setReadOnly( ns, 'minUnsignedIntegerDataType', require( './../../base/min-unsigned-integer-dtype' ) );
+
+/**
 * @name mskbinary2d
 * @memberof ns
 * @readonly
