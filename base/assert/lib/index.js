@@ -64,6 +64,15 @@ setReadOnly( ns, 'hasSameValues', require( './../../../base/assert/has-same-valu
 setReadOnly( ns, 'isAccessorArray', require( './../../../base/assert/is-accessor-array' ) );
 
 /**
+* @name isComplexFloatingPointDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-complex-floating-point-data-type}
+*/
+setReadOnly( ns, 'isComplexFloatingPointDataType', require( './../../../base/assert/is-complex-floating-point-data-type' ) );
+
+/**
 * @name isComplex64Array
 * @memberof ns
 * @readonly
@@ -82,6 +91,33 @@ setReadOnly( ns, 'isComplex64Array', require( './../../../base/assert/is-complex
 setReadOnly( ns, 'isComplex128Array', require( './../../../base/assert/is-complex128array' ) );
 
 /**
+* @name isDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-data-type}
+*/
+setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) );
+
+/**
+* @name isFloatingPointDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-floating-point-data-type}
+*/
+setReadOnly( ns, 'isFloatingPointDataType', require( './../../../base/assert/is-floating-point-data-type' ) );
+
+/**
+* @name isIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-integer-data-type}
+*/
+setReadOnly( ns, 'isIntegerDataType', require( './../../../base/assert/is-integer-data-type' ) );
+
+/**
 * @name isMostlySafeDataTypeCast
 * @memberof ns
 * @readonly
@@ -89,6 +125,33 @@ setReadOnly( ns, 'isComplex128Array', require( './../../../base/assert/is-comple
 * @see {@link module:@stdlib/array/base/assert/is-mostly-safe-data-type-cast}
 */
 setReadOnly( ns, 'isMostlySafeDataTypeCast', require( './../../../base/assert/is-mostly-safe-data-type-cast' ) );
+
+/**
+* @name isNumericDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-numeric-data-type}
+*/
+setReadOnly( ns, 'isNumericDataType', require( './../../../base/assert/is-numeric-data-type' ) );
+
+/**
+* @name isRealDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-real-data-type}
+*/
+setReadOnly( ns, 'isRealDataType', require( './../../../base/assert/is-real-data-type' ) );
+
+/**
+* @name isRealFloatingPointDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-real-floating-point-data-type}
+*/
+setReadOnly( ns, 'isRealFloatingPointDataType', require( './../../../base/assert/is-real-floating-point-data-type' ) );
 
 /**
 * @name isSafeDataTypeCast
@@ -107,6 +170,24 @@ setReadOnly( ns, 'isSafeDataTypeCast', require( './../../../base/assert/is-safe-
 * @see {@link module:@stdlib/array/base/assert/is-same-kind-data-type-cast}
 */
 setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-same-kind-data-type-cast' ) );
+
+/**
+* @name isSignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-signed-integer-data-type}
+*/
+setReadOnly( ns, 'isSignedIntegerDataType', require( './../../../base/assert/is-signed-integer-data-type' ) );
+
+/**
+* @name isUnsignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-unsigned-integer-data-type}
+*/
+setReadOnly( ns, 'isUnsignedIntegerDataType', require( './../../../base/assert/is-unsigned-integer-data-type' ) );
 
 
 // EXPORTS //
