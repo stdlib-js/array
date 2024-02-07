@@ -152,7 +152,7 @@ y = slice( x, s, false );
 
 <section class="links">
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
 
 [@stdlib/array/dtype]: https://github.com/stdlib-js/array/tree/main/dtype
 
