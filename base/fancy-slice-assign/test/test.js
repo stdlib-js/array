@@ -21,8 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
+var isSameComplex128Array = require( '@stdlib/assert/is-same-complex128array' );
+var isSameComplex64Array = require( '@stdlib/assert/is-same-complex64array' );
 var AccessorArray = require( './../../../base/accessor' );
 var Float64Array = require( './../../../float64' );
+var Float32Array = require( './../../../float32' );
+var Complex128Array = require( './../../../complex128' );
+var Complex64Array = require( './../../../complex64' );
 var Int32Array = require( './../../../int32' );
 var zeros = require( './../../../zeros' );
 var Slice = require( '@stdlib/slice/ctor' );
@@ -261,15 +266,15 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
-	y = zeros( 3, 'float64' );
+	y = zeros( 3, 'float32' ); // downcast
 
-	expected = new Float64Array( [ 3.0, 2.0, 1.0 ] );
+	expected = new Float32Array( [ 3.0, 2.0, 1.0 ] );
 	actual = sliceAssign( x, y, new Slice( null, null, -1 ), false );
 
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	x = new Float64Array( [ 1, 3 ] );
+	x = new Float64Array( [ 1.0, 3.0 ] );
 	y = zeros( 3, 'float64' );
 
 	expected = new Float64Array( [ 3.0, 0.0, 1.0 ] );
@@ -278,16 +283,16 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	x = new Float64Array( [ 1, 3 ] );
-	y = zeros( 3, 'float64' );
+	x = new Float64Array( [ 1.0, 3.0 ] );
+	y = zeros( 3, 'float32' ); // downcast
 
-	expected = new Float64Array( [ 1.0, 0.0, 3.0 ] );
+	expected = new Float32Array( [ 1.0, 0.0, 3.0 ] );
 	actual = sliceAssign( x, y, new Slice( null, null, 2 ), false );
 
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	x = new Float64Array( [ 2, 3 ] );
+	x = new Float64Array( [ 2.0, 3.0 ] );
 	y = zeros( 3, 'float64' );
 
 	expected = new Float64Array( [ 0.0, 2.0, 3.0 ] );
@@ -296,7 +301,7 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	x = new Float64Array( [ 2 ] );
+	x = new Float64Array( [ 2.0 ] );
 	y = zeros( 3, 'float64' );
 
 	expected = new Float64Array( [ 0.0, 2.0, 0.0 ] );
@@ -305,7 +310,7 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	x = new Float64Array( [ 1 ] );
+	x = new Float64Array( [ 1.0 ] );
 	y = zeros( 3, 'float64' );
 
 	expected = new Float64Array( [ 0.0, 0.0, 0.0 ] );
@@ -315,7 +320,7 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	// Broadcasting:
-	x = new Float64Array( [ 1 ] );
+	x = new Float64Array( [ 1.0 ] );
 	y = zeros( 3, 'float64' );
 
 	expected = new Float64Array( [ 1.0, 1.0, 1.0 ] );
@@ -324,7 +329,7 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	x = new Float64Array( [ 3 ] );
+	x = new Float64Array( [ 3.0 ] );
 	y = zeros( 3, 'float64' );
 
 	expected = new Float64Array( [ 3.0, 0.0, 3.0 ] );
@@ -332,6 +337,107 @@ tape( 'the function performs slice assignment with support for broadcasting (flo
 
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
+
+	// Upcasting:
+	x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 1.0, 0.0, 2.0, 0.0, 3.0, 0.0 ] );
+	actual = sliceAssign( x, y, new Slice(), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function performs slice assignment with support for broadcasting (complex128)', function test( t ) {
+	var expected;
+	var actual;
+	var x;
+	var y;
+
+	x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	actual = sliceAssign( x, y, new Slice(), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 5.0, 6.0, 3.0, 4.0, 1.0, 2.0 ] );
+	actual = sliceAssign( x, y, new Slice( null, null, -1 ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	y = zeros( 3, 'complex64' ); // downcast
+
+	expected = new Complex64Array( [ 3.0, 4.0, 0.0, 0.0, 1.0, 2.0 ] );
+	actual = sliceAssign( x, y, new Slice( null, null, -2 ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex64Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 1.0, 2.0, 0.0, 0.0, 3.0, 4.0 ] );
+	actual = sliceAssign( x, y, new Slice( null, null, 2 ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0 ] );
+	actual = sliceAssign( x, y, new Slice( 1, null ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 1.0, 2.0 ] );
+	y = zeros( 3, 'complex64' ); // downcast
+
+	expected = new Complex64Array( [ 0.0, 0.0, 1.0, 2.0, 0.0, 0.0 ] );
+	actual = sliceAssign( x, y, new Slice( 1, y.length-1 ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex64Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 1.0, 2.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+	actual = sliceAssign( x, y, new Slice( 1, 1 ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	// Broadcasting:
+	x = new Complex128Array( [ 1.0, 2.0 ] );
+	y = zeros( 3, 'complex128' );
+
+	expected = new Complex128Array( [ 1.0, 2.0, 1.0, 2.0, 1.0, 2.0 ] );
+	actual = sliceAssign( x, y, new Slice(), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	x = new Complex128Array( [ 3.0, 4.0 ] );
+	y = zeros( 3, 'complex64' ); // downcast
+
+	expected = new Complex64Array( [ 3.0, 4.0, 0.0, 0.0, 3.0, 4.0 ] );
+	actual = sliceAssign( x, y, new Slice( null, null, 2 ), false );
+
+	t.strictEqual( actual, y, 'returns expected value' );
+	t.strictEqual( isSameComplex64Array( actual, expected ), true, 'returns expected value' );
 
 	t.end();
 });

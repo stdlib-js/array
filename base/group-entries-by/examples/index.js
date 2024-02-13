@@ -19,7 +19,7 @@
 'use strict';
 
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var take = require( './../../../base/take' );
+var take = require( './../../../base/take-indexed' );
 var groupEntriesBy = require( './../lib' );
 
 function indicator( v ) {

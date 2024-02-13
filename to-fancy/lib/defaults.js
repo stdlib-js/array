@@ -18,6 +18,11 @@
 
 'use strict';
 
+// MODULES //
+
+var ArrayIndex = require( './../../index' );
+
+
 // MAIN //
 
 /**
@@ -32,6 +37,7 @@
 */
 function defaults() {
 	return {
+		'cache': ArrayIndex,
 		'strict': false
 	};
 }
