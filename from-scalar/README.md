@@ -121,6 +121,12 @@ x = array2scalar( {} );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+
 </section>
 
 <!-- /.related -->
@@ -132,6 +138,12 @@ x = array2scalar( {} );
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
 
 [@stdlib/array/defaults]: https://github.com/stdlib-js/array/tree/main/defaults
+
+<!-- <related-links> -->
+
+[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator
+
+<!-- </related-links> -->
 
 </section>
 
