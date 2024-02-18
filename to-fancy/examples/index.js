@@ -20,7 +20,6 @@
 
 var Uint8Array = require( './../../uint8' );
 var Int32Array = require( './../../int32' );
-var idx = require( './../../index' );
 var array2fancy = require( './../lib' );
 
 var x = [ 1, 2, 3, 4, 5, 6 ];
@@ -52,6 +51,8 @@ console.log( z );
 // => [ 1, 2, -10, -9, -8, 6 ]
 
 // Array index retrieval:
+var idx = array2fancy.idx;
+
 var i = idx( [ 1, 3, 4 ] ); // integer index array
 z = y[ i ];
 console.log( z );
