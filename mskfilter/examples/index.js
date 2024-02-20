@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,21 +18,20 @@
 
 'use strict';
 
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( './../../filled-by' );
-var dtypes = require( './../../dtypes' );
-var convert = require( './../lib' );
+var zeroTo = require( './../../zero-to' );
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var mskfilter = require( './../lib' );
 
-// Create a generic array:
-var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
+// Generate a linearly spaced array:
+var x = zeroTo( 20, 'generic' );
+console.log( x );
 
-// Get a list of array data types:
-var DTYPES = dtypes();
+// Generate a random mask:
+var mask = bernoulli( x.length, 0.5, {
+	'dtype': 'generic'
+});
+console.log( mask );
 
-// Convert the generic array to each array data type:
-var out;
-var i;
-for ( i = 0; i < DTYPES.length; i++ ) {
-	out = convert( arr, DTYPES[ i ] );
-	console.log( out );
-}
+// Filter an array using the mask:
+var y = mskfilter( x, mask );
+console.log( y );

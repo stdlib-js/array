@@ -22,7 +22,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarrayBy = require( './../../filled-by' );
 var dtypes = require( './../../dtypes' );
 var ctors = require( './../../ctors' );
-var convertArraySame = require( './../lib' );
+var convertSame = require( './../lib' );
 
 // Create a generic array:
 var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
@@ -34,6 +34,6 @@ var DTYPES = dtypes();
 var out;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-	out = convertArraySame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
+	out = convertSame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
 	console.log( out );
 }
