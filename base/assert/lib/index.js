@@ -73,6 +73,15 @@ setReadOnly( ns, 'isAccessorArray', require( './../../../base/assert/is-accessor
 setReadOnly( ns, 'isComplexFloatingPointDataType', require( './../../../base/assert/is-complex-floating-point-data-type' ) );
 
 /**
+* @name isComplexTypedArray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-complex-typed-array}
+*/
+setReadOnly( ns, 'isComplexTypedArray', require( './../../../base/assert/is-complex-typed-array' ) );
+
+/**
 * @name isComplex64Array
 * @memberof ns
 * @readonly
