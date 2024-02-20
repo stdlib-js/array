@@ -24,11 +24,10 @@ var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var zeroTo = require( './../../../base/zero-to' );
 var zeros = require( './../../../zeros' );
-var ones = require( './../../../ones' );
 var isArray = require( '@stdlib/assert/is-array' );
 var isnan = require( '@stdlib/assert/is-nan' ).isPrimitive;
 var pkg = require( './../package.json' ).name;
-var mskfilter = require( './../lib' );
+var mskreject = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -46,7 +45,7 @@ function createBenchmark( len ) {
 	var x;
 
 	x = zeroTo( len, 'generic' );
-	mask = ones( len, 'generic' );
+	mask = zeros( len, 'generic' );
 	out = zeros( len, 'generic' );
 
 	return benchmark;
@@ -63,7 +62,7 @@ function createBenchmark( len ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			v = mskfilter.assign( x, mask, out, 1, 0 );
+			v = mskreject.assign( x, mask, out, 1, 0 );
 			if ( typeof v !== 'object' ) {
 				b.fail( 'should return an array' );
 			}
