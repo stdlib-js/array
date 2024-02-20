@@ -21,8 +21,8 @@
 // MODULES //
 
 var take = require( './../../take' );
-var mskfilter = require( './../../base/mskfilter' );
-var mskreject = require( './../../base/mskreject' );
+var mskfilter = require( './../../mskfilter' );
+var mskreject = require( './../../mskreject' );
 var format = require( '@stdlib/string/format' );
 var prop2array = require( './prop2array.js' );
 
