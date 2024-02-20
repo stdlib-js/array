@@ -424,6 +424,15 @@ setReadOnly( ns, 'copy', require( './../../base/copy' ) );
 setReadOnly( ns, 'copyIndexed', require( './../../base/copy-indexed' ) );
 
 /**
+* @name countTruthy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/count-truthy}
+*/
+setReadOnly( ns, 'countTruthy', require( './../../base/count-truthy' ) );
+
+/**
 * @name dedupe
 * @memberof ns
 * @readonly

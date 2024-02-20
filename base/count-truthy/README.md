@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2022 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# copyIndexed
+# countTruthy
 
-> Copy the elements of an indexed array-like object to a new "generic" array.
+> Count the number of truthy elements in an array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,21 +37,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var copyIndexed = require( '@stdlib/array/base/copy-indexed' );
+var countTruthy = require( '@stdlib/array/base/count-truthy' );
 ```
 
-#### copyIndexed( x )
+#### countTruthy( x )
 
-Copies the elements of an indexed array-like object to a new "generic" array.
+Counts the number of truthy elements in an array.
 
 ```javascript
-var x = [ 1, 2, 3 ];
+var x = [ 0, 1, 0, 1, 2 ];
 
-var out = copyIndexed( x );
-// returns [ 1, 2, 3  ]
-
-var bool = ( out === x );
-// returns false
+var out = countTruthy( x );
+// returns 3
 ```
 
 </section>
@@ -61,10 +58,6 @@ var bool = ( out === x );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   An _indexed_ array-like object is a data structure in which one retrieves elements via integer indices using bracket `[]` notation (e.g., `Float64Array`, `Int32Array`, `Array`, etc). This is in contrast to an _accessor_ array-like object in which one retrieves elements using `get` and `set` methods (e.g., [`Complex64Array`][@stdlib/array/complex64] and [`Complex128Array`][@stdlib/array/complex128]).
 
 </section>
 
@@ -79,21 +72,16 @@ var bool = ( out === x );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var filledBy = require( '@stdlib/array/filled-by' );
-var randu = require( '@stdlib/random/base/randu' );
-var copyIndexed = require( '@stdlib/array/base/copy-indexed' );
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var countTruthy = require( '@stdlib/array/base/count-truthy' );
 
-// Create a Float64Array:
-var arr = filledBy( 10, 'float64', randu );
+var x = bernoulli( 100, 0.5, {
+    'dtype': 'generic'
+});
+console.log( x );
 
-// Copy elements to a generic array:
-var out = copyIndexed( arr );
-
-// Retrieve the first element:
-var x = out[ 0 ];
-// returns <number>
-
-console.log( '%d', x );
+var n = countTruthy( x );
+console.log( n );
 ```
 
 </section>
@@ -119,10 +107,6 @@ console.log( '%d', x );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64
-
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array/tree/main/complex128
 
 </section>
 
