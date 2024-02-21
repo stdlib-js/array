@@ -22,51 +22,58 @@
 
 import base = require( './../../base' );
 import ArrayBuffer = require( './../../buffer' );
-import acartesianPower = require( './../../cartesian-power' );
-import acartesianProduct = require( './../../cartesian-product' );
-import acartesianSquare = require( './../../cartesian-square' );
+import cartesianPower = require( './../../cartesian-power' );
+import cartesianProduct = require( './../../cartesian-product' );
+import cartesianSquare = require( './../../cartesian-square' );
 import Complex64Array = require( './../../complex64' );
 import Complex128Array = require( './../../complex128' );
-import convertArray = require( './../../convert' );
-import convertArraySame = require( './../../convert-same' );
-import arrayCtors = require( './../../ctors' );
+import convert = require( './../../convert' );
+import convertSame = require( './../../convert-same' );
+import ctors = require( './../../ctors' );
 import DataView = require( './../../dataview' );
 import datespace = require( './../../datespace' );
-import arrayDefaults = require( './../../defaults' );
-import arrayDataType = require( './../../dtype' );
-import arrayDataTypes = require( './../../dtypes' );
-import aempty = require( './../../empty' );
-import aemptyLike = require( './../../empty-like' );
-import filledarray = require( './../../filled' );
-import filledarrayBy = require( './../../filled-by' );
+import defaults = require( './../../defaults' );
+import dtype = require( './../../dtype' );
+import dtypes = require( './../../dtypes' );
+import empty = require( './../../empty' );
+import emptyLike = require( './../../empty-like' );
+import filled = require( './../../filled' );
+import filledBy = require( './../../filled-by' );
 import Float32Array = require( './../../float32' );
 import Float64Array = require( './../../float64' );
 import iterator2array = require( './../../from-iterator' );
-import afull = require( './../../full' );
-import afullLike = require( './../../full-like' );
+import scalar2array = require( './../../from-scalar' );
+import full = require( './../../full' );
+import fullLike = require( './../../full-like' );
 import incrspace = require( './../../incrspace' );
+import ArrayIndex = require( './../../index' );
 import Int8Array = require( './../../int8' );
 import Int16Array = require( './../../int16' );
 import Int32Array = require( './../../int32' );
 import linspace = require( './../../linspace' );
 import logspace = require( './../../logspace' );
-import arrayMinDataType = require( './../../min-dtype' );
-import anans = require( './../../nans' );
-import anansLike = require( './../../nans-like' );
-import arrayNextDataType = require( './../../next-dtype' );
-import aoneTo = require( './../../one-to' );
-import aoneToLike = require( './../../one-to-like' );
-import aones = require( './../../ones' );
-import aonesLike = require( './../../ones-like' );
+import minDataType = require( './../../min-dtype' );
+import mostlySafeCasts = require( './../../mostly-safe-casts' );
+import mskfilter = require( './../../mskfilter' );
+import mskreject = require( './../../mskreject' );
+import nans = require( './../../nans' );
+import nansLike = require( './../../nans-like' );
+import nextDataType = require( './../../next-dtype' );
+import oneTo = require( './../../one-to' );
+import oneToLike = require( './../../one-to-like' );
+import ones = require( './../../ones' );
+import onesLike = require( './../../ones-like' );
 import typedarraypool = require( './../../pool' );
-import arrayPromotionRules = require( './../../promotion-rules' );
-import reviveTypedArray = require( './../../reviver' );
-import arraySafeCasts = require( './../../safe-casts' );
-import arraySameKindCasts = require( './../../same-kind-casts' );
-import arrayShape = require( './../../shape' );
+import promotionRules = require( './../../promotion-rules' );
+import typedarrayReviver = require( './../../reviver' );
+import safeCasts = require( './../../safe-casts' );
+import sameKindCasts = require( './../../same-kind-casts' );
+import shape = require( './../../shape' );
 import SharedArrayBuffer = require( './../../shared-buffer' );
-import aslice = require( './../../slice' );
+import slice = require( './../../slice' );
+import take = require( './../../take' );
 import circarray2iterator = require( './../../to-circular-iterator' );
+import array2fancy = require( './../../to-fancy' );
 import array2iterator = require( './../../to-iterator' );
 import array2iteratorRight = require( './../../to-iterator-right' );
 import typedarray2json = require( './../../to-json' );
@@ -98,10 +105,10 @@ import Uint8Array = require( './../../uint8' );
 import Uint8ClampedArray = require( './../../uint8c' );
 import Uint16Array = require( './../../uint16' );
 import Uint32Array = require( './../../uint32' );
-import azeroTo = require( './../../zero-to' );
-import azeroToLike = require( './../../zero-to-like' );
-import azeros = require( './../../zeros' );
-import azerosLike = require( './../../zeros-like' );
+import zeroTo = require( './../../zero-to' );
+import zeroToLike = require( './../../zero-to-like' );
+import zeros = require( './../../zeros' );
+import zerosLike = require( './../../zeros-like' );
 import constants = require( '@stdlib/constants/array' );
 
 /**
@@ -133,10 +140,10 @@ interface Namespace {
 	* @example
 	* var x = [ 1, 2 ];
 	*
-	* var out = ns.acartesianPower( x, 2 );
+	* var out = ns.cartesianPower( x, 2 );
 	* // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 	*/
-	acartesianPower: typeof acartesianPower;
+	cartesianPower: typeof cartesianPower;
 
 	/**
 	* Returns the Cartesian product.
@@ -153,10 +160,10 @@ interface Namespace {
 	* var x1 = [ 1, 2, 3 ];
 	* var x2 = [ 4, 5 ];
 	*
-	* var out = ns.acartesianProduct( x1, x2 );
+	* var out = ns.cartesianProduct( x1, x2 );
 	* // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 	*/
-	acartesianProduct: typeof acartesianProduct;
+	cartesianProduct: typeof cartesianProduct;
 
 	/**
 	* Returns the Cartesian square.
@@ -171,10 +178,10 @@ interface Namespace {
 	* @example
 	* var x = [ 1, 2 ];
 	*
-	* var out = ns.acartesianSquare( x );
+	* var out = ns.cartesianSquare( x );
 	* // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 	*/
-	acartesianSquare: typeof acartesianSquare;
+	cartesianSquare: typeof cartesianSquare;
 
 	/**
 	* 64-bit complex number array constructor.
@@ -323,10 +330,10 @@ interface Namespace {
 	*
 	* @example
 	* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
-	* var out = ns.convertArray( arr, 'float64' );
+	* var out = ns.convert( arr, 'float64' );
 	* // returns <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 	*/
-	convertArray: typeof convertArray;
+	convert: typeof convert;
 
 	/**
 	* Converts an array to the same data type as a second input array.
@@ -341,10 +348,10 @@ interface Namespace {
 	* var x = [ 1.0, 2.0, 3.0, 4.0 ];
 	* var y = new Float64Array( 0 );
 	*
-	* var out = ns.convertArraySame( x, y );
+	* var out = ns.convertSame( x, y );
 	* // returns <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 	*/
-	convertArraySame: typeof convertArraySame;
+	convertSame: typeof convertSame;
 
 	/**
 	* Returns an array constructor.
@@ -353,14 +360,14 @@ interface Namespace {
 	* @returns constructor or null
 	*
 	* @example
-	* var ctor = ns.arrayCtors( 'float64' );
+	* var ctor = ns.ctors( 'float64' );
 	* // returns <Function>
 	*
 	* @example
-	* var ctor = ns.arrayCtors( 'float' );
+	* var ctor = ns.ctors( 'float' );
 	* // returns null
 	*/
-	arrayCtors: typeof arrayCtors;
+	ctors: typeof ctors;
 
 	/**
 	* Constructor which returns a data view representing a provided array buffer.
@@ -403,10 +410,10 @@ interface Namespace {
 	* @returns default settings
 	*
 	* @example
-	* var o = ns.arrayDefaults();
+	* var o = ns.defaults();
 	* // returns {...}
 	*/
-	arrayDefaults: typeof arrayDefaults;
+	defaults: typeof defaults;
 
 	/**
 	* Returns the data type of an array.
@@ -419,13 +426,13 @@ interface Namespace {
 	* @returns data type
 	*
 	* @example
-	* var dt = ns.arrayDataType( [ 1, 2, 3 ] );
+	* var dt = ns.dtype( [ 1, 2, 3 ] );
 	* // returns 'generic'
 	*
-	* var dt = ns.arrayDataType( 'beep' );
+	* var dt = ns.dtype( 'beep' );
 	* // returns null
 	*/
-	arrayDataType: typeof arrayDataType;
+	dtype: typeof dtype;
 
 	/**
 	* Returns a list of array data types.
@@ -434,14 +441,14 @@ interface Namespace {
 	* @returns list of array data types
 	*
 	* @example
-	* var list = ns.arrayDataTypes();
+	* var list = ns.dtypes();
 	* // e.g., returns [ 'float32', 'float64', ... ]
 	*
 	* @example
-	* var list = ns.arrayDataTypes( 'floating_point' );
+	* var list = ns.dtypes( 'floating_point' );
 	* // returns [...]
 	*/
-	arrayDataTypes: typeof arrayDataTypes;
+	dtypes: typeof dtypes;
 
 	/**
 	* Creates an uninitialized array having a specified length.
@@ -472,14 +479,14 @@ interface Namespace {
 	* @returns empty array
 	*
 	* @example
-	* var arr = ns.aempty( 2 );
+	* var arr = ns.empty( 2 );
 	* // returns <Float64Array>
 	*
 	* @example
-	* var arr = ns.aempty( 2, 'float32' );
+	* var arr = ns.empty( 2, 'float32' );
 	* // returns <Float32Array>
 	*/
-	aempty: typeof aempty;
+	empty: typeof empty;
 
 	/**
 	* Creates an uninitialized array having the same length and data type as a provided input array.
@@ -515,7 +522,7 @@ interface Namespace {
 	* var x = zeros( 2, 'float32' );
 	* // returns <Float32Array>[ 0.0, 0.0 ]
 	*
-	* var arr = ns.aemptyLike( x );
+	* var arr = ns.emptyLike( x );
 	* // returns <Float32Array>
 	*
 	* @example
@@ -524,10 +531,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float32Array>[ 0.0, 0.0 ]
 	*
-	* var arr = ns.aemptyLike( x );
+	* var arr = ns.emptyLike( x );
 	* // returns <Float64Array>
 	*/
-	aemptyLike: typeof aemptyLike;
+	emptyLike: typeof emptyLike;
 
 	/**
 	* Returns a filled typed array view of an `ArrayBuffer`.
@@ -545,17 +552,17 @@ interface Namespace {
 	* var ArrayBuffer = require( './../../buffer' );
 	*
 	* var buf = new ArrayBuffer( 32 );
-	* var arr = ns.filledarray( 1.0, buf );
+	* var arr = ns.filled( 1.0, buf );
 	* // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 	*
 	* @example
 	* var ArrayBuffer = require( './../../buffer' );
 	*
 	* var buf = new ArrayBuffer( 32 );
-	* var arr = ns.filledarray( 1.0, buf, 'float32' );
+	* var arr = ns.filled( 1.0, buf, 'float32' );
 	* // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 	*/
-	filledarray: typeof filledarray;
+	filled: typeof filled;
 
 	/**
 	* Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -590,10 +597,10 @@ interface Namespace {
 	* var ArrayBuffer = require( './../../buffer' );
 	*
 	* var buf = new ArrayBuffer( 32 );
-	* var arr = ns.filledarrayBy( buf, 'float64', constantFunction( 1.0 ) );
+	* var arr = ns.filledBy( buf, 'float64', constantFunction( 1.0 ) );
 	* // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 	*/
-	filledarrayBy: typeof filledarrayBy;
+	filledBy: typeof filledBy;
 
 	/**
 	* Typed array constructor which returns a typed array representing an array of single-precision floating-point numbers in the platform byte order.
@@ -633,6 +640,28 @@ interface Namespace {
 	iterator2array: typeof iterator2array;
 
 	/**
+	* Returns a single-element array containing a provided scalar value.
+	*
+	* ## Notes
+	*
+	* -   If a `dtype` argument is not provided and `value`
+	*
+	*     -   is a `number`, the default data type is the default real-valued floating-point data type.
+	*     -   is a complex number object of a known complex data type, the data type is the same as the provided value.
+	*     -   is a complex number object of an unknown complex data type, the default data type is the default complex-valued floating-point data type.
+	*     -   is any other value type, the default data type is `'generic'`.
+	*
+	* @param value - scalar value
+	* @param dtype - output array data type
+	* @returns output array
+	*
+	* @example
+	* var x = ns.scalar2array( 1.0, generic' );
+	* // returns [ 1.0 ]
+	*/
+	scalar2array: typeof scalar2array;
+
+	/**
 	* Creates a filled array having a specified length.
 	*
 	* The function recognizes the following data types:
@@ -656,14 +685,14 @@ interface Namespace {
 	* @returns filled array
 	*
 	* @example
-	* var arr = ns.afull( 2, 1.0 );
+	* var arr = ns.full( 2, 1.0 );
 	* // returns <Float64Array>[ 1.0, 1.0 ]
 	*
 	* @example
-	* var arr = ns.afull( 2, 1.0, 'float32' );
+	* var arr = ns.full( 2, 1.0, 'float32' );
 	* // returns <Float32Array>[ 1.0, 1.0 ]
 	*/
-	afull: typeof afull;
+	full: typeof full;
 
 	/**
 	* Creates a filled array having the same length and data type as a provided input array.
@@ -694,7 +723,7 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.afullLike( x, 1.0 );
+	* var y = ns.fullLike( x, 1.0 );
 	* // returns <Float64Array>[ 1.0, 1.0 ]
 	*
 	* @example
@@ -703,10 +732,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.afullLike( x, 1.0, 'float32' );
+	* var y = ns.fullLike( x, 1.0, 'float32' );
 	* // returns <Float32Array>[ 1.0, 1.0 ]
 	*/
-	afullLike: typeof afullLike;
+	fullLike: typeof fullLike;
 
 	/**
 	* Generates a linearly spaced numeric array using a provided increment.
@@ -722,6 +751,24 @@ interface Namespace {
 	* // returns [ 0, 2, 4, 6, 8, 10 ]
 	*/
 	incrspace: typeof incrspace;
+
+	/**
+	* Array index constructor.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.persist - boolean indicating whether to continue persisting an index object after first usage
+	* @returns ArrayIndex instance
+	*
+	* @example
+	* var Uint8Array = require( './../../uint8' );
+	*
+	* var x = new Uint8Array( [ 1, 0, 1, 0 ] );
+	*
+	* var idx = new ns.ArrayIndex( x );
+	* // returns <ns.ArrayIndex>
+	*/
+	ArrayIndex: typeof ArrayIndex;
 
 	/**
 	* Typed array constructor which returns a typed array representing an array of twos-complement 8-bit signed integers in the platform byte order.
@@ -791,10 +838,57 @@ interface Namespace {
 	* @returns array data type
 	*
 	* @example
-	* var dt = ns.arrayMinDataType( 'beep' );
+	* var dt = ns.minDataType( 'beep' );
 	* // returns 'generic'
 	*/
-	arrayMinDataType: typeof arrayMinDataType;
+	minDataType: typeof minDataType;
+
+	/**
+	* Returns a list of array data types to which a provided array data type can be safely cast and, for floating-point data types, can be downcast.
+	*
+	* ## Notes
+	*
+	* -   If not provided an array data type, the function returns a casting table.
+	* -   If provided an unrecognized array data type, the function returns `null`.
+	*
+	* @param dtype - array data type value
+	* @returns list of array data types or null
+	*
+	* @example
+	* var list = ns.mostlySafeCasts( 'float32' );
+	* // returns [...]
+	*/
+	mostlySafeCasts: typeof mostlySafeCasts;
+
+	/**
+	* Returns a new array by applying a mask to a provided input array.
+	*
+	* @param x - input array
+	* @param mask - mask array
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var y = ns.mskfilter( x, [ 0, 1, 0, 1 ] );
+	* // returns [ 2, 4 ]
+	*/
+	mskfilter: typeof mskfilter;
+
+	/**
+	* Returns a new array by applying a mask to a provided input array.
+	*
+	* @param x - input array
+	* @param mask - mask array
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var y = ns.mskreject( x, [ 0, 1, 0, 1 ] );
+	* // returns [ 1, 3 ]
+	*/
+	mskreject: typeof mskreject;
 
 	/**
 	* Creates an array filled with NaNs and having a specified length.
@@ -812,14 +906,14 @@ interface Namespace {
 	* @returns filled array
 	*
 	* @example
-	* var arr = ns.anans( 2 );
+	* var arr = ns.nans( 2 );
 	* // returns <Float64Array>[ NaN, NaN ]
 	*
 	* @example
-	* var arr = ns.anans( 2, 'float32' );
+	* var arr = ns.nans( 2, 'float32' );
 	* // returns <Float32Array>[ NaN, NaN ]
 	*/
-	anans: typeof anans;
+	nans: typeof nans;
 
 	/**
 	* Creates an array filled with NaNs and having the same length and data type as a provided input array.
@@ -842,7 +936,7 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.anansLike( x );
+	* var y = ns.nansLike( x );
 	* // returns <Float64Array>[ NaN, NaN ]
 	*
 	* @example
@@ -851,10 +945,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.anansLike( x, 'float32' );
+	* var y = ns.nansLike( x, 'float32' );
 	* // returns <Float32Array>[ NaN, NaN ]
 	*/
-	anansLike: typeof anansLike;
+	nansLike: typeof nansLike;
 
 	/**
 	* Returns the next larger array data type of the same kind.
@@ -869,14 +963,14 @@ interface Namespace {
 	* @returns next larger data type(s) or null
 	*
 	* @example
-	* var table = ns.arrayNextDataType();
+	* var table = ns.nextDataType();
 	* // returns {...}
 	*
 	* @example
-	* var dt = ns.arrayNextDataType( 'float32' );
+	* var dt = ns.nextDataType( 'float32' );
 	* // returns 'float64'
 	*/
-	arrayNextDataType: typeof arrayNextDataType;
+	nextDataType: typeof nextDataType;
 
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1 starting from one.
@@ -886,14 +980,14 @@ interface Namespace {
 	* @returns linearly spaced numeric array
 	*
 	* @example
-	* var arr = ns.aoneTo( 2 );
+	* var arr = ns.oneTo( 2 );
 	* // returns <Float64Array>[ 1.0, 2.0 ]
 	*
 	* @example
-	* var arr = ns.aoneTo( 2, 'float32' );
+	* var arr = ns.oneTo( 2, 'float32' );
 	* // returns <Float32Array>[ 1.0, 2.0 ]
 	*/
-	aoneTo: typeof aoneTo;
+	oneTo: typeof oneTo;
 
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1 starting from one and having the same length and data type as a provided input array.
@@ -908,10 +1002,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float32' );
 	* // returns <Float32Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.aoneToLike( x );
+	* var y = ns.oneToLike( x );
 	* // returns <Float32Array>[ 1.0, 2.0 ]
 	*/
-	aoneToLike: typeof aoneToLike;
+	oneToLike: typeof oneToLike;
 
 	/**
 	* Creates an array filled with ones and having a specified length.
@@ -936,14 +1030,14 @@ interface Namespace {
 	* @returns filled array
 	*
 	* @example
-	* var arr = ns.aones( 2 );
+	* var arr = ns.ones( 2 );
 	* // returns <Float64Array>[ 1.0, 1.0 ]
 	*
 	* @example
-	* var arr = ns.aones( 2, 'float32' );
+	* var arr = ns.ones( 2, 'float32' );
 	* // returns <Float32Array>[ 1.0, 1.0 ]
 	*/
-	aones: typeof aones;
+	ones: typeof ones;
 
 	/**
 	* Creates an array filled with ones and having the same length and data type as a provided input array.
@@ -973,7 +1067,7 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.aonesLike( x );
+	* var y = ns.onesLike( x );
 	* // returns <Float64Array>[ 1.0, 1.0 ]
 	*
 	* @example
@@ -982,10 +1076,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.aonesLike( x, 'float32' );
+	* var y = ns.onesLike( x, 'float32' );
 	* // returns <Float32Array>[ 1.0, 1.0 ]
 	*/
-	aonesLike: typeof aonesLike;
+	onesLike: typeof onesLike;
 
 	/**
 	* Returns an uninitialized typed array.
@@ -1023,10 +1117,10 @@ interface Namespace {
 	* @returns promotion rule table
 	*
 	* @example
-	* var table = ns.arrayPromotionRules();
+	* var table = ns.promotionRules();
 	* // returns {...}
 	*/
-	arrayPromotionRules: typeof arrayPromotionRules;
+	promotionRules: typeof promotionRules;
 
 	/**
 	* Revives a JSON-serialized typed array.
@@ -1040,10 +1134,10 @@ interface Namespace {
 	*
 	* var str = '{"type":"Float64Array","data":[5,3]}';
 	*
-	* var arr = parseJSON( str, ns.reviveTypedArray );
+	* var arr = parseJSON( str, ns.typedarrayReviver );
 	* // returns <Float64Array>[ 5.0, 3.0 ]
 	*/
-	reviveTypedArray: typeof reviveTypedArray;
+	typedarrayReviver: typeof typedarrayReviver;
 
 	/**
 	* Returns a list of array data types to which a provided array data type can be safely cast.
@@ -1057,18 +1151,18 @@ interface Namespace {
 	* @returns a casting table, a list of array data types, or null
 	*
 	* @example
-	* var table = ns.arraySafeCasts();
+	* var table = ns.safeCasts();
 	* // returns {...}
 	*
 	* @example
-	* var list = ns.arraySafeCasts( 'float32' );
+	* var list = ns.safeCasts( 'float32' );
 	* // returns [...]
 	*
 	* @example
-	* var list = ns.arraySafeCasts( 'float' );
+	* var list = ns.safeCasts( 'float' );
 	* // returns null
 	*/
-	arraySafeCasts: typeof arraySafeCasts;
+	safeCasts: typeof safeCasts;
 
 	/**
 	* Returns a list of array data types to which a provided array data type can be safely cast or cast within the same "kind".
@@ -1082,18 +1176,18 @@ interface Namespace {
 	* @returns a table, a list of array data types, or null
 	*
 	* @example
-	* var table = ns.arraySameKindCasts();
+	* var table = ns.sameKindCasts();
 	* // returns {...}
 	*
 	* @example
-	* var list = ns.arraySameKindCasts( 'float32' );
+	* var list = ns.sameKindCasts( 'float32' );
 	* // returns [...]
 	*
 	* @example
-	* var list = ns.arraySameKindCasts( 'float' );
+	* var list = ns.sameKindCasts( 'float' );
 	* // returns null
 	*/
-	arraySameKindCasts: typeof arraySameKindCasts;
+	sameKindCasts: typeof sameKindCasts;
 
 	/**
 	* Determines (nested) array dimensions.
@@ -1104,22 +1198,22 @@ interface Namespace {
 	* @example
 	* var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ];
 	*
-	* var shape = ns.arrayShape( arr );
+	* var ns.shape = ns.shape( arr );
 	* // returns [ 3, 3 ]
 	*
 	* @example
 	* var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ];
 	*
-	* var shape = ns.arrayShape( arr );
+	* var ns.shape = ns.shape( arr );
 	* // returns [ 3 ]
 	*
 	* @example
 	* var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], null ];
 	*
-	* var shape = ns.arrayShape( arr );
+	* var ns.shape = ns.shape( arr );
 	* // returns [ 3 ]
 	*/
-	arrayShape: typeof arrayShape;
+	shape: typeof shape;
 
 	/**
 	* Constructor returning an object used to represent a generic, fixed-length raw binary data buffer which can be used to create views of shared memory.
@@ -1135,18 +1229,34 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var x = [ 1, 2, 3, 4, 5, 6 ];
+	* var x = [ 1, 2, 3 ];
 	*
-	* var out = ns.aslice( x );
+	* var out = ns.slice( x );
 	* // returns [ 1, 2, 3 ]
 	*
 	* @example
 	* var x = [ 1, 2, 3, 4, 5, 6 ];
 	*
-	* var out = ns.aslice( x, 0, 2 );
+	* var out = ns.slice( x, 0, 2 );
 	* // returns [ 1, 2 ]
 	*/
-	aslice: typeof aslice;
+	slice: typeof slice;
+
+	/**
+	* Takes elements from an array.
+	*
+	* @param x - input array
+	* @param indices - list of element indices
+	* @param options - function options
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var y = ns.take( x, [ 1, 3 ] );
+	* // returns [ 2, 4 ]
+	*/
+	take: typeof take;
 
 	/**
 	* Returns an iterator which repeatedly iterates over each element in an array-like object.
@@ -1177,6 +1287,26 @@ interface Namespace {
 	* // returns 2
 	*/
 	circarray2iterator: typeof circarray2iterator;
+
+	/**
+	* Converts an array to an object supporting fancy indexing.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.strict - boolean indicating whether to enforce strict bounds checking
+	* @param options.cache - cache for resolving array index objects
+	* @returns fancy array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var y = ns.array2fancy( x );
+	* // returns <Array>
+	*
+	* var v = y[ ':' ];
+	* // returns [ 1, 2, 3, 4 ]
+	*/
+	array2fancy: typeof array2fancy;
 
 	/**
 	* Returns an iterator which iterates over each element in an array-like object.
@@ -1456,7 +1586,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.complexarrayDataTypes();
-	* // returns [ 'complex64', 'complex128' ]
+	* // e.g., returns [ 'complex64', ... ]
 	*/
 	complexarrayDataTypes: typeof complexarrayDataTypes;
 
@@ -1483,7 +1613,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.typedarrayDataTypes();
-	* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex128', 'complex64' ]
+	* // e.g., returns [ 'float32', ... ]
 	*/
 	typedarrayDataTypes: typeof typedarrayDataTypes;
 
@@ -1510,7 +1640,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.floatarrayDataTypes();
-	* // e.g., returns [ 'float32', 'float64', 'complex64', 'complex128' ]
+	* // e.g., returns [ 'float32', ... ]
 	*/
 	floatarrayDataTypes: typeof floatarrayDataTypes;
 
@@ -1537,7 +1667,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.intarrayDataTypes();
-	* // e.g., returns [ 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+	* // e.g., returns [ 'int16', ... ]
 	*/
 	intarrayDataTypes: typeof intarrayDataTypes;
 
@@ -1583,13 +1713,13 @@ interface Namespace {
 	realarrayCtors: typeof realarrayCtors;
 
 	/**
-	* Returns a list of typed array data types.
+	* Returns a list of typed array real-valued data types.
 	*
 	* @returns list of typed array data types
 	*
 	* @example
 	* var list = ns.realarrayDataTypes();
-	* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+	* // e.g., returns [ 'float32', ... ]
 	*/
 	realarrayDataTypes: typeof realarrayDataTypes;
 
@@ -1616,7 +1746,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.realarrayFloatDataTypes();
-	* // e.g., returns [ 'float32', 'float64' ]
+	* // e.g., returns [ 'float32', ... ]
 	*/
 	realarrayFloatDataTypes: typeof realarrayFloatDataTypes;
 
@@ -1643,7 +1773,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.intarraySignedDataTypes();
-	* // e.g., returns [ 'int16', 'int32', 'int8' ]
+	* // e.g., returns [ 'int16', ... ]
 	*/
 	intarraySignedDataTypes: typeof intarraySignedDataTypes;
 
@@ -1670,7 +1800,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.intarrayUnsignedDataTypes();
-	* // e.g., returns [ 'uint16', 'uint32', 'uint8', 'uint8c' ]
+	* // e.g., returns [ 'uint16', ... ]
 	*/
 	intarrayUnsignedDataTypes: typeof intarrayUnsignedDataTypes;
 
@@ -1702,14 +1832,14 @@ interface Namespace {
 	* @returns linearly spaced numeric array
 	*
 	* @example
-	* var arr = ns.azeroTo( 2 );
+	* var arr = ns.zeroTo( 2 );
 	* // returns <Float64Array>[ 0.0, 1.0 ]
 	*
 	* @example
-	* var arr = ns.azeroTo( 2, 'float32' );
+	* var arr = ns.zeroTo( 2, 'float32' );
 	* // returns <Float32Array>[ 0.0, 1.0 ]
 	*/
-	azeroTo: typeof azeroTo;
+	zeroTo: typeof zeroTo;
 
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length and data type as a provided input array.
@@ -1724,10 +1854,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float32' );
 	* // returns <Float32Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.azeroToLike( x );
+	* var y = ns.zeroToLike( x );
 	* // returns <Float32Array>[ 0.0, 1.0 ]
 	*/
-	azeroToLike: typeof azeroToLike;
+	zeroToLike: typeof zeroToLike;
 
 	/**
 	* Creates a zero-filled array having a specified length.
@@ -1752,14 +1882,14 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var arr = ns.azeros( 2 );
+	* var arr = ns.zeros( 2 );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
 	* @example
-	* var arr = ns.azeros( 2, 'float32' );
+	* var arr = ns.zeros( 2, 'float32' );
 	* // returns <Float32Array>[ 0.0, 0.0 ]
 	*/
-	azeros: typeof azeros;
+	zeros: typeof zeros;
 
 	/**
 	* Creates a zero-filled array having the same length and data type as a provided input array.
@@ -1789,7 +1919,7 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.azerosLike( x );
+	* var y = ns.zerosLike( x );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
 	* @example
@@ -1798,10 +1928,10 @@ interface Namespace {
 	* var x = zeros( 2, 'float64' );
 	* // returns <Float64Array>[ 0.0, 0.0 ]
 	*
-	* var y = ns.azerosLike( x, 'float32' );
+	* var y = ns.zerosLike( x, 'float32' );
 	* // returns <Float32Array>[ 0.0, 0.0 ]
 	*/
-	azerosLike: typeof azerosLike;
+	zerosLike: typeof zerosLike;
 
 	/**
 	* Array constants.
