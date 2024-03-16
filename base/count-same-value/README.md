@@ -51,6 +51,15 @@ var out = countSameValue( x, 1 );
 // returns 2
 ```
 
+In contrast to an implementation using the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
+
+```javascript
+var x = [ NaN, NaN, NaN ];
+
+var out = countSameValue( x, NaN );
+// returns 3
+```
+
 </section>
 
 <!-- /.usage -->
@@ -58,6 +67,10 @@ var out = countSameValue( x, 1 );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   The function uses the [SameValue Algorithm][@stdlib/assert/is-same-value] as specified in ECMAScript 5.
 
 </section>
 
@@ -107,6 +120,8 @@ console.log( n );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
 
 </section>
 
