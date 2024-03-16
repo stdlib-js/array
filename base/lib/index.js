@@ -442,6 +442,15 @@ setReadOnly( ns, 'countFalsy', require( './../../base/count-falsy' ) );
 setReadOnly( ns, 'countSameValue', require( './../../base/count-same-value' ) );
 
 /**
+* @name countSameValueZero
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/count-same-value-zero}
+*/
+setReadOnly( ns, 'countSameValueZero', require( './../../base/count-same-value-zero' ) );
+
+/**
 * @name countTruthy
 * @memberof ns
 * @readonly
