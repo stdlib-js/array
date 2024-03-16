@@ -433,6 +433,15 @@ setReadOnly( ns, 'copyIndexed', require( './../../base/copy-indexed' ) );
 setReadOnly( ns, 'countFalsy', require( './../../base/count-falsy' ) );
 
 /**
+* @name countSameValue
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/count-same-value}
+*/
+setReadOnly( ns, 'countSameValue', require( './../../base/count-same-value' ) );
+
+/**
 * @name countTruthy
 * @memberof ns
 * @readonly
