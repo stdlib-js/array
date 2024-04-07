@@ -1450,6 +1450,15 @@ setReadOnly( ns, 'unarynd', require( './../../base/unarynd' ) );
 setReadOnly( ns, 'unitspace', require( './../../base/unitspace' ) );
 
 /**
+* @name with
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/with}
+*/
+setReadOnly( ns, 'with', require( './../../base/with' ) );
+
+/**
 * @name zeroTo
 * @memberof ns
 * @readonly
