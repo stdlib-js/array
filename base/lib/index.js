@@ -901,6 +901,15 @@ setReadOnly( ns, 'incrspace', require( './../../base/incrspace' ) );
 setReadOnly( ns, 'indexOf', require( './../../base/index-of' ) );
 
 /**
+* @name join
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/join}
+*/
+setReadOnly( ns, 'join', require( './../../base/join' ) );
+
+/**
 * @name last
 * @memberof ns
 * @readonly
