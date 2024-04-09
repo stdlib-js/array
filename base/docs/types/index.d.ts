@@ -64,6 +64,7 @@ import cartesianSquare = require( './../../../base/cartesian-square' );
 import copy = require( './../../../base/copy' );
 import copyIndexed = require( './../../../base/copy-indexed' );
 import countFalsy = require( './../../../base/count-falsy' );
+import countIf = require( './../../../base/count-if' );
 import countSameValue = require( './../../../base/count-same-value' );
 import countSameValueZero = require( './../../../base/count-same-value-zero' );
 import countTruthy = require( './../../../base/count-truthy' );
@@ -115,6 +116,7 @@ import groupValues = require( './../../../base/group-values' );
 import groupValuesBy = require( './../../../base/group-values-by' );
 import incrspace = require( './../../../base/incrspace' );
 import indexOf = require( './../../../base/index-of' );
+import join = require( './../../../base/join' );
 import last = require( './../../../base/last' );
 import lastIndexOf = require( './../../../base/last-index-of' );
 import linspace = require( './../../../base/linspace' );
@@ -1344,6 +1346,26 @@ interface Namespace {
 	countFalsy: typeof countFalsy;
 
 	/**
+	* Counts the number of elements in an array which pass a test implemented by a predicate function.
+	*
+	* @param x - input array
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns result
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v > 0;
+	* }
+	*
+	* var x = [ 0, 1, 0, 1, 1 ];
+	*
+	* var n = ns.countIf( x, predicate );
+	* // returns 3
+	*/
+	countIf: typeof countIf;
+
+	/**
 	* Counts the number of elements in an array that are equal to a specified value.
 	*
 	* ## Notes
@@ -2417,6 +2439,43 @@ interface Namespace {
 	* // returns 1
 	*/
 	indexOf: typeof indexOf;
+
+	/**
+	* Returns a string created by joining array elements using a specified separator.
+	*
+	* @param x - input array
+	* @param separator - separator element
+	* @returns string
+	*
+	* @example
+	* var x = [ 1, 2, 3 ];
+	*
+	* var out = ns.join( x, ',' );
+	* // returns '1,2,3'
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4, 5, 6 ];
+	*
+	* var out = ns.join( x, '-' );
+	* // returns '1-2-3-4-5-6'
+	*
+	* @example
+	* var Float64Array = require( './../../../float64' );
+	*
+	* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
+	*
+	* var out = ns.join( x, ',' );
+	* // returns '1,2,3'
+	*
+	* @example
+	* var Complex128Array = require( './../../../complex128' );
+	*
+	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	*
+	* var out = ns.join( x, ',' );
+	* // returns '1 + 2i,3 + 4i,5 + 6i'
+	*/
+	join: typeof join;
 
 	/**
 	* Returns the last element of an array-like object.
