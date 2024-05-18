@@ -138,6 +138,12 @@ out = flatten4d( x, [ 2, 2, 2, 2 ], true );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/base/flatten4d-by`][@stdlib/array/base/flatten4d-by]</span><span class="delimiter">: </span><span class="description">flatten a four-dimensional nested array according to a callback function.</span>
+
 </section>
 
 <!-- /.related -->
@@ -145,6 +151,12 @@ out = flatten4d( x, [ 2, 2, 2, 2 ], true );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/flatten4d-by]: https://github.com/stdlib-js/array/tree/main/base/flatten4d-by
+
+<!-- </related-links> -->
 
 </section>
 
