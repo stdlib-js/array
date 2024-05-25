@@ -25,7 +25,7 @@ var Int32Array = require( './../../../int32' );
 var Complex128Array = require( './../../../complex128' );
 var toAccessorArray = require( './../../../base/to-accessor-array' );
 var isSameComplex128 = require( '@stdlib/assert/is-same-complex128' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var at = require( './../lib' );
 
 

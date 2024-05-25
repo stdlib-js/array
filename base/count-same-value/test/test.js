@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var Complex128Array = require( './../../../complex128' );
 var Int32Array = require( './../../../int32' );
 var Float32Array = require( './../../../float32' );

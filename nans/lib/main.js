@@ -21,8 +21,8 @@
 // MODULES //
 
 var contains = require( './../../base/assert/contains' ).factory;
-var Complex128 = require( '@stdlib/complex/float64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var full = require( './../../full' );
 var defaults = require( './../../defaults' );
 var dtypes = require( './../../dtypes' );

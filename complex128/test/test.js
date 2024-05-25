@@ -27,7 +27,7 @@ var Float64Array = require( './../../float64' );
 var Complex64Array = require( './../../complex64' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArrayBuffer = require( '@stdlib/assert/is-arraybuffer' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var Complex128Array = require( './../lib' );
 

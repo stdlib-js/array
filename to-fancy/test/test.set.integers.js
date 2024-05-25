@@ -30,7 +30,7 @@ var Int32Array = require( './../../int32' );
 var Float64Array = require( './../../float64' );
 var Complex64Array = require( './../../complex64' );
 var Complex128Array = require( './../../complex128' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var array2fancy = require( './../lib' );
 
 

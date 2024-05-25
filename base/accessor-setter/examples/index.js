@@ -20,8 +20,8 @@
 
 var Complex128Array = require( './../../../complex128' );
 var Complex64Array = require( './../../../complex64' );
-var Complex128 = require( '@stdlib/complex/float64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var zeroTo = require( './../../../base/zero-to' );
 var dtype = require( './../../../dtype' );
 var accessorSetter = require( './../lib' );
