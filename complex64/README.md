@@ -2624,7 +2624,7 @@ logEach( '%s', out );
 
 [@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer
 
-[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32
+[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor
 
 <!-- <related-links> -->
 
