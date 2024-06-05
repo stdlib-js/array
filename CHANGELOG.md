@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303)
 -   [`f4a14dd`](https://github.com/stdlib-js/stdlib/commit/f4a14dd55d10d1ce0390d24710c2998a3b112313) - add `BooleanArray` to namespace
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
 -   [`3bb9603`](https://github.com/stdlib-js/stdlib/commit/3bb9603cc344e09a31481c7ec75c17bd0d192e3c) - add `mskreject` to namespace
@@ -1633,6 +1634,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - **feat:** update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303) _(by stdlib-bot, Athan Reines)_
 -   [`96e896a`](https://github.com/stdlib-js/stdlib/commit/96e896a39be08912b2e06dfb6b671ec13d042412) - **feat:** add support for boolean array indices _(by Athan Reines)_
 -   [`cc06b5c`](https://github.com/stdlib-js/stdlib/commit/cc06b5c8c67a1c8d1022920273535b29e5abf550) - **fix:** add missing generic parameter _(by Athan Reines)_
 -   [`f53180b`](https://github.com/stdlib-js/stdlib/commit/f53180b3c431857d7c918319da97bd8e3abcb216) - **fix:** add missing parameter _(by Athan Reines)_
