@@ -919,6 +919,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292)
 -   [`5d53c2d`](https://github.com/stdlib-js/stdlib/commit/5d53c2de22e6899dc3970b4714c0c4e228562f92) - add initial TypeScript declarations
 -   [`e221398`](https://github.com/stdlib-js/stdlib/commit/e2213984af7a95af1b439aae8e2122968892c55d) - add `array/bool`
 
@@ -1634,6 +1635,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - **feat:** add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292) _(by Jaysukh Makvana, Athan Reines)_
 -   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - **feat:** update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303) _(by stdlib-bot, Athan Reines)_
 -   [`96e896a`](https://github.com/stdlib-js/stdlib/commit/96e896a39be08912b2e06dfb6b671ec13d042412) - **feat:** add support for boolean array indices _(by Athan Reines)_
 -   [`cc06b5c`](https://github.com/stdlib-js/stdlib/commit/cc06b5c8c67a1c8d1022920273535b29e5abf550) - **fix:** add missing generic parameter _(by Athan Reines)_
