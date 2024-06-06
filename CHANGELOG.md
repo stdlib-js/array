@@ -1702,6 +1702,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c3ebfa8`](https://github.com/stdlib-js/stdlib/commit/c3ebfa80e311db338b171ebf8eb5f46bc66e9bf6) - **docs:** update namespace table of contents and address spelling errors _(by Philipp Burckhardt)_
 -   [`26681a0`](https://github.com/stdlib-js/stdlib/commit/26681a00adf94037d357eaebf842af2c454b06e3) - **feat:** add boolean dtype support in `array/dtype` [(#2306)](https://github.com/stdlib-js/stdlib/pull/2306) _(by Jaysukh Makvana, Athan Reines)_
 -   [`1510858`](https://github.com/stdlib-js/stdlib/commit/1510858faac58b25a8c5e398ffe54545526acfe6) - **feat:** add boolean dtype support in `array/ctors` [(#2308)](https://github.com/stdlib-js/stdlib/pull/2308) _(by Jaysukh Makvana)_
 -   [`50e2775`](https://github.com/stdlib-js/stdlib/commit/50e2775cfb5128c0e66cdc755ca459ac416c3481) - **feat:** add boolean dtype support in `array/defaults` [(#2309)](https://github.com/stdlib-js/stdlib/pull/2309) _(by Jaysukh Makvana, Athan Reines)_

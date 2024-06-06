@@ -190,6 +190,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <div class="namespace-toc">
 
 -   <span class="signature">[`base`][@stdlib/array/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) array utilities.</span>
+-   <span class="signature">[`BooleanArray()`][@stdlib/array/bool]</span><span class="delimiter">: </span><span class="description">boolean array.</span>
 -   <span class="signature">[`cartesianPower( x, n )`][@stdlib/array/cartesian-power]</span><span class="delimiter">: </span><span class="description">return the Cartesian power.</span>
 -   <span class="signature">[`cartesianProduct( x1, x2 )`][@stdlib/array/cartesian-product]</span><span class="delimiter">: </span><span class="description">return the Cartesian product.</span>
 -   <span class="signature">[`cartesianSquare( x )`][@stdlib/array/cartesian-square]</span><span class="delimiter">: </span><span class="description">return the Cartesian square.</span>
@@ -354,6 +355,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 <!-- <toc-links> -->
 
 [@stdlib/array/base]: https://github.com/stdlib-js/array/tree/main/base
+
+[@stdlib/array/bool]: https://github.com/stdlib-js/array/tree/main/bool
 
 [@stdlib/array/cartesian-power]: https://github.com/stdlib-js/array/tree/main/cartesian-power
 
