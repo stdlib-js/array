@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-05)
+## Unreleased (2024-06-06)
 
 <section class="packages">
 
@@ -1209,6 +1209,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`31f2c1a`](https://github.com/stdlib-js/stdlib/commit/31f2c1a8c77a86aac05815d89f158febe8a37611) - add boolean dtype support in `array/mostly-safe-casts` [(#2310)](https://github.com/stdlib-js/stdlib/pull/2310)
 -   [`b268a6f`](https://github.com/stdlib-js/stdlib/commit/b268a6fa08b67895ed1f00ea743e387aba451880) - add `array/mostly-safe-casts`
 
 </section>
@@ -1635,6 +1636,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`31f2c1a`](https://github.com/stdlib-js/stdlib/commit/31f2c1a8c77a86aac05815d89f158febe8a37611) - **feat:** add boolean dtype support in `array/mostly-safe-casts` [(#2310)](https://github.com/stdlib-js/stdlib/pull/2310) _(by Jaysukh Makvana, Athan Reines)_
 -   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - **feat:** add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292) _(by Jaysukh Makvana, Athan Reines)_
 -   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - **feat:** update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303) _(by stdlib-bot, Athan Reines)_
 -   [`96e896a`](https://github.com/stdlib-js/stdlib/commit/96e896a39be08912b2e06dfb6b671ec13d042412) - **feat:** add support for boolean array indices _(by Athan Reines)_
