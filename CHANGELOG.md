@@ -1033,6 +1033,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-ctors-unreleased">
+
+#### [@stdlib/array/ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`1510858`](https://github.com/stdlib-js/stdlib/commit/1510858faac58b25a8c5e398ffe54545526acfe6) - add boolean dtype support in `array/ctors` [(#2308)](https://github.com/stdlib-js/stdlib/pull/2308)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-defaults-unreleased">
 
 #### [@stdlib/array/defaults](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/defaults)
@@ -1658,6 +1680,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`1510858`](https://github.com/stdlib-js/stdlib/commit/1510858faac58b25a8c5e398ffe54545526acfe6) - **feat:** add boolean dtype support in `array/ctors` [(#2308)](https://github.com/stdlib-js/stdlib/pull/2308) _(by Jaysukh Makvana)_
 -   [`50e2775`](https://github.com/stdlib-js/stdlib/commit/50e2775cfb5128c0e66cdc755ca459ac416c3481) - **feat:** add boolean dtype support in `array/defaults` [(#2309)](https://github.com/stdlib-js/stdlib/pull/2309) _(by Jaysukh Makvana, Athan Reines)_
 -   [`31f2c1a`](https://github.com/stdlib-js/stdlib/commit/31f2c1a8c77a86aac05815d89f158febe8a37611) - **feat:** add boolean dtype support in `array/mostly-safe-casts` [(#2310)](https://github.com/stdlib-js/stdlib/pull/2310) _(by Jaysukh Makvana, Athan Reines)_
 -   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - **feat:** add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292) _(by Jaysukh Makvana, Athan Reines)_

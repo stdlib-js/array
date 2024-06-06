@@ -31,6 +31,7 @@ var Uint8Array = require( './../../uint8' );
 var Uint8ClampedArray = require( './../../uint8c' );
 var Complex64Array = require( './../../complex64' );
 var Complex128Array = require( './../../complex128' );
+var BooleanArray = require( './../../bool' );
 
 
 // MAIN //
@@ -48,7 +49,8 @@ var ctors = {
 	'uint8': Uint8Array,
 	'uint8c': Uint8ClampedArray,
 	'complex64': Complex64Array,
-	'complex128': Complex128Array
+	'complex128': Complex128Array,
+	'bool': BooleanArray
 };
 
 
