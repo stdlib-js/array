@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-09)
+## Unreleased (2024-06-10)
 
 <section class="packages">
 
@@ -1430,6 +1430,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`84dcb69`](https://github.com/stdlib-js/stdlib/commit/84dcb6972ff346a53f596de5ccc490489c9425ad) - add boolean dtype support in `array/safe-casts` [(#2353)](https://github.com/stdlib-js/stdlib/pull/2353)
 -   [`a8643cd`](https://github.com/stdlib-js/stdlib/commit/a8643cd81faabbf121f779a2dc6eedc8e0cb1bd7) - support non-string dtype values
 
 </section>
@@ -1702,6 +1703,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`84dcb69`](https://github.com/stdlib-js/stdlib/commit/84dcb6972ff346a53f596de5ccc490489c9425ad) - **feat:** add boolean dtype support in `array/safe-casts` [(#2353)](https://github.com/stdlib-js/stdlib/pull/2353) _(by Jaysukh Makvana, Athan Reines)_
 -   [`1b5abe6`](https://github.com/stdlib-js/stdlib/commit/1b5abe6cb97ca371aeeae5ef5e39e9ef20898e52) - **chore:** update package meta data [(#2344)](https://github.com/stdlib-js/stdlib/pull/2344) _(by stdlib-bot, Athan Reines)_
 -   [`c3ebfa8`](https://github.com/stdlib-js/stdlib/commit/c3ebfa80e311db338b171ebf8eb5f46bc66e9bf6) - **docs:** update namespace table of contents and address spelling errors _(by Philipp Burckhardt)_
 -   [`26681a0`](https://github.com/stdlib-js/stdlib/commit/26681a00adf94037d357eaebf842af2c454b06e3) - **feat:** add boolean dtype support in `array/dtype` [(#2306)](https://github.com/stdlib-js/stdlib/pull/2306) _(by Jaysukh Makvana, Athan Reines)_
