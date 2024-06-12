@@ -941,6 +941,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363)
 -   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292)
 -   [`5d53c2d`](https://github.com/stdlib-js/stdlib/commit/5d53c2de22e6899dc3970b4714c0c4e228562f92) - add initial TypeScript declarations
 -   [`e221398`](https://github.com/stdlib-js/stdlib/commit/e2213984af7a95af1b439aae8e2122968892c55d) - add `array/bool`
@@ -1354,6 +1355,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-next-dtype-unreleased">
+
+#### [@stdlib/array/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/next-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`1b80190`](https://github.com/stdlib-js/stdlib/commit/1b8019023cc1e56fc6ae46fba1825503c03c48a1) - add boolean dtype support in `array/next-dtype` [(#2362)](https://github.com/stdlib-js/stdlib/pull/2362)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-one-to-unreleased">
 
 #### [@stdlib/array/one-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/one-to)
@@ -1726,6 +1749,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - **feat:** add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363) _(by Jaysukh Makvana)_
+-   [`1b80190`](https://github.com/stdlib-js/stdlib/commit/1b8019023cc1e56fc6ae46fba1825503c03c48a1) - **feat:** add boolean dtype support in `array/next-dtype` [(#2362)](https://github.com/stdlib-js/stdlib/pull/2362) _(by Jaysukh Makvana)_
 -   [`ce961d9`](https://github.com/stdlib-js/stdlib/commit/ce961d921bc120e3c45c3df1381793072febf721) - **feat:** add `array/base/assert/is-booleanarray` [(#2357)](https://github.com/stdlib-js/stdlib/pull/2357) _(by Jaysukh Makvana)_
 -   [`0be04fe`](https://github.com/stdlib-js/stdlib/commit/0be04fed0838ee8603018267ca47e8cbf20556b0) - **feat:** add boolean dtype support in `array/same-kind-casts` [(#2354)](https://github.com/stdlib-js/stdlib/pull/2354) _(by Jaysukh Makvana, Athan Reines)_
 -   [`84dcb69`](https://github.com/stdlib-js/stdlib/commit/84dcb6972ff346a53f596de5ccc490489c9425ad) - **feat:** add boolean dtype support in `array/safe-casts` [(#2353)](https://github.com/stdlib-js/stdlib/pull/2353) _(by Jaysukh Makvana, Athan Reines)_
