@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-10)
+## Unreleased (2024-06-12)
 
 <section class="packages">
 
@@ -180,6 +180,28 @@
 ##### Features
 
 -   [`40368ee`](https://github.com/stdlib-js/stdlib/commit/40368ee23a7c9852cbf1806f8cd8b2e6e287c658) - add `array/base/assert/is-data-type`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-is-booleanarray-unreleased">
+
+#### [@stdlib/array/base/assert/is-booleanarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-booleanarray)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ce961d9`](https://github.com/stdlib-js/stdlib/commit/ce961d921bc120e3c45c3df1381793072febf721) - add `array/base/assert/is-booleanarray` [(#2357)](https://github.com/stdlib-js/stdlib/pull/2357)
 
 </section>
 
@@ -1704,6 +1726,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ce961d9`](https://github.com/stdlib-js/stdlib/commit/ce961d921bc120e3c45c3df1381793072febf721) - **feat:** add `array/base/assert/is-booleanarray` [(#2357)](https://github.com/stdlib-js/stdlib/pull/2357) _(by Jaysukh Makvana)_
 -   [`0be04fe`](https://github.com/stdlib-js/stdlib/commit/0be04fed0838ee8603018267ca47e8cbf20556b0) - **feat:** add boolean dtype support in `array/same-kind-casts` [(#2354)](https://github.com/stdlib-js/stdlib/pull/2354) _(by Jaysukh Makvana, Athan Reines)_
 -   [`84dcb69`](https://github.com/stdlib-js/stdlib/commit/84dcb6972ff346a53f596de5ccc490489c9425ad) - **feat:** add boolean dtype support in `array/safe-casts` [(#2353)](https://github.com/stdlib-js/stdlib/pull/2353) _(by Jaysukh Makvana, Athan Reines)_
 -   [`1b5abe6`](https://github.com/stdlib-js/stdlib/commit/1b5abe6cb97ca371aeeae5ef5e39e9ef20898e52) - **chore:** update package meta data [(#2344)](https://github.com/stdlib-js/stdlib/pull/2344) _(by stdlib-bot, Athan Reines)_
