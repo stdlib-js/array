@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-12)
+## Unreleased (2024-06-13)
 
 <section class="packages">
 
@@ -1453,6 +1453,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`2a174cd`](https://github.com/stdlib-js/stdlib/commit/2a174cd91a26e08e7032934762ef2c0ed0320bda) - add boolean dtype support in `array/promotion-rules` [(#2369)](https://github.com/stdlib-js/stdlib/pull/2369)
 -   [`b6aa74b`](https://github.com/stdlib-js/stdlib/commit/b6aa74b76fe133f5994edc88f62d62062281be06) - support non-string dtype values
 
 </section>
@@ -1749,6 +1750,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`2a174cd`](https://github.com/stdlib-js/stdlib/commit/2a174cd91a26e08e7032934762ef2c0ed0320bda) - **feat:** add boolean dtype support in `array/promotion-rules` [(#2369)](https://github.com/stdlib-js/stdlib/pull/2369) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - **feat:** add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363) _(by Jaysukh Makvana)_
 -   [`1b80190`](https://github.com/stdlib-js/stdlib/commit/1b8019023cc1e56fc6ae46fba1825503c03c48a1) - **feat:** add boolean dtype support in `array/next-dtype` [(#2362)](https://github.com/stdlib-js/stdlib/pull/2362) _(by Jaysukh Makvana)_
 -   [`ce961d9`](https://github.com/stdlib-js/stdlib/commit/ce961d921bc120e3c45c3df1381793072febf721) - **feat:** add `array/base/assert/is-booleanarray` [(#2357)](https://github.com/stdlib-js/stdlib/pull/2357) _(by Jaysukh Makvana)_
