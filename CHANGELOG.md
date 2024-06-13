@@ -1132,6 +1132,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`c417923`](https://github.com/stdlib-js/stdlib/commit/c4179233cb2de5ffaa8c59b3910e14de12414483) - add boolean dtype support in `array/dtypes` [(#2307)](https://github.com/stdlib-js/stdlib/pull/2307)
 -   [`894eb44`](https://github.com/stdlib-js/stdlib/commit/894eb448a1720439bb19f246a53bd6a5a83f8b78) - add support for 'typed' data type kind
 
 </section>
@@ -1750,6 +1751,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c417923`](https://github.com/stdlib-js/stdlib/commit/c4179233cb2de5ffaa8c59b3910e14de12414483) - **feat:** add boolean dtype support in `array/dtypes` [(#2307)](https://github.com/stdlib-js/stdlib/pull/2307) _(by Jaysukh Makvana, Athan Reines)_
 -   [`2a174cd`](https://github.com/stdlib-js/stdlib/commit/2a174cd91a26e08e7032934762ef2c0ed0320bda) - **feat:** add boolean dtype support in `array/promotion-rules` [(#2369)](https://github.com/stdlib-js/stdlib/pull/2369) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - **feat:** add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363) _(by Jaysukh Makvana)_
 -   [`1b80190`](https://github.com/stdlib-js/stdlib/commit/1b8019023cc1e56fc6ae46fba1825503c03c48a1) - **feat:** add boolean dtype support in `array/next-dtype` [(#2362)](https://github.com/stdlib-js/stdlib/pull/2362) _(by Jaysukh Makvana)_
