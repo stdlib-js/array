@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-14)
+## Unreleased (2024-06-15)
 
 <section class="packages">
 
@@ -656,6 +656,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`8dcd24c`](https://github.com/stdlib-js/stdlib/commit/8dcd24c1ff40d92501acd68627bb05c39dd97355) - add `array/base/count-truthy`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-cuany-unreleased">
+
+#### [@stdlib/array/base/cuany](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cuany)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d9ef2aa`](https://github.com/stdlib-js/stdlib/commit/d9ef2aa6d8d5c22025ad552a21780b07462f3079) - add `array/base/cuany` [(#2375)](https://github.com/stdlib-js/stdlib/pull/2375)
 
 </section>
 
@@ -1752,6 +1774,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d9ef2aa`](https://github.com/stdlib-js/stdlib/commit/d9ef2aa6d8d5c22025ad552a21780b07462f3079) - **feat:** add `array/base/cuany` [(#2375)](https://github.com/stdlib-js/stdlib/pull/2375) _(by Aditya Sapra, Athan Reines)_
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - **feat:** add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376) _(by Jaysukh Makvana)_
 -   [`c417923`](https://github.com/stdlib-js/stdlib/commit/c4179233cb2de5ffaa8c59b3910e14de12414483) - **feat:** add boolean dtype support in `array/dtypes` [(#2307)](https://github.com/stdlib-js/stdlib/pull/2307) _(by Jaysukh Makvana, Athan Reines)_
 -   [`2a174cd`](https://github.com/stdlib-js/stdlib/commit/2a174cd91a26e08e7032934762ef2c0ed0320bda) - **feat:** add boolean dtype support in `array/promotion-rules` [(#2369)](https://github.com/stdlib-js/stdlib/pull/2369) _(by Jaysukh Makvana, Athan Reines)_
