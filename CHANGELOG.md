@@ -689,6 +689,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-cuevery-unreleased">
+
+#### [@stdlib/array/base/cuevery](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cuevery)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9445e22`](https://github.com/stdlib-js/stdlib/commit/9445e22fabf3546afe9a6dd33c9131917f960b2a) - add `array/base/cuevery` (#2380) [(#2380)](https://github.com/stdlib-js/stdlib/pull/2380)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#2320](https://github.com/stdlib-js/stdlib/issues/2320)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-fancy-slice-assign-unreleased">
 
 #### [@stdlib/array/base/fancy-slice-assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fancy-slice-assign)
@@ -1736,9 +1770,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 4 issues were closed in this release:
+A total of 5 issues were closed in this release:
 
-[##1324](#1324), [##1326](#1326), [##1328 ](#1328 ), [#1325](https://github.com/stdlib-js/stdlib/issues/1325)
+[#2320](https://github.com/stdlib-js/stdlib/issues/2320), [##1324](#1324), [##1326](#1326), [##1328 ](#1328 ), [#1325](https://github.com/stdlib-js/stdlib/issues/1325)
 
 </section>
 
@@ -1774,6 +1808,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`9445e22`](https://github.com/stdlib-js/stdlib/commit/9445e22fabf3546afe9a6dd33c9131917f960b2a) - **feat:** add `array/base/cuevery` (#2380) [(#2380)](https://github.com/stdlib-js/stdlib/pull/2380) _(by Aditya Sapra, Athan Reines)_
 -   [`54413a6`](https://github.com/stdlib-js/stdlib/commit/54413a6c2b5649e4adccbf752656c6ab2f14b170) - **docs:** fix return value _(by Athan Reines)_
 -   [`d9ef2aa`](https://github.com/stdlib-js/stdlib/commit/d9ef2aa6d8d5c22025ad552a21780b07462f3079) - **feat:** add `array/base/cuany` [(#2375)](https://github.com/stdlib-js/stdlib/pull/2375) _(by Aditya Sapra, Athan Reines)_
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - **feat:** add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376) _(by Jaysukh Makvana)_
