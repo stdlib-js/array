@@ -1809,6 +1809,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a59c8bf`](https://github.com/stdlib-js/stdlib/commit/a59c8bfbfed0a5fad9a46625cfca6b869b03515e) - **docs:** add `repl.txt` to `array/bool` [(#2385)](https://github.com/stdlib-js/stdlib/pull/2385) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - **feat:** add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384) _(by Jaysukh Makvana, Athan Reines)_
 -   [`9445e22`](https://github.com/stdlib-js/stdlib/commit/9445e22fabf3546afe9a6dd33c9131917f960b2a) - **feat:** add `array/base/cuevery` (#2380) [(#2380)](https://github.com/stdlib-js/stdlib/pull/2380) _(by Aditya Sapra, Athan Reines)_
 -   [`54413a6`](https://github.com/stdlib-js/stdlib/commit/54413a6c2b5649e4adccbf752656c6ab2f14b170) - **docs:** fix return value _(by Athan Reines)_
