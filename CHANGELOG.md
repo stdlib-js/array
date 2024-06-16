@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-15)
+## Unreleased (2024-06-16)
 
 <section class="packages">
 
@@ -1774,6 +1774,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`54413a6`](https://github.com/stdlib-js/stdlib/commit/54413a6c2b5649e4adccbf752656c6ab2f14b170) - **docs:** fix return value _(by Athan Reines)_
 -   [`d9ef2aa`](https://github.com/stdlib-js/stdlib/commit/d9ef2aa6d8d5c22025ad552a21780b07462f3079) - **feat:** add `array/base/cuany` [(#2375)](https://github.com/stdlib-js/stdlib/pull/2375) _(by Aditya Sapra, Athan Reines)_
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - **feat:** add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376) _(by Jaysukh Makvana)_
 -   [`c417923`](https://github.com/stdlib-js/stdlib/commit/c4179233cb2de5ffaa8c59b3910e14de12414483) - **feat:** add boolean dtype support in `array/dtypes` [(#2307)](https://github.com/stdlib-js/stdlib/pull/2307) _(by Jaysukh Makvana, Athan Reines)_
