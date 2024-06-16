@@ -997,6 +997,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384)
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376)
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363)
 -   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292)
@@ -1808,6 +1809,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - **feat:** add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384) _(by Jaysukh Makvana, Athan Reines)_
 -   [`9445e22`](https://github.com/stdlib-js/stdlib/commit/9445e22fabf3546afe9a6dd33c9131917f960b2a) - **feat:** add `array/base/cuevery` (#2380) [(#2380)](https://github.com/stdlib-js/stdlib/pull/2380) _(by Aditya Sapra, Athan Reines)_
 -   [`54413a6`](https://github.com/stdlib-js/stdlib/commit/54413a6c2b5649e4adccbf752656c6ab2f14b170) - **docs:** fix return value _(by Athan Reines)_
 -   [`d9ef2aa`](https://github.com/stdlib-js/stdlib/commit/d9ef2aa6d8d5c22025ad552a21780b07462f3079) - **feat:** add `array/base/cuany` [(#2375)](https://github.com/stdlib-js/stdlib/pull/2375) _(by Aditya Sapra, Athan Reines)_
