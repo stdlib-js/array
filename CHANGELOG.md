@@ -73,6 +73,9 @@
 
 ##### Features
 
+-   [`60fa5ac`](https://github.com/stdlib-js/stdlib/commit/60fa5ac214d2e5dfe310f93928a07515eeeb4a3b) - add `cuevery` to namespace
+-   [`0a0ba83`](https://github.com/stdlib-js/stdlib/commit/0a0ba837315759799d35a24a8d9ded4af82622e0) - add `cuany` to namespace
+-   [`dc42597`](https://github.com/stdlib-js/stdlib/commit/dc42597ff2b21239797a71eb9cec84fe4e319fbc) - add `put` to namespace
 -   [`25e7a6e`](https://github.com/stdlib-js/stdlib/commit/25e7a6e0dd6fea3b5c42a557eb8ade2ac8f575ac) - update namespace TypeScript declarations [(##2146)](#2146)
 -   [`b54dc66`](https://github.com/stdlib-js/stdlib/commit/b54dc660bac4d6c2be5e51752dd6b57ba61e689b) - add `join` to namespace
 -   [`0a6cefd`](https://github.com/stdlib-js/stdlib/commit/0a6cefd854a121ec4cf59bbbf5c4745b549e3bed) - add `countIf` to namespace
@@ -898,6 +901,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`8b7f927`](https://github.com/stdlib-js/stdlib/commit/8b7f9274b4aeffe7344fad3e8186f7b4e13f7b2c) - add `array/base/mskreject-map`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-put-unreleased">
+
+#### [@stdlib/array/base/put](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/put)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ce18c49`](https://github.com/stdlib-js/stdlib/commit/ce18c49136d11f7333477882c9276d4ea3adc1af) - add `array/base/put`
 
 </section>
 
@@ -1809,6 +1834,15 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`dd9c4bc`](https://github.com/stdlib-js/stdlib/commit/dd9c4bc35241e586975c709ab63db13e684b0c24) - **bench:** fix array dtypes _(by Athan Reines)_
+-   [`cd60396`](https://github.com/stdlib-js/stdlib/commit/cd60396033ffc3035a57332c503b3747a76eaf44) - **bench:** fix broadcasting bug _(by Athan Reines)_
+-   [`9cd273a`](https://github.com/stdlib-js/stdlib/commit/9cd273ad970ecc7baeb4b36d2e054a702369c622) - **bench:** fix mutation bug _(by Athan Reines)_
+-   [`a35f2d1`](https://github.com/stdlib-js/stdlib/commit/a35f2d1cd5b94d38a5bda0386f35010c6f67e7e1) - **bench:** fix limits _(by Athan Reines)_
+-   [`1cbef01`](https://github.com/stdlib-js/stdlib/commit/1cbef0199d62d9add807612c1297b1e0bb12b5b6) - **docs:** fix examples _(by Athan Reines)_
+-   [`60fa5ac`](https://github.com/stdlib-js/stdlib/commit/60fa5ac214d2e5dfe310f93928a07515eeeb4a3b) - **feat:** add `cuevery` to namespace _(by Athan Reines)_
+-   [`0a0ba83`](https://github.com/stdlib-js/stdlib/commit/0a0ba837315759799d35a24a8d9ded4af82622e0) - **feat:** add `cuany` to namespace _(by Athan Reines)_
+-   [`dc42597`](https://github.com/stdlib-js/stdlib/commit/dc42597ff2b21239797a71eb9cec84fe4e319fbc) - **feat:** add `put` to namespace _(by Athan Reines)_
+-   [`ce18c49`](https://github.com/stdlib-js/stdlib/commit/ce18c49136d11f7333477882c9276d4ea3adc1af) - **feat:** add `array/base/put` _(by Athan Reines)_
 -   [`a59c8bf`](https://github.com/stdlib-js/stdlib/commit/a59c8bfbfed0a5fad9a46625cfca6b869b03515e) - **docs:** add `repl.txt` to `array/bool` [(#2385)](https://github.com/stdlib-js/stdlib/pull/2385) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - **feat:** add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384) _(by Jaysukh Makvana, Athan Reines)_
 -   [`9445e22`](https://github.com/stdlib-js/stdlib/commit/9445e22fabf3546afe9a6dd33c9131917f960b2a) - **feat:** add `array/base/cuevery` (#2380) [(#2380)](https://github.com/stdlib-js/stdlib/pull/2380) _(by Aditya Sapra, Athan Reines)_

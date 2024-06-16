@@ -469,6 +469,24 @@ setReadOnly( ns, 'countSameValueZero', require( './../../base/count-same-value-z
 setReadOnly( ns, 'countTruthy', require( './../../base/count-truthy' ) );
 
 /**
+* @name cuany
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cuany}
+*/
+setReadOnly( ns, 'cuany', require( './../../base/cuany' ) );
+
+/**
+* @name cuevery
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cuevery}
+*/
+setReadOnly( ns, 'cuevery', require( './../../base/cuevery' ) );
+
+/**
 * @name dedupe
 * @memberof ns
 * @readonly
@@ -1142,6 +1160,15 @@ setReadOnly( ns, 'ones5d', require( './../../base/ones5d' ) );
 * @see {@link module:@stdlib/array/base/onesnd}
 */
 setReadOnly( ns, 'onesnd', require( './../../base/onesnd' ) );
+
+/**
+* @name put
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/put}
+*/
+setReadOnly( ns, 'put', require( './../../base/put' ) );
 
 /**
 * @name quaternary2d
