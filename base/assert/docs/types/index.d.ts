@@ -23,6 +23,8 @@
 import contains = require( './../../../../base/assert/contains' );
 import hasSameValues = require( './../../../../base/assert/has-same-values' );
 import isAccessorArray = require( './../../../../base/assert/is-accessor-array' );
+import isBooleanDataType = require( './../../../../base/assert/is-boolean-data-type' );
+import isBooleanArray = require( './../../../../base/assert/is-booleanarray' );
 import isComplexFloatingPointDataType = require( './../../../../base/assert/is-complex-floating-point-data-type' );
 import isComplexTypedArray = require( './../../../../base/assert/is-complex-typed-array' );
 import isComplex64Array = require( './../../../../base/assert/is-complex64array' );
@@ -105,6 +107,76 @@ interface Namespace {
 	* // returns false
 	*/
 	isAccessorArray: typeof isAccessorArray;
+
+	/**
+	* Tests whether an input value is a supported array boolean data type.
+	*
+	* @param v - value to test
+	* @returns boolean indicating whether an input value is a supported array boolean data type
+	*
+	* @example
+	* var bool = ns.isBooleanDataType( 'bool' );
+	* // returns true
+	*
+	* bool = ns.isBooleanDataType( 'complex64' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'complex128' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'float32' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'float64' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'generic' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'int16' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'int32' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'int8' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'uint16' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'uint32' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'uint8' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'uint8c' );
+	* // returns false
+	*
+	* bool = ns.isBooleanDataType( 'foo' );
+	* // returns false
+	*/
+	isBooleanDataType: typeof isBooleanDataType;
+
+	/**
+	* Tests if a value is a `BooleanArray`.
+	*
+	* @param value - value to test
+	* @returns boolean indicating whether a value is a `BooleanArray`
+	*
+	* @example
+	* var BooleanArray = require( './../../../../bool' );
+	*
+	* var arr = new BooleanArray( 10 );
+	* var bool = ns.isBooleanArray( arr );
+	* // returns true
+	*
+	* @example
+	* var bool = ns.isBooleanArray( [] );
+	* // returns false
+	*/
+	isBooleanArray: typeof isBooleanArray;
 
 	/**
 	* Tests whether an input value is a supported array complex-valued floating-point data type.

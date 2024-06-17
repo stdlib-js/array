@@ -73,6 +73,7 @@
 
 ##### Features
 
+-   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394)
 -   [`60fa5ac`](https://github.com/stdlib-js/stdlib/commit/60fa5ac214d2e5dfe310f93928a07515eeeb4a3b) - add `cuevery` to namespace
 -   [`0a0ba83`](https://github.com/stdlib-js/stdlib/commit/0a0ba837315759799d35a24a8d9ded4af82622e0) - add `cuany` to namespace
 -   [`dc42597`](https://github.com/stdlib-js/stdlib/commit/dc42597ff2b21239797a71eb9cec84fe4e319fbc) - add `put` to namespace
@@ -134,6 +135,7 @@
 
 ##### Features
 
+-   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394)
 -   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - add `isBooleanArray` to namespace
 -   [`57347fd`](https://github.com/stdlib-js/stdlib/commit/57347fdd4382c4a71935e7ae06d992d04d08f802) - add `isBooleanDataType` to namespace
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
@@ -1902,6 +1904,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - **feat:** update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394) _(by stdlib-bot, Athan Reines)_
 -   [`915d3e7`](https://github.com/stdlib-js/stdlib/commit/915d3e77ccd6bdb8a8145e5be832e0db50854613) - **docs:** fix missing asterisk _(by Athan Reines)_
 -   [`6adfd9a`](https://github.com/stdlib-js/stdlib/commit/6adfd9a5b8df1771ac41681f1167c480e8d89c1d) - **docs:** fix missing asterisk _(by Athan Reines)_
 -   [`c0a9532`](https://github.com/stdlib-js/stdlib/commit/c0a953262445a079c4ee610fcaa94108b7bbcc77) - **feat:** add boolean dtype support in `array/to-json` [(#2392)](https://github.com/stdlib-js/stdlib/pull/2392) _(by Jaysukh Makvana)_
