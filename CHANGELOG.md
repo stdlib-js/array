@@ -1725,6 +1725,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-typed-ctors-unreleased">
+
+#### [@stdlib/array/typed-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8f4b5c4`](https://github.com/stdlib-js/stdlib/commit/8f4b5c410ffb5d06bb5cce02b84c5f7043c31fa7) - add boolean dtype support to `array/typed-ctors` [(#2391)](https://github.com/stdlib-js/stdlib/pull/2391)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-zero-to-unreleased">
 
 #### [@stdlib/array/zero-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zero-to)
@@ -1858,6 +1880,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`8f4b5c4`](https://github.com/stdlib-js/stdlib/commit/8f4b5c410ffb5d06bb5cce02b84c5f7043c31fa7) - **feat:** add boolean dtype support to `array/typed-ctors` [(#2391)](https://github.com/stdlib-js/stdlib/pull/2391) _(by Jaysukh Makvana, Athan Reines)_
 -   [`717af94`](https://github.com/stdlib-js/stdlib/commit/717af947ab270abc5422b6d8af7dacd8f0078ca4) - **docs:** update namespace table of contents [(##2389)](#2389) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`79d01c7`](https://github.com/stdlib-js/stdlib/commit/79d01c7866193a9ff63510316e2ea36cafc72f8a) - **refactor:** special case boolean arrays _(by Athan Reines)_
 -   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - **feat:** add `isBooleanArray` to namespace _(by Athan Reines)_
