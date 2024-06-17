@@ -1681,6 +1681,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-to-json-unreleased">
+
+#### [@stdlib/array/to-json](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-json)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c0a9532`](https://github.com/stdlib-js/stdlib/commit/c0a953262445a079c4ee610fcaa94108b7bbcc77) - add boolean dtype support in `array/to-json` [(#2392)](https://github.com/stdlib-js/stdlib/pull/2392)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-typed-unreleased">
 
 #### [@stdlib/array/typed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed)
@@ -1880,6 +1902,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c0a9532`](https://github.com/stdlib-js/stdlib/commit/c0a953262445a079c4ee610fcaa94108b7bbcc77) - **feat:** add boolean dtype support in `array/to-json` [(#2392)](https://github.com/stdlib-js/stdlib/pull/2392) _(by Jaysukh Makvana)_
 -   [`8f4b5c4`](https://github.com/stdlib-js/stdlib/commit/8f4b5c410ffb5d06bb5cce02b84c5f7043c31fa7) - **feat:** add boolean dtype support to `array/typed-ctors` [(#2391)](https://github.com/stdlib-js/stdlib/pull/2391) _(by Jaysukh Makvana, Athan Reines)_
 -   [`717af94`](https://github.com/stdlib-js/stdlib/commit/717af947ab270abc5422b6d8af7dacd8f0078ca4) - **docs:** update namespace table of contents [(##2389)](#2389) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`79d01c7`](https://github.com/stdlib-js/stdlib/commit/79d01c7866193a9ff63510316e2ea36cafc72f8a) - **refactor:** special case boolean arrays _(by Athan Reines)_
