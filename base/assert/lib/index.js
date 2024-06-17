@@ -64,6 +64,24 @@ setReadOnly( ns, 'hasSameValues', require( './../../../base/assert/has-same-valu
 setReadOnly( ns, 'isAccessorArray', require( './../../../base/assert/is-accessor-array' ) );
 
 /**
+* @name isBooleanDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-boolean-data-type}
+*/
+setReadOnly( ns, 'isBooleanDataType', require( './../../../base/assert/is-boolean-data-type' ) );
+
+/**
+* @name isBooleanArray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-booleanarray}
+*/
+setReadOnly( ns, 'isBooleanArray', require( './../../../base/assert/is-booleanarray' ) );
+
+/**
 * @name isComplexFloatingPointDataType
 * @memberof ns
 * @readonly

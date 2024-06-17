@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-16)
+## Unreleased (2024-06-17)
 
 <section class="packages">
 
@@ -134,6 +134,8 @@
 
 ##### Features
 
+-   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - add `isBooleanArray` to namespace
+-   [`57347fd`](https://github.com/stdlib-js/stdlib/commit/57347fdd4382c4a71935e7ae06d992d04d08f802) - add `isBooleanDataType` to namespace
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
 -   [`ff36d97`](https://github.com/stdlib-js/stdlib/commit/ff36d97450ec1ab28aeeaf2aab882757e0fb4439) - add `isComplexTypedArray` to namespace
 -   [`0c5beb2`](https://github.com/stdlib-js/stdlib/commit/0c5beb2e954c52aa9f04b47673458c2b7baf60a3) - add `isUnsignedIntegerDataType` to namespace
@@ -183,6 +185,28 @@
 ##### Features
 
 -   [`40368ee`](https://github.com/stdlib-js/stdlib/commit/40368ee23a7c9852cbf1806f8cd8b2e6e287c658) - add `array/base/assert/is-data-type`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-is-boolean--unreleased">
+
+#### [@stdlib/array/base/assert/is-boolean-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-boolean-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5fe348d`](https://github.com/stdlib-js/stdlib/commit/5fe348d99b277d10a524f75094e40244f165808c) - add `array/base/assert/is-boolean-data-type`
 
 </section>
 
@@ -1834,6 +1858,11 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`79d01c7`](https://github.com/stdlib-js/stdlib/commit/79d01c7866193a9ff63510316e2ea36cafc72f8a) - **refactor:** special case boolean arrays _(by Athan Reines)_
+-   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - **feat:** add `isBooleanArray` to namespace _(by Athan Reines)_
+-   [`57347fd`](https://github.com/stdlib-js/stdlib/commit/57347fdd4382c4a71935e7ae06d992d04d08f802) - **feat:** add `isBooleanDataType` to namespace _(by Athan Reines)_
+-   [`5fe348d`](https://github.com/stdlib-js/stdlib/commit/5fe348d99b277d10a524f75094e40244f165808c) - **feat:** add `array/base/assert/is-boolean-data-type` _(by Athan Reines)_
+-   [`ce7ccf7`](https://github.com/stdlib-js/stdlib/commit/ce7ccf7c9c0f730b8048172c9908176ef512bceb) - **refactor:** special case handling of complex number and index arrays _(by Athan Reines)_
 -   [`dd9c4bc`](https://github.com/stdlib-js/stdlib/commit/dd9c4bc35241e586975c709ab63db13e684b0c24) - **bench:** fix array dtypes _(by Athan Reines)_
 -   [`cd60396`](https://github.com/stdlib-js/stdlib/commit/cd60396033ffc3035a57332c503b3747a76eaf44) - **bench:** fix broadcasting bug _(by Athan Reines)_
 -   [`9cd273a`](https://github.com/stdlib-js/stdlib/commit/9cd273ad970ecc7baeb4b36d2e054a702369c622) - **bench:** fix mutation bug _(by Athan Reines)_
