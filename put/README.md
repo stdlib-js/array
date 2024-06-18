@@ -27,17 +27,17 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var put = require( '@stdlib/array/base/put' );
+var put = require( '@stdlib/array/put' );
 ```
 
-#### put( x, indices, values, mode )
+#### put( x, indices, values\[, options] )
 
 Replaces specified elements of an array with provided values.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = put( x, [ 1, 3 ], [ 20, 40 ], 'throw' );
+var out = put( x, [ 1, 3 ], [ 20, 40 ] );
 // returns [ 1, 20, 3, 40 ]
 
 var bool = ( out === x );
@@ -49,14 +49,18 @@ The function supports the following parameters:
 -   **x**: input array.
 -   **indices**: list of indices.
 -   **values**: values to set. When `indices` contains one or more elements, `values` must be broadcast [compatible][@stdlib/ndarray/base/broadcast-shapes] with `indices` (i.e., must have either one element or the same number of elements as `indices`).
--   **mode**: index [mode][@stdlib/ndarray/base/ind].
+-   **options**: function options.
+
+The function supports the following options:
+
+-   **mode**: index [mode][@stdlib/ndarray/base/ind]. Default: `'normalize'`.
 
 If `indices` is an empty array, the function returns the input array unchanged.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = put( x, [], [ 20, 40 ], 'throw' );
+var out = put( x, [], [ 20, 40 ] );
 // returns [ 1, 2, 3, 4 ]
 ```
 
@@ -65,11 +69,28 @@ The function supports broadcasting a `values` array containing a single element 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = put( x, [ 1, 3 ], [ 20 ], 'throw' );
+var out = put( x, [ 1, 3 ], [ 20 ] );
 // returns [ 1, 20, 3, 20 ]
+```
 
-var bool = ( out === x );
-// returns true
+By default, the function normalizes negative integer indices to positive integer index equivalents.
+
+```javascript
+var x = [ 1, 2, 3, 4 ];
+
+var out = put( x, [ -3, -1 ], [ 20, 40 ] );
+// returns [ 1, 20, 3, 40 ]
+```
+
+To specify an alternative index [mode][@stdlib/ndarray/base/ind], provide a `mode` option.
+
+```javascript
+var x = [ 1, 2, 3, 4 ];
+
+var out = put( x, [ -10, 10 ], [ 20, 40 ], {
+    'mode': 'clamp'
+});
+// returns [ 20, 2, 3, 40 ]
 ```
 
 </section>
@@ -82,6 +103,7 @@ var bool = ( out === x );
 
 -   The function mutates the input array `x`.
 -   Because each index is only validated at the time of replacing a particular element, mutation may occur even when one or more indices are out-of-bounds, including when the index [mode][@stdlib/ndarray/base/ind] indicates to raise an exception.
+-   The `values` array must have a [data type][@stdlib/array/dtypes] which can be [safely cast][@stdlib/array/safe-casts] to the input array data type. Floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the [same kind][@stdlib/array/same-kind-casts] (e.g., element values from a `'float64'` values array can be assigned to corresponding elements in a `'float32'` input array).
 
 </section>
 
@@ -97,7 +119,7 @@ var bool = ( out === x );
 var filledBy = require( '@stdlib/array/base/filled-by' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var linspace = require( '@stdlib/array/base/linspace' );
-var put = require( '@stdlib/array/base/put' );
+var put = require( '@stdlib/array/put' );
 
 // Generate a linearly spaced array:
 var x = linspace( 0, 100, 11 );
@@ -113,7 +135,7 @@ var values = filledBy( N, discreteUniform.factory( 1000, 2000 ) );
 console.log( values );
 
 // Update a random sample of elements in `x`:
-var out = put( x, indices, values, 'throw' );
+var out = put( x, indices, values );
 console.log( out );
 ```
 
@@ -136,6 +158,12 @@ console.log( out );
 [@stdlib/ndarray/base/ind]: https://github.com/stdlib-js/ndarray-base-ind
 
 [@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
+
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
+
+[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts
+
+[@stdlib/array/same-kind-casts]: https://github.com/stdlib-js/array/tree/main/same-kind-casts
 
 </section>
 

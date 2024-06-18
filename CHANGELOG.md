@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-17)
+## Unreleased (2024-06-18)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`e1993a6`](https://github.com/stdlib-js/stdlib/commit/e1993a6ee84bd212b5a00210e360b14e2a979f3a) - add `put` to namespace
 -   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303)
 -   [`f4a14dd`](https://github.com/stdlib-js/stdlib/commit/f4a14dd55d10d1ce0390d24710c2998a3b112313) - add `BooleanArray` to namespace
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
@@ -1374,6 +1375,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`b834046`](https://github.com/stdlib-js/stdlib/commit/b834046b3c0a54c0eccf7b6abc393402093d0398) - add boolean array support
 -   [`96e896a`](https://github.com/stdlib-js/stdlib/commit/96e896a39be08912b2e06dfb6b671ec13d042412) - add support for boolean array indices
 -   [`248fcf3`](https://github.com/stdlib-js/stdlib/commit/248fcf38684e61e81b14998ed6d24e0fc9283333) - add `array/index`
 
@@ -1576,6 +1578,38 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-put-unreleased">
+
+#### [@stdlib/array/put](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/put)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`58ffc76`](https://github.com/stdlib-js/stdlib/commit/58ffc769c95c9821f65dd095066e9401e468e000) - add `array/put`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`778764b`](https://github.com/stdlib-js/stdlib/commit/778764b2749e6799bfec2d20820f73f0e302fecc) - support collections with unknown data types
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-safe-casts-unreleased">
 
 #### [@stdlib/array/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/safe-casts)
@@ -1654,6 +1688,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`b079d65`](https://github.com/stdlib-js/stdlib/commit/b079d653226019925581555fdaf9aa927ec69c0e) - add support for integer array indexing assignment
 -   [`96e896a`](https://github.com/stdlib-js/stdlib/commit/96e896a39be08912b2e06dfb6b671ec13d042412) - add support for boolean array indices
 -   [`962c155`](https://github.com/stdlib-js/stdlib/commit/962c155e95241834642825085dd4aff8c2f875b3) - add boolean array tests
 -   [`415d506`](https://github.com/stdlib-js/stdlib/commit/415d506180557388d51b876c50139f1c9f1a7760) - attach `ArrayIndex` constructor to the main export
@@ -1904,6 +1939,16 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b079d65`](https://github.com/stdlib-js/stdlib/commit/b079d653226019925581555fdaf9aa927ec69c0e) - **feat:** add support for integer array indexing assignment _(by Athan Reines)_
+-   [`b834046`](https://github.com/stdlib-js/stdlib/commit/b834046b3c0a54c0eccf7b6abc393402093d0398) - **feat:** add boolean array support _(by Athan Reines)_
+-   [`778764b`](https://github.com/stdlib-js/stdlib/commit/778764b2749e6799bfec2d20820f73f0e302fecc) - **fix:** support collections with unknown data types _(by Athan Reines)_
+-   [`e1993a6`](https://github.com/stdlib-js/stdlib/commit/e1993a6ee84bd212b5a00210e360b14e2a979f3a) - **feat:** add `put` to namespace _(by Athan Reines)_
+-   [`3503cae`](https://github.com/stdlib-js/stdlib/commit/3503cae80842f44c3a16627edc52fc1384e0ce29) - **docs:** add note _(by Athan Reines)_
+-   [`1c809a5`](https://github.com/stdlib-js/stdlib/commit/1c809a5492dd9dc592bda2dbe6a4a6a1bf156bf1) - **docs:** add note _(by Athan Reines)_
+-   [`0a4b603`](https://github.com/stdlib-js/stdlib/commit/0a4b6039c6ab0468f01e96db98157fe6c516c2a5) - **docs:** add note _(by Athan Reines)_
+-   [`58ffc76`](https://github.com/stdlib-js/stdlib/commit/58ffc769c95c9821f65dd095066e9401e468e000) - **feat:** add `array/put` _(by Athan Reines)_
+-   [`ca3bd75`](https://github.com/stdlib-js/stdlib/commit/ca3bd752ba18c92d006ebba9c927e2ee9afefacd) - **test:** update description _(by Athan Reines)_
+-   [`2d3329c`](https://github.com/stdlib-js/stdlib/commit/2d3329cd56424e2cea94fc50b3ffcf21af50fcca) - **docs:** fix return type _(by Athan Reines)_
 -   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - **feat:** update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394) _(by stdlib-bot, Athan Reines)_
 -   [`915d3e7`](https://github.com/stdlib-js/stdlib/commit/915d3e77ccd6bdb8a8145e5be832e0db50854613) - **docs:** fix missing asterisk _(by Athan Reines)_
 -   [`6adfd9a`](https://github.com/stdlib-js/stdlib/commit/6adfd9a5b8df1771ac41681f1167c480e8d89c1d) - **docs:** fix missing asterisk _(by Athan Reines)_
