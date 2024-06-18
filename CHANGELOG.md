@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402)
 -   [`e1993a6`](https://github.com/stdlib-js/stdlib/commit/e1993a6ee84bd212b5a00210e360b14e2a979f3a) - add `put` to namespace
 -   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303)
 -   [`f4a14dd`](https://github.com/stdlib-js/stdlib/commit/f4a14dd55d10d1ce0390d24710c2998a3b112313) - add `BooleanArray` to namespace
@@ -1940,6 +1941,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - **feat:** update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402) _(by stdlib-bot, Athan Reines)_
 -   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - **feat:** add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390) _(by Jaysukh Makvana, Athan Reines)_
 -   [`95c263b`](https://github.com/stdlib-js/stdlib/commit/95c263b85149d1b663852066e1e2e33d9dc718dd) - **docs:** update namespace table of contents [(#2400)](https://github.com/stdlib-js/stdlib/pull/2400) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`074cbef`](https://github.com/stdlib-js/stdlib/commit/074cbef3f9d616c37c2be856a949e257481ff2fc) - **docs:** add note concerning broadcasting of nested array elements _(by Athan Reines)_
