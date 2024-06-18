@@ -1939,6 +1939,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`074cbef`](https://github.com/stdlib-js/stdlib/commit/074cbef3f9d616c37c2be856a949e257481ff2fc) - **docs:** add note concerning broadcasting of nested array elements _(by Athan Reines)_
 -   [`b079d65`](https://github.com/stdlib-js/stdlib/commit/b079d653226019925581555fdaf9aa927ec69c0e) - **feat:** add support for integer array indexing assignment _(by Athan Reines)_
 -   [`b834046`](https://github.com/stdlib-js/stdlib/commit/b834046b3c0a54c0eccf7b6abc393402093d0398) - **feat:** add boolean array support _(by Athan Reines)_
 -   [`778764b`](https://github.com/stdlib-js/stdlib/commit/778764b2749e6799bfec2d20820f73f0e302fecc) - **fix:** support collections with unknown data types _(by Athan Reines)_
