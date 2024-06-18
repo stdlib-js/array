@@ -178,6 +178,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-assert-has-same-values-unreleased">
+
+#### [@stdlib/array/base/assert/has-same-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-same-values)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a7947d0`](https://github.com/stdlib-js/stdlib/commit/a7947d0856e5c65f863841b0205c05b6f6cc2eec) - add boolean dtype support to `array/base/assert/has-same-values` [(#2404)](https://github.com/stdlib-js/stdlib/pull/2404)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-assert-is--unreleased">
 
 #### [@stdlib/array/base/assert/is-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-)
@@ -1941,6 +1963,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a7947d0`](https://github.com/stdlib-js/stdlib/commit/a7947d0856e5c65f863841b0205c05b6f6cc2eec) - **feat:** add boolean dtype support to `array/base/assert/has-same-values` [(#2404)](https://github.com/stdlib-js/stdlib/pull/2404) _(by Jaysukh Makvana, Athan Reines)_
 -   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - **feat:** update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402) _(by stdlib-bot, Athan Reines)_
 -   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - **feat:** add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390) _(by Jaysukh Makvana, Athan Reines)_
 -   [`95c263b`](https://github.com/stdlib-js/stdlib/commit/95c263b85149d1b663852066e1e2e33d9dc718dd) - **docs:** update namespace table of contents [(#2400)](https://github.com/stdlib-js/stdlib/pull/2400) _(by stdlib-bot, Philipp Burckhardt)_
