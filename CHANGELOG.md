@@ -2007,6 +2007,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b981bc3`](https://github.com/stdlib-js/stdlib/commit/b981bc30e83a7f88cdc2c0efca082fb31f9e1ac0) - **refactor:** avoid repeated property access _(by Athan Reines)_
 -   [`550285b`](https://github.com/stdlib-js/stdlib/commit/550285bf4a57dd3dabc8ed3998e7b612515fe082) - **feat:** add support for boolean and mask array assignment _(by Athan Reines)_
 -   [`ff8652b`](https://github.com/stdlib-js/stdlib/commit/ff8652b09457da367683ff80fecdf787b470207f) - **fix:** reassign `condition` to ensure proper iteration when a BooleanArray _(by Athan Reines)_
 -   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - **feat:** add `where` to namespace _(by Athan Reines)_
