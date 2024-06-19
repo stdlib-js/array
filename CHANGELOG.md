@@ -1055,6 +1055,16 @@ This release closes the following issue:
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`ff8652b`](https://github.com/stdlib-js/stdlib/commit/ff8652b09457da367683ff80fecdf787b470207f) - reassign `condition` to ensure proper iteration when a BooleanArray
+
+</section>
+
+<!-- /.bug-fixes -->
+
 </details>
 
 </section>
@@ -1996,6 +2006,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ff8652b`](https://github.com/stdlib-js/stdlib/commit/ff8652b09457da367683ff80fecdf787b470207f) - **fix:** reassign `condition` to ensure proper iteration when a BooleanArray _(by Athan Reines)_
 -   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - **feat:** add `where` to namespace _(by Athan Reines)_
 -   [`52e6dc7`](https://github.com/stdlib-js/stdlib/commit/52e6dc7a9aedf2f4e7ef0e7147c973533a830710) - **feat:** add `array/base/where` _(by Athan Reines)_
 -   [`1093407`](https://github.com/stdlib-js/stdlib/commit/1093407be970c29959b40c2537166b4db897d070) - **fix:** add missing type _(by Athan Reines)_
