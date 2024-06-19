@@ -1755,6 +1755,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`550285b`](https://github.com/stdlib-js/stdlib/commit/550285bf4a57dd3dabc8ed3998e7b612515fe082) - add support for boolean and mask array assignment
 -   [`b079d65`](https://github.com/stdlib-js/stdlib/commit/b079d653226019925581555fdaf9aa927ec69c0e) - add support for integer array indexing assignment
 -   [`96e896a`](https://github.com/stdlib-js/stdlib/commit/96e896a39be08912b2e06dfb6b671ec13d042412) - add support for boolean array indices
 -   [`962c155`](https://github.com/stdlib-js/stdlib/commit/962c155e95241834642825085dd4aff8c2f875b3) - add boolean array tests
@@ -2006,6 +2007,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`550285b`](https://github.com/stdlib-js/stdlib/commit/550285bf4a57dd3dabc8ed3998e7b612515fe082) - **feat:** add support for boolean and mask array assignment _(by Athan Reines)_
 -   [`ff8652b`](https://github.com/stdlib-js/stdlib/commit/ff8652b09457da367683ff80fecdf787b470207f) - **fix:** reassign `condition` to ensure proper iteration when a BooleanArray _(by Athan Reines)_
 -   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - **feat:** add `where` to namespace _(by Athan Reines)_
 -   [`52e6dc7`](https://github.com/stdlib-js/stdlib/commit/52e6dc7a9aedf2f4e7ef0e7147c973533a830710) - **feat:** add `array/base/where` _(by Athan Reines)_
