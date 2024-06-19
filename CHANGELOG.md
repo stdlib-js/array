@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-18)
+## Unreleased (2024-06-19)
 
 <section class="packages">
 
@@ -75,6 +75,7 @@
 
 ##### Features
 
+-   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - add `where` to namespace
 -   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394)
 -   [`60fa5ac`](https://github.com/stdlib-js/stdlib/commit/60fa5ac214d2e5dfe310f93928a07515eeeb4a3b) - add `cuevery` to namespace
 -   [`0a0ba83`](https://github.com/stdlib-js/stdlib/commit/0a0ba837315759799d35a24a8d9ded4af82622e0) - add `cuany` to namespace
@@ -1000,6 +1001,16 @@ This release closes the following issue:
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`1093407`](https://github.com/stdlib-js/stdlib/commit/1093407be970c29959b40c2537166b4db897d070) - add missing type
+
+</section>
+
+<!-- /.bug-fixes -->
+
 </details>
 
 </section>
@@ -1017,6 +1028,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`0bc38ac`](https://github.com/stdlib-js/stdlib/commit/0bc38ac50d13c505f66231c576c72b40848fd0a7) - add `array/base/take-map`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-where-unreleased">
+
+#### [@stdlib/array/base/where](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/where)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`52e6dc7`](https://github.com/stdlib-js/stdlib/commit/52e6dc7a9aedf2f4e7ef0e7147c973533a830710) - add `array/base/where`
 
 </section>
 
@@ -1963,6 +1996,9 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - **feat:** add `where` to namespace _(by Athan Reines)_
+-   [`52e6dc7`](https://github.com/stdlib-js/stdlib/commit/52e6dc7a9aedf2f4e7ef0e7147c973533a830710) - **feat:** add `array/base/where` _(by Athan Reines)_
+-   [`1093407`](https://github.com/stdlib-js/stdlib/commit/1093407be970c29959b40c2537166b4db897d070) - **fix:** add missing type _(by Athan Reines)_
 -   [`a7947d0`](https://github.com/stdlib-js/stdlib/commit/a7947d0856e5c65f863841b0205c05b6f6cc2eec) - **feat:** add boolean dtype support to `array/base/assert/has-same-values` [(#2404)](https://github.com/stdlib-js/stdlib/pull/2404) _(by Jaysukh Makvana, Athan Reines)_
 -   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - **feat:** update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402) _(by stdlib-bot, Athan Reines)_
 -   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - **feat:** add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390) _(by Jaysukh Makvana, Athan Reines)_

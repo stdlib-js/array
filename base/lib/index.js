@@ -1495,6 +1495,15 @@ setReadOnly( ns, 'unarynd', require( './../../base/unarynd' ) );
 setReadOnly( ns, 'unitspace', require( './../../base/unitspace' ) );
 
 /**
+* @name where
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/where}
+*/
+setReadOnly( ns, 'where', require( './../../base/where' ) );
+
+/**
 * @name arrayWith
 * @memberof ns
 * @readonly
