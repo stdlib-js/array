@@ -21,17 +21,17 @@
 /**
 * Replace elements of an array with provided values according to a provided mask array.
 *
-* @module @stdlib/array/base/mskput
+* @module @stdlib/array/base/place
 *
 * @example
-* var mskput = require( '@stdlib/array/base/mskput' );
+* var place = require( '@stdlib/array/base/place' );
 *
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 * // returns [ 1, 20, 30, 4 ]
 *
 * var bool = ( out === x );

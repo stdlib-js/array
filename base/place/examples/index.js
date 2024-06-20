@@ -22,7 +22,7 @@ var filledBy = require( './../../../base/filled-by' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var bernoulli = require( '@stdlib/random/base/bernoulli' );
 var linspace = require( './../../../base/linspace' );
-var mskput = require( './../lib' );
+var place = require( './../lib' );
 
 // Generate a linearly spaced array:
 var x = linspace( 0, 100, 11 );
@@ -38,5 +38,5 @@ var values = filledBy( N, discreteUniform.factory( 1000, 2000 ) );
 console.log( values );
 
 // Update a random sample of elements in `x`:
-var out = mskput( x, mask, values, 'non_strict' );
+var out = place( x, mask, values, 'non_strict' );
 console.log( out );

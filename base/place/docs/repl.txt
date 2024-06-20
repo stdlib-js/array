@@ -4,11 +4,11 @@
     mask array.
 
     In broadcasting modes, the function supports broadcasting a values array
-    containing a single element against the number of falsy values in the mask
+    containing a single element against the number of truthy values in the mask
     array.
 
     In repeat mode, the function supports recycling elements in a values array
-    to satisfy the number of falsy values in the mask array.
+    to satisfy the number of truthy values in the mask array.
 
     The function mutates the input array.
 
@@ -18,7 +18,7 @@
         Input array.
 
     mask: ArrayLikeObject
-        Mask array. If a mask array element is falsy, the corresponding element
+        Mask array. If a mask array element is truthy, the corresponding element
         in `x` is *replaced*; otherwise, the corresponding element in `x` is
         "masked" and thus left unchanged.
 
@@ -27,17 +27,17 @@
 
     mode: string
         String specifying behavior when the number of values to set does not
-        equal the number of falsy mask values. The function supports the
+        equal the number of truthy mask values. The function supports the
         following modes:
 
         - 'strict': specifies that the function must raise an exception when the
-        number of values does not *exactly* equal the number of falsy mask
+        number of values does not *exactly* equal the number of truthy mask
         values.
         - 'non_strict': specifies that the function must raise an exception when
         the function is provided insufficient values to satisfy the mask array.
         - 'strict_broadcast': specifies that the function must broadcast a
         single-element values array and otherwise raise an exception when the
-        number of values does not **exactly** equal the number of falsy mask
+        number of values does not **exactly** equal the number of truthy mask
         values.
         - 'broadcast': specifies that the function must broadcast a single-
         element values array and otherwise raise an exception when the function
@@ -53,7 +53,7 @@
     Examples
     --------
     > var x = [ 1, 2, 3, 4 ];
-    > var out = {{alias}}( x, [ 1, 0, 1, 0 ], [ 20, 40 ], 'strict' )
+    > var out = {{alias}}( x, [ 0, 1, 0, 1 ], [ 20, 40 ], 'strict' )
     [ 1, 20, 3, 40 ]
     > var bool = ( out === x )
     true

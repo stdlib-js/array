@@ -23,9 +23,9 @@
 var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
 var zeroTo = require( './../../../base/zero-to' );
-var zeros = require( './../../../base/zeros' );
+var ones = require( './../../../base/ones' );
 var pkg = require( './../package.json' ).name;
-var mskput = require( './../lib' );
+var place = require( './../lib' );
 
 
 // MAIN //
@@ -37,11 +37,11 @@ bench( pkg+'::no_broadcasting:len=100', function benchmark( b ) {
 	var v;
 
 	x = zeroTo( 100 );
-	mask = zeros( 100 );
+	mask = ones( 100 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = mskput( x, mask, x, 'strict' );
+		v = place( x, mask, x, 'strict' );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array' );
 		}
@@ -61,11 +61,11 @@ bench( pkg+'::broadcasting:len=100', function benchmark( b ) {
 	var v;
 
 	x = zeroTo( 100 );
-	mask = zeros( 100 );
+	mask = ones( 100 );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = mskput( x, mask, [ i ], 'strict_broadcast' );
+		v = place( x, mask, [ i ], 'strict_broadcast' );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array' );
 		}

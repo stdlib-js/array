@@ -1171,6 +1171,15 @@ setReadOnly( ns, 'ones5d', require( './../../base/ones5d' ) );
 setReadOnly( ns, 'onesnd', require( './../../base/onesnd' ) );
 
 /**
+* @name place
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/place}
+*/
+setReadOnly( ns, 'place', require( './../../base/place' ) );
+
+/**
 * @name put
 * @memberof ns
 * @readonly

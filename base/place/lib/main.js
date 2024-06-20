@@ -25,7 +25,7 @@ var isBooleanDataType = require( './../../../base/assert/is-boolean-data-type' )
 var arraylike2object = require( './../../../base/arraylike2object' );
 var reinterpretComplex = require( '@stdlib/strided/base/reinterpret-complex' );
 var reinterpretBoolean = require( '@stdlib/strided/base/reinterpret-boolean' );
-var countFalsy = require( './../../../base/count-falsy' );
+var countTruthy = require( './../../../base/count-truthy' );
 
 
 // FUNCTIONS //
@@ -42,7 +42,7 @@ var countFalsy = require( './../../../base/count-falsy' );
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
 * var out = indexed( x, mask, values );
@@ -56,7 +56,7 @@ function indexed( x, mask, values ) {
 	N = values.length;
 	iv = 0;
 	for ( i = 0; i < x.length; i++ ) {
-		if ( !mask[ i ] ) {
+		if ( mask[ i ] ) {
 			x[ i ] = values[ iv ];
 			iv = ( iv+1 ) % N;
 		}
@@ -79,7 +79,7 @@ function indexed( x, mask, values ) {
 *
 * var x = toAccessorArray( [ 1, 2, 3, 4 ] );
 *
-* var mask = toAccessorArray( [ 1, 0, 0, 1 ] );
+* var mask = toAccessorArray( [ 0, 1, 1, 0 ] );
 * var values = toAccessorArray( [ 20, 30 ] );
 *
 * var out = accessors( arraylike2object( x ), arraylike2object( mask ), arraylike2object( values ) );
@@ -112,7 +112,7 @@ function accessors( x, mask, values ) {
 	N = vdata.length;
 	iv = 0;
 	for ( i = 0; i < xdata.length; i++ ) {
-		if ( !mget( mdata, i ) ) {
+		if ( mget( mdata, i ) ) {
 			xset( xdata, i, vget( vdata, iv ) );
 			iv = ( iv+1 ) % N;
 		}
@@ -135,7 +135,7 @@ function accessors( x, mask, values ) {
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
-* var mask = [ 0, 1, 0, 1 ];
+* var mask = [ 1, 0, 1, 0 ];
 * var values = new Float64Array( [ 10.0, 20.0, 50.0, 60.0 ] );
 *
 * var out = complex( x, arraylike2object( mask ), values );
@@ -154,7 +154,7 @@ function complex( x, mask, values ) {
 	N = values.length;
 	iv = 0;
 	for ( i = 0; i < x.length; i += 2 ) {
-		if ( !mget( mdata, i/2 ) ) {
+		if ( mget( mdata, i/2 ) ) {
 			x[ i ] = values[ iv ];
 			x[ i+1 ] = values[ iv+1 ];
 			iv = ( iv+2 ) % N;
@@ -176,7 +176,7 @@ function complex( x, mask, values ) {
 * var arraylike2object = require( '@stdlib/array/base/arraylike2object' );
 * var Uint8Array = require( '@stdlib/array/uint8' );
 *
-* var x = new Uint8Array( [ 1, 0, 0, 1 ] );
+* var x = new Uint8Array( [ 0, 1, 1, 0 ] );
 *
 * var mask = [ 1, 0, 0, 1 ];
 * var values = new Uint8Array( [ 1, 1 ] );
@@ -197,7 +197,7 @@ function boolean( x, mask, values ) {
 	N = values.length;
 	iv = 0;
 	for ( i = 0; i < x.length; i++ ) {
-		if ( !mget( mdata, i ) ) {
+		if ( mget( mdata, i ) ) {
 			x[ i ] = values[ iv ];
 			iv = ( i+1 ) % N;
 		}
@@ -214,18 +214,18 @@ function boolean( x, mask, values ) {
 * @param {Collection} x - input array
 * @param {Collection} mask - mask array
 * @param {Collection} values - values to set
-* @param {string} mode - string specifying behavior when the number of values does not equal the number of falsy mask values
+* @param {string} mode - string specifying behavior when the number of values does not equal the number of truthy mask values
 * @throws {Error} insufficient values to satisfy mask array
-* @throws {Error} number of values does not equal the number of falsy mask values
+* @throws {Error} number of values does not equal the number of truthy mask values
 * @returns {Collection} input array
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 * // returns [ 1, 20, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -234,10 +234,10 @@ function boolean( x, mask, values ) {
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 30 ];
 *
-* var out = mskput( x, mask, values, 'strict_broadcast' );
+* var out = place( x, mask, values, 'strict_broadcast' );
 * // returns [ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -246,16 +246,16 @@ function boolean( x, mask, values ) {
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 0, 0, 1, 0 ];
+* var mask = [ 1, 1, 0, 1 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'repeat' );
+* var out = place( x, mask, values, 'repeat' );
 * // returns [ 20, 30, 3, 20 ]
 *
 * var bool = ( out === x );
 * // returns true
 */
-function mskput( x, mask, values, mode ) {
+function place( x, mask, values, mode ) {
 	var xo;
 	var mo;
 	var vo;
@@ -263,19 +263,19 @@ function mskput( x, mask, values, mode ) {
 
 	M = values.length;
 	if ( mode === 'strict' ) {
-		if ( countFalsy( mask ) !== M ) {
-			throw new Error( 'invalid arguments. Number of values does not equal the number of falsy values in the mask array.' );
+		if ( countTruthy( mask ) !== M ) {
+			throw new Error( 'invalid arguments. Number of values does not equal the number of truthy values in the mask array.' );
 		}
 	} else if ( mode === 'broadcast' ) {
-		if ( M !== 1 && countFalsy( mask ) > M ) {
+		if ( M !== 1 && countTruthy( mask ) > M ) {
 			throw new Error( 'invalid arguments. Insufficient values to satisfy mask array.' );
 		}
 	} else if ( mode === 'strict_broadcast' ) {
-		if ( M !== 1 && countFalsy( mask ) !== M ) {
-			throw new Error( 'invalid arguments. Number of values does not equal the number of falsy values in the mask array.' );
+		if ( M !== 1 && countTruthy( mask ) !== M ) {
+			throw new Error( 'invalid arguments. Number of values does not equal the number of truthy values in the mask array.' );
 		}
 	} else if ( mode === 'non_strict' ) {
-		if ( countFalsy( mask ) > M ) {
+		if ( countTruthy( mask ) > M ) {
 			throw new Error( 'invalid arguments. Insufficient values to satisfy mask array.' );
 		}
 	}
@@ -306,4 +306,4 @@ function mskput( x, mask, values, mode ) {
 
 // EXPORTS //
 
-module.exports = mskput;
+module.exports = place;

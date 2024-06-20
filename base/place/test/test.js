@@ -29,14 +29,14 @@ var Complex64 = require( '@stdlib/complex/float32' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 var isComplex64 = require( '@stdlib/assert/is-complex64' );
-var mskput = require( './../lib' );
+var place = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof mskput, 'function', 'main export is a function' );
+	t.strictEqual( typeof place, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -47,22 +47,22 @@ tape( 'the function replaces elements in an array (generic)', function test( t )
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 1, 0, 1, 0 ];
-	actual = mskput( x, mask, [ 20, 40 ], 'strict' );
+	mask = [ 0, 1, 0, 1 ];
+	actual = place( x, mask, [ 20, 40 ], 'strict' );
 	expected = [ 1, 20, 3, 40 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
-	actual = mskput( x, mask, [ 20, 30, 40, 50 ], 'strict' );
+	mask = [ 1, 1, 1, 1 ];
+	actual = place( x, mask, [ 20, 30, 40, 50 ], 'strict' );
 	expected = [ 20, 30, 40, 50 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 1, 1, 1, 1 ];
-	actual = mskput( x, mask, [ 20, 30, 40, 50 ], 'non_strict' );
+	mask = [ 0, 0, 0, 0 ];
+	actual = place( x, mask, [ 20, 30, 40, 50 ], 'non_strict' );
 	expected = [ 1, 2, 3, 4 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
@@ -77,29 +77,29 @@ tape( 'the function replaces elements in an array (generic, broadcasting)', func
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 1, 0, 1, 0 ];
-	actual = mskput( x, mask, [ 20 ], 'strict_broadcast' );
+	mask = [ 0, 1, 0, 1 ];
+	actual = place( x, mask, [ 20 ], 'strict_broadcast' );
 	expected = [ 1, 20, 3, 20 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
-	actual = mskput( x, mask, [ 20 ], 'broadcast' );
+	mask = [ 1, 1, 1, 1 ];
+	actual = place( x, mask, [ 20 ], 'broadcast' );
 	expected = [ 20, 20, 20, 20 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 1, 1, 1, 1 ];
-	actual = mskput( x, mask, [ 20 ], 'strict_broadcast' );
+	mask = [ 0, 0, 0, 0 ];
+	actual = place( x, mask, [ 20 ], 'strict_broadcast' );
 	expected = [ 1, 2, 3, 4 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
-	actual = mskput( x, mask, [ 100, 200 ], 'repeat' );
+	mask = [ 1, 1, 1, 1 ];
+	actual = place( x, mask, [ 100, 200 ], 'repeat' );
 	expected = [ 100, 200, 100, 200 ];
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
@@ -114,22 +114,22 @@ tape( 'the function replaces elements in an array (typed)', function test( t ) {
 	var x;
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 1, 0, 1, 0 ];
-	actual = mskput( x, mask, new Int32Array( [ 20, 40 ] ), 'strict' );
+	mask = [ 0, 1, 0, 1 ];
+	actual = place( x, mask, new Int32Array( [ 20, 40 ] ), 'strict' );
 	expected = new Int32Array( [ 1, 20, 3, 40 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 0, 0, 0, 0 ];
-	actual = mskput( x, mask, new Int32Array( [ 20, 30, 40, 50 ] ), 'strict' );
+	mask = [ 1, 1, 1, 1 ];
+	actual = place( x, mask, new Int32Array( [ 20, 30, 40, 50 ] ), 'strict' );
 	expected = new Int32Array( [ 20, 30, 40, 50 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 1, 1, 1, 1 ];
-	actual = mskput( x, mask, new Int32Array( [ 20, 30, 40, 50 ] ), 'non_strict' );
+	mask = [ 0, 0, 0, 0 ];
+	actual = place( x, mask, new Int32Array( [ 20, 30, 40, 50 ] ), 'non_strict' );
 	expected = new Int32Array( [ 1, 2, 3, 4 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
@@ -144,29 +144,29 @@ tape( 'the function replaces elements in an array (typed, broadcasting)', functi
 	var x;
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 1, 0, 1, 0 ];
-	actual = mskput( x, mask, [ 20 ], 'strict_broadcast' );
+	mask = [ 0, 1, 0, 1 ];
+	actual = place( x, mask, [ 20 ], 'strict_broadcast' );
 	expected = new Int32Array( [ 1, 20, 3, 20 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 0, 0, 0, 0 ];
-	actual = mskput( x, mask, [ 20 ], 'broadcast' );
+	mask = [ 1, 1, 1, 1 ];
+	actual = place( x, mask, [ 20 ], 'broadcast' );
 	expected = new Int32Array( [ 20, 20, 20, 20 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 1, 1, 1, 1 ];
-	actual = mskput( x, mask, [ 20 ], 'strict_broadcast' );
+	mask = [ 0, 0, 0, 0 ];
+	actual = place( x, mask, [ 20 ], 'strict_broadcast' );
 	expected = new Int32Array( [ 1, 2, 3, 4 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
 	x = new Int32Array( [ 1, 2, 3, 4 ] );
-	mask = [ 0, 0, 0, 0 ];
-	actual = mskput( x, mask, [ 100, 200 ], 'repeat' );
+	mask = [ 1, 1, 1, 1 ];
+	actual = place( x, mask, [ 100, 200 ], 'repeat' );
 	expected = new Int32Array( [ 100, 200, 100, 200 ] );
 	t.strictEqual( actual, x, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
@@ -184,7 +184,7 @@ tape( 'the function replaces elements in an array (accessors)', function test( t
 	var i;
 
 	x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	mask = toAccessorArray( [ 1, 0, 1, 0 ] );
+	mask = toAccessorArray( [ 0, 1, 0, 1 ] );
 	values = [
 		new Complex64( 30.0, 40.0 ),
 		new Complex64( 70.0, 80.0 )
@@ -195,7 +195,7 @@ tape( 'the function replaces elements in an array (accessors)', function test( t
 		new Complex64( 5.0, 6.0 ),
 		new Complex64( 70.0, 80.0 )
 	];
-	actual = mskput( x, mask, values, 'strict' );
+	actual = place( x, mask, values, 'strict' );
 
 	t.strictEqual( actual, x, 'returns expected value' );
 	for ( i = 0; i < mask.length; i++ ) {
@@ -217,7 +217,7 @@ tape( 'the function replaces elements in an array (accessors, broadcasting)', fu
 	var i;
 
 	x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	mask = toAccessorArray( [ 1, 0, 1, 0 ] );
+	mask = toAccessorArray( [ 0, 1, 0, 1 ] );
 	values = [
 		new Complex64( 100.0, 200.0 )
 	];
@@ -227,7 +227,7 @@ tape( 'the function replaces elements in an array (accessors, broadcasting)', fu
 		new Complex64( 5.0, 6.0 ),
 		new Complex64( 100.0, 200.0 )
 	];
-	actual = mskput( x, mask, values, 'strict_broadcast' );
+	actual = place( x, mask, values, 'strict_broadcast' );
 
 	t.strictEqual( actual, x, 'returns expected value' );
 	for ( i = 0; i < mask.length; i++ ) {
@@ -249,7 +249,7 @@ tape( 'the function replaces elements in an array (accessors, complex)', functio
 	var i;
 
 	x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	mask = toAccessorArray( [ 1, 0, 1, 0 ] );
+	mask = toAccessorArray( [ 0, 1, 0, 1 ] );
 	values = new Complex64Array( [ 30.0, 40.0, 70.0, 80.0 ] );
 	expected = [
 		new Complex64( 1.0, 2.0 ),
@@ -257,7 +257,7 @@ tape( 'the function replaces elements in an array (accessors, complex)', functio
 		new Complex64( 5.0, 6.0 ),
 		new Complex64( 70.0, 80.0 )
 	];
-	actual = mskput( x, mask, values, 'strict' );
+	actual = place( x, mask, values, 'strict' );
 
 	t.strictEqual( actual, x, 'returns expected value' );
 	for ( i = 0; i < mask.length; i++ ) {
@@ -279,7 +279,7 @@ tape( 'the function replaces elements in an array (accessors, complex, broadcast
 	var i;
 
 	x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	mask = toAccessorArray( [ 1, 0, 1, 0 ] );
+	mask = toAccessorArray( [ 0, 1, 0, 1 ] );
 	values = new Complex64Array( [ 100.0, 200.0 ] );
 	expected = [
 		new Complex64( 1.0, 2.0 ),
@@ -287,7 +287,7 @@ tape( 'the function replaces elements in an array (accessors, complex, broadcast
 		new Complex64( 5.0, 6.0 ),
 		new Complex64( 100.0, 200.0 )
 	];
-	actual = mskput( x, mask, values, 'strict_broadcast' );
+	actual = place( x, mask, values, 'strict_broadcast' );
 
 	t.strictEqual( actual, x, 'returns expected value' );
 	for ( i = 0; i < mask.length; i++ ) {
@@ -309,10 +309,10 @@ tape( 'the function replaces elements in an array (accessors, boolean)', functio
 	var i;
 
 	x = new BooleanArray( [ true, false, false, true ] );
-	mask = toAccessorArray( [ 1, 0, 1, 0 ] );
+	mask = toAccessorArray( [ 0, 1, 0, 1 ] );
 	values = new BooleanArray( [ true, false ] );
 	expected = [ true, true, false, true ];
-	actual = mskput( x, mask, values, 'strict' );
+	actual = place( x, mask, values, 'strict' );
 
 	t.strictEqual( actual, x, 'returns expected value' );
 	for ( i = 0; i < mask.length; i++ ) {
@@ -332,10 +332,10 @@ tape( 'the function replaces elements in an array (accessors, boolean, broadcast
 	var i;
 
 	x = new BooleanArray( [ true, false, false, true ] );
-	mask = toAccessorArray( [ 1, 0, 0, 1 ] );
+	mask = toAccessorArray( [ 0, 1, 1, 0 ] );
 	values = [ true ];
 	expected = [ true, true, true, true ];
-	actual = mskput( x, mask, values, 'strict_broadcast' );
+	actual = place( x, mask, values, 'strict_broadcast' );
 
 	t.strictEqual( actual, x, 'returns expected value' );
 	for ( i = 0; i < mask.length; i++ ) {
@@ -350,13 +350,13 @@ tape( 'when the "mode" is "strict", the function throws an error if provided ins
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
+	mask = [ 1, 1, 1, 1 ];
 
 	t.throws( badValue, Error, 'throws an error' );
 	t.end();
 
 	function badValue() {
-		mskput( x, mask, [ 200 ], 'strict' );
+		place( x, mask, [ 200 ], 'strict' );
 	}
 });
 
@@ -365,13 +365,13 @@ tape( 'when the "mode" is "strict", the function throws an error if provided too
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
+	mask = [ 1, 1, 1, 1 ];
 
 	t.throws( badValue, Error, 'throws an error' );
 	t.end();
 
 	function badValue() {
-		mskput( x, mask, [ 200, 300, 400, 500, 600 ], 'strict' );
+		place( x, mask, [ 200, 300, 400, 500, 600 ], 'strict' );
 	}
 });
 
@@ -380,57 +380,57 @@ tape( 'when the "mode" is "non_strict", the function throws an error if provided
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
+	mask = [ 1, 1, 1, 1 ];
 
 	t.throws( badValue, Error, 'throws an error' );
 	t.end();
 
 	function badValue() {
-		mskput( x, mask, [ 200 ], 'non_strict' );
+		place( x, mask, [ 200 ], 'non_strict' );
 	}
 });
 
-tape( 'when the "mode" is "strict_broadcast", the function throws an error if provided a values array which is broadcast incompatible with the number of falsy values in a mask array (insufficient)', function test( t ) {
+tape( 'when the "mode" is "strict_broadcast", the function throws an error if provided a values array which is broadcast incompatible with the number of truthy values in a mask array (insufficient)', function test( t ) {
 	var mask;
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
+	mask = [ 1, 1, 1, 1 ];
 
 	t.throws( badValue, Error, 'throws an error' );
 	t.end();
 
 	function badValue() {
-		mskput( x, mask, [ 200, 400 ], 'strict_broadcast' );
+		place( x, mask, [ 200, 400 ], 'strict_broadcast' );
 	}
 });
 
-tape( 'when the "mode" is "strict_broadcast", the function throws an error if provided a values array which is broadcast incompatible with the number of falsy values in a mask array (too many)', function test( t ) {
+tape( 'when the "mode" is "strict_broadcast", the function throws an error if provided a values array which is broadcast incompatible with the number of truthy values in a mask array (too many)', function test( t ) {
 	var mask;
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
+	mask = [ 1, 1, 1, 1 ];
 
 	t.throws( badValue, Error, 'throws an error' );
 	t.end();
 
 	function badValue() {
-		mskput( x, mask, [ 200, 400, 500, 600, 700 ], 'strict_broadcast' );
+		place( x, mask, [ 200, 400, 500, 600, 700 ], 'strict_broadcast' );
 	}
 });
 
-tape( 'when the "mode" is "broadcast", the function throws an error if provided a values array which is broadcast incompatible with the number of falsy values in a mask array', function test( t ) {
+tape( 'when the "mode" is "broadcast", the function throws an error if provided a values array which is broadcast incompatible with the number of truthy values in a mask array', function test( t ) {
 	var mask;
 	var x;
 
 	x = [ 1, 2, 3, 4 ];
-	mask = [ 0, 0, 0, 0 ];
+	mask = [ 1, 1, 1, 1 ];
 
 	t.throws( badValue, Error, 'throws an error' );
 	t.end();
 
 	function badValue() {
-		mskput( x, mask, [ 200, 400 ], 'broadcast' );
+		place( x, mask, [ 200, 400 ], 'broadcast' );
 	}
 });

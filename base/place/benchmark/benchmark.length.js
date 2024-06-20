@@ -23,10 +23,10 @@
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var zeros = require( './../../../base/zeros' );
+var ones = require( './../../../base/ones' );
 var isArray = require( '@stdlib/assert/is-array' );
 var pkg = require( './../package.json' ).name;
-var mskput = require( './../lib' );
+var place = require( './../lib' );
 
 
 // VARIABLES //
@@ -51,7 +51,7 @@ function createBenchmark( len ) {
 	var x;
 
 	x = discreteUniform( len, 0, 10, opts );
-	mask = zeros( len );
+	mask = ones( len );
 	values = [
 		discreteUniform( len, -10, 0, opts ),
 		discreteUniform( len, 0, 10, opts )
@@ -71,7 +71,7 @@ function createBenchmark( len ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			v = mskput( x, mask, values[ i%values.length ], 'strict' );
+			v = place( x, mask, values[ i%values.length ], 'strict' );
 			if ( typeof v !== 'object' ) {
 				b.fail( 'should return an array' );
 			}

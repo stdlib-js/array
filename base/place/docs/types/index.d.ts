@@ -34,15 +34,15 @@ type MaskArray = Collection | AccessorArrayLike<any>;
 type ValuesArray<T> = Collection<T> | AccessorArrayLike<T>;
 
 /**
-* Mode specifying behavior when the number of values to set does not equal the number of falsy values in the mask array.
+* Mode specifying behavior when the number of values to set does not equal the number of truthy values in the mask array.
 *
 * ## Notes
 *
 * -   The function supports the following modes:
 *
-*     -   `'strict'`: specifies that the function must raise an exception when the number of `values` does not **exactly** equal the number of falsy `mask` values.
+*     -   `'strict'`: specifies that the function must raise an exception when the number of `values` does not **exactly** equal the number of truthy `mask` values.
 *    -   `'non_strict'`: specifies that the function must raise an exception when the function is provided insufficient `values` to satisfy the `mask` array.
-*    -   `'strict_broadcast'`: specifies that the function must broadcast a single-element `values` array and otherwise raise an exception when the number of `values` does not **exactly** equal the number of falsy `mask` values.
+*    -   `'strict_broadcast'`: specifies that the function must broadcast a single-element `values` array and otherwise raise an exception when the number of `values` does not **exactly** equal the number of truthy `mask` values.
 *    -   `'broadcast'`: specifies that the function must broadcast a single-element `values` array and otherwise raise an exception when the function is provided insufficient `values` to satisfy the `mask` array.
 *    -   `'repeat'`: specifies that the function must reuse provided `values` when replacing elements in `x` in order to satisfy the `mask` array.
 */
@@ -54,7 +54,7 @@ type Mode = 'strict' | 'non_strict' | 'strict_broadcast' | 'broadcast' | 'repeat
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying behavior when the number of values does not equal the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values does not equal the number of truthy values in the mask array
 * @returns input array
 *
 * @example
@@ -62,10 +62,10 @@ type Mode = 'strict' | 'non_strict' | 'strict_broadcast' | 'broadcast' | 'repeat
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 * // returns <Int32Array>[ 1, 20, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -76,13 +76,13 @@ type Mode = 'strict' | 'non_strict' | 'strict_broadcast' | 'broadcast' | 'repeat
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'strict_broadcast' );
+* var out = place( x, [ 0, 1, 1, 0 ], [ 30 ], 'strict_broadcast' );
 * // returns <Int32Array>[ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );
 * // returns true
 */
-declare function mskput<T extends TypedArray | BooleanTypedArray, U = unknown>( x: T, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): T;
+declare function place<T extends TypedArray | BooleanTypedArray, U = unknown>( x: T, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): T;
 
 /**
 * Replaces elements of an array with provided values according to a provided mask array.
@@ -90,7 +90,7 @@ declare function mskput<T extends TypedArray | BooleanTypedArray, U = unknown>( 
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying behavior when the number of values does not equal the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values does not equal the number of truthy values in the mask array
 * @returns input array
 *
 * @example
@@ -98,10 +98,10 @@ declare function mskput<T extends TypedArray | BooleanTypedArray, U = unknown>( 
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = new Complex128Array( [ 20.0, 30.0, 40, 5.0 ] );
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 * // returns <Complex128Array>
 *
 * var bool = ( out === x );
@@ -112,16 +112,16 @@ declare function mskput<T extends TypedArray | BooleanTypedArray, U = unknown>( 
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = new Complex128Array( [ 20.0, 30.0 ] );
 *
-* var out = mskput( x, mask, values, 'strict_broadcast' );
+* var out = place( x, mask, values, 'strict_broadcast' );
 * // returns <Complex128Array>
 *
 * var bool = ( out === x );
 * // returns true
 */
-declare function mskput<T extends ComplexTypedArray>( x: T, mask: MaskArray, values: ValuesArray<ComplexLike | [ number, number ]>, mode: Mode ): T;
+declare function place<T extends ComplexTypedArray>( x: T, mask: MaskArray, values: ValuesArray<ComplexLike | [ number, number ]>, mode: Mode ): T;
 
 /**
 * Replaces elements of an array with provided values according to a provided mask array.
@@ -129,16 +129,16 @@ declare function mskput<T extends ComplexTypedArray>( x: T, mask: MaskArray, val
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying behavior when the number of values does not equal the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values does not equal the number of truthy values in the mask array
 * @returns input array
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 * // returns [ 1, 20, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -147,13 +147,13 @@ declare function mskput<T extends ComplexTypedArray>( x: T, mask: MaskArray, val
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'strict_broadcast' );
+* var out = place( x, [ 0, 1, 1, 0 ], [ 30 ], 'strict_broadcast' );
 * // returns [ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );
 * // returns true
 */
-declare function mskput<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): Array<T | U>;
+declare function place<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): Array<T | U>;
 
 /**
 * Replaces elements of an array with provided values according to a provided mask array.
@@ -161,7 +161,7 @@ declare function mskput<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray,
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying behavior when the number of values does not equal the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values does not equal the number of truthy values in the mask array
 * @returns input array
 *
 * @example
@@ -169,10 +169,10 @@ declare function mskput<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray,
 *
 * var x = toAccessorArray( [ 1, 2, 3, 4 ] );
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 *
 * var bool = ( out === x );
 * // returns true
@@ -182,12 +182,12 @@ declare function mskput<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray,
 *
 * var x = toAccessorArray( [ 1, 2, 3, 4 ] );
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'strict_broadcast' );
+* var out = place( x, [ 0, 1, 1, 0 ], [ 30 ], 'strict_broadcast' );
 *
 * var bool = ( out === x );
 * // returns true
 */
-declare function mskput<T = unknown, U = unknown>( x: AccessorArrayLike<T>, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): AccessorArrayLike<T | U>;
+declare function place<T = unknown, U = unknown>( x: AccessorArrayLike<T>, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): AccessorArrayLike<T | U>;
 
 /**
 * Replaces elements of an array with provided values according to a provided mask array.
@@ -195,16 +195,16 @@ declare function mskput<T = unknown, U = unknown>( x: AccessorArrayLike<T>, mask
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying behavior when the number of values does not equal the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values does not equal the number of truthy values in the mask array
 * @returns input array
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var mask = [ 1, 0, 0, 1 ];
+* var mask = [ 0, 1, 1, 0 ];
 * var values = [ 20, 30 ];
 *
-* var out = mskput( x, mask, values, 'strict' );
+* var out = place( x, mask, values, 'strict' );
 * // returns [ 1, 20, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -213,15 +213,15 @@ declare function mskput<T = unknown, U = unknown>( x: AccessorArrayLike<T>, mask
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'strict_broadcast' );
+* var out = place( x, [ 0, 1, 1, 0 ], [ 30 ], 'strict_broadcast' );
 * // returns [ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );
 * // returns true
 */
-declare function mskput<T = unknown, U = unknown>( x: Collection<T>, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): Collection<T | U>;
+declare function place<T = unknown, U = unknown>( x: Collection<T>, mask: MaskArray, values: ValuesArray<U>, mode: Mode ): Collection<T | U>;
 
 
 // EXPORTS //
 
-export = mskput;
+export = place;
