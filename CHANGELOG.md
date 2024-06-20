@@ -541,6 +541,7 @@
 
 ##### Features
 
+-   [`299be6a`](https://github.com/stdlib-js/stdlib/commit/299be6aa293d738d6be5ef6c4a1aa2efb4cbb8d9) - add boolean dtype support to `array/base/count-falsy`
 -   [`054750f`](https://github.com/stdlib-js/stdlib/commit/054750f2e9d09edcdc4f0859c25e4378cb89c1bd) - add `array/base/count-falsy`
 
 </section>
@@ -2008,6 +2009,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`299be6a`](https://github.com/stdlib-js/stdlib/commit/299be6aa293d738d6be5ef6c4a1aa2efb4cbb8d9) - **feat:** add boolean dtype support to `array/base/count-falsy` _(by Athan Reines)_
 -   [`09f1e11`](https://github.com/stdlib-js/stdlib/commit/09f1e11557f76c8fc6a8e3f9b60b06a8701ded3e) - **feat:** add boolean dtype support to `array/base/count-truthy` _(by Athan Reines)_
 -   [`b981bc3`](https://github.com/stdlib-js/stdlib/commit/b981bc30e83a7f88cdc2c0efca082fb31f9e1ac0) - **refactor:** avoid repeated property access _(by Athan Reines)_
 -   [`550285b`](https://github.com/stdlib-js/stdlib/commit/550285bf4a57dd3dabc8ed3998e7b612515fe082) - **feat:** add support for boolean and mask array assignment _(by Athan Reines)_
