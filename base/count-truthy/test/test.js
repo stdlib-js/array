@@ -22,6 +22,7 @@
 
 var tape = require( 'tape' );
 var Complex128Array = require( './../../../complex128' );
+var BooleanArray = require( './../../../bool' );
 var Int32Array = require( './../../../int32' );
 var toAccessorArray = require( './../../../base/to-accessor-array' );
 var countTruthy = require( './../lib' );
@@ -87,6 +88,19 @@ tape( 'the function counts the number of truthy values (complex typed array)', f
 	t.end();
 });
 
+tape( 'the function counts the number of truthy values (boolean typed array)', function test( t ) {
+	var expected;
+	var actual;
+	var x;
+
+	x = new BooleanArray( [ true, true, false, true ] );
+	expected = 3;
+	actual = countTruthy( x );
+
+	t.strictEqual( actual, expected, 'returns expected value' );
+	t.end();
+});
+
 tape( 'the function returns zero if provided an array of length `0`', function test( t ) {
 	var expected;
 	var actual;
@@ -107,6 +121,10 @@ tape( 'the function returns zero if provided an array of length `0`', function t
 	t.strictEqual( actual, expected, 'returns expected value' );
 
 	x = new Complex128Array( [] );
+	actual = countTruthy( x );
+	t.strictEqual( actual, expected, 'returns expected value' );
+
+	x = new BooleanArray( [] );
 	actual = countTruthy( x );
 	t.strictEqual( actual, expected, 'returns expected value' );
 

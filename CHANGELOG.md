@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-19)
+## Unreleased (2024-06-20)
 
 <section class="packages">
 
@@ -709,6 +709,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`09f1e11`](https://github.com/stdlib-js/stdlib/commit/09f1e11557f76c8fc6a8e3f9b60b06a8701ded3e) - add boolean dtype support to `array/base/count-truthy`
 -   [`8dcd24c`](https://github.com/stdlib-js/stdlib/commit/8dcd24c1ff40d92501acd68627bb05c39dd97355) - add `array/base/count-truthy`
 
 </section>
@@ -2007,6 +2008,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`09f1e11`](https://github.com/stdlib-js/stdlib/commit/09f1e11557f76c8fc6a8e3f9b60b06a8701ded3e) - **feat:** add boolean dtype support to `array/base/count-truthy` _(by Athan Reines)_
 -   [`b981bc3`](https://github.com/stdlib-js/stdlib/commit/b981bc30e83a7f88cdc2c0efca082fb31f9e1ac0) - **refactor:** avoid repeated property access _(by Athan Reines)_
 -   [`550285b`](https://github.com/stdlib-js/stdlib/commit/550285bf4a57dd3dabc8ed3998e7b612515fe082) - **feat:** add support for boolean and mask array assignment _(by Athan Reines)_
 -   [`ff8652b`](https://github.com/stdlib-js/stdlib/commit/ff8652b09457da367683ff80fecdf787b470207f) - **fix:** reassign `condition` to ensure proper iteration when a BooleanArray _(by Athan Reines)_
