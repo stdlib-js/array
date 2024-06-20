@@ -75,6 +75,7 @@
 
 ##### Features
 
+-   [`00fd68d`](https://github.com/stdlib-js/stdlib/commit/00fd68ddf80a71b08e5353c63c297fca4daaf873) - update namespace TypeScript declarations [(#2415)](https://github.com/stdlib-js/stdlib/pull/2415)
 -   [`fd71d8a`](https://github.com/stdlib-js/stdlib/commit/fd71d8a39d9dc53b0d941945d26178e2e079edbc) - add `place` to namespace
 -   [`20cd086`](https://github.com/stdlib-js/stdlib/commit/20cd0868236daf523fcd659d027e2277f7e1cb56) - add `mskput` to namespace
 -   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - add `where` to namespace
@@ -2115,6 +2116,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`00fd68d`](https://github.com/stdlib-js/stdlib/commit/00fd68ddf80a71b08e5353c63c297fca4daaf873) - **feat:** update namespace TypeScript declarations [(#2415)](https://github.com/stdlib-js/stdlib/pull/2415) _(by stdlib-bot, Athan Reines)_
 -   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - **feat:** add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413) _(by Jaysukh Makvana)_
 -   [`e57ccb2`](https://github.com/stdlib-js/stdlib/commit/e57ccb234687de4087aa12348d266ea448f3f241) - **refactor:** update boolean array indexing implementation and add tests _(by Athan Reines)_
 -   [`d903fc9`](https://github.com/stdlib-js/stdlib/commit/d903fc907ddaacc144a97edaaed0f05abadc470c) - **fix:** require broadcast compatibility _(by Athan Reines)_
