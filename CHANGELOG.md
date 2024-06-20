@@ -932,6 +932,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`dc29f10`](https://github.com/stdlib-js/stdlib/commit/dc29f108e512a5ad2be34a7c3f539457648c1ee2) - add \"broadcasting\" mode to require broadcast compatibility
 -   [`e9bf843`](https://github.com/stdlib-js/stdlib/commit/e9bf843b45b204ca61eca213575aa4933026b09b) - add `array/base/mskput`
 
 </section>
@@ -2032,6 +2033,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`dc29f10`](https://github.com/stdlib-js/stdlib/commit/dc29f108e512a5ad2be34a7c3f539457648c1ee2) - **feat:** add \"broadcasting\" mode to require broadcast compatibility _(by Athan Reines)_
 -   [`20cd086`](https://github.com/stdlib-js/stdlib/commit/20cd0868236daf523fcd659d027e2277f7e1cb56) - **feat:** add `mskput` to namespace _(by Athan Reines)_
 -   [`e9bf843`](https://github.com/stdlib-js/stdlib/commit/e9bf843b45b204ca61eca213575aa4933026b09b) - **feat:** add `array/base/mskput` _(by Athan Reines)_
 -   [`33da247`](https://github.com/stdlib-js/stdlib/commit/33da2477cc34e5fcc931b39e996a373d043432e0) - **docs:** fix example _(by Athan Reines)_
