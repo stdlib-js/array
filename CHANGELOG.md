@@ -75,6 +75,7 @@
 
 ##### Features
 
+-   [`20cd086`](https://github.com/stdlib-js/stdlib/commit/20cd0868236daf523fcd659d027e2277f7e1cb56) - add `mskput` to namespace
 -   [`2827035`](https://github.com/stdlib-js/stdlib/commit/2827035933c44ebb301a44200ff9cd5ad73e9ef0) - add `where` to namespace
 -   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394)
 -   [`60fa5ac`](https://github.com/stdlib-js/stdlib/commit/60fa5ac214d2e5dfe310f93928a07515eeeb4a3b) - add `cuevery` to namespace
@@ -910,6 +911,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`23e158b`](https://github.com/stdlib-js/stdlib/commit/23e158b7de87ff40b2fbdc75f1842bbd55641016) - add `array/base/mskfilter-map`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-mskput-unreleased">
+
+#### [@stdlib/array/base/mskput](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskput)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e9bf843`](https://github.com/stdlib-js/stdlib/commit/e9bf843b45b204ca61eca213575aa4933026b09b) - add `array/base/mskput`
 
 </section>
 
@@ -2009,6 +2032,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`20cd086`](https://github.com/stdlib-js/stdlib/commit/20cd0868236daf523fcd659d027e2277f7e1cb56) - **feat:** add `mskput` to namespace _(by Athan Reines)_
+-   [`e9bf843`](https://github.com/stdlib-js/stdlib/commit/e9bf843b45b204ca61eca213575aa4933026b09b) - **feat:** add `array/base/mskput` _(by Athan Reines)_
+-   [`33da247`](https://github.com/stdlib-js/stdlib/commit/33da2477cc34e5fcc931b39e996a373d043432e0) - **docs:** fix example _(by Athan Reines)_
+-   [`7879bf0`](https://github.com/stdlib-js/stdlib/commit/7879bf0ecd89e0b274fb687ff090dd2b863346a3) - **docs:** fix example _(by Athan Reines)_
 -   [`299be6a`](https://github.com/stdlib-js/stdlib/commit/299be6aa293d738d6be5ef6c4a1aa2efb4cbb8d9) - **feat:** add boolean dtype support to `array/base/count-falsy` _(by Athan Reines)_
 -   [`09f1e11`](https://github.com/stdlib-js/stdlib/commit/09f1e11557f76c8fc6a8e3f9b60b06a8701ded3e) - **feat:** add boolean dtype support to `array/base/count-truthy` _(by Athan Reines)_
 -   [`b981bc3`](https://github.com/stdlib-js/stdlib/commit/b981bc30e83a7f88cdc2c0efca082fb31f9e1ac0) - **refactor:** avoid repeated property access _(by Athan Reines)_

@@ -1036,6 +1036,15 @@ setReadOnly( ns, 'mskbinary2d', require( './../../base/mskbinary2d' ) );
 setReadOnly( ns, 'mskfilter', require( './../../base/mskfilter' ) );
 
 /**
+* @name mskput
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/mskput}
+*/
+setReadOnly( ns, 'mskput', require( './../../base/mskput' ) );
+
+/**
 * @name mskreject
 * @memberof ns
 * @readonly
