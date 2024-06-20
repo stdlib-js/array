@@ -1212,6 +1212,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413)
 -   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390)
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384)
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376)
@@ -2114,6 +2115,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - **feat:** add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413) _(by Jaysukh Makvana)_
 -   [`e57ccb2`](https://github.com/stdlib-js/stdlib/commit/e57ccb234687de4087aa12348d266ea448f3f241) - **refactor:** update boolean array indexing implementation and add tests _(by Athan Reines)_
 -   [`d903fc9`](https://github.com/stdlib-js/stdlib/commit/d903fc907ddaacc144a97edaaed0f05abadc470c) - **fix:** require broadcast compatibility _(by Athan Reines)_
 -   [`2769ce9`](https://github.com/stdlib-js/stdlib/commit/2769ce9e876c2a6de5735ffdbc4c79b3d26347b6) - **fix:** require broadcast compatibility _(by Athan Reines)_
