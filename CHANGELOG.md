@@ -1823,6 +1823,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-reviver-unreleased">
+
+#### [@stdlib/array/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/reviver)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4f30f21`](https://github.com/stdlib-js/stdlib/commit/4f30f213c8ec0a95cdcd7dfe7e7a6bf4bec8bd36) - add boolean dtype support to `array/reviver` [(#2420)](https://github.com/stdlib-js/stdlib/pull/2420)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-safe-casts-unreleased">
 
 #### [@stdlib/array/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/safe-casts)
@@ -2164,6 +2186,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`4f30f21`](https://github.com/stdlib-js/stdlib/commit/4f30f213c8ec0a95cdcd7dfe7e7a6bf4bec8bd36) - **feat:** add boolean dtype support to `array/reviver` [(#2420)](https://github.com/stdlib-js/stdlib/pull/2420) _(by Jaysukh Makvana)_
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - **feat:** add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d301be9`](https://github.com/stdlib-js/stdlib/commit/d301be9e2cabe07efe219c00d10aebd15e0673e7) - **fix:** ensure support for real-to-complex casting in boolean and mask array indexing _(by Athan Reines)_
 -   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - **feat:** add `mskput` to namespace _(by Athan Reines)_
