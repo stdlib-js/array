@@ -25,6 +25,7 @@ var AccessorArray = require( './../../../base/accessor' );
 var Float64Array = require( './../../../float64' );
 var Complex64Array = require( './../../../complex64' );
 var Complex128Array = require( './../../../complex128' );
+var BooleanArray = require( './../../../bool' );
 var every = require( './../lib' );
 
 
@@ -74,6 +75,17 @@ tape( 'if provided an empty collection, the function returns `true` (complex typ
 	t.end();
 });
 
+tape( 'if provided an empty collection, the function returns `true` (boolean array)', function test( t ) {
+	var out;
+	var arr;
+
+	arr = new BooleanArray( [] );
+	out = every( arr );
+
+	t.strictEqual( out, true, 'returns expected value' );
+	t.end();
+});
+
 tape( 'if provided an empty collection, the function returns `true` (accessor)', function test( t ) {
 	var out;
 	var arr;
@@ -107,7 +119,7 @@ tape( 'the function returns `true` if all elements are truthy (real typed array)
 	t.end();
 });
 
-tape( 'the function returns `true` if all elements are truthy (real typed array)', function test( t ) {
+tape( 'the function returns `true` if all elements are truthy (complex typed array)', function test( t ) {
 	var out;
 	var arr;
 
@@ -117,6 +129,17 @@ tape( 'the function returns `true` if all elements are truthy (real typed array)
 	t.strictEqual( out, true, 'returns expected value' );
 
 	arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	out = every( arr );
+
+	t.strictEqual( out, true, 'returns expected value' );
+	t.end();
+});
+
+tape( 'the function returns `true` if all elements are truthy (boolean array)', function test( t ) {
+	var out;
+	var arr;
+
+	arr = new BooleanArray( [ true, true, true, true ] );
 	out = every( arr );
 
 	t.strictEqual( out, true, 'returns expected value' );
@@ -182,6 +205,17 @@ tape( 'the function returns `false` if one or more elements are falsy (complex t
 	t.strictEqual( out, false, 'returns expected value' );
 
 	arr = new Complex128Array( [ 0.0, 0.0, 3.0, 4.0 ] );
+	out = every( arr );
+
+	t.strictEqual( out, false, 'returns expected value' );
+	t.end();
+});
+
+tape( 'the function returns `false` if one or more elements are falsy (boolean array)', function test( t ) {
+	var out;
+	var arr;
+
+	arr = new BooleanArray( [ true, false, false, true ] );
 	out = every( arr );
 
 	t.strictEqual( out, false, 'returns expected value' );
