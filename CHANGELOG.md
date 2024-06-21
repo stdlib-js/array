@@ -1988,6 +1988,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`4816901`](https://github.com/stdlib-js/stdlib/commit/481690174833259628032a259dbe7d26bbde807d) - add boolean dtype support to `array/typed` [(#2419)](https://github.com/stdlib-js/stdlib/pull/2419)
 -   [`819d2e4`](https://github.com/stdlib-js/stdlib/commit/819d2e407146d4dcc17f8bab53b591b3d573f8a1) - add data type maps and replace use of overloads [(#1317)](https://github.com/stdlib-js/stdlib/pull/1317)
 
 </section>
@@ -2187,6 +2188,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`4816901`](https://github.com/stdlib-js/stdlib/commit/481690174833259628032a259dbe7d26bbde807d) - **feat:** add boolean dtype support to `array/typed` [(#2419)](https://github.com/stdlib-js/stdlib/pull/2419) _(by Jaysukh Makvana, Athan Reines)_
 -   [`bd678e5`](https://github.com/stdlib-js/stdlib/commit/bd678e56ad259f1424590d1e1ce213dc038cc676) - **feat:** update namespace TypeScript declarations [(#2425)](https://github.com/stdlib-js/stdlib/pull/2425) _(by stdlib-bot, Athan Reines)_
 -   [`4f30f21`](https://github.com/stdlib-js/stdlib/commit/4f30f213c8ec0a95cdcd7dfe7e7a6bf4bec8bd36) - **feat:** add boolean dtype support to `array/reviver` [(#2420)](https://github.com/stdlib-js/stdlib/pull/2420) _(by Jaysukh Makvana)_
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - **feat:** add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421) _(by Jaysukh Makvana, Athan Reines)_
