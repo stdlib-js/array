@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-20)
+## Unreleased (2024-06-21)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - add `place` to namespace
 -   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402)
 -   [`e1993a6`](https://github.com/stdlib-js/stdlib/commit/e1993a6ee84bd212b5a00210e360b14e2a979f3a) - add `put` to namespace
 -   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303)
@@ -1721,6 +1722,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-place-unreleased">
+
+#### [@stdlib/array/place](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/place)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7b97e18`](https://github.com/stdlib-js/stdlib/commit/7b97e18463ee395851cb173559793a9d2a7c37e3) - add `array/place`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-promotion-rules-unreleased">
 
 #### [@stdlib/array/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/promotion-rules)
@@ -2116,6 +2139,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - **feat:** add `place` to namespace _(by Athan Reines)_
+-   [`7b97e18`](https://github.com/stdlib-js/stdlib/commit/7b97e18463ee395851cb173559793a9d2a7c37e3) - **feat:** add `array/place` _(by Athan Reines)_
 -   [`00fd68d`](https://github.com/stdlib-js/stdlib/commit/00fd68ddf80a71b08e5353c63c297fca4daaf873) - **feat:** update namespace TypeScript declarations [(#2415)](https://github.com/stdlib-js/stdlib/pull/2415) _(by stdlib-bot, Athan Reines)_
 -   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - **feat:** add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413) _(by Jaysukh Makvana)_
 -   [`e57ccb2`](https://github.com/stdlib-js/stdlib/commit/e57ccb234687de4087aa12348d266ea448f3f241) - **refactor:** update boolean array indexing implementation and add tests _(by Athan Reines)_
