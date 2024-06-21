@@ -1215,6 +1215,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421)
 -   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413)
 -   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390)
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384)
@@ -2163,6 +2164,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - **feat:** add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d301be9`](https://github.com/stdlib-js/stdlib/commit/d301be9e2cabe07efe219c00d10aebd15e0673e7) - **fix:** ensure support for real-to-complex casting in boolean and mask array indexing _(by Athan Reines)_
 -   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - **feat:** add `mskput` to namespace _(by Athan Reines)_
 -   [`201ce11`](https://github.com/stdlib-js/stdlib/commit/201ce11a0985502cfc82891fda3fe3b2d656afef) - **feat:** add `array/mskput` _(by Athan Reines)_
