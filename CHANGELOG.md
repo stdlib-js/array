@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`bd678e5`](https://github.com/stdlib-js/stdlib/commit/bd678e56ad259f1424590d1e1ce213dc038cc676) - update namespace TypeScript declarations [(#2425)](https://github.com/stdlib-js/stdlib/pull/2425)
 -   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - add `mskput` to namespace
 -   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - add `place` to namespace
 -   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402)
@@ -2186,6 +2187,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`bd678e5`](https://github.com/stdlib-js/stdlib/commit/bd678e56ad259f1424590d1e1ce213dc038cc676) - **feat:** update namespace TypeScript declarations [(#2425)](https://github.com/stdlib-js/stdlib/pull/2425) _(by stdlib-bot, Athan Reines)_
 -   [`4f30f21`](https://github.com/stdlib-js/stdlib/commit/4f30f213c8ec0a95cdcd7dfe7e7a6bf4bec8bd36) - **feat:** add boolean dtype support to `array/reviver` [(#2420)](https://github.com/stdlib-js/stdlib/pull/2420) _(by Jaysukh Makvana)_
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - **feat:** add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d301be9`](https://github.com/stdlib-js/stdlib/commit/d301be9e2cabe07efe219c00d10aebd15e0673e7) - **fix:** ensure support for real-to-complex casting in boolean and mask array indexing _(by Athan Reines)_

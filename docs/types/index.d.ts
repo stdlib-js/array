@@ -56,6 +56,7 @@ import logspace = require( './../../logspace' );
 import minDataType = require( './../../min-dtype' );
 import mostlySafeCasts = require( './../../mostly-safe-casts' );
 import mskfilter = require( './../../mskfilter' );
+import mskput = require( './../../mskput' );
 import mskreject = require( './../../mskreject' );
 import nans = require( './../../nans' );
 import nansLike = require( './../../nans-like' );
@@ -64,6 +65,7 @@ import oneTo = require( './../../one-to' );
 import oneToLike = require( './../../one-to-like' );
 import ones = require( './../../ones' );
 import onesLike = require( './../../ones-like' );
+import place = require( './../../place' );
 import typedarraypool = require( './../../pool' );
 import promotionRules = require( './../../promotion-rules' );
 import put = require( './../../put' );
@@ -933,6 +935,38 @@ interface Namespace {
 	mskfilter: typeof mskfilter;
 
 	/**
+	* Replaces elements of an array with provided values according to a provided mask array.
+	*
+	* @param x - input array
+	* @param mask - mask array
+	* @param values - values to set
+	* @param options - function options
+	* @returns input array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var mask = [ 1, 0, 0, 1 ];
+	* var values = [ 20, 30 ];
+	*
+	* var out = ns.mskput( x, mask, values );
+	* // returns [ 1, 20, 30, 4 ]
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = ns.mskput( x, [ 1, 0, 0, 1 ], [ 30 ] );
+	* // returns [ 1, 30, 30, 4 ]
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	mskput: typeof mskput;
+
+	/**
 	* Returns a new array by applying a mask to a provided input array.
 	*
 	* @param x - input array
@@ -1128,6 +1162,38 @@ interface Namespace {
 	* // returns <Float32Array>[ 1.0, 1.0 ]
 	*/
 	onesLike: typeof onesLike;
+
+	/**
+	* Replaces elements of an array with provided values according to a provided mask array.
+	*
+	* @param x - input array
+	* @param mask - mask array
+	* @param values - values to set
+	* @param options - function options
+	* @returns input array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var mask = [ 0, 1, 1, 0 ];
+	* var values = [ 20, 30 ];
+	*
+	* var out = ns.place( x, mask, values );
+	* // returns [ 1, 20, 30, 4 ]
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = ns.place( x, [ 0, 1, 1, 0 ], [ 30 ] );
+	* // returns [ 1, 30, 30, 4 ]
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	place: typeof place;
 
 	/**
 	* Returns an uninitialized typed array.
