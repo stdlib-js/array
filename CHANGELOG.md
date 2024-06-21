@@ -1917,6 +1917,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`d301be9`](https://github.com/stdlib-js/stdlib/commit/d301be9e2cabe07efe219c00d10aebd15e0673e7) - ensure support for real-to-complex casting in boolean and mask array indexing
 -   [`516b608`](https://github.com/stdlib-js/stdlib/commit/516b60845854eba062430bfb19073a74736c80a0) - support additional error messages
 -   [`29e4c99`](https://github.com/stdlib-js/stdlib/commit/29e4c992e11959432a5347528df132ec56d54121) - propagate options when invoking constructor
 -   [`7eeb330`](https://github.com/stdlib-js/stdlib/commit/7eeb3302172e9a86aa53c803fca6c7b2d2402281) - refactor to preserve constructor behavior and propagate fanciness to returned slices
@@ -2162,6 +2163,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d301be9`](https://github.com/stdlib-js/stdlib/commit/d301be9e2cabe07efe219c00d10aebd15e0673e7) - **fix:** ensure support for real-to-complex casting in boolean and mask array indexing _(by Athan Reines)_
 -   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - **feat:** add `mskput` to namespace _(by Athan Reines)_
 -   [`201ce11`](https://github.com/stdlib-js/stdlib/commit/201ce11a0985502cfc82891fda3fe3b2d656afef) - **feat:** add `array/mskput` _(by Athan Reines)_
 -   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - **feat:** add `place` to namespace _(by Athan Reines)_

@@ -21,12 +21,15 @@
 // MODULES //
 
 var isMostlySafeCast = require( './../../base/assert/is-mostly-safe-data-type-cast' );
+var isRealDataType = require( './../../base/assert/is-real-data-type' );
+var isComplexDataType = require( './../../base/assert/is-complex-floating-point-data-type' );
 var isCollection = require( '@stdlib/assert/is-collection' );
 var scalar2array = require( './../../from-scalar' );
 var dtype = require( './../../dtype' );
 var put = require( './../../put' );
+var place = require( './../../place' );
+var convert = require( './../../convert' );
 var where = require( './../../base/where' ).assign;
-var place = require( './../../base/place' );
 var format = require( '@stdlib/string/format' );
 var prop2array = require( './prop2array.js' );
 var errMessage = require( './error_message.js' );
@@ -88,6 +91,16 @@ function setElements( target, property, value, ctx ) {
 		}
 		return true;
 	}
+	if ( idx.type === 'bool' ) {
+		try {
+			place( target, idx.data, v, {
+				'mode': 'strict_broadcast'
+			});
+		} catch ( err ) {
+			throw new err.constructor( errMessage( err.message ) );
+		}
+		return true;
+	}
 	if ( vdt === void 0 ) {
 		vdt = dtype( value ) || 'generic';
 	}
@@ -95,17 +108,14 @@ function setElements( target, property, value, ctx ) {
 	if ( !isMostlySafeCast( vdt, tdt ) ) {
 		throw new TypeError( format( 'invalid operation. Assigned value cannot be safely cast to the target array data type. Data types: [%s, %s].', vdt, tdt ) );
 	}
-	if ( idx.type === 'bool' ) {
-		try {
-			place( target, idx.data, v, 'strict_broadcast' );
-		} catch ( err ) {
-			throw new err.constructor( errMessage( err.message ) );
-		}
-		return true;
+	// When performing a real-to-complex assignment, interpret the real-valued array as containing real components with implied imaginary components equal to zero and explicitly convert to a complex-valued array...
+	if ( isComplexDataType( tdt ) && isRealDataType( vdt ) ) {
+		v = convert( v, tdt );
 	}
 	if ( idx.type === 'mask' ) {
+		// NOTE: we intentionally deviate from boolean array indexing here and interpret the mask as applying to both the target and values array, thus requiring that the assigned value array be broadcast compatible with the target array and NOT just the selected elements as in boolean array indexing
 		try {
-			where( idx.data, target, v, target, 1, 0 ); // note: intentionally deviate from boolean array indexing here and interpret the mask as applying to both the target and values array, thus requiring that the assigned value array be broadcast compatible with the target array and NOT just the selected elements as in boolean array indexing
+			where( idx.data, target, v, target, 1, 0 );
 		} catch ( err ) {
 			throw new err.constructor( errMessage( err.message ) );
 		}
