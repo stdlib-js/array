@@ -134,6 +134,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-any-unreleased">
+
+#### [@stdlib/array/base/any](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/any)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`28023eb`](https://github.com/stdlib-js/stdlib/commit/28023ebdf7066bd28597809ff1c603f8b17e2ac1) - add boolean dtype support to `array/base/any` [(#2422)](https://github.com/stdlib-js/stdlib/pull/2422)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-assert-unreleased">
 
 #### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
@@ -2210,6 +2232,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`28023eb`](https://github.com/stdlib-js/stdlib/commit/28023ebdf7066bd28597809ff1c603f8b17e2ac1) - **feat:** add boolean dtype support to `array/base/any` [(#2422)](https://github.com/stdlib-js/stdlib/pull/2422) _(by Jaysukh Makvana)_
 -   [`0c57587`](https://github.com/stdlib-js/stdlib/commit/0c575877d0644a9464272aa8f12535a4180be175) - **feat:** add boolean dtype support to `array/base/every` [(#2423)](https://github.com/stdlib-js/stdlib/pull/2423) _(by Jaysukh Makvana, Athan Reines)_
 -   [`4816901`](https://github.com/stdlib-js/stdlib/commit/481690174833259628032a259dbe7d26bbde807d) - **feat:** add boolean dtype support to `array/typed` [(#2419)](https://github.com/stdlib-js/stdlib/pull/2419) _(by Jaysukh Makvana, Athan Reines)_
 -   [`bd678e5`](https://github.com/stdlib-js/stdlib/commit/bd678e56ad259f1424590d1e1ce213dc038cc676) - **feat:** update namespace TypeScript declarations [(#2425)](https://github.com/stdlib-js/stdlib/pull/2425) _(by stdlib-bot, Athan Reines)_
