@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - add `mskput` to namespace
 -   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - add `place` to namespace
 -   [`cd14ed3`](https://github.com/stdlib-js/stdlib/commit/cd14ed3f1bbc7f0cc7dc55d155e6fa86c90adb23) - update namespace TypeScript declarations [(#2402)](https://github.com/stdlib-js/stdlib/pull/2402)
 -   [`e1993a6`](https://github.com/stdlib-js/stdlib/commit/e1993a6ee84bd212b5a00210e360b14e2a979f3a) - add `put` to namespace
@@ -1612,6 +1613,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-mskput-unreleased">
+
+#### [@stdlib/array/mskput](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mskput)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`201ce11`](https://github.com/stdlib-js/stdlib/commit/201ce11a0985502cfc82891fda3fe3b2d656afef) - add `array/mskput`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-mskreject-unreleased">
 
 #### [@stdlib/array/mskreject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mskreject)
@@ -2139,6 +2162,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - **feat:** add `mskput` to namespace _(by Athan Reines)_
+-   [`201ce11`](https://github.com/stdlib-js/stdlib/commit/201ce11a0985502cfc82891fda3fe3b2d656afef) - **feat:** add `array/mskput` _(by Athan Reines)_
 -   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - **feat:** add `place` to namespace _(by Athan Reines)_
 -   [`7b97e18`](https://github.com/stdlib-js/stdlib/commit/7b97e18463ee395851cb173559793a9d2a7c37e3) - **feat:** add `array/place` _(by Athan Reines)_
 -   [`00fd68d`](https://github.com/stdlib-js/stdlib/commit/00fd68ddf80a71b08e5353c63c297fca4daaf873) - **feat:** update namespace TypeScript declarations [(#2415)](https://github.com/stdlib-js/stdlib/pull/2415) _(by stdlib-bot, Athan Reines)_
