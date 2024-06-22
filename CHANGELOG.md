@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-21)
+## Unreleased (2024-06-22)
 
 <section class="packages">
 
@@ -2254,6 +2254,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`61c5609`](https://github.com/stdlib-js/stdlib/commit/61c5609ba30f3b07cd97089746a5dca25a614d94) - **docs:** fix examples in REPL documentation for complex number arrays [(#2431)](https://github.com/stdlib-js/stdlib/pull/2431) _(by Jaysukh Makvana)_
 -   [`4d54abb`](https://github.com/stdlib-js/stdlib/commit/4d54abb0b5e5d2f146e85f2a65799907fbb5bd0c) - **feat:** add boolean dtype support to `array/base/none` [(#2424)](https://github.com/stdlib-js/stdlib/pull/2424) _(by Jaysukh Makvana, Athan Reines)_
 -   [`28023eb`](https://github.com/stdlib-js/stdlib/commit/28023ebdf7066bd28597809ff1c603f8b17e2ac1) - **feat:** add boolean dtype support to `array/base/any` [(#2422)](https://github.com/stdlib-js/stdlib/pull/2422) _(by Jaysukh Makvana)_
 -   [`0c57587`](https://github.com/stdlib-js/stdlib/commit/0c575877d0644a9464272aa8f12535a4180be175) - **feat:** add boolean dtype support to `array/base/every` [(#2423)](https://github.com/stdlib-js/stdlib/pull/2423) _(by Jaysukh Makvana, Athan Reines)_
