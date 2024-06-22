@@ -1282,6 +1282,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432)
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421)
 -   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413)
 -   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390)
@@ -2254,6 +2255,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - **feat:** add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432) _(by Jaysukh Makvana, Athan Reines)_
 -   [`61c5609`](https://github.com/stdlib-js/stdlib/commit/61c5609ba30f3b07cd97089746a5dca25a614d94) - **docs:** fix examples in REPL documentation for complex number arrays [(#2431)](https://github.com/stdlib-js/stdlib/pull/2431) _(by Jaysukh Makvana)_
 -   [`4d54abb`](https://github.com/stdlib-js/stdlib/commit/4d54abb0b5e5d2f146e85f2a65799907fbb5bd0c) - **feat:** add boolean dtype support to `array/base/none` [(#2424)](https://github.com/stdlib-js/stdlib/pull/2424) _(by Jaysukh Makvana, Athan Reines)_
 -   [`28023eb`](https://github.com/stdlib-js/stdlib/commit/28023ebdf7066bd28597809ff1c603f8b17e2ac1) - **feat:** add boolean dtype support to `array/base/any` [(#2422)](https://github.com/stdlib-js/stdlib/pull/2422) _(by Jaysukh Makvana)_
