@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-23)
+## Unreleased (2024-06-24)
 
 <section class="packages">
 
@@ -783,6 +783,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`3c451db`](https://github.com/stdlib-js/stdlib/commit/3c451db98b94e5d89a2aaffca29c4ca93835605f) - add boolean dtype support to `array/base/cuevery` [(#2447)](https://github.com/stdlib-js/stdlib/pull/2447)
 -   [`9445e22`](https://github.com/stdlib-js/stdlib/commit/9445e22fabf3546afe9a6dd33c9131917f960b2a) - add `array/base/cuevery` (#2380) [(#2380)](https://github.com/stdlib-js/stdlib/pull/2380)
 
 </section>
@@ -2256,6 +2257,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3c451db`](https://github.com/stdlib-js/stdlib/commit/3c451db98b94e5d89a2aaffca29c4ca93835605f) - **feat:** add boolean dtype support to `array/base/cuevery` [(#2447)](https://github.com/stdlib-js/stdlib/pull/2447) _(by Jaysukh Makvana)_
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - **feat:** add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441) _(by Jaysukh Makvana)_
 -   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - **feat:** add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432) _(by Jaysukh Makvana, Athan Reines)_
 -   [`61c5609`](https://github.com/stdlib-js/stdlib/commit/61c5609ba30f3b07cd97089746a5dca25a614d94) - **docs:** fix examples in REPL documentation for complex number arrays [(#2431)](https://github.com/stdlib-js/stdlib/pull/2431) _(by Jaysukh Makvana)_
