@@ -761,6 +761,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`c41435f`](https://github.com/stdlib-js/stdlib/commit/c41435fa51e75a6329d78b8e801590476ece06af) - add boolean dtype support to `array/base/cuany` [(#2446)](https://github.com/stdlib-js/stdlib/pull/2446)
 -   [`d9ef2aa`](https://github.com/stdlib-js/stdlib/commit/d9ef2aa6d8d5c22025ad552a21780b07462f3079) - add `array/base/cuany` [(#2375)](https://github.com/stdlib-js/stdlib/pull/2375)
 
 </section>
@@ -2257,6 +2258,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c41435f`](https://github.com/stdlib-js/stdlib/commit/c41435fa51e75a6329d78b8e801590476ece06af) - **feat:** add boolean dtype support to `array/base/cuany` [(#2446)](https://github.com/stdlib-js/stdlib/pull/2446) _(by Jaysukh Makvana)_
 -   [`3c451db`](https://github.com/stdlib-js/stdlib/commit/3c451db98b94e5d89a2aaffca29c4ca93835605f) - **feat:** add boolean dtype support to `array/base/cuevery` [(#2447)](https://github.com/stdlib-js/stdlib/pull/2447) _(by Jaysukh Makvana)_
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - **feat:** add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441) _(by Jaysukh Makvana)_
 -   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - **feat:** add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432) _(by Jaysukh Makvana, Athan Reines)_
