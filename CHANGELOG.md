@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-24)
+## Unreleased (2024-06-25)
 
 <section class="packages">
 
@@ -939,6 +939,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`c04e29b`](https://github.com/stdlib-js/stdlib/commit/c04e29bf919dcc5f1368fecd977db696041ff8db) - add boolean dtype support to `array/base/mskfilter` [(#2450)](https://github.com/stdlib-js/stdlib/pull/2450)
 -   [`d34ae78`](https://github.com/stdlib-js/stdlib/commit/d34ae789c63908f3edd1e7a746abd4cc60619b27) - add `assign` method
 
 </section>
@@ -1164,6 +1165,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`760979b`](https://github.com/stdlib-js/stdlib/commit/760979b6efafb5c235daa718c17d7eb5cef82237) - add boolean dtype support to `array/base/take` [(#2453)](https://github.com/stdlib-js/stdlib/pull/2453)
 -   [`3a57fb4`](https://github.com/stdlib-js/stdlib/commit/3a57fb47211679fa520b5e1613b41aebd30eccf6) - add `assign` method and add support for an index accessor array
 
 </section>
@@ -2258,6 +2260,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c04e29b`](https://github.com/stdlib-js/stdlib/commit/c04e29bf919dcc5f1368fecd977db696041ff8db) - **feat:** add boolean dtype support to `array/base/mskfilter` [(#2450)](https://github.com/stdlib-js/stdlib/pull/2450) _(by Jaysukh Makvana, Athan Reines)_
+-   [`760979b`](https://github.com/stdlib-js/stdlib/commit/760979b6efafb5c235daa718c17d7eb5cef82237) - **feat:** add boolean dtype support to `array/base/take` [(#2453)](https://github.com/stdlib-js/stdlib/pull/2453) _(by Jaysukh Makvana, Athan Reines)_
 -   [`c41435f`](https://github.com/stdlib-js/stdlib/commit/c41435fa51e75a6329d78b8e801590476ece06af) - **feat:** add boolean dtype support to `array/base/cuany` [(#2446)](https://github.com/stdlib-js/stdlib/pull/2446) _(by Jaysukh Makvana)_
 -   [`3c451db`](https://github.com/stdlib-js/stdlib/commit/3c451db98b94e5d89a2aaffca29c4ca93835605f) - **feat:** add boolean dtype support to `array/base/cuevery` [(#2447)](https://github.com/stdlib-js/stdlib/pull/2447) _(by Jaysukh Makvana)_
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - **feat:** add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441) _(by Jaysukh Makvana)_
