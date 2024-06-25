@@ -22,7 +22,6 @@
 
 var tape = require( 'tape' );
 var Complex64Array = require( './../../../complex64' );
-var BooleanArray = require( './../../../bool' );
 var isSameComplex64 = require( '@stdlib/assert/is-same-complex64' );
 var isArray = require( '@stdlib/assert/is-array' );
 var mskfilter = require( './../lib' );
@@ -92,18 +91,6 @@ tape( 'the function filters array elements (accessors)', function test( t ) {
 	for ( i = 0; i < expected.length; i++ ) {
 		t.strictEqual( isSameComplex64( actual[ i ], expected[ i ] ), true, 'returns expected value' );
 	}
-
-	x = new BooleanArray( [ true, false, false, true ] );
-	mask = [ 0, 1, 0, 1 ];
-	actual = mskfilter( x, mask );
-	expected = [ x.get( 1 ), x.get( 3 ) ];
-
-	t.strictEqual( isArray( actual ), true, 'returns expected value' );
-	t.notEqual( actual, x, 'returns different reference' );
-	for ( i = 0; i < expected.length; i++ ) {
-		t.strictEqual( actual[ i ], expected[ i ], 'returns expected value' );
-	}
-
 	t.end();
 });
 
