@@ -1609,6 +1609,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-full-like-unreleased">
+
+#### [@stdlib/array/full-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`bddc8fa`](https://github.com/stdlib-js/stdlib/commit/bddc8fac1c445fe07cae159c3697ad2734432657) - add boolean dtype support to `array/full-like` [(#2462)](https://github.com/stdlib-js/stdlib/pull/2462)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-index-unreleased">
 
 #### [@stdlib/array/index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/index)
@@ -2262,6 +2284,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`bddc8fa`](https://github.com/stdlib-js/stdlib/commit/bddc8fac1c445fe07cae159c3697ad2734432657) - **feat:** add boolean dtype support to `array/full-like` [(#2462)](https://github.com/stdlib-js/stdlib/pull/2462) _(by Jaysukh Makvana, Athan Reines)_
 -   [`3fdfa90`](https://github.com/stdlib-js/stdlib/commit/3fdfa902945e503766b1ae4592a2d094efb0ff7f) - **feat:** add boolean dtype support to `array/full` [(#2461)](https://github.com/stdlib-js/stdlib/pull/2461) _(by Jaysukh Makvana, Athan Reines)_
 -   [`b586995`](https://github.com/stdlib-js/stdlib/commit/b586995441d335964383ac2d3195ab9a55e091f4) - **feat:** add boolean dtype support to `array/base/mskreject` [(#2452)](https://github.com/stdlib-js/stdlib/pull/2452) _(by Jaysukh Makvana, Athan Reines)_
 -   [`c04e29b`](https://github.com/stdlib-js/stdlib/commit/c04e29bf919dcc5f1368fecd977db696041ff8db) - **feat:** add boolean dtype support to `array/base/mskfilter` [(#2450)](https://github.com/stdlib-js/stdlib/pull/2450) _(by Jaysukh Makvana, Athan Reines)_
