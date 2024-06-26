@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-25)
+## Unreleased (2024-06-26)
 
 <section class="packages">
 
@@ -1596,6 +1596,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`3fdfa90`](https://github.com/stdlib-js/stdlib/commit/3fdfa902945e503766b1ae4592a2d094efb0ff7f) - add boolean dtype support to `array/full` [(#2461)](https://github.com/stdlib-js/stdlib/pull/2461)
 -   [`819d2e4`](https://github.com/stdlib-js/stdlib/commit/819d2e407146d4dcc17f8bab53b591b3d573f8a1) - add data type maps and replace use of overloads [(#1317)](https://github.com/stdlib-js/stdlib/pull/1317)
 
 </section>
@@ -2261,6 +2262,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3fdfa90`](https://github.com/stdlib-js/stdlib/commit/3fdfa902945e503766b1ae4592a2d094efb0ff7f) - **feat:** add boolean dtype support to `array/full` [(#2461)](https://github.com/stdlib-js/stdlib/pull/2461) _(by Jaysukh Makvana, Athan Reines)_
 -   [`b586995`](https://github.com/stdlib-js/stdlib/commit/b586995441d335964383ac2d3195ab9a55e091f4) - **feat:** add boolean dtype support to `array/base/mskreject` [(#2452)](https://github.com/stdlib-js/stdlib/pull/2452) _(by Jaysukh Makvana, Athan Reines)_
 -   [`c04e29b`](https://github.com/stdlib-js/stdlib/commit/c04e29bf919dcc5f1368fecd977db696041ff8db) - **feat:** add boolean dtype support to `array/base/mskfilter` [(#2450)](https://github.com/stdlib-js/stdlib/pull/2450) _(by Jaysukh Makvana, Athan Reines)_
 -   [`760979b`](https://github.com/stdlib-js/stdlib/commit/760979b6efafb5c235daa718c17d7eb5cef82237) - **feat:** add boolean dtype support to `array/base/take` [(#2453)](https://github.com/stdlib-js/stdlib/pull/2453) _(by Jaysukh Makvana, Athan Reines)_
