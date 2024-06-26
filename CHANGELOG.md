@@ -2286,6 +2286,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`83044a1`](https://github.com/stdlib-js/stdlib/commit/83044a19f51a143c06d5bb59900d08e02f66e3c4) - **docs:** update namespace TypeScript declarations [(#2465)](https://github.com/stdlib-js/stdlib/pull/2465) _(by stdlib-bot, Athan Reines)_
 -   [`a3132d2`](https://github.com/stdlib-js/stdlib/commit/a3132d275df3729f7d91008bc81610736622ee7a) - **feat:** add boolean dtype support to `array/empty-like` [(#2460)](https://github.com/stdlib-js/stdlib/pull/2460) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d4815b6`](https://github.com/stdlib-js/stdlib/commit/d4815b6becd6231209dfdf39808a0014bcf24b84) - **feat:** add boolean dtype support to `array/empty` [(#2459)](https://github.com/stdlib-js/stdlib/pull/2459) _(by Jaysukh Makvana, Athan Reines)_
 -   [`bddc8fa`](https://github.com/stdlib-js/stdlib/commit/bddc8fac1c445fe07cae159c3697ad2734432657) - **feat:** add boolean dtype support to `array/full-like` [(#2462)](https://github.com/stdlib-js/stdlib/pull/2462) _(by Jaysukh Makvana, Athan Reines)_
