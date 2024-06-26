@@ -1508,6 +1508,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`d4815b6`](https://github.com/stdlib-js/stdlib/commit/d4815b6becd6231209dfdf39808a0014bcf24b84) - add boolean dtype support to `array/empty` [(#2459)](https://github.com/stdlib-js/stdlib/pull/2459)
 -   [`819d2e4`](https://github.com/stdlib-js/stdlib/commit/819d2e407146d4dcc17f8bab53b591b3d573f8a1) - add data type maps and replace use of overloads [(#1317)](https://github.com/stdlib-js/stdlib/pull/1317)
 
 </section>
@@ -2284,6 +2285,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d4815b6`](https://github.com/stdlib-js/stdlib/commit/d4815b6becd6231209dfdf39808a0014bcf24b84) - **feat:** add boolean dtype support to `array/empty` [(#2459)](https://github.com/stdlib-js/stdlib/pull/2459) _(by Jaysukh Makvana, Athan Reines)_
 -   [`bddc8fa`](https://github.com/stdlib-js/stdlib/commit/bddc8fac1c445fe07cae159c3697ad2734432657) - **feat:** add boolean dtype support to `array/full-like` [(#2462)](https://github.com/stdlib-js/stdlib/pull/2462) _(by Jaysukh Makvana, Athan Reines)_
 -   [`3fdfa90`](https://github.com/stdlib-js/stdlib/commit/3fdfa902945e503766b1ae4592a2d094efb0ff7f) - **feat:** add boolean dtype support to `array/full` [(#2461)](https://github.com/stdlib-js/stdlib/pull/2461) _(by Jaysukh Makvana, Athan Reines)_
 -   [`b586995`](https://github.com/stdlib-js/stdlib/commit/b586995441d335964383ac2d3195ab9a55e091f4) - **feat:** add boolean dtype support to `array/base/mskreject` [(#2452)](https://github.com/stdlib-js/stdlib/pull/2452) _(by Jaysukh Makvana, Athan Reines)_
