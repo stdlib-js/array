@@ -2291,6 +2291,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3368a35`](https://github.com/stdlib-js/stdlib/commit/3368a3503ee7df4d1c0803ada84863b4250c76fa) - **docs:** update namespace TypeScript declarations [(#2477)](https://github.com/stdlib-js/stdlib/pull/2477) _(by stdlib-bot, Athan Reines)_
 -   [`3a3116e`](https://github.com/stdlib-js/stdlib/commit/3a3116e3ff5bef42e4b4f39e5375b89a877ccff0) - **feat:** add boolean dtype support to `array/from-scalar` [(#2470)](https://github.com/stdlib-js/stdlib/pull/2470) _(by Jaysukh Makvana, Athan Reines)_
 -   [`8a55ea2`](https://github.com/stdlib-js/stdlib/commit/8a55ea29ae7cc04e9ebef428ee90900641bbabe1) - **feat:** add boolean dtype support to `array/filled` [(#2471)](https://github.com/stdlib-js/stdlib/pull/2471) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d1ef4ee`](https://github.com/stdlib-js/stdlib/commit/d1ef4ee589cb2a7a0d8bbc0b37be3cf3b7a6aad2) - **feat:** add boolean dtype support to `array/base/count-same-value-zero` [(#2474)](https://github.com/stdlib-js/stdlib/pull/2474) _(by Jaysukh Makvana, Athan Reines)_
