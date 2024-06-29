@@ -25,9 +25,11 @@ var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var Complex128Array = require( './../../complex128' );
 var Complex64Array = require( './../../complex64' );
+var BooleanArray = require( './../../bool' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
 var Int32Array = require( './../../int32' );
+var isSameBooleanArray = require( '@stdlib/assert/is-same-booleanarray' );
 var isSameComplex128Array = require( '@stdlib/assert/is-same-complex128array' );
 var isSameComplex64Array = require( '@stdlib/assert/is-same-complex64array' );
 var isSameFloat64Array = require( '@stdlib/assert/is-same-float64array' );
@@ -75,6 +77,17 @@ tape( 'the function returns a single element containing a provided scalar value 
 	expected = new Float64Array( [ 3.0 ] );
 
 	t.strictEqual( isSameFloat64Array( actual, expected ), true, 'returns expected value' );
+	t.end();
+});
+
+tape( 'the function returns a single element containing a provided scalar value (default, bool)', function test( t ) {
+	var expected;
+	var actual;
+
+	actual = array2scalar( true );
+	expected = new BooleanArray( [ true ] );
+
+	t.strictEqual( isSameBooleanArray( actual, expected ), true, 'returns expected value' );
 	t.end();
 });
 
@@ -169,6 +182,22 @@ tape( 'the function returns a single element containing a provided scalar value 
 	expected = [ 3.0 ];
 
 	t.strictEqual( isSameArray( actual, expected ), true, 'returns expected value' );
+	t.end();
+});
+
+tape( 'the function returns a single element containing a provided scalar value (dtype=bool)', function test( t ) {
+	var expected;
+	var actual;
+
+	actual = array2scalar( false, 'bool' );
+	expected = new BooleanArray( [ false ] );
+
+	t.strictEqual( isSameBooleanArray( actual, expected ), true, 'returns expected value' );
+
+	actual = array2scalar( true, 'bool' );
+	expected = new BooleanArray( [ true ] );
+
+	t.strictEqual( isSameBooleanArray( actual, expected ), true, 'returns expected value' );
 	t.end();
 });
 
