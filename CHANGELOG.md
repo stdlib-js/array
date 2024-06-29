@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-26)
+## Unreleased (2024-06-29)
 
 <section class="packages">
 
@@ -1287,6 +1287,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472)
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441)
 -   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432)
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421)
@@ -2286,6 +2287,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - **feat:** add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472) _(by Jaysukh Makvana, Athan Reines)_
 -   [`83044a1`](https://github.com/stdlib-js/stdlib/commit/83044a19f51a143c06d5bb59900d08e02f66e3c4) - **docs:** update namespace TypeScript declarations [(#2465)](https://github.com/stdlib-js/stdlib/pull/2465) _(by stdlib-bot, Athan Reines)_
 -   [`a3132d2`](https://github.com/stdlib-js/stdlib/commit/a3132d275df3729f7d91008bc81610736622ee7a) - **feat:** add boolean dtype support to `array/empty-like` [(#2460)](https://github.com/stdlib-js/stdlib/pull/2460) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d4815b6`](https://github.com/stdlib-js/stdlib/commit/d4815b6becd6231209dfdf39808a0014bcf24b84) - **feat:** add boolean dtype support to `array/empty` [(#2459)](https://github.com/stdlib-js/stdlib/pull/2459) _(by Jaysukh Makvana, Athan Reines)_
