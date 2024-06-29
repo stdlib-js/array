@@ -1557,6 +1557,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`8a55ea2`](https://github.com/stdlib-js/stdlib/commit/8a55ea29ae7cc04e9ebef428ee90900641bbabe1) - add boolean dtype support to `array/filled` [(#2471)](https://github.com/stdlib-js/stdlib/pull/2471)
 -   [`819d2e4`](https://github.com/stdlib-js/stdlib/commit/819d2e407146d4dcc17f8bab53b591b3d573f8a1) - add data type maps and replace use of overloads [(#1317)](https://github.com/stdlib-js/stdlib/pull/1317)
 
 </section>
@@ -2289,6 +2290,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`8a55ea2`](https://github.com/stdlib-js/stdlib/commit/8a55ea29ae7cc04e9ebef428ee90900641bbabe1) - **feat:** add boolean dtype support to `array/filled` [(#2471)](https://github.com/stdlib-js/stdlib/pull/2471) _(by Jaysukh Makvana, Athan Reines)_
 -   [`d1ef4ee`](https://github.com/stdlib-js/stdlib/commit/d1ef4ee589cb2a7a0d8bbc0b37be3cf3b7a6aad2) - **feat:** add boolean dtype support to `array/base/count-same-value-zero` [(#2474)](https://github.com/stdlib-js/stdlib/pull/2474) _(by Jaysukh Makvana, Athan Reines)_
 -   [`fd396b3`](https://github.com/stdlib-js/stdlib/commit/fd396b360cbca9c4c000d3f33eed5dfc18de6d6b) - **feat:** add boolean dtype support to `array/base/count-same-value` [(#2473)](https://github.com/stdlib-js/stdlib/pull/2473) _(by Jaysukh Makvana, Athan Reines)_
 -   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - **feat:** add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472) _(by Jaysukh Makvana, Athan Reines)_
