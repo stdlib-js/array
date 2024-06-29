@@ -671,6 +671,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`d1ef4ee`](https://github.com/stdlib-js/stdlib/commit/d1ef4ee589cb2a7a0d8bbc0b37be3cf3b7a6aad2) - add boolean dtype support to `array/base/count-same-value-zero` [(#2474)](https://github.com/stdlib-js/stdlib/pull/2474)
 -   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - add `array/base/count-same-value-zero` [(##1384)](#1384)
 
 </section>
@@ -2288,6 +2289,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d1ef4ee`](https://github.com/stdlib-js/stdlib/commit/d1ef4ee589cb2a7a0d8bbc0b37be3cf3b7a6aad2) - **feat:** add boolean dtype support to `array/base/count-same-value-zero` [(#2474)](https://github.com/stdlib-js/stdlib/pull/2474) _(by Jaysukh Makvana, Athan Reines)_
 -   [`fd396b3`](https://github.com/stdlib-js/stdlib/commit/fd396b360cbca9c4c000d3f33eed5dfc18de6d6b) - **feat:** add boolean dtype support to `array/base/count-same-value` [(#2473)](https://github.com/stdlib-js/stdlib/pull/2473) _(by Jaysukh Makvana, Athan Reines)_
 -   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - **feat:** add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472) _(by Jaysukh Makvana, Athan Reines)_
 -   [`83044a1`](https://github.com/stdlib-js/stdlib/commit/83044a19f51a143c06d5bb59900d08e02f66e3c4) - **docs:** update namespace TypeScript declarations [(#2465)](https://github.com/stdlib-js/stdlib/pull/2465) _(by stdlib-bot, Athan Reines)_
