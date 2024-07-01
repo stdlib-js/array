@@ -1401,6 +1401,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`adb47ab`](https://github.com/stdlib-js/stdlib/commit/adb47abbac01e5bcc673f1ddd6815cb8ff22d8e3) - add boolean dtype support to `array/convert` [(#2488)](https://github.com/stdlib-js/stdlib/pull/2488)
 -   [`819d2e4`](https://github.com/stdlib-js/stdlib/commit/819d2e407146d4dcc17f8bab53b591b3d573f8a1) - add data type maps and replace use of overloads [(#1317)](https://github.com/stdlib-js/stdlib/pull/1317)
 
 </section>
@@ -2336,6 +2337,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`adb47ab`](https://github.com/stdlib-js/stdlib/commit/adb47abbac01e5bcc673f1ddd6815cb8ff22d8e3) - **feat:** add boolean dtype support to `array/convert` [(#2488)](https://github.com/stdlib-js/stdlib/pull/2488) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - **feat:** update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490) _(by stdlib-bot, Athan Reines)_
 -   [`6b0e763`](https://github.com/stdlib-js/stdlib/commit/6b0e763f6763fcad684f7cc82bb3300837dad71b) - **docs:** update example and add return description [(#2489)](https://github.com/stdlib-js/stdlib/pull/2489) _(by Jaysukh Makvana)_
 -   [`37ca4b7`](https://github.com/stdlib-js/stdlib/commit/37ca4b7ca0d5a2d0553f4d3b0d763d81e38a1bc9) - **feat:** add boolean dtype support to `array/filled-by` [(#2487)](https://github.com/stdlib-js/stdlib/pull/2487) _(by Jaysukh Makvana, Athan Reines)_
