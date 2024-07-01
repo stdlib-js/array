@@ -1570,6 +1570,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-filled-by-unreleased">
+
+#### [@stdlib/array/filled-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`37ca4b7`](https://github.com/stdlib-js/stdlib/commit/37ca4b7ca0d5a2d0553f4d3b0d763d81e38a1bc9) - add boolean dtype support to `array/filled-by` [(#2487)](https://github.com/stdlib-js/stdlib/pull/2487)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-from-scalar-unreleased">
 
 #### [@stdlib/array/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/from-scalar)
@@ -2313,6 +2335,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`37ca4b7`](https://github.com/stdlib-js/stdlib/commit/37ca4b7ca0d5a2d0553f4d3b0d763d81e38a1bc9) - **feat:** add boolean dtype support to `array/filled-by` [(#2487)](https://github.com/stdlib-js/stdlib/pull/2487) _(by Jaysukh Makvana, Athan Reines)_
 -   [`88cece6`](https://github.com/stdlib-js/stdlib/commit/88cece679d728150847dc2b5c957b395bffe7d90) - **feat:** add boolean dtype support to `array/pool` [(#2486)](https://github.com/stdlib-js/stdlib/pull/2486) _(by Jaysukh Makvana, Athan Reines)_
 -   [`3368a35`](https://github.com/stdlib-js/stdlib/commit/3368a3503ee7df4d1c0803ada84863b4250c76fa) - **docs:** update namespace TypeScript declarations [(#2477)](https://github.com/stdlib-js/stdlib/pull/2477) _(by stdlib-bot, Athan Reines)_
 -   [`3a3116e`](https://github.com/stdlib-js/stdlib/commit/3a3116e3ff5bef42e4b4f39e5375b89a877ccff0) - **feat:** add boolean dtype support to `array/from-scalar` [(#2470)](https://github.com/stdlib-js/stdlib/pull/2470) _(by Jaysukh Makvana, Athan Reines)_
