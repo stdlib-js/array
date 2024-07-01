@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490)
 -   [`bd678e5`](https://github.com/stdlib-js/stdlib/commit/bd678e56ad259f1424590d1e1ce213dc038cc676) - update namespace TypeScript declarations [(#2425)](https://github.com/stdlib-js/stdlib/pull/2425)
 -   [`0b727a5`](https://github.com/stdlib-js/stdlib/commit/0b727a5d922225d23693e456b5f7b5b82f63750a) - add `mskput` to namespace
 -   [`82a217c`](https://github.com/stdlib-js/stdlib/commit/82a217c79f7c10d4aca129fbaba753ce5055115a) - add `place` to namespace
@@ -2335,6 +2336,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - **feat:** update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490) _(by stdlib-bot, Athan Reines)_
 -   [`6b0e763`](https://github.com/stdlib-js/stdlib/commit/6b0e763f6763fcad684f7cc82bb3300837dad71b) - **docs:** update example and add return description [(#2489)](https://github.com/stdlib-js/stdlib/pull/2489) _(by Jaysukh Makvana)_
 -   [`37ca4b7`](https://github.com/stdlib-js/stdlib/commit/37ca4b7ca0d5a2d0553f4d3b0d763d81e38a1bc9) - **feat:** add boolean dtype support to `array/filled-by` [(#2487)](https://github.com/stdlib-js/stdlib/pull/2487) _(by Jaysukh Makvana, Athan Reines)_
 -   [`88cece6`](https://github.com/stdlib-js/stdlib/commit/88cece679d728150847dc2b5c957b395bffe7d90) - **feat:** add boolean dtype support to `array/pool` [(#2486)](https://github.com/stdlib-js/stdlib/pull/2486) _(by Jaysukh Makvana, Athan Reines)_
