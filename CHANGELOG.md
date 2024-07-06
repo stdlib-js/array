@@ -812,6 +812,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-cunone-unreleased">
+
+#### [@stdlib/array/base/cunone](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cunone)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`1443ba6`](https://github.com/stdlib-js/stdlib/commit/1443ba64ce5a5bbc0ba23e826246f99622eead7e) - add `array/base/cunone` [(#2527)](https://github.com/stdlib-js/stdlib/pull/2527)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#2321](https://github.com/stdlib-js/stdlib/issues/2321)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-every-unreleased">
 
 #### [@stdlib/array/base/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/every)
@@ -2322,9 +2356,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#2320](https://github.com/stdlib-js/stdlib/issues/2320), [##1324](#1324), [##1326](#1326), [##1328 ](#1328 ), [#1325](https://github.com/stdlib-js/stdlib/issues/1325)
+[#2320](https://github.com/stdlib-js/stdlib/issues/2320), [#2321](https://github.com/stdlib-js/stdlib/issues/2321), [##1324](#1324), [##1326](#1326), [##1328 ](#1328 ), [#1325](https://github.com/stdlib-js/stdlib/issues/1325)
 
 </section>
 
@@ -2360,6 +2394,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`1443ba6`](https://github.com/stdlib-js/stdlib/commit/1443ba64ce5a5bbc0ba23e826246f99622eead7e) - **feat:** add `array/base/cunone` [(#2527)](https://github.com/stdlib-js/stdlib/pull/2527) _(by Aditya Sapra, Athan Reines)_
 -   [`4059e11`](https://github.com/stdlib-js/stdlib/commit/4059e1125ea8e16467e28ea4523aa06b3345b620) - **docs:** remove blank line _(by Athan Reines)_
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - **feat:** add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509) _(by Jaysukh Makvana, Athan Reines)_
 -   [`48fd331`](https://github.com/stdlib-js/stdlib/commit/48fd331d8f79ee2d51cd2618e70f79809f52336e) - **feat:** add boolean dtype support to `array/convert-same` [(#2494)](https://github.com/stdlib-js/stdlib/pull/2494) _(by Jaysukh Makvana, Athan Reines)_
