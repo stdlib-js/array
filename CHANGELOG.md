@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-05)
+## Unreleased (2024-07-06)
 
 <section class="packages">
 
@@ -2360,6 +2360,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`4059e11`](https://github.com/stdlib-js/stdlib/commit/4059e1125ea8e16467e28ea4523aa06b3345b620) - **docs:** remove blank line _(by Athan Reines)_
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - **feat:** add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509) _(by Jaysukh Makvana, Athan Reines)_
 -   [`48fd331`](https://github.com/stdlib-js/stdlib/commit/48fd331d8f79ee2d51cd2618e70f79809f52336e) - **feat:** add boolean dtype support to `array/convert-same` [(#2494)](https://github.com/stdlib-js/stdlib/pull/2494) _(by Jaysukh Makvana, Athan Reines)_
 -   [`adb47ab`](https://github.com/stdlib-js/stdlib/commit/adb47abbac01e5bcc673f1ddd6815cb8ff22d8e3) - **feat:** add boolean dtype support to `array/convert` [(#2488)](https://github.com/stdlib-js/stdlib/pull/2488) _(by Jaysukh Makvana, Athan Reines)_
