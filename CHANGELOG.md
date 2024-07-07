@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-06)
+## Unreleased (2024-07-07)
 
 <section class="packages">
 
@@ -2394,6 +2394,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`4708d70`](https://github.com/stdlib-js/stdlib/commit/4708d704db87214af36a82e77072e3aade8c29fd) - **docs:** update namespace table of contents [(#2532)](2532) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`1443ba6`](https://github.com/stdlib-js/stdlib/commit/1443ba64ce5a5bbc0ba23e826246f99622eead7e) - **feat:** add `array/base/cunone` [(#2527)](https://github.com/stdlib-js/stdlib/pull/2527) _(by Aditya Sapra, Athan Reines)_
 -   [`4059e11`](https://github.com/stdlib-js/stdlib/commit/4059e1125ea8e16467e28ea4523aa06b3345b620) - **docs:** remove blank line _(by Athan Reines)_
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - **feat:** add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509) _(by Jaysukh Makvana, Athan Reines)_
