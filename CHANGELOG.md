@@ -2394,6 +2394,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
+-   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`4708d70`](https://github.com/stdlib-js/stdlib/commit/4708d704db87214af36a82e77072e3aade8c29fd) - **docs:** update namespace table of contents [(#2532)](2532) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`1443ba6`](https://github.com/stdlib-js/stdlib/commit/1443ba64ce5a5bbc0ba23e826246f99622eead7e) - **feat:** add `array/base/cunone` [(#2527)](https://github.com/stdlib-js/stdlib/pull/2527) _(by Aditya Sapra, Athan Reines)_
 -   [`4059e11`](https://github.com/stdlib-js/stdlib/commit/4059e1125ea8e16467e28ea4523aa06b3345b620) - **docs:** remove blank line _(by Athan Reines)_
