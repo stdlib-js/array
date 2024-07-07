@@ -35,20 +35,32 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, filled, filledBy, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -200,6 +212,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`minDataType( value )`][@stdlib/array/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum array data type of the closest "kind" necessary for storing a provided scalar value.</span>
 -   <span class="signature">[`mostlySafeCasts( [dtype] )`][@stdlib/array/mostly-safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast and, for floating-point data types, can be downcast.</span>
 -   <span class="signature">[`mskfilter( x, mask )`][@stdlib/array/mskfilter]</span><span class="delimiter">: </span><span class="description">apply a mask to a provided input array.</span>
+-   <span class="signature">[`mskput( x, mask, values[, options] )`][@stdlib/array/mskput]</span><span class="delimiter">: </span><span class="description">replace elements of an array with provided values according to a provided mask array.</span>
 -   <span class="signature">[`mskreject( x, mask )`][@stdlib/array/mskreject]</span><span class="delimiter">: </span><span class="description">apply a mask to a provided input array.</span>
 -   <span class="signature">[`nansLike( x[, dtype] )`][@stdlib/array/nans-like]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having the same length and data type as a provided array.</span>
 -   <span class="signature">[`nans( length[, dtype] )`][@stdlib/array/nans]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having a specified length.</span>
@@ -208,6 +221,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`oneTo( n[, dtype] )`][@stdlib/array/one-to]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by `1` starting from one.</span>
 -   <span class="signature">[`onesLike( x[, dtype] )`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
 -   <span class="signature">[`ones( length[, dtype] )`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
+-   <span class="signature">[`place( x, mask, values[, options] )`][@stdlib/array/place]</span><span class="delimiter">: </span><span class="description">replace elements of an array with provided values according to a provided mask array.</span>
 -   <span class="signature">[`typedarraypool()`][@stdlib/array/pool]</span><span class="delimiter">: </span><span class="description">allocate typed arrays from a typed array memory pool.</span>
 -   <span class="signature">[`promotionRules( [dtype1, dtype2] )`][@stdlib/array/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the array data type with the smallest size and closest "kind" to which array data types can be **safely** cast.</span>
 -   <span class="signature">[`put( x, indices, values[, options] )`][@stdlib/array/put]</span><span class="delimiter">: </span><span class="description">replace specified elements of an array with provided values.</span>
@@ -251,8 +265,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -278,7 +292,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -389,6 +403,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/mskfilter]: https://github.com/stdlib-js/array/tree/main/mskfilter
 
+[@stdlib/array/mskput]: https://github.com/stdlib-js/array/tree/main/mskput
+
 [@stdlib/array/mskreject]: https://github.com/stdlib-js/array/tree/main/mskreject
 
 [@stdlib/array/nans-like]: https://github.com/stdlib-js/array/tree/main/nans-like
@@ -404,6 +420,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/ones-like]: https://github.com/stdlib-js/array/tree/main/ones-like
 
 [@stdlib/array/ones]: https://github.com/stdlib-js/array/tree/main/ones
+
+[@stdlib/array/place]: https://github.com/stdlib-js/array/tree/main/place
 
 [@stdlib/array/pool]: https://github.com/stdlib-js/array/tree/main/pool
 
