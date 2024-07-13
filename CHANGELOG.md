@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-12)
+## Unreleased (2024-07-13)
 
 <section class="packages">
 
@@ -1755,6 +1755,41 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-min-dtype-unreleased">
+
+#### [@stdlib/array/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/min-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae) - add boolean dtype support to `array/min-dtype` [(#2556)](https://github.com/stdlib-js/stdlib/pull/2556)
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): add boolean dtype support to `array/min-dtype`
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): return \"bool\" when provided a boolean 
+
+    -   To migrate, users explicitly handle \"bool\" return values. If \"generic\" is still desired, users should consolidate accordingly.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-mostly-safe-casts-unreleased">
 
 #### [@stdlib/array/mostly-safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mostly-safe-casts)
@@ -2326,6 +2361,11 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): add boolean dtype support to `array/min-dtype`
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): return \"bool\" when provided a boolean 
+
+    -   To migrate, users explicitly handle \"bool\" return values. If \"generic\" is still desired, users should consolidate accordingly.
+
 -   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): add support for additional modes
 -   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): rename 'throw' mode to 'strict' 
 
@@ -2395,6 +2435,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae) - **feat:** add boolean dtype support to `array/min-dtype` [(#2556)](https://github.com/stdlib-js/stdlib/pull/2556) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - **feat:** add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557) _(by Jaysukh Makvana, Athan Reines)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
