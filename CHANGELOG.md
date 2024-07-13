@@ -2435,6 +2435,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`2cf1a24`](https://github.com/stdlib-js/stdlib/commit/2cf1a248120648c46ca4e5bd6535c62a6f3eba6e) - **docs:** update namespace TypeScript declarations [(#2582)](https://github.com/stdlib-js/stdlib/pull/2582) _(by stdlib-bot, Athan Reines)_
 -   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae) - **feat:** add boolean dtype support to `array/min-dtype` [(#2556)](https://github.com/stdlib-js/stdlib/pull/2556) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - **feat:** add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557) _(by Jaysukh Makvana, Athan Reines)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
