@@ -1324,6 +1324,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590)
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557)
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509)
 -   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472)
@@ -2435,6 +2436,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - **feat:** add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590) _(by Jaysukh Makvana)_
 -   [`2cf1a24`](https://github.com/stdlib-js/stdlib/commit/2cf1a248120648c46ca4e5bd6535c62a6f3eba6e) - **docs:** update namespace TypeScript declarations [(#2582)](https://github.com/stdlib-js/stdlib/pull/2582) _(by stdlib-bot, Athan Reines)_
 -   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae) - **feat:** add boolean dtype support to `array/min-dtype` [(#2556)](https://github.com/stdlib-js/stdlib/pull/2556) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - **feat:** add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557) _(by Jaysukh Makvana, Athan Reines)_
