@@ -1324,6 +1324,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607)
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590)
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557)
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509)
@@ -2436,6 +2437,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - **feat:** add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607) _(by Jaysukh Makvana, Athan Reines)_
 -   [`523b380`](https://github.com/stdlib-js/stdlib/commit/523b3805be86c1fd99d8e65a8f89cdcbe7ec1fa0) - **refactor:** update error message interpolation _(by Athan Reines)_
 -   [`1cba41b`](https://github.com/stdlib-js/stdlib/commit/1cba41b45734d186a349d7987028307144faf4a3) - **docs:** update examples _(by Athan Reines)_
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - **feat:** add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590) _(by Jaysukh Makvana)_
