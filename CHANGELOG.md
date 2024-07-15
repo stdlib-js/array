@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-14)
+## Unreleased (2024-07-15)
 
 <section class="packages">
 
@@ -2436,6 +2436,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`523b380`](https://github.com/stdlib-js/stdlib/commit/523b3805be86c1fd99d8e65a8f89cdcbe7ec1fa0) - **refactor:** update error message interpolation _(by Athan Reines)_
 -   [`1cba41b`](https://github.com/stdlib-js/stdlib/commit/1cba41b45734d186a349d7987028307144faf4a3) - **docs:** update examples _(by Athan Reines)_
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - **feat:** add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590) _(by Jaysukh Makvana)_
 -   [`2cf1a24`](https://github.com/stdlib-js/stdlib/commit/2cf1a248120648c46ca4e5bd6535c62a6f3eba6e) - **docs:** update namespace TypeScript declarations [(#2582)](https://github.com/stdlib-js/stdlib/pull/2582) _(by stdlib-bot, Athan Reines)_
