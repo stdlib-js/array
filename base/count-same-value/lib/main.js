@@ -29,7 +29,7 @@ var isBooleanArray = require( './../../../base/assert/is-booleanarray' );
 var isAccessorArray = require( './../../../base/assert/is-accessor-array' );
 var resolveGetter = require( './../../../base/resolve-getter' );
 var isSameValue = require( '@stdlib/assert/is-same-value' );
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
 
