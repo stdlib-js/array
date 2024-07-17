@@ -30,7 +30,7 @@ var isAccessorArray = require( './../../../base/assert/is-accessor-array' );
 var resolveGetter = require( './../../../base/resolve-getter' );
 var isSameValue = require( '@stdlib/assert/is-same-value' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 
 // FUNCTIONS //

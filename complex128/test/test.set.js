@@ -27,7 +27,7 @@ var ArrayBuffer = require( './../../buffer' );
 var Float64Array = require( './../../float64' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 var Complex128Array = require( './../lib' );
 
 

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-15)
+## Unreleased (2024-07-17)
 
 <section class="packages">
 
@@ -2437,6 +2437,9 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`8d4c46b`](https://github.com/stdlib-js/stdlib/commit/8d4c46b10ca912401e0ff0caa37a17cd3c443c2f) - **refactor:** update paths _(by Athan Reines)_
+-   [`ed9c0a5`](https://github.com/stdlib-js/stdlib/commit/ed9c0a5e55ff09af3dd6af8c38615480e2c1828e) - **refactor:** update paths _(by Athan Reines)_
+-   [`18b3c79`](https://github.com/stdlib-js/stdlib/commit/18b3c79c5035c7082618b7379cd6576e64393a96) - **refactor:** update paths _(by Athan Reines)_
 -   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - **feat:** add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607) _(by Jaysukh Makvana, Athan Reines)_
 -   [`523b380`](https://github.com/stdlib-js/stdlib/commit/523b3805be86c1fd99d8e65a8f89cdcbe7ec1fa0) - **refactor:** update error message interpolation _(by Athan Reines)_
 -   [`1cba41b`](https://github.com/stdlib-js/stdlib/commit/1cba41b45734d186a349d7987028307144faf4a3) - **docs:** update examples _(by Athan Reines)_

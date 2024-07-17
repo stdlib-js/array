@@ -26,8 +26,8 @@ var Int32Array = require( './../../../int32' );
 var BooleanArray = require( './../../../bool' );
 var toAccessorArray = require( './../../../base/to-accessor-array' );
 var Complex64 = require( '@stdlib/complex/float32' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 var isComplex64 = require( '@stdlib/assert/is-complex64' );
 var put = require( './../lib' );
 

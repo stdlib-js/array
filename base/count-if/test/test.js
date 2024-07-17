@@ -25,7 +25,7 @@ var Complex128Array = require( './../../../complex128' );
 var Int32Array = require( './../../../int32' );
 var toAccessorArray = require( './../../../base/to-accessor-array' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 var countIf = require( './../lib' );
 
 

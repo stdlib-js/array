@@ -37,9 +37,9 @@ var Complex64Array = require( './../../complex64' );
 var Complex128Array = require( './../../complex128' );
 var BooleanArray = require( './../../bool' );
 var real = require( '@stdlib/complex/real' );
-var realf = require( '@stdlib/complex/realf' );
-var imag = require( '@stdlib/complex/imag' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imag = require( '@stdlib/complex/float64/imag' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 var reviveTypedArray = require( './../lib' );
 
 
