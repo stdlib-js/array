@@ -18,7 +18,7 @@
 
 import Complex128Array = require( './../../../../complex128' );
 import Complex64Array = require( './../../../../complex64' );
-import Complex128 = require( '@stdlib/complex/float64' );
+import Complex128 = require( '@stdlib/complex/float64/ctor' );
 import AccessorArray = require( './../../../../base/accessor' );
 import place = require( './index' );
 
