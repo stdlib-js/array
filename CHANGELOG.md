@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-18)
+## Unreleased (2024-07-19)
 
 <section class="packages">
 
@@ -1324,6 +1324,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`cb20ecc`](https://github.com/stdlib-js/stdlib/commit/cb20ecc5555cabbdfa9ad4807e096f8768f9f780) - add `copyWithin`, `entries`, `forEach` to `array/bool` [(#2611)](https://github.com/stdlib-js/stdlib/pull/2611)
 -   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607)
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590)
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557)
@@ -2437,6 +2438,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`cb20ecc`](https://github.com/stdlib-js/stdlib/commit/cb20ecc5555cabbdfa9ad4807e096f8768f9f780) - **feat:** add `copyWithin`, `entries`, `forEach` to `array/bool` [(#2611)](https://github.com/stdlib-js/stdlib/pull/2611) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ba35d8f`](https://github.com/stdlib-js/stdlib/commit/ba35d8f2e923d26640828a0f035333bd778389b7) - **refactor:** update paths _(by Athan Reines)_
 -   [`0406147`](https://github.com/stdlib-js/stdlib/commit/04061476d1036e1b8b786736b1ba1653eddff1ef) - **refactor:** update paths _(by Athan Reines)_
 -   [`b9703b5`](https://github.com/stdlib-js/stdlib/commit/b9703b569dc2f0a67e604e388a0d188b08138b48) - **refactor:** update paths _(by Athan Reines)_
