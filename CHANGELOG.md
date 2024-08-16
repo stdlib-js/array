@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-19)
+## Unreleased (2024-08-16)
 
 <section class="packages">
 
@@ -46,18 +46,16 @@
 
 ##### BREAKING CHANGES
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
 -   [`575c74c`](https://github.com/stdlib-js/stdlib/commit/575c74c05ac28c0a37747cc68c822e725252296c): rename exported aliases
--   [`575c74c`](https://github.com/stdlib-js/stdlib/commit/575c74c05ac28c0a37747cc68c822e725252296c): rename exported aliases 
 
     -   To migrate, users should consult the documentation for the updated
-    aliases. For the most part, updating code should be as simple as
-    dropping an `array` or `a` prefix. For others, they should more
-    directly match, or be inferrable from, the package name.
+        aliases. For the most part, updating code should be as simple as
+        dropping an `array` or `a` prefix. For others, they should more
+        directly match, or be inferrable from, the package name.
 
 </section>
 
@@ -79,6 +77,8 @@
 
 ##### Features
 
+-   [`29641e1`](https://github.com/stdlib-js/stdlib/commit/29641e155d07e3aa7e71340d47ada3e43d1edaa5) - add `cunone` to namespace
+-   [`a596d0c`](https://github.com/stdlib-js/stdlib/commit/a596d0c68b97049ec249e9c51caf7e2d34190f4a) - add `removeAt` to namespace
 -   [`00fd68d`](https://github.com/stdlib-js/stdlib/commit/00fd68ddf80a71b08e5353c63c297fca4daaf873) - update namespace TypeScript declarations [(#2415)](https://github.com/stdlib-js/stdlib/pull/2415)
 -   [`fd71d8a`](https://github.com/stdlib-js/stdlib/commit/fd71d8a39d9dc53b0d941945d26178e2e079edbc) - add `place` to namespace
 -   [`20cd086`](https://github.com/stdlib-js/stdlib/commit/20cd0868236daf523fcd659d027e2277f7e1cb56) - add `mskput` to namespace
@@ -87,12 +87,12 @@
 -   [`60fa5ac`](https://github.com/stdlib-js/stdlib/commit/60fa5ac214d2e5dfe310f93928a07515eeeb4a3b) - add `cuevery` to namespace
 -   [`0a0ba83`](https://github.com/stdlib-js/stdlib/commit/0a0ba837315759799d35a24a8d9ded4af82622e0) - add `cuany` to namespace
 -   [`dc42597`](https://github.com/stdlib-js/stdlib/commit/dc42597ff2b21239797a71eb9cec84fe4e319fbc) - add `put` to namespace
--   [`25e7a6e`](https://github.com/stdlib-js/stdlib/commit/25e7a6e0dd6fea3b5c42a557eb8ade2ac8f575ac) - update namespace TypeScript declarations [(##2146)](#2146)
+-   [`25e7a6e`](https://github.com/stdlib-js/stdlib/commit/25e7a6e0dd6fea3b5c42a557eb8ade2ac8f575ac) - update namespace TypeScript declarations [(#2146)](https://github.com/stdlib-js/stdlib/pull/2146)
 -   [`b54dc66`](https://github.com/stdlib-js/stdlib/commit/b54dc660bac4d6c2be5e51752dd6b57ba61e689b) - add `join` to namespace
 -   [`0a6cefd`](https://github.com/stdlib-js/stdlib/commit/0a6cefd854a121ec4cf59bbbf5c4745b549e3bed) - add `countIf` to namespace
 -   [`02c9e03`](https://github.com/stdlib-js/stdlib/commit/02c9e03dfacaa4edea3f59ab3caa6a86e640d280) - update namespace TypeScript declarations [(#2136)](https://github.com/stdlib-js/stdlib/pull/2136)
 -   [`23aef95`](https://github.com/stdlib-js/stdlib/commit/23aef95e6b451410a788143a0fbdd2d67be8f808) - add `with` to namespace
--   [`e624c49`](https://github.com/stdlib-js/stdlib/commit/e624c49ec5d522b7dd606df464fc65c7ff01e893) - update namespace TypeScript declarations [(##1937)](#1937)
+-   [`e624c49`](https://github.com/stdlib-js/stdlib/commit/e624c49ec5d522b7dd606df464fc65c7ff01e893) - update namespace TypeScript declarations [(#1937)](https://github.com/stdlib-js/stdlib/pull/1937)
 -   [`e5717ad`](https://github.com/stdlib-js/stdlib/commit/e5717aded383e2202efcba9b9fb83f641f28fa91) - add `countSameValueZero` to namespace
 -   [`2548359`](https://github.com/stdlib-js/stdlib/commit/254835955084e4104fde8e72cecaab36ca08f6eb) - add `countSameValue` to namespace
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
@@ -120,8 +120,7 @@
 
 ##### BREAKING CHANGES
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
@@ -193,8 +192,7 @@
 
 ##### BREAKING CHANGES
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
@@ -593,7 +591,7 @@
 
 ##### Features
 
--   [`ecd3518`](https://github.com/stdlib-js/stdlib/commit/ecd3518101b9c013ff9279b7f56e64015606907d) - add `array/base/count-if` [(##1372)](#1372)
+-   [`ecd3518`](https://github.com/stdlib-js/stdlib/commit/ecd3518101b9c013ff9279b7f56e64015606907d) - add `array/base/count-if` [(#1372)](https://github.com/stdlib-js/stdlib/pull/1372)
 
 </section>
 
@@ -615,7 +613,7 @@
 
 This release closes the following issue:
 
-[##1324](#1324)
+[#1324](https://github.com/stdlib-js/stdlib/issues/1324)
 
 </section>
 
@@ -673,7 +671,7 @@ This release closes the following issue:
 ##### Features
 
 -   [`d1ef4ee`](https://github.com/stdlib-js/stdlib/commit/d1ef4ee589cb2a7a0d8bbc0b37be3cf3b7a6aad2) - add boolean dtype support to `array/base/count-same-value-zero` [(#2474)](https://github.com/stdlib-js/stdlib/pull/2474)
--   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - add `array/base/count-same-value-zero` [(##1384)](#1384)
+-   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - add `array/base/count-same-value-zero` [(#1384)](https://github.com/stdlib-js/stdlib/pull/1384)
 
 </section>
 
@@ -685,7 +683,7 @@ This release closes the following issue:
 
 This release closes the following issue:
 
-[##1326](#1326)
+[#1326](https://github.com/stdlib-js/stdlib/issues/1326)
 
 </section>
 
@@ -707,7 +705,7 @@ This release closes the following issue:
 
 ##### Features
 
--   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - add `array/base/count-same-value-zero` [(##1384)](#1384)
+-   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - add `array/base/count-same-value-zero` [(#1384)](https://github.com/stdlib-js/stdlib/pull/1384)
 
 </section>
 
@@ -719,7 +717,7 @@ This release closes the following issue:
 
 This release closes the following issue:
 
-[##1326](#1326)
+[#1326](https://github.com/stdlib-js/stdlib/issues/1326)
 
 </section>
 
@@ -1043,8 +1041,7 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`7c3729c`](https://github.com/stdlib-js/stdlib/commit/7c3729c19fdda77bfb15009ab4e52a4dfb59f73d): add support for additional modes
--   [`7c3729c`](https://github.com/stdlib-js/stdlib/commit/7c3729c19fdda77bfb15009ab4e52a4dfb59f73d): rename 'throw' mode to 'strict' 
+-   [`7c3729c`](https://github.com/stdlib-js/stdlib/commit/7c3729c19fdda77bfb15009ab4e52a4dfb59f73d): rename 'throw' mode to 'strict'
 
     -   To migrate, users should simply update 'throw' to 'strict'.
 
@@ -1156,8 +1153,7 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): add support for additional modes
--   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): rename 'throw' mode to 'strict' 
+-   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): rename 'throw' mode to 'strict'
 
     -   To migrate, users should simply replace 'throw' with 'strict'.
 
@@ -1182,6 +1178,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`ce18c49`](https://github.com/stdlib-js/stdlib/commit/ce18c49136d11f7333477882c9276d4ea3adc1af) - add `array/base/put`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-remove-at-unreleased">
+
+#### [@stdlib/array/base/remove-at](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/remove-at)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3dc813f`](https://github.com/stdlib-js/stdlib/commit/3dc813f651cb17221a93968b772795b7b9a1c5e6) - add `array/base/remove-at`
 
 </section>
 
@@ -1290,23 +1308,11 @@ This release closes the following issue:
 
 ##### Features
 
--   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - add `array/base/with` [(##1374)](#1374)
+-   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - add `array/base/with` [(#1374)](https://github.com/stdlib-js/stdlib/pull/1374)
 
 </section>
 
 <!-- /.features -->
-
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[##1328 ](#1328 )
-
-</section>
-
-<!-- /.issues -->
 
 </details>
 
@@ -1367,7 +1373,7 @@ This release closes the following issue:
 -   [`9dfd026`](https://github.com/stdlib-js/stdlib/commit/9dfd026f52d03e54adb878cdf4dddbef591a1e8d) - add `toLocaleString` method to `array/complex128` [(#2252)](https://github.com/stdlib-js/stdlib/pull/2252)
 -   [`b4b1d14`](https://github.com/stdlib-js/stdlib/commit/b4b1d14255820c1071568f1aa144a986ab6f0566) - add `values` method to `array/complex128` [(#2216)](https://github.com/stdlib-js/stdlib/pull/2216)
 -   [`14b3434`](https://github.com/stdlib-js/stdlib/commit/14b34348f53eeb0c21e8e69249192455179f06b6) - add `keys` method to `array/complex128` [(#2174)](https://github.com/stdlib-js/stdlib/pull/2174)
--   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - add `reduceRight` method to `array/complex128` [(##1406)](#1406)
+-   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - add `reduceRight` method to `array/complex128` [(#1406)](https://github.com/stdlib-js/stdlib/pull/1406)
 -   [`0848cd9`](https://github.com/stdlib-js/stdlib/commit/0848cd91a848223d481b5d054ec4beecf7bdd9c9) - add `reduce` method to `array/complex128` [(#1367)](https://github.com/stdlib-js/stdlib/pull/1367)
 -   [`4bfbed8`](https://github.com/stdlib-js/stdlib/commit/4bfbed8772e59800e03b987db2ad240abd097fab) - add `slice` method to `array/complex128` [(#1355)](https://github.com/stdlib-js/stdlib/pull/1355)
 
@@ -1406,8 +1412,8 @@ This release closes the following issue:
 -   [`e92cdd8`](https://github.com/stdlib-js/stdlib/commit/e92cdd897563a28ff07df5ceda2603567fe1149f) - add `toLocaleString` method to `array/complex64` [(#2208)](https://github.com/stdlib-js/stdlib/pull/2208)
 -   [`d9359b6`](https://github.com/stdlib-js/stdlib/commit/d9359b67e683becb4f0a497a05da1a148381f2b0) - add `keys` method to `array/complex64` [(#2160)](https://github.com/stdlib-js/stdlib/pull/2160)
 -   [`832504a`](https://github.com/stdlib-js/stdlib/commit/832504a5f0289f40367fd8041ab573c1e8ed3527) - add `values` method to `array/complex64` [(#1706)](https://github.com/stdlib-js/stdlib/pull/1706)
--   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - add `reduceRight` method to `array/complex128` [(##1406)](#1406)
--   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - add `reduceRight` method to `array/complex64` [(##1395)](#1395)
+-   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - add `reduceRight` method to `array/complex128` [(#1406)](https://github.com/stdlib-js/stdlib/pull/1406)
+-   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - add `reduceRight` method to `array/complex64` [(#1395)](https://github.com/stdlib-js/stdlib/pull/1395)
 -   [`f3def6d`](https://github.com/stdlib-js/stdlib/commit/f3def6de1cbd1829b3e8c57e52434eb16841ffe8) - add `reduce` method to `array/complex64` [(#1271)](https://github.com/stdlib-js/stdlib/pull/1271)
 
 </section>
@@ -1778,8 +1784,7 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): add boolean dtype support to `array/min-dtype`
--   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): return \"bool\" when provided a boolean 
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): return \"bool\" when provided a boolean
 
     -   To migrate, users explicitly handle \"bool\" return values. If \"generic\" is still desired, users should consolidate accordingly.
 
@@ -2364,33 +2369,28 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
--   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): add boolean dtype support to `array/min-dtype`
--   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): return \"bool\" when provided a boolean 
+-   [`66dce03`](https://github.com/stdlib-js/stdlib/commit/66dce034698fdbd71248cad9c7d277ac97cdf0ae): return \"bool\" when provided a boolean
 
     -   To migrate, users explicitly handle \"bool\" return values. If \"generic\" is still desired, users should consolidate accordingly.
 
--   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): add support for additional modes
--   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): rename 'throw' mode to 'strict' 
+-   [`fdb5d94`](https://github.com/stdlib-js/stdlib/commit/fdb5d94eee5fc019bc358d799025cb2b5966d820): rename 'throw' mode to 'strict'
 
     -   To migrate, users should simply replace 'throw' with 'strict'.
 
--   [`7c3729c`](https://github.com/stdlib-js/stdlib/commit/7c3729c19fdda77bfb15009ab4e52a4dfb59f73d): add support for additional modes
--   [`7c3729c`](https://github.com/stdlib-js/stdlib/commit/7c3729c19fdda77bfb15009ab4e52a4dfb59f73d): rename 'throw' mode to 'strict' 
+-   [`7c3729c`](https://github.com/stdlib-js/stdlib/commit/7c3729c19fdda77bfb15009ab4e52a4dfb59f73d): rename 'throw' mode to 'strict'
 
     -   To migrate, users should simply update 'throw' to 'strict'.
 
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): update namespace TypeScript declarations
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases 
+-   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
 
     -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
 
 -   [`575c74c`](https://github.com/stdlib-js/stdlib/commit/575c74c05ac28c0a37747cc68c822e725252296c): rename exported aliases
--   [`575c74c`](https://github.com/stdlib-js/stdlib/commit/575c74c05ac28c0a37747cc68c822e725252296c): rename exported aliases 
 
     -   To migrate, users should consult the documentation for the updated
-    aliases. For the most part, updating code should be as simple as
-    dropping an `array` or `a` prefix. For others, they should more
-    directly match, or be inferrable from, the package name.
+        aliases. For the most part, updating code should be as simple as
+        dropping an `array` or `a` prefix. For others, they should more
+        directly match, or be inferrable from, the package name.
 
 </section>
 
@@ -2400,9 +2400,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 6 issues were closed in this release:
+A total of 5 issues were closed in this release:
 
-[#2320](https://github.com/stdlib-js/stdlib/issues/2320), [#2321](https://github.com/stdlib-js/stdlib/issues/2321), [##1324](#1324), [##1326](#1326), [##1328 ](#1328 ), [#1325](https://github.com/stdlib-js/stdlib/issues/1325)
+[#1324](https://github.com/stdlib-js/stdlib/issues/1324), [#1325](https://github.com/stdlib-js/stdlib/issues/1325), [#1326](https://github.com/stdlib-js/stdlib/issues/1326), [#2320](https://github.com/stdlib-js/stdlib/issues/2320), [#2321](https://github.com/stdlib-js/stdlib/issues/2321)
 
 </section>
 
@@ -2412,21 +2412,18 @@ A total of 6 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Sapra
 -   AgPriyanshu18
 -   Athan Reines
 -   Golden Kumar
 -   Jaysukh Makvana
--   Jaysukh Makvana
 -   Karthik Prakash
--   Philipp Burckhardt
 -   Philipp Burckhardt
 -   Pratik
 -   Utkarsh
 -   Varad Gupta
--   stdlib-bot
 
 </section>
 
@@ -2438,6 +2435,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`29641e1`](https://github.com/stdlib-js/stdlib/commit/29641e155d07e3aa7e71340d47ada3e43d1edaa5) - **feat:** add `cunone` to namespace _(by Athan Reines)_
+-   [`a596d0c`](https://github.com/stdlib-js/stdlib/commit/a596d0c68b97049ec249e9c51caf7e2d34190f4a) - **feat:** add `removeAt` to namespace _(by Athan Reines)_
+-   [`400fcbb`](https://github.com/stdlib-js/stdlib/commit/400fcbb91753cc2a47d428a65a29ee455a208768) - **refactor:** avoid unnecessary copies, update examples, and refactor benchmarks _(by Athan Reines)_
+-   [`3dc813f`](https://github.com/stdlib-js/stdlib/commit/3dc813f651cb17221a93968b772795b7b9a1c5e6) - **feat:** add `array/base/remove-at` _(by Athan Reines)_
 -   [`cb20ecc`](https://github.com/stdlib-js/stdlib/commit/cb20ecc5555cabbdfa9ad4807e096f8768f9f780) - **feat:** add `copyWithin`, `entries`, `forEach` to `array/bool` [(#2611)](https://github.com/stdlib-js/stdlib/pull/2611) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ba35d8f`](https://github.com/stdlib-js/stdlib/commit/ba35d8f2e923d26640828a0f035333bd778389b7) - **refactor:** update paths _(by Athan Reines)_
 -   [`0406147`](https://github.com/stdlib-js/stdlib/commit/04061476d1036e1b8b786736b1ba1653eddff1ef) - **refactor:** update paths _(by Athan Reines)_
@@ -2455,7 +2456,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - **feat:** add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557) _(by Jaysukh Makvana, Athan Reines)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
--   [`4708d70`](https://github.com/stdlib-js/stdlib/commit/4708d704db87214af36a82e77072e3aade8c29fd) - **docs:** update namespace table of contents [(#2532)](2532) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`4708d70`](https://github.com/stdlib-js/stdlib/commit/4708d704db87214af36a82e77072e3aade8c29fd) - **docs:** update namespace table of contents [(#2532)](https://github.com/stdlib-js/stdlib/pull/2532) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`1443ba6`](https://github.com/stdlib-js/stdlib/commit/1443ba64ce5a5bbc0ba23e826246f99622eead7e) - **feat:** add `array/base/cunone` [(#2527)](https://github.com/stdlib-js/stdlib/pull/2527) _(by Aditya Sapra, Athan Reines)_
 -   [`4059e11`](https://github.com/stdlib-js/stdlib/commit/4059e1125ea8e16467e28ea4523aa06b3345b620) - **docs:** remove blank line _(by Athan Reines)_
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - **feat:** add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509) _(by Jaysukh Makvana, Athan Reines)_
@@ -2540,7 +2541,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`6adfd9a`](https://github.com/stdlib-js/stdlib/commit/6adfd9a5b8df1771ac41681f1167c480e8d89c1d) - **docs:** fix missing asterisk _(by Athan Reines)_
 -   [`c0a9532`](https://github.com/stdlib-js/stdlib/commit/c0a953262445a079c4ee610fcaa94108b7bbcc77) - **feat:** add boolean dtype support in `array/to-json` [(#2392)](https://github.com/stdlib-js/stdlib/pull/2392) _(by Jaysukh Makvana)_
 -   [`8f4b5c4`](https://github.com/stdlib-js/stdlib/commit/8f4b5c410ffb5d06bb5cce02b84c5f7043c31fa7) - **feat:** add boolean dtype support to `array/typed-ctors` [(#2391)](https://github.com/stdlib-js/stdlib/pull/2391) _(by Jaysukh Makvana, Athan Reines)_
--   [`717af94`](https://github.com/stdlib-js/stdlib/commit/717af947ab270abc5422b6d8af7dacd8f0078ca4) - **docs:** update namespace table of contents [(##2389)](#2389) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`717af94`](https://github.com/stdlib-js/stdlib/commit/717af947ab270abc5422b6d8af7dacd8f0078ca4) - **docs:** update namespace table of contents [(#2389)](https://github.com/stdlib-js/stdlib/pull/2389) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`79d01c7`](https://github.com/stdlib-js/stdlib/commit/79d01c7866193a9ff63510316e2ea36cafc72f8a) - **refactor:** special case boolean arrays _(by Athan Reines)_
 -   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - **feat:** add `isBooleanArray` to namespace _(by Athan Reines)_
 -   [`57347fd`](https://github.com/stdlib-js/stdlib/commit/57347fdd4382c4a71935e7ae06d992d04d08f802) - **feat:** add `isBooleanDataType` to namespace _(by Athan Reines)_
@@ -2580,13 +2581,13 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`cc06b5c`](https://github.com/stdlib-js/stdlib/commit/cc06b5c8c67a1c8d1022920273535b29e5abf550) - **fix:** add missing generic parameter _(by Athan Reines)_
 -   [`f53180b`](https://github.com/stdlib-js/stdlib/commit/f53180b3c431857d7c918319da97bd8e3abcb216) - **fix:** add missing parameter _(by Athan Reines)_
 -   [`5d53c2d`](https://github.com/stdlib-js/stdlib/commit/5d53c2de22e6899dc3970b4714c0c4e228562f92) - **feat:** add initial TypeScript declarations _(by Athan Reines)_
--   [`133dd8b`](https://github.com/stdlib-js/stdlib/commit/133dd8bdce3709d5aeda84906b79882f86d9989d) - **chore:** update package meta data [(##2251)](#2251) _(by stdlib-bot)_
+-   [`133dd8b`](https://github.com/stdlib-js/stdlib/commit/133dd8bdce3709d5aeda84906b79882f86d9989d) - **chore:** update package meta data [(#2251)](https://github.com/stdlib-js/stdlib/pull/2251) _(by stdlib-bot)_
 -   [`1cc1a57`](https://github.com/stdlib-js/stdlib/commit/1cc1a5727ea8a024c597d7c8bc724f027511da78) - **docs:** add `repl.txt` to `array/complex128` [(#2280)](https://github.com/stdlib-js/stdlib/pull/2280) _(by Jaysukh Makvana, Athan Reines)_
 -   [`2e9149c`](https://github.com/stdlib-js/stdlib/commit/2e9149c0dd98310dca677c132087293250ea3068) - **docs:** fix REPL help files for floating-point arrays [(#2281)](https://github.com/stdlib-js/stdlib/pull/2281) _(by Jaysukh Makvana)_
 -   [`9a52dfc`](https://github.com/stdlib-js/stdlib/commit/9a52dfc2c4f92926ee2b64b50544329876eb4387) - **docs:** fix REPL help files for signed integer arrays [(#2282)](https://github.com/stdlib-js/stdlib/pull/2282) _(by Jaysukh Makvana)_
 -   [`d1214a5`](https://github.com/stdlib-js/stdlib/commit/d1214a575c5c65438b3071d8ab8f5c0e5290e18e) - **docs:** fix REPL help files for unsigned integer arrays [(#2283)](https://github.com/stdlib-js/stdlib/pull/2283) _(by Jaysukh Makvana)_
 -   [`9dd3673`](https://github.com/stdlib-js/stdlib/commit/9dd3673c96b4b77d9cbc377bf2c551636b8c4dff) - **docs:** add `repl.txt` to `array/complex64` [(#2275)](https://github.com/stdlib-js/stdlib/pull/2275) _(by Jaysukh Makvana, Athan Reines)_
--   [`3a3b1e0`](https://github.com/stdlib-js/stdlib/commit/3a3b1e08f73a54c5ee46d73045805aee0bb1196d) - **docs:** update package URLs [(##2269)](#2269) _(by stdlib-bot)_
+-   [`3a3b1e0`](https://github.com/stdlib-js/stdlib/commit/3a3b1e08f73a54c5ee46d73045805aee0bb1196d) - **docs:** update package URLs [(#2269)](https://github.com/stdlib-js/stdlib/pull/2269) _(by stdlib-bot)_
 -   [`8089b88`](https://github.com/stdlib-js/stdlib/commit/8089b886a4d7d89f15abb068b1021d93f9c4f64e) - **docs:** update paths _(by Athan Reines)_
 -   [`038b199`](https://github.com/stdlib-js/stdlib/commit/038b199c32842c02cf678e3ae8305a17aacda05e) - **docs:** update paths _(by Athan Reines)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
@@ -2600,20 +2601,20 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`8b4cdfa`](https://github.com/stdlib-js/stdlib/commit/8b4cdfa19e97509173358dae7f40db036fb7c4c4) - **feat:** add `sort` method to `array/complex128` [(#2262)](https://github.com/stdlib-js/stdlib/pull/2262) _(by Jaysukh Makvana)_
 -   [`6b8d896`](https://github.com/stdlib-js/stdlib/commit/6b8d896c26a69ddd2fd57ae80b2411ef3e3c8d8e) - **test:** fix typo _(by Athan Reines)_
 -   [`a0c28de`](https://github.com/stdlib-js/stdlib/commit/a0c28dea6a9afad5a4c1b55c552480247824a837) - **feat:** add `sort` method to `array/complex64` [(#2259)](https://github.com/stdlib-js/stdlib/pull/2259) _(by Jaysukh Makvana, Athan Reines)_
--   [`f626b3d`](https://github.com/stdlib-js/stdlib/commit/f626b3d45c5fc4b55ff08dc53da094173a719732) - **docs:** update related packages sections [(##2255)](#2255) _(by stdlib-bot)_
+-   [`f626b3d`](https://github.com/stdlib-js/stdlib/commit/f626b3d45c5fc4b55ff08dc53da094173a719732) - **docs:** update related packages sections [(#2255)](https://github.com/stdlib-js/stdlib/pull/2255) _(by stdlib-bot)_
 -   [`9dfd026`](https://github.com/stdlib-js/stdlib/commit/9dfd026f52d03e54adb878cdf4dddbef591a1e8d) - **feat:** add `toLocaleString` method to `array/complex128` [(#2252)](https://github.com/stdlib-js/stdlib/pull/2252) _(by Jaysukh Makvana)_
--   [`9ef09e2`](https://github.com/stdlib-js/stdlib/commit/9ef09e2cb6c9e777edcccaacd9d2ff681b0b4381) - **docs:** update related packages sections  [(##2248)](#2248) _(by stdlib-bot)_
+-   [`9ef09e2`](https://github.com/stdlib-js/stdlib/commit/9ef09e2cb6c9e777edcccaacd9d2ff681b0b4381) - **docs:** update related packages sections  [(#2248)](https://github.com/stdlib-js/stdlib/pull/2248) _(by stdlib-bot)_
 -   [`23e158b`](https://github.com/stdlib-js/stdlib/commit/23e158b7de87ff40b2fbdc75f1842bbd55641016) - **feat:** add `array/base/mskfilter-map` _(by Golden Kumar, Athan Reines, Philipp Burckhardt)_
--   [`ec98887`](https://github.com/stdlib-js/stdlib/commit/ec9888724c28aa7218d88ff62b91b71c0089c559) - **docs:** update related packages sections [(##2241)](#2241) _(by stdlib-bot)_
+-   [`ec98887`](https://github.com/stdlib-js/stdlib/commit/ec9888724c28aa7218d88ff62b91b71c0089c559) - **docs:** update related packages sections [(#2241)](https://github.com/stdlib-js/stdlib/pull/2241) _(by stdlib-bot)_
 -   [`e92cdd8`](https://github.com/stdlib-js/stdlib/commit/e92cdd897563a28ff07df5ceda2603567fe1149f) - **feat:** add `toLocaleString` method to `array/complex64` [(#2208)](https://github.com/stdlib-js/stdlib/pull/2208) _(by Jaysukh Makvana, Athan Reines)_
 -   [`b4b1d14`](https://github.com/stdlib-js/stdlib/commit/b4b1d14255820c1071568f1aa144a986ab6f0566) - **feat:** add `values` method to `array/complex128` [(#2216)](https://github.com/stdlib-js/stdlib/pull/2216) _(by Jaysukh Makvana)_
--   [`113ec19`](https://github.com/stdlib-js/stdlib/commit/113ec1946e4f10fbcce6cc59a57022afcdb582f5) - **docs:** update related packages sections [(##2207)](#2207 ) _(by stdlib-bot)_
+-   [`113ec19`](https://github.com/stdlib-js/stdlib/commit/113ec1946e4f10fbcce6cc59a57022afcdb582f5) - **docs:** update related packages sections [(#2207)](https://github.com/stdlib-js/stdlib/pull/2207 ) _(by stdlib-bot)_
 -   [`8b7f927`](https://github.com/stdlib-js/stdlib/commit/8b7f9274b4aeffe7344fad3e8186f7b4e13f7b2c) - **feat:** add `array/base/mskreject-map` _(by Utkarsh, Philipp Burckhardt)_
 -   [`14b3434`](https://github.com/stdlib-js/stdlib/commit/14b34348f53eeb0c21e8e69249192455179f06b6) - **feat:** add `keys` method to `array/complex128` [(#2174)](https://github.com/stdlib-js/stdlib/pull/2174) _(by Jaysukh Makvana)_
 -   [`d9359b6`](https://github.com/stdlib-js/stdlib/commit/d9359b67e683becb4f0a497a05da1a148381f2b0) - **feat:** add `keys` method to `array/complex64` [(#2160)](https://github.com/stdlib-js/stdlib/pull/2160) _(by Jaysukh Makvana, Athan Reines)_
 -   [`832504a`](https://github.com/stdlib-js/stdlib/commit/832504a5f0289f40367fd8041ab573c1e8ed3527) - **feat:** add `values` method to `array/complex64` [(#1706)](https://github.com/stdlib-js/stdlib/pull/1706) _(by Jaysukh Makvana, Athan Reines)_
--   [`ef2cd60`](https://github.com/stdlib-js/stdlib/commit/ef2cd60a7e640fecac3ac596495770d09f61db97) - **docs:** update namespace table of contents [(##2147)](#2147 ) _(by stdlib-bot, Philipp Burckhardt)_
--   [`25e7a6e`](https://github.com/stdlib-js/stdlib/commit/25e7a6e0dd6fea3b5c42a557eb8ade2ac8f575ac) - **feat:** update namespace TypeScript declarations [(##2146)](#2146) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`ef2cd60`](https://github.com/stdlib-js/stdlib/commit/ef2cd60a7e640fecac3ac596495770d09f61db97) - **docs:** update namespace table of contents [(#2147)](https://github.com/stdlib-js/stdlib/pull/2147 ) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`25e7a6e`](https://github.com/stdlib-js/stdlib/commit/25e7a6e0dd6fea3b5c42a557eb8ade2ac8f575ac) - **feat:** update namespace TypeScript declarations [(#2146)](https://github.com/stdlib-js/stdlib/pull/2146) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`25cdee2`](https://github.com/stdlib-js/stdlib/commit/25cdee27ab0fa71598e64313cb97ac70345b34f1) - **test:** fix lengths _(by Athan Reines)_
 -   [`ba4db18`](https://github.com/stdlib-js/stdlib/commit/ba4db1842a9a550702a31b68be317e389f86472f) - **bench:** fix typo _(by Athan Reines)_
 -   [`b54dc66`](https://github.com/stdlib-js/stdlib/commit/b54dc660bac4d6c2be5e51752dd6b57ba61e689b) - **feat:** add `join` to namespace _(by Athan Reines)_
@@ -2629,8 +2630,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`6f61ff6`](https://github.com/stdlib-js/stdlib/commit/6f61ff6baceb5c932bef7b28c665140b3b039b41) - **test:** add tests for when `fromIndex` exceeds last index _(by Athan Reines)_
 -   [`e863555`](https://github.com/stdlib-js/stdlib/commit/e86355532a7c7736949d75a38bc2c28bea39e949) - **docs:** update copy _(by Athan Reines)_
 -   [`8a88ec1`](https://github.com/stdlib-js/stdlib/commit/8a88ec1f450ddc7cc4e9004f94299fe864bf7acb) - **docs:** update related packages sections [(#2006)](https://github.com/stdlib-js/stdlib/pull/2006) _(by stdlib-bot)_
--   [`e624c49`](https://github.com/stdlib-js/stdlib/commit/e624c49ec5d522b7dd606df464fc65c7ff01e893) - **feat:** update namespace TypeScript declarations [(##1937)](#1937) _(by stdlib-bot)_
--   [`5c03720`](https://github.com/stdlib-js/stdlib/commit/5c037206504ac00cb49d1d70b39e7345505d3ed2) - **docs:** update namespace table of contents [(##1920)](#1920) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`e624c49`](https://github.com/stdlib-js/stdlib/commit/e624c49ec5d522b7dd606df464fc65c7ff01e893) - **feat:** update namespace TypeScript declarations [(#1937)](https://github.com/stdlib-js/stdlib/pull/1937) _(by stdlib-bot)_
+-   [`5c03720`](https://github.com/stdlib-js/stdlib/commit/5c037206504ac00cb49d1d70b39e7345505d3ed2) - **docs:** update namespace table of contents [(#1920)](https://github.com/stdlib-js/stdlib/pull/1920) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`2db41a9`](https://github.com/stdlib-js/stdlib/commit/2db41a98bd2d5c04e0e07d29ef61cac443ba0970) - **docs:** fix copy _(by Athan Reines)_
 -   [`e5717ad`](https://github.com/stdlib-js/stdlib/commit/e5717aded383e2202efcba9b9fb83f641f28fa91) - **feat:** add `countSameValueZero` to namespace _(by Athan Reines)_
 -   [`422cebf`](https://github.com/stdlib-js/stdlib/commit/422cebf73d40bdd463b27107da99f36b4aabb4f5) - **docs:** clean-up documentation and examples and rename folder _(by Athan Reines)_
@@ -2639,20 +2640,20 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`9d7da34`](https://github.com/stdlib-js/stdlib/commit/9d7da343b78966f102f433340f56d135cde00298) - **test:** add test case to ensure full test coverage _(by Athan Reines)_
 -   [`2548359`](https://github.com/stdlib-js/stdlib/commit/254835955084e4104fde8e72cecaab36ca08f6eb) - **feat:** add `countSameValue` to namespace _(by Athan Reines)_
 -   [`215a6ec`](https://github.com/stdlib-js/stdlib/commit/215a6ec65bec3039e0ba0cd78e5a55be4b5f35c2) - **docs:** clean-up examples and descriptions _(by Athan Reines)_
--   [`a3fbf67`](https://github.com/stdlib-js/stdlib/commit/a3fbf67720b3d1963b27c1097bd8144397ac0ec1) - **docs:** update related packages sections [(##1857)](#1857) _(by stdlib-bot)_
--   [`0bcd1bf`](https://github.com/stdlib-js/stdlib/commit/0bcd1bfbc663fb7a226fd41cdaa6f2b89e5bb0e0) - **docs:** update related packages sections  [(##1838)](#1838) _(by stdlib-bot)_
--   [`cbc1d2c`](https://github.com/stdlib-js/stdlib/commit/cbc1d2c80a92395f0c8910528383b13f6492d7ac) - **docs:** update related packages sections [(##1796)](#1796) _(by stdlib-bot)_
+-   [`a3fbf67`](https://github.com/stdlib-js/stdlib/commit/a3fbf67720b3d1963b27c1097bd8144397ac0ec1) - **docs:** update related packages sections [(#1857)](https://github.com/stdlib-js/stdlib/pull/1857) _(by stdlib-bot)_
+-   [`0bcd1bf`](https://github.com/stdlib-js/stdlib/commit/0bcd1bfbc663fb7a226fd41cdaa6f2b89e5bb0e0) - **docs:** update related packages sections  [(#1838)](https://github.com/stdlib-js/stdlib/pull/1838) _(by stdlib-bot)_
+-   [`cbc1d2c`](https://github.com/stdlib-js/stdlib/commit/cbc1d2c80a92395f0c8910528383b13f6492d7ac) - **docs:** update related packages sections [(#1796)](https://github.com/stdlib-js/stdlib/pull/1796) _(by stdlib-bot)_
 -   [`0bc38ac`](https://github.com/stdlib-js/stdlib/commit/0bc38ac50d13c505f66231c576c72b40848fd0a7) - **feat:** add `array/base/take-map` _(by Varad Gupta, Philipp Burckhardt)_
 -   [`bb7817f`](https://github.com/stdlib-js/stdlib/commit/bb7817f0a8bbae01c92ef0490194017f181b81c5) - **feat:** add `array/base/join` _(by Aditya Sapra, Athan Reines, Philipp Burckhardt)_
--   [`5cfd0a8`](https://github.com/stdlib-js/stdlib/commit/5cfd0a8712299d680aff7f9d8fca0c0ac69de56b) - **chore:** update package meta data [(##1462)](#1462) _(by stdlib-bot)_
--   [`ecd3518`](https://github.com/stdlib-js/stdlib/commit/ecd3518101b9c013ff9279b7f56e64015606907d) - **feat:** add `array/base/count-if` [(##1372)](#1372) _(by Utkarsh, Philipp Burckhardt)_
+-   [`5cfd0a8`](https://github.com/stdlib-js/stdlib/commit/5cfd0a8712299d680aff7f9d8fca0c0ac69de56b) - **chore:** update package meta data [(#1462)](https://github.com/stdlib-js/stdlib/pull/1462) _(by stdlib-bot)_
+-   [`ecd3518`](https://github.com/stdlib-js/stdlib/commit/ecd3518101b9c013ff9279b7f56e64015606907d) - **feat:** add `array/base/count-if` [(#1372)](https://github.com/stdlib-js/stdlib/pull/1372) _(by Utkarsh, Philipp Burckhardt)_
 -   [`89ee510`](https://github.com/stdlib-js/stdlib/commit/89ee510dafb04f0ed45610580d9349df02b9f7e1) - **docs:** update description _(by Athan Reines)_
 -   [`902b38a`](https://github.com/stdlib-js/stdlib/commit/902b38ac100f6710d2ad5e28f31422e573cc6d29) - **docs:** update descriptions _(by Athan Reines)_
--   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - **feat:** add `reduceRight` method to `array/complex128` [(##1406)](#1406) _(by Jaysukh Makvana, stdlib-bot, Philipp Burckhardt)_
+-   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - **feat:** add `reduceRight` method to `array/complex128` [(#1406)](https://github.com/stdlib-js/stdlib/pull/1406) _(by Jaysukh Makvana, stdlib-bot, Philipp Burckhardt)_
 -   [`670aeab`](https://github.com/stdlib-js/stdlib/commit/670aeab1e433314ca3b0ebfb4dce16f267cff881) - **docs:** fix require path _(by Philipp Burckhardt)_
--   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - **feat:** add `array/base/count-same-value-zero` [(##1384)](#1384) _(by AgPriyanshu18, Jaysukh Makvana, Philipp Burckhardt)_
--   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - **feat:** add `reduceRight` method to `array/complex64` [(##1395)](#1395) _(by Jaysukh Makvana, Philipp Burckhardt)_
--   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - **feat:** add `array/base/with` [(##1374)](#1374) _(by Pratik, Philipp Burckhardt)_
+-   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - **feat:** add `array/base/count-same-value-zero` [(#1384)](https://github.com/stdlib-js/stdlib/pull/1384) _(by AgPriyanshu18, Jaysukh Makvana, Philipp Burckhardt)_
+-   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - **feat:** add `reduceRight` method to `array/complex64` [(#1395)](https://github.com/stdlib-js/stdlib/pull/1395) _(by Jaysukh Makvana, Philipp Burckhardt)_
+-   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - **feat:** add `array/base/with` [(#1374)](https://github.com/stdlib-js/stdlib/pull/1374) _(by Pratik, Philipp Burckhardt)_
 -   [`5daf468`](https://github.com/stdlib-js/stdlib/commit/5daf468cf419bc847ef14d0f56a80936fd175c9c) - **docs:** update related packages sections [(#1380)](https://github.com/stdlib-js/stdlib/pull/1380) _(by stdlib-bot)_
 -   [`0848cd9`](https://github.com/stdlib-js/stdlib/commit/0848cd91a848223d481b5d054ec4beecf7bdd9c9) - **feat:** add `reduce` method to `array/complex128` [(#1367)](https://github.com/stdlib-js/stdlib/pull/1367) _(by Jaysukh Makvana, Athan Reines)_
 -   [`f3def6d`](https://github.com/stdlib-js/stdlib/commit/f3def6de1cbd1829b3e8c57e52434eb16841ffe8) - **feat:** add `reduce` method to `array/complex64` [(#1271)](https://github.com/stdlib-js/stdlib/pull/1271) _(by Jaysukh Makvana, Athan Reines)_
@@ -2700,7 +2701,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`8a5f615`](https://github.com/stdlib-js/stdlib/commit/8a5f6153eda91c3187a47553c3f1a0120a89836f) - **test:** fix test case _(by Athan Reines)_
 -   [`2144767`](https://github.com/stdlib-js/stdlib/commit/21447673286642db1818f5cd846276c9e0ee0d08) - **fix:** ensure `null` is a return value _(by Athan Reines)_
 -   [`1dec461`](https://github.com/stdlib-js/stdlib/commit/1dec4616d1dbf571e1516addf0a63c75869d1d83) - **refactor:** use common type definitions _(by Athan Reines)_
--   [`3497b72`](https://github.com/stdlib-js/stdlib/commit/3497b72bb751d10bda33a26e766bb5efec5d2141) - **docs:** update related packages sections [(##1316)](#1316) _(by stdlib-bot)_
+-   [`3497b72`](https://github.com/stdlib-js/stdlib/commit/3497b72bb751d10bda33a26e766bb5efec5d2141) - **docs:** update related packages sections [(#1316)](https://github.com/stdlib-js/stdlib/pull/1316) _(by stdlib-bot)_
 -   [`801b8e9`](https://github.com/stdlib-js/stdlib/commit/801b8e99a3b9a0a9c543c5a028975c0124cd2022) - **fix:** support zero-length generic arrays and add tests _(by Athan Reines)_
 -   [`3e53527`](https://github.com/stdlib-js/stdlib/commit/3e53527323fd705302af15cc66e5dffe45f2cd12) - **bench:** avoid running benchmarks in environments lacking Proxy support _(by Athan Reines)_
 -   [`7137673`](https://github.com/stdlib-js/stdlib/commit/7137673f0798ef13d7c9fd7becf78e557b1d583b) - **docs:** update related packages sections (#1315) _(by stdlib-bot)_
@@ -2710,7 +2711,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`0188a12`](https://github.com/stdlib-js/stdlib/commit/0188a124778cd4af49a3fbb3ebbeb93f6e7e451f) - **docs:** update copy and clarify identifier _(by Athan Reines)_
 -   [`f46d4eb`](https://github.com/stdlib-js/stdlib/commit/f46d4eb9bcd6b2cc19c1e351c94342f6b66e96b1) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`974889e`](https://github.com/stdlib-js/stdlib/commit/974889e16063cfd28ac32cd90e8d422d669387a2) - **docs:** add note on bounds checking and update cache documentation _(by Athan Reines)_
--   [`71ee29b`](https://github.com/stdlib-js/stdlib/commit/71ee29b7d30436e5ccbb78bf1367b1b576c2b386) - **docs:** update related packages sections [(##1314)](#1314) _(by stdlib-bot)_
+-   [`71ee29b`](https://github.com/stdlib-js/stdlib/commit/71ee29b7d30436e5ccbb78bf1367b1b576c2b386) - **docs:** update related packages sections [(#1314)](https://github.com/stdlib-js/stdlib/pull/1314) _(by stdlib-bot)_
 -   [`d162063`](https://github.com/stdlib-js/stdlib/commit/d162063e85ff24eaa9517e2b70ae80bb7e3d3ccd) - **feat:** add `ArrayIndex` to namespace _(by Athan Reines)_
 -   [`248fcf3`](https://github.com/stdlib-js/stdlib/commit/248fcf38684e61e81b14998ed6d24e0fc9283333) - **feat:** add `array/index` _(by Athan Reines)_
 -   [`ccc9555`](https://github.com/stdlib-js/stdlib/commit/ccc95558314c43a997c42d95e1383933c154120f) - **fix:** support assigning a real-valued array to a complex-valued array _(by Athan Reines)_
@@ -2722,7 +2723,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`3e206ac`](https://github.com/stdlib-js/stdlib/commit/3e206acd54dbb2301ebac48a0a3cc6109b7abc9a) - **docs:** update examples to use a different utility _(by Athan Reines)_
 -   [`3a57fb4`](https://github.com/stdlib-js/stdlib/commit/3a57fb47211679fa520b5e1613b41aebd30eccf6) - **feat:** add `assign` method and add support for an index accessor array _(by Athan Reines)_
 -   [`40b06c3`](https://github.com/stdlib-js/stdlib/commit/40b06c38ef5d19e312c34525b5ba7b2977efb0a2) - **refactor:** use `dtype` property rather than assertion API _(by Athan Reines)_
--   [`bd3ea40`](https://github.com/stdlib-js/stdlib/commit/bd3ea40dc1dd3cccf80aaf2149f524db51ec76a9) - **docs:** update related packages sections [(##1313)](#1313) _(by stdlib-bot)_
+-   [`bd3ea40`](https://github.com/stdlib-js/stdlib/commit/bd3ea40dc1dd3cccf80aaf2149f524db51ec76a9) - **docs:** update related packages sections [(#1313)](https://github.com/stdlib-js/stdlib/pull/1313) _(by stdlib-bot)_
 -   [`4394246`](https://github.com/stdlib-js/stdlib/commit/4394246274c5fe1ab05e4b4dafad3217faddcb2b) - **feat:** add `factory` method for specifying defaults _(by Athan Reines)_
 -   [`ad1edac`](https://github.com/stdlib-js/stdlib/commit/ad1edacf7dcbde6f889d872b76a827b1c68096d6) - **chore:** update package meta data [(#1312)](https://github.com/stdlib-js/stdlib/pull/1312) _(by stdlib-bot, Athan Reines)_
 -   [`29e4c99`](https://github.com/stdlib-js/stdlib/commit/29e4c992e11959432a5347528df132ec56d54121) - **fix:** propagate options when invoking constructor _(by Athan Reines)_
@@ -2793,13 +2794,25 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.release -->
 
+<section class="release" id="v0.2.1">
+
 ## 0.2.1 (2024-02-05)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-05)
 
 <section class="packages">
 
 ### Packages
 
-<section class="package" id="array-v0.2.1">
+<section class="package" id="array-v0.2.0">
 
 #### [@stdlib/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array)
 
@@ -2820,28 +2833,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`20dda26`](https://github.com/stdlib-js/stdlib/commit/20dda263c2516b2981bf7b9f76b78b316d7075c3) - add `azeroTo` to namespace
 -   [`68413e0`](https://github.com/stdlib-js/stdlib/commit/68413e05376206b18c4ff8662a8568a189dad77e) - update namespace TypeScript declarations [(#1221)](https://github.com/stdlib-js/stdlib/pull/1221)
 -   [`046e364`](https://github.com/stdlib-js/stdlib/commit/046e364237e302d66fc0367bad55ab90a1869856) - add `arrayDefaults` to namespace
--   [`de73ae1`](https://github.com/stdlib-js/stdlib/commit/de73ae19f43cbad40036d25b1d46620b3c5113a9) - update namespace TypeScript declarations [(#1089)](https://github.com/stdlib-js/stdlib/pull/1089)
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`810ebc1`](https://github.com/stdlib-js/stdlib/commit/810ebc1b4d4b5eaf023f5281774e54db733bb4e0) - update namespace TypeScript declarations [(#1047)](https://github.com/stdlib-js/stdlib/pull/1047)
--   [`03fe8b9`](https://github.com/stdlib-js/stdlib/commit/03fe8b90d7f7cabad87c23de1366c328cfca85f1) - add `aemptyLike` to namespace
--   [`67a57a7`](https://github.com/stdlib-js/stdlib/commit/67a57a71a2e1ba16587218ea458cb1e1566c7fd5) - add `aempty` to namespace
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -2849,7 +2844,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-v0.2.1">
+<section class="package" id="array-base-v0.2.0">
 
 #### [@stdlib/array/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base)
 
@@ -2930,100 +2925,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`b59a40a`](https://github.com/stdlib-js/stdlib/commit/b59a40ab3425e9d16d08c46860e5a58648788f4e) - add `quaternary3d` to namespace
 -   [`d9952f2`](https://github.com/stdlib-js/stdlib/commit/d9952f2a25042570dfe5b20a2dacc4a07cec81c4) - update namespace TypeScript declarations [(#1128)](https://github.com/stdlib-js/stdlib/pull/1128)
 -   [`a2f9d0a`](https://github.com/stdlib-js/stdlib/commit/a2f9d0a5812def11883fbbe682678e35f8368262) - add `bquinary2d` to namespace
--   [`f9b305a`](https://github.com/stdlib-js/stdlib/commit/f9b305a9774c677cd7bc1fb29085ca5f3fea1f89) - add `bquaternary2d` to namespace
--   [`c3059d9`](https://github.com/stdlib-js/stdlib/commit/c3059d9d8915a7fbf57d8162a11977a380462157) - add `strided2array5d` to namespace
--   [`bbf1876`](https://github.com/stdlib-js/stdlib/commit/bbf1876d40fd794658b86a8b2b14a92c792fcade) - add `strided2array4d` to namespace
--   [`fde42f9`](https://github.com/stdlib-js/stdlib/commit/fde42f9412043c29de9dc9c3403afa006a43c009) - add `strided2array3d` to namespace
--   [`ba2158f`](https://github.com/stdlib-js/stdlib/commit/ba2158f3784c52fb44b3b48600516cdbe9c3e433) - add `strided2array2d` to namespace
--   [`754e915`](https://github.com/stdlib-js/stdlib/commit/754e915e9b8d296090263fd35a8e5ca57bba3746) - add `quinary2d` to namespace
--   [`791611c`](https://github.com/stdlib-js/stdlib/commit/791611c08a58f8e71075a8fcb32e8d61f59de162) - add `quaternary2d` to namespace
--   [`fb8db9f`](https://github.com/stdlib-js/stdlib/commit/fb8db9fa2bc6eb4df524b4f33f1c05c90fdda651) - add `ternary5d` to namespace
--   [`d88d656`](https://github.com/stdlib-js/stdlib/commit/d88d6564319f3fbc28ac2452088bad6e6401f83f) - add `ternary4d` to namespace
--   [`2b26af7`](https://github.com/stdlib-js/stdlib/commit/2b26af75ebd59c427298477ee36ec4823608f8fa) - add `ternary3d` to namespace
--   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
--   [`a6b94fe`](https://github.com/stdlib-js/stdlib/commit/a6b94fe54a5a2596a4698b0198bb53fe300bd07f) - add `bternary2d` to namespace
--   [`7214b1b`](https://github.com/stdlib-js/stdlib/commit/7214b1b188ed42b575d70ea6ed71c4aa56f82e92) - add `ternary2d` to namespace
--   [`e18b248`](https://github.com/stdlib-js/stdlib/commit/e18b248464425863019a841795a7e5fc7d01d0ea) - update namespace TypeScript declarations [(#1100)](https://github.com/stdlib-js/stdlib/pull/1100)
--   [`b8c3188`](https://github.com/stdlib-js/stdlib/commit/b8c3188a9557f261322237646854bfafeee43a96) - add `mskunary3d` to namespace
--   [`f7bba40`](https://github.com/stdlib-js/stdlib/commit/f7bba4088451e8e077d0a897d813b03ee25e3d04) - add `unary2dBy` to namespace
--   [`5697581`](https://github.com/stdlib-js/stdlib/commit/5697581b77c8e3305df6b2f7ffaa34b1742fc45f) - add `mskbinary2d` to namespace
--   [`4520491`](https://github.com/stdlib-js/stdlib/commit/4520491f4814d44be59297288e36f2dc0c50b8d1) - add `mskunary2d` to namespace
--   [`4d792be`](https://github.com/stdlib-js/stdlib/commit/4d792be2ea188b25a3a1d7dee12fc3cece307757) - add `binarynd` to namespace
--   [`d08263b`](https://github.com/stdlib-js/stdlib/commit/d08263bbaa18f16d5613b5b438893d584c5ce141) - add `array/base/binarynd`
--   [`7eadb6d`](https://github.com/stdlib-js/stdlib/commit/7eadb6dfc401413096f93301660c368fdc417a60) - add `bbinary5d` to namespace
--   [`beeb2a5`](https://github.com/stdlib-js/stdlib/commit/beeb2a51f8b558b0b7b1de686f74e9a22e4e0cdc) - add `binary5d` to namespace
--   [`da96360`](https://github.com/stdlib-js/stdlib/commit/da963601a4e20942f056a09262ffe4973f010c9f) - add `array/base/binary5d`
--   [`b171a2f`](https://github.com/stdlib-js/stdlib/commit/b171a2f6759b7995aaf8524fad5ab07d672e19a0) - add `bbinary4d` to namespace
--   [`c817ee8`](https://github.com/stdlib-js/stdlib/commit/c817ee8fa2ca99815c84baf57f67fe4a5b813ec3) - add `binary4d` to namespace
--   [`4def9df`](https://github.com/stdlib-js/stdlib/commit/4def9df18164e1698654864645e4992a7cb3a150) - add `array/base/binary4d`
--   [`f10c6e7`](https://github.com/stdlib-js/stdlib/commit/f10c6e7db1a2b15cdd2b6237dd0927466ebd7278) - add `binary3d` to namespace
--   [`a9eb71b`](https://github.com/stdlib-js/stdlib/commit/a9eb71b7c4721f55c77328160d6160af2c7c550a) - add `array/base/binary3d`
--   [`f45a2d8`](https://github.com/stdlib-js/stdlib/commit/f45a2d8f4ee827e38ec15bc5b7a6b7e686761c38) - add `bbinary3d` to namespace
--   [`b69dd8a`](https://github.com/stdlib-js/stdlib/commit/b69dd8a68e22fc7936fcac5a21d059cddbc369a3) - add `bunary5d` to namespace
--   [`dc0abc6`](https://github.com/stdlib-js/stdlib/commit/dc0abc69e0d6fe506c5da520af91a85ac9a638e5) - add `bunary4d` to namespace
--   [`8b7117f`](https://github.com/stdlib-js/stdlib/commit/8b7117fd13fb8fc720b2c52d2c7236bf1d048261) - add `bunary3d` to namespace
--   [`48dd68f`](https://github.com/stdlib-js/stdlib/commit/48dd68f817d59aadd4ddd1eadb69f7391855c017) - add `unarynd` to namespace
--   [`b1034ff`](https://github.com/stdlib-js/stdlib/commit/b1034ff7dce46285df5bc278a7a7b340b556c3a4) - add `filledndBy` to namespace
--   [`8d4ba29`](https://github.com/stdlib-js/stdlib/commit/8d4ba296c830ba6da67f0711a3d5cce378c92209) - add `unary5d` to namespace
--   [`7862432`](https://github.com/stdlib-js/stdlib/commit/7862432a0a4fc59810a34d5a8e99bacd6d033afc) - add `unary4d` to namespace
--   [`3e88f20`](https://github.com/stdlib-js/stdlib/commit/3e88f2067e88ab96ca910766381405f66599fac8) - add `unary3d` to namespace
--   [`d6e6a32`](https://github.com/stdlib-js/stdlib/commit/d6e6a32a5ab3686f666b113e55606ebc07f6696e) - add `bbinary2d` to namespace
--   [`ccd808b`](https://github.com/stdlib-js/stdlib/commit/ccd808bc4f1fc0303a4306e05a9fce4a77141c48) - add `binary2d` to namespace
--   [`148ed20`](https://github.com/stdlib-js/stdlib/commit/148ed20c105f392a0d0cc6c1130779e58effe0b6) - add `array/base/binary2d`
--   [`4a32a9d`](https://github.com/stdlib-js/stdlib/commit/4a32a9db17c8f665c1fbead292a7a4b2fd4c27c5) - add `bunary2d` to namespace
--   [`8735d98`](https://github.com/stdlib-js/stdlib/commit/8735d98c42d352605028c394d8b301876c553ad7) - add `unary2d` to namespace
--   [`de73ae1`](https://github.com/stdlib-js/stdlib/commit/de73ae19f43cbad40036d25b1d46620b3c5113a9) - update namespace TypeScript declarations [(#1089)](https://github.com/stdlib-js/stdlib/pull/1089)
--   [`108e51c`](https://github.com/stdlib-js/stdlib/commit/108e51c41dd601582b0f812bc110640cb2c44927) - add `oneTo` to namespace
--   [`821bf57`](https://github.com/stdlib-js/stdlib/commit/821bf57e04581daeb13b654bcf2af7da60160d48) - add `filled5dBy` to namespace
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`c7925c4`](https://github.com/stdlib-js/stdlib/commit/c7925c4e385fcf67045717b60b066d3b06c09702) - add `filled4dBy` to namespace
--   [`49c3bcd`](https://github.com/stdlib-js/stdlib/commit/49c3bcd8fe2697736b8f33b460d6d552cef393fc) - add `filled3dBy` to namespace
--   [`a4cf49a`](https://github.com/stdlib-js/stdlib/commit/a4cf49a56122abc431c95845685e195cbb4497df) - add `flattenBy` to namespace
--   [`d940344`](https://github.com/stdlib-js/stdlib/commit/d9403447be9e0407e6b644bbc4a58aca2ac3d15c) - add `ones5d` to namespace
--   [`64b710c`](https://github.com/stdlib-js/stdlib/commit/64b710c55dc5374fd00a69bdb5652876f01a6e7d) - add `ones4d` to namespace
--   [`6370968`](https://github.com/stdlib-js/stdlib/commit/6370968ac626aab6d3516c40a7994c0a48f9d827) - add `zeros5d` to namespace
--   [`66e4edc`](https://github.com/stdlib-js/stdlib/commit/66e4edc9cac441e3213d6cc3b7b0160c0426cb95) - add `zeros4d` to namespace
--   [`d130ae2`](https://github.com/stdlib-js/stdlib/commit/d130ae226c44ac21a27786e0679eafc0c7d09f1d) - add `ones3d` to namespace
--   [`95aef95`](https://github.com/stdlib-js/stdlib/commit/95aef955d2f9ef0befbbafa267866ec6271fa2ea) - add `zeros3d` to namespace
--   [`e1bc995`](https://github.com/stdlib-js/stdlib/commit/e1bc99521500951de47fceb823fc3c5d30a6e693) - add `onesnd` to namespace
--   [`b11f72a`](https://github.com/stdlib-js/stdlib/commit/b11f72ae6de681081c8057b339988b118f959edb) - add `broadcastArray` to namespace
--   [`3e4c1e0`](https://github.com/stdlib-js/stdlib/commit/3e4c1e0697a2a6051719fae6633132d3c7145b21) - add `zerosnd` to namespace
--   [`647a41a`](https://github.com/stdlib-js/stdlib/commit/647a41a246e04c58457db85a0f9960b521258815) - add `fillednd` to namespace
--   [`dc4ea1c`](https://github.com/stdlib-js/stdlib/commit/dc4ea1c90de68231ec5e5c2a38cb32cb3433d957) - add `filled5d` to namespace
--   [`bababd3`](https://github.com/stdlib-js/stdlib/commit/bababd314bfc8acbc1095a9fefb4adfe30ad8b67) - add `filled4d` to namespace
--   [`b85b670`](https://github.com/stdlib-js/stdlib/commit/b85b67034113b854daf52deb066950d4ea132ca7) - add `filled3d` to namespace
--   [`c6f4c45`](https://github.com/stdlib-js/stdlib/commit/c6f4c45f4ff429fa1f0e1aff309754573a70e4f9) - add `filled2dBy` to namespace
--   [`1859d7b`](https://github.com/stdlib-js/stdlib/commit/1859d7bba0781e592c7412921aa4a52fbf5c394d) - add `ones2d` to namespace
--   [`723f7fe`](https://github.com/stdlib-js/stdlib/commit/723f7fe77fd4eca7347bc9cbb3e2d4e430dd2bb9) - add `zeros2d` to namespace
--   [`b7aafb2`](https://github.com/stdlib-js/stdlib/commit/b7aafb26edbd8004f0c355dc807eb37ee2e7a345) - add `filled2d` to namespace
--   [`377ae31`](https://github.com/stdlib-js/stdlib/commit/377ae317cf56720fbc00190c797211eb9453273a) - update namespace TypeScript declarations [(#1076)](https://github.com/stdlib-js/stdlib/pull/1076)
--   [`63ca872`](https://github.com/stdlib-js/stdlib/commit/63ca872415203b5bd2afd785d2d639e3371c7ac7) - add `flatten5dBy` to namespace
--   [`3dbf75f`](https://github.com/stdlib-js/stdlib/commit/3dbf75f15770e6f3b3bc1b60d9135f969b19a40f) - add `flatten4dBy` to namespace
--   [`c1eb700`](https://github.com/stdlib-js/stdlib/commit/c1eb700ab5c31da7ac7fcf80695be5b5cf58ff52) - add `flatten3dBy` to namespace
--   [`cfde0b6`](https://github.com/stdlib-js/stdlib/commit/cfde0b6ca8c7870a292b90b4cec488e9b841814f) - add `flatten2dBy` to namespace
--   [`093690c`](https://github.com/stdlib-js/stdlib/commit/093690c2f1e3691a4c9334164dc2160a319e0860) - add `flatten` to namespace
--   [`cea3602`](https://github.com/stdlib-js/stdlib/commit/cea3602d2703dd19a7504602edd9c7051678551d) - add `flatten5d` to namespace
--   [`e153689`](https://github.com/stdlib-js/stdlib/commit/e1536891b13edee400152c986d3c9babbe3c3514) - add `flatten4d` to namespace
--   [`8dbecd0`](https://github.com/stdlib-js/stdlib/commit/8dbecd05a9bc1f7034e1b85c5999522f00feedb9) - add `flatten3d` to namespace
--   [`b6a9aa8`](https://github.com/stdlib-js/stdlib/commit/b6a9aa8b1aa60a9ba56068338b33033ee358ac34) - add `last` to namespace
--   [`f1754cd`](https://github.com/stdlib-js/stdlib/commit/f1754cd4c573fbd8337ff012d94dfe20a5d3c33c) - add `flatten2d` to namespace
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3031,179 +2936,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-accessor-v0.2.1">
-
-#### [@stdlib/array/base/accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessor)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-accessor-getter-v0.2.1">
-
-#### [@stdlib/array/base/accessor-getter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessor-getter)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`a40e71b`](https://github.com/stdlib-js/stdlib/commit/a40e71b99f96d512939ab12b9e6c7687fb715aa6) - improve type specificity by converting to generic
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-accessor-setter-v0.2.1">
-
-#### [@stdlib/array/base/accessor-setter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessor-setter)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`8354b8c`](https://github.com/stdlib-js/stdlib/commit/8354b8c413754d4d477bc9cba403e3f4299a3fd8) - improve type specificity by converting to a generic
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-accessors-v0.2.1">
-
-#### [@stdlib/array/base/accessors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`08b8c12`](https://github.com/stdlib-js/stdlib/commit/08b8c12c27209c0bb0d4ac136b469c5617572d17) - refactor declarations to use generics
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`9ad6e2a`](https://github.com/stdlib-js/stdlib/commit/9ad6e2a5d18d9ced0565de200e57129551298dd1) - change default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
--   [`5ab331a`](https://github.com/stdlib-js/stdlib/commit/5ab331a76c352231b3f053b171bc3dbfc62a21b1) - fix return type
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`08b8c12`](https://github.com/stdlib-js/stdlib/commit/08b8c12c27209c0bb0d4ac136b469c5617572d17): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-any-v0.2.1">
+<section class="package" id="array-base-any-v0.2.0">
 
 #### [@stdlib/array/base/any](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/any)
 
@@ -3225,7 +2958,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-any-by-v0.2.1">
+<section class="package" id="array-base-any-by-v0.2.0">
 
 #### [@stdlib/array/base/any-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/any-by)
 
@@ -3247,7 +2980,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-any-by-right-v0.2.1">
+<section class="package" id="array-base-any-by-right-v0.2.0">
 
 #### [@stdlib/array/base/any-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/any-by-right)
 
@@ -3269,7 +3002,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-arraylike2object-v0.2.1">
+<section class="package" id="array-base-arraylike2object-v0.2.0">
 
 #### [@stdlib/array/base/arraylike2object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/arraylike2object)
 
@@ -3280,39 +3013,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 ##### Features
 
 -   [`8c4e1d2`](https://github.com/stdlib-js/stdlib/commit/8c4e1d2103aab77e648e66bfeb8f297c39f16528) - add support for returning the array data type
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`d620bbd`](https://github.com/stdlib-js/stdlib/commit/d620bbd6e1b0670f18ed87df4f98db017cc9df8f) - refactor declarations to use generics
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`dd6d9e4`](https://github.com/stdlib-js/stdlib/commit/dd6d9e48fb0de33eae92b1dfb59d6ce00987acd5) - convert default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`d620bbd`](https://github.com/stdlib-js/stdlib/commit/d620bbd6e1b0670f18ed87df4f98db017cc9df8f): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3320,7 +3024,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-v0.2.1">
+<section class="package" id="array-base-assert-v0.2.0">
 
 #### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
 
@@ -3334,25 +3038,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   [`900672d`](https://github.com/stdlib-js/stdlib/commit/900672dc32fce7a9e276bff41a357cac45d852e3) - add `hasSameValues` to namespace
 -   [`d6e93a8`](https://github.com/stdlib-js/stdlib/commit/d6e93a89926046fbdeb40f233a748cd3c1b62423) - add `isComplex128Array` to namespace
 -   [`68d21bb`](https://github.com/stdlib-js/stdlib/commit/68d21bb6e1ccdc4de6784f9cd8c3c3db48a2da0d) - add `isComplex64Array` to namespace
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`3a88e07`](https://github.com/stdlib-js/stdlib/commit/3a88e0722e77578534f0567b9336d4f7ae83470e) - add `contains` to namespace
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3360,51 +3049,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-contains-v0.2.1">
-
-#### [@stdlib/array/base/assert/contains](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/contains)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db) - update minimum TypeScript version
--   [`0424cf8`](https://github.com/stdlib-js/stdlib/commit/0424cf8b80b1e0c50ea209d9b05730a8b950f4a5) - add `factory` method
--   [`41aa6d6`](https://github.com/stdlib-js/stdlib/commit/41aa6d65a111dcd2dbd59f33520fd6da03de374b) - add `array/base/assert/contains`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db): update minimum TypeScript version
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-has-same-values-v0.2.1">
+<section class="package" id="array-base-assert-has-same-values-v0.2.0">
 
 #### [@stdlib/array/base/assert/has-same-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-same-values)
 
@@ -3426,49 +3071,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-accessor-array-v0.2.1">
-
-#### [@stdlib/array/base/assert/is-accessor-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-accessor-array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305) - refactor declarations to allow narrowing
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305): refactor declarations to allow narrowing
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-complex128array-v0.2.1">
+<section class="package" id="array-base-assert-is-complex128array-v0.2.0">
 
 #### [@stdlib/array/base/assert/is-complex128array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex128array)
 
@@ -3490,7 +3093,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-complex64array-v0.2.1">
+<section class="package" id="array-base-assert-is-complex64array-v0.2.0">
 
 #### [@stdlib/array/base/assert/is-complex64array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex64array)
 
@@ -3512,7 +3115,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-at-v0.2.1">
+<section class="package" id="array-base-at-v0.2.0">
 
 #### [@stdlib/array/base/at](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/at)
 
@@ -3544,7 +3147,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-at2d-v0.2.1">
+<section class="package" id="array-base-at2d-v0.2.0">
 
 #### [@stdlib/array/base/at2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/at2d)
 
@@ -3566,7 +3169,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-at3d-v0.2.1">
+<section class="package" id="array-base-at3d-v0.2.0">
 
 #### [@stdlib/array/base/at3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/at3d)
 
@@ -3588,7 +3191,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-at4d-v0.2.1">
+<section class="package" id="array-base-at4d-v0.2.0">
 
 #### [@stdlib/array/base/at4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/at4d)
 
@@ -3610,7 +3213,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-at5d-v0.2.1">
+<section class="package" id="array-base-at5d-v0.2.0">
 
 #### [@stdlib/array/base/at5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/at5d)
 
@@ -3632,7 +3235,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-atnd-v0.2.1">
+<section class="package" id="array-base-atnd-v0.2.0">
 
 #### [@stdlib/array/base/atnd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/atnd)
 
@@ -3654,7 +3257,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-bifurcate-entries-v0.2.1">
+<section class="package" id="array-base-bifurcate-entries-v0.2.0">
 
 #### [@stdlib/array/base/bifurcate-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/bifurcate-entries)
 
@@ -3676,7 +3279,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-bifurcate-entries-by-v0.2.1">
+<section class="package" id="array-base-bifurcate-entries-by-v0.2.0">
 
 #### [@stdlib/array/base/bifurcate-entries-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/bifurcate-entries-by)
 
@@ -3698,7 +3301,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-bifurcate-indices-v0.2.1">
+<section class="package" id="array-base-bifurcate-indices-v0.2.0">
 
 #### [@stdlib/array/base/bifurcate-indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/bifurcate-indices)
 
@@ -3720,7 +3323,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-bifurcate-indices-by-v0.2.1">
+<section class="package" id="array-base-bifurcate-indices-by-v0.2.0">
 
 #### [@stdlib/array/base/bifurcate-indices-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/bifurcate-indices-by)
 
@@ -3742,7 +3345,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-bifurcate-values-v0.2.1">
+<section class="package" id="array-base-bifurcate-values-v0.2.0">
 
 #### [@stdlib/array/base/bifurcate-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/bifurcate-values)
 
@@ -3764,7 +3367,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-bifurcate-values-by-v0.2.1">
+<section class="package" id="array-base-bifurcate-values-by-v0.2.0">
 
 #### [@stdlib/array/base/bifurcate-values-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/bifurcate-values-by)
 
@@ -3786,86 +3389,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-broadcast-array-v0.2.1">
-
-#### [@stdlib/array/base/broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcast-array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7a75baa`](https://github.com/stdlib-js/stdlib/commit/7a75baa5666f9fc42240f2b5949ab69e02e04f75) - add `array/base/broadcast-array`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted--v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`9516467`](https://github.com/stdlib-js/stdlib/commit/95164673726dad4e7bfdd4f6bcb47f0a5a344f84) - add `array/base/broadcasted-binary5d`
--   [`68b4fe5`](https://github.com/stdlib-js/stdlib/commit/68b4fe550be37526f7904557d94c49d0bad0aba8) - add `array/base/broadcasted-binary4d`
--   [`89aec9c`](https://github.com/stdlib-js/stdlib/commit/89aec9c61c92babd3dae6add6db8206c56238a48) - add `array/base/broadcasted-binary3d`
--   [`5062db1`](https://github.com/stdlib-js/stdlib/commit/5062db14512d1f655ff1a22133aaff62c0de8a83) - add `array/base/broadcasted-binary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted-quaternary2d-v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-quaternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-quaternary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7709036`](https://github.com/stdlib-js/stdlib/commit/7709036fb0cc566df1d4e681fc9e430544af09fd) - add `array/base/broadcasted-quaternary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted-quinary2d-v0.2.1">
+<section class="package" id="array-base-broadcasted-quinary2d-v0.2.0">
 
 #### [@stdlib/array/base/broadcasted-quinary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-quinary2d)
 
@@ -3887,127 +3411,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-broadcasted-ternary2d-v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-ternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-ternary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`820598d`](https://github.com/stdlib-js/stdlib/commit/820598d08c54949b74cc558eeee931547cc26c6d) - add `array/base/broadcasted-ternary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted-unary2d-v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-unary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e845b48`](https://github.com/stdlib-js/stdlib/commit/e845b4889d6a64c79f4d39137745cab80c7cd90b) - add `array/base/broadcasted-unary2d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`1ed3b28`](https://github.com/stdlib-js/stdlib/commit/1ed3b28f46df433b6f64c75a21cb4c157b6095fd) - restrict to unary callbacks
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted-unary3d-v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-unary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`8a93a34`](https://github.com/stdlib-js/stdlib/commit/8a93a3410ec2ba1c63ff04c40055c4b2a85d3eb9) - add `array/base/broadcasted-unary3d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted-unary4d-v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-unary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`f336f28`](https://github.com/stdlib-js/stdlib/commit/f336f2813382efaf6e91e614283d0078cdde2fdb) - add `array/base/broadcasted-unary4d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-broadcasted-unary5d-v0.2.1">
-
-#### [@stdlib/array/base/broadcasted-unary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`cdb45b8`](https://github.com/stdlib-js/stdlib/commit/cdb45b87449044944726b6d41e69c30f2ab19e08) - add `array/base/broadcasted-unary5d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-cartesian-power-v0.2.1">
+<section class="package" id="array-base-cartesian-power-v0.2.0">
 
 #### [@stdlib/array/base/cartesian-power](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cartesian-power)
 
@@ -4018,32 +3422,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 ##### Features
 
 -   [`f183e7c`](https://github.com/stdlib-js/stdlib/commit/f183e7c88002b1d12fa45f4e6430ade1ad116d8d) - add support for accessor arrays
--   [`cac067c`](https://github.com/stdlib-js/stdlib/commit/cac067ccf05c731ea081c10a21b62d5ababa1f46) - refactor to use the `Collection` type
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`e83f8bf`](https://github.com/stdlib-js/stdlib/commit/e83f8bfd3f5360d57225bb055153b1ea0e792069) - convert default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`cac067c`](https://github.com/stdlib-js/stdlib/commit/cac067ccf05c731ea081c10a21b62d5ababa1f46): refactor to use the `Collection` type
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -4051,7 +3433,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-cartesian-product-v0.2.1">
+<section class="package" id="array-base-cartesian-product-v0.2.0">
 
 #### [@stdlib/array/base/cartesian-product](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cartesian-product)
 
@@ -4062,38 +3444,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 ##### Features
 
 -   [`027becd`](https://github.com/stdlib-js/stdlib/commit/027becd87b74fd21cd3f294fad9281cca25c8518) - add support for accessor arrays
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`d0bd118`](https://github.com/stdlib-js/stdlib/commit/d0bd11813a7a104acb3fd1841efd5f606c20c4d6) - refactor declarations to use generics
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`ded7ece`](https://github.com/stdlib-js/stdlib/commit/ded7eceaf8c49fcfc86248a192cfc291e24cf766) - convert default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`d0bd118`](https://github.com/stdlib-js/stdlib/commit/d0bd11813a7a104acb3fd1841efd5f606c20c4d6): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -4101,7 +3455,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-cartesian-square-v0.2.1">
+<section class="package" id="array-base-cartesian-square-v0.2.0">
 
 #### [@stdlib/array/base/cartesian-square](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cartesian-square)
 
@@ -4112,32 +3466,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 ##### Features
 
 -   [`f34fcb6`](https://github.com/stdlib-js/stdlib/commit/f34fcb651ea652d4ffd16fc8714247529b1c1ab1) - add support for accessor arrays
--   [`7dfe0d2`](https://github.com/stdlib-js/stdlib/commit/7dfe0d2d39677401f07f0debf5d18cdd169afdd0) - refactor declarations to use `Collection` type
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`6d659f2`](https://github.com/stdlib-js/stdlib/commit/6d659f228877b290fc270bf97a7b1ed5305cb85f) - convert default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7dfe0d2`](https://github.com/stdlib-js/stdlib/commit/7dfe0d2d39677401f07f0debf5d18cdd169afdd0): refactor declarations to use `Collection` type
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -4145,7 +3477,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-copy-v0.2.1">
+<section class="package" id="array-base-copy-v0.2.0">
 
 #### [@stdlib/array/base/copy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/copy)
 
@@ -4156,32 +3488,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 ##### Features
 
 -   [`68f4b6d`](https://github.com/stdlib-js/stdlib/commit/68f4b6d86141efac44781190256f30fc34e7315c) - add `AccessorArrayLike` support to match implementation
--   [`671b06e`](https://github.com/stdlib-js/stdlib/commit/671b06e44a82949e75cad11a4dfe9f7e65862dcc) - refactor declarations to use generics
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`bca0a62`](https://github.com/stdlib-js/stdlib/commit/bca0a622573c4f4acafe1f63bb1493576a546ade) - convert default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`671b06e`](https://github.com/stdlib-js/stdlib/commit/671b06e44a82949e75cad11a4dfe9f7e65862dcc): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -4189,50 +3499,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-copy-indexed-v0.2.1">
-
-#### [@stdlib/array/base/copy-indexed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/copy-indexed)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`fcefd6c`](https://github.com/stdlib-js/stdlib/commit/fcefd6cdc8dc87a62d46334c092b8f0f4c32edcd) - refactor declarations to use generics
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`7bf4328`](https://github.com/stdlib-js/stdlib/commit/7bf4328c04d85157c328f03adc1ea4855106e217) - convert default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`fcefd6c`](https://github.com/stdlib-js/stdlib/commit/fcefd6cdc8dc87a62d46334c092b8f0f4c32edcd): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-dedupe-v0.2.1">
+<section class="package" id="array-base-dedupe-v0.2.0">
 
 #### [@stdlib/array/base/dedupe](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/dedupe)
 
@@ -4254,7 +3521,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-every-v0.2.1">
+<section class="package" id="array-base-every-v0.2.0">
 
 #### [@stdlib/array/base/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/every)
 
@@ -4276,7 +3543,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-every-by-v0.2.1">
+<section class="package" id="array-base-every-by-v0.2.0">
 
 #### [@stdlib/array/base/every-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/every-by)
 
@@ -4298,7 +3565,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-every-by-right-v0.2.1">
+<section class="package" id="array-base-every-by-right-v0.2.0">
 
 #### [@stdlib/array/base/every-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/every-by-right)
 
@@ -4320,7 +3587,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-fancy-slice-v0.2.1">
+<section class="package" id="array-base-fancy-slice-v0.2.0">
 
 #### [@stdlib/array/base/fancy-slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fancy-slice)
 
@@ -4342,382 +3609,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-filled-v0.2.1">
-
-#### [@stdlib/array/base/filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`487d98c`](https://github.com/stdlib-js/stdlib/commit/487d98c196269877609586837181caa3ccd4fe97) - improve type specificity
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled-by-v0.2.1">
-
-#### [@stdlib/array/base/filled-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`fe37cac`](https://github.com/stdlib-js/stdlib/commit/fe37cacd9a3ec37dcdd51ef78ce02901e178202f) - improve type specificity by converting to generic
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled2d-v0.2.1">
-
-#### [@stdlib/array/base/filled2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`3e8d3dc`](https://github.com/stdlib-js/stdlib/commit/3e8d3dc6057af73c7594e900e571dbb7bc57ac29) - add `array/base/filled2d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled2d-by-v0.2.1">
-
-#### [@stdlib/array/base/filled2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled2d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`9c6ab5c`](https://github.com/stdlib-js/stdlib/commit/9c6ab5c4ae611bf2e585673b5c2636ef30846a0e) - add `array/base/filled2d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`d0c7aea`](https://github.com/stdlib-js/stdlib/commit/d0c7aea89357bd58bd5530b855a6b8170a6e07e2) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled3d-v0.2.1">
-
-#### [@stdlib/array/base/filled3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`83de634`](https://github.com/stdlib-js/stdlib/commit/83de634650b4369021b3588e63827d71b4f1b017) - add `array/base/filled3d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled3d-by-v0.2.1">
-
-#### [@stdlib/array/base/filled3d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled3d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`134eb7b`](https://github.com/stdlib-js/stdlib/commit/134eb7b50deaa5ac8b5cd68c6fa24e82551570bb) - add `array/base/filled3d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`d0c7aea`](https://github.com/stdlib-js/stdlib/commit/d0c7aea89357bd58bd5530b855a6b8170a6e07e2) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled4d-v0.2.1">
-
-#### [@stdlib/array/base/filled4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`750d022`](https://github.com/stdlib-js/stdlib/commit/750d022e99806f5583fb2d604494506489dceb45) - add `array/base/filled4d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled4d-by-v0.2.1">
-
-#### [@stdlib/array/base/filled4d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled4d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`572905f`](https://github.com/stdlib-js/stdlib/commit/572905f0a2faf9c1efaff989e09450af75371103) - add `array/base/filled4d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`d0c7aea`](https://github.com/stdlib-js/stdlib/commit/d0c7aea89357bd58bd5530b855a6b8170a6e07e2) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled5d-v0.2.1">
-
-#### [@stdlib/array/base/filled5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`4f92ff3`](https://github.com/stdlib-js/stdlib/commit/4f92ff3c1c5655a2356a80299feadc528921c393) - add `array/base/filled5d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filled5d-by-v0.2.1">
-
-#### [@stdlib/array/base/filled5d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled5d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e1449af`](https://github.com/stdlib-js/stdlib/commit/e1449af1b420281974dedff61ab17cda63b563e0) - add `array/base/filled5d-by`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-fillednd-v0.2.1">
-
-#### [@stdlib/array/base/fillednd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fillednd)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`6a3cc1a`](https://github.com/stdlib-js/stdlib/commit/6a3cc1ae79b3a5ffd0e79b9a309325713ce94cde) - add `array/base/fillednd`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-fillednd-by-v0.2.1">
-
-#### [@stdlib/array/base/fillednd-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fillednd-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`143cb9a`](https://github.com/stdlib-js/stdlib/commit/143cb9a94352af0b55a599734ab8e23c7b5807eb) - add `array/base/fillednd-by`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-filter-v0.2.1">
+<section class="package" id="array-base-filter-v0.2.0">
 
 #### [@stdlib/array/base/filter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filter)
 
@@ -4739,7 +3631,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="array-base-first-v0.2.1">
+<section class="package" id="array-base-first-v0.2.0">
 
 #### [@stdlib/array/base/first](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/first)
 
@@ -4773,348 +3665,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-flatten-v0.2.1">
-
-#### [@stdlib/array/base/flatten](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`8740ccc`](https://github.com/stdlib-js/stdlib/commit/8740ccc55aac9fe25a34e34e0c46125e04d436b2) - add support for assigning results to an output array
--   [`7031fea`](https://github.com/stdlib-js/stdlib/commit/7031feac526942921efb66b32911db7856d19501) - add `array/base/flatten`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten-by-v0.2.1">
-
-#### [@stdlib/array/base/flatten-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`97d0e24`](https://github.com/stdlib-js/stdlib/commit/97d0e24184976436cada5ebcfa69af1ffa87c752) - add `array/base/flatten-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`31d065a`](https://github.com/stdlib-js/stdlib/commit/31d065ad7c5f8c948e37932a38b738b2d8607d75) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten2d-v0.2.1">
-
-#### [@stdlib/array/base/flatten2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`fc23d36`](https://github.com/stdlib-js/stdlib/commit/fc23d36b095bd1848edee25a4b08b303833a5b6e) - add an `assign` method
--   [`338079e`](https://github.com/stdlib-js/stdlib/commit/338079e2aa5805966f9f450ba79060604b186771) - restrict input array type to `Array`
--   [`ae02f4a`](https://github.com/stdlib-js/stdlib/commit/ae02f4a432374a6d86d10f44337abb4ca716a417) - add `array/base/flatten2d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`338079e`](https://github.com/stdlib-js/stdlib/commit/338079e2aa5805966f9f450ba79060604b186771): restrict input array type to `Array`
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten2d-by-v0.2.1">
-
-#### [@stdlib/array/base/flatten2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten2d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`b22e390`](https://github.com/stdlib-js/stdlib/commit/b22e390d16e0fcb35eb65e1b9b60f4b80efef710) - add `array/base/flatten2d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten3d-v0.2.1">
-
-#### [@stdlib/array/base/flatten3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e1d0385`](https://github.com/stdlib-js/stdlib/commit/e1d0385aea002003e5198f124b2f6c5388ec85da) - add support for assigning results to an output array
--   [`dce7adf`](https://github.com/stdlib-js/stdlib/commit/dce7adfa1c140c5a80f0941c9ae9fbb4261aacb5) - add `array/base/flatten3d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten3d-by-v0.2.1">
-
-#### [@stdlib/array/base/flatten3d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten3d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`8566129`](https://github.com/stdlib-js/stdlib/commit/85661296c2cb4d294a8c5f64ca640c43365c8a60) - add `array/base/flatten3d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten4d-v0.2.1">
-
-#### [@stdlib/array/base/flatten4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`841d345`](https://github.com/stdlib-js/stdlib/commit/841d3453e96db2a7ff7a0ee7936023aea8ec3d1b) - add support for assigning results to an output array
--   [`6ab12ad`](https://github.com/stdlib-js/stdlib/commit/6ab12ad02f55998ba38eba2059f9418ecd5175c2) - add `array/base/flatten4d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten4d-by-v0.2.1">
-
-#### [@stdlib/array/base/flatten4d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten4d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`db36990`](https://github.com/stdlib-js/stdlib/commit/db36990774f18d11a7b3121fb91fc5eb049ea87e) - add `array/base/flatten4d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten5d-v0.2.1">
-
-#### [@stdlib/array/base/flatten5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`845cf4e`](https://github.com/stdlib-js/stdlib/commit/845cf4e9d8632ad0b6fb416133a4398ddf3696f0) - add support for assigning results to an output array
--   [`df39232`](https://github.com/stdlib-js/stdlib/commit/df39232dddd6f7f818c1ffea0889c1308d9aa9ed) - add `array/base/flatten5d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-flatten5d-by-v0.2.1">
-
-#### [@stdlib/array/base/flatten5d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten5d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7b5ecaa`](https://github.com/stdlib-js/stdlib/commit/7b5ecaaffcb14a2f47e42ad14211dce24b08aaed) - add `array/base/flatten5d-by`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-fliplr2d-v0.2.1">
+<section class="package" id="array-base-fliplr2d-v0.2.0">
 
 #### [@stdlib/array/base/fliplr2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fliplr2d)
 
@@ -5136,7 +3687,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-fliplr3d-v0.2.1">
+<section class="package" id="array-base-fliplr3d-v0.2.0">
 
 #### [@stdlib/array/base/fliplr3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fliplr3d)
 
@@ -5158,7 +3709,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-fliplr4d-v0.2.1">
+<section class="package" id="array-base-fliplr4d-v0.2.0">
 
 #### [@stdlib/array/base/fliplr4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fliplr4d)
 
@@ -5180,7 +3731,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-fliplr5d-v0.2.1">
+<section class="package" id="array-base-fliplr5d-v0.2.0">
 
 #### [@stdlib/array/base/fliplr5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fliplr5d)
 
@@ -5202,7 +3753,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-flipud2d-v0.2.1">
+<section class="package" id="array-base-flipud2d-v0.2.0">
 
 #### [@stdlib/array/base/flipud2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flipud2d)
 
@@ -5224,7 +3775,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-flipud3d-v0.2.1">
+<section class="package" id="array-base-flipud3d-v0.2.0">
 
 #### [@stdlib/array/base/flipud3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flipud3d)
 
@@ -5246,7 +3797,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-flipud4d-v0.2.1">
+<section class="package" id="array-base-flipud4d-v0.2.0">
 
 #### [@stdlib/array/base/flipud4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flipud4d)
 
@@ -5268,7 +3819,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-flipud5d-v0.2.1">
+<section class="package" id="array-base-flipud5d-v0.2.0">
 
 #### [@stdlib/array/base/flipud5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flipud5d)
 
@@ -5290,7 +3841,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-from-strided-v0.2.1">
+<section class="package" id="array-base-from-strided-v0.2.0">
 
 #### [@stdlib/array/base/from-strided](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/from-strided)
 
@@ -5313,50 +3864,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-getter-v0.2.1">
-
-#### [@stdlib/array/base/getter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/getter)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`ee49f1e`](https://github.com/stdlib-js/stdlib/commit/ee49f1e8f6a8bc473a4d79a7351ba918956533a0) - refactor declarations to use generics
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`bc5e19a`](https://github.com/stdlib-js/stdlib/commit/bc5e19a27a12190640ee74f7187f7e4c26edd2dc) - improve type specificity by using generics
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`ee49f1e`](https://github.com/stdlib-js/stdlib/commit/ee49f1e8f6a8bc473a4d79a7351ba918956533a0): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-group-entries-v0.2.1">
+<section class="package" id="array-base-group-entries-v0.2.0">
 
 #### [@stdlib/array/base/group-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-entries)
 
@@ -5378,7 +3886,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-group-entries-by-v0.2.1">
+<section class="package" id="array-base-group-entries-by-v0.2.0">
 
 #### [@stdlib/array/base/group-entries-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-entries-by)
 
@@ -5400,7 +3908,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-group-indices-v0.2.1">
+<section class="package" id="array-base-group-indices-v0.2.0">
 
 #### [@stdlib/array/base/group-indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-indices)
 
@@ -5422,7 +3930,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-group-indices-by-v0.2.1">
+<section class="package" id="array-base-group-indices-by-v0.2.0">
 
 #### [@stdlib/array/base/group-indices-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-indices-by)
 
@@ -5444,7 +3952,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-group-values-v0.2.1">
+<section class="package" id="array-base-group-values-v0.2.0">
 
 #### [@stdlib/array/base/group-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-values)
 
@@ -5466,7 +3974,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-group-values-by-v0.2.1">
+<section class="package" id="array-base-group-values-by-v0.2.0">
 
 #### [@stdlib/array/base/group-values-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-values-by)
 
@@ -5488,42 +3996,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-incrspace-v0.2.1">
-
-#### [@stdlib/array/base/incrspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/incrspace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-index-of-v0.2.1">
+<section class="package" id="array-base-index-of-v0.2.0">
 
 #### [@stdlib/array/base/index-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/index-of)
 
@@ -5545,66 +4018,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-last-v0.2.1">
-
-#### [@stdlib/array/base/last](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/last)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`a702b6f`](https://github.com/stdlib-js/stdlib/commit/a702b6fd7e1381f72b1080d5718a49b622be37c8) - improve type safety when element type is unknown
--   [`9ed9aca`](https://github.com/stdlib-js/stdlib/commit/9ed9acaeacce1120731efd5c25e4d94e3629826f) - increase minimum TypeScript version
--   [`a3e07fc`](https://github.com/stdlib-js/stdlib/commit/a3e07fca626cc715ae8caf71b03d2046011b93d6) - refactor declarations to use generics
--   [`3497425`](https://github.com/stdlib-js/stdlib/commit/3497425c3a47e18ceb4aba34a67f3c2e0e9b0b19) - add `array/base/last` [(#1023)](https://github.com/stdlib-js/stdlib/pull/1023)
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`a702b6f`](https://github.com/stdlib-js/stdlib/commit/a702b6fd7e1381f72b1080d5718a49b622be37c8): improve type safety when element type is unknown
--   [`9ed9aca`](https://github.com/stdlib-js/stdlib/commit/9ed9acaeacce1120731efd5c25e4d94e3629826f): increase minimum TypeScript version
--   [`a3e07fc`](https://github.com/stdlib-js/stdlib/commit/a3e07fca626cc715ae8caf71b03d2046011b93d6): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
-
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[#858](https://github.com/stdlib-js/stdlib/issues/858)
-
-</section>
-
-<!-- /.issues -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-last-index-of-v0.2.1">
+<section class="package" id="array-base-last-index-of-v0.2.0">
 
 #### [@stdlib/array/base/last-index-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/last-index-of)
 
@@ -5626,77 +4040,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-linspace-v0.2.1">
-
-#### [@stdlib/array/base/linspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/linspace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-logspace-v0.2.1">
-
-#### [@stdlib/array/base/logspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/logspace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-map2d-v0.2.1">
+<section class="package" id="array-base-map2d-v0.2.0">
 
 #### [@stdlib/array/base/map2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/map2d)
 
@@ -5718,7 +4062,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-map3d-v0.2.1">
+<section class="package" id="array-base-map3d-v0.2.0">
 
 #### [@stdlib/array/base/map3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/map3d)
 
@@ -5740,7 +4084,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-map4d-v0.2.1">
+<section class="package" id="array-base-map4d-v0.2.0">
 
 #### [@stdlib/array/base/map4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/map4d)
 
@@ -5762,7 +4106,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-map5d-v0.2.1">
+<section class="package" id="array-base-map5d-v0.2.0">
 
 #### [@stdlib/array/base/map5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/map5d)
 
@@ -5784,29 +4128,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-msk-v0.2.1">
-
-#### [@stdlib/array/base/msk](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/msk)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`2fac063`](https://github.com/stdlib-js/stdlib/commit/2fac063d851359a35246c6f7e34378cf450e8d11) - add `array/base/mskbinary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-mskfilter-v0.2.1">
+<section class="package" id="array-base-mskfilter-v0.2.0">
 
 #### [@stdlib/array/base/mskfilter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskfilter)
 
@@ -5828,7 +4150,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskreject-v0.2.1">
+<section class="package" id="array-base-mskreject-v0.2.0">
 
 #### [@stdlib/array/base/mskreject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskreject)
 
@@ -5850,94 +4172,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskunary2d-v0.2.1">
-
-#### [@stdlib/array/base/mskunary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskunary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`f501a48`](https://github.com/stdlib-js/stdlib/commit/f501a48fd60b46439231f2d564581a723c2b5b2b) - add `array/base/mskunary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-mskunary3d-v0.2.1">
-
-#### [@stdlib/array/base/mskunary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskunary3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`09a48fc`](https://github.com/stdlib-js/stdlib/commit/09a48fc749ceba3b8ecee4c5a95fa221950428a4) - add `array/base/mskunary3d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-n-cartesian-product-v0.2.1">
-
-#### [@stdlib/array/base/n-cartesian-product](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/n-cartesian-product)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`2abd8cd`](https://github.com/stdlib-js/stdlib/commit/2abd8cdfa8ca450827ce5d71bc8215b725b9b1a2) - refactor declarations to use generics
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`d809704`](https://github.com/stdlib-js/stdlib/commit/d80970488e923e39968e0a3bcc8bcceb8b509bb3) - change default type to `unknown`
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`2abd8cd`](https://github.com/stdlib-js/stdlib/commit/2abd8cdfa8ca450827ce5d71bc8215b725b9b1a2): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-none-v0.2.1">
+<section class="package" id="array-base-none-v0.2.0">
 
 #### [@stdlib/array/base/none](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/none)
 
@@ -5959,7 +4194,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-none-by-v0.2.1">
+<section class="package" id="array-base-none-by-v0.2.0">
 
 #### [@stdlib/array/base/none-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/none-by)
 
@@ -5981,7 +4216,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-none-by-right-v0.2.1">
+<section class="package" id="array-base-none-by-right-v0.2.0">
 
 #### [@stdlib/array/base/none-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/none-by-right)
 
@@ -6003,7 +4238,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-one-to-v0.2.1">
+<section class="package" id="array-base-one-to-v0.2.0">
 
 #### [@stdlib/array/base/one-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/one-to)
 
@@ -6014,7 +4249,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`c271344`](https://github.com/stdlib-js/stdlib/commit/c2713444ed5ab0594193c90a54b0164eb0400a57) - add `assign` method
--   [`17bef93`](https://github.com/stdlib-js/stdlib/commit/17bef93747a3b9d8d1544472e8e270d010605954) - add `array/base/one-to`
 
 </section>
 
@@ -6026,238 +4260,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-ones-v0.2.1">
-
-#### [@stdlib/array/base/ones](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ones2d-v0.2.1">
-
-#### [@stdlib/array/base/ones2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`6afd487`](https://github.com/stdlib-js/stdlib/commit/6afd4871d06b6dd5ac10d26f5d7c1794ce697856) - add `array/base/ones2d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ones3d-v0.2.1">
-
-#### [@stdlib/array/base/ones3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7b4035f`](https://github.com/stdlib-js/stdlib/commit/7b4035f983c5e0d2bbda56541bcd7eca003811e7) - add `array/base/ones3d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ones4d-v0.2.1">
-
-#### [@stdlib/array/base/ones4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`a0d378f`](https://github.com/stdlib-js/stdlib/commit/a0d378f774da10e0386dd475c5f0f96fd9258bb1) - add `array/base/ones4d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ones5d-v0.2.1">
-
-#### [@stdlib/array/base/ones5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`07b6b1f`](https://github.com/stdlib-js/stdlib/commit/07b6b1f1de40f7c54d319121768d23d28a824d45) - add `array/base/ones5d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-onesnd-v0.2.1">
-
-#### [@stdlib/array/base/onesnd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/onesnd)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`75bd406`](https://github.com/stdlib-js/stdlib/commit/75bd406a8d2659fcbba30e1b3874d7301122c450) - add `array/base/onesnd`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-quaternary2d-v0.2.1">
-
-#### [@stdlib/array/base/quaternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quaternary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`427ed16`](https://github.com/stdlib-js/stdlib/commit/427ed169a8a834dd49c3cede40a0d552ae4479a5) - add `array/base/quaternary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-quaternary3d-v0.2.1">
+<section class="package" id="array-base-quaternary3d-v0.2.0">
 
 #### [@stdlib/array/base/quaternary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quaternary3d)
 
@@ -6279,7 +4282,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-quaternary4d-v0.2.1">
+<section class="package" id="array-base-quaternary4d-v0.2.0">
 
 #### [@stdlib/array/base/quaternary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quaternary4d)
 
@@ -6301,7 +4304,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-quaternary5d-v0.2.1">
+<section class="package" id="array-base-quaternary5d-v0.2.0">
 
 #### [@stdlib/array/base/quaternary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quaternary5d)
 
@@ -6323,29 +4326,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-quinary2d-v0.2.1">
-
-#### [@stdlib/array/base/quinary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quinary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`5f9a1c0`](https://github.com/stdlib-js/stdlib/commit/5f9a1c0936a08dd472d26364035c300f742de10a) - add `array/base/quinary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-quinary3d-v0.2.1">
+<section class="package" id="array-base-quinary3d-v0.2.0">
 
 #### [@stdlib/array/base/quinary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quinary3d)
 
@@ -6367,7 +4348,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-quinary4d-v0.2.1">
+<section class="package" id="array-base-quinary4d-v0.2.0">
 
 #### [@stdlib/array/base/quinary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quinary4d)
 
@@ -6389,7 +4370,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-quinary5d-v0.2.1">
+<section class="package" id="array-base-quinary5d-v0.2.0">
 
 #### [@stdlib/array/base/quinary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quinary5d)
 
@@ -6411,7 +4392,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-reject-v0.2.1">
+<section class="package" id="array-base-reject-v0.2.0">
 
 #### [@stdlib/array/base/reject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/reject)
 
@@ -6433,7 +4414,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-resolve-getter-v0.2.1">
+<section class="package" id="array-base-resolve-getter-v0.2.0">
 
 #### [@stdlib/array/base/resolve-getter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/resolve-getter)
 
@@ -6455,7 +4436,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-resolve-setter-v0.2.1">
+<section class="package" id="array-base-resolve-setter-v0.2.0">
 
 #### [@stdlib/array/base/resolve-setter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/resolve-setter)
 
@@ -6477,7 +4458,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-reverse-v0.2.1">
+<section class="package" id="array-base-reverse-v0.2.0">
 
 #### [@stdlib/array/base/reverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/reverse)
 
@@ -6499,49 +4480,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-setter-v0.2.1">
-
-#### [@stdlib/array/base/setter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/setter)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`68440c3`](https://github.com/stdlib-js/stdlib/commit/68440c30ffdea9c9b4cb2b6b4c4db5e6a1fd6c5b) - refactor declarations to use generics
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`68440c3`](https://github.com/stdlib-js/stdlib/commit/68440c30ffdea9c9b4cb2b6b4c4db5e6a1fd6c5b): refactor declarations to use generics
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-slice-v0.2.1">
+<section class="package" id="array-base-slice-v0.2.0">
 
 #### [@stdlib/array/base/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/slice)
 
@@ -6563,7 +4502,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-strided2array2d-v0.2.1">
+<section class="package" id="array-base-strided2array2d-v0.2.0">
 
 #### [@stdlib/array/base/strided2array2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array2d)
 
@@ -6574,7 +4513,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`7fee0df`](https://github.com/stdlib-js/stdlib/commit/7fee0df1e33b415b64eadf4a127d7de720c158a4) - add support for accessor strided arrays
--   [`25e784d`](https://github.com/stdlib-js/stdlib/commit/25e784d6ab03a44287244f3d46d4cfea812fee55) - add `array/base/strided2array2d`
 
 </section>
 
@@ -6586,7 +4524,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-strided2array3d-v0.2.1">
+<section class="package" id="array-base-strided2array3d-v0.2.0">
 
 #### [@stdlib/array/base/strided2array3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array3d)
 
@@ -6597,7 +4535,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e8ca7bf`](https://github.com/stdlib-js/stdlib/commit/e8ca7bf39c059ebf2861945f33feea8ac8157034) - add support for accessor strided arrays
--   [`d39351d`](https://github.com/stdlib-js/stdlib/commit/d39351d1d0359557189bccaa6c6ee2b0e05a42f1) - add `array/base/strided2array3d`
 
 </section>
 
@@ -6609,7 +4546,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-strided2array4d-v0.2.1">
+<section class="package" id="array-base-strided2array4d-v0.2.0">
 
 #### [@stdlib/array/base/strided2array4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array4d)
 
@@ -6620,7 +4557,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`be9d624`](https://github.com/stdlib-js/stdlib/commit/be9d624b581d86ae9261c8715419e2c358ef1712) - add support for accessor strided arrays
--   [`da22c4f`](https://github.com/stdlib-js/stdlib/commit/da22c4f969ca701a1910ff711a64cb84f4f7d4a6) - add `array/base/strided2array4d`
 
 </section>
 
@@ -6632,7 +4568,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-strided2array5d-v0.2.1">
+<section class="package" id="array-base-strided2array5d-v0.2.0">
 
 #### [@stdlib/array/base/strided2array5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array5d)
 
@@ -6643,7 +4579,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`6ece459`](https://github.com/stdlib-js/stdlib/commit/6ece4597dcd71ffd2176bfbd7e39e22a6aa40b9e) - add support for accessor strided arrays
--   [`3a7f770`](https://github.com/stdlib-js/stdlib/commit/3a7f7704f8dad9dcf68d809078bba2e716d780af) - add `array/base/strided2array5d`
 
 </section>
 
@@ -6655,7 +4590,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-take-v0.2.1">
+<section class="package" id="array-base-take-v0.2.0">
 
 #### [@stdlib/array/base/take](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take)
 
@@ -6666,7 +4601,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`9c7897f`](https://github.com/stdlib-js/stdlib/commit/9c7897fd2d62795e42060d4f3596465613a555e3) - add support for strided accessor arrays
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -6682,26 +4616,13 @@ This release closes the following issue:
 
 <!-- /.bug-fixes -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="array-base-take-indexed-v0.2.1">
+<section class="package" id="array-base-take-indexed-v0.2.0">
 
 #### [@stdlib/array/base/take-indexed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take-indexed)
 
@@ -6733,7 +4654,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-take2d-v0.2.1">
+<section class="package" id="array-base-take2d-v0.2.0">
 
 #### [@stdlib/array/base/take2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take2d)
 
@@ -6755,7 +4676,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-take3d-v0.2.1">
+<section class="package" id="array-base-take3d-v0.2.0">
 
 #### [@stdlib/array/base/take3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take3d)
 
@@ -6777,130 +4698,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-ternary2d-v0.2.1">
-
-#### [@stdlib/array/base/ternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`2b7cf06`](https://github.com/stdlib-js/stdlib/commit/2b7cf06391c17868723159bdecb0c68ee495644c) - add `array/base/ternary2d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ternary3d-v0.2.1">
-
-#### [@stdlib/array/base/ternary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`aa6544c`](https://github.com/stdlib-js/stdlib/commit/aa6544c7604f8aa3a9135bcb47bb64d0ed7e16e6) - add `array/base/ternary3d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ternary4d-v0.2.1">
-
-#### [@stdlib/array/base/ternary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`ca6ff31`](https://github.com/stdlib-js/stdlib/commit/ca6ff31fc5fcfdb748389ec45bc58a9bfe799819) - add `array/base/ternary4d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-ternary5d-v0.2.1">
-
-#### [@stdlib/array/base/ternary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`b28019e`](https://github.com/stdlib-js/stdlib/commit/b28019ecd72b194aeb7956c781216d5423d0f2bb) - add `array/base/ternary5d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-to-accessor-array-v0.2.1">
-
-#### [@stdlib/array/base/to-accessor-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/to-accessor-array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-to-deduped-v0.2.1">
+<section class="package" id="array-base-to-deduped-v0.2.0">
 
 #### [@stdlib/array/base/to-deduped](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/to-deduped)
 
@@ -6922,7 +4720,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-to-reversed-v0.2.1">
+<section class="package" id="array-base-to-reversed-v0.2.0">
 
 #### [@stdlib/array/base/to-reversed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/to-reversed)
 
@@ -6944,184 +4742,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-unary2d-v0.2.1">
-
-#### [@stdlib/array/base/unary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`6a89907`](https://github.com/stdlib-js/stdlib/commit/6a8990752ed783755a1d4cb1ff8234bde7834ec2) - add `array/base/unary2d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`12ba0da`](https://github.com/stdlib-js/stdlib/commit/12ba0da8be7905ed974535e8d03270ba17d80cf0) - restrict to unary callbacks
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-unary2d-by-v0.2.1">
-
-#### [@stdlib/array/base/unary2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary2d-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`98a3969`](https://github.com/stdlib-js/stdlib/commit/98a3969dcc5223872503ae9fd662a3a87c60287f) - add `array/base/unary2d-by`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-unary3d-v0.2.1">
-
-#### [@stdlib/array/base/unary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`42a85b4`](https://github.com/stdlib-js/stdlib/commit/42a85b44b3b34d30a11466958a18c92a21c52674) - add `array/base/unary3d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-unary4d-v0.2.1">
-
-#### [@stdlib/array/base/unary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`d9dd7e8`](https://github.com/stdlib-js/stdlib/commit/d9dd7e82489cf162dc95d045eb2c3869fbb3d1c9) - add `array/base/unary4d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-unary5d-v0.2.1">
-
-#### [@stdlib/array/base/unary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`9e4d892`](https://github.com/stdlib-js/stdlib/commit/9e4d892cf9f666beaf20163b7d7343e31a9f4106) - add `array/base/unary5d`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-unarynd-v0.2.1">
-
-#### [@stdlib/array/base/unarynd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unarynd)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`37bdf92`](https://github.com/stdlib-js/stdlib/commit/37bdf924ec6ee1c6dbdacbd6c0258030e2a422e6) - add `array/base/unarynd`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-unitspace-v0.2.1">
-
-#### [@stdlib/array/base/unitspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unitspace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-zero-to-v0.2.1">
+<section class="package" id="array-base-zero-to-v0.2.0">
 
 #### [@stdlib/array/base/zero-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zero-to)
 
@@ -7132,24 +4753,10 @@ This release closes the following issue:
 ##### Features
 
 -   [`5a9e3a2`](https://github.com/stdlib-js/stdlib/commit/5a9e3a2be378a79829489e2aba08affe51acbaf5) - add `assign` method
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -7157,251 +4764,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-zeros-v0.2.1">
-
-#### [@stdlib/array/base/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-zeros2d-v0.2.1">
-
-#### [@stdlib/array/base/zeros2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros2d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`41ba373`](https://github.com/stdlib-js/stdlib/commit/41ba3733d022aa71086231860eb01ed255e1594a) - add `array/base/zeros2d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-zeros3d-v0.2.1">
-
-#### [@stdlib/array/base/zeros3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros3d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`f00a061`](https://github.com/stdlib-js/stdlib/commit/f00a061e54f99da525c5b972b9753a397a3f27d8) - add `array/base/zeros3d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-zeros4d-v0.2.1">
-
-#### [@stdlib/array/base/zeros4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros4d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`24de472`](https://github.com/stdlib-js/stdlib/commit/24de47226af0278ae855c64b571bb14304ea1819) - add `array/base/zeros4d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-zeros5d-v0.2.1">
-
-#### [@stdlib/array/base/zeros5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros5d)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`d188757`](https://github.com/stdlib-js/stdlib/commit/d1887573bbe6552eb90cc2b4b38eeb16f1e999e1) - add `array/base/zeros5d`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-zerosnd-v0.2.1">
-
-#### [@stdlib/array/base/zerosnd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zerosnd)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`76174ba`](https://github.com/stdlib-js/stdlib/commit/76174bacaae018ee0c56fcf8555d281c35d63fa5) - add `array/base/zerosnd`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-buffer-v0.2.1">
-
-#### [@stdlib/array/buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/buffer)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-cartesian-power-v0.2.1">
+<section class="package" id="array-cartesian-power-v0.2.0">
 
 #### [@stdlib/array/cartesian-power](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/cartesian-power)
 
@@ -7423,7 +4786,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-cartesian-product-v0.2.1">
+<section class="package" id="array-cartesian-product-v0.2.0">
 
 #### [@stdlib/array/cartesian-product](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/cartesian-product)
 
@@ -7445,7 +4808,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-cartesian-square-v0.2.1">
+<section class="package" id="array-cartesian-square-v0.2.0">
 
 #### [@stdlib/array/cartesian-square](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/cartesian-square)
 
@@ -7467,7 +4830,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-complex128-v0.2.1">
+<section class="package" id="array-complex128-v0.2.0">
 
 #### [@stdlib/array/complex128](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex128)
 
@@ -7498,7 +4861,6 @@ This release closes the following issue:
 -   [`151d27d`](https://github.com/stdlib-js/stdlib/commit/151d27d5df43ea75853ec73e5282a0b3d82f6fbb) - add `some` method to `array/complex128` [(#1212)](https://github.com/stdlib-js/stdlib/pull/1212)
 -   [`814fb4c`](https://github.com/stdlib-js/stdlib/commit/814fb4c4fa76500940e6db9fa34c84fb9739f933) - add `every` method to `array/complex128` [(#1207)](https://github.com/stdlib-js/stdlib/pull/1207)
 -   [`b597754`](https://github.com/stdlib-js/stdlib/commit/b59775459f425f6f8a47133c8b89db2da376a45b) - add `at` method to `array/complex128` [(#1202)](https://github.com/stdlib-js/stdlib/pull/1202)
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -7509,24 +4871,10 @@ This release closes the following issue:
 ##### Bug Fixes
 
 -   [`0c9081b`](https://github.com/stdlib-js/stdlib/commit/0c9081bb9ec0fc97fe11d11db373830892a82c34) - ensure correct use of generics
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -7534,7 +4882,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-complex64-v0.2.1">
+<section class="package" id="array-complex64-v0.2.0">
 
 #### [@stdlib/array/complex64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex64)
 
@@ -7565,7 +4913,6 @@ This release closes the following issue:
 -   [`c0f06f8`](https://github.com/stdlib-js/stdlib/commit/c0f06f81d7226d73f1911e0b91dcac621589333e) - add `some` method to `array/complex64` [(#1190)](https://github.com/stdlib-js/stdlib/pull/1190)
 -   [`9272073`](https://github.com/stdlib-js/stdlib/commit/9272073a2ec744a05d070c7e07f6f2cf8033c568) - add `every` method to `array/complex64` [(#1184)](https://github.com/stdlib-js/stdlib/pull/1184)
 -   [`06f0f91`](https://github.com/stdlib-js/stdlib/commit/06f0f91a5ed2c328ab09fa2813d8df2b0864555a) - add support for the typed array `at` method in `array/complex64` [(#1182)](https://github.com/stdlib-js/stdlib/pull/1182)
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -7578,192 +4925,18 @@ This release closes the following issue:
 -   [`f2aab8d`](https://github.com/stdlib-js/stdlib/commit/f2aab8d64e9a2e347a7e566fcda7301b30b38d91) - ensure correct use of generics
 -   [`848730f`](https://github.com/stdlib-js/stdlib/commit/848730f6af734fd9649ac942e72aa7a60f99ec5a) - add support for negative indices in method `indexOf` and `lastIndexOf` [(#1197)](https://github.com/stdlib-js/stdlib/pull/1197)
 -   [`8b2937f`](https://github.com/stdlib-js/stdlib/commit/8b2937f503749017107432a0981ebbc30c05aeb0) - address typo in error message
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
 
 </section>
 
 <!-- /.bug-fixes -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="array-convert-v0.2.1">
-
-#### [@stdlib/array/convert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/convert)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-convert-same-v0.2.1">
-
-#### [@stdlib/array/convert-same](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/convert-same)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-ctors-v0.2.1">
-
-#### [@stdlib/array/ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-datespace-v0.2.1">
-
-#### [@stdlib/array/datespace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/datespace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-defaults-v0.2.1">
+<section class="package" id="array-defaults-v0.2.0">
 
 #### [@stdlib/array/defaults](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/defaults)
 
@@ -7785,42 +4958,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-dtype-v0.2.1">
-
-#### [@stdlib/array/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-dtypes-v0.2.1">
+<section class="package" id="array-dtypes-v0.2.0">
 
 #### [@stdlib/array/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/dtypes)
 
@@ -7832,529 +4970,18 @@ This release closes the following issue:
 
 -   [`8e2c3fe`](https://github.com/stdlib-js/stdlib/commit/8e2c3fe58faeb3d5001420b2d75b7d61d1305093) - add support for extending data type kind subsets with a \"generic\" data type
 -   [`a2c3eb0`](https://github.com/stdlib-js/stdlib/commit/a2c3eb01e5b7339764ed39e0affe669a5728ce42) - add support for returning data type subsets according to a kind argument
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="array-empty-v0.2.1">
-
-#### [@stdlib/array/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/empty)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`c72a4c6`](https://github.com/stdlib-js/stdlib/commit/c72a4c6976a3527f239ccaf450e8df8379549f9a) - add `array/empty` [(#983)](https://github.com/stdlib-js/stdlib/pull/983)
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[#982](https://github.com/stdlib-js/stdlib/issues/982)
-
-</section>
-
-<!-- /.issues -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-empty-like-v0.2.1">
-
-#### [@stdlib/array/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/empty-like)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`81b8f6c`](https://github.com/stdlib-js/stdlib/commit/81b8f6cdc8d32eaa189a3b40f522c3f7f2bc84b4) - add `array/empty-like` [(#1041)](https://github.com/stdlib-js/stdlib/pull/1041)
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-filled-v0.2.1">
-
-#### [@stdlib/array/filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-filled-by-v0.2.1">
-
-#### [@stdlib/array/filled-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled-by)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-float32-v0.2.1">
-
-#### [@stdlib/array/float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/float32)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-float64-v0.2.1">
-
-#### [@stdlib/array/float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/float64)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-from-iterator-v0.2.1">
-
-#### [@stdlib/array/from-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/from-iterator)
-
-<details>
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-full-v0.2.1">
-
-#### [@stdlib/array/full](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-full-like-v0.2.1">
-
-#### [@stdlib/array/full-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full-like)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-incrspace-v0.2.1">
-
-#### [@stdlib/array/incrspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/incrspace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-int16-v0.2.1">
-
-#### [@stdlib/array/int16](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/int16)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-int32-v0.2.1">
-
-#### [@stdlib/array/int32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/int32)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-int8-v0.2.1">
-
-#### [@stdlib/array/int8](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/int8)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-linspace-v0.2.1">
+<section class="package" id="array-linspace-v0.2.0">
 
 #### [@stdlib/array/linspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/linspace)
 
@@ -8365,38 +4992,21 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
 
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -8408,42 +5018,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-logspace-v0.2.1">
-
-#### [@stdlib/array/logspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/logspace)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-min-dtype-v0.2.1">
+<section class="package" id="array-min-dtype-v0.2.0">
 
 #### [@stdlib/array/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/min-dtype)
 
@@ -8454,38 +5029,21 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
 
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -8497,7 +5055,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-nans-v0.2.1">
+<section class="package" id="array-nans-v0.2.0">
 
 #### [@stdlib/array/nans](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/nans)
 
@@ -8508,7 +5066,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -8519,17 +5076,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -8541,7 +5092,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-nans-like-v0.2.1">
+<section class="package" id="array-nans-like-v0.2.0">
 
 #### [@stdlib/array/nans-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/nans-like)
 
@@ -8552,7 +5103,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -8563,17 +5113,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -8585,42 +5129,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-next-dtype-v0.2.1">
-
-#### [@stdlib/array/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/next-dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-one-to-v0.2.1">
+<section class="package" id="array-one-to-v0.2.0">
 
 #### [@stdlib/array/one-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/one-to)
 
@@ -8642,7 +5151,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-one-to-like-v0.2.1">
+<section class="package" id="array-one-to-like-v0.2.0">
 
 #### [@stdlib/array/one-to-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/one-to-like)
 
@@ -8664,77 +5173,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-ones-v0.2.1">
-
-#### [@stdlib/array/ones](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ones)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-ones-like-v0.2.1">
-
-#### [@stdlib/array/ones-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ones-like)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-pool-v0.2.1">
+<section class="package" id="array-pool-v0.2.0">
 
 #### [@stdlib/array/pool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/pool)
 
@@ -8745,7 +5184,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -8766,17 +5204,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -8788,217 +5220,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-promotion-rules-v0.2.1">
-
-#### [@stdlib/array/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/promotion-rules)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-reviver-v0.2.1">
-
-#### [@stdlib/array/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/reviver)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-safe-casts-v0.2.1">
-
-#### [@stdlib/array/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/safe-casts)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-same-kind-casts-v0.2.1">
-
-#### [@stdlib/array/same-kind-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/same-kind-casts)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-shape-v0.2.1">
-
-#### [@stdlib/array/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/shape)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-shared-buffer-v0.2.1">
-
-#### [@stdlib/array/shared-buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/shared-buffer)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-slice-v0.2.1">
+<section class="package" id="array-slice-v0.2.0">
 
 #### [@stdlib/array/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/slice)
 
@@ -9020,322 +5242,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-to-circular-iterator-v0.2.1">
-
-#### [@stdlib/array/to-circular-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-circular-iterator)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-iterator-v0.2.1">
-
-#### [@stdlib/array/to-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-iterator)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-iterator-right-v0.2.1">
-
-#### [@stdlib/array/to-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-iterator-right)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-json-v0.2.1">
-
-#### [@stdlib/array/to-json](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-json)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-sparse-iterator-v0.2.1">
-
-#### [@stdlib/array/to-sparse-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-sparse-iterator)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-sparse-iterator-right-v0.2.1">
-
-#### [@stdlib/array/to-sparse-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-sparse-iterator-right)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-strided-iterator-v0.2.1">
-
-#### [@stdlib/array/to-strided-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-strided-iterator)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-view-iterator-v0.2.1">
-
-#### [@stdlib/array/to-view-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-view-iterator)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-to-view-iterator-right-v0.2.1">
-
-#### [@stdlib/array/to-view-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-view-iterator-right)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-v0.2.1">
+<section class="package" id="array-typed-v0.2.0">
 
 #### [@stdlib/array/typed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed)
 
@@ -9346,7 +5253,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -9357,17 +5263,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -9379,7 +5279,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-complex-v0.2.1">
+<section class="package" id="array-typed-complex-v0.2.0">
 
 #### [@stdlib/array/typed-complex](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex)
 
@@ -9390,7 +5290,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -9401,17 +5300,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -9423,42 +5316,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-complex-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-complex-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-complex-dtypes-v0.2.1">
+<section class="package" id="array-typed-complex-dtypes-v0.2.0">
 
 #### [@stdlib/array/typed-complex-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex-dtypes)
 
@@ -9469,7 +5327,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -9480,17 +5337,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -9502,42 +5353,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-dtypes-v0.2.1">
+<section class="package" id="array-typed-dtypes-v0.2.0">
 
 #### [@stdlib/array/typed-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-dtypes)
 
@@ -9548,7 +5364,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -9559,17 +5374,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -9581,42 +5390,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-float-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-float-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-float-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-float-dtypes-v0.2.1">
+<section class="package" id="array-typed-float-dtypes-v0.2.0">
 
 #### [@stdlib/array/typed-float-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-float-dtypes)
 
@@ -9627,7 +5401,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -9638,17 +5411,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -9660,217 +5427,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-integer-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-integer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-integer-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-integer-dtypes-v0.2.1">
-
-#### [@stdlib/array/typed-integer-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-integer-dtypes)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-real-v0.2.1">
-
-#### [@stdlib/array/typed-real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-real-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-real-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-real-dtypes-v0.2.1">
-
-#### [@stdlib/array/typed-real-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-dtypes)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-real-float-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-real-float-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-float-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-real-float-dtypes-v0.2.1">
+<section class="package" id="array-typed-real-float-dtypes-v0.2.0">
 
 #### [@stdlib/array/typed-real-float-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-float-dtypes)
 
@@ -9881,7 +5438,6 @@ This release closes the following issue:
 ##### Features
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0) - rename type definitions for array and ndarray data types
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -9892,17 +5448,11 @@ This release closes the following issue:
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -9914,287 +5464,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-signed-integer-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-signed-integer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-signed-integer-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-signed-integer-dtypes-v0.2.1">
-
-#### [@stdlib/array/typed-signed-integer-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-signed-integer-dtypes)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-unsigned-integer-ctors-v0.2.1">
-
-#### [@stdlib/array/typed-unsigned-integer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-unsigned-integer-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-typed-unsigned-integer-dtypes-v0.2.1">
-
-#### [@stdlib/array/typed-unsigned-integer-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-unsigned-integer-dtypes)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-uint16-v0.2.1">
-
-#### [@stdlib/array/uint16](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint16)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-uint32-v0.2.1">
-
-#### [@stdlib/array/uint32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint32)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-uint8-v0.2.1">
-
-#### [@stdlib/array/uint8](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint8)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-uint8c-v0.2.1">
-
-#### [@stdlib/array/uint8c](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint8c)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-zero-to-v0.2.1">
+<section class="package" id="array-zero-to-v0.2.0">
 
 #### [@stdlib/array/zero-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zero-to)
 
@@ -10216,7 +5486,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-zero-to-like-v0.2.1">
+<section class="package" id="array-zero-to-like-v0.2.0">
 
 #### [@stdlib/array/zero-to-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zero-to-like)
 
@@ -10238,76 +5508,6 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-zeros-v0.2.1">
-
-#### [@stdlib/array/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zeros)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-zeros-like-v0.2.1">
-
-#### [@stdlib/array/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zeros-like)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
 </section>
 
 <!-- /.packages -->
@@ -10317,34 +5517,11 @@ This release closes the following issue:
 ### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`338079e`](https://github.com/stdlib-js/stdlib/commit/338079e2aa5805966f9f450ba79060604b186771): restrict input array type to `Array`
--   [`a702b6f`](https://github.com/stdlib-js/stdlib/commit/a702b6fd7e1381f72b1080d5718a49b622be37c8): improve type safety when element type is unknown
--   [`7dfe0d2`](https://github.com/stdlib-js/stdlib/commit/7dfe0d2d39677401f07f0debf5d18cdd169afdd0): refactor declarations to use `Collection` type
--   [`cac067c`](https://github.com/stdlib-js/stdlib/commit/cac067ccf05c731ea081c10a21b62d5ababa1f46): refactor to use the `Collection` type
--   [`68440c3`](https://github.com/stdlib-js/stdlib/commit/68440c30ffdea9c9b4cb2b6b4c4db5e6a1fd6c5b): refactor declarations to use generics
--   [`2abd8cd`](https://github.com/stdlib-js/stdlib/commit/2abd8cdfa8ca450827ce5d71bc8215b725b9b1a2): refactor declarations to use generics
--   [`ee49f1e`](https://github.com/stdlib-js/stdlib/commit/ee49f1e8f6a8bc473a4d79a7351ba918956533a0): refactor declarations to use generics
--   [`fcefd6c`](https://github.com/stdlib-js/stdlib/commit/fcefd6cdc8dc87a62d46334c092b8f0f4c32edcd): refactor declarations to use generics
--   [`671b06e`](https://github.com/stdlib-js/stdlib/commit/671b06e44a82949e75cad11a4dfe9f7e65862dcc): refactor declarations to use generics
--   [`9ed9aca`](https://github.com/stdlib-js/stdlib/commit/9ed9acaeacce1120731efd5c25e4d94e3629826f): increase minimum TypeScript version
--   [`d0bd118`](https://github.com/stdlib-js/stdlib/commit/d0bd11813a7a104acb3fd1841efd5f606c20c4d6): refactor declarations to use generics
--   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305): refactor declarations to allow narrowing
--   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db): update minimum TypeScript version
--   [`a3e07fc`](https://github.com/stdlib-js/stdlib/commit/a3e07fca626cc715ae8caf71b03d2046011b93d6): refactor declarations to use generics
--   [`d620bbd`](https://github.com/stdlib-js/stdlib/commit/d620bbd6e1b0670f18ed87df4f98db017cc9df8f): refactor declarations to use generics
--   [`08b8c12`](https://github.com/stdlib-js/stdlib/commit/08b8c12c27209c0bb0d4ac136b469c5617572d17): refactor declarations to use generics
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -10354,9 +5531,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+This release closes the following issue:
 
-[#857](https://github.com/stdlib-js/stdlib/issues/857), [#858](https://github.com/stdlib-js/stdlib/issues/858), [#982](https://github.com/stdlib-js/stdlib/issues/982)
+[#857](https://github.com/stdlib-js/stdlib/issues/857)
 
 </section>
 
@@ -10366,17 +5543,12 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   Athan Reines
--   Athan Reines
 -   Jaysukh Makvana
--   Naresh Jagadeesan
--   Philipp Burckhardt
 -   Philipp Burckhardt
 -   Planeshifter
--   Stephannie Jiménez Gacha
 -   kgryte
 
 </section>
@@ -10390,12 +5562,12 @@ A total of 10 people contributed to this release. Thank you to the following con
 <details>
 
 -   [`80e9e9a`](https://github.com/stdlib-js/stdlib/commit/80e9e9a3874cf073bf2c2aea9b06e7a8973c676c) - **fix:** update accessor resolution _(by Athan Reines)_
--   [`5284362`](https://github.com/stdlib-js/stdlib/commit/5284362368db3dcaae9a50dacd9caab56485a7e9) - **docs:** update related packages sections [(##1299)](#1299) _(by stdlib-bot)_
+-   [`5284362`](https://github.com/stdlib-js/stdlib/commit/5284362368db3dcaae9a50dacd9caab56485a7e9) - **docs:** update related packages sections [(#1299)](https://github.com/stdlib-js/stdlib/pull/1299) _(by stdlib-bot)_
 -   [`f841d8c`](https://github.com/stdlib-js/stdlib/commit/f841d8c2fdbbf291b8b1a7100c55c42929db742e) - **feat:** add `fancySlice` to namespace _(by Athan Reines)_
 -   [`a580047`](https://github.com/stdlib-js/stdlib/commit/a580047ee1a5bad72fe7fdca059fbfc168be534d) - **feat:** add `array/base/fancy-slice` _(by Athan Reines)_
 -   [`8c4e1d2`](https://github.com/stdlib-js/stdlib/commit/8c4e1d2103aab77e648e66bfeb8f297c39f16528) - **feat:** add support for returning the array data type _(by Athan Reines)_
 -   [`3ca6b26`](https://github.com/stdlib-js/stdlib/commit/3ca6b26a90ae47fef9303d47b754c8e1af888c0f) - **docs:** update namespace table of contents [(#1297)](https://github.com/stdlib-js/stdlib/pull/1297) _(by stdlib-bot, Philipp Burckhardt)_
--   [`ed8a998`](https://github.com/stdlib-js/stdlib/commit/ed8a998f95cebd180f2a974548379a6335988970) - **docs:** update related packages sections [(##1296)](#1296) _(by stdlib-bot)_
+-   [`ed8a998`](https://github.com/stdlib-js/stdlib/commit/ed8a998f95cebd180f2a974548379a6335988970) - **docs:** update related packages sections [(#1296)](https://github.com/stdlib-js/stdlib/pull/1296) _(by stdlib-bot)_
 -   [`6c3807f`](https://github.com/stdlib-js/stdlib/commit/6c3807f02da7cd529dd94af786913c8c6580816a) - **feat:** add `reject` to namespace _(by Athan Reines)_
 -   [`d258f44`](https://github.com/stdlib-js/stdlib/commit/d258f44905863d8cab6bbed49c77e06e23f3fa6c) - **feat:** add `array/base/reject` _(by Athan Reines)_
 -   [`1dc8ec6`](https://github.com/stdlib-js/stdlib/commit/1dc8ec61a15512b62e25b23c1051a427095b90c2) - **feat:** add `mskreject` to namespace _(by Athan Reines)_
@@ -10421,8 +5593,8 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`8414978`](https://github.com/stdlib-js/stdlib/commit/841497835659ea4c07e4b77b6750525763424763) - **test:** fix array instantiation and resolve lint errors _(by Athan Reines)_
 -   [`bfc60dc`](https://github.com/stdlib-js/stdlib/commit/bfc60dc09e484bea8f284263371337cf5c98961c) - **test:** refactor to use accessor array package _(by Athan Reines)_
 -   [`adf5512`](https://github.com/stdlib-js/stdlib/commit/adf5512d7cc90b9b22bab01e284e95cf0b35ae4b) - **chore:** remove keyword _(by Athan Reines)_
--   [`322d1ca`](https://github.com/stdlib-js/stdlib/commit/322d1cac1bb150c548b5ad3b3086acd8e74a7bbd) - **docs:** update namespace table of contents [(##1284)](#1284) _(by stdlib-bot, Philipp Burckhardt)_
--   [`2786c2e`](https://github.com/stdlib-js/stdlib/commit/2786c2e5c22e189f1d29eabc5a2225f3b728f051) - **docs:** update related packages sections [(##1283)](#1283) _(by stdlib-bot)_
+-   [`322d1ca`](https://github.com/stdlib-js/stdlib/commit/322d1cac1bb150c548b5ad3b3086acd8e74a7bbd) - **docs:** update namespace table of contents [(#1284)](https://github.com/stdlib-js/stdlib/pull/1284) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`2786c2e`](https://github.com/stdlib-js/stdlib/commit/2786c2e5c22e189f1d29eabc5a2225f3b728f051) - **docs:** update related packages sections [(#1283)](https://github.com/stdlib-js/stdlib/pull/1283) _(by stdlib-bot)_
 -   [`ea3bbb6`](https://github.com/stdlib-js/stdlib/commit/ea3bbb603b2bcf182d2e9aaf3f9d03ac638f085d) - **feat:** add `at` to namespace _(by Athan Reines)_
 -   [`ca6cce7`](https://github.com/stdlib-js/stdlib/commit/ca6cce7c95e47975b3100804a2224055fd3f66a8) - **fix:** add explicit support for complex number arrays _(by Athan Reines)_
 -   [`ced3225`](https://github.com/stdlib-js/stdlib/commit/ced32251edd09790476ba909742cf442c33b9b1b) - **feat:** add `array/base/at` _(by Athan Reines)_
@@ -10447,7 +5619,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`ce37093`](https://github.com/stdlib-js/stdlib/commit/ce370930ce85e93d7dba53f8c3f182813fd3df40) - **feat:** add `array/base/at2d` _(by Athan Reines)_
 -   [`2e0791d`](https://github.com/stdlib-js/stdlib/commit/2e0791db4e6b70b53ace35b48381831a02443ae9) - **feat:** add `filter` to namespace _(by Athan Reines)_
 -   [`a5b8979`](https://github.com/stdlib-js/stdlib/commit/a5b8979c50e4c431d0031044a8311ed64bf62156) - **feat:** add `array/base/filter` _(by Athan Reines)_
--   [`a2158dd`](https://github.com/stdlib-js/stdlib/commit/a2158dda7817e0cd367300884a6c78fd0dcbf4c0) - **docs:** update related packages sections [(##1275)](#1275) _(by stdlib-bot)_
+-   [`a2158dd`](https://github.com/stdlib-js/stdlib/commit/a2158dda7817e0cd367300884a6c78fd0dcbf4c0) - **docs:** update related packages sections [(#1275)](https://github.com/stdlib-js/stdlib/pull/1275) _(by stdlib-bot)_
 -   [`41f426c`](https://github.com/stdlib-js/stdlib/commit/41f426c8a6fffff62d1ba12cfaffa68dee42af24) - **bench:** fix require path _(by Athan Reines)_
 -   [`4b926bc`](https://github.com/stdlib-js/stdlib/commit/4b926bc2f5c2dee8f78b7ad9a582089e6bd07ca7) - **feat:** add `aoneToLike` to namespace _(by Athan Reines)_
 -   [`14e9f8d`](https://github.com/stdlib-js/stdlib/commit/14e9f8d6cc98fadc68164c0fe1d5b6e9e7414185) - **feat:** add `array/one-to-like` _(by Athan Reines)_
@@ -10532,7 +5704,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`68413e0`](https://github.com/stdlib-js/stdlib/commit/68413e05376206b18c4ff8662a8568a189dad77e) - **feat:** update namespace TypeScript declarations [(#1221)](https://github.com/stdlib-js/stdlib/pull/1221) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`237e57a`](https://github.com/stdlib-js/stdlib/commit/237e57aa66298a87355f7af76c0f6cc523aa1ed3) - **feat:** add `toReversed` method to `array/complex64` [(#1260)](https://github.com/stdlib-js/stdlib/pull/1260) _(by Jaysukh Makvana, Athan Reines)_
 -   [`2455a39`](https://github.com/stdlib-js/stdlib/commit/2455a399ca0ab7b646774b2e6db6160f4443510b) - **feat:** add `reverse` method to `array/complex64` [(#1259)](https://github.com/stdlib-js/stdlib/pull/1259) _(by Jaysukh Makvana, Athan Reines)_
--   [`96489fa`](https://github.com/stdlib-js/stdlib/commit/96489fa603a2920bef92fb38b49ca9468851714d) - **docs:** update namespace table of contents [(##1251)](#1251) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`96489fa`](https://github.com/stdlib-js/stdlib/commit/96489fa603a2920bef92fb38b49ca9468851714d) - **docs:** update namespace table of contents [(#1251)](https://github.com/stdlib-js/stdlib/pull/1251) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`dea49e0`](https://github.com/stdlib-js/stdlib/commit/dea49e03ab5571233e3da26835a6a6d3256d5737) - **docs:** use single quotes in require calls instead of backticks _(by Philipp Burckhardt)_
 -   [`0de3922`](https://github.com/stdlib-js/stdlib/commit/0de3922a285c4fc47a4b705b7e677837034f9f4f) - **feat:** add `slice` method to `array/complex64` [(#1257)](https://github.com/stdlib-js/stdlib/pull/1257) _(by Jaysukh Makvana, Athan Reines)_
 -   [`94a2383`](https://github.com/stdlib-js/stdlib/commit/94a238318c73272acb232ac6066f596e07a8752d) - **bench:** fix broken benchmarks _(by Athan Reines)_
@@ -10647,7 +5819,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`e244066`](https://github.com/stdlib-js/stdlib/commit/e2440664e1ef7f2cd1d993532d92fe83b7427c66) - **feat:** add `findIndex` method to `array/complex64` [(#1201)](https://github.com/stdlib-js/stdlib/pull/1201) _(by Jaysukh Makvana, Athan Reines)_
 -   [`7801277`](https://github.com/stdlib-js/stdlib/commit/7801277b0180c9b81319b3b2de32aabd75247c15) - **feat:** update namespace TypeScript declarations [(#1198)](https://github.com/stdlib-js/stdlib/pull/1198) _(by stdlib-bot, Athan Reines)_
 -   [`848730f`](https://github.com/stdlib-js/stdlib/commit/848730f6af734fd9649ac942e72aa7a60f99ec5a) - **fix:** add support for negative indices in method `indexOf` and `lastIndexOf` [(#1197)](https://github.com/stdlib-js/stdlib/pull/1197) _(by Jaysukh Makvana, Athan Reines)_
--   [`044f986`](https://github.com/stdlib-js/stdlib/commit/044f98674f28d4caf19d9893afa7c8895f06e47b) - **docs:** update namespace table of contents [(##1196)](#1196) _(by stdlib-bot, Planeshifter)_
+-   [`044f986`](https://github.com/stdlib-js/stdlib/commit/044f98674f28d4caf19d9893afa7c8895f06e47b) - **docs:** update namespace table of contents [(#1196)](https://github.com/stdlib-js/stdlib/pull/1196) _(by stdlib-bot, Planeshifter)_
 -   [`7e817b2`](https://github.com/stdlib-js/stdlib/commit/7e817b23945c76030f9e219a6cc4ecc1f0ffb4fd) - **feat:** add `lastIndexOf` to namespace _(by Athan Reines)_
 -   [`309419f`](https://github.com/stdlib-js/stdlib/commit/309419f58cfba0d1fcdba44f4b4163dbce08db47) - **feat:** add `array/base/last-index-of` _(by Athan Reines)_
 -   [`aeeced6`](https://github.com/stdlib-js/stdlib/commit/aeeced653d4ec3715b37cd11bc8ad55d7d1d4a27) - **docs:** remove stray returns annotation _(by Athan Reines)_
@@ -10658,7 +5830,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`fac05b6`](https://github.com/stdlib-js/stdlib/commit/fac05b6ad415782a8d4d943310d918665a675802) - **docs:** update namespace table of contents [(#1194)](https://github.com/stdlib-js/stdlib/pull/1194) _(by stdlib-bot, Athan Reines)_
 -   [`0ce9506`](https://github.com/stdlib-js/stdlib/commit/0ce9506a09f0600a7c96a8cb0a61f9c03bba75af) - **feat:** update namespace TypeScript declarations [(#1193)](https://github.com/stdlib-js/stdlib/pull/1193) _(by stdlib-bot, Athan Reines)_
 -   [`707fed5`](https://github.com/stdlib-js/stdlib/commit/707fed5a2f8e9a67c3a8184c5ddc1846cdf3fb17) - **feat:** add `indexOf` method to `array/complex64` [(#1191)](https://github.com/stdlib-js/stdlib/pull/1191) _(by Jaysukh Makvana, Athan Reines)_
--   [`5e1216b`](https://github.com/stdlib-js/stdlib/commit/5e1216ba1318f0eb364b2fe7eae6056cb7a5e94f) - **docs:** update related packages sections [(##1192)](#1192) _(by stdlib-bot)_
+-   [`5e1216b`](https://github.com/stdlib-js/stdlib/commit/5e1216ba1318f0eb364b2fe7eae6056cb7a5e94f) - **docs:** update related packages sections [(#1192)](https://github.com/stdlib-js/stdlib/pull/1192) _(by stdlib-bot)_
 -   [`1a58b7e`](https://github.com/stdlib-js/stdlib/commit/1a58b7e0caa0c721cd4ce4aa6d1ed395c3a05e96) - **bench:** update annotation _(by Athan Reines)_
 -   [`78c7df4`](https://github.com/stdlib-js/stdlib/commit/78c7df420c0be5a57be9f89f454824ce6f03928a) - **feat:** add `first` to namespace _(by Athan Reines)_
 -   [`70f449a`](https://github.com/stdlib-js/stdlib/commit/70f449adb495c6d20e80d996cafc822945ebdbfc) - **feat:** add `slice` to namespace _(by Athan Reines)_
@@ -10680,7 +5852,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`06f0f91`](https://github.com/stdlib-js/stdlib/commit/06f0f91a5ed2c328ab09fa2813d8df2b0864555a) - **feat:** add support for the typed array `at` method in `array/complex64` [(#1182)](https://github.com/stdlib-js/stdlib/pull/1182) _(by Jaysukh Makvana, Athan Reines)_
 -   [`783804d`](https://github.com/stdlib-js/stdlib/commit/783804dbc9b3899c5227c5593e0ca1e8a6a9f195) - **feat:** update namespace TypeScript declarations [(#1170)](https://github.com/stdlib-js/stdlib/pull/1170) _(by stdlib-bot, Athan Reines)_
 -   [`9d49231`](https://github.com/stdlib-js/stdlib/commit/9d492319cf591c6e7349bc7e03b4a828ff336fb7) - **feat:** add feature `array/base/first` [(#1169)](https://github.com/stdlib-js/stdlib/pull/1169) _(by Jaysukh Makvana, Athan Reines)_
--   [`6ff6caf`](https://github.com/stdlib-js/stdlib/commit/6ff6cafeb4e71cb856ded8e0b42957a627fe617d) - **docs:** update namespace table of contents [(##1162)](#1162 ) _(by stdlib-bot)_
+-   [`6ff6caf`](https://github.com/stdlib-js/stdlib/commit/6ff6cafeb4e71cb856ded8e0b42957a627fe617d) - **docs:** update namespace table of contents [(#1162)](https://github.com/stdlib-js/stdlib/pull/1162 ) _(by stdlib-bot)_
 -   [`2ed14aa`](https://github.com/stdlib-js/stdlib/commit/2ed14aaf5c9fe32451b34c822258b372dee750d1) - **feat:** add `fliplr5d` to namespace _(by Athan Reines)_
 -   [`565b38e`](https://github.com/stdlib-js/stdlib/commit/565b38ed1440352f3fc3233121da1f84938fd5ae) - **feat:** add `array/base/fliplr5d` _(by Athan Reines)_
 -   [`22b2f6c`](https://github.com/stdlib-js/stdlib/commit/22b2f6ce77bf53149e0a7186c16dff7df6b3029f) - **feat:** add `fliplr4d` to namespace _(by Athan Reines)_
@@ -10707,7 +5879,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`cbe3466`](https://github.com/stdlib-js/stdlib/commit/cbe3466d0d0219a9b014892cdfc6f83975696b43) - **fix:** set default type to `unknown` _(by Athan Reines)_
 -   [`dddf7e7`](https://github.com/stdlib-js/stdlib/commit/dddf7e7c4b62fdfa2bdb2c963410fa3cafcf5849) - **feat:** add `array/base/take2d` _(by Athan Reines)_
 -   [`7120ab7`](https://github.com/stdlib-js/stdlib/commit/7120ab76fc11a892939aba26603dba5218f693c8) - **docs:** add missing var declarations _(by Philipp Burckhardt)_
--   [`1b31b43`](https://github.com/stdlib-js/stdlib/commit/1b31b437442c7d861aadf0e5ee00bb86cc191982) - **docs:** update namespace table of contents [(##1138)](#1138) _(by stdlib-bot, Athan Reines)_
+-   [`1b31b43`](https://github.com/stdlib-js/stdlib/commit/1b31b437442c7d861aadf0e5ee00bb86cc191982) - **docs:** update namespace table of contents [(#1138)](https://github.com/stdlib-js/stdlib/pull/1138) _(by stdlib-bot, Athan Reines)_
 -   [`a6bdb86`](https://github.com/stdlib-js/stdlib/commit/a6bdb867fb8f1ada7d742b21535fc110079070ba) - **feat:** add `fliplr2d` to namespace _(by Athan Reines)_
 -   [`208dfa8`](https://github.com/stdlib-js/stdlib/commit/208dfa82226106aa455b841b4c22ef2584f3a535) - **feat:** add `array/base/fliplr2d` _(by Athan Reines)_
 -   [`5a3d652`](https://github.com/stdlib-js/stdlib/commit/5a3d652be896a841f832c40db6d12cffba4ff316) - **chore:** remove unused import _(by Athan Reines)_
@@ -10772,6 +5944,5527 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`467995e`](https://github.com/stdlib-js/stdlib/commit/467995e1835de16ba580cd77e81c07ad368a26dd) - **refactor:** use more concise type definitions _(by Athan Reines)_
 -   [`a2f9d0a`](https://github.com/stdlib-js/stdlib/commit/a2f9d0a5812def11883fbbe682678e35f8368262) - **feat:** add `bquinary2d` to namespace _(by Athan Reines)_
 -   [`ca1d25d`](https://github.com/stdlib-js/stdlib/commit/ca1d25d47049a7b495c0877fb1ea96e8c48f7639) - **feat:** add `array/base/broadcasted-quinary2d` _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.1">
+
+## 0.1.1 (2023-11-08)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2023-11-08)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="array-v0.1.0">
+
+#### [@stdlib/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`de73ae1`](https://github.com/stdlib-js/stdlib/commit/de73ae19f43cbad40036d25b1d46620b3c5113a9) - update namespace TypeScript declarations [(#1089)](https://github.com/stdlib-js/stdlib/pull/1089)
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`810ebc1`](https://github.com/stdlib-js/stdlib/commit/810ebc1b4d4b5eaf023f5281774e54db733bb4e0) - update namespace TypeScript declarations [(#1047)](https://github.com/stdlib-js/stdlib/pull/1047)
+-   [`03fe8b9`](https://github.com/stdlib-js/stdlib/commit/03fe8b90d7f7cabad87c23de1366c328cfca85f1) - add `aemptyLike` to namespace
+-   [`67a57a7`](https://github.com/stdlib-js/stdlib/commit/67a57a71a2e1ba16587218ea458cb1e1566c7fd5) - add `aempty` to namespace
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-v0.1.0">
+
+#### [@stdlib/array/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f9b305a`](https://github.com/stdlib-js/stdlib/commit/f9b305a9774c677cd7bc1fb29085ca5f3fea1f89) - add `bquaternary2d` to namespace
+-   [`c3059d9`](https://github.com/stdlib-js/stdlib/commit/c3059d9d8915a7fbf57d8162a11977a380462157) - add `strided2array5d` to namespace
+-   [`bbf1876`](https://github.com/stdlib-js/stdlib/commit/bbf1876d40fd794658b86a8b2b14a92c792fcade) - add `strided2array4d` to namespace
+-   [`fde42f9`](https://github.com/stdlib-js/stdlib/commit/fde42f9412043c29de9dc9c3403afa006a43c009) - add `strided2array3d` to namespace
+-   [`ba2158f`](https://github.com/stdlib-js/stdlib/commit/ba2158f3784c52fb44b3b48600516cdbe9c3e433) - add `strided2array2d` to namespace
+-   [`754e915`](https://github.com/stdlib-js/stdlib/commit/754e915e9b8d296090263fd35a8e5ca57bba3746) - add `quinary2d` to namespace
+-   [`791611c`](https://github.com/stdlib-js/stdlib/commit/791611c08a58f8e71075a8fcb32e8d61f59de162) - add `quaternary2d` to namespace
+-   [`fb8db9f`](https://github.com/stdlib-js/stdlib/commit/fb8db9fa2bc6eb4df524b4f33f1c05c90fdda651) - add `ternary5d` to namespace
+-   [`d88d656`](https://github.com/stdlib-js/stdlib/commit/d88d6564319f3fbc28ac2452088bad6e6401f83f) - add `ternary4d` to namespace
+-   [`2b26af7`](https://github.com/stdlib-js/stdlib/commit/2b26af75ebd59c427298477ee36ec4823608f8fa) - add `ternary3d` to namespace
+-   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
+-   [`a6b94fe`](https://github.com/stdlib-js/stdlib/commit/a6b94fe54a5a2596a4698b0198bb53fe300bd07f) - add `bternary2d` to namespace
+-   [`7214b1b`](https://github.com/stdlib-js/stdlib/commit/7214b1b188ed42b575d70ea6ed71c4aa56f82e92) - add `ternary2d` to namespace
+-   [`e18b248`](https://github.com/stdlib-js/stdlib/commit/e18b248464425863019a841795a7e5fc7d01d0ea) - update namespace TypeScript declarations [(#1100)](https://github.com/stdlib-js/stdlib/pull/1100)
+-   [`b8c3188`](https://github.com/stdlib-js/stdlib/commit/b8c3188a9557f261322237646854bfafeee43a96) - add `mskunary3d` to namespace
+-   [`f7bba40`](https://github.com/stdlib-js/stdlib/commit/f7bba4088451e8e077d0a897d813b03ee25e3d04) - add `unary2dBy` to namespace
+-   [`5697581`](https://github.com/stdlib-js/stdlib/commit/5697581b77c8e3305df6b2f7ffaa34b1742fc45f) - add `mskbinary2d` to namespace
+-   [`4520491`](https://github.com/stdlib-js/stdlib/commit/4520491f4814d44be59297288e36f2dc0c50b8d1) - add `mskunary2d` to namespace
+-   [`4d792be`](https://github.com/stdlib-js/stdlib/commit/4d792be2ea188b25a3a1d7dee12fc3cece307757) - add `binarynd` to namespace
+-   [`d08263b`](https://github.com/stdlib-js/stdlib/commit/d08263bbaa18f16d5613b5b438893d584c5ce141) - add `array/base/binarynd`
+-   [`7eadb6d`](https://github.com/stdlib-js/stdlib/commit/7eadb6dfc401413096f93301660c368fdc417a60) - add `bbinary5d` to namespace
+-   [`beeb2a5`](https://github.com/stdlib-js/stdlib/commit/beeb2a51f8b558b0b7b1de686f74e9a22e4e0cdc) - add `binary5d` to namespace
+-   [`da96360`](https://github.com/stdlib-js/stdlib/commit/da963601a4e20942f056a09262ffe4973f010c9f) - add `array/base/binary5d`
+-   [`b171a2f`](https://github.com/stdlib-js/stdlib/commit/b171a2f6759b7995aaf8524fad5ab07d672e19a0) - add `bbinary4d` to namespace
+-   [`c817ee8`](https://github.com/stdlib-js/stdlib/commit/c817ee8fa2ca99815c84baf57f67fe4a5b813ec3) - add `binary4d` to namespace
+-   [`4def9df`](https://github.com/stdlib-js/stdlib/commit/4def9df18164e1698654864645e4992a7cb3a150) - add `array/base/binary4d`
+-   [`f10c6e7`](https://github.com/stdlib-js/stdlib/commit/f10c6e7db1a2b15cdd2b6237dd0927466ebd7278) - add `binary3d` to namespace
+-   [`a9eb71b`](https://github.com/stdlib-js/stdlib/commit/a9eb71b7c4721f55c77328160d6160af2c7c550a) - add `array/base/binary3d`
+-   [`f45a2d8`](https://github.com/stdlib-js/stdlib/commit/f45a2d8f4ee827e38ec15bc5b7a6b7e686761c38) - add `bbinary3d` to namespace
+-   [`b69dd8a`](https://github.com/stdlib-js/stdlib/commit/b69dd8a68e22fc7936fcac5a21d059cddbc369a3) - add `bunary5d` to namespace
+-   [`dc0abc6`](https://github.com/stdlib-js/stdlib/commit/dc0abc69e0d6fe506c5da520af91a85ac9a638e5) - add `bunary4d` to namespace
+-   [`8b7117f`](https://github.com/stdlib-js/stdlib/commit/8b7117fd13fb8fc720b2c52d2c7236bf1d048261) - add `bunary3d` to namespace
+-   [`48dd68f`](https://github.com/stdlib-js/stdlib/commit/48dd68f817d59aadd4ddd1eadb69f7391855c017) - add `unarynd` to namespace
+-   [`b1034ff`](https://github.com/stdlib-js/stdlib/commit/b1034ff7dce46285df5bc278a7a7b340b556c3a4) - add `filledndBy` to namespace
+-   [`8d4ba29`](https://github.com/stdlib-js/stdlib/commit/8d4ba296c830ba6da67f0711a3d5cce378c92209) - add `unary5d` to namespace
+-   [`7862432`](https://github.com/stdlib-js/stdlib/commit/7862432a0a4fc59810a34d5a8e99bacd6d033afc) - add `unary4d` to namespace
+-   [`3e88f20`](https://github.com/stdlib-js/stdlib/commit/3e88f2067e88ab96ca910766381405f66599fac8) - add `unary3d` to namespace
+-   [`d6e6a32`](https://github.com/stdlib-js/stdlib/commit/d6e6a32a5ab3686f666b113e55606ebc07f6696e) - add `bbinary2d` to namespace
+-   [`ccd808b`](https://github.com/stdlib-js/stdlib/commit/ccd808bc4f1fc0303a4306e05a9fce4a77141c48) - add `binary2d` to namespace
+-   [`148ed20`](https://github.com/stdlib-js/stdlib/commit/148ed20c105f392a0d0cc6c1130779e58effe0b6) - add `array/base/binary2d`
+-   [`4a32a9d`](https://github.com/stdlib-js/stdlib/commit/4a32a9db17c8f665c1fbead292a7a4b2fd4c27c5) - add `bunary2d` to namespace
+-   [`8735d98`](https://github.com/stdlib-js/stdlib/commit/8735d98c42d352605028c394d8b301876c553ad7) - add `unary2d` to namespace
+-   [`de73ae1`](https://github.com/stdlib-js/stdlib/commit/de73ae19f43cbad40036d25b1d46620b3c5113a9) - update namespace TypeScript declarations [(#1089)](https://github.com/stdlib-js/stdlib/pull/1089)
+-   [`108e51c`](https://github.com/stdlib-js/stdlib/commit/108e51c41dd601582b0f812bc110640cb2c44927) - add `oneTo` to namespace
+-   [`821bf57`](https://github.com/stdlib-js/stdlib/commit/821bf57e04581daeb13b654bcf2af7da60160d48) - add `filled5dBy` to namespace
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`c7925c4`](https://github.com/stdlib-js/stdlib/commit/c7925c4e385fcf67045717b60b066d3b06c09702) - add `filled4dBy` to namespace
+-   [`49c3bcd`](https://github.com/stdlib-js/stdlib/commit/49c3bcd8fe2697736b8f33b460d6d552cef393fc) - add `filled3dBy` to namespace
+-   [`a4cf49a`](https://github.com/stdlib-js/stdlib/commit/a4cf49a56122abc431c95845685e195cbb4497df) - add `flattenBy` to namespace
+-   [`d940344`](https://github.com/stdlib-js/stdlib/commit/d9403447be9e0407e6b644bbc4a58aca2ac3d15c) - add `ones5d` to namespace
+-   [`64b710c`](https://github.com/stdlib-js/stdlib/commit/64b710c55dc5374fd00a69bdb5652876f01a6e7d) - add `ones4d` to namespace
+-   [`6370968`](https://github.com/stdlib-js/stdlib/commit/6370968ac626aab6d3516c40a7994c0a48f9d827) - add `zeros5d` to namespace
+-   [`66e4edc`](https://github.com/stdlib-js/stdlib/commit/66e4edc9cac441e3213d6cc3b7b0160c0426cb95) - add `zeros4d` to namespace
+-   [`d130ae2`](https://github.com/stdlib-js/stdlib/commit/d130ae226c44ac21a27786e0679eafc0c7d09f1d) - add `ones3d` to namespace
+-   [`95aef95`](https://github.com/stdlib-js/stdlib/commit/95aef955d2f9ef0befbbafa267866ec6271fa2ea) - add `zeros3d` to namespace
+-   [`e1bc995`](https://github.com/stdlib-js/stdlib/commit/e1bc99521500951de47fceb823fc3c5d30a6e693) - add `onesnd` to namespace
+-   [`b11f72a`](https://github.com/stdlib-js/stdlib/commit/b11f72ae6de681081c8057b339988b118f959edb) - add `broadcastArray` to namespace
+-   [`3e4c1e0`](https://github.com/stdlib-js/stdlib/commit/3e4c1e0697a2a6051719fae6633132d3c7145b21) - add `zerosnd` to namespace
+-   [`647a41a`](https://github.com/stdlib-js/stdlib/commit/647a41a246e04c58457db85a0f9960b521258815) - add `fillednd` to namespace
+-   [`dc4ea1c`](https://github.com/stdlib-js/stdlib/commit/dc4ea1c90de68231ec5e5c2a38cb32cb3433d957) - add `filled5d` to namespace
+-   [`bababd3`](https://github.com/stdlib-js/stdlib/commit/bababd314bfc8acbc1095a9fefb4adfe30ad8b67) - add `filled4d` to namespace
+-   [`b85b670`](https://github.com/stdlib-js/stdlib/commit/b85b67034113b854daf52deb066950d4ea132ca7) - add `filled3d` to namespace
+-   [`c6f4c45`](https://github.com/stdlib-js/stdlib/commit/c6f4c45f4ff429fa1f0e1aff309754573a70e4f9) - add `filled2dBy` to namespace
+-   [`1859d7b`](https://github.com/stdlib-js/stdlib/commit/1859d7bba0781e592c7412921aa4a52fbf5c394d) - add `ones2d` to namespace
+-   [`723f7fe`](https://github.com/stdlib-js/stdlib/commit/723f7fe77fd4eca7347bc9cbb3e2d4e430dd2bb9) - add `zeros2d` to namespace
+-   [`b7aafb2`](https://github.com/stdlib-js/stdlib/commit/b7aafb26edbd8004f0c355dc807eb37ee2e7a345) - add `filled2d` to namespace
+-   [`377ae31`](https://github.com/stdlib-js/stdlib/commit/377ae317cf56720fbc00190c797211eb9453273a) - update namespace TypeScript declarations [(#1076)](https://github.com/stdlib-js/stdlib/pull/1076)
+-   [`63ca872`](https://github.com/stdlib-js/stdlib/commit/63ca872415203b5bd2afd785d2d639e3371c7ac7) - add `flatten5dBy` to namespace
+-   [`3dbf75f`](https://github.com/stdlib-js/stdlib/commit/3dbf75f15770e6f3b3bc1b60d9135f969b19a40f) - add `flatten4dBy` to namespace
+-   [`c1eb700`](https://github.com/stdlib-js/stdlib/commit/c1eb700ab5c31da7ac7fcf80695be5b5cf58ff52) - add `flatten3dBy` to namespace
+-   [`cfde0b6`](https://github.com/stdlib-js/stdlib/commit/cfde0b6ca8c7870a292b90b4cec488e9b841814f) - add `flatten2dBy` to namespace
+-   [`093690c`](https://github.com/stdlib-js/stdlib/commit/093690c2f1e3691a4c9334164dc2160a319e0860) - add `flatten` to namespace
+-   [`cea3602`](https://github.com/stdlib-js/stdlib/commit/cea3602d2703dd19a7504602edd9c7051678551d) - add `flatten5d` to namespace
+-   [`e153689`](https://github.com/stdlib-js/stdlib/commit/e1536891b13edee400152c986d3c9babbe3c3514) - add `flatten4d` to namespace
+-   [`8dbecd0`](https://github.com/stdlib-js/stdlib/commit/8dbecd05a9bc1f7034e1b85c5999522f00feedb9) - add `flatten3d` to namespace
+-   [`b6a9aa8`](https://github.com/stdlib-js/stdlib/commit/b6a9aa8b1aa60a9ba56068338b33033ee358ac34) - add `last` to namespace
+-   [`f1754cd`](https://github.com/stdlib-js/stdlib/commit/f1754cd4c573fbd8337ff012d94dfe20a5d3c33c) - add `flatten2d` to namespace
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-accessor-v0.1.0">
+
+#### [@stdlib/array/base/accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessor)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-accessor-getter-v0.1.0">
+
+#### [@stdlib/array/base/accessor-getter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessor-getter)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`a40e71b`](https://github.com/stdlib-js/stdlib/commit/a40e71b99f96d512939ab12b9e6c7687fb715aa6) - improve type specificity by converting to generic
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-accessor-setter-v0.1.0">
+
+#### [@stdlib/array/base/accessor-setter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessor-setter)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`8354b8c`](https://github.com/stdlib-js/stdlib/commit/8354b8c413754d4d477bc9cba403e3f4299a3fd8) - improve type specificity by converting to a generic
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-accessors-v0.1.0">
+
+#### [@stdlib/array/base/accessors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/accessors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`08b8c12`](https://github.com/stdlib-js/stdlib/commit/08b8c12c27209c0bb0d4ac136b469c5617572d17) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`9ad6e2a`](https://github.com/stdlib-js/stdlib/commit/9ad6e2a5d18d9ced0565de200e57129551298dd1) - change default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+-   [`5ab331a`](https://github.com/stdlib-js/stdlib/commit/5ab331a76c352231b3f053b171bc3dbfc62a21b1) - fix return type
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`08b8c12`](https://github.com/stdlib-js/stdlib/commit/08b8c12c27209c0bb0d4ac136b469c5617572d17): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-arraylike2object-v0.1.0">
+
+#### [@stdlib/array/base/arraylike2object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/arraylike2object)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`d620bbd`](https://github.com/stdlib-js/stdlib/commit/d620bbd6e1b0670f18ed87df4f98db017cc9df8f) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dd6d9e4`](https://github.com/stdlib-js/stdlib/commit/dd6d9e48fb0de33eae92b1dfb59d6ce00987acd5) - convert default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`d620bbd`](https://github.com/stdlib-js/stdlib/commit/d620bbd6e1b0670f18ed87df4f98db017cc9df8f): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-v0.1.0">
+
+#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`3a88e07`](https://github.com/stdlib-js/stdlib/commit/3a88e0722e77578534f0567b9336d4f7ae83470e) - add `contains` to namespace
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-contains-v0.1.0">
+
+#### [@stdlib/array/base/assert/contains](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/contains)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db) - update minimum TypeScript version
+-   [`0424cf8`](https://github.com/stdlib-js/stdlib/commit/0424cf8b80b1e0c50ea209d9b05730a8b950f4a5) - add `factory` method
+-   [`41aa6d6`](https://github.com/stdlib-js/stdlib/commit/41aa6d65a111dcd2dbd59f33520fd6da03de374b) - add `array/base/assert/contains`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db): update minimum TypeScript version
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-is-accessor-array-v0.1.0">
+
+#### [@stdlib/array/base/assert/is-accessor-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-accessor-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305) - refactor declarations to allow narrowing
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305): refactor declarations to allow narrowing
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcast-array-v0.1.0">
+
+#### [@stdlib/array/base/broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcast-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7a75baa`](https://github.com/stdlib-js/stdlib/commit/7a75baa5666f9fc42240f2b5949ab69e02e04f75) - add `array/base/broadcast-array`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted--v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9516467`](https://github.com/stdlib-js/stdlib/commit/95164673726dad4e7bfdd4f6bcb47f0a5a344f84) - add `array/base/broadcasted-binary5d`
+-   [`68b4fe5`](https://github.com/stdlib-js/stdlib/commit/68b4fe550be37526f7904557d94c49d0bad0aba8) - add `array/base/broadcasted-binary4d`
+-   [`89aec9c`](https://github.com/stdlib-js/stdlib/commit/89aec9c61c92babd3dae6add6db8206c56238a48) - add `array/base/broadcasted-binary3d`
+-   [`5062db1`](https://github.com/stdlib-js/stdlib/commit/5062db14512d1f655ff1a22133aaff62c0de8a83) - add `array/base/broadcasted-binary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-quaternary2d-v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-quaternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-quaternary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7709036`](https://github.com/stdlib-js/stdlib/commit/7709036fb0cc566df1d4e681fc9e430544af09fd) - add `array/base/broadcasted-quaternary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-ternary2d-v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-ternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-ternary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`820598d`](https://github.com/stdlib-js/stdlib/commit/820598d08c54949b74cc558eeee931547cc26c6d) - add `array/base/broadcasted-ternary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-unary2d-v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-unary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e845b48`](https://github.com/stdlib-js/stdlib/commit/e845b4889d6a64c79f4d39137745cab80c7cd90b) - add `array/base/broadcasted-unary2d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`1ed3b28`](https://github.com/stdlib-js/stdlib/commit/1ed3b28f46df433b6f64c75a21cb4c157b6095fd) - restrict to unary callbacks
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-unary3d-v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-unary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8a93a34`](https://github.com/stdlib-js/stdlib/commit/8a93a3410ec2ba1c63ff04c40055c4b2a85d3eb9) - add `array/base/broadcasted-unary3d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-unary4d-v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-unary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f336f28`](https://github.com/stdlib-js/stdlib/commit/f336f2813382efaf6e91e614283d0078cdde2fdb) - add `array/base/broadcasted-unary4d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-unary5d-v0.1.0">
+
+#### [@stdlib/array/base/broadcasted-unary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-unary5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cdb45b8`](https://github.com/stdlib-js/stdlib/commit/cdb45b87449044944726b6d41e69c30f2ab19e08) - add `array/base/broadcasted-unary5d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-cartesian-power-v0.1.0">
+
+#### [@stdlib/array/base/cartesian-power](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cartesian-power)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cac067c`](https://github.com/stdlib-js/stdlib/commit/cac067ccf05c731ea081c10a21b62d5ababa1f46) - refactor to use the `Collection` type
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`e83f8bf`](https://github.com/stdlib-js/stdlib/commit/e83f8bfd3f5360d57225bb055153b1ea0e792069) - convert default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`cac067c`](https://github.com/stdlib-js/stdlib/commit/cac067ccf05c731ea081c10a21b62d5ababa1f46): refactor to use the `Collection` type
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-cartesian-product-v0.1.0">
+
+#### [@stdlib/array/base/cartesian-product](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cartesian-product)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`d0bd118`](https://github.com/stdlib-js/stdlib/commit/d0bd11813a7a104acb3fd1841efd5f606c20c4d6) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`ded7ece`](https://github.com/stdlib-js/stdlib/commit/ded7eceaf8c49fcfc86248a192cfc291e24cf766) - convert default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`d0bd118`](https://github.com/stdlib-js/stdlib/commit/d0bd11813a7a104acb3fd1841efd5f606c20c4d6): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-cartesian-square-v0.1.0">
+
+#### [@stdlib/array/base/cartesian-square](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cartesian-square)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7dfe0d2`](https://github.com/stdlib-js/stdlib/commit/7dfe0d2d39677401f07f0debf5d18cdd169afdd0) - refactor declarations to use `Collection` type
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`6d659f2`](https://github.com/stdlib-js/stdlib/commit/6d659f228877b290fc270bf97a7b1ed5305cb85f) - convert default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7dfe0d2`](https://github.com/stdlib-js/stdlib/commit/7dfe0d2d39677401f07f0debf5d18cdd169afdd0): refactor declarations to use `Collection` type
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-copy-v0.1.0">
+
+#### [@stdlib/array/base/copy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/copy)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`671b06e`](https://github.com/stdlib-js/stdlib/commit/671b06e44a82949e75cad11a4dfe9f7e65862dcc) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`bca0a62`](https://github.com/stdlib-js/stdlib/commit/bca0a622573c4f4acafe1f63bb1493576a546ade) - convert default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`671b06e`](https://github.com/stdlib-js/stdlib/commit/671b06e44a82949e75cad11a4dfe9f7e65862dcc): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-copy-indexed-v0.1.0">
+
+#### [@stdlib/array/base/copy-indexed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/copy-indexed)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fcefd6c`](https://github.com/stdlib-js/stdlib/commit/fcefd6cdc8dc87a62d46334c092b8f0f4c32edcd) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`7bf4328`](https://github.com/stdlib-js/stdlib/commit/7bf4328c04d85157c328f03adc1ea4855106e217) - convert default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`fcefd6c`](https://github.com/stdlib-js/stdlib/commit/fcefd6cdc8dc87a62d46334c092b8f0f4c32edcd): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled-v0.1.0">
+
+#### [@stdlib/array/base/filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`487d98c`](https://github.com/stdlib-js/stdlib/commit/487d98c196269877609586837181caa3ccd4fe97) - improve type specificity
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled-by-v0.1.0">
+
+#### [@stdlib/array/base/filled-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fe37cac`](https://github.com/stdlib-js/stdlib/commit/fe37cacd9a3ec37dcdd51ef78ce02901e178202f) - improve type specificity by converting to generic
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled2d-v0.1.0">
+
+#### [@stdlib/array/base/filled2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3e8d3dc`](https://github.com/stdlib-js/stdlib/commit/3e8d3dc6057af73c7594e900e571dbb7bc57ac29) - add `array/base/filled2d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled2d-by-v0.1.0">
+
+#### [@stdlib/array/base/filled2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled2d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9c6ab5c`](https://github.com/stdlib-js/stdlib/commit/9c6ab5c4ae611bf2e585673b5c2636ef30846a0e) - add `array/base/filled2d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`d0c7aea`](https://github.com/stdlib-js/stdlib/commit/d0c7aea89357bd58bd5530b855a6b8170a6e07e2) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled3d-v0.1.0">
+
+#### [@stdlib/array/base/filled3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`83de634`](https://github.com/stdlib-js/stdlib/commit/83de634650b4369021b3588e63827d71b4f1b017) - add `array/base/filled3d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled3d-by-v0.1.0">
+
+#### [@stdlib/array/base/filled3d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled3d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`134eb7b`](https://github.com/stdlib-js/stdlib/commit/134eb7b50deaa5ac8b5cd68c6fa24e82551570bb) - add `array/base/filled3d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`d0c7aea`](https://github.com/stdlib-js/stdlib/commit/d0c7aea89357bd58bd5530b855a6b8170a6e07e2) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled4d-v0.1.0">
+
+#### [@stdlib/array/base/filled4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`750d022`](https://github.com/stdlib-js/stdlib/commit/750d022e99806f5583fb2d604494506489dceb45) - add `array/base/filled4d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled4d-by-v0.1.0">
+
+#### [@stdlib/array/base/filled4d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled4d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`572905f`](https://github.com/stdlib-js/stdlib/commit/572905f0a2faf9c1efaff989e09450af75371103) - add `array/base/filled4d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`d0c7aea`](https://github.com/stdlib-js/stdlib/commit/d0c7aea89357bd58bd5530b855a6b8170a6e07e2) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled5d-v0.1.0">
+
+#### [@stdlib/array/base/filled5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4f92ff3`](https://github.com/stdlib-js/stdlib/commit/4f92ff3c1c5655a2356a80299feadc528921c393) - add `array/base/filled5d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled5d-by-v0.1.0">
+
+#### [@stdlib/array/base/filled5d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled5d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e1449af`](https://github.com/stdlib-js/stdlib/commit/e1449af1b420281974dedff61ab17cda63b563e0) - add `array/base/filled5d-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-fillednd-v0.1.0">
+
+#### [@stdlib/array/base/fillednd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fillednd)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6a3cc1a`](https://github.com/stdlib-js/stdlib/commit/6a3cc1ae79b3a5ffd0e79b9a309325713ce94cde) - add `array/base/fillednd`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-fillednd-by-v0.1.0">
+
+#### [@stdlib/array/base/fillednd-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fillednd-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`143cb9a`](https://github.com/stdlib-js/stdlib/commit/143cb9a94352af0b55a599734ab8e23c7b5807eb) - add `array/base/fillednd-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten-v0.1.0">
+
+#### [@stdlib/array/base/flatten](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8740ccc`](https://github.com/stdlib-js/stdlib/commit/8740ccc55aac9fe25a34e34e0c46125e04d436b2) - add support for assigning results to an output array
+-   [`7031fea`](https://github.com/stdlib-js/stdlib/commit/7031feac526942921efb66b32911db7856d19501) - add `array/base/flatten`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten-by-v0.1.0">
+
+#### [@stdlib/array/base/flatten-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`97d0e24`](https://github.com/stdlib-js/stdlib/commit/97d0e24184976436cada5ebcfa69af1ffa87c752) - add `array/base/flatten-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`31d065a`](https://github.com/stdlib-js/stdlib/commit/31d065ad7c5f8c948e37932a38b738b2d8607d75) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten2d-v0.1.0">
+
+#### [@stdlib/array/base/flatten2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fc23d36`](https://github.com/stdlib-js/stdlib/commit/fc23d36b095bd1848edee25a4b08b303833a5b6e) - add an `assign` method
+-   [`338079e`](https://github.com/stdlib-js/stdlib/commit/338079e2aa5805966f9f450ba79060604b186771) - restrict input array type to `Array`
+-   [`ae02f4a`](https://github.com/stdlib-js/stdlib/commit/ae02f4a432374a6d86d10f44337abb4ca716a417) - add `array/base/flatten2d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`338079e`](https://github.com/stdlib-js/stdlib/commit/338079e2aa5805966f9f450ba79060604b186771): restrict input array type to `Array`
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten2d-by-v0.1.0">
+
+#### [@stdlib/array/base/flatten2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten2d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b22e390`](https://github.com/stdlib-js/stdlib/commit/b22e390d16e0fcb35eb65e1b9b60f4b80efef710) - add `array/base/flatten2d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten3d-v0.1.0">
+
+#### [@stdlib/array/base/flatten3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e1d0385`](https://github.com/stdlib-js/stdlib/commit/e1d0385aea002003e5198f124b2f6c5388ec85da) - add support for assigning results to an output array
+-   [`dce7adf`](https://github.com/stdlib-js/stdlib/commit/dce7adfa1c140c5a80f0941c9ae9fbb4261aacb5) - add `array/base/flatten3d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten3d-by-v0.1.0">
+
+#### [@stdlib/array/base/flatten3d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten3d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8566129`](https://github.com/stdlib-js/stdlib/commit/85661296c2cb4d294a8c5f64ca640c43365c8a60) - add `array/base/flatten3d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten4d-v0.1.0">
+
+#### [@stdlib/array/base/flatten4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`841d345`](https://github.com/stdlib-js/stdlib/commit/841d3453e96db2a7ff7a0ee7936023aea8ec3d1b) - add support for assigning results to an output array
+-   [`6ab12ad`](https://github.com/stdlib-js/stdlib/commit/6ab12ad02f55998ba38eba2059f9418ecd5175c2) - add `array/base/flatten4d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten4d-by-v0.1.0">
+
+#### [@stdlib/array/base/flatten4d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten4d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`db36990`](https://github.com/stdlib-js/stdlib/commit/db36990774f18d11a7b3121fb91fc5eb049ea87e) - add `array/base/flatten4d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten5d-v0.1.0">
+
+#### [@stdlib/array/base/flatten5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`845cf4e`](https://github.com/stdlib-js/stdlib/commit/845cf4e9d8632ad0b6fb416133a4398ddf3696f0) - add support for assigning results to an output array
+-   [`df39232`](https://github.com/stdlib-js/stdlib/commit/df39232dddd6f7f818c1ffea0889c1308d9aa9ed) - add `array/base/flatten5d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-flatten5d-by-v0.1.0">
+
+#### [@stdlib/array/base/flatten5d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/flatten5d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7b5ecaa`](https://github.com/stdlib-js/stdlib/commit/7b5ecaaffcb14a2f47e42ad14211dce24b08aaed) - add `array/base/flatten5d-by`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-getter-v0.1.0">
+
+#### [@stdlib/array/base/getter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/getter)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ee49f1e`](https://github.com/stdlib-js/stdlib/commit/ee49f1e8f6a8bc473a4d79a7351ba918956533a0) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`bc5e19a`](https://github.com/stdlib-js/stdlib/commit/bc5e19a27a12190640ee74f7187f7e4c26edd2dc) - improve type specificity by using generics
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`ee49f1e`](https://github.com/stdlib-js/stdlib/commit/ee49f1e8f6a8bc473a4d79a7351ba918956533a0): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-incrspace-v0.1.0">
+
+#### [@stdlib/array/base/incrspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/incrspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-last-v0.1.0">
+
+#### [@stdlib/array/base/last](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/last)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a702b6f`](https://github.com/stdlib-js/stdlib/commit/a702b6fd7e1381f72b1080d5718a49b622be37c8) - improve type safety when element type is unknown
+-   [`9ed9aca`](https://github.com/stdlib-js/stdlib/commit/9ed9acaeacce1120731efd5c25e4d94e3629826f) - increase minimum TypeScript version
+-   [`a3e07fc`](https://github.com/stdlib-js/stdlib/commit/a3e07fca626cc715ae8caf71b03d2046011b93d6) - refactor declarations to use generics
+-   [`3497425`](https://github.com/stdlib-js/stdlib/commit/3497425c3a47e18ceb4aba34a67f3c2e0e9b0b19) - add `array/base/last` [(#1023)](https://github.com/stdlib-js/stdlib/pull/1023)
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`a702b6f`](https://github.com/stdlib-js/stdlib/commit/a702b6fd7e1381f72b1080d5718a49b622be37c8): improve type safety when element type is unknown
+-   [`9ed9aca`](https://github.com/stdlib-js/stdlib/commit/9ed9acaeacce1120731efd5c25e4d94e3629826f): increase minimum TypeScript version
+-   [`a3e07fc`](https://github.com/stdlib-js/stdlib/commit/a3e07fca626cc715ae8caf71b03d2046011b93d6): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#858](https://github.com/stdlib-js/stdlib/issues/858)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-linspace-v0.1.0">
+
+#### [@stdlib/array/base/linspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/linspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-logspace-v0.1.0">
+
+#### [@stdlib/array/base/logspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/logspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-msk-v0.1.0">
+
+#### [@stdlib/array/base/msk](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/msk)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2fac063`](https://github.com/stdlib-js/stdlib/commit/2fac063d851359a35246c6f7e34378cf450e8d11) - add `array/base/mskbinary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-mskunary2d-v0.1.0">
+
+#### [@stdlib/array/base/mskunary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskunary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f501a48`](https://github.com/stdlib-js/stdlib/commit/f501a48fd60b46439231f2d564581a723c2b5b2b) - add `array/base/mskunary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-mskunary3d-v0.1.0">
+
+#### [@stdlib/array/base/mskunary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskunary3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`09a48fc`](https://github.com/stdlib-js/stdlib/commit/09a48fc749ceba3b8ecee4c5a95fa221950428a4) - add `array/base/mskunary3d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-n-cartesian-product-v0.1.0">
+
+#### [@stdlib/array/base/n-cartesian-product](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/n-cartesian-product)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2abd8cd`](https://github.com/stdlib-js/stdlib/commit/2abd8cdfa8ca450827ce5d71bc8215b725b9b1a2) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`d809704`](https://github.com/stdlib-js/stdlib/commit/d80970488e923e39968e0a3bcc8bcceb8b509bb3) - change default type to `unknown`
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`2abd8cd`](https://github.com/stdlib-js/stdlib/commit/2abd8cdfa8ca450827ce5d71bc8215b725b9b1a2): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-one-to-v0.1.0">
+
+#### [@stdlib/array/base/one-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/one-to)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`17bef93`](https://github.com/stdlib-js/stdlib/commit/17bef93747a3b9d8d1544472e8e270d010605954) - add `array/base/one-to`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ones-v0.1.0">
+
+#### [@stdlib/array/base/ones](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ones2d-v0.1.0">
+
+#### [@stdlib/array/base/ones2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`6afd487`](https://github.com/stdlib-js/stdlib/commit/6afd4871d06b6dd5ac10d26f5d7c1794ce697856) - add `array/base/ones2d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ones3d-v0.1.0">
+
+#### [@stdlib/array/base/ones3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7b4035f`](https://github.com/stdlib-js/stdlib/commit/7b4035f983c5e0d2bbda56541bcd7eca003811e7) - add `array/base/ones3d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ones4d-v0.1.0">
+
+#### [@stdlib/array/base/ones4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a0d378f`](https://github.com/stdlib-js/stdlib/commit/a0d378f774da10e0386dd475c5f0f96fd9258bb1) - add `array/base/ones4d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ones5d-v0.1.0">
+
+#### [@stdlib/array/base/ones5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ones5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`07b6b1f`](https://github.com/stdlib-js/stdlib/commit/07b6b1f1de40f7c54d319121768d23d28a824d45) - add `array/base/ones5d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-onesnd-v0.1.0">
+
+#### [@stdlib/array/base/onesnd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/onesnd)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`75bd406`](https://github.com/stdlib-js/stdlib/commit/75bd406a8d2659fcbba30e1b3874d7301122c450) - add `array/base/onesnd`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-quaternary2d-v0.1.0">
+
+#### [@stdlib/array/base/quaternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quaternary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`427ed16`](https://github.com/stdlib-js/stdlib/commit/427ed169a8a834dd49c3cede40a0d552ae4479a5) - add `array/base/quaternary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-quinary2d-v0.1.0">
+
+#### [@stdlib/array/base/quinary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/quinary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5f9a1c0`](https://github.com/stdlib-js/stdlib/commit/5f9a1c0936a08dd472d26364035c300f742de10a) - add `array/base/quinary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-setter-v0.1.0">
+
+#### [@stdlib/array/base/setter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/setter)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`68440c3`](https://github.com/stdlib-js/stdlib/commit/68440c30ffdea9c9b4cb2b6b4c4db5e6a1fd6c5b) - refactor declarations to use generics
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`68440c3`](https://github.com/stdlib-js/stdlib/commit/68440c30ffdea9c9b4cb2b6b4c4db5e6a1fd6c5b): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-strided2array2d-v0.1.0">
+
+#### [@stdlib/array/base/strided2array2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`25e784d`](https://github.com/stdlib-js/stdlib/commit/25e784d6ab03a44287244f3d46d4cfea812fee55) - add `array/base/strided2array2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-strided2array3d-v0.1.0">
+
+#### [@stdlib/array/base/strided2array3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d39351d`](https://github.com/stdlib-js/stdlib/commit/d39351d1d0359557189bccaa6c6ee2b0e05a42f1) - add `array/base/strided2array3d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-strided2array4d-v0.1.0">
+
+#### [@stdlib/array/base/strided2array4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`da22c4f`](https://github.com/stdlib-js/stdlib/commit/da22c4f969ca701a1910ff711a64cb84f4f7d4a6) - add `array/base/strided2array4d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-strided2array5d-v0.1.0">
+
+#### [@stdlib/array/base/strided2array5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/strided2array5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3a7f770`](https://github.com/stdlib-js/stdlib/commit/3a7f7704f8dad9dcf68d809078bba2e716d780af) - add `array/base/strided2array5d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-take-v0.1.0">
+
+#### [@stdlib/array/base/take](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ternary2d-v0.1.0">
+
+#### [@stdlib/array/base/ternary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2b7cf06`](https://github.com/stdlib-js/stdlib/commit/2b7cf06391c17868723159bdecb0c68ee495644c) - add `array/base/ternary2d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ternary3d-v0.1.0">
+
+#### [@stdlib/array/base/ternary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`aa6544c`](https://github.com/stdlib-js/stdlib/commit/aa6544c7604f8aa3a9135bcb47bb64d0ed7e16e6) - add `array/base/ternary3d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ternary4d-v0.1.0">
+
+#### [@stdlib/array/base/ternary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ca6ff31`](https://github.com/stdlib-js/stdlib/commit/ca6ff31fc5fcfdb748389ec45bc58a9bfe799819) - add `array/base/ternary4d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-ternary5d-v0.1.0">
+
+#### [@stdlib/array/base/ternary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/ternary5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b28019e`](https://github.com/stdlib-js/stdlib/commit/b28019ecd72b194aeb7956c781216d5423d0f2bb) - add `array/base/ternary5d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-to-accessor-array-v0.1.0">
+
+#### [@stdlib/array/base/to-accessor-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/to-accessor-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unary2d-v0.1.0">
+
+#### [@stdlib/array/base/unary2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6a89907`](https://github.com/stdlib-js/stdlib/commit/6a8990752ed783755a1d4cb1ff8234bde7834ec2) - add `array/base/unary2d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`12ba0da`](https://github.com/stdlib-js/stdlib/commit/12ba0da8be7905ed974535e8d03270ba17d80cf0) - restrict to unary callbacks
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unary2d-by-v0.1.0">
+
+#### [@stdlib/array/base/unary2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary2d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`98a3969`](https://github.com/stdlib-js/stdlib/commit/98a3969dcc5223872503ae9fd662a3a87c60287f) - add `array/base/unary2d-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unary3d-v0.1.0">
+
+#### [@stdlib/array/base/unary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`42a85b4`](https://github.com/stdlib-js/stdlib/commit/42a85b44b3b34d30a11466958a18c92a21c52674) - add `array/base/unary3d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unary4d-v0.1.0">
+
+#### [@stdlib/array/base/unary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d9dd7e8`](https://github.com/stdlib-js/stdlib/commit/d9dd7e82489cf162dc95d045eb2c3869fbb3d1c9) - add `array/base/unary4d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unary5d-v0.1.0">
+
+#### [@stdlib/array/base/unary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9e4d892`](https://github.com/stdlib-js/stdlib/commit/9e4d892cf9f666beaf20163b7d7343e31a9f4106) - add `array/base/unary5d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unarynd-v0.1.0">
+
+#### [@stdlib/array/base/unarynd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unarynd)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`37bdf92`](https://github.com/stdlib-js/stdlib/commit/37bdf924ec6ee1c6dbdacbd6c0258030e2a422e6) - add `array/base/unarynd`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-unitspace-v0.1.0">
+
+#### [@stdlib/array/base/unitspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unitspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zero-to-v0.1.0">
+
+#### [@stdlib/array/base/zero-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zero-to)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zeros-v0.1.0">
+
+#### [@stdlib/array/base/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zeros2d-v0.1.0">
+
+#### [@stdlib/array/base/zeros2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`41ba373`](https://github.com/stdlib-js/stdlib/commit/41ba3733d022aa71086231860eb01ed255e1594a) - add `array/base/zeros2d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zeros3d-v0.1.0">
+
+#### [@stdlib/array/base/zeros3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f00a061`](https://github.com/stdlib-js/stdlib/commit/f00a061e54f99da525c5b972b9753a397a3f27d8) - add `array/base/zeros3d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zeros4d-v0.1.0">
+
+#### [@stdlib/array/base/zeros4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`24de472`](https://github.com/stdlib-js/stdlib/commit/24de47226af0278ae855c64b571bb14304ea1819) - add `array/base/zeros4d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zeros5d-v0.1.0">
+
+#### [@stdlib/array/base/zeros5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zeros5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d188757`](https://github.com/stdlib-js/stdlib/commit/d1887573bbe6552eb90cc2b4b38eeb16f1e999e1) - add `array/base/zeros5d`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-zerosnd-v0.1.0">
+
+#### [@stdlib/array/base/zerosnd](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zerosnd)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`76174ba`](https://github.com/stdlib-js/stdlib/commit/76174bacaae018ee0c56fcf8555d281c35d63fa5) - add `array/base/zerosnd`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-buffer-v0.1.0">
+
+#### [@stdlib/array/buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/buffer)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-complex128-v0.1.0">
+
+#### [@stdlib/array/complex128](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex128)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-complex64-v0.1.0">
+
+#### [@stdlib/array/complex64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex64)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-convert-v0.1.0">
+
+#### [@stdlib/array/convert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/convert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-convert-same-v0.1.0">
+
+#### [@stdlib/array/convert-same](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/convert-same)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-ctors-v0.1.0">
+
+#### [@stdlib/array/ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-datespace-v0.1.0">
+
+#### [@stdlib/array/datespace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/datespace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-dtype-v0.1.0">
+
+#### [@stdlib/array/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-dtypes-v0.1.0">
+
+#### [@stdlib/array/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-empty-v0.1.0">
+
+#### [@stdlib/array/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/empty)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`c72a4c6`](https://github.com/stdlib-js/stdlib/commit/c72a4c6976a3527f239ccaf450e8df8379549f9a) - add `array/empty` [(#983)](https://github.com/stdlib-js/stdlib/pull/983)
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#982](https://github.com/stdlib-js/stdlib/issues/982)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-empty-like-v0.1.0">
+
+#### [@stdlib/array/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/empty-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+-   [`81b8f6c`](https://github.com/stdlib-js/stdlib/commit/81b8f6cdc8d32eaa189a3b40f522c3f7f2bc84b4) - add `array/empty-like` [(#1041)](https://github.com/stdlib-js/stdlib/pull/1041)
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-filled-v0.1.0">
+
+#### [@stdlib/array/filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-filled-by-v0.1.0">
+
+#### [@stdlib/array/filled-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-float32-v0.1.0">
+
+#### [@stdlib/array/float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/float32)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-float64-v0.1.0">
+
+#### [@stdlib/array/float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/float64)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-from-iterator-v0.1.0">
+
+#### [@stdlib/array/from-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/from-iterator)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dd9f8bb`](https://github.com/stdlib-js/stdlib/commit/dd9f8bb4e90a35fcb439ea3dca1124ad44a59f9e) - add missing `this` parameter
+-   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-full-v0.1.0">
+
+#### [@stdlib/array/full](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-full-like-v0.1.0">
+
+#### [@stdlib/array/full-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-incrspace-v0.1.0">
+
+#### [@stdlib/array/incrspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/incrspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-int16-v0.1.0">
+
+#### [@stdlib/array/int16](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/int16)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-int32-v0.1.0">
+
+#### [@stdlib/array/int32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/int32)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-int8-v0.1.0">
+
+#### [@stdlib/array/int8](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/int8)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-linspace-v0.1.0">
+
+#### [@stdlib/array/linspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/linspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-logspace-v0.1.0">
+
+#### [@stdlib/array/logspace](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/logspace)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-min-dtype-v0.1.0">
+
+#### [@stdlib/array/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/min-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-nans-v0.1.0">
+
+#### [@stdlib/array/nans](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/nans)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-nans-like-v0.1.0">
+
+#### [@stdlib/array/nans-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/nans-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-next-dtype-v0.1.0">
+
+#### [@stdlib/array/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/next-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-ones-v0.1.0">
+
+#### [@stdlib/array/ones](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ones)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-ones-like-v0.1.0">
+
+#### [@stdlib/array/ones-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ones-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-pool-v0.1.0">
+
+#### [@stdlib/array/pool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/pool)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-promotion-rules-v0.1.0">
+
+#### [@stdlib/array/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/promotion-rules)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-reviver-v0.1.0">
+
+#### [@stdlib/array/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/reviver)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-safe-casts-v0.1.0">
+
+#### [@stdlib/array/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/safe-casts)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-same-kind-casts-v0.1.0">
+
+#### [@stdlib/array/same-kind-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/same-kind-casts)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-shape-v0.1.0">
+
+#### [@stdlib/array/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/shape)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-shared-buffer-v0.1.0">
+
+#### [@stdlib/array/shared-buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/shared-buffer)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-circular-iterator-v0.1.0">
+
+#### [@stdlib/array/to-circular-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-circular-iterator)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-iterator-v0.1.0">
+
+#### [@stdlib/array/to-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-iterator)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-iterator-right-v0.1.0">
+
+#### [@stdlib/array/to-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-iterator-right)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-json-v0.1.0">
+
+#### [@stdlib/array/to-json](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-json)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-sparse-iterator-v0.1.0">
+
+#### [@stdlib/array/to-sparse-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-sparse-iterator)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-sparse-iterator-right-v0.1.0">
+
+#### [@stdlib/array/to-sparse-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-sparse-iterator-right)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-strided-iterator-v0.1.0">
+
+#### [@stdlib/array/to-strided-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-strided-iterator)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-view-iterator-v0.1.0">
+
+#### [@stdlib/array/to-view-iterator](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-view-iterator)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-view-iterator-right-v0.1.0">
+
+#### [@stdlib/array/to-view-iterator-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-view-iterator-right)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-v0.1.0">
+
+#### [@stdlib/array/typed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-complex-v0.1.0">
+
+#### [@stdlib/array/typed-complex](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-complex-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-complex-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-complex-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-complex-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-float-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-float-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-float-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-float-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-float-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-float-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-integer-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-integer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-integer-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-integer-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-integer-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-integer-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-real-v0.1.0">
+
+#### [@stdlib/array/typed-real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-real-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-real-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-real-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-real-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-real-float-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-real-float-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-float-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-real-float-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-real-float-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-real-float-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-signed-integer-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-signed-integer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-signed-integer-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-signed-integer-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-signed-integer-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-signed-integer-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-unsigned-integer-ctors-v0.1.0">
+
+#### [@stdlib/array/typed-unsigned-integer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-unsigned-integer-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-typed-unsigned-integer-dtypes-v0.1.0">
+
+#### [@stdlib/array/typed-unsigned-integer-dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-unsigned-integer-dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-uint16-v0.1.0">
+
+#### [@stdlib/array/uint16](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint16)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-uint32-v0.1.0">
+
+#### [@stdlib/array/uint32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint32)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-uint8-v0.1.0">
+
+#### [@stdlib/array/uint8](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint8)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-uint8c-v0.1.0">
+
+#### [@stdlib/array/uint8c](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/uint8c)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-zeros-v0.1.0">
+
+#### [@stdlib/array/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zeros)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-zeros-like-v0.1.0">
+
+#### [@stdlib/array/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zeros-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`338079e`](https://github.com/stdlib-js/stdlib/commit/338079e2aa5805966f9f450ba79060604b186771): restrict input array type to `Array`
+-   [`a702b6f`](https://github.com/stdlib-js/stdlib/commit/a702b6fd7e1381f72b1080d5718a49b622be37c8): improve type safety when element type is unknown
+-   [`7dfe0d2`](https://github.com/stdlib-js/stdlib/commit/7dfe0d2d39677401f07f0debf5d18cdd169afdd0): refactor declarations to use `Collection` type
+-   [`cac067c`](https://github.com/stdlib-js/stdlib/commit/cac067ccf05c731ea081c10a21b62d5ababa1f46): refactor to use the `Collection` type
+-   [`68440c3`](https://github.com/stdlib-js/stdlib/commit/68440c30ffdea9c9b4cb2b6b4c4db5e6a1fd6c5b): refactor declarations to use generics
+-   [`2abd8cd`](https://github.com/stdlib-js/stdlib/commit/2abd8cdfa8ca450827ce5d71bc8215b725b9b1a2): refactor declarations to use generics
+-   [`ee49f1e`](https://github.com/stdlib-js/stdlib/commit/ee49f1e8f6a8bc473a4d79a7351ba918956533a0): refactor declarations to use generics
+-   [`fcefd6c`](https://github.com/stdlib-js/stdlib/commit/fcefd6cdc8dc87a62d46334c092b8f0f4c32edcd): refactor declarations to use generics
+-   [`671b06e`](https://github.com/stdlib-js/stdlib/commit/671b06e44a82949e75cad11a4dfe9f7e65862dcc): refactor declarations to use generics
+-   [`9ed9aca`](https://github.com/stdlib-js/stdlib/commit/9ed9acaeacce1120731efd5c25e4d94e3629826f): increase minimum TypeScript version
+-   [`d0bd118`](https://github.com/stdlib-js/stdlib/commit/d0bd11813a7a104acb3fd1841efd5f606c20c4d6): refactor declarations to use generics
+-   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305): refactor declarations to allow narrowing
+-   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db): update minimum TypeScript version
+-   [`a3e07fc`](https://github.com/stdlib-js/stdlib/commit/a3e07fca626cc715ae8caf71b03d2046011b93d6): refactor declarations to use generics
+-   [`d620bbd`](https://github.com/stdlib-js/stdlib/commit/d620bbd6e1b0670f18ed87df4f98db017cc9df8f): refactor declarations to use generics
+-   [`08b8c12`](https://github.com/stdlib-js/stdlib/commit/08b8c12c27209c0bb0d4ac136b469c5617572d17): refactor declarations to use generics
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="issues">
+
+### Closed Issues
+
+A total of 2 issues were closed in this release:
+
+[#858](https://github.com/stdlib-js/stdlib/issues/858), [#982](https://github.com/stdlib-js/stdlib/issues/982)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 4 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Naresh Jagadeesan
+-   Philipp Burckhardt
+-   Stephannie Jiménez Gacha
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
 -   [`f9b305a`](https://github.com/stdlib-js/stdlib/commit/f9b305a9774c677cd7bc1fb29085ca5f3fea1f89) - **feat:** add `bquaternary2d` to namespace _(by Athan Reines)_
 -   [`7709036`](https://github.com/stdlib-js/stdlib/commit/7709036fb0cc566df1d4e681fc9e430544af09fd) - **feat:** add `array/base/broadcasted-quaternary2d` _(by Athan Reines)_
 -   [`c3059d9`](https://github.com/stdlib-js/stdlib/commit/c3059d9d8915a7fbf57d8162a11977a380462157) - **feat:** add `strided2array5d` to namespace _(by Athan Reines)_
@@ -10807,7 +11500,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`7214b1b`](https://github.com/stdlib-js/stdlib/commit/7214b1b188ed42b575d70ea6ed71c4aa56f82e92) - **feat:** add `ternary2d` to namespace _(by Athan Reines)_
 -   [`2b7cf06`](https://github.com/stdlib-js/stdlib/commit/2b7cf06391c17868723159bdecb0c68ee495644c) - **feat:** add `array/base/ternary2d` _(by Athan Reines)_
 -   [`38333d8`](https://github.com/stdlib-js/stdlib/commit/38333d8be3a445fac58b4835cce931f46cfd66ff) - **docs:** fix parameter description _(by Athan Reines)_
--   [`4f2310d`](https://github.com/stdlib-js/stdlib/commit/4f2310de3494fe36f4b74db309593f63e9d24dcc) - **docs:** update namespace table of contents  [(##1102)](#1102 ) _(by stdlib-bot)_
+-   [`4f2310d`](https://github.com/stdlib-js/stdlib/commit/4f2310de3494fe36f4b74db309593f63e9d24dcc) - **docs:** update namespace table of contents  [(#1102)](https://github.com/stdlib-js/stdlib/pull/1102 ) _(by stdlib-bot)_
 -   [`e18b248`](https://github.com/stdlib-js/stdlib/commit/e18b248464425863019a841795a7e5fc7d01d0ea) - **feat:** update namespace TypeScript declarations [(#1100)](https://github.com/stdlib-js/stdlib/pull/1100) _(by stdlib-bot, Athan Reines)_
 -   [`b8c3188`](https://github.com/stdlib-js/stdlib/commit/b8c3188a9557f261322237646854bfafeee43a96) - **feat:** add `mskunary3d` to namespace _(by Athan Reines)_
 -   [`09a48fc`](https://github.com/stdlib-js/stdlib/commit/09a48fc749ceba3b8ecee4c5a95fa221950428a4) - **feat:** add `array/base/mskunary3d` _(by Athan Reines)_
@@ -11071,4 +11764,128 @@ A total of 10 people contributed to this release. Thank you to the following con
 </section>
 
 <!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.12">
+
+## 0.0.12 (2021-08-22)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.11">
+
+## 0.0.11 (2021-07-10)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.10">
+
+## 0.0.10 (2021-07-07)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.9">
+
+## 0.0.9 (2021-06-28)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.8">
+
+## 0.0.8 (2021-06-16)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.7">
+
+## 0.0.7 (2021-06-15)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.6">
+
+## 0.0.6 (2021-06-15)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.5">
+
+## 0.0.5 (2021-06-13)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.4">
+
+## 0.0.4 (2021-06-12)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.3">
+
+## 0.0.3 (2021-06-12)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.2">
+
+## 0.0.2 (2021-06-10)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.1">
+
+## 0.0.1 (2021-06-10)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
 

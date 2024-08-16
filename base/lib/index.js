@@ -487,6 +487,15 @@ setReadOnly( ns, 'cuany', require( './../../base/cuany' ) );
 setReadOnly( ns, 'cuevery', require( './../../base/cuevery' ) );
 
 /**
+* @name cunone
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cunone}
+*/
+setReadOnly( ns, 'cunone', require( './../../base/cunone' ) );
+
+/**
 * @name dedupe
 * @memberof ns
 * @readonly
@@ -1268,6 +1277,15 @@ setReadOnly( ns, 'quinary5d', require( './../../base/quinary5d' ) );
 * @see {@link module:@stdlib/array/base/reject}
 */
 setReadOnly( ns, 'reject', require( './../../base/reject' ) );
+
+/**
+* @name removeAt
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/remove-at}
+*/
+setReadOnly( ns, 'removeAt', require( './../../base/remove-at' ) );
 
 /**
 * @name resolveGetter
