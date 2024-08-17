@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-08-17)
+## 0.3.0 (2024-08-17)
 
 <section class="packages">
 
@@ -2469,6 +2469,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`df3ed1e`](https://github.com/stdlib-js/stdlib/commit/df3ed1ee7fdc62c9f49bfa38eb1df240fb752a6e) - **docs:** update namespace ToCs _(by Athan Reines)_
 -   [`297e4d5`](https://github.com/stdlib-js/stdlib/commit/297e4d5c9c1b015ccf8c7bb77c672e9ac1328898) - **feat:** add `without` to namespace _(by Athan Reines)_
 -   [`f6df528`](https://github.com/stdlib-js/stdlib/commit/f6df52818f504fd55987a80f586ad55b40405d58) - **feat:** add `array/base/without` _(by Athan Reines)_
 -   [`e22b37a`](https://github.com/stdlib-js/stdlib/commit/e22b37aaf13a81aa9c8536d54b8a43871e4bdd16) - **docs:** add example _(by Athan Reines)_
