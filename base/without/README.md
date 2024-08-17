@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# arrayWith
+# without
 
-> Return a new array with the element at the specified index replaced with a provided value.
+> Return a new array containing every element from an input array, except for the element at a specified index.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,39 +37,38 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var arrayWith = require( '@stdlib/array/base/with' );
+var without = require( '@stdlib/array/base/without' );
 ```
 
-#### arrayWith( x, index, value )
+#### without( x, index )
 
-Returns a new array with the element at the specified index replaced with a provided value.
+Returns a new array containing every element from an input array, except for the element at a specified index.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = arrayWith( x, 0, 5 );
-// returns [ 5, 2, 3, 4 ]
+var out = without( x, 0 );
+// returns [ 2, 3, 4 ]
 
-out = arrayWith( x, -1, 6 );
-// returns [ 1, 2, 3, 6 ]
+out = without( x, -1 );
+// returns [ 1, 2, 3 ]
 ```
 
 The function accepts the following arguments:
 
 -   **x**: an input array.
 -   **index**: element index.
--   **value**: replacement value.
 
-### arrayWith.assign( x, index, value, out, stride, offset )
+### without.assign( x, index, out, stride, offset )
 
-Copies elements from one array to another array and sets the element at the specified index to a provided value.
+Copies every element from one array to another array, except for the element at a specified index.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = [ 0, 0, 0, 0 ];
-var arr = arrayWith.assign( x, 0, 5, out, 1, 0 );
-// returns [ 5, 2, 3, 4 ]
+var out = [ 0, 0, 0 ];
+var arr = without.assign( x, 0, out, 1, 0 );
+// returns [ 2, 3, 4 ]
 
 var bool = ( arr === out );
 // returns true
@@ -79,7 +78,6 @@ The function accepts the following arguments:
 
 -   **x**: an input array.
 -   **index**: element index.
--   **value**: replacement value.
 -   **out**: output array.
 -   **stride**: output array stride.
 -   **offset**: output array offset.
@@ -93,14 +91,6 @@ The function accepts the following arguments:
 <section class="notes">
 
 ## Notes
-
--   If provided an array-like object having a `with` method, the `arrayWith` function defers execution to that method and assumes that the method has the following signature:
-
-    ```text
-    x.with( index, value )
-    ```
-
-    If provided an array-like object without a `with` method, the `arrayWith` function shallow copies input array data to a new generic array, normalizes a provided index, and sets a specified element.
 
 -   Negative indices are resolved relative to the last array element, with the last element corresponding to `-1`.
 
@@ -118,7 +108,7 @@ The function accepts the following arguments:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var arrayWith = require( '@stdlib/array/base/with' );
+var without = require( '@stdlib/array/base/without' );
 
 // Define an array:
 var opts = {
@@ -129,13 +119,10 @@ var x = discreteUniform( 5, -100, 100, opts );
 // Define an array containing random index values:
 var indices = discreteUniform( 100, -x.length, x.length-1, opts );
 
-// Define an array with random values to set:
-var values = discreteUniform( indices.length, -10000, 10000, opts );
-
-// Randomly set elements in the input array:
+// Randomly omit elements from the input array:
 var i;
 for ( i = 0; i < indices.length; i++ ) {
-    console.log( 'x = [%s]', arrayWith( x, indices[ i ], values[ i ] ).join( ',' ) );
+    console.log( 'x = [%s]', without( x, indices[ i ] ).join( ',' ) );
 }
 ```
 

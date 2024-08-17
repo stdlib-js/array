@@ -19,29 +19,29 @@
 'use strict';
 
 /**
-* Return a new array with the element at the specified index replaced with a provided value.
+* Return a new array containing every element from an input array, except for the element at a specified index.
 *
-* @module @stdlib/array/base/with
+* @module @stdlib/array/base/without
 *
 * @example
-* var arrayWith = require( '@stdlib/array/base/with' );
+* var without = require( '@stdlib/array/base/without' );
 *
 * var x = [ 1, 2, 3, 4 ];
 *
-* var v = arrayWith( x, 0, 5 );
-* // returns [ 5, 2, 3, 4 ]
+* var v = without( x, 0 );
+* // returns [ 2, 3, 4 ]
 *
-* v = arrayWith( x, -2, -1 );
-* // returns [ 1, 2, -1, 4 ]
+* v = without( x, -2 );
+* // returns [ 1, 2, 4 ]
 *
 * @example
-* var arrayWith = require( '@stdlib/array/base/with' );
+* var without = require( '@stdlib/array/base/without' );
 *
 * var x = [ 1, 2, 3, 4 ];
 *
-* var out = [ 0, 0, 0, 0 ];
-* var arr = arrayWith.assign( x, 0, 5, out, 1, 0 );
-* // returns [ 5, 2, 3, 4 ]
+* var out = [ 0, 0, 0 ];
+* var arr = without.assign( x, 0, out, 1, 0 );
+* // returns [ 2, 3, 4 ]
 *
 * var bool = ( arr === out );
 * // returns true

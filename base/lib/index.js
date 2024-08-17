@@ -1549,6 +1549,15 @@ setReadOnly( ns, 'where', require( './../../base/where' ) );
 setReadOnly( ns, 'arrayWith', require( './../../base/with' ) );
 
 /**
+* @name without
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/without}
+*/
+setReadOnly( ns, 'without', require( './../../base/without' ) );
+
+/**
 * @name zeroTo
 * @memberof ns
 * @readonly

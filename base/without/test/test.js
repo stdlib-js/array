@@ -23,19 +23,19 @@
 var tape = require( 'tape' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var hasMethod = require( '@stdlib/assert/is-method' );
-var arrayWith = require( './../lib' );
+var without = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof arrayWith, 'function', 'main export is a function' );
+	t.strictEqual( typeof without, 'function', 'main export is a function' );
 	t.end();
 });
 
 tape( 'attached to the main export is an `assign` method', function test( t ) {
-	t.strictEqual( hasOwnProp( arrayWith, 'assign' ), true, 'returns expected value' );
-	t.strictEqual( hasMethod( arrayWith, 'assign' ), true, 'returns expected value' );
+	t.strictEqual( hasOwnProp( without, 'assign' ), true, 'returns expected value' );
+	t.strictEqual( hasMethod( without, 'assign' ), true, 'returns expected value' );
 	t.end();
 });

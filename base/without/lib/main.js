@@ -20,75 +20,48 @@
 
 // MODULES //
 
-var slice = require( './../../../base/slice' );
-var resolveSetter = require( './../../../base/resolve-setter' );
 var normalizeIndex = require( '@stdlib/ndarray/base/normalize-index' );
+var zeros = require( './../../../zeros' );
+var dtype = require( './../../../dtype' );
 var format = require( '@stdlib/string/format' );
-
-
-// FUNCTIONS //
-
-/**
-* Tests whether an object has a specified method.
-*
-* @private
-* @param {Object} obj - input object
-* @param {string} method - method name
-* @returns {boolean} boolean indicating whether an object has a specified method
-*
-* @example
-* var bool = hasMethod( [], 'map' );
-* // returns true
-*
-* @example
-* var bool = hasMethod( [], 'beep' );
-* // returns false
-*/
-function hasMethod( obj, method ) {
-	return ( typeof obj[ method ] === 'function' );
-}
+var assign = require( './assign.js' );
 
 
 // MAIN //
 
 /**
-* Returns a new array with the element at the specified index replaced with a provided value.
+* Returns a new array containing every element from an input array, except for the element at a specified index.
 *
 * @param {Collection} x - input array
 * @param {integer} index - element index
-* @param {*} value - replacement value
 * @throws {RangeError} second argument must not exceed array bounds
 * @returns {Collection} output array
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var v = arrayWith( x, 0, 5 );
-* // returns [ 5, 2, 3, 4 ]
+* var v = without( x, 0 );
+* // returns [ 2, 3, 4 ]
 *
-* v = arrayWith( x, 1, 6 );
-* // returns [ 1, 6, 3, 4 ]
+* v = without( x, 1 );
+* // returns [ 1, 3, 4 ]
 *
-* v = arrayWith( x, -2, 7 );
-* // returns  [ 1, 2, 7, 4 ]
+* v = without( x, -2 );
+* // returns  [ 1, 2, 4 ]
 */
-function arrayWith( x, index, value ) {
+function without( x, index ) {
 	var out;
-	var set;
-	if ( hasMethod( x, 'with' ) ) {
-		return x.with( index, value );
-	}
+
 	index = normalizeIndex( index, x.length-1 );
 	if ( index < 0 ) {
 		throw new RangeError( format( 'invalid argument. Index argument is out-of-bounds. Value: `%d`.', index ) );
 	}
-	out = slice( x, 0, x.length );
-	set = resolveSetter( out );
-	set( out, index, value );
+	out = zeros( x.length-1, dtype( x ) || 'generic' );
+	assign( x, index, out, 1, 0 );
 	return out;
 }
 
 
 // EXPORTS //
 
-module.exports = arrayWith;
+module.exports = without;
