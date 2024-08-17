@@ -6,7 +6,41 @@
 
 ## Unreleased (2024-08-17)
 
-No changes reported for this release.
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`6c76e49`](https://github.com/stdlib-js/stdlib/commit/6c76e49ef8864be363b016070187459ce8f3ef12) - **test:** refactor sample values _(by Athan Reines)_
+-   [`921a9fe`](https://github.com/stdlib-js/stdlib/commit/921a9fe9a5bd423dc5153e7aabf645fd05a175d8) - **test:** add boolean array tests _(by Athan Reines)_
+-   [`756afa3`](https://github.com/stdlib-js/stdlib/commit/756afa3daa3d10466283aacaf50d0adb1ba186fe) - **test:** add boolean array tests _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
 
 </section>
 

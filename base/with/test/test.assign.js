@@ -24,9 +24,11 @@ var tape = require( 'tape' );
 var Int32Array = require( './../../../int32' );
 var Float64Array = require( './../../../float64' );
 var Complex128Array = require( './../../../complex128' );
+var BooleanArray = require( './../../../bool' );
 var AccessorArray = require( './../../../base/accessor' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var isSameComplex128Array = require( '@stdlib/assert/is-same-complex128array' );
+var isSameBooleanArray = require( '@stdlib/assert/is-same-booleanarray' );
 var zeros = require( './../../../zeros' );
 var arrayWith = require( './../lib/assign.js' );
 
@@ -348,6 +350,38 @@ tape( 'the function copies elements to another array and sets an element at a sp
 
 	t.strictEqual( actual, out, 'returns expected value' );
 	t.strictEqual( isSameComplex128Array( actual, expected ), true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function copies elements to another array and sets an element at a specified index to a provided value (bool)', function test( t ) {
+	var expected;
+	var actual;
+	var out;
+	var x;
+
+	x = new BooleanArray( [ 0, 0, 1, 1 ] );
+
+	out = new BooleanArray( x.length );
+	expected = new BooleanArray( [ 1, 0, 1, 1 ] );
+	actual = arrayWith( x, 0, true, out, 1, 0 );
+
+	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( isSameBooleanArray( actual, expected ), true, 'returns expected value' );
+
+	out = new BooleanArray( x.length*2 );
+	expected = new BooleanArray( [ 0, 0, 1, 0, 1, 0, 1, 0 ] );
+	actual = arrayWith( x, 1, true, out, 2, 0 );
+
+	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( isSameBooleanArray( actual, expected ), true, 'returns expected value' );
+
+	out = new BooleanArray( x.length*2 );
+	expected = new BooleanArray( [ 0, 1, 0, 0, 0, 0, 0, 0 ] );
+	actual = arrayWith( x, 2, false, out, -2, out.length-1 );
+
+	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( isSameBooleanArray( actual, expected ), true, 'returns expected value' );
 
 	t.end();
 });
