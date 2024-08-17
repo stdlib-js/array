@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-08-17)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-08-17)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="array-unreleased">
+<section class="package" id="array-v0.3.0">
 
 #### [@stdlib/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array)
 
@@ -67,7 +77,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-unreleased">
+<section class="package" id="array-base-v0.3.0">
 
 #### [@stdlib/array/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base)
 
@@ -135,7 +145,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-any-unreleased">
+<section class="package" id="array-base-any-v0.3.0">
 
 #### [@stdlib/array/base/any](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/any)
 
@@ -157,7 +167,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-unreleased">
+<section class="package" id="array-base-assert-v0.3.0">
 
 #### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
 
@@ -207,7 +217,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-has-same-values-unreleased">
+<section class="package" id="array-base-assert-has-same-values-v0.3.0">
 
 #### [@stdlib/array/base/assert/has-same-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-same-values)
 
@@ -229,7 +239,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is--unreleased">
+<section class="package" id="array-base-assert-is--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-)
 
@@ -251,7 +261,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-boolean--unreleased">
+<section class="package" id="array-base-assert-is-boolean--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-boolean-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-boolean-)
 
@@ -273,7 +283,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-booleanarray-unreleased">
+<section class="package" id="array-base-assert-is-booleanarray-v0.3.0">
 
 #### [@stdlib/array/base/assert/is-booleanarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-booleanarray)
 
@@ -295,7 +305,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-complex-floating-point--unreleased">
+<section class="package" id="array-base-assert-is-complex-floating-point--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-complex-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex-floating-point-)
 
@@ -317,7 +327,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-complex-typed-array-unreleased">
+<section class="package" id="array-base-assert-is-complex-typed-array-v0.3.0">
 
 #### [@stdlib/array/base/assert/is-complex-typed-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex-typed-array)
 
@@ -339,7 +349,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-floating-point--unreleased">
+<section class="package" id="array-base-assert-is-floating-point--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-floating-point-)
 
@@ -361,7 +371,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-integer--unreleased">
+<section class="package" id="array-base-assert-is-integer--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-integer-)
 
@@ -383,7 +393,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-mostly-safe--unreleased">
+<section class="package" id="array-base-assert-is-mostly-safe--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-mostly-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-mostly-safe-)
 
@@ -405,7 +415,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-numeric--unreleased">
+<section class="package" id="array-base-assert-is-numeric--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-numeric-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-numeric-)
 
@@ -427,7 +437,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-real--unreleased">
+<section class="package" id="array-base-assert-is-real--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-real-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-real-)
 
@@ -449,7 +459,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-real-floating-point--unreleased">
+<section class="package" id="array-base-assert-is-real-floating-point--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-real-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-real-floating-point-)
 
@@ -471,7 +481,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-safe--unreleased">
+<section class="package" id="array-base-assert-is-safe--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-safe-)
 
@@ -493,7 +503,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-same-kind--unreleased">
+<section class="package" id="array-base-assert-is-same-kind--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-same-kind-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-same-kind-)
 
@@ -515,7 +525,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-signed-integer--unreleased">
+<section class="package" id="array-base-assert-is-signed-integer--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-signed-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-signed-integer-)
 
@@ -537,7 +547,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-assert-is-unsigned-integer--unreleased">
+<section class="package" id="array-base-assert-is-unsigned-integer--v0.3.0">
 
 #### [@stdlib/array/base/assert/is-unsigned-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-unsigned-integer-)
 
@@ -559,7 +569,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-count-falsy-unreleased">
+<section class="package" id="array-base-count-falsy-v0.3.0">
 
 #### [@stdlib/array/base/count-falsy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-falsy)
 
@@ -582,7 +592,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="array-base-count-if-unreleased">
+<section class="package" id="array-base-count-if-v0.3.0">
 
 #### [@stdlib/array/base/count-if](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-if)
 
@@ -626,7 +636,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-count-same-value-unreleased">
+<section class="package" id="array-base-count-same-value-v0.3.0">
 
 #### [@stdlib/array/base/count-same-value](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-same-value)
 
@@ -661,7 +671,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-count-same-value-zero-unreleased">
+<section class="package" id="array-base-count-same-value-zero-v0.3.0">
 
 #### [@stdlib/array/base/count-same-value-zero](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-same-value-zero)
 
@@ -696,7 +706,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-count-same-value-zero-example-unreleased">
+<section class="package" id="array-base-count-same-value-zero-example-v0.3.0">
 
 #### [@stdlib/array/base/count-same-value-zero/example](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-same-value-zero/example)
 
@@ -730,7 +740,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-count-truthy-unreleased">
+<section class="package" id="array-base-count-truthy-v0.3.0">
 
 #### [@stdlib/array/base/count-truthy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-truthy)
 
@@ -753,7 +763,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-cuany-unreleased">
+<section class="package" id="array-base-cuany-v0.3.0">
 
 #### [@stdlib/array/base/cuany](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cuany)
 
@@ -776,7 +786,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-cuevery-unreleased">
+<section class="package" id="array-base-cuevery-v0.3.0">
 
 #### [@stdlib/array/base/cuevery](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cuevery)
 
@@ -811,7 +821,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-cunone-unreleased">
+<section class="package" id="array-base-cunone-v0.3.0">
 
 #### [@stdlib/array/base/cunone](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cunone)
 
@@ -845,7 +855,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-every-unreleased">
+<section class="package" id="array-base-every-v0.3.0">
 
 #### [@stdlib/array/base/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/every)
 
@@ -867,7 +877,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-fancy-slice-assign-unreleased">
+<section class="package" id="array-base-fancy-slice-assign-v0.3.0">
 
 #### [@stdlib/array/base/fancy-slice-assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fancy-slice-assign)
 
@@ -899,7 +909,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-join-unreleased">
+<section class="package" id="array-base-join-v0.3.0">
 
 #### [@stdlib/array/base/join](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/join)
 
@@ -921,7 +931,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-min-signed-integer-dtype-unreleased">
+<section class="package" id="array-base-min-signed-integer-dtype-v0.3.0">
 
 #### [@stdlib/array/base/min-signed-integer-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/min-signed-integer-dtype)
 
@@ -943,7 +953,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-min-unsigned-integer-dtype-unreleased">
+<section class="package" id="array-base-min-unsigned-integer-dtype-v0.3.0">
 
 #### [@stdlib/array/base/min-unsigned-integer-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/min-unsigned-integer-dtype)
 
@@ -965,7 +975,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskfilter-unreleased">
+<section class="package" id="array-base-mskfilter-v0.3.0">
 
 #### [@stdlib/array/base/mskfilter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskfilter)
 
@@ -988,7 +998,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskfilter-map-unreleased">
+<section class="package" id="array-base-mskfilter-map-v0.3.0">
 
 #### [@stdlib/array/base/mskfilter-map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskfilter-map)
 
@@ -1010,7 +1020,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskput-unreleased">
+<section class="package" id="array-base-mskput-v0.3.0">
 
 #### [@stdlib/array/base/mskput](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskput)
 
@@ -1056,7 +1066,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskreject-unreleased">
+<section class="package" id="array-base-mskreject-v0.3.0">
 
 #### [@stdlib/array/base/mskreject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskreject)
 
@@ -1079,7 +1089,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-mskreject-map-unreleased">
+<section class="package" id="array-base-mskreject-map-v0.3.0">
 
 #### [@stdlib/array/base/mskreject-map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskreject-map)
 
@@ -1101,7 +1111,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-none-unreleased">
+<section class="package" id="array-base-none-v0.3.0">
 
 #### [@stdlib/array/base/none](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/none)
 
@@ -1123,7 +1133,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-place-unreleased">
+<section class="package" id="array-base-place-v0.3.0">
 
 #### [@stdlib/array/base/place](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/place)
 
@@ -1168,7 +1178,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-put-unreleased">
+<section class="package" id="array-base-put-v0.3.0">
 
 #### [@stdlib/array/base/put](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/put)
 
@@ -1190,7 +1200,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-remove-at-unreleased">
+<section class="package" id="array-base-remove-at-v0.3.0">
 
 #### [@stdlib/array/base/remove-at](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/remove-at)
 
@@ -1212,7 +1222,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-take-unreleased">
+<section class="package" id="array-base-take-v0.3.0">
 
 #### [@stdlib/array/base/take](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take)
 
@@ -1245,7 +1255,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-take-map-unreleased">
+<section class="package" id="array-base-take-map-v0.3.0">
 
 #### [@stdlib/array/base/take-map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take-map)
 
@@ -1267,7 +1277,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-where-unreleased">
+<section class="package" id="array-base-where-v0.3.0">
 
 #### [@stdlib/array/base/where](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/where)
 
@@ -1299,7 +1309,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-with-unreleased">
+<section class="package" id="array-base-with-v0.3.0">
 
 #### [@stdlib/array/base/with](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/with)
 
@@ -1332,7 +1342,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-base-without-unreleased">
+<section class="package" id="array-base-without-v0.3.0">
 
 #### [@stdlib/array/base/without](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/without)
 
@@ -1354,7 +1364,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-bool-unreleased">
+<section class="package" id="array-bool-v0.3.0">
 
 #### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
 
@@ -1392,7 +1402,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-complex128-unreleased">
+<section class="package" id="array-complex128-v0.3.0">
 
 #### [@stdlib/array/complex128](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex128)
 
@@ -1431,7 +1441,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-complex64-unreleased">
+<section class="package" id="array-complex64-v0.3.0">
 
 #### [@stdlib/array/complex64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex64)
 
@@ -1470,7 +1480,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-convert-unreleased">
+<section class="package" id="array-convert-v0.3.0">
 
 #### [@stdlib/array/convert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/convert)
 
@@ -1493,7 +1503,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-convert-same-unreleased">
+<section class="package" id="array-convert-same-v0.3.0">
 
 #### [@stdlib/array/convert-same](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/convert-same)
 
@@ -1515,7 +1525,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-ctors-unreleased">
+<section class="package" id="array-ctors-v0.3.0">
 
 #### [@stdlib/array/ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ctors)
 
@@ -1537,7 +1547,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-defaults-unreleased">
+<section class="package" id="array-defaults-v0.3.0">
 
 #### [@stdlib/array/defaults](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/defaults)
 
@@ -1559,7 +1569,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-dtype-unreleased">
+<section class="package" id="array-dtype-v0.3.0">
 
 #### [@stdlib/array/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/dtype)
 
@@ -1581,7 +1591,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-dtypes-unreleased">
+<section class="package" id="array-dtypes-v0.3.0">
 
 #### [@stdlib/array/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/dtypes)
 
@@ -1604,7 +1614,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-empty-unreleased">
+<section class="package" id="array-empty-v0.3.0">
 
 #### [@stdlib/array/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/empty)
 
@@ -1627,7 +1637,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-empty-like-unreleased">
+<section class="package" id="array-empty-like-v0.3.0">
 
 #### [@stdlib/array/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/empty-like)
 
@@ -1650,7 +1660,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-filled-unreleased">
+<section class="package" id="array-filled-v0.3.0">
 
 #### [@stdlib/array/filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled)
 
@@ -1673,7 +1683,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-filled-by-unreleased">
+<section class="package" id="array-filled-by-v0.3.0">
 
 #### [@stdlib/array/filled-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled-by)
 
@@ -1695,7 +1705,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-from-scalar-unreleased">
+<section class="package" id="array-from-scalar-v0.3.0">
 
 #### [@stdlib/array/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/from-scalar)
 
@@ -1718,7 +1728,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-full-unreleased">
+<section class="package" id="array-full-v0.3.0">
 
 #### [@stdlib/array/full](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full)
 
@@ -1741,7 +1751,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-full-like-unreleased">
+<section class="package" id="array-full-like-v0.3.0">
 
 #### [@stdlib/array/full-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/full-like)
 
@@ -1763,7 +1773,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-index-unreleased">
+<section class="package" id="array-index-v0.3.0">
 
 #### [@stdlib/array/index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/index)
 
@@ -1798,7 +1808,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-min-dtype-unreleased">
+<section class="package" id="array-min-dtype-v0.3.0">
 
 #### [@stdlib/array/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/min-dtype)
 
@@ -1832,7 +1842,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-mostly-safe-casts-unreleased">
+<section class="package" id="array-mostly-safe-casts-v0.3.0">
 
 #### [@stdlib/array/mostly-safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mostly-safe-casts)
 
@@ -1855,7 +1865,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-mskfilter-unreleased">
+<section class="package" id="array-mskfilter-v0.3.0">
 
 #### [@stdlib/array/mskfilter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mskfilter)
 
@@ -1877,7 +1887,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-mskput-unreleased">
+<section class="package" id="array-mskput-v0.3.0">
 
 #### [@stdlib/array/mskput](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mskput)
 
@@ -1899,7 +1909,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-mskreject-unreleased">
+<section class="package" id="array-mskreject-v0.3.0">
 
 #### [@stdlib/array/mskreject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/mskreject)
 
@@ -1921,7 +1931,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-next-dtype-unreleased">
+<section class="package" id="array-next-dtype-v0.3.0">
 
 #### [@stdlib/array/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/next-dtype)
 
@@ -1943,7 +1953,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-one-to-unreleased">
+<section class="package" id="array-one-to-v0.3.0">
 
 #### [@stdlib/array/one-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/one-to)
 
@@ -1965,7 +1975,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-ones-unreleased">
+<section class="package" id="array-ones-v0.3.0">
 
 #### [@stdlib/array/ones](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ones)
 
@@ -1987,7 +1997,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-ones-like-unreleased">
+<section class="package" id="array-ones-like-v0.3.0">
 
 #### [@stdlib/array/ones-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/ones-like)
 
@@ -2009,7 +2019,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-place-unreleased">
+<section class="package" id="array-place-v0.3.0">
 
 #### [@stdlib/array/place](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/place)
 
@@ -2031,7 +2041,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-pool-unreleased">
+<section class="package" id="array-pool-v0.3.0">
 
 #### [@stdlib/array/pool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/pool)
 
@@ -2053,7 +2063,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-promotion-rules-unreleased">
+<section class="package" id="array-promotion-rules-v0.3.0">
 
 #### [@stdlib/array/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/promotion-rules)
 
@@ -2076,7 +2086,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-put-unreleased">
+<section class="package" id="array-put-v0.3.0">
 
 #### [@stdlib/array/put](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/put)
 
@@ -2108,7 +2118,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-reviver-unreleased">
+<section class="package" id="array-reviver-v0.3.0">
 
 #### [@stdlib/array/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/reviver)
 
@@ -2130,7 +2140,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-safe-casts-unreleased">
+<section class="package" id="array-safe-casts-v0.3.0">
 
 #### [@stdlib/array/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/safe-casts)
 
@@ -2153,7 +2163,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-same-kind-casts-unreleased">
+<section class="package" id="array-same-kind-casts-v0.3.0">
 
 #### [@stdlib/array/same-kind-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/same-kind-casts)
 
@@ -2176,7 +2186,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-take-unreleased">
+<section class="package" id="array-take-v0.3.0">
 
 #### [@stdlib/array/take](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/take)
 
@@ -2198,7 +2208,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-to-fancy-unreleased">
+<section class="package" id="array-to-fancy-v0.3.0">
 
 #### [@stdlib/array/to-fancy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-fancy)
 
@@ -2240,7 +2250,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-to-json-unreleased">
+<section class="package" id="array-to-json-v0.3.0">
 
 #### [@stdlib/array/to-json](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-json)
 
@@ -2262,7 +2272,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-unreleased">
+<section class="package" id="array-typed-v0.3.0">
 
 #### [@stdlib/array/typed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed)
 
@@ -2285,7 +2295,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-complex-unreleased">
+<section class="package" id="array-typed-complex-v0.3.0">
 
 #### [@stdlib/array/typed-complex](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-complex)
 
@@ -2307,7 +2317,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-typed-ctors-unreleased">
+<section class="package" id="array-typed-ctors-v0.3.0">
 
 #### [@stdlib/array/typed-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed-ctors)
 
@@ -2329,7 +2339,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-zero-to-unreleased">
+<section class="package" id="array-zero-to-v0.3.0">
 
 #### [@stdlib/array/zero-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zero-to)
 
@@ -2351,7 +2361,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-zeros-unreleased">
+<section class="package" id="array-zeros-v0.3.0">
 
 #### [@stdlib/array/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zeros)
 
@@ -2373,7 +2383,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="array-zeros-like-unreleased">
+<section class="package" id="array-zeros-like-v0.3.0">
 
 #### [@stdlib/array/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/zeros-like)
 
