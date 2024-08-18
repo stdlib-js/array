@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.3.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, filled, filledBy, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@esm/index.mjs';
+import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float32Array, Float64Array, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, filled, filledBy, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.3.1-esm/index.mjs';
 ```
 
 #### ns
@@ -259,7 +259,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.3.1-esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
