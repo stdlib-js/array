@@ -4,11 +4,55 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-07)
+## Unreleased (2024-09-09)
 
 <section class="packages">
 
 ### Packages
+
+<section class="package" id="array-base-assert-unreleased">
+
+#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cc56538`](https://github.com/stdlib-js/stdlib/commit/cc5653806325fe7b63037dfa49108be8016de3fc) - add `hasEqualValues` to namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-has-equal-values-unreleased">
+
+#### [@stdlib/array/base/assert/has-equal-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-equal-values)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4cdf27e`](https://github.com/stdlib-js/stdlib/commit/4cdf27e87b904ab762b3e7c1034dd27f7466383c) - add `array/base/assert/has-equal-values`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
 
 </section>
 
@@ -18,10 +62,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Philipp Burckhardt
--   ProCoderVP
+-   Vaibhav Patel
 
 </section>
 
@@ -33,7 +78,10 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`bff7edc`](https://github.com/stdlib-js/stdlib/commit/bff7edc7371b591931b00bbfa3c80233ad839c6f) - **docs:** update examples of `array/base` _(by ProCoderVP, Philipp Burckhardt)_
+-   [`cc56538`](https://github.com/stdlib-js/stdlib/commit/cc5653806325fe7b63037dfa49108be8016de3fc) - **feat:** add `hasEqualValues` to namespace _(by Athan Reines)_
+-   [`58d6b23`](https://github.com/stdlib-js/stdlib/commit/58d6b233f341a5cee452bd74953d260482242931) - **style:** disable lint rule _(by Athan Reines)_
+-   [`4cdf27e`](https://github.com/stdlib-js/stdlib/commit/4cdf27e87b904ab762b3e7c1034dd27f7466383c) - **feat:** add `array/base/assert/has-equal-values` _(by Athan Reines)_
+-   [`bff7edc`](https://github.com/stdlib-js/stdlib/commit/bff7edc7371b591931b00bbfa3c80233ad839c6f) - **docs:** update examples of `array/base` _(by Vaibhav Patel, Philipp Burckhardt)_
 
 </details>
 

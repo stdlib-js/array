@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'contains', require( './../../../base/assert/contains' ) );
 
 /**
+* @name hasEqualValues
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/has-equal-values}
+*/
+setReadOnly( ns, 'hasEqualValues', require( './../../../base/assert/has-equal-values' ) );
+
+/**
 * @name hasSameValues
 * @memberof ns
 * @readonly
