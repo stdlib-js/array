@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`81b39fe`](https://github.com/stdlib-js/stdlib/commit/81b39fec06b8575149b2ab1b834a7577e6ac5e5d) - add `hasEqualValuesIndexed` to namespace
 -   [`cc56538`](https://github.com/stdlib-js/stdlib/commit/cc5653806325fe7b63037dfa49108be8016de3fc) - add `hasEqualValues` to namespace
 
 </section>
@@ -43,6 +44,28 @@
 ##### Features
 
 -   [`4cdf27e`](https://github.com/stdlib-js/stdlib/commit/4cdf27e87b904ab762b3e7c1034dd27f7466383c) - add `array/base/assert/has-equal-values`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-has-equal-values-indexed-unreleased">
+
+#### [@stdlib/array/base/assert/has-equal-values-indexed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-equal-values-indexed)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`036794c`](https://github.com/stdlib-js/stdlib/commit/036794c19bd65d13a60c098a5423cf12e1be5d12) - add `array/base/assert/has-equal-values-indexed`
 
 </section>
 
@@ -78,6 +101,9 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`6bbe26f`](https://github.com/stdlib-js/stdlib/commit/6bbe26f751894cadb15279ceb6cf739475bb0612) - **test:** fix descriptions _(by Athan Reines)_
+-   [`81b39fe`](https://github.com/stdlib-js/stdlib/commit/81b39fec06b8575149b2ab1b834a7577e6ac5e5d) - **feat:** add `hasEqualValuesIndexed` to namespace _(by Athan Reines)_
+-   [`036794c`](https://github.com/stdlib-js/stdlib/commit/036794c19bd65d13a60c098a5423cf12e1be5d12) - **feat:** add `array/base/assert/has-equal-values-indexed` _(by Athan Reines)_
 -   [`cc56538`](https://github.com/stdlib-js/stdlib/commit/cc5653806325fe7b63037dfa49108be8016de3fc) - **feat:** add `hasEqualValues` to namespace _(by Athan Reines)_
 -   [`58d6b23`](https://github.com/stdlib-js/stdlib/commit/58d6b233f341a5cee452bd74953d260482242931) - **style:** disable lint rule _(by Athan Reines)_
 -   [`4cdf27e`](https://github.com/stdlib-js/stdlib/commit/4cdf27e87b904ab762b3e7c1034dd27f7466383c) - **feat:** add `array/base/assert/has-equal-values` _(by Athan Reines)_
