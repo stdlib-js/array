@@ -167,6 +167,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a541897`](https://github.com/stdlib-js/stdlib/commit/a541897dec2cd902c186d9ad128b6efd8a3ca528) - **docs:** fix grammar _(by Athan Reines)_
 -   [`583452c`](https://github.com/stdlib-js/stdlib/commit/583452c820523f4bc97b293b4424d0c1bf59fffc) - **fix:** add missing property _(by Athan Reines)_
 -   [`91ad072`](https://github.com/stdlib-js/stdlib/commit/91ad07207eee217885975ce19d83e85d1f4a6499) - **fix:** add missing property _(by Athan Reines)_
 -   [`8d3352e`](https://github.com/stdlib-js/stdlib/commit/8d3352e666353624f97e95ee0805b7d641fc775a) - **fix:** add missing property _(by Athan Reines)_
