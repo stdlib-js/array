@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-09)
+## Unreleased (2024-09-15)
 
 <section class="packages">
 
@@ -77,6 +77,72 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-bool-unreleased">
+
+#### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`583452c`](https://github.com/stdlib-js/stdlib/commit/583452c820523f4bc97b293b4424d0c1bf59fffc) - add missing property
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-complex128-unreleased">
+
+#### [@stdlib/array/complex128](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex128)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`8d3352e`](https://github.com/stdlib-js/stdlib/commit/8d3352e666353624f97e95ee0805b7d641fc775a) - add missing property
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-complex64-unreleased">
+
+#### [@stdlib/array/complex64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex64)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`91ad072`](https://github.com/stdlib-js/stdlib/commit/91ad07207eee217885975ce19d83e85d1f4a6499) - add missing property
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -101,6 +167,9 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`583452c`](https://github.com/stdlib-js/stdlib/commit/583452c820523f4bc97b293b4424d0c1bf59fffc) - **fix:** add missing property _(by Athan Reines)_
+-   [`91ad072`](https://github.com/stdlib-js/stdlib/commit/91ad07207eee217885975ce19d83e85d1f4a6499) - **fix:** add missing property _(by Athan Reines)_
+-   [`8d3352e`](https://github.com/stdlib-js/stdlib/commit/8d3352e666353624f97e95ee0805b7d641fc775a) - **fix:** add missing property _(by Athan Reines)_
 -   [`73a198b`](https://github.com/stdlib-js/stdlib/commit/73a198b42551ce9aaa142a17e9c77578205628d5) - **test:** add tests _(by Athan Reines)_
 -   [`4a14f03`](https://github.com/stdlib-js/stdlib/commit/4a14f034cc432c477ce41d452ea220803b45525c) - **test:** add tests _(by Athan Reines)_
 -   [`6bbe26f`](https://github.com/stdlib-js/stdlib/commit/6bbe26f751894cadb15279ceb6cf739475bb0612) - **test:** fix descriptions _(by Athan Reines)_
