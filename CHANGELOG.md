@@ -115,6 +115,16 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`16bb447`](https://github.com/stdlib-js/stdlib/commit/16bb44733defec3009d7c49cbd8cb6eaaaa60ad2) - update TypeScript function signature and documentation
+
+</section>
+
+<!-- /.bug-fixes -->
+
 </details>
 
 </section>
@@ -212,6 +222,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`16bb447`](https://github.com/stdlib-js/stdlib/commit/16bb44733defec3009d7c49cbd8cb6eaaaa60ad2) - **fix:** update TypeScript function signature and documentation _(by Philipp Burckhardt)_
 -   [`0bb460f`](https://github.com/stdlib-js/stdlib/commit/0bb460f9675f693bd4eb5826888e493cae8757fc) - **feat:** add `array/base/cusome-by-right` _(by HarshaNP, Philipp Burckhardt)_
 -   [`cadb613`](https://github.com/stdlib-js/stdlib/commit/cadb6131d6ce50338d11757e88e8a910a0367983) - **chore:** update argument documentation styling _(by Philipp Burckhardt)_
 -   [`e722c97`](https://github.com/stdlib-js/stdlib/commit/e722c9742d30f0e3c0ec6ebb349b30338facbdf0) - **feat:** add `array/base/cunone-by-right` _(by HarshaNP, Philipp Burckhardt)_
