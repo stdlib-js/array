@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-16)
+## Unreleased (2024-09-17)
 
 <section class="packages">
 
@@ -190,6 +190,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cadb613`](https://github.com/stdlib-js/stdlib/commit/cadb6131d6ce50338d11757e88e8a910a0367983) - **chore:** update argument documentation styling _(by Philipp Burckhardt)_
 -   [`e722c97`](https://github.com/stdlib-js/stdlib/commit/e722c9742d30f0e3c0ec6ebb349b30338facbdf0) - **feat:** add `array/base/cunone-by-right` _(by HarshaNP, Philipp Burckhardt)_
 -   [`a541897`](https://github.com/stdlib-js/stdlib/commit/a541897dec2cd902c186d9ad128b6efd8a3ca528) - **docs:** fix grammar _(by Athan Reines)_
 -   [`583452c`](https://github.com/stdlib-js/stdlib/commit/583452c820523f4bc97b293b4424d0c1bf59fffc) - **fix:** add missing property _(by Athan Reines)_
