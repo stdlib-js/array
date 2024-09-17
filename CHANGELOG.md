@@ -77,6 +77,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-cunone-by-unreleased">
+
+#### [@stdlib/array/base/cunone-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cunone-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`24e9908`](https://github.com/stdlib-js/stdlib/commit/24e9908afc085d5d2aece1844a6e25b36332f246) - add `array/base/cunone-by` package
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-cunone-by-right-unreleased">
 
 #### [@stdlib/array/base/cunone-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cunone-by-right)
@@ -205,10 +227,11 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   HarshaNP
+-   Kaif Mohd
 -   Philipp Burckhardt
 -   Vaibhav Patel
 
@@ -222,10 +245,13 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
+-   [`31fd427`](https://github.com/stdlib-js/stdlib/commit/31fd42744ec5d7073041f97c6f72350b8005c0fc) - **style:** remove unwanted empty lines _(by Philipp Burckhardt)_
 -   [`16bb447`](https://github.com/stdlib-js/stdlib/commit/16bb44733defec3009d7c49cbd8cb6eaaaa60ad2) - **fix:** update TypeScript function signature and documentation _(by Philipp Burckhardt)_
 -   [`0bb460f`](https://github.com/stdlib-js/stdlib/commit/0bb460f9675f693bd4eb5826888e493cae8757fc) - **feat:** add `array/base/cusome-by-right` _(by HarshaNP, Philipp Burckhardt)_
 -   [`cadb613`](https://github.com/stdlib-js/stdlib/commit/cadb6131d6ce50338d11757e88e8a910a0367983) - **chore:** update argument documentation styling _(by Philipp Burckhardt)_
 -   [`e722c97`](https://github.com/stdlib-js/stdlib/commit/e722c9742d30f0e3c0ec6ebb349b30338facbdf0) - **feat:** add `array/base/cunone-by-right` _(by HarshaNP, Philipp Burckhardt)_
+-   [`24e9908`](https://github.com/stdlib-js/stdlib/commit/24e9908afc085d5d2aece1844a6e25b36332f246) - **feat:** add `array/base/cunone-by` package _(by Kaif Mohd, Philipp Burckhardt, Athan Reines)_
 -   [`a541897`](https://github.com/stdlib-js/stdlib/commit/a541897dec2cd902c186d9ad128b6efd8a3ca528) - **docs:** fix grammar _(by Athan Reines)_
 -   [`583452c`](https://github.com/stdlib-js/stdlib/commit/583452c820523f4bc97b293b4424d0c1bf59fffc) - **fix:** add missing property _(by Athan Reines)_
 -   [`91ad072`](https://github.com/stdlib-js/stdlib/commit/91ad07207eee217885975ce19d83e85d1f4a6499) - **fix:** add missing property _(by Athan Reines)_
