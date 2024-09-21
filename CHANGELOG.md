@@ -219,6 +219,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-fixed-endian-float64-unreleased">
+
+#### [@stdlib/array/fixed-endian-float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-float64)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9325d5f`](https://github.com/stdlib-js/stdlib/commit/9325d5fcb04b58b7405cc9fd387935d9707cfb0e) - add `array/fixed-endian-float64`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -245,7 +267,11 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9325d5f`](https://github.com/stdlib-js/stdlib/commit/9325d5fcb04b58b7405cc9fd387935d9707cfb0e) - **feat:** add `array/fixed-endian-float64` _(by Athan Reines)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
+-   [`6feb08f`](https://github.com/stdlib-js/stdlib/commit/6feb08f927a08bc7fbb29a721e04218cbd618200) - **style:** fix missing space _(by Athan Reines)_
+-   [`988ba2c`](https://github.com/stdlib-js/stdlib/commit/988ba2c59bc5112d3c4e468245a69ce4ebe92109) - **docs:** fix example _(by Athan Reines)_
+-   [`2faaf21`](https://github.com/stdlib-js/stdlib/commit/2faaf217eab865f9e40abbb0bf21b374595853e9) - **docs:** fix example _(by Athan Reines)_
 -   [`20dea8a`](https://github.com/stdlib-js/stdlib/commit/20dea8af2b14181aa75354f7e3aeb65b955904b9) - **docs:** remove extraneous newline _(by Athan Reines)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`31fd427`](https://github.com/stdlib-js/stdlib/commit/31fd42744ec5d7073041f97c6f72350b8005c0fc) - **style:** remove unwanted empty lines _(by Philipp Burckhardt)_
