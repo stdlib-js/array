@@ -267,6 +267,7 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`7d3199f`](https://github.com/stdlib-js/stdlib/commit/7d3199f4d91ad317802d62e4557f75b36b9f7748) - **docs:** remove duplicate horizontal line _(by Athan Reines)_
 -   [`7a92103`](https://github.com/stdlib-js/stdlib/commit/7a92103ded645aa971bbac7544cafe24652fd5bd) - **docs:** update copy _(by Athan Reines)_
 -   [`9325d5f`](https://github.com/stdlib-js/stdlib/commit/9325d5fcb04b58b7405cc9fd387935d9707cfb0e) - **feat:** add `array/fixed-endian-float64` _(by Athan Reines)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
