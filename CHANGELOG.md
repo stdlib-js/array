@@ -267,6 +267,9 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b723a6e`](https://github.com/stdlib-js/stdlib/commit/b723a6eaec97adad2da4ffbecb532a3d1ae1e0ba) - **docs:** fix errors in comments and clean-up _(by Philipp Burckhardt)_
+-   [`eb82943`](https://github.com/stdlib-js/stdlib/commit/eb82943ec2ac2b3023377cbc320486d333f47e48) - **chore:** minor clean-up _(by Philipp Burckhardt)_
+-   [`3c8bcb9`](https://github.com/stdlib-js/stdlib/commit/3c8bcb938befe35d784ba3fe0dea124dd4b20b36) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`177f16c`](https://github.com/stdlib-js/stdlib/commit/177f16cd80b9072714e7b4e976487e5e6dd19761) - **chore:** update package meta data [(#2933)](https://github.com/stdlib-js/stdlib/pull/2933) _(by stdlib-bot, Athan Reines)_
 -   [`7d3199f`](https://github.com/stdlib-js/stdlib/commit/7d3199f4d91ad317802d62e4557f75b36b9f7748) - **docs:** remove duplicate horizontal line _(by Athan Reines)_
 -   [`7a92103`](https://github.com/stdlib-js/stdlib/commit/7a92103ded645aa971bbac7544cafe24652fd5bd) - **docs:** update copy _(by Athan Reines)_
