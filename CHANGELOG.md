@@ -10,6 +10,28 @@
 
 ### Packages
 
+<section class="package" id="array-unreleased">
+
+#### [@stdlib/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`444e453`](https://github.com/stdlib-js/stdlib/commit/444e45363e751ab85736bc97b642520c3e5db301) - add `byteOrders` to namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-unreleased">
 
 #### [@stdlib/array/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base)
@@ -42,6 +64,7 @@
 
 ##### Features
 
+-   [`43aa58f`](https://github.com/stdlib-js/stdlib/commit/43aa58f81dcad604f11a5715a1546c015b0a9623) - add `isByteOrder` to namespace
 -   [`81b39fe`](https://github.com/stdlib-js/stdlib/commit/81b39fec06b8575149b2ab1b834a7577e6ac5e5d) - add `hasEqualValuesIndexed` to namespace
 -   [`cc56538`](https://github.com/stdlib-js/stdlib/commit/cc5653806325fe7b63037dfa49108be8016de3fc) - add `hasEqualValues` to namespace
 
@@ -88,6 +111,28 @@
 ##### Features
 
 -   [`036794c`](https://github.com/stdlib-js/stdlib/commit/036794c19bd65d13a60c098a5423cf12e1be5d12) - add `array/base/assert/has-equal-values-indexed`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-assert-is-byte-order-unreleased">
+
+#### [@stdlib/array/base/assert/is-byte-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-byte-order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b18478e`](https://github.com/stdlib-js/stdlib/commit/b18478e236e9cb6991d5a0f952d217e043e46587) - add `array/base/assert/is-byte-order`
 
 </section>
 
@@ -219,6 +264,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-byte-orders-unreleased">
+
+#### [@stdlib/array/byte-orders](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/byte-orders)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`20c443d`](https://github.com/stdlib-js/stdlib/commit/20c443df29e4120f66b3b61fc7ec063f0f6ca8c6) - add `array/byte-orders`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-complex128-unreleased">
 
 #### [@stdlib/array/complex128](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex128)
@@ -333,6 +400,10 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`43aa58f`](https://github.com/stdlib-js/stdlib/commit/43aa58f81dcad604f11a5715a1546c015b0a9623) - **feat:** add `isByteOrder` to namespace _(by Athan Reines)_
+-   [`b18478e`](https://github.com/stdlib-js/stdlib/commit/b18478e236e9cb6991d5a0f952d217e043e46587) - **feat:** add `array/base/assert/is-byte-order` _(by Athan Reines)_
+-   [`444e453`](https://github.com/stdlib-js/stdlib/commit/444e45363e751ab85736bc97b642520c3e5db301) - **feat:** add `byteOrders` to namespace _(by Athan Reines)_
+-   [`20c443d`](https://github.com/stdlib-js/stdlib/commit/20c443df29e4120f66b3b61fc7ec063f0f6ca8c6) - **feat:** add `array/byte-orders` _(by Athan Reines)_
 -   [`42664da`](https://github.com/stdlib-js/stdlib/commit/42664dafb94e72a8b8eca80ede6669caaaf57e68) - **feat:** add `nulls` to namespace _(by Athan Reines)_
 -   [`6d91993`](https://github.com/stdlib-js/stdlib/commit/6d9199381c3e949420349ba3506ecd59c692be44) - **feat:** add `array/base/nulls` _(by Athan Reines)_
 -   [`b723a6e`](https://github.com/stdlib-js/stdlib/commit/b723a6eaec97adad2da4ffbecb532a3d1ae1e0ba) - **docs:** fix errors in comments and clean-up _(by Philipp Burckhardt)_

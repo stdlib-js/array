@@ -100,6 +100,15 @@ setReadOnly( ns, 'isBooleanDataType', require( './../../../base/assert/is-boolea
 setReadOnly( ns, 'isBooleanArray', require( './../../../base/assert/is-booleanarray' ) );
 
 /**
+* @name isByteOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-byte-order}
+*/
+setReadOnly( ns, 'isByteOrder', require( './../../../base/assert/is-byte-order' ) );
+
+/**
 * @name isComplexFloatingPointDataType
 * @memberof ns
 * @readonly
