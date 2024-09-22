@@ -1117,6 +1117,15 @@ setReadOnly( ns, 'noneBy', require( './../../base/none-by' ) );
 setReadOnly( ns, 'noneByRight', require( './../../base/none-by-right' ) );
 
 /**
+* @name nulls
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/nulls}
+*/
+setReadOnly( ns, 'nulls', require( './../../base/nulls' ) );
+
+/**
 * @name oneTo
 * @memberof ns
 * @readonly

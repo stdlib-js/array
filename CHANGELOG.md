@@ -10,6 +10,28 @@
 
 ### Packages
 
+<section class="package" id="array-base-unreleased">
+
+#### [@stdlib/array/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`42664da`](https://github.com/stdlib-js/stdlib/commit/42664dafb94e72a8b8eca80ede6669caaaf57e68) - add `nulls` to namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-assert-unreleased">
 
 #### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
@@ -153,6 +175,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-nulls-unreleased">
+
+#### [@stdlib/array/base/nulls](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/nulls)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6d91993`](https://github.com/stdlib-js/stdlib/commit/6d9199381c3e949420349ba3506ecd59c692be44) - add `array/base/nulls`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-bool-unreleased">
 
 #### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
@@ -289,6 +333,8 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`42664da`](https://github.com/stdlib-js/stdlib/commit/42664dafb94e72a8b8eca80ede6669caaaf57e68) - **feat:** add `nulls` to namespace _(by Athan Reines)_
+-   [`6d91993`](https://github.com/stdlib-js/stdlib/commit/6d9199381c3e949420349ba3506ecd59c692be44) - **feat:** add `array/base/nulls` _(by Athan Reines)_
 -   [`b723a6e`](https://github.com/stdlib-js/stdlib/commit/b723a6eaec97adad2da4ffbecb532a3d1ae1e0ba) - **docs:** fix errors in comments and clean-up _(by Philipp Burckhardt)_
 -   [`eb82943`](https://github.com/stdlib-js/stdlib/commit/eb82943ec2ac2b3023377cbc320486d333f47e48) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`3c8bcb9`](https://github.com/stdlib-js/stdlib/commit/3c8bcb938befe35d784ba3fe0dea124dd4b20b36) - **chore:** minor clean-up _(by Philipp Burckhardt)_
