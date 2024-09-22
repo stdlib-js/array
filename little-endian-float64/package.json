@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/array/fixed-endian-float64",
+  "name": "@stdlib/array/little-endian-float64",
   "version": "0.0.0",
-  "description": "Float64Array having a specified byte order.",
+  "description": "Float64Array in little-endian byte order.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -16,6 +16,7 @@
   "main": "./lib",
   "directories": {
     "benchmark": "./benchmark",
+    "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
@@ -64,7 +65,6 @@
     "ieee754",
     "endian",
     "little-endian",
-    "big-endian",
     "byte-order"
   ]
 }
