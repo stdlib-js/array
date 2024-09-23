@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-22)
+## Unreleased (2024-09-23)
 
 <section class="packages">
 
@@ -177,6 +177,28 @@
 ##### Features
 
 -   [`e722c97`](https://github.com/stdlib-js/stdlib/commit/e722c9742d30f0e3c0ec6ebb349b30338facbdf0) - add `array/base/cunone-by-right`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-cusome-unreleased">
+
+#### [@stdlib/array/base/cusome](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cusome)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2091d38`](https://github.com/stdlib-js/stdlib/commit/2091d38aec245202fe1bbff462b12d0f5ed54ee1) - add `array/base/cusome`
 
 </section>
 
@@ -382,13 +404,14 @@
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   HarshaNP
 -   Kaif Mohd
 -   Philipp Burckhardt
 -   Vaibhav Patel
+-   yaswanth
 
 </section>
 
@@ -400,6 +423,7 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`2091d38`](https://github.com/stdlib-js/stdlib/commit/2091d38aec245202fe1bbff462b12d0f5ed54ee1) - **feat:** add `array/base/cusome` _(by yaswanth, Philipp Burckhardt)_
 -   [`43aa58f`](https://github.com/stdlib-js/stdlib/commit/43aa58f81dcad604f11a5715a1546c015b0a9623) - **feat:** add `isByteOrder` to namespace _(by Athan Reines)_
 -   [`b18478e`](https://github.com/stdlib-js/stdlib/commit/b18478e236e9cb6991d5a0f952d217e043e46587) - **feat:** add `array/base/assert/is-byte-order` _(by Athan Reines)_
 -   [`444e453`](https://github.com/stdlib-js/stdlib/commit/444e45363e751ab85736bc97b642520c3e5db301) - **feat:** add `byteOrders` to namespace _(by Athan Reines)_
