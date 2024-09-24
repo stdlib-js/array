@@ -467,6 +467,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`8f72b43`](https://github.com/stdlib-js/stdlib/commit/8f72b432c0fc81a78641d5689722ecc9671c6f02) - **style:** add missing spaces around parentheses _(by Philipp Burckhardt)_
 -   [`73266bf`](https://github.com/stdlib-js/stdlib/commit/73266bf9d7f82198bd752dafccedbc017d8c8bb1) - **feat:** add `array/base/cuany-by` [(#2818)](https://github.com/stdlib-js/stdlib/pull/2818) _(by yaswanth, Philipp Burckhardt)_
 -   [`e3078e5`](https://github.com/stdlib-js/stdlib/commit/e3078e56df8858a8f79fb3f3ded3fc76da955db5) - **feat:** add `array/base/cuevery-by` package _(by Kaif Mohd, Philipp Burckhardt)_
 -   [`2091d38`](https://github.com/stdlib-js/stdlib/commit/2091d38aec245202fe1bbff462b12d0f5ed54ee1) - **feat:** add `array/base/cusome` _(by yaswanth, Philipp Burckhardt)_
