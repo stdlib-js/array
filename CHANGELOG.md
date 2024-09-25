@@ -430,6 +430,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-fixed-endian-factory-unreleased">
+
+#### [@stdlib/array/fixed-endian-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-factory)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a3a04e3`](https://github.com/stdlib-js/stdlib/commit/a3a04e32057b878529b86180e38ed3ae383c34ef) - add `array/fixed-endian-factory`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-fixed-endian-float64-unreleased">
 
 #### [@stdlib/array/fixed-endian-float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-float64)
@@ -514,6 +536,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`7d9b31b`](https://github.com/stdlib-js/stdlib/commit/7d9b31bcaf049f263228d7d5c020bb24c408e6d7) - **refactor:** use `array/fixed-endian-factory` _(by Athan Reines)_
+-   [`a3a04e3`](https://github.com/stdlib-js/stdlib/commit/a3a04e32057b878529b86180e38ed3ae383c34ef) - **feat:** add `array/fixed-endian-factory` _(by Athan Reines)_
 -   [`5742947`](https://github.com/stdlib-js/stdlib/commit/5742947f31198648b2f753e1f9322367c9e3ae06) - **feat:** add `array/base/cuany-by-right` [(#2667)](https://github.com/stdlib-js/stdlib/pull/2667) _(by DebashisMaharana, Philipp Burckhardt)_
 -   [`8f72b43`](https://github.com/stdlib-js/stdlib/commit/8f72b432c0fc81a78641d5689722ecc9671c6f02) - **style:** add missing spaces around parentheses _(by Philipp Burckhardt)_
 -   [`73266bf`](https://github.com/stdlib-js/stdlib/commit/73266bf9d7f82198bd752dafccedbc017d8c8bb1) - **feat:** add `array/base/cuany-by` [(#2818)](https://github.com/stdlib-js/stdlib/pull/2818) _(by yaswanth, Philipp Burckhardt)_

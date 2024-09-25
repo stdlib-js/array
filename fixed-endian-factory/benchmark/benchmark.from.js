@@ -24,7 +24,7 @@ var bench = require( '@stdlib/bench' );
 var Float64Array = require( './../../float64' );
 var ITERATOR_SYMBOL = require( '@stdlib/symbol/iterator' );
 var pkg = require( './../package.json' ).name;
-var Float64ArrayFE = require( './../lib' );
+var factory = require( './../lib' );
 
 
 // VARIABLES //
@@ -32,6 +32,7 @@ var Float64ArrayFE = require( './../lib' );
 var opts = {
 	'skip': ( ITERATOR_SYMBOL === null )
 };
+var Float64ArrayFE = factory( 'float64' );
 
 
 // MAIN //

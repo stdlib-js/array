@@ -18,29 +18,31 @@
 
 'use strict';
 
+// MODULES //
+
+var bench = require( '@stdlib/bench' );
+var isFunction = require( '@stdlib/assert/is-function' );
+var pkg = require( './../package.json' ).name;
+var factory = require( './../lib' );
+
+
 // MAIN //
 
-/**
-* Fills an output DataView with double-precision values.
-*
-* @private
-* @param {DataView} view - output data view
-* @param {Array} arr - input array
-* @param {boolean} isLE - boolean indicating whether the store values in little-endian byte order
-* @returns {DataView} output data view
-*/
-function fromArray( view, arr, isLE ) {
-	var len;
+bench( pkg, function benchmark( b ) {
+	var v;
 	var i;
 
-	len = arr.length;
-	for ( i = 0; i < len; i++ ) {
-		view.setFloat64( i*8, arr[ i ], isLE ); // FIXME: handle accessor arrays, FIXME: avoid hardcoding bytes per element
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		v = factory( 'float64' );
+		if ( typeof v !== 'function' ) {
+			b.fail( 'should return a function' );
+		}
 	}
-	return view;
-}
-
-
-// EXPORTS //
-
-module.exports = fromArray;
+	b.toc();
+	if ( !isFunction( v ) ) {
+		b.fail( 'should return a function' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
