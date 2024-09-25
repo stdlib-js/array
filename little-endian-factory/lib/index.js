@@ -18,28 +18,16 @@
 
 'use strict';
 
-// MODULES //
-
-var factory = require( './../../little-endian-factory' );
-
-
-// MAIN //
-
 /**
-* Typed array constructor which returns a typed array representing an array of double-precision floating-point numbers in little-endian byte order.
+* Return a typed array constructor for creating typed arrays stored in little-endian byte order.
 *
-* @name Float64ArrayLE
-* @constructor
-* @type {Function}
-* @param {(NonNegativeInteger|Collection|ArrayBuffer|Iterable)} [arg] - length, typed array, array-like object, buffer, or an iterable
-* @param {NonNegativeInteger} [byteOffset=0] - byte offset
-* @param {NonNegativeInteger} [length] - view length
-* @throws {TypeError} if provided only one argument, the argument must be a valid argument
-* @throws {TypeError} byte offset must be a nonnegative integer
-* @throws {RangeError} must provide sufficient memory to accommodate byte offset and view length requirements
-* @returns {Float64ArrayLE} typed array instance
+* @module @stdlib/array/little-endian-factory
 *
 * @example
+* var factory = require( '@stdlib/array/little-endian-factory' );
+*
+* var Float64ArrayLE = factory( 'float64' );
+*
 * var arr = new Float64ArrayLE();
 * // returns <Float64ArrayLE>
 *
@@ -47,6 +35,10 @@ var factory = require( './../../little-endian-factory' );
 * // returns 0
 *
 * @example
+* var factory = require( '@stdlib/array/little-endian-factory' );
+*
+* var Float64ArrayLE = factory( 'float64' );
+*
 * var arr = new Float64ArrayLE( 2 );
 * // returns <Float64ArrayLE>
 *
@@ -54,14 +46,21 @@ var factory = require( './../../little-endian-factory' );
 * // returns 2
 *
 * @example
-* var arr = new Float64ArrayLE( [ 1.0, 2.0 ] );
+* var factory = require( '@stdlib/array/little-endian-factory' );
+*
+* var Float64ArrayLE = factory( 'float64' );
+*
+* var arr = new Float64ArrayLE( [ 1.0 ] );
 * // returns <Float64ArrayLE>
 *
 * var len = arr.length;
-* // returns 2
+* // returns 1
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
+* var factory = require( '@stdlib/array/little-endian-factory' );
+*
+* var Float64ArrayLE = factory( 'float64' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = new Float64ArrayLE( buf );
@@ -72,6 +71,9 @@ var factory = require( './../../little-endian-factory' );
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
+* var factory = require( '@stdlib/array/little-endian-factory' );
+*
+* var Float64ArrayLE = factory( 'float64' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = new Float64ArrayLE( buf, 8 );
@@ -82,6 +84,9 @@ var factory = require( './../../little-endian-factory' );
 *
 * @example
 * var ArrayBuffer = require( '@stdlib/array/buffer' );
+* var factory = require( '@stdlib/array/little-endian-factory' );
+*
+* var Float64ArrayLE = factory( 'float64' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = new Float64ArrayLE( buf, 8, 2 );
@@ -90,9 +95,12 @@ var factory = require( './../../little-endian-factory' );
 * var len = arr.length;
 * // returns 2
 */
-var Float64ArrayLE = factory( 'float64' );
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = Float64ArrayLE;
+module.exports = main;

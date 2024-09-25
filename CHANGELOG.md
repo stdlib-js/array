@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`5a2c12b`](https://github.com/stdlib-js/stdlib/commit/5a2c12bd3973e3b3a6f5e971ecac17c391570e60) - add `Float64ArrayFE` and `Float64ArrayLE` to namespace
 -   [`444e453`](https://github.com/stdlib-js/stdlib/commit/444e45363e751ab85736bc97b642520c3e5db301) - add `byteOrders` to namespace
 
 </section>
@@ -474,6 +475,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-little-endian-factory-unreleased">
+
+#### [@stdlib/array/little-endian-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/little-endian-factory)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d7b8ba6`](https://github.com/stdlib-js/stdlib/commit/d7b8ba61588822a9fed7f49a8fe92823b3e4be7a) - add `array/little-endian-factory`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-little-endian-float64-unreleased">
 
 #### [@stdlib/array/little-endian-float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/little-endian-float64)
@@ -536,6 +559,11 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`bffda37`](https://github.com/stdlib-js/stdlib/commit/bffda37bf1104bc6e62776ee811c76873edf5461) - **refactor:** use `array/little-endian-factory` _(by Athan Reines)_
+-   [`5a2c12b`](https://github.com/stdlib-js/stdlib/commit/5a2c12bd3973e3b3a6f5e971ecac17c391570e60) - **feat:** add `Float64ArrayFE` and `Float64ArrayLE` to namespace _(by Athan Reines)_
+-   [`77794fd`](https://github.com/stdlib-js/stdlib/commit/77794fd44350d8cd242cff9f23258382c5ad3cd2) - **docs:** fix missing private annotation _(by Athan Reines)_
+-   [`d7b8ba6`](https://github.com/stdlib-js/stdlib/commit/d7b8ba61588822a9fed7f49a8fe92823b3e4be7a) - **feat:** add `array/little-endian-factory` _(by Athan Reines)_
+-   [`b9f3b77`](https://github.com/stdlib-js/stdlib/commit/b9f3b776e5f3d426629b77206b682836fe6b390f) - **refactor:** reduce string literals _(by Athan Reines)_
 -   [`17fa3d2`](https://github.com/stdlib-js/stdlib/commit/17fa3d277b28d85634444424f2af75edf60ab030) - **docs:** fix example _(by Athan Reines)_
 -   [`7d9b31b`](https://github.com/stdlib-js/stdlib/commit/7d9b31bcaf049f263228d7d5c020bb24c408e6d7) - **refactor:** use `array/fixed-endian-factory` _(by Athan Reines)_
 -   [`a3a04e3`](https://github.com/stdlib-js/stdlib/commit/a3a04e32057b878529b86180e38ed3ae383c34ef) - **feat:** add `array/fixed-endian-factory` _(by Athan Reines)_
