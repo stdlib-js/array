@@ -536,6 +536,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`17fa3d2`](https://github.com/stdlib-js/stdlib/commit/17fa3d277b28d85634444424f2af75edf60ab030) - **docs:** fix example _(by Athan Reines)_
 -   [`7d9b31b`](https://github.com/stdlib-js/stdlib/commit/7d9b31bcaf049f263228d7d5c020bb24c408e6d7) - **refactor:** use `array/fixed-endian-factory` _(by Athan Reines)_
 -   [`a3a04e3`](https://github.com/stdlib-js/stdlib/commit/a3a04e32057b878529b86180e38ed3ae383c34ef) - **feat:** add `array/fixed-endian-factory` _(by Athan Reines)_
 -   [`5742947`](https://github.com/stdlib-js/stdlib/commit/5742947f31198648b2f753e1f9322367c9e3ae06) - **feat:** add `array/base/cuany-by-right` [(#2667)](https://github.com/stdlib-js/stdlib/pull/2667) _(by DebashisMaharana, Philipp Burckhardt)_
