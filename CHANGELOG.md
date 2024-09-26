@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-25)
+## Unreleased (2024-09-26)
 
 <section class="packages">
 
@@ -542,7 +542,7 @@ This release closes the following issue:
 A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   DebashisMaharana
+-   Debashis Maharana
 -   HarshaNP
 -   Kaif Mohd
 -   Philipp Burckhardt
@@ -559,6 +559,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`6207381`](https://github.com/stdlib-js/stdlib/commit/62073818e83d5bdd87b2b8ffea18a43767f1ae29) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`bffda37`](https://github.com/stdlib-js/stdlib/commit/bffda37bf1104bc6e62776ee811c76873edf5461) - **refactor:** use `array/little-endian-factory` _(by Athan Reines)_
 -   [`5a2c12b`](https://github.com/stdlib-js/stdlib/commit/5a2c12bd3973e3b3a6f5e971ecac17c391570e60) - **feat:** add `Float64ArrayFE` and `Float64ArrayLE` to namespace _(by Athan Reines)_
 -   [`77794fd`](https://github.com/stdlib-js/stdlib/commit/77794fd44350d8cd242cff9f23258382c5ad3cd2) - **docs:** fix missing private annotation _(by Athan Reines)_
@@ -567,7 +568,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 -   [`17fa3d2`](https://github.com/stdlib-js/stdlib/commit/17fa3d277b28d85634444424f2af75edf60ab030) - **docs:** fix example _(by Athan Reines)_
 -   [`7d9b31b`](https://github.com/stdlib-js/stdlib/commit/7d9b31bcaf049f263228d7d5c020bb24c408e6d7) - **refactor:** use `array/fixed-endian-factory` _(by Athan Reines)_
 -   [`a3a04e3`](https://github.com/stdlib-js/stdlib/commit/a3a04e32057b878529b86180e38ed3ae383c34ef) - **feat:** add `array/fixed-endian-factory` _(by Athan Reines)_
--   [`5742947`](https://github.com/stdlib-js/stdlib/commit/5742947f31198648b2f753e1f9322367c9e3ae06) - **feat:** add `array/base/cuany-by-right` [(#2667)](https://github.com/stdlib-js/stdlib/pull/2667) _(by DebashisMaharana, Philipp Burckhardt)_
+-   [`5742947`](https://github.com/stdlib-js/stdlib/commit/5742947f31198648b2f753e1f9322367c9e3ae06) - **feat:** add `array/base/cuany-by-right` [(#2667)](https://github.com/stdlib-js/stdlib/pull/2667) _(by Debashis Maharana, Philipp Burckhardt)_
 -   [`8f72b43`](https://github.com/stdlib-js/stdlib/commit/8f72b432c0fc81a78641d5689722ecc9671c6f02) - **style:** add missing spaces around parentheses _(by Philipp Burckhardt)_
 -   [`73266bf`](https://github.com/stdlib-js/stdlib/commit/73266bf9d7f82198bd752dafccedbc017d8c8bb1) - **feat:** add `array/base/cuany-by` [(#2818)](https://github.com/stdlib-js/stdlib/pull/2818) _(by yaswanth, Philipp Burckhardt)_
 -   [`e3078e5`](https://github.com/stdlib-js/stdlib/commit/e3078e56df8858a8f79fb3f3ded3fc76da955db5) - **feat:** add `array/base/cuevery-by` package _(by Kaif Mohd, Philipp Burckhardt)_
@@ -6251,12 +6252,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Jaysukh Makvana
 -   Philipp Burckhardt
--   Planeshifter
 -   kgryte
 
 </section>
