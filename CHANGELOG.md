@@ -559,6 +559,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`7b02c16`](https://github.com/stdlib-js/stdlib/commit/7b02c160d8c9ecf6742ea0178c733f938e0c94c4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`6207381`](https://github.com/stdlib-js/stdlib/commit/62073818e83d5bdd87b2b8ffea18a43767f1ae29) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`bffda37`](https://github.com/stdlib-js/stdlib/commit/bffda37bf1104bc6e62776ee811c76873edf5461) - **refactor:** use `array/little-endian-factory` _(by Athan Reines)_
 -   [`5a2c12b`](https://github.com/stdlib-js/stdlib/commit/5a2c12bd3973e3b3a6f5e971ecac17c391570e60) - **feat:** add `Float64ArrayFE` and `Float64ArrayLE` to namespace _(by Athan Reines)_
