@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-26)
+## Unreleased (2024-09-27)
 
 <section class="packages">
 
@@ -20,6 +20,8 @@
 
 ##### Features
 
+-   [`fbe6651`](https://github.com/stdlib-js/stdlib/commit/fbe6651766e6c9bf9dd941c08fbefb2cab03de1c) - add `Float32ArrayLE` to namespace
+-   [`65b1756`](https://github.com/stdlib-js/stdlib/commit/65b175691d20f64bdc5410232c5900b0bb2a8f1e) - add `Float32ArrayFE` to namespace
 -   [`5a2c12b`](https://github.com/stdlib-js/stdlib/commit/5a2c12bd3973e3b3a6f5e971ecac17c391570e60) - add `Float64ArrayFE` and `Float64ArrayLE` to namespace
 -   [`444e453`](https://github.com/stdlib-js/stdlib/commit/444e45363e751ab85736bc97b642520c3e5db301) - add `byteOrders` to namespace
 
@@ -453,6 +455,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-fixed-endian-float32-unreleased">
+
+#### [@stdlib/array/fixed-endian-float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-float32)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`49824e6`](https://github.com/stdlib-js/stdlib/commit/49824e6545dcb1dd0ec475e0ebc7558ff71e63b2) - add `array/fixed-endian-float32`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-fixed-endian-float64-unreleased">
 
 #### [@stdlib/array/fixed-endian-float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-float64)
@@ -486,6 +510,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`d7b8ba6`](https://github.com/stdlib-js/stdlib/commit/d7b8ba61588822a9fed7f49a8fe92823b3e4be7a) - add `array/little-endian-factory`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-little-endian-float32-unreleased">
+
+#### [@stdlib/array/little-endian-float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/little-endian-float32)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4f1f2dd`](https://github.com/stdlib-js/stdlib/commit/4f1f2dd87a883e01b5e072b77c1443007051c1d5) - add `array/little-endian-float32`
 
 </section>
 
@@ -559,6 +605,10 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`fbe6651`](https://github.com/stdlib-js/stdlib/commit/fbe6651766e6c9bf9dd941c08fbefb2cab03de1c) - **feat:** add `Float32ArrayLE` to namespace _(by Athan Reines)_
+-   [`4f1f2dd`](https://github.com/stdlib-js/stdlib/commit/4f1f2dd87a883e01b5e072b77c1443007051c1d5) - **feat:** add `array/little-endian-float32` _(by Athan Reines)_
+-   [`65b1756`](https://github.com/stdlib-js/stdlib/commit/65b175691d20f64bdc5410232c5900b0bb2a8f1e) - **feat:** add `Float32ArrayFE` to namespace _(by Athan Reines)_
+-   [`49824e6`](https://github.com/stdlib-js/stdlib/commit/49824e6545dcb1dd0ec475e0ebc7558ff71e63b2) - **feat:** add `array/fixed-endian-float32` _(by Athan Reines)_
 -   [`7b02c16`](https://github.com/stdlib-js/stdlib/commit/7b02c160d8c9ecf6742ea0178c733f938e0c94c4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`6207381`](https://github.com/stdlib-js/stdlib/commit/62073818e83d5bdd87b2b8ffea18a43767f1ae29) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`bffda37`](https://github.com/stdlib-js/stdlib/commit/bffda37bf1104bc6e62776ee811c76873edf5461) - **refactor:** use `array/little-endian-factory` _(by Athan Reines)_
