@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-27)
+## Unreleased (2024-09-28)
 
 <section class="packages">
 
@@ -323,6 +323,50 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-filled2d-unreleased">
+
+#### [@stdlib/array/base/filled2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled2d)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - remove unused imports from TS declaration file
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-filled3d-unreleased">
+
+#### [@stdlib/array/base/filled3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/filled3d)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - remove unused imports from TS declaration file
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-nulls-unreleased">
 
 #### [@stdlib/array/base/nulls](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/nulls)
@@ -605,6 +649,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - **fix:** remove unused imports from TS declaration file _(by Philipp Burckhardt)_
+-   [`975147f`](https://github.com/stdlib-js/stdlib/commit/975147f3125c786ec1672acb3d2564ca16eaa790) - **docs:** fix TSDoc lint errors _(by Philipp Burckhardt)_
 -   [`fbe6651`](https://github.com/stdlib-js/stdlib/commit/fbe6651766e6c9bf9dd941c08fbefb2cab03de1c) - **feat:** add `Float32ArrayLE` to namespace _(by Athan Reines)_
 -   [`4f1f2dd`](https://github.com/stdlib-js/stdlib/commit/4f1f2dd87a883e01b5e072b77c1443007051c1d5) - **feat:** add `array/little-endian-float32` _(by Athan Reines)_
 -   [`65b1756`](https://github.com/stdlib-js/stdlib/commit/65b175691d20f64bdc5410232c5900b0bb2a8f1e) - **feat:** add `Float32ArrayFE` to namespace _(by Athan Reines)_
