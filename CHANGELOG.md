@@ -649,6 +649,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`abf0407`](https://github.com/stdlib-js/stdlib/commit/abf040787f6598438b0100a729a8331b7f80f62f) - **chore:** resolve lint errors in TS files _(by Philipp Burckhardt)_
 -   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - **fix:** remove unused imports from TS declaration file _(by Philipp Burckhardt)_
 -   [`975147f`](https://github.com/stdlib-js/stdlib/commit/975147f3125c786ec1672acb3d2564ca16eaa790) - **docs:** fix TSDoc lint errors _(by Philipp Burckhardt)_
 -   [`fbe6651`](https://github.com/stdlib-js/stdlib/commit/fbe6651766e6c9bf9dd941c08fbefb2cab03de1c) - **feat:** add `Float32ArrayLE` to namespace _(by Athan Reines)_
