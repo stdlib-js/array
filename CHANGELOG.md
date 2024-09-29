@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-28)
+## Unreleased (2024-09-29)
 
 <section class="packages">
 
@@ -284,6 +284,40 @@ This release closes the following issue:
 </section>
 
 <!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-cusome-by-unreleased">
+
+#### [@stdlib/array/base/cusome-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cusome-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9835dae`](https://github.com/stdlib-js/stdlib/commit/9835dae5a4dba0aae50d8582b97ad69d17fefe6d) - add `array/base/cusome-by` [(#2953)](https://github.com/stdlib-js/stdlib/pull/2953)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#2326](https://github.com/stdlib-js/stdlib/issues/2326)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -617,9 +651,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#2327](https://github.com/stdlib-js/stdlib/issues/2327)
+[#2326](https://github.com/stdlib-js/stdlib/issues/2326), [#2327](https://github.com/stdlib-js/stdlib/issues/2327)
 
 </section>
 
@@ -629,8 +663,9 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
+-   Aditya Sapra
 -   Athan Reines
 -   Debashis Maharana
 -   HarshaNP
@@ -649,6 +684,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9835dae`](https://github.com/stdlib-js/stdlib/commit/9835dae5a4dba0aae50d8582b97ad69d17fefe6d) - **feat:** add `array/base/cusome-by` [(#2953)](https://github.com/stdlib-js/stdlib/pull/2953) _(by Aditya Sapra, Philipp Burckhardt)_
 -   [`abf0407`](https://github.com/stdlib-js/stdlib/commit/abf040787f6598438b0100a729a8331b7f80f62f) - **chore:** resolve lint errors in TS files _(by Philipp Burckhardt)_
 -   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - **fix:** remove unused imports from TS declaration file _(by Philipp Burckhardt)_
 -   [`975147f`](https://github.com/stdlib-js/stdlib/commit/975147f3125c786ec1672acb3d2564ca16eaa790) - **docs:** fix TSDoc lint errors _(by Philipp Burckhardt)_
