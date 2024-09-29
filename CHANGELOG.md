@@ -684,6 +684,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`006e24c`](https://github.com/stdlib-js/stdlib/commit/006e24cbe344a32a48d883dfa9991e7a381a0b98) - **chore:** update package meta data [(#2964)](https://github.com/stdlib-js/stdlib/pull/2964 ) _(by stdlib-bot)_
 -   [`9835dae`](https://github.com/stdlib-js/stdlib/commit/9835dae5a4dba0aae50d8582b97ad69d17fefe6d) - **feat:** add `array/base/cusome-by` [(#2953)](https://github.com/stdlib-js/stdlib/pull/2953) _(by Aditya Sapra, Philipp Burckhardt)_
 -   [`abf0407`](https://github.com/stdlib-js/stdlib/commit/abf040787f6598438b0100a729a8331b7f80f62f) - **chore:** resolve lint errors in TS files _(by Philipp Burckhardt)_
 -   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - **fix:** remove unused imports from TS declaration file _(by Philipp Burckhardt)_
