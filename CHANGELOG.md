@@ -225,6 +225,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-cuevery-by-right-unreleased">
+
+#### [@stdlib/array/base/cuevery-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cuevery-by-right)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5a50038`](https://github.com/stdlib-js/stdlib/commit/5a50038db6a457856adc51d5e6e3fd7161f45085) - add `array/base/cuevery-by-right` [(#2802)](https://github.com/stdlib-js/stdlib/pull/2802)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#2328](https://github.com/stdlib-js/stdlib/issues/2328)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-cunone-by-unreleased">
 
 #### [@stdlib/array/base/cunone-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/cunone-by)
@@ -651,9 +685,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#2326](https://github.com/stdlib-js/stdlib/issues/2326), [#2327](https://github.com/stdlib-js/stdlib/issues/2327)
+[#2326](https://github.com/stdlib-js/stdlib/issues/2326), [#2327](https://github.com/stdlib-js/stdlib/issues/2327), [#2328](https://github.com/stdlib-js/stdlib/issues/2328)
 
 </section>
 
@@ -684,6 +718,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`5a50038`](https://github.com/stdlib-js/stdlib/commit/5a50038db6a457856adc51d5e6e3fd7161f45085) - **feat:** add `array/base/cuevery-by-right` [(#2802)](https://github.com/stdlib-js/stdlib/pull/2802) _(by HarshaNP, Philipp Burckhardt)_
 -   [`006e24c`](https://github.com/stdlib-js/stdlib/commit/006e24cbe344a32a48d883dfa9991e7a381a0b98) - **chore:** update package meta data [(#2964)](https://github.com/stdlib-js/stdlib/pull/2964 ) _(by stdlib-bot)_
 -   [`9835dae`](https://github.com/stdlib-js/stdlib/commit/9835dae5a4dba0aae50d8582b97ad69d17fefe6d) - **feat:** add `array/base/cusome-by` [(#2953)](https://github.com/stdlib-js/stdlib/pull/2953) _(by Aditya Sapra, Philipp Burckhardt)_
 -   [`abf0407`](https://github.com/stdlib-js/stdlib/commit/abf040787f6598438b0100a729a8331b7f80f62f) - **chore:** resolve lint errors in TS files _(by Philipp Burckhardt)_
