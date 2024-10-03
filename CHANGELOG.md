@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-29)
+## Unreleased (2024-10-03)
 
 <section class="packages">
 
@@ -718,6 +718,8 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ca2fbd0`](https://github.com/stdlib-js/stdlib/commit/ca2fbd0beec71a0f41307b19939b2c8dd27c76a9) - **chore:** minor clean-up _(by Philipp Burckhardt)_
+-   [`89e005a`](https://github.com/stdlib-js/stdlib/commit/89e005ad5004d32271fe7266e95eb96187c1946a) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`2c4e5d8`](https://github.com/stdlib-js/stdlib/commit/2c4e5d824e0c5dc8fd536bf79ff565cee100ce46) - **build:** disable additional lint rule in TS tests _(by Philipp Burckhardt)_
 -   [`aad48ea`](https://github.com/stdlib-js/stdlib/commit/aad48eab1f19217854f4ffbfaed2a8be664b0f47) - **chore:** resolve lint errors _(by Philipp Burckhardt)_
 -   [`5a50038`](https://github.com/stdlib-js/stdlib/commit/5a50038db6a457856adc51d5e6e3fd7161f45085) - **feat:** add `array/base/cuevery-by-right` [(#2802)](https://github.com/stdlib-js/stdlib/pull/2802) _(by HarshaNP, Philipp Burckhardt)_
