@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-03)
+## Unreleased (2024-10-08)
 
 <section class="packages">
 
@@ -697,7 +697,7 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Sapra
 -   Athan Reines
@@ -705,6 +705,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 -   HarshaNP
 -   Kaif Mohd
 -   Philipp Burckhardt
+-   Soumajit Chatterjee
 -   Vaibhav Patel
 -   yaswanth
 
@@ -718,6 +719,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c00f27a`](https://github.com/stdlib-js/stdlib/commit/c00f27afb4b1853a7f4377fbbab7aec1dab9e34c) - **docs:** improve examples of `array/base/assert` namespace _(by Soumajit Chatterjee, Philipp Burckhardt)_
 -   [`ca2fbd0`](https://github.com/stdlib-js/stdlib/commit/ca2fbd0beec71a0f41307b19939b2c8dd27c76a9) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`89e005a`](https://github.com/stdlib-js/stdlib/commit/89e005ad5004d32271fe7266e95eb96187c1946a) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`2c4e5d8`](https://github.com/stdlib-js/stdlib/commit/2c4e5d824e0c5dc8fd536bf79ff565cee100ce46) - **build:** disable additional lint rule in TS tests _(by Philipp Burckhardt)_
