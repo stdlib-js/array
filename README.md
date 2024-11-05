@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.3.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float32Array, Float32ArrayFE, Float32ArrayLE, Float64Array, Float64ArrayFE, Float64ArrayLE, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, byteOrders, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, filled, filledBy, fixedEndianFactory, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, littleEndianFactory, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.3.2-deno/mod.js';
+import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float32Array, Float32ArrayFE, Float32ArrayLE, Float64Array, Float64ArrayFE, Float64ArrayLE, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, byteOrders, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, filled, filledBy, fixedEndianFactory, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, littleEndianFactory, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
 ```
 
 #### ns
@@ -254,7 +259,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@v0.3.2-deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
