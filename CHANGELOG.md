@@ -2,6 +2,71 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-11-18)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="array-fixed-endian-factory-unreleased">
+
+#### [@stdlib/array/fixed-endian-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-factory)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`956a462`](https://github.com/stdlib-js/stdlib/commit/956a4624c788689b1bca285856b987ea3aa32eb6) - add `forEach` method
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`956a462`](https://github.com/stdlib-js/stdlib/commit/956a4624c788689b1bca285856b987ea3aa32eb6) - **feat:** add `forEach` method _(by Athan Reines)_
+-   [`de1ef8b`](https://github.com/stdlib-js/stdlib/commit/de1ef8ba5e2d7dd1363bdf826572456f49b7895c) - **docs:** fix example _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.3">
 
 ## 0.3.3 (2024-11-05)
