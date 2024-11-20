@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-18)
+## Unreleased (2024-11-20)
 
 <section class="packages">
 
@@ -20,11 +20,24 @@
 
 ##### Features
 
+-   [`b34732c`](https://github.com/stdlib-js/stdlib/commit/b34732cf655db60fbc798e12952f88c3edb07eaf) - add `at` method to `array/fixed-endian-factory` [(#3184)](https://github.com/stdlib-js/stdlib/pull/3184)
 -   [`956a462`](https://github.com/stdlib-js/stdlib/commit/956a4624c788689b1bca285856b987ea3aa32eb6) - add `forEach` method
 
 </section>
 
 <!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -36,12 +49,25 @@
 
 <!-- /.packages -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="contributors">
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Aayush Khanna
 -   Athan Reines
 
 </section>
@@ -54,6 +80,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`b34732c`](https://github.com/stdlib-js/stdlib/commit/b34732cf655db60fbc798e12952f88c3edb07eaf) - **feat:** add `at` method to `array/fixed-endian-factory` [(#3184)](https://github.com/stdlib-js/stdlib/pull/3184) _(by Aayush Khanna, Athan Reines)_
 -   [`956a462`](https://github.com/stdlib-js/stdlib/commit/956a4624c788689b1bca285856b987ea3aa32eb6) - **feat:** add `forEach` method _(by Athan Reines)_
 -   [`de1ef8b`](https://github.com/stdlib-js/stdlib/commit/de1ef8ba5e2d7dd1363bdf826572456f49b7895c) - **docs:** fix example _(by Athan Reines)_
 
