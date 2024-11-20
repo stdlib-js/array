@@ -21,10 +21,13 @@
 /* eslint-disable max-lines */
 
 import contains = require( './../../../../base/assert/contains' );
+import hasEqualValues = require( './../../../../base/assert/has-equal-values' );
+import hasEqualValuesIndexed = require( './../../../../base/assert/has-equal-values-indexed' );
 import hasSameValues = require( './../../../../base/assert/has-same-values' );
 import isAccessorArray = require( './../../../../base/assert/is-accessor-array' );
 import isBooleanDataType = require( './../../../../base/assert/is-boolean-data-type' );
 import isBooleanArray = require( './../../../../base/assert/is-booleanarray' );
+import isByteOrder = require( './../../../../base/assert/is-byte-order' );
 import isComplexFloatingPointDataType = require( './../../../../base/assert/is-complex-floating-point-data-type' );
 import isComplexTypedArray = require( './../../../../base/assert/is-complex-typed-array' );
 import isComplex64Array = require( './../../../../base/assert/is-complex64array' );
@@ -68,6 +71,46 @@ interface Namespace {
 	* // returns true
 	*/
 	contains: typeof contains;
+
+	/**
+	* Tests if two arrays have equal values.
+	*
+	* ## Notes
+	*
+	* -   If provided arrays of unequal length, the function returns `false`.
+	*
+	* @param x - first input array
+	* @param y - second input array
+	* @returns boolean indicating whether both arrays have equal values
+	*
+	* @example
+	* var x = [ 0, 0, 1, 0 ];
+	* var y = [ 0, 0, 1, 0 ];
+	*
+	* var out = ns.hasEqualValues( x, y );
+	* // returns true
+	*/
+	hasEqualValues: typeof hasEqualValues;
+
+	/**
+	* Tests if two indexed arrays have equal values.
+	*
+	* ## Notes
+	*
+	* -   If provided arrays of unequal length, the function returns `false`.
+	*
+	* @param x - first input array
+	* @param y - second input array
+	* @returns boolean indicating whether both arrays have equal values
+	*
+	* @example
+	* var x = [ 0, 0, 1, 0 ];
+	* var y = [ 0, 0, 1, 0 ];
+	*
+	* var out = ns.hasEqualValuesIndexed( x, y );
+	* // returns true
+	*/
+	hasEqualValuesIndexed: typeof hasEqualValuesIndexed;
 
 	/**
 	* Tests if two arrays have the same values.
@@ -177,6 +220,24 @@ interface Namespace {
 	* // returns false
 	*/
 	isBooleanArray: typeof isBooleanArray;
+
+	/**
+	* Tests whether an input value is a supported array byte order.
+	*
+	* @param v - value to test
+	* @returns boolean indicating whether an input value is a supported array byte order
+	*
+	* @example
+	* var bool = ns.isByteOrder( 'little-endian' );
+	* // returns true
+	*
+	* bool = ns.isByteOrder( 'big-endian' );
+	* // returns true
+	*
+	* bool = ns.isByteOrder( 'foo' );
+	* // returns false
+	*/
+	isByteOrder: typeof isByteOrder;
 
 	/**
 	* Tests whether an input value is a supported array complex-valued floating-point data type.

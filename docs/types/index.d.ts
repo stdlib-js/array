@@ -23,6 +23,7 @@
 import base = require( './../../base' );
 import BooleanArray = require( './../../bool' );
 import ArrayBuffer = require( './../../buffer' );
+import byteOrders = require( './../../byte-orders' );
 import cartesianPower = require( './../../cartesian-power' );
 import cartesianProduct = require( './../../cartesian-product' );
 import cartesianSquare = require( './../../cartesian-square' );
@@ -40,6 +41,9 @@ import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
 import filled = require( './../../filled' );
 import filledBy = require( './../../filled-by' );
+import fixedEndianFactory = require( './../../fixed-endian-factory' );
+import Float32ArrayFE = require( './../../fixed-endian-float32' );
+import Float64ArrayFE = require( './../../fixed-endian-float64' );
 import Float32Array = require( './../../float32' );
 import Float64Array = require( './../../float64' );
 import iterator2array = require( './../../from-iterator' );
@@ -52,6 +56,9 @@ import Int8Array = require( './../../int8' );
 import Int16Array = require( './../../int16' );
 import Int32Array = require( './../../int32' );
 import linspace = require( './../../linspace' );
+import littleEndianFactory = require( './../../little-endian-factory' );
+import Float32ArrayLE = require( './../../little-endian-float32' );
+import Float64ArrayLE = require( './../../little-endian-float64' );
 import logspace = require( './../../logspace' );
 import minDataType = require( './../../min-dtype' );
 import mostlySafeCasts = require( './../../mostly-safe-casts' );
@@ -192,6 +199,24 @@ interface Namespace {
 	* Constructor which returns an object used to represent a generic, fixed-length raw binary data buffer.
 	*/
 	ArrayBuffer: typeof ArrayBuffer;
+
+	/**
+	* Returns a list of byte orders.
+	*
+	* ## Notes
+	*
+	* -   The output array contains the following orders:
+	*
+	*     -   little-endian: bytes are ordered from least-to-most significant byte.
+	*     -   big-endian: bytes are ordered from most-to-least significant byte.
+	*
+	* @returns list of byte orders
+	*
+	* @example
+	* var list = ns.byteOrders();
+	* // e.g., returns [ 'little-endian', 'big-endian' ]
+	*/
+	byteOrders: typeof byteOrders;
 
 	/**
 	* Returns the Cartesian power.
@@ -1152,8 +1177,6 @@ interface Namespace {
 	/**
 	* Returns a type promotion table displaying array data types with the smallest size and closest "kind" to which array data types can be safely cast.
 	*
-	* @param dtype1 - array data type
-	* @param dtype2 - array data type
 	* @returns promotion rule table
 	*
 	* @example
@@ -1384,7 +1407,7 @@ interface Namespace {
 	* Returns an iterator which iterates over each element in an array-like object.
 	*
 	* @param src - input value
-	* @param mapFc - function to invoke for each iterated value
+	* @param mapFcn - function to invoke for each iterated value
 	* @param thisArg - execution context
 	* @returns iterator
 	*
