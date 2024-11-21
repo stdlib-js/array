@@ -35,38 +35,32 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/array/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -197,6 +191,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 -   <span class="signature">[`base`][@stdlib/array/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) array utilities.</span>
 -   <span class="signature">[`BooleanArray()`][@stdlib/array/bool]</span><span class="delimiter">: </span><span class="description">boolean array.</span>
+-   <span class="signature">[`byteOrders()`][@stdlib/array/byte-orders]</span><span class="delimiter">: </span><span class="description">list of byte orders.</span>
 -   <span class="signature">[`cartesianPower( x, n )`][@stdlib/array/cartesian-power]</span><span class="delimiter">: </span><span class="description">return the Cartesian power.</span>
 -   <span class="signature">[`cartesianProduct( x1, x2 )`][@stdlib/array/cartesian-product]</span><span class="delimiter">: </span><span class="description">return the Cartesian product.</span>
 -   <span class="signature">[`cartesianSquare( x )`][@stdlib/array/cartesian-square]</span><span class="delimiter">: </span><span class="description">return the Cartesian square.</span>
@@ -211,10 +206,16 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`empty( length[, dtype] )`][@stdlib/array/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized array having a specified length.</span>
 -   <span class="signature">[`filledBy()`][@stdlib/array/filled-by]</span><span class="delimiter">: </span><span class="description">create a filled array according to a provided callback function.</span>
 -   <span class="signature">[`filled()`][@stdlib/array/filled]</span><span class="delimiter">: </span><span class="description">create a filled array.</span>
+-   <span class="signature">[`fixedEndianFactory( dtype )`][@stdlib/array/fixed-endian-factory]</span><span class="delimiter">: </span><span class="description">return a typed array constructor for creating typed arrays having a specified byte order.</span>
+-   <span class="signature">[`Float32ArrayFE()`][@stdlib/array/fixed-endian-float32]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of single-precision floating-point numbers in a specified byte order.</span>
+-   <span class="signature">[`Float64ArrayFE()`][@stdlib/array/fixed-endian-float64]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of double-precision floating-point numbers in a specified byte order.</span>
 -   <span class="signature">[`iterator2array( iterator[, out][, mapFcn[, thisArg]] )`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
 -   <span class="signature">[`scalar2array( value[, dtype] )`][@stdlib/array/from-scalar]</span><span class="delimiter">: </span><span class="description">create a single-element array containing a provided scalar value.</span>
 -   <span class="signature">[`fullLike( x, value[, dtype] )`][@stdlib/array/full-like]</span><span class="delimiter">: </span><span class="description">create a filled array having the same length and data type as a provided array.</span>
 -   <span class="signature">[`full( length, value[, dtype] )`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
+-   <span class="signature">[`littleEndianFactory( dtype )`][@stdlib/array/little-endian-factory]</span><span class="delimiter">: </span><span class="description">return a typed array constructor for creating typed arrays stored in little-endian byte order.</span>
+-   <span class="signature">[`Float32ArrayLE()`][@stdlib/array/little-endian-float32]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of single-precision floating-point numbers in little-endian byte order.</span>
+-   <span class="signature">[`Float64ArrayLE()`][@stdlib/array/little-endian-float64]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of double-precision floating-point numbers in little-endian byte order.</span>
 -   <span class="signature">[`minDataType( value )`][@stdlib/array/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum array data type of the closest "kind" necessary for storing a provided scalar value.</span>
 -   <span class="signature">[`mostlySafeCasts( [dtype] )`][@stdlib/array/mostly-safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast and, for floating-point data types, can be downcast.</span>
 -   <span class="signature">[`mskfilter( x, mask )`][@stdlib/array/mskfilter]</span><span class="delimiter">: </span><span class="description">apply a mask to a provided input array.</span>
@@ -270,21 +271,11 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -377,6 +368,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/bool]: https://github.com/stdlib-js/array/tree/main/bool
 
+[@stdlib/array/byte-orders]: https://github.com/stdlib-js/array/tree/main/byte-orders
+
 [@stdlib/array/cartesian-power]: https://github.com/stdlib-js/array/tree/main/cartesian-power
 
 [@stdlib/array/cartesian-product]: https://github.com/stdlib-js/array/tree/main/cartesian-product
@@ -405,6 +398,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/filled]: https://github.com/stdlib-js/array/tree/main/filled
 
+[@stdlib/array/fixed-endian-factory]: https://github.com/stdlib-js/array/tree/main/fixed-endian-factory
+
+[@stdlib/array/fixed-endian-float32]: https://github.com/stdlib-js/array/tree/main/fixed-endian-float32
+
+[@stdlib/array/fixed-endian-float64]: https://github.com/stdlib-js/array/tree/main/fixed-endian-float64
+
 [@stdlib/array/from-iterator]: https://github.com/stdlib-js/array/tree/main/from-iterator
 
 [@stdlib/array/from-scalar]: https://github.com/stdlib-js/array/tree/main/from-scalar
@@ -412,6 +411,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/full-like]: https://github.com/stdlib-js/array/tree/main/full-like
 
 [@stdlib/array/full]: https://github.com/stdlib-js/array/tree/main/full
+
+[@stdlib/array/little-endian-factory]: https://github.com/stdlib-js/array/tree/main/little-endian-factory
+
+[@stdlib/array/little-endian-float32]: https://github.com/stdlib-js/array/tree/main/little-endian-float32
+
+[@stdlib/array/little-endian-float64]: https://github.com/stdlib-js/array/tree/main/little-endian-float64
 
 [@stdlib/array/min-dtype]: https://github.com/stdlib-js/array/tree/main/min-dtype
 
