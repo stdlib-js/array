@@ -254,6 +254,40 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-msk-unreleased">
+
+#### [@stdlib/array/base/msk](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/msk)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c328fc5`](https://github.com/stdlib-js/stdlib/commit/c328fc515fc925ee717ed9cd844cca83a61da806) - add `array/base/mskbinary3d` [(#3193)](https://github.com/stdlib-js/stdlib/pull/3193)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3178](https://github.com/stdlib-js/stdlib/issues/3178)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-bool-unreleased">
 
 #### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
@@ -375,9 +409,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3178](https://github.com/stdlib-js/stdlib/issues/3178)
 
 </section>
 
@@ -387,11 +421,12 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Athan Reines
 -   Philipp Burckhardt
+-   Rylan Yang
 
 </section>
 
@@ -403,6 +438,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c328fc5`](https://github.com/stdlib-js/stdlib/commit/c328fc515fc925ee717ed9cd844cca83a61da806) - **feat:** add `array/base/mskbinary3d` [(#3193)](https://github.com/stdlib-js/stdlib/pull/3193) _(by Rylan Yang, Athan Reines, stdlib-bot)_
 -   [`9ba0dbd`](https://github.com/stdlib-js/stdlib/commit/9ba0dbd839707695a05fda5d4f50d67c5aba52f7) - **chore:** use relative paths to load main package export _(by Philipp Burckhardt)_
 -   [`6c020d3`](https://github.com/stdlib-js/stdlib/commit/6c020d33665c4aec232196fd86214b296ddc7d36) - **chore:** use relative paths to load package.json file _(by Philipp Burckhardt)_
 -   [`b6a2b0b`](https://github.com/stdlib-js/stdlib/commit/b6a2b0b27dc8cc1e9fc02d9679a3ce468cf49b9d) - **docs:** update namespace table of contents [(#3192)](https://github.com/stdlib-js/stdlib/pull/3192) _(by stdlib-bot, Philipp Burckhardt)_
