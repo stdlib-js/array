@@ -26,6 +26,16 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`999599a`](https://github.com/stdlib-js/stdlib/commit/999599a7668c958c0d760cbad17bb37410838c36) - remove unused imports
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
@@ -112,6 +122,182 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-group-entries-unreleased">
+
+#### [@stdlib/array/base/group-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-entries)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - resolve TypeScript errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-group-entries-by-unreleased">
+
+#### [@stdlib/array/base/group-entries-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-entries-by)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - resolve TypeScript errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-group-indices-unreleased">
+
+#### [@stdlib/array/base/group-indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-indices)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - resolve TypeScript errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-group-indices-by-unreleased">
+
+#### [@stdlib/array/base/group-indices-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-indices-by)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - resolve TypeScript errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-group-values-unreleased">
+
+#### [@stdlib/array/base/group-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-values)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - resolve TypeScript errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-group-values-by-unreleased">
+
+#### [@stdlib/array/base/group-values-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-values-by)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - resolve TypeScript errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-bool-unreleased">
+
+#### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`8ab90cd`](https://github.com/stdlib-js/stdlib/commit/8ab90cd2db15841619b27a50915086e072d8bed3) - resolve TypeScript lint error
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-complex64-unreleased">
+
+#### [@stdlib/array/complex64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex64)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`36a9fcd`](https://github.com/stdlib-js/stdlib/commit/36a9fcd9554f21f2aca3f7bca54616cfb205deea) - resolve TypeScript lint error
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-fixed-endian-factory-unreleased">
 
 #### [@stdlib/array/fixed-endian-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-factory)
@@ -140,6 +326,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-to-fancy-unreleased">
+
+#### [@stdlib/array/to-fancy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/to-fancy)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`dcfa1d6`](https://github.com/stdlib-js/stdlib/commit/dcfa1d62126625847df6517662851e812ef997be) - update import name
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -198,6 +406,11 @@ A total of 3 people contributed to this release. Thank you to the following cont
 -   [`9ba0dbd`](https://github.com/stdlib-js/stdlib/commit/9ba0dbd839707695a05fda5d4f50d67c5aba52f7) - **chore:** use relative paths to load main package export _(by Philipp Burckhardt)_
 -   [`6c020d3`](https://github.com/stdlib-js/stdlib/commit/6c020d33665c4aec232196fd86214b296ddc7d36) - **chore:** use relative paths to load package.json file _(by Philipp Burckhardt)_
 -   [`b6a2b0b`](https://github.com/stdlib-js/stdlib/commit/b6a2b0b27dc8cc1e9fc02d9679a3ce468cf49b9d) - **docs:** update namespace table of contents [(#3192)](https://github.com/stdlib-js/stdlib/pull/3192) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`999599a`](https://github.com/stdlib-js/stdlib/commit/999599a7668c958c0d760cbad17bb37410838c36) - **fix:** remove unused imports _(by Athan Reines)_
+-   [`dcfa1d6`](https://github.com/stdlib-js/stdlib/commit/dcfa1d62126625847df6517662851e812ef997be) - **fix:** update import name _(by Athan Reines)_
+-   [`36a9fcd`](https://github.com/stdlib-js/stdlib/commit/36a9fcd9554f21f2aca3f7bca54616cfb205deea) - **fix:** resolve TypeScript lint error _(by Athan Reines)_
+-   [`8ab90cd`](https://github.com/stdlib-js/stdlib/commit/8ab90cd2db15841619b27a50915086e072d8bed3) - **fix:** resolve TypeScript lint error _(by Athan Reines)_
+-   [`844c9bb`](https://github.com/stdlib-js/stdlib/commit/844c9bb4e0ecb67410bb11c774341ea9d68167f7) - **fix:** resolve TypeScript errors _(by Athan Reines)_
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - **feat:** update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`b34732c`](https://github.com/stdlib-js/stdlib/commit/b34732cf655db60fbc798e12952f88c3edb07eaf) - **feat:** add `at` method to `array/fixed-endian-factory` [(#3184)](https://github.com/stdlib-js/stdlib/pull/3184) _(by Aayush Khanna, Athan Reines)_
 -   [`956a462`](https://github.com/stdlib-js/stdlib/commit/956a4624c788689b1bca285856b987ea3aa32eb6) - **feat:** add `forEach` method _(by Athan Reines)_
