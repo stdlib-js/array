@@ -25,7 +25,7 @@ var pow = require( '@stdlib/math/base/special/pow' );
 var isArray = require( '@stdlib/assert/is-array' );
 var filled = require( './../../../base/filled' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
-var pkg = require( './../../../base/cuany-by/package.json' ).name;
+var pkg = require( './../package.json' ).name;
 var cuanyBy = require( './../lib' );
 
 

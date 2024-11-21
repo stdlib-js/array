@@ -195,6 +195,8 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9ba0dbd`](https://github.com/stdlib-js/stdlib/commit/9ba0dbd839707695a05fda5d4f50d67c5aba52f7) - **chore:** use relative paths to load main package export _(by Philipp Burckhardt)_
+-   [`6c020d3`](https://github.com/stdlib-js/stdlib/commit/6c020d33665c4aec232196fd86214b296ddc7d36) - **chore:** use relative paths to load package.json file _(by Philipp Burckhardt)_
 -   [`b6a2b0b`](https://github.com/stdlib-js/stdlib/commit/b6a2b0b27dc8cc1e9fc02d9679a3ce468cf49b9d) - **docs:** update namespace table of contents [(#3192)](https://github.com/stdlib-js/stdlib/pull/3192) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - **feat:** update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`b34732c`](https://github.com/stdlib-js/stdlib/commit/b34732cf655db60fbc798e12952f88c3edb07eaf) - **feat:** add `at` method to `array/fixed-endian-factory` [(#3184)](https://github.com/stdlib-js/stdlib/pull/3184) _(by Aayush Khanna, Athan Reines)_

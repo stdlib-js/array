@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var Float64Array = require( './../../../float64' );
 var toAccessorArray = require( './../../../base/to-accessor-array' );
-var cueveryByRight = require( './../../../base/cuevery-by-right/lib' );
+var cueveryByRight = require( './../lib' );
 
 
 // FUNCTIONS //
