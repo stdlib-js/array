@@ -290,6 +290,40 @@ A total of 3 issues were closed in this release:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-mskunary5d-unreleased">
+
+#### [@stdlib/array/base/mskunary5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/mskunary5d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b26d9d5`](https://github.com/stdlib-js/stdlib/commit/b26d9d5bd9e60a63ce017bbb470f0769b6dcc628) - add `array/base/mskunary5d` [(#3207)](https://github.com/stdlib-js/stdlib/pull/3207)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3177](https://github.com/stdlib-js/stdlib/issues/3177)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-bool-unreleased">
 
 #### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
@@ -412,9 +446,9 @@ A total of 2 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -424,13 +458,14 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit
 -   Athan Reines
 -   Philipp Burckhardt
 -   Rylan Yang
+-   Vinit Pandit
 
 </section>
 
@@ -442,6 +477,7 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b26d9d5`](https://github.com/stdlib-js/stdlib/commit/b26d9d5bd9e60a63ce017bbb470f0769b6dcc628) - **feat:** add `array/base/mskunary5d` [(#3207)](https://github.com/stdlib-js/stdlib/pull/3207) _(by Vinit Pandit, Athan Reines, Abhijit, stdlib-bot)_
 -   [`34ae5c9`](https://github.com/stdlib-js/stdlib/commit/34ae5c9570bf6428dc5bede92557ae56981554c2) - **feat:** add `array/base/mskbinary5d` [(#3198)](https://github.com/stdlib-js/stdlib/pull/3198) _(by Abhijit)_
 -   [`cb27ec4`](https://github.com/stdlib-js/stdlib/commit/cb27ec42bd7e65c46877e57064d36ff9b38b502b) - **feat:** add `array/base/mskbinary4d` [(#3196)](https://github.com/stdlib-js/stdlib/pull/3196) _(by Abhijit, Athan Reines)_
 -   [`e3a2173`](https://github.com/stdlib-js/stdlib/commit/e3a2173a24bd8634f333cace626fc2d71740ebd3) - **feat:** add `every` method to `array/fixed-endian-factory` [(#3200)](https://github.com/stdlib-js/stdlib/pull/3200) _(by Aayush Khanna, Athan Reines)_
