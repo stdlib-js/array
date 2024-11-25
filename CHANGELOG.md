@@ -122,6 +122,40 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-broadcasted-ternary3d-unreleased">
+
+#### [@stdlib/array/base/broadcasted-ternary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-ternary3d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fb3c880`](https://github.com/stdlib-js/stdlib/commit/fb3c880b79a6861fe3da4b14eefadafc90d63eda) - add `array/base/braodcasted-ternary3d` [(#3228)](https://github.com/stdlib-js/stdlib/pull/3228)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3164](https://github.com/stdlib-js/stdlib/issues/3164)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-group-entries-unreleased">
 
 #### [@stdlib/array/base/group-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/group-entries)
@@ -446,9 +480,9 @@ A total of 2 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 6 issues were closed in this release:
+A total of 7 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -477,6 +511,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`fb3c880`](https://github.com/stdlib-js/stdlib/commit/fb3c880b79a6861fe3da4b14eefadafc90d63eda) - **feat:** add `array/base/braodcasted-ternary3d` [(#3228)](https://github.com/stdlib-js/stdlib/pull/3228) _(by Vinit Pandit, Athan Reines)_
 -   [`2af4b75`](https://github.com/stdlib-js/stdlib/commit/2af4b757cab1052ee7a788f2154f2c7b8c9aa9bb) - **docs:** add note _(by Athan Reines)_
 -   [`10641b6`](https://github.com/stdlib-js/stdlib/commit/10641b65eee7299d16d0c0239575eafc6b575557) - **docs:** add note _(by Athan Reines)_
 -   [`2c40c48`](https://github.com/stdlib-js/stdlib/commit/2c40c487c3f7cfcfa445d9855fb6c89b97ebf600) - **docs:** fix return values _(by Athan Reines)_
