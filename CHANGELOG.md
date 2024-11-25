@@ -477,6 +477,10 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`2af4b75`](https://github.com/stdlib-js/stdlib/commit/2af4b757cab1052ee7a788f2154f2c7b8c9aa9bb) - **docs:** add note _(by Athan Reines)_
+-   [`10641b6`](https://github.com/stdlib-js/stdlib/commit/10641b65eee7299d16d0c0239575eafc6b575557) - **docs:** add note _(by Athan Reines)_
+-   [`2c40c48`](https://github.com/stdlib-js/stdlib/commit/2c40c487c3f7cfcfa445d9855fb6c89b97ebf600) - **docs:** fix return values _(by Athan Reines)_
+-   [`dc93a3a`](https://github.com/stdlib-js/stdlib/commit/dc93a3ac7351a59e0f61e6384312d96655cc2edc) - **docs:** fix return values _(by Athan Reines)_
 -   [`b26d9d5`](https://github.com/stdlib-js/stdlib/commit/b26d9d5bd9e60a63ce017bbb470f0769b6dcc628) - **feat:** add `array/base/mskunary5d` [(#3207)](https://github.com/stdlib-js/stdlib/pull/3207) _(by Vinit Pandit, Athan Reines, Abhijit, stdlib-bot)_
 -   [`34ae5c9`](https://github.com/stdlib-js/stdlib/commit/34ae5c9570bf6428dc5bede92557ae56981554c2) - **feat:** add `array/base/mskbinary5d` [(#3198)](https://github.com/stdlib-js/stdlib/pull/3198) _(by Abhijit)_
 -   [`cb27ec4`](https://github.com/stdlib-js/stdlib/commit/cb27ec42bd7e65c46877e57064d36ff9b38b502b) - **feat:** add `array/base/mskbinary4d` [(#3196)](https://github.com/stdlib-js/stdlib/pull/3196) _(by Abhijit, Athan Reines)_
