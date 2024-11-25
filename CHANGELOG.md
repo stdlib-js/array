@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-22)
+## Unreleased (2024-11-25)
 
 <section class="packages">
 
@@ -264,6 +264,7 @@
 
 ##### Features
 
+-   [`cb27ec4`](https://github.com/stdlib-js/stdlib/commit/cb27ec42bd7e65c46877e57064d36ff9b38b502b) - add `array/base/mskbinary4d` [(#3196)](https://github.com/stdlib-js/stdlib/pull/3196)
 -   [`c328fc5`](https://github.com/stdlib-js/stdlib/commit/c328fc515fc925ee717ed9cd844cca83a61da806) - add `array/base/mskbinary3d` [(#3193)](https://github.com/stdlib-js/stdlib/pull/3193)
 
 </section>
@@ -274,9 +275,9 @@
 
 ##### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#3178](https://github.com/stdlib-js/stdlib/issues/3178)
+[#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179)
 
 </section>
 
@@ -410,9 +411,9 @@ A total of 2 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3178](https://github.com/stdlib-js/stdlib/issues/3178)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179)
 
 </section>
 
@@ -422,9 +423,10 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
+-   Abhijit
 -   Athan Reines
 -   Philipp Burckhardt
 -   Rylan Yang
@@ -439,6 +441,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cb27ec4`](https://github.com/stdlib-js/stdlib/commit/cb27ec42bd7e65c46877e57064d36ff9b38b502b) - **feat:** add `array/base/mskbinary4d` [(#3196)](https://github.com/stdlib-js/stdlib/pull/3196) _(by Abhijit, Athan Reines)_
 -   [`e3a2173`](https://github.com/stdlib-js/stdlib/commit/e3a2173a24bd8634f333cace626fc2d71740ebd3) - **feat:** add `every` method to `array/fixed-endian-factory` [(#3200)](https://github.com/stdlib-js/stdlib/pull/3200) _(by Aayush Khanna, Athan Reines)_
 -   [`c328fc5`](https://github.com/stdlib-js/stdlib/commit/c328fc515fc925ee717ed9cd844cca83a61da806) - **feat:** add `array/base/mskbinary3d` [(#3193)](https://github.com/stdlib-js/stdlib/pull/3193) _(by Rylan Yang, Athan Reines, stdlib-bot)_
 -   [`9ba0dbd`](https://github.com/stdlib-js/stdlib/commit/9ba0dbd839707695a05fda5d4f50d67c5aba52f7) - **chore:** use relative paths to load main package export _(by Philipp Burckhardt)_
