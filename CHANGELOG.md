@@ -579,6 +579,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`95d0bbc`](https://github.com/stdlib-js/stdlib/commit/95d0bbc4b76c57dba4b4edd343dcd046490d4a51) - **bench:** test for primitive value _(by Athan Reines)_
 -   [`c712a8e`](https://github.com/stdlib-js/stdlib/commit/c712a8ec07db672a01355ddfca2192be25fe85ca) - **feat:** add `array/base/broadcasted-ternary4d` [(#3232)](https://github.com/stdlib-js/stdlib/pull/3232) _(by Vinit Pandit, Athan Reines)_
 -   [`28db4f2`](https://github.com/stdlib-js/stdlib/commit/28db4f2869749f6a6d6f7ae6476bd27f65052e96) - **feat:** add `array/base/mskunary4d` [(#3208)](https://github.com/stdlib-js/stdlib/pull/3208) _(by Abhijit, Athan Reines)_
 -   [`fb3c880`](https://github.com/stdlib-js/stdlib/commit/fb3c880b79a6861fe3da4b14eefadafc90d63eda) - **feat:** add `array/base/braodcasted-ternary3d` [(#3228)](https://github.com/stdlib-js/stdlib/pull/3228) _(by Vinit Pandit, Athan Reines)_
