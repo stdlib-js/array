@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-25)
+## Unreleased (2024-11-26)
 
 <section class="packages">
 
@@ -145,6 +145,40 @@
 This release closes the following issue:
 
 [#3164](https://github.com/stdlib-js/stdlib/issues/3164)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-broadcasted-ternary4d-unreleased">
+
+#### [@stdlib/array/base/broadcasted-ternary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-ternary4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c712a8e`](https://github.com/stdlib-js/stdlib/commit/c712a8ec07db672a01355ddfca2192be25fe85ca) - add `array/base/broadcasted-ternary4d` [(#3232)](https://github.com/stdlib-js/stdlib/pull/3232)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3165](https://github.com/stdlib-js/stdlib/issues/3165)
 
 </section>
 
@@ -514,9 +548,9 @@ A total of 2 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 8 issues were closed in this release:
+A total of 9 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -545,6 +579,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c712a8e`](https://github.com/stdlib-js/stdlib/commit/c712a8ec07db672a01355ddfca2192be25fe85ca) - **feat:** add `array/base/broadcasted-ternary4d` [(#3232)](https://github.com/stdlib-js/stdlib/pull/3232) _(by Vinit Pandit, Athan Reines)_
 -   [`28db4f2`](https://github.com/stdlib-js/stdlib/commit/28db4f2869749f6a6d6f7ae6476bd27f65052e96) - **feat:** add `array/base/mskunary4d` [(#3208)](https://github.com/stdlib-js/stdlib/pull/3208) _(by Abhijit, Athan Reines)_
 -   [`fb3c880`](https://github.com/stdlib-js/stdlib/commit/fb3c880b79a6861fe3da4b14eefadafc90d63eda) - **feat:** add `array/base/braodcasted-ternary3d` [(#3228)](https://github.com/stdlib-js/stdlib/pull/3228) _(by Vinit Pandit, Athan Reines)_
 -   [`2af4b75`](https://github.com/stdlib-js/stdlib/commit/2af4b757cab1052ee7a788f2154f2c7b8c9aa9bb) - **docs:** add note _(by Athan Reines)_
