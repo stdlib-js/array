@@ -480,6 +480,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`2df0e9b`](https://github.com/stdlib-js/stdlib/commit/2df0e9bb08b8ad1c573b7c2383ef39e492dd5436) - add `some` method to `array/fixed-endian-factory` [(#3241)](https://github.com/stdlib-js/stdlib/pull/3241)
 -   [`e3a2173`](https://github.com/stdlib-js/stdlib/commit/e3a2173a24bd8634f333cace626fc2d71740ebd3) - add `every` method to `array/fixed-endian-factory` [(#3200)](https://github.com/stdlib-js/stdlib/pull/3200)
 -   [`b34732c`](https://github.com/stdlib-js/stdlib/commit/b34732cf655db60fbc798e12952f88c3edb07eaf) - add `at` method to `array/fixed-endian-factory` [(#3184)](https://github.com/stdlib-js/stdlib/pull/3184)
 -   [`956a462`](https://github.com/stdlib-js/stdlib/commit/956a4624c788689b1bca285856b987ea3aa32eb6) - add `forEach` method
@@ -492,9 +493,9 @@ This release closes the following issue:
 
 ##### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3155](https://github.com/stdlib-js/stdlib/issues/3155)
 
 </section>
 
@@ -548,9 +549,9 @@ A total of 2 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 9 issues were closed in this release:
+A total of 10 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -560,11 +561,12 @@ A total of 9 issues were closed in this release:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit
 -   Athan Reines
+-   Kshitij-Dale
 -   Philipp Burckhardt
 -   Rylan Yang
 -   Vinit Pandit
@@ -579,6 +581,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`2df0e9b`](https://github.com/stdlib-js/stdlib/commit/2df0e9bb08b8ad1c573b7c2383ef39e492dd5436) - **feat:** add `some` method to `array/fixed-endian-factory` [(#3241)](https://github.com/stdlib-js/stdlib/pull/3241) _(by Kshitij-Dale, Athan Reines)_
 -   [`abb0dc3`](https://github.com/stdlib-js/stdlib/commit/abb0dc38783210623e67f19a5bb95b3998f75ff7) - **docs:** update examples and descriptions _(by Athan Reines)_
 -   [`95d0bbc`](https://github.com/stdlib-js/stdlib/commit/95d0bbc4b76c57dba4b4edd343dcd046490d4a51) - **bench:** test for primitive value _(by Athan Reines)_
 -   [`c712a8e`](https://github.com/stdlib-js/stdlib/commit/c712a8ec07db672a01355ddfca2192be25fe85ca) - **feat:** add `array/base/broadcasted-ternary4d` [(#3232)](https://github.com/stdlib-js/stdlib/pull/3232) _(by Vinit Pandit, Athan Reines)_
