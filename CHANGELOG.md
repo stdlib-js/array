@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-27)
+## Unreleased (2024-11-28)
 
 <section class="packages">
 
@@ -64,6 +64,7 @@
 
 ##### Features
 
+-   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259)
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 
 </section>
@@ -584,6 +585,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - **feat:** update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`9db1815`](https://github.com/stdlib-js/stdlib/commit/9db181520dc74f28aab70a73aac64202cf7560ce) - **feat:** add `indexOf` method to `array/fixed-endian-factory` [(#3279)](https://github.com/stdlib-js/stdlib/pull/3279) _(by Aditya Sapra, Athan Reines)_
 -   [`1d217ba`](https://github.com/stdlib-js/stdlib/commit/1d217bad1d35210a57d65c8be67c596815589082) - **feat:** add `map` method to `array/fixed-endian-factory` [(#3270)](https://github.com/stdlib-js/stdlib/pull/3270) _(by Aayush Khanna, Athan Reines)_
 -   [`2df0e9b`](https://github.com/stdlib-js/stdlib/commit/2df0e9bb08b8ad1c573b7c2383ef39e492dd5436) - **feat:** add `some` method to `array/fixed-endian-factory` [(#3241)](https://github.com/stdlib-js/stdlib/pull/3241) _(by Kshitij-Dale, Athan Reines)_
