@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-30)
+## Unreleased (2024-12-01)
 
 <section class="packages">
 
@@ -481,6 +481,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`b679536`](https://github.com/stdlib-js/stdlib/commit/b679536e73bb91b1f9194bb6897232a3aa5cf2f2) - add `reduce` method to `array/fixed-endian-factory` [(#3296)](https://github.com/stdlib-js/stdlib/pull/3296)
 -   [`6ddda90`](https://github.com/stdlib-js/stdlib/commit/6ddda90477b17bb06353e539d6d6dbf9207e6b8f) - add `join` method to `array/fixed-endian-factory` [(#3287)](https://github.com/stdlib-js/stdlib/pull/3287)
 -   [`c8143c4`](https://github.com/stdlib-js/stdlib/commit/c8143c4f1f5254c67916bb1548aa5443d282e263) - add `lastIndexOf` method to `array/fixed-endian-factory` [(#3281)](https://github.com/stdlib-js/stdlib/pull/3281)
 -   [`9db1815`](https://github.com/stdlib-js/stdlib/commit/9db181520dc74f28aab70a73aac64202cf7560ce) - add `indexOf` method to `array/fixed-endian-factory` [(#3279)](https://github.com/stdlib-js/stdlib/pull/3279)
@@ -498,9 +499,9 @@ This release closes the following issue:
 
 ##### Closed Issues
 
-A total of 7 issues were closed in this release:
+A total of 8 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3155](https://github.com/stdlib-js/stdlib/issues/3155)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3155](https://github.com/stdlib-js/stdlib/issues/3155)
 
 </section>
 
@@ -554,9 +555,9 @@ A total of 7 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 14 issues were closed in this release:
+A total of 15 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -587,6 +588,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b679536`](https://github.com/stdlib-js/stdlib/commit/b679536e73bb91b1f9194bb6897232a3aa5cf2f2) - **feat:** add `reduce` method to `array/fixed-endian-factory` [(#3296)](https://github.com/stdlib-js/stdlib/pull/3296) _(by Aayush Khanna)_
 -   [`6ddda90`](https://github.com/stdlib-js/stdlib/commit/6ddda90477b17bb06353e539d6d6dbf9207e6b8f) - **feat:** add `join` method to `array/fixed-endian-factory` [(#3287)](https://github.com/stdlib-js/stdlib/pull/3287) _(by Aditya Sapra, Philipp Burckhardt)_
 -   [`c8143c4`](https://github.com/stdlib-js/stdlib/commit/c8143c4f1f5254c67916bb1548aa5443d282e263) - **feat:** add `lastIndexOf` method to `array/fixed-endian-factory` [(#3281)](https://github.com/stdlib-js/stdlib/pull/3281) _(by Aditya Sapra, Philipp Burckhardt)_
 -   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - **feat:** update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259) _(by stdlib-bot, Philipp Burckhardt)_
