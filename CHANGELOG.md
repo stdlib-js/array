@@ -590,6 +590,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`d24969e`](https://github.com/stdlib-js/stdlib/commit/d24969e35be1cfbff2e0d62d740c451e476ee444) - **chore:** update package meta data [(#3303)](https://github.com/stdlib-js/stdlib/pull/3303) _(by stdlib-bot, Athan Reines)_
 -   [`1242bbf`](https://github.com/stdlib-js/stdlib/commit/1242bbf3e43a142f8d0bd4a66aece5baa33c03fe) - **feat:** add `filter` method to `array/fixed-endian-factory` [(#3278)](https://github.com/stdlib-js/stdlib/pull/3278) _(by Aayush Khanna, Philipp Burckhardt)_
 -   [`41af546`](https://github.com/stdlib-js/stdlib/commit/41af5467a9067f22ec8facdb535389bac10093bd) - **feat:** add `reduceRight` method to `array/fixed-endian-factory` [(#3300)](https://github.com/stdlib-js/stdlib/pull/3300) _(by Aayush Khanna, Philipp Burckhardt)_
 -   [`b679536`](https://github.com/stdlib-js/stdlib/commit/b679536e73bb91b1f9194bb6897232a3aa5cf2f2) - **feat:** add `reduce` method to `array/fixed-endian-factory` [(#3296)](https://github.com/stdlib-js/stdlib/pull/3296) _(by Aayush Khanna)_
