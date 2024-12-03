@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-02)
+## Unreleased (2024-12-03)
 
 <section class="packages">
 
@@ -591,6 +591,8 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`e5d32c5`](https://github.com/stdlib-js/stdlib/commit/e5d32c53f8f552fae4d672c8750619a59ce078ac) - **chore:** minor clean-up _(by Philipp Burckhardt)_
+-   [`9798530`](https://github.com/stdlib-js/stdlib/commit/97985302871b99c45462d43479e246c4549c3991) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`a0ba090`](https://github.com/stdlib-js/stdlib/commit/a0ba090515dfdfe617e1179ddb7581db24fec44b) - **feat:** add `with` method to `array/fixed-endian-factory` [(#3291)](https://github.com/stdlib-js/stdlib/pull/3291) _(by Aayush Khanna, Philipp Burckhardt)_
 -   [`d24969e`](https://github.com/stdlib-js/stdlib/commit/d24969e35be1cfbff2e0d62d740c451e476ee444) - **chore:** update package meta data [(#3303)](https://github.com/stdlib-js/stdlib/pull/3303) _(by stdlib-bot, Athan Reines)_
 -   [`1242bbf`](https://github.com/stdlib-js/stdlib/commit/1242bbf3e43a142f8d0bd4a66aece5baa33c03fe) - **feat:** add `filter` method to `array/fixed-endian-factory` [(#3278)](https://github.com/stdlib-js/stdlib/pull/3278) _(by Aayush Khanna, Philipp Burckhardt)_
