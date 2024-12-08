@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-04)
+## Unreleased (2024-12-08)
 
 <section class="packages">
 
@@ -576,7 +576,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   Aayush Khanna
 -   Abhijit Raut
 -   Aditya Sapra
--   Ahmed_Kashkoush
+-   Ahmed Kashkoush
 -   Athan Reines
 -   Kshitij-Dale
 -   Muhammad Haris
@@ -594,7 +594,8 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
--   [`1d10ce5`](https://github.com/stdlib-js/stdlib/commit/1d10ce5163bb06f0b93f6dc0ef9697a8336054c2) - **feat:** add `includes` method to `array/fixed-endian-factory` [(#3283)](https://github.com/stdlib-js/stdlib/pull/3283) _(by Ahmed_Kashkoush, Athan Reines, Muhammad Haris)_
+-   [`7e8187a`](https://github.com/stdlib-js/stdlib/commit/7e8187a766886c2fb9cdc356cf781f0a1802172c) - **docs:** update related packages sections [(#3368)](https://github.com/stdlib-js/stdlib/pull/3368) _(by stdlib-bot)_
+-   [`1d10ce5`](https://github.com/stdlib-js/stdlib/commit/1d10ce5163bb06f0b93f6dc0ef9697a8336054c2) - **feat:** add `includes` method to `array/fixed-endian-factory` [(#3283)](https://github.com/stdlib-js/stdlib/pull/3283) _(by Ahmed Kashkoush, Athan Reines, Muhammad Haris)_
 -   [`e5d32c5`](https://github.com/stdlib-js/stdlib/commit/e5d32c53f8f552fae4d672c8750619a59ce078ac) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`9798530`](https://github.com/stdlib-js/stdlib/commit/97985302871b99c45462d43479e246c4549c3991) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`a0ba090`](https://github.com/stdlib-js/stdlib/commit/a0ba090515dfdfe617e1179ddb7581db24fec44b) - **feat:** add `with` method to `array/fixed-endian-factory` [(#3291)](https://github.com/stdlib-js/stdlib/pull/3291) _(by Aayush Khanna, Philipp Burckhardt)_
@@ -1360,7 +1361,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 -   Philipp Burckhardt
 -   Soumajit Chatterjee
 -   Vaibhav Patel
--   yaswanth
+-   Yaswanth Kosuru
 
 </section>
 
@@ -1399,9 +1400,9 @@ A total of 9 people contributed to this release. Thank you to the following cont
 -   [`a3a04e3`](https://github.com/stdlib-js/stdlib/commit/a3a04e32057b878529b86180e38ed3ae383c34ef) - **feat:** add `array/fixed-endian-factory` _(by Athan Reines)_
 -   [`5742947`](https://github.com/stdlib-js/stdlib/commit/5742947f31198648b2f753e1f9322367c9e3ae06) - **feat:** add `array/base/cuany-by-right` [(#2667)](https://github.com/stdlib-js/stdlib/pull/2667) _(by Debashis Maharana, Philipp Burckhardt)_
 -   [`8f72b43`](https://github.com/stdlib-js/stdlib/commit/8f72b432c0fc81a78641d5689722ecc9671c6f02) - **style:** add missing spaces around parentheses _(by Philipp Burckhardt)_
--   [`73266bf`](https://github.com/stdlib-js/stdlib/commit/73266bf9d7f82198bd752dafccedbc017d8c8bb1) - **feat:** add `array/base/cuany-by` [(#2818)](https://github.com/stdlib-js/stdlib/pull/2818) _(by yaswanth, Philipp Burckhardt)_
+-   [`73266bf`](https://github.com/stdlib-js/stdlib/commit/73266bf9d7f82198bd752dafccedbc017d8c8bb1) - **feat:** add `array/base/cuany-by` [(#2818)](https://github.com/stdlib-js/stdlib/pull/2818) _(by Yaswanth Kosuru, Philipp Burckhardt)_
 -   [`e3078e5`](https://github.com/stdlib-js/stdlib/commit/e3078e56df8858a8f79fb3f3ded3fc76da955db5) - **feat:** add `array/base/cuevery-by` package _(by Mohammad Kaif, Philipp Burckhardt)_
--   [`2091d38`](https://github.com/stdlib-js/stdlib/commit/2091d38aec245202fe1bbff462b12d0f5ed54ee1) - **feat:** add `array/base/cusome` _(by yaswanth, Philipp Burckhardt)_
+-   [`2091d38`](https://github.com/stdlib-js/stdlib/commit/2091d38aec245202fe1bbff462b12d0f5ed54ee1) - **feat:** add `array/base/cusome` _(by Yaswanth Kosuru, Philipp Burckhardt)_
 -   [`43aa58f`](https://github.com/stdlib-js/stdlib/commit/43aa58f81dcad604f11a5715a1546c015b0a9623) - **feat:** add `isByteOrder` to namespace _(by Athan Reines)_
 -   [`b18478e`](https://github.com/stdlib-js/stdlib/commit/b18478e236e9cb6991d5a0f952d217e043e46587) - **feat:** add `array/base/assert/is-byte-order` _(by Athan Reines)_
 -   [`444e453`](https://github.com/stdlib-js/stdlib/commit/444e45363e751ab85736bc97b642520c3e5db301) - **feat:** add `byteOrders` to namespace _(by Athan Reines)_
@@ -3946,13 +3947,13 @@ A total of 5 issues were closed in this release:
 A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Sapra
--   AgPriyanshu18
 -   Athan Reines
 -   Golden Kumar
 -   Jaysukh Makvana
 -   Karthik Prakash
 -   Philipp Burckhardt
 -   Pratik
+-   Priyanshu Agarwal
 -   Utkarsh
 -   Varad Gupta
 
@@ -4189,7 +4190,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`902b38a`](https://github.com/stdlib-js/stdlib/commit/902b38ac100f6710d2ad5e28f31422e573cc6d29) - **docs:** update descriptions _(by Athan Reines)_
 -   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - **feat:** add `reduceRight` method to `array/complex128` [(#1406)](https://github.com/stdlib-js/stdlib/pull/1406) _(by Jaysukh Makvana, stdlib-bot, Philipp Burckhardt)_
 -   [`670aeab`](https://github.com/stdlib-js/stdlib/commit/670aeab1e433314ca3b0ebfb4dce16f267cff881) - **docs:** fix require path _(by Philipp Burckhardt)_
--   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - **feat:** add `array/base/count-same-value-zero` [(#1384)](https://github.com/stdlib-js/stdlib/pull/1384) _(by AgPriyanshu18, Jaysukh Makvana, Philipp Burckhardt)_
+-   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - **feat:** add `array/base/count-same-value-zero` [(#1384)](https://github.com/stdlib-js/stdlib/pull/1384) _(by Priyanshu Agarwal, Jaysukh Makvana, Philipp Burckhardt)_
 -   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - **feat:** add `reduceRight` method to `array/complex64` [(#1395)](https://github.com/stdlib-js/stdlib/pull/1395) _(by Jaysukh Makvana, Philipp Burckhardt)_
 -   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - **feat:** add `array/base/with` [(#1374)](https://github.com/stdlib-js/stdlib/pull/1374) _(by Pratik, Philipp Burckhardt)_
 -   [`5daf468`](https://github.com/stdlib-js/stdlib/commit/5daf468cf419bc847ef14d0f56a80936fd175c9c) - **docs:** update related packages sections [(#1380)](https://github.com/stdlib-js/stdlib/pull/1380) _(by stdlib-bot)_
