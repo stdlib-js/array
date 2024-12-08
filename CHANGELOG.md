@@ -594,6 +594,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`0a8192d`](https://github.com/stdlib-js/stdlib/commit/0a8192d68506a2abf4c3e52e1af9f1510e1660b4) - **docs:** update related packages sections [(#3370)](https://github.com/stdlib-js/stdlib/pull/3370) _(by stdlib-bot)_
 -   [`7e8187a`](https://github.com/stdlib-js/stdlib/commit/7e8187a766886c2fb9cdc356cf781f0a1802172c) - **docs:** update related packages sections [(#3368)](https://github.com/stdlib-js/stdlib/pull/3368) _(by stdlib-bot)_
 -   [`1d10ce5`](https://github.com/stdlib-js/stdlib/commit/1d10ce5163bb06f0b93f6dc0ef9697a8336054c2) - **feat:** add `includes` method to `array/fixed-endian-factory` [(#3283)](https://github.com/stdlib-js/stdlib/pull/3283) _(by Ahmed Kashkoush, Athan Reines, Muhammad Haris)_
 -   [`e5d32c5`](https://github.com/stdlib-js/stdlib/commit/e5d32c53f8f552fae4d672c8750619a59ce078ac) - **chore:** minor clean-up _(by Philipp Burckhardt)_
