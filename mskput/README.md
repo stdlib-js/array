@@ -146,6 +146,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/place`][@stdlib/array/place]</span><span class="delimiter">: </span><span class="description">replace elements of an array with provided values according to a provided mask array.</span>
+-   <span class="package-name">[`@stdlib/array/put`][@stdlib/array/put]</span><span class="delimiter">: </span><span class="description">replace specified elements of an array with provided values.</span>
+-   <span class="package-name">[`@stdlib/array/take`][@stdlib/array/take]</span><span class="delimiter">: </span><span class="description">take elements from an array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -159,6 +167,16 @@ console.log( out );
 [@stdlib/array/safe-casts]: https://github.com/stdlib-js/array/tree/main/safe-casts
 
 [@stdlib/array/same-kind-casts]: https://github.com/stdlib-js/array/tree/main/same-kind-casts
+
+<!-- <related-links> -->
+
+[@stdlib/array/place]: https://github.com/stdlib-js/array/tree/main/place
+
+[@stdlib/array/put]: https://github.com/stdlib-js/array/tree/main/put
+
+[@stdlib/array/take]: https://github.com/stdlib-js/array/tree/main/take
+
+<!-- </related-links> -->
 
 </section>
 
