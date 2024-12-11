@@ -529,6 +529,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-unary5d-by-unreleased">
+
+#### [@stdlib/array/base/unary5d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/unary5d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`1788e0a`](https://github.com/stdlib-js/stdlib/commit/1788e0a90708cdf7b5be6e1b86b3f5d40093ebab) - add `array/base/unary5d-by` [(#3221)](https://github.com/stdlib-js/stdlib/pull/3221)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3175](https://github.com/stdlib-js/stdlib/issues/3175)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-bool-unreleased">
 
 #### [@stdlib/array/bool](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/bool)
@@ -661,9 +695,9 @@ A total of 12 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 22 issues were closed in this release:
+A total of 23 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -697,6 +731,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`1788e0a`](https://github.com/stdlib-js/stdlib/commit/1788e0a90708cdf7b5be6e1b86b3f5d40093ebab) - **feat:** add `array/base/unary5d-by` [(#3221)](https://github.com/stdlib-js/stdlib/pull/3221) _(by Neeraj Pathak, Athan Reines, stdlib-bot)_
 -   [`143b370`](https://github.com/stdlib-js/stdlib/commit/143b37022fe8b96b30a0b79466e310380ddd2628) - **feat:** add `array/base/unary4d-by` [(#3220)](https://github.com/stdlib-js/stdlib/pull/3220) _(by Abhijit Raut, Athan Reines)_
 -   [`70aaa8c`](https://github.com/stdlib-js/stdlib/commit/70aaa8ca5c7fa401321769137542c4001f529536) - **feat:** add `array/base/unary3d-by` [(#3219)](https://github.com/stdlib-js/stdlib/pull/3219) _(by Neeraj Pathak, Athan Reines, stdlib-bot)_
 -   [`982980c`](https://github.com/stdlib-js/stdlib/commit/982980c5e719d7ab8f227b9aea9507ab45b15957) - **feat:** add `array/base/broadcasted-ternary5d` [(#3251)](https://github.com/stdlib-js/stdlib/pull/3251) _(by Vinit Pandit, Athan Reines)_
