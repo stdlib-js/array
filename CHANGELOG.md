@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-11)
+## Unreleased (2024-12-12)
 
 <section class="packages">
 
@@ -766,6 +766,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`cf7d38a`](https://github.com/stdlib-js/stdlib/commit/cf7d38ae3e7bce92cf47778f7b1c3da731121d77) - **docs:** update related packages sections [(#3527)](https://github.com/stdlib-js/stdlib/pull/3527) _(by stdlib-bot)_
 -   [`6559e70`](https://github.com/stdlib-js/stdlib/commit/6559e70d5a7eaf8aa0cf5356aa4a12f857507bb2) - **feat:** add `array/base/broadcasted/quaternary3d` [(#3230)](https://github.com/stdlib-js/stdlib/pull/3230) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`1788e0a`](https://github.com/stdlib-js/stdlib/commit/1788e0a90708cdf7b5be6e1b86b3f5d40093ebab) - **feat:** add `array/base/unary5d-by` [(#3221)](https://github.com/stdlib-js/stdlib/pull/3221) _(by Neeraj Pathak, Athan Reines, stdlib-bot)_
 -   [`143b370`](https://github.com/stdlib-js/stdlib/commit/143b37022fe8b96b30a0b79466e310380ddd2628) - **feat:** add `array/base/unary4d-by` [(#3220)](https://github.com/stdlib-js/stdlib/pull/3220) _(by Abhijit Raut, Athan Reines)_
