@@ -834,6 +834,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d482810`](https://github.com/stdlib-js/stdlib/commit/d482810508b0a31e6acdf6c4914c40e2dd862ec2) - **docs:** fix description _(by Athan Reines)_
 -   [`f71dbdc`](https://github.com/stdlib-js/stdlib/commit/f71dbdc7ea992486cdc2042c24a6d4a2b57c002e) - **feat:** add `array/base/broadcasted/quaternary5d` [(#3301)](https://github.com/stdlib-js/stdlib/pull/3301) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`263de1a`](https://github.com/stdlib-js/stdlib/commit/263de1acfc9faf6b355b54d4dbdc0048b1288fab) - **docs:** fix example _(by Athan Reines)_
 -   [`5cb36ef`](https://github.com/stdlib-js/stdlib/commit/5cb36ef4c6f8158585ac88867a8dec21ed3fa372) - **docs:** update related packages sections [(#3890)](https://github.com/stdlib-js/stdlib/pull/3890) _(by stdlib-bot)_
