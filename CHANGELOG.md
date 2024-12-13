@@ -225,6 +225,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-broadcasted-quinary4d-unreleased">
+
+#### [@stdlib/array/base/broadcasted-quinary4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-quinary4d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e74cfa7`](https://github.com/stdlib-js/stdlib/commit/e74cfa7ad107c99e45e1b5857c258f71de369bfb) - add `array/base/broadcasted-quinary4d` [(#3267)](https://github.com/stdlib-js/stdlib/pull/3267)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3171](https://github.com/stdlib-js/stdlib/issues/3171)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-broadcasted-ternary3d-unreleased">
 
 #### [@stdlib/array/base/broadcasted-ternary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-ternary3d)
@@ -797,9 +831,9 @@ A total of 12 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 26 issues were closed in this release:
+A total of 27 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
 
 </section>
 
@@ -834,6 +868,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`e74cfa7`](https://github.com/stdlib-js/stdlib/commit/e74cfa7ad107c99e45e1b5857c258f71de369bfb) - **feat:** add `array/base/broadcasted-quinary4d` [(#3267)](https://github.com/stdlib-js/stdlib/pull/3267) _(by Neeraj Pathak, Athan Reines, stdlib-bot)_
 -   [`d482810`](https://github.com/stdlib-js/stdlib/commit/d482810508b0a31e6acdf6c4914c40e2dd862ec2) - **docs:** fix description _(by Athan Reines)_
 -   [`f71dbdc`](https://github.com/stdlib-js/stdlib/commit/f71dbdc7ea992486cdc2042c24a6d4a2b57c002e) - **feat:** add `array/base/broadcasted/quaternary5d` [(#3301)](https://github.com/stdlib-js/stdlib/pull/3301) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`263de1a`](https://github.com/stdlib-js/stdlib/commit/263de1acfc9faf6b355b54d4dbdc0048b1288fab) - **docs:** fix example _(by Athan Reines)_
