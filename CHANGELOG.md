@@ -868,6 +868,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`0c9faed`](https://github.com/stdlib-js/stdlib/commit/0c9faedab42d5b816921487891de6aef305aa54f) - **docs:** update namespace table of contents [(#3902)](https://github.com/stdlib-js/stdlib/pull/3902) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`2825b42`](https://github.com/stdlib-js/stdlib/commit/2825b42e8cd7483d15dfed1c6b389bfcb86d7ca0) - **docs:** update related packages sections [(#3898)](https://github.com/stdlib-js/stdlib/pull/3898) _(by stdlib-bot)_
 -   [`e74cfa7`](https://github.com/stdlib-js/stdlib/commit/e74cfa7ad107c99e45e1b5857c258f71de369bfb) - **feat:** add `array/base/broadcasted-quinary4d` [(#3267)](https://github.com/stdlib-js/stdlib/pull/3267) _(by Neeraj Pathak, Athan Reines, stdlib-bot)_
 -   [`d482810`](https://github.com/stdlib-js/stdlib/commit/d482810508b0a31e6acdf6c4914c40e2dd862ec2) - **docs:** fix description _(by Athan Reines)_
