@@ -799,6 +799,7 @@ A total of 12 issues were closed in this release:
 
 ##### Bug Fixes
 
+-   [`629ce7b`](https://github.com/stdlib-js/stdlib/commit/629ce7bfa31b0d263f36fd597bb67acfc87689ff) - ensure support for typed arrays larger than 2^32-1
 -   [`dcfa1d6`](https://github.com/stdlib-js/stdlib/commit/dcfa1d62126625847df6517662851e812ef997be) - update import name
 
 </section>
@@ -868,6 +869,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`629ce7b`](https://github.com/stdlib-js/stdlib/commit/629ce7bfa31b0d263f36fd597bb67acfc87689ff) - **fix:** ensure support for typed arrays larger than 2^32-1 _(by Athan Reines)_
 -   [`b8c41df`](https://github.com/stdlib-js/stdlib/commit/b8c41df78cd2cdc9cd3c3c6b223759d32f4f6e14) - **docs:** update related packages sections [(#3915)](https://github.com/stdlib-js/stdlib/pull/3915) _(by stdlib-bot)_
 -   [`02fe522`](https://github.com/stdlib-js/stdlib/commit/02fe52268be65ac41e413c27cef0f1f83b94636a) - **refactor:** remove unused file _(by Athan Reines)_
 -   [`0c9faed`](https://github.com/stdlib-js/stdlib/commit/0c9faedab42d5b816921487891de6aef305aa54f) - **docs:** update namespace table of contents [(#3902)](https://github.com/stdlib-js/stdlib/pull/3902) _(by stdlib-bot, Philipp Burckhardt)_
