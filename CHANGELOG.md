@@ -869,6 +869,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3c1789f`](https://github.com/stdlib-js/stdlib/commit/3c1789fdfe3ae56635ddf84fb5dfe229237794fa) - **docs:** add missing private annotations and decimals _(by Philipp Burckhardt)_
 -   [`629ce7b`](https://github.com/stdlib-js/stdlib/commit/629ce7bfa31b0d263f36fd597bb67acfc87689ff) - **fix:** ensure support for typed arrays larger than 2^32-1 _(by Athan Reines)_
 -   [`b8c41df`](https://github.com/stdlib-js/stdlib/commit/b8c41df78cd2cdc9cd3c3c6b223759d32f4f6e14) - **docs:** update related packages sections [(#3915)](https://github.com/stdlib-js/stdlib/pull/3915) _(by stdlib-bot)_
 -   [`02fe522`](https://github.com/stdlib-js/stdlib/commit/02fe52268be65ac41e413c27cef0f1f83b94636a) - **refactor:** remove unused file _(by Athan Reines)_
