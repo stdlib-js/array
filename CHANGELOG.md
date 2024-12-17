@@ -869,6 +869,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`32deb11`](https://github.com/stdlib-js/stdlib/commit/32deb11c6a2453748d8db9554b6bb3fdb73a077f) - **docs:** update related packages sections [(#3976)](https://github.com/stdlib-js/stdlib/pull/3976) _(by stdlib-bot)_
 -   [`feaea9b`](https://github.com/stdlib-js/stdlib/commit/feaea9bf8dbfa4ee372583107972c442109682d6) - **docs:** update descriptions _(by Athan Reines)_
 -   [`f4eb2ab`](https://github.com/stdlib-js/stdlib/commit/f4eb2ab24e14f4fd5585765a8c303e6398a10958) - **docs:** fix comment _(by Athan Reines)_
 -   [`00fff89`](https://github.com/stdlib-js/stdlib/commit/00fff89d59d8b6b09d28224ef9a3980e72b6a76c) - **docs:** fix comment _(by Athan Reines)_
