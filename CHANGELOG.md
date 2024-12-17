@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-16)
+## Unreleased (2024-12-17)
 
 <section class="packages">
 
@@ -869,6 +869,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`feaea9b`](https://github.com/stdlib-js/stdlib/commit/feaea9bf8dbfa4ee372583107972c442109682d6) - **docs:** update descriptions _(by Athan Reines)_
 -   [`f4eb2ab`](https://github.com/stdlib-js/stdlib/commit/f4eb2ab24e14f4fd5585765a8c303e6398a10958) - **docs:** fix comment _(by Athan Reines)_
 -   [`00fff89`](https://github.com/stdlib-js/stdlib/commit/00fff89d59d8b6b09d28224ef9a3980e72b6a76c) - **docs:** fix comment _(by Athan Reines)_
 -   [`3c1789f`](https://github.com/stdlib-js/stdlib/commit/3c1789fdfe3ae56635ddf84fb5dfe229237794fa) - **docs:** add missing private annotations and decimals _(by Philipp Burckhardt)_
@@ -4253,7 +4254,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   Jaysukh Makvana
 -   Karthik Prakash
 -   Philipp Burckhardt
--   Pratik
+-   Pratik Singh
 -   Priyanshu Agarwal
 -   Utkarsh
 -   Varad Gupta
@@ -4493,7 +4494,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   [`670aeab`](https://github.com/stdlib-js/stdlib/commit/670aeab1e433314ca3b0ebfb4dce16f267cff881) - **docs:** fix require path _(by Philipp Burckhardt)_
 -   [`1ed81b7`](https://github.com/stdlib-js/stdlib/commit/1ed81b78fd6469d374c7b033f258e709934539b2) - **feat:** add `array/base/count-same-value-zero` [(#1384)](https://github.com/stdlib-js/stdlib/pull/1384) _(by Priyanshu Agarwal, Jaysukh Makvana, Philipp Burckhardt)_
 -   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - **feat:** add `reduceRight` method to `array/complex64` [(#1395)](https://github.com/stdlib-js/stdlib/pull/1395) _(by Jaysukh Makvana, Philipp Burckhardt)_
--   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - **feat:** add `array/base/with` [(#1374)](https://github.com/stdlib-js/stdlib/pull/1374) _(by Pratik, Philipp Burckhardt)_
+-   [`4253607`](https://github.com/stdlib-js/stdlib/commit/425360790cca3ef7b1747b3c1828ab5825306441) - **feat:** add `array/base/with` [(#1374)](https://github.com/stdlib-js/stdlib/pull/1374) _(by Pratik Singh, Philipp Burckhardt)_
 -   [`5daf468`](https://github.com/stdlib-js/stdlib/commit/5daf468cf419bc847ef14d0f56a80936fd175c9c) - **docs:** update related packages sections [(#1380)](https://github.com/stdlib-js/stdlib/pull/1380) _(by stdlib-bot)_
 -   [`0848cd9`](https://github.com/stdlib-js/stdlib/commit/0848cd91a848223d481b5d054ec4beecf7bdd9c9) - **feat:** add `reduce` method to `array/complex128` [(#1367)](https://github.com/stdlib-js/stdlib/pull/1367) _(by Jaysukh Makvana, Athan Reines)_
 -   [`f3def6d`](https://github.com/stdlib-js/stdlib/commit/f3def6de1cbd1829b3e8c57e52434eb16841ffe8) - **feat:** add `reduce` method to `array/complex64` [(#1271)](https://github.com/stdlib-js/stdlib/pull/1271) _(by Jaysukh Makvana, Athan Reines)_
