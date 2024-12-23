@@ -134,6 +134,12 @@ out = filledBy( 3, constantFunction( void 0 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/base/filled`][@stdlib/array/base/filled]</span><span class="delimiter">: </span><span class="description">create a filled generic array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -141,6 +147,12 @@ out = filledBy( 3, constantFunction( void 0 ) );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/filled]: https://github.com/stdlib-js/array/tree/main/base/filled
+
+<!-- </related-links> -->
 
 </section>
 
