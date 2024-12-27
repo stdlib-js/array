@@ -128,11 +128,11 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="links">
 
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
+
 <!-- <related-links> -->
 
 [@stdlib/array/convert]: https://github.com/stdlib-js/array/tree/main/convert
-
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array/tree/main/dtypes
 
 <!-- </related-links> -->
 
