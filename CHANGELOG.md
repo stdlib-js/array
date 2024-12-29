@@ -869,6 +869,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`64e4bd6`](https://github.com/stdlib-js/stdlib/commit/64e4bd6055042207ce2e5ae6687ca8992b06367f) - **docs:** fix missing option description _(by Athan Reines)_
 -   [`0d8ee2d`](https://github.com/stdlib-js/stdlib/commit/0d8ee2dd2425d7414487f65940dfc4c25c79ad1d) - **docs:** update related packages sections [(#4334)](https://github.com/stdlib-js/stdlib/pull/4334) _(by stdlib-bot)_
 -   [`08a93ce`](https://github.com/stdlib-js/stdlib/commit/08a93ce0f545c4aaf6e1edbcd87b7c3db7338899) - **docs:** update copy _(by Athan Reines)_
 -   [`ee9e2f6`](https://github.com/stdlib-js/stdlib/commit/ee9e2f626dd923fb411410872c69104ff8fa4f88) - **docs:** fix missing annotation _(by Athan Reines)_
