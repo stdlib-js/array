@@ -35,20 +35,32 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float32Array, Float32ArrayFE, Float32ArrayLE, Float64Array, Float64ArrayFE, Float64ArrayLE, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, byteOrders, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, filled, filledBy, fixedEndianFactory, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, littleEndianFactory, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@esm/index.mjs';
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -259,20 +271,11 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -296,7 +299,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -313,7 +316,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
