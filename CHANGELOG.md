@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-03)
+## Unreleased (2025-01-04)
 
 <section class="packages">
 
@@ -870,6 +870,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3eff7c4`](https://github.com/stdlib-js/stdlib/commit/3eff7c48b5841028d49c159d900b18000c0e9a43) - **docs:** fix comments _(by Athan Reines)_
 -   [`bc279b5`](https://github.com/stdlib-js/stdlib/commit/bc279b5f310d68ca939e8c03de09ff23fbc4ae68) - **docs:** update related packages sections [(#4485)](https://github.com/stdlib-js/stdlib/pull/4485) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`7f25676`](https://github.com/stdlib-js/stdlib/commit/7f256762db37ccfb07db2baeda7f5102df5db96c) - **docs:** fix grammar _(by Athan Reines)_
 -   [`78087d9`](https://github.com/stdlib-js/stdlib/commit/78087d9a551783d642d885fb42b89b4e23acd671) - **fix:** provide missing argument to function _(by Athan Reines)_
