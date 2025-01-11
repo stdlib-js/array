@@ -24,7 +24,7 @@ var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
 var zeroTo = require( './../../../base/zero-to' );
 var ones = require( './../../../base/ones' );
-var identity = require( '@stdlib/math/base/special/identity' );
+var identity = require( '@stdlib/utils/identity-function' );
 var pkg = require( './../package.json' ).name;
 var mskfilterMap = require( './../lib' );
 

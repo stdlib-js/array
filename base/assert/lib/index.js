@@ -235,6 +235,15 @@ setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-s
 setReadOnly( ns, 'isSignedIntegerDataType', require( './../../../base/assert/is-signed-integer-data-type' ) );
 
 /**
+* @name isSortedAscending
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/is-sorted-ascending}
+*/
+setReadOnly( ns, 'isSortedAscending', require( './../../../base/assert/is-sorted-ascending' ) );
+
+/**
 * @name isUnsignedIntegerDataType
 * @memberof ns
 * @readonly

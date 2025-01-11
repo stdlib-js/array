@@ -27,7 +27,7 @@ var zeros = require( './../../../zeros' );
 var ones = require( './../../../ones' );
 var isArray = require( '@stdlib/assert/is-array' );
 var isnan = require( '@stdlib/assert/is-nan' ).isPrimitive;
-var identity = require( '@stdlib/math/base/special/identity' );
+var identity = require( '@stdlib/utils/identity-function' );
 var pkg = require( './../package.json' ).name;
 var mskfilterMap = require( './../lib' );
 
