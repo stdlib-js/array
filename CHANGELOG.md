@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-11)
+## Unreleased (2025-01-12)
 
 <section class="packages">
 
@@ -1092,6 +1092,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`cff470f`](https://github.com/stdlib-js/stdlib/commit/cff470f9608165100c8c122fce70c40b1af864ec) - **docs:** update namespace table of contents (#4708) _(by stdlib-bot, Planeshifter)_
 -   [`d11aaf3`](https://github.com/stdlib-js/stdlib/commit/d11aaf3e4ea651384185655584eea9c5b8ca9ae2) - **feat:** add `isSortedAscending` to namespace _(by Athan Reines)_
 -   [`5a848eb`](https://github.com/stdlib-js/stdlib/commit/5a848ebda6a2ff9cc34cfa5cf93ffce65b8bab0e) - **feat:** add `array/base/assert/is-sorted-ascending` _(by Athan Reines)_
 -   [`1d9e4dd`](https://github.com/stdlib-js/stdlib/commit/1d9e4dd5514ba4f3c1063dff732e37254dc0dd84) - **docs:** add missing comment _(by Athan Reines)_
