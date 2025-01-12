@@ -1094,6 +1094,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d9f8189`](https://github.com/stdlib-js/stdlib/commit/d9f8189f537a107f8247d2071bac26926ad60ca2) - **chore:** fix indentation _(by Philipp Burckhardt)_
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - **feat:** update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706) _(by stdlib-bot)_
 -   [`cff470f`](https://github.com/stdlib-js/stdlib/commit/cff470f9608165100c8c122fce70c40b1af864ec) - **docs:** update namespace table of contents (#4708) _(by stdlib-bot, Planeshifter)_
 -   [`d11aaf3`](https://github.com/stdlib-js/stdlib/commit/d11aaf3e4ea651384185655584eea9c5b8ca9ae2) - **feat:** add `isSortedAscending` to namespace _(by Athan Reines)_
