@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-12)
+## Unreleased (2025-01-13)
 
 <section class="packages">
 
@@ -1094,6 +1094,8 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`fd622e8`](https://github.com/stdlib-js/stdlib/commit/fd622e8948ffdf6a9a8d2809ed789a1fac20a79f) - **docs:** update examples _(by Athan Reines)_
+-   [`55f8f64`](https://github.com/stdlib-js/stdlib/commit/55f8f640e1001e7189b85406482b748ae7bc6a50) - **docs:** update examples _(by Athan Reines)_
 -   [`d9f8189`](https://github.com/stdlib-js/stdlib/commit/d9f8189f537a107f8247d2071bac26926ad60ca2) - **chore:** fix indentation _(by Philipp Burckhardt)_
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - **feat:** update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706) _(by stdlib-bot)_
 -   [`cff470f`](https://github.com/stdlib-js/stdlib/commit/cff470f9608165100c8c122fce70c40b1af864ec) - **docs:** update namespace table of contents (#4708) _(by stdlib-bot, Planeshifter)_
