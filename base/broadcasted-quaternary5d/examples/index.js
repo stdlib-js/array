@@ -21,7 +21,7 @@
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled5dBy = require( './../../../base/filled5d-by' );
 var zeros5d = require( './../../../base/zeros5d' );
-var add = require( '@stdlib/math/base/ops/add4' );
+var add = require( '@stdlib/number/float64/base/add4' );
 var bquaternary5d = require( './../lib' );
 
 var shapes = [

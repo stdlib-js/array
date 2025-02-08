@@ -1095,6 +1095,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`60334d6`](https://github.com/stdlib-js/stdlib/commit/60334d6d17a9f29c0045c139b8ede24d1182b870) - **refactor:** update paths _(by gururaj1512)_
 -   [`836170d`](https://github.com/stdlib-js/stdlib/commit/836170decec14309639deb41ae3a3c22256d68af) - **refactor:** update paths _(by gururaj1512)_
 -   [`1024672`](https://github.com/stdlib-js/stdlib/commit/10246726f20f36d6322d74160e6f4d54805b02e4) - **docs:** update namespace TypeScript declaration comments [(#4729)](https://github.com/stdlib-js/stdlib/pull/4729) _(by stdlib-bot)_
 -   [`fd622e8`](https://github.com/stdlib-js/stdlib/commit/fd622e8948ffdf6a9a8d2809ed789a1fac20a79f) - **docs:** update examples _(by Athan Reines)_
