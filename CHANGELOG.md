@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-08)
+## Unreleased (2025-02-16)
 
 <section class="packages">
 
@@ -1069,7 +1069,7 @@ A total of 27 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -1083,7 +1083,6 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Rylan Yang
 -   Vinit Pandit
--   gururaj1512
 
 </section>
 
@@ -1095,9 +1094,10 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
--   [`60334d6`](https://github.com/stdlib-js/stdlib/commit/60334d6d17a9f29c0045c139b8ede24d1182b870) - **refactor:** update paths _(by gururaj1512)_
--   [`8da0e78`](https://github.com/stdlib-js/stdlib/commit/8da0e787b914f30db9bafcd1c0804ae2f1a99e36) - **refactor:** update paths _(by gururaj1512)_
--   [`836170d`](https://github.com/stdlib-js/stdlib/commit/836170decec14309639deb41ae3a3c22256d68af) - **refactor:** update paths _(by gururaj1512)_
+-   [`3ae3c5f`](https://github.com/stdlib-js/stdlib/commit/3ae3c5f79f267ecc17041b6b10d8c543f5f0686c) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`60334d6`](https://github.com/stdlib-js/stdlib/commit/60334d6d17a9f29c0045c139b8ede24d1182b870) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`8da0e78`](https://github.com/stdlib-js/stdlib/commit/8da0e787b914f30db9bafcd1c0804ae2f1a99e36) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`836170d`](https://github.com/stdlib-js/stdlib/commit/836170decec14309639deb41ae3a3c22256d68af) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`1024672`](https://github.com/stdlib-js/stdlib/commit/10246726f20f36d6322d74160e6f4d54805b02e4) - **docs:** update namespace TypeScript declaration comments [(#4729)](https://github.com/stdlib-js/stdlib/pull/4729) _(by stdlib-bot)_
 -   [`fd622e8`](https://github.com/stdlib-js/stdlib/commit/fd622e8948ffdf6a9a8d2809ed789a1fac20a79f) - **docs:** update examples _(by Athan Reines)_
 -   [`55f8f64`](https://github.com/stdlib-js/stdlib/commit/55f8f640e1001e7189b85406482b748ae7bc6a50) - **docs:** update examples _(by Athan Reines)_

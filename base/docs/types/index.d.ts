@@ -3972,7 +3972,7 @@ interface Namespace {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var add = require( '@stdlib/number/float64/base/add5' );
 	* var ones2d = require( './../../../base/ones2d' );
 	* var zeros2d = require( './../../../base/zeros2d' );
 	*
@@ -4004,7 +4004,7 @@ interface Namespace {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var add = require( '@stdlib/number/float64/base/add5' );
 	* var ones3d = require( './../../../base/ones3d' );
 	* var zeros3d = require( './../../../base/zeros3d' );
 	*
@@ -4036,7 +4036,7 @@ interface Namespace {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var add = require( '@stdlib/number/float64/base/add5' );
 	* var ones4d = require( './../../../base/ones4d' );
 	* var zeros4d = require( './../../../base/zeros4d' );
 	*
@@ -4068,7 +4068,7 @@ interface Namespace {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var add = require( '@stdlib/number/float64/base/add5' );
 	* var ones5d = require( './../../../base/ones5d' );
 	* var zeros5d = require( './../../../base/zeros5d' );
 	*
