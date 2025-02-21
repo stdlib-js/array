@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,23 +18,13 @@
 
 'use strict';
 
-// MODULES //
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var naryFunction = require( '@stdlib/utils/nary-function' );
+var log = require( '@stdlib/console/log' );
+var forEach = require( './../lib' );
 
-var LinkedList = require( '@stdlib/dstructs/linked-list' );
+var x = discreteUniform( 10, 0, 10, {
+	'dtype': 'float64'
+});
 
-
-// MAIN //
-
-/**
-* Cache for storing index arrays.
-*
-* @private
-* @name cache
-* @type {LinkedList}
-*/
-var cache = new LinkedList(); // note: created as a linked list to allow for more efficient removal of expired index arrays
-
-
-// EXPORTS //
-
-module.exports = cache;
+forEach( x, naryFunction( log, 1 ) );

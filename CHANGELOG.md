@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-16)
+## Unreleased (2025-02-21)
 
 <section class="packages">
 
@@ -420,6 +420,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`837e86f`](https://github.com/stdlib-js/stdlib/commit/837e86f0d4acd61a3f9283e7c6c9e2036912b489) - add `array/base/fill`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-for-each-unreleased">
+
+#### [@stdlib/array/base/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/for-each)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`072052b`](https://github.com/stdlib-js/stdlib/commit/072052b92dd00f2b36727c6b0364b64ddcc32ecb) - add `array/base/for-each` [(#5319)](https://github.com/stdlib-js/stdlib/pull/5319)
 
 </section>
 
@@ -1094,6 +1116,8 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`01e81a5`](https://github.com/stdlib-js/stdlib/commit/01e81a54c2f1294efe1d199cba7dfc6ac8bb9acf) - **refactor:** update path _(by Athan Reines)_
+-   [`072052b`](https://github.com/stdlib-js/stdlib/commit/072052b92dd00f2b36727c6b0364b64ddcc32ecb) - **feat:** add `array/base/for-each` [(#5319)](https://github.com/stdlib-js/stdlib/pull/5319) _(by Muhammad Haris, Athan Reines)_
 -   [`3ae3c5f`](https://github.com/stdlib-js/stdlib/commit/3ae3c5f79f267ecc17041b6b10d8c543f5f0686c) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`60334d6`](https://github.com/stdlib-js/stdlib/commit/60334d6d17a9f29c0045c139b8ede24d1182b870) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`8da0e78`](https://github.com/stdlib-js/stdlib/commit/8da0e787b914f30db9bafcd1c0804ae2f1a99e36) - **refactor:** update paths _(by Gururaj Gurram)_
