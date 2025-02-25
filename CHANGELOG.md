@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-21)
+## Unreleased (2025-02-25)
 
 <section class="packages">
 
@@ -446,6 +446,16 @@ This release closes the following issue:
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`165c7fb`](https://github.com/stdlib-js/stdlib/commit/165c7fb75861f4c1ee28940aadbe44ba4f6e8268) - use the correct TypeScript callback signature and update docs for `array/base/for-each` [(#5448)](https://github.com/stdlib-js/stdlib/pull/5448)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -1116,6 +1126,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`165c7fb`](https://github.com/stdlib-js/stdlib/commit/165c7fb75861f4c1ee28940aadbe44ba4f6e8268) - **fix:** use the correct TypeScript callback signature and update docs for `array/base/for-each` [(#5448)](https://github.com/stdlib-js/stdlib/pull/5448) _(by Muhammad Haris)_
 -   [`01e81a5`](https://github.com/stdlib-js/stdlib/commit/01e81a54c2f1294efe1d199cba7dfc6ac8bb9acf) - **refactor:** update path _(by Athan Reines)_
 -   [`072052b`](https://github.com/stdlib-js/stdlib/commit/072052b92dd00f2b36727c6b0364b64ddcc32ecb) - **feat:** add `array/base/for-each` [(#5319)](https://github.com/stdlib-js/stdlib/pull/5319) _(by Muhammad Haris, Athan Reines)_
 -   [`3ae3c5f`](https://github.com/stdlib-js/stdlib/commit/3ae3c5f79f267ecc17041b6b10d8c543f5f0686c) - **refactor:** update paths _(by Gururaj Gurram)_
