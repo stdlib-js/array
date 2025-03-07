@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-25)
+## Unreleased (2025-03-07)
 
 <section class="packages">
 
@@ -999,6 +999,30 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-filled-unreleased">
+
+#### [@stdlib/array/filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/filled)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5836](https://github.com/stdlib-js/stdlib/issues/5836)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-fixed-endian-factory-unreleased">
 
 #### [@stdlib/array/fixed-endian-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/fixed-endian-factory)
@@ -1089,9 +1113,9 @@ A total of 12 issues were closed in this release:
 
 ### Closed Issues
 
-A total of 27 issues were closed in this release:
+A total of 28 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180), [#5836](https://github.com/stdlib-js/stdlib/issues/5836)
 
 </section>
 
@@ -1101,12 +1125,13 @@ A total of 27 issues were closed in this release:
 
 ### Contributors
 
-A total of 12 people contributed to this release. Thank you to the following contributors:
+A total of 13 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
 -   Aditya Sapra
 -   Ahmed Kashkoush
+-   Anshu Kumar
 -   Athan Reines
 -   Gururaj Gurram
 -   Kshitij-Dale
@@ -1126,6 +1151,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c31eccd`](https://github.com/stdlib-js/stdlib/commit/c31eccd4e752a5647b718df9f3b70739c8a4b45b) - **chore(array):** fix incorrect JSDoc type [(#5844)](https://github.com/stdlib-js/stdlib/pull/5844) _(by Anshu Kumar)_
 -   [`165c7fb`](https://github.com/stdlib-js/stdlib/commit/165c7fb75861f4c1ee28940aadbe44ba4f6e8268) - **fix:** use the correct TypeScript callback signature and update docs for `array/base/for-each` [(#5448)](https://github.com/stdlib-js/stdlib/pull/5448) _(by Muhammad Haris)_
 -   [`01e81a5`](https://github.com/stdlib-js/stdlib/commit/01e81a54c2f1294efe1d199cba7dfc6ac8bb9acf) - **refactor:** update path _(by Athan Reines)_
 -   [`072052b`](https://github.com/stdlib-js/stdlib/commit/072052b92dd00f2b36727c6b0364b64ddcc32ecb) - **feat:** add `array/base/for-each` [(#5319)](https://github.com/stdlib-js/stdlib/pull/5319) _(by Muhammad Haris, Athan Reines)_
