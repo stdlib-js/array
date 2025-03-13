@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-10)
+## Unreleased (2025-03-13)
 
 <section class="packages">
 
@@ -831,6 +831,50 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-symmetric-banded-filled2d-by-unreleased">
+
+#### [@stdlib/array/base/symmetric-banded/filled2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/symmetric-banded/filled2d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`41a2534`](https://github.com/stdlib-js/stdlib/commit/41a2534c6dd345a0dc73365826919ccbf1e9eca7) - add `array/base/symmetric-banded/filled2d-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-symmetric-filled2d-by-unreleased">
+
+#### [@stdlib/array/base/symmetric/filled2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/symmetric/filled2d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`052b810`](https://github.com/stdlib-js/stdlib/commit/052b81032b766464a079bc88cc676e38dac0c35a) - add `array/base/symmetric/filled2d-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-take-indexed2-unreleased">
 
 #### [@stdlib/array/base/take-indexed2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/take-indexed2)
@@ -1151,6 +1195,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`41a2534`](https://github.com/stdlib-js/stdlib/commit/41a2534c6dd345a0dc73365826919ccbf1e9eca7) - **feat:** add `array/base/symmetric-banded/filled2d-by` _(by Athan Reines)_
+-   [`052b810`](https://github.com/stdlib-js/stdlib/commit/052b81032b766464a079bc88cc676e38dac0c35a) - **feat:** add `array/base/symmetric/filled2d-by` _(by Athan Reines)_
 -   [`c31eccd`](https://github.com/stdlib-js/stdlib/commit/c31eccd4e752a5647b718df9f3b70739c8a4b45b) - **chore(array):** fix incorrect JSDoc type [(#5844)](https://github.com/stdlib-js/stdlib/pull/5844) _(by Anshu Kumar)_
 -   [`165c7fb`](https://github.com/stdlib-js/stdlib/commit/165c7fb75861f4c1ee28940aadbe44ba4f6e8268) - **fix:** use the correct TypeScript callback signature and update docs for `array/base/for-each` [(#5448)](https://github.com/stdlib-js/stdlib/pull/5448) _(by Muhammad Haris)_
 -   [`01e81a5`](https://github.com/stdlib-js/stdlib/commit/01e81a54c2f1294efe1d199cba7dfc6ac8bb9acf) - **refactor:** update path _(by Athan Reines)_
