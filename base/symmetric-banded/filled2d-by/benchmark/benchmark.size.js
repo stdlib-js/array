@@ -37,9 +37,10 @@ var filled2dBy = require( './../lib' );
 *
 * @private
 * @param {PositiveInteger} N - array lengths
+* @param {NonNegativeInteger} k - number of super-/sub-diagonals
 * @returns {Function} benchmark function
 */
-function createBenchmark( N ) {
+function createBenchmark( N, k ) {
 	return benchmark;
 
 	/**
@@ -57,7 +58,7 @@ function createBenchmark( N ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = filled2dBy( N, 2, 0, f );
+			out = filled2dBy( N, k, 0, f );
 			if ( typeof out !== 'object' ) {
 				b.fail( 'should return an array of arrays' );
 			}
@@ -85,15 +86,17 @@ function main() {
 	var N;
 	var f;
 	var i;
+	var k;
 
 	min = 1; // 10^min
 	max = 6; // 10^max
 
+	k = 2;
 	for ( i = min; i <= max; i++ ) {
 		N = floor( sqrt( pow( 10, i ) ) );
 
-		f = createBenchmark( N );
-		bench( pkg+':k=2,size='+(N*N), f );
+		f = createBenchmark( N, k );
+		bench( pkg+':k='+k+',size='+(N*N), f );
 	}
 }
 

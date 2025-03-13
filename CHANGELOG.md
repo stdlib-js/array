@@ -1195,6 +1195,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`8e00e52`](https://github.com/stdlib-js/stdlib/commit/8e00e52bed8c7b4fec42c468bd021815a417b988) - **bench:** parameterize `k` _(by Athan Reines)_
 -   [`41a2534`](https://github.com/stdlib-js/stdlib/commit/41a2534c6dd345a0dc73365826919ccbf1e9eca7) - **feat:** add `array/base/symmetric-banded/filled2d-by` _(by Athan Reines)_
 -   [`052b810`](https://github.com/stdlib-js/stdlib/commit/052b81032b766464a079bc88cc676e38dac0c35a) - **feat:** add `array/base/symmetric/filled2d-by` _(by Athan Reines)_
 -   [`c31eccd`](https://github.com/stdlib-js/stdlib/commit/c31eccd4e752a5647b718df9f3b70739c8a4b45b) - **chore(array):** fix incorrect JSDoc type [(#5844)](https://github.com/stdlib-js/stdlib/pull/5844) _(by Anshu Kumar)_
