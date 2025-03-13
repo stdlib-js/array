@@ -171,6 +171,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="array-base-banded-filled2d-by-unreleased">
+
+#### [@stdlib/array/base/banded/filled2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/banded/filled2d-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6f20f70`](https://github.com/stdlib-js/stdlib/commit/6f20f707c3a94f5fb14b55144f52d2c1aa540c9f) - add `array/base/banded/filled2d-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-broadcasted-quaternary3d-unreleased">
 
 #### [@stdlib/array/base/broadcasted-quaternary3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/broadcasted-quaternary3d)
@@ -1195,6 +1217,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`1bb5ea9`](https://github.com/stdlib-js/stdlib/commit/1bb5ea9e19c1d89b1cb7504d8e369b7fea02e94d) - **test:** add test cases _(by Athan Reines)_
+-   [`6f20f70`](https://github.com/stdlib-js/stdlib/commit/6f20f707c3a94f5fb14b55144f52d2c1aa540c9f) - **feat:** add `array/base/banded/filled2d-by` _(by Athan Reines)_
 -   [`8e00e52`](https://github.com/stdlib-js/stdlib/commit/8e00e52bed8c7b4fec42c468bd021815a417b988) - **bench:** parameterize `k` _(by Athan Reines)_
 -   [`41a2534`](https://github.com/stdlib-js/stdlib/commit/41a2534c6dd345a0dc73365826919ccbf1e9eca7) - **feat:** add `array/base/symmetric-banded/filled2d-by` _(by Athan Reines)_
 -   [`052b810`](https://github.com/stdlib-js/stdlib/commit/052b81032b766464a079bc88cc676e38dac0c35a) - **feat:** add `array/base/symmetric/filled2d-by` _(by Athan Reines)_
