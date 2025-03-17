@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-14)
+## Unreleased (2025-03-17)
 
 <section class="packages">
 
@@ -1261,6 +1261,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`ef1d278`](https://github.com/stdlib-js/stdlib/commit/ef1d278f2a382993d2cc63f83458778593767708) - **feat:** add `array/base/banded/to-compact` _(by Athan Reines)_
 -   [`f9bb0d7`](https://github.com/stdlib-js/stdlib/commit/f9bb0d77a4ce5ad813c371f5d49d2cee7476b775) - **feat:** add `array/base/symmetric-banded/to-compact` _(by Athan Reines)_
 -   [`1bb5ea9`](https://github.com/stdlib-js/stdlib/commit/1bb5ea9e19c1d89b1cb7504d8e369b7fea02e94d) - **test:** add test cases _(by Athan Reines)_
