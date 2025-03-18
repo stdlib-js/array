@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-03-18)
 
 <section class="packages">
 
@@ -661,6 +661,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-map-unreleased">
+
+#### [@stdlib/array/base/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/map)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9b2b107`](https://github.com/stdlib-js/stdlib/commit/9b2b10706d20bf18b5a862b0be1c3c53be30c9ce) - add `array/base/map` [(#5346)](https://github.com/stdlib-js/stdlib/pull/5346)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-msk-unreleased">
 
 #### [@stdlib/array/base/msk](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/msk)
@@ -1261,6 +1283,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`9b2b107`](https://github.com/stdlib-js/stdlib/commit/9b2b10706d20bf18b5a862b0be1c3c53be30c9ce) - **feat:** add `array/base/map` [(#5346)](https://github.com/stdlib-js/stdlib/pull/5346) _(by Muhammad Haris, Athan Reines)_
 -   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`ef1d278`](https://github.com/stdlib-js/stdlib/commit/ef1d278f2a382993d2cc63f83458778593767708) - **feat:** add `array/base/banded/to-compact` _(by Athan Reines)_
 -   [`f9bb0d7`](https://github.com/stdlib-js/stdlib/commit/f9bb0d77a4ce5ad813c371f5d49d2cee7476b775) - **feat:** add `array/base/symmetric-banded/to-compact` _(by Athan Reines)_
