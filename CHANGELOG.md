@@ -1316,6 +1316,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`9d448eb`](https://github.com/stdlib-js/stdlib/commit/9d448eb903bf7121e982f913209f92b1eeaf49e2) - **docs:** update namespace table of contents [(#6276)](https://github.com/stdlib-js/stdlib/pull/6276) _(by stdlib-bot)_
 -   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
 -   [`ab96811`](https://github.com/stdlib-js/stdlib/commit/ab968115af31dba0958736eeb1fc1fd73903c16c) - **feat:** add `array/base/fill-by` _(by Athan Reines)_
 -   [`b41b329`](https://github.com/stdlib-js/stdlib/commit/b41b329153af54747648343fe20907feecac2639) - **test:** add tests _(by Athan Reines)_
