@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-18)
+## Unreleased (2025-03-22)
 
 <section class="packages">
 
@@ -64,6 +64,7 @@
 
 ##### Features
 
+-   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - add `fillBy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`04f5785`](https://github.com/stdlib-js/stdlib/commit/04f5785ed011a7b0701eba10274cf4308f16bbad) - add `scatterFilled` to namespace
 -   [`5682699`](https://github.com/stdlib-js/stdlib/commit/56826996a6bc1179b9b99e33f81c814100a8fb78) - add `scattered` to namespace
@@ -464,6 +465,38 @@ This release closes the following issue:
 ##### Features
 
 -   [`837e86f`](https://github.com/stdlib-js/stdlib/commit/837e86f0d4acd61a3f9283e7c6c9e2036912b489) - add `array/base/fill`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`09ff0ce`](https://github.com/stdlib-js/stdlib/commit/09ff0ce53ae1c659591a4106c7f44b9df29bcdfd) - add missing index normalization and add associated tests
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-fill-by-unreleased">
+
+#### [@stdlib/array/base/fill-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/fill-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ab96811`](https://github.com/stdlib-js/stdlib/commit/ab968115af31dba0958736eeb1fc1fd73903c16c) - add `array/base/fill-by`
 
 </section>
 
@@ -1283,6 +1316,12 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
+-   [`ab96811`](https://github.com/stdlib-js/stdlib/commit/ab968115af31dba0958736eeb1fc1fd73903c16c) - **feat:** add `array/base/fill-by` _(by Athan Reines)_
+-   [`b41b329`](https://github.com/stdlib-js/stdlib/commit/b41b329153af54747648343fe20907feecac2639) - **test:** add tests _(by Athan Reines)_
+-   [`1f692ff`](https://github.com/stdlib-js/stdlib/commit/1f692ffb74ca5c9f27092829f71f8bc279edd5b7) - **docs:** add note and fix note _(by Athan Reines)_
+-   [`da6bf00`](https://github.com/stdlib-js/stdlib/commit/da6bf00e5a133d6cff6afc6c18c8a60a2e750a3d) - **docs:** add note _(by Athan Reines)_
+-   [`09ff0ce`](https://github.com/stdlib-js/stdlib/commit/09ff0ce53ae1c659591a4106c7f44b9df29bcdfd) - **fix:** add missing index normalization and add associated tests _(by Athan Reines)_
 -   [`9b2b107`](https://github.com/stdlib-js/stdlib/commit/9b2b10706d20bf18b5a862b0be1c3c53be30c9ce) - **feat:** add `array/base/map` [(#5346)](https://github.com/stdlib-js/stdlib/pull/5346) _(by Muhammad Haris, Athan Reines)_
 -   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`ef1d278`](https://github.com/stdlib-js/stdlib/commit/ef1d278f2a382993d2cc63f83458778593767708) - **feat:** add `array/base/banded/to-compact` _(by Athan Reines)_

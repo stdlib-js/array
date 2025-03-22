@@ -622,6 +622,15 @@ setReadOnly( ns, 'fancySliceAssign', require( './../../base/fancy-slice-assign' 
 setReadOnly( ns, 'fill', require( './../../base/fill' ) );
 
 /**
+* @name fillBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/fill-by}
+*/
+setReadOnly( ns, 'fillBy', require( './../../base/fill-by' ) );
+
+/**
 * @name filled
 * @memberof ns
 * @readonly
