@@ -64,6 +64,7 @@
 
 ##### Features
 
+-   [`4623339`](https://github.com/stdlib-js/stdlib/commit/46233390b61053807a2b8ce901c1f03974bd04f9) - update namespace TypeScript declarations [(#6275)](https://github.com/stdlib-js/stdlib/pull/6275)
 -   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - add `fillBy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`04f5785`](https://github.com/stdlib-js/stdlib/commit/04f5785ed011a7b0701eba10274cf4308f16bbad) - add `scatterFilled` to namespace
@@ -1316,6 +1317,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`4623339`](https://github.com/stdlib-js/stdlib/commit/46233390b61053807a2b8ce901c1f03974bd04f9) - **feat:** update namespace TypeScript declarations [(#6275)](https://github.com/stdlib-js/stdlib/pull/6275) _(by stdlib-bot)_
 -   [`9d448eb`](https://github.com/stdlib-js/stdlib/commit/9d448eb903bf7121e982f913209f92b1eeaf49e2) - **docs:** update namespace table of contents [(#6276)](https://github.com/stdlib-js/stdlib/pull/6276) _(by stdlib-bot)_
 -   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
 -   [`ab96811`](https://github.com/stdlib-js/stdlib/commit/ab968115af31dba0958736eeb1fc1fd73903c16c) - **feat:** add `array/base/fill-by` _(by Athan Reines)_
