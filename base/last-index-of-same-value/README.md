@@ -20,7 +20,7 @@ limitations under the License.
 
 # lastIndexOfSameValue
 
-> Return the index of the last element which equals a provided search element according to the [same value algorithm][@stdlib/assert/is-same-value].
+> Return the index of the last element which equals a provided search element according to the [SameValue Algorithm][@stdlib/assert/is-same-value].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var lastIndexOfSameValue = require( '@stdlib/array/base/last-index-of-same-value
 
 #### lastIndexOfSameValue( x, searchElement, fromIndex )
 
-Returns the index of the last element which equals a provided search element according to the [same value algorithm][@stdlib/assert/is-same-value].
+Returns the index of the last element which equals a provided search element according to the [SameValue Algorithm][@stdlib/assert/is-same-value].
 
 ```javascript
 var x = [ 1, 2, 3, 4, 5, 6 ];
@@ -89,7 +89,7 @@ var idx = lastIndexOfSameValue( x, 2, -4 );
 ## Notes
 
 -   The function scans an input array from the starting index to the beginning of the array (i.e., backward).
--   When searching for a search element, the function checks for equality using the [same value algorithm][@stdlib/assert/is-same-value]. As a consequence, `NaN` values are considered equal, and `-0` and `+0` are considered distinct.
+-   When searching for a search element, the function checks for equality using the [SameValue Algorithm][@stdlib/assert/is-same-value] as specified in ECMAScript 5. As a consequence, `NaN` values are considered equal, and `-0` and `+0` are considered distinct.
 
 </section>
 

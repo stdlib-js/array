@@ -890,6 +890,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`74d2527`](https://github.com/stdlib-js/stdlib/commit/74d2527745106957e4b6228975dceb3578adcc5a) - add specialized support for complex number and boolean arrays
 -   [`25fd7dd`](https://github.com/stdlib-js/stdlib/commit/25fd7dd71923e473865bb8c814fdef3981b17593) - add `array/base/last-index-of-same-value`
 
 </section>
@@ -1624,6 +1625,11 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`74d2527`](https://github.com/stdlib-js/stdlib/commit/74d2527745106957e4b6228975dceb3578adcc5a) - **feat:** add specialized support for complex number and boolean arrays _(by Athan Reines)_
+-   [`b27b960`](https://github.com/stdlib-js/stdlib/commit/b27b96086d569c9b6c99f7a5f2a24d74c8d41618) - **test:** add test cases _(by Athan Reines)_
+-   [`f57b1c2`](https://github.com/stdlib-js/stdlib/commit/f57b1c262867fcaa6dc94b1ce64ab36c619b91a8) - **refactor:** reduce overhead by using specialized utilities _(by Athan Reines)_
+-   [`534ddc0`](https://github.com/stdlib-js/stdlib/commit/534ddc015151231e4c9d5e9447b0a8966295876d) - **refactor:** reduce overhead by using specialized utilities _(by Athan Reines)_
+-   [`91c33f0`](https://github.com/stdlib-js/stdlib/commit/91c33f0eeb8bade27b26671a5280a7ec9758a688) - **refactor:** reduce overhead by using specialized utilities _(by Athan Reines)_
 -   [`c7f060f`](https://github.com/stdlib-js/stdlib/commit/c7f060f6549d45a4c7faa06b25ff55a882ee6299) - **test:** add test cases _(by Athan Reines)_
 -   [`b68b283`](https://github.com/stdlib-js/stdlib/commit/b68b28358b19ba7e4d23d9a87acfb283c3c0ea3d) - **feat:** add specialized support for complex number and boolean arrays _(by Athan Reines)_
 -   [`e8bb580`](https://github.com/stdlib-js/stdlib/commit/e8bb580f445dcbeeb03e458def428d9e820ab808) - **feat:** add `lastIndexOfSameValue` to namespace _(by Athan Reines)_

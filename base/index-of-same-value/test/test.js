@@ -141,6 +141,9 @@ tape( 'the function returns the first index of an element which equals a provide
 	actual = indexOfSameValue( x, new Complex128( 3.0, 3.0 ), 0 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
+	actual = indexOfSameValue( x, new Complex128( 2.0, 2.0 ), 4 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
 	// Nonnegative starting index...
 	actual = indexOfSameValue( x, new Complex128( 1.0, 1.0 ), 1 );
 	t.strictEqual( actual, 1, 'returns expected value' );
@@ -185,6 +188,9 @@ tape( 'the function returns the first index of an element which equals a provide
 
 	actual = indexOfSameValue( x, false, 0 );
 	t.strictEqual( actual, 2, 'returns expected value' );
+
+	actual = indexOfSameValue( x, false, 4 );
+	t.strictEqual( actual, -1, 'returns expected value' );
 
 	// Nonnegative starting index...
 	actual = indexOfSameValue( x, true, 1 );

@@ -20,7 +20,8 @@
 
 // MODULES //
 
-var arraylike2object = require( './../../../base/arraylike2object' );
+var isAccessorArray = require( '@stdlib/assert/is-accessor-array' );
+var resolveGetter = require( './../../../base/resolve-getter' );
 
 
 // FUNCTIONS //
@@ -81,23 +82,19 @@ function internal( x, searchElement, fromIndex ) {
 *
 * @example
 * var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
-* var arraylike2object = require( '@stdlib/array/base/arraylike2object' );
 *
-* var x = arraylike2object( toAccessorArray( [ 1, 2, 3, 4 ] ) );
+* var x = toAccessorArray( [ 1, 2, 3, 4 ] );
 *
 * var idx = accessors( x, 2, 0 );
 * // returns 1
 */
 function accessors( x, searchElement, fromIndex ) {
-	var data;
 	var get;
 	var i;
 
-	data = x.data;
-	get = x.accessors[ 0 ];
-
-	for ( i = fromIndex; i < data.length; i++ ) {
-		if ( searchElement === get( data, i ) ) {
+	get = resolveGetter( x );
+	for ( i = fromIndex; i < x.length; i++ ) {
+		if ( searchElement === get( x, i ) ) {
 			return i;
 		}
 	}
@@ -134,7 +131,6 @@ function accessors( x, searchElement, fromIndex ) {
 * // returns 1
 */
 function indexOf( x, searchElement, fromIndex ) {
-	var obj;
 	if ( hasMethod( x, 'indexOf' ) ) {
 		return x.indexOf( searchElement, fromIndex );
 	}
@@ -144,9 +140,8 @@ function indexOf( x, searchElement, fromIndex ) {
 			fromIndex = 0;
 		}
 	}
-	obj = arraylike2object( x );
-	if ( obj.accessorProtocol ) {
-		return accessors( obj, searchElement, fromIndex );
+	if ( isAccessorArray( x ) ) {
+		return accessors( x, searchElement, fromIndex );
 	}
 	return internal( x, searchElement, fromIndex );
 }

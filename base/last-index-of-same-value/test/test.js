@@ -22,8 +22,11 @@
 
 var tape = require( 'tape' );
 var AccessorArray = require( './../../../base/accessor' );
+var Complex128Array = require( './../../../complex128' );
+var BooleanArray = require( './../../../bool' );
 var Float64Array = require( './../../../float64' );
 var Int32Array = require( './../../../int32' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var lastIndexOfSameValue = require( './../lib' );
 
 
@@ -125,6 +128,102 @@ tape( 'the function returns the last index of an element which equals a provided
 
 	actual = lastIndexOfSameValue( x, 3.0, -1 );
 	t.strictEqual( actual, 5, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns the last index of an element which equals a provided search element (complex128)', function test( t ) {
+	var actual;
+	var x;
+
+	x = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0 ] ); // eslint-disable-line max-len
+
+	actual = lastIndexOfSameValue( x, new Complex128( 1.0, 1.0 ), 5 );
+	t.strictEqual( actual, 1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 2.0, 2.0 ), 5 );
+	t.strictEqual( actual, 3, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 3.0, 3.0 ), 5 );
+	t.strictEqual( actual, 5, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 2.0, 2.0 ), 1 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
+	// Nonnegative starting index...
+	actual = lastIndexOfSameValue( x, new Complex128( 1.0, 1.0 ), 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 2.0, 2.0 ), 2 );
+	t.strictEqual( actual, 2, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 3.0, 3.0 ), 4 );
+	t.strictEqual( actual, 4, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 3.0, 3.0 ), 100 );
+	t.strictEqual( actual, 5, 'returns expected value' );
+
+	// Negative starting index...
+	actual = lastIndexOfSameValue( x, new Complex128( 1.0, 1.0 ), -1 );
+	t.strictEqual( actual, 1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 3.0, 3.0 ), -2 );
+	t.strictEqual( actual, 4, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 1.0, 1.0 ), -5 );
+	t.strictEqual( actual, 1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 2.0, 2.0 ), -3 );
+	t.strictEqual( actual, 3, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, new Complex128( 3.0, 3.0 ), -1 );
+	t.strictEqual( actual, 5, 'returns expected value' );
+
+	// Non-complex values:
+	actual = lastIndexOfSameValue( x, 1.0, 0 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns the last index of an element which equals a provided search element (bool)', function test( t ) {
+	var actual;
+	var x;
+
+	x = new BooleanArray( [ true, true, false, false, true, true ] );
+
+	actual = lastIndexOfSameValue( x, true, 5 );
+	t.strictEqual( actual, 5, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, false, 2 );
+	t.strictEqual( actual, 2, 'returns expected value' );
+
+	// Nonnegative starting index...
+	actual = lastIndexOfSameValue( x, true, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, false, 2 );
+	t.strictEqual( actual, 2, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, true, 4 );
+	t.strictEqual( actual, 4, 'returns expected value' );
+
+	// Negative starting index...
+	actual = lastIndexOfSameValue( x, true, -1 );
+	t.strictEqual( actual, 5, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, true, -3 );
+	t.strictEqual( actual, 1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, false, -5 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( x, false, -3 );
+	t.strictEqual( actual, 3, 'returns expected value' );
+
+	// Non-boolean values:
+	actual = lastIndexOfSameValue( x, 0, 0 );
+	t.strictEqual( actual, -1, 'returns expected value' );
 
 	t.end();
 });
