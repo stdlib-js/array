@@ -1,16 +1,10 @@
 
 {{alias}}( x, searchElement, fromIndex )
     Returns the index of the first element which equals a provided search
-    element.
+    element according to the same value algorithm.
 
-    If provided an array-like object having an `indexOf` method, the function
-    defers execution to that method and assumes that the method has the
-    following signature:
-
-        x.indexOf( searchElement, fromIndex )
-
-    If provided an array-like object without an `indexOf` method, the function
-    performs a linear scan and returns immediately upon finding a match.
+    The function performs a linear scan and returns immediately upon finding a
+    match.
 
     If unable to find an element which equals a provided search element, the
     function returns -1.

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ var pow = require( '@stdlib/math/base/special/pow' );
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
 var zeroTo = require( './../../../base/zero-to' );
 var pkg = require( './../package.json' ).name;
-var lastIndexOf = require( './../lib' );
+var lastIndexOfSameValue = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -53,7 +53,7 @@ function createBenchmark( len ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = lastIndexOf( x, -2, len-1 );
+			out = lastIndexOfSameValue( x, -2, len-1 );
 			if ( out !== out ) {
 				b.fail( 'should return an integer' );
 			}

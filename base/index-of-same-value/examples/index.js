@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,25 +18,26 @@
 
 'use strict';
 
-/**
-* Return the index of the last element which equals a provided search element.
-*
-* @module @stdlib/array/base/last-index-of
-*
-* @example
-* var lastIndexOf = require( '@stdlib/array/base/last-index-of' );
-*
-* var x = [ 1, 2, 3, 4 ];
-*
-* var idx = lastIndexOf( x, 2, 3 );
-* // returns 1
-*/
+var indexOfSameValue = require( './../lib' );
 
-// MODULES //
+var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
-var main = require( './main.js' );
+var idx = indexOfSameValue( x, 'beep', 0 );
+console.log( idx );
+// => 2
 
+idx = indexOfSameValue( x, 'bop', 0 );
+console.log( idx );
+// => -1
 
-// EXPORTS //
+idx = indexOfSameValue( x, 'foo', 1 );
+console.log( idx );
+// => 4
 
-module.exports = main;
+idx = indexOfSameValue( x, 'foo', -4 );
+console.log( idx );
+// => 4
+
+idx = indexOfSameValue( x, 'foo', 5 );
+console.log( idx );
+// => -1

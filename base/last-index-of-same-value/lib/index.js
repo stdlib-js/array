@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,16 +19,16 @@
 'use strict';
 
 /**
-* Return the index of the last element which equals a provided search element.
+* Return the index of the last element which equals a provided search element according to the same value algorithm.
 *
-* @module @stdlib/array/base/last-index-of
+* @module @stdlib/array/base/last-index-of-same-value
 *
 * @example
-* var lastIndexOf = require( '@stdlib/array/base/last-index-of' );
+* var lastIndexOfSameValue = require( '@stdlib/array/base/last-index-of-same-value' );
 *
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = lastIndexOf( x, 2, 3 );
+* var idx = lastIndexOfSameValue( x, 2, 3 );
 * // returns 1
 */
 

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-22)
+## Unreleased (2025-03-31)
 
 <section class="packages">
 
@@ -64,6 +64,8 @@
 
 ##### Features
 
+-   [`e8bb580`](https://github.com/stdlib-js/stdlib/commit/e8bb580f445dcbeeb03e458def428d9e820ab808) - add `lastIndexOfSameValue` to namespace
+-   [`e8a96a1`](https://github.com/stdlib-js/stdlib/commit/e8a96a17652f957f69c041a2f7292bee1b827aeb) - add `indexOfSameValue` to namespace
 -   [`4623339`](https://github.com/stdlib-js/stdlib/commit/46233390b61053807a2b8ce901c1f03974bd04f9) - update namespace TypeScript declarations [(#6275)](https://github.com/stdlib-js/stdlib/pull/6275)
 -   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - add `fillBy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
@@ -673,6 +675,108 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-index-of-unreleased">
+
+#### [@stdlib/array/base/index-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/index-of)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8575ee7`](https://github.com/stdlib-js/stdlib/commit/8575ee7d7d239a16afd5e3bf396e5a0da281f537) - remove `equalnans` support
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`8575ee7`](https://github.com/stdlib-js/stdlib/commit/8575ee7d7d239a16afd5e3bf396e5a0da281f537): remove `equalnans` support
+
+    -   To migrate, users should use `array/base/index-of-same-value` which
+        treats `NaN` values as equal.
+        ---
+        type: pre_commit_static_analysis_report
+        description: Results of running static analysis checks when committing changes.
+        report:
+          - task: lint_filenames
+            status: passed
+          - task: lint_editorconfig
+            status: passed
+          - task: lint_markdown
+            status: passed
+          - task: lint_package_json
+            status: na
+          - task: lint_repl_help
+            status: passed
+          - task: lint_javascript_src
+            status: passed
+          - task: lint_javascript_cli
+            status: na
+          - task: lint_javascript_examples
+            status: passed
+          - task: lint_javascript_tests
+            status: passed
+          - task: lint_javascript_benchmarks
+            status: passed
+          - task: lint_python
+            status: na
+          - task: lint_r
+            status: na
+          - task: lint_c_src
+            status: na
+          - task: lint_c_examples
+            status: na
+          - task: lint_c_benchmarks
+            status: na
+          - task: lint_c_tests_fixtures
+            status: na
+          - task: lint_shell
+            status: na
+          - task: lint_typescript_declarations
+            status: passed
+          - task: lint_typescript_tests
+            status: passed
+          - task: lint_license_headers
+            status: passed
+        ---
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-index-of-same-value-unreleased">
+
+#### [@stdlib/array/base/index-of-same-value](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/index-of-same-value)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c7f571e`](https://github.com/stdlib-js/stdlib/commit/c7f571ef00c124a120847f0c8fa59053c7c27dba) - add `array/base/index-of-same-value`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-indices-complement-unreleased">
 
 #### [@stdlib/array/base/indices-complement](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/indices-complement)
@@ -684,6 +788,108 @@ This release closes the following issue:
 ##### Features
 
 -   [`348a463`](https://github.com/stdlib-js/stdlib/commit/348a463487c659b44178d5e669950b65206b9944) - add `array/base/indices-complement`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-last-index-of-unreleased">
+
+#### [@stdlib/array/base/last-index-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/last-index-of)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`82ee31f`](https://github.com/stdlib-js/stdlib/commit/82ee31f3193dc0854b0767ddf9e9effed62ba878) - remove `equalNaNs` support
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`82ee31f`](https://github.com/stdlib-js/stdlib/commit/82ee31f3193dc0854b0767ddf9e9effed62ba878): remove `equalNaNs` support
+
+    -   To migrate, users should use `array/base/last-index-of-same-value`
+        which treats `NaN` values as equal.
+        ---
+        type: pre_commit_static_analysis_report
+        description: Results of running static analysis checks when committing changes.
+        report:
+          - task: lint_filenames
+            status: passed
+          - task: lint_editorconfig
+            status: passed
+          - task: lint_markdown
+            status: passed
+          - task: lint_package_json
+            status: na
+          - task: lint_repl_help
+            status: passed
+          - task: lint_javascript_src
+            status: passed
+          - task: lint_javascript_cli
+            status: na
+          - task: lint_javascript_examples
+            status: passed
+          - task: lint_javascript_tests
+            status: passed
+          - task: lint_javascript_benchmarks
+            status: passed
+          - task: lint_python
+            status: na
+          - task: lint_r
+            status: na
+          - task: lint_c_src
+            status: na
+          - task: lint_c_examples
+            status: na
+          - task: lint_c_benchmarks
+            status: na
+          - task: lint_c_tests_fixtures
+            status: na
+          - task: lint_shell
+            status: na
+          - task: lint_typescript_declarations
+            status: passed
+          - task: lint_typescript_tests
+            status: passed
+          - task: lint_license_headers
+            status: passed
+        ---
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-last-index-of-same-value-unreleased">
+
+#### [@stdlib/array/base/last-index-of-same-value](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/last-index-of-same-value)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`25fd7dd`](https://github.com/stdlib-js/stdlib/commit/25fd7dd71923e473865bb8c814fdef3981b17593) - add `array/base/last-index-of-same-value`
 
 </section>
 
@@ -1267,6 +1473,106 @@ A total of 12 issues were closed in this release:
 
 ### BREAKING CHANGES
 
+-   [`82ee31f`](https://github.com/stdlib-js/stdlib/commit/82ee31f3193dc0854b0767ddf9e9effed62ba878): remove `equalNaNs` support
+
+    -   To migrate, users should use `array/base/last-index-of-same-value`
+        which treats `NaN` values as equal.
+        ---
+        type: pre_commit_static_analysis_report
+        description: Results of running static analysis checks when committing changes.
+        report:
+          - task: lint_filenames
+            status: passed
+          - task: lint_editorconfig
+            status: passed
+          - task: lint_markdown
+            status: passed
+          - task: lint_package_json
+            status: na
+          - task: lint_repl_help
+            status: passed
+          - task: lint_javascript_src
+            status: passed
+          - task: lint_javascript_cli
+            status: na
+          - task: lint_javascript_examples
+            status: passed
+          - task: lint_javascript_tests
+            status: passed
+          - task: lint_javascript_benchmarks
+            status: passed
+          - task: lint_python
+            status: na
+          - task: lint_r
+            status: na
+          - task: lint_c_src
+            status: na
+          - task: lint_c_examples
+            status: na
+          - task: lint_c_benchmarks
+            status: na
+          - task: lint_c_tests_fixtures
+            status: na
+          - task: lint_shell
+            status: na
+          - task: lint_typescript_declarations
+            status: passed
+          - task: lint_typescript_tests
+            status: passed
+          - task: lint_license_headers
+            status: passed
+        ---
+
+-   [`8575ee7`](https://github.com/stdlib-js/stdlib/commit/8575ee7d7d239a16afd5e3bf396e5a0da281f537): remove `equalnans` support
+
+    -   To migrate, users should use `array/base/index-of-same-value` which
+        treats `NaN` values as equal.
+        ---
+        type: pre_commit_static_analysis_report
+        description: Results of running static analysis checks when committing changes.
+        report:
+          - task: lint_filenames
+            status: passed
+          - task: lint_editorconfig
+            status: passed
+          - task: lint_markdown
+            status: passed
+          - task: lint_package_json
+            status: na
+          - task: lint_repl_help
+            status: passed
+          - task: lint_javascript_src
+            status: passed
+          - task: lint_javascript_cli
+            status: na
+          - task: lint_javascript_examples
+            status: passed
+          - task: lint_javascript_tests
+            status: passed
+          - task: lint_javascript_benchmarks
+            status: passed
+          - task: lint_python
+            status: na
+          - task: lint_r
+            status: na
+          - task: lint_c_src
+            status: na
+          - task: lint_c_examples
+            status: na
+          - task: lint_c_benchmarks
+            status: na
+          - task: lint_c_tests_fixtures
+            status: na
+          - task: lint_shell
+            status: na
+          - task: lint_typescript_declarations
+            status: passed
+          - task: lint_typescript_tests
+            status: passed
+          - task: lint_license_headers
+            status: passed
+        ---
+
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec): update namespace declarations
 
     -   To migrate, users should consult the corresponding packages containing the respective implementations to determine what is breaking. The primary breakages come from the `blas/*` namespace, where we recently refactored how top-level BLAS APIs operate on input arguments.
@@ -1317,6 +1623,15 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`e8bb580`](https://github.com/stdlib-js/stdlib/commit/e8bb580f445dcbeeb03e458def428d9e820ab808) - **feat:** add `lastIndexOfSameValue` to namespace _(by Athan Reines)_
+-   [`25fd7dd`](https://github.com/stdlib-js/stdlib/commit/25fd7dd71923e473865bb8c814fdef3981b17593) - **feat:** add `array/base/last-index-of-same-value` _(by Athan Reines)_
+-   [`e8a96a1`](https://github.com/stdlib-js/stdlib/commit/e8a96a17652f957f69c041a2f7292bee1b827aeb) - **feat:** add `indexOfSameValue` to namespace _(by Athan Reines)_
+-   [`c7f571e`](https://github.com/stdlib-js/stdlib/commit/c7f571ef00c124a120847f0c8fa59053c7c27dba) - **feat:** add `array/base/index-of-same-value` _(by Athan Reines)_
+-   [`fc42bf4`](https://github.com/stdlib-js/stdlib/commit/fc42bf4cdb21378b8df742abba7eebcc506bfc4b) - **refactor:** use more generic types _(by Athan Reines)_
+-   [`bbc90c5`](https://github.com/stdlib-js/stdlib/commit/bbc90c530bb2cd9f764e22efa8d127c4ff8275e5) - **refactor:** use more generic types _(by Athan Reines)_
+-   [`82ee31f`](https://github.com/stdlib-js/stdlib/commit/82ee31f3193dc0854b0767ddf9e9effed62ba878) - **feat:** remove `equalNaNs` support _(by Athan Reines)_
+-   [`1eb07cf`](https://github.com/stdlib-js/stdlib/commit/1eb07cf0699928631f83b036cc2b78a35bbc3c32) - **docs:** remove comments and fix note _(by Athan Reines)_
+-   [`8575ee7`](https://github.com/stdlib-js/stdlib/commit/8575ee7d7d239a16afd5e3bf396e5a0da281f537) - **feat:** remove `equalnans` support _(by Athan Reines)_
 -   [`4623339`](https://github.com/stdlib-js/stdlib/commit/46233390b61053807a2b8ce901c1f03974bd04f9) - **feat:** update namespace TypeScript declarations [(#6275)](https://github.com/stdlib-js/stdlib/pull/6275) _(by stdlib-bot)_
 -   [`9d448eb`](https://github.com/stdlib-js/stdlib/commit/9d448eb903bf7121e982f913209f92b1eeaf49e2) - **docs:** update namespace table of contents [(#6276)](https://github.com/stdlib-js/stdlib/pull/6276) _(by stdlib-bot)_
 -   [`a612b3d`](https://github.com/stdlib-js/stdlib/commit/a612b3dee234a1218596793d2d3be311154eb799) - **feat:** add `fillBy` to namespace _(by Athan Reines)_

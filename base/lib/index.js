@@ -1009,6 +1009,15 @@ setReadOnly( ns, 'incrspace', require( './../../base/incrspace' ) );
 setReadOnly( ns, 'indexOf', require( './../../base/index-of' ) );
 
 /**
+* @name indexOfSameValue
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/index-of-same-value}
+*/
+setReadOnly( ns, 'indexOfSameValue', require( './../../base/index-of-same-value' ) );
+
+/**
 * @name indicesComplement
 * @memberof ns
 * @readonly
@@ -1043,6 +1052,15 @@ setReadOnly( ns, 'last', require( './../../base/last' ) );
 * @see {@link module:@stdlib/array/base/last-index-of}
 */
 setReadOnly( ns, 'lastIndexOf', require( './../../base/last-index-of' ) );
+
+/**
+* @name lastIndexOfSameValue
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/last-index-of-same-value}
+*/
+setReadOnly( ns, 'lastIndexOfSameValue', require( './../../base/last-index-of-same-value' ) );
 
 /**
 * @name linspace

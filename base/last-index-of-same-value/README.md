@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2023 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# indexOf
+# lastIndexOfSameValue
 
-> Return the index of the first element which equals a provided search element.
+> Return the index of the last element which equals a provided search element according to the [same value algorithm][@stdlib/assert/is-same-value].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,17 +37,17 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var indexOf = require( '@stdlib/array/base/index-of' );
+var lastIndexOfSameValue = require( '@stdlib/array/base/last-index-of-same-value' );
 ```
 
-#### indexOf( x, searchElement, fromIndex )
+#### lastIndexOfSameValue( x, searchElement, fromIndex )
 
-Returns the index of the first element which equals a provided search element.
+Returns the index of the last element which equals a provided search element according to the [same value algorithm][@stdlib/assert/is-same-value].
 
 ```javascript
 var x = [ 1, 2, 3, 4, 5, 6 ];
 
-var idx = indexOf( x, 3, 0 );
+var idx = lastIndexOfSameValue( x, 3, 5 );
 // returns 2
 ```
 
@@ -56,17 +56,17 @@ If the function is unable to find an element which equals a provided search elem
 ```javascript
 var x = [ 1, 2, 3, 4, 5, 6 ];
 
-var idx = indexOf( x, 7, 0 );
+var idx = lastIndexOfSameValue( x, 7, 5 );
 // returns -1
 ```
 
-To begin searching from specific index, provide a non-zero `fromIndex` argument.
+To begin searching from a specific index, provide a corresponding `fromIndex` argument.
 
 ```javascript
 var x = [ 1, 1, 2, 1, 2, 3, 3 ];
 
-var idx = indexOf( x, 2, 3 );
-// returns 4
+var idx = lastIndexOfSameValue( x, 2, 3 );
+// returns 2
 ```
 
 If `fromIndex` is less than zero, the starting index is resolved relative to the last array element, with the last array element corresponding to `fromIndex = -1`.
@@ -74,8 +74,8 @@ If `fromIndex` is less than zero, the starting index is resolved relative to the
 ```javascript
 var x = [ 1, 1, 2, 1, 2, 3, 3 ];
 
-var idx = indexOf( x, 2, -4 );
-// returns 4
+var idx = lastIndexOfSameValue( x, 2, -4 );
+// returns 2
 ```
 
 </section>
@@ -88,15 +88,8 @@ var idx = indexOf( x, 2, -4 );
 
 ## Notes
 
--   If provided an array-like object having an `indexOf` method, the function defers execution to that method and assumes that the method API has the following signature:
-
-    ```text
-    x.indexOf( searchElement, fromIndex )
-    ```
-
--   If provided an array-like object without an `indexOf` method, the function performs a linear scan and returns immediately upon finding a match.
-
--   When searching for a search element, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   The function scans an input array from the starting index to the beginning of the array (i.e., backward).
+-   When searching for a search element, the function checks for equality using the [same value algorithm][@stdlib/assert/is-same-value]. As a consequence, `NaN` values are considered equal, and `-0` and `+0` are considered distinct.
 
 </section>
 
@@ -111,23 +104,23 @@ var idx = indexOf( x, 2, -4 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var indexOf = require( '@stdlib/array/base/index-of' );
+var lastIndexOfSameValue = require( '@stdlib/array/base/last-index-of-same-value' );
 
 var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
-var idx = indexOf( x, 'beep', 0 );
+var idx = lastIndexOfSameValue( x, 'beep', 5 );
 // returns 2
 
-idx = indexOf( x, 'bop', 0 );
+idx = lastIndexOfSameValue( x, 'bop', 5 );
 // returns -1
 
-idx = indexOf( x, 'foo', 1 );
+idx = lastIndexOfSameValue( x, 'foo', 5 );
 // returns 4
 
-idx = indexOf( x, 'foo', -4 );
-// returns 4
+idx = lastIndexOfSameValue( x, 'foo', -3 );
+// returns 0
 
-idx = indexOf( x, 'foo', 5 );
+idx = lastIndexOfSameValue( x, 'foo', -50 );
 // returns -1
 ```
 
@@ -154,6 +147,8 @@ idx = indexOf( x, 'foo', 5 );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
 
 </section>
 

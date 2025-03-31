@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,11 +23,10 @@
 import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Returns the index of the last element which equals a provided search element.
+* Returns the index of the first element which equals a provided search element according to the same value algorithm.
 *
 * ## Notes
 *
-* -   The function scans an input array from the starting index to the beginning of the array (i.e., backward).
 * -   If unable to find an element which equals a provided search element, the function returns `-1`.
 * -   If `fromIndex` is less than zero, the starting index is resolved relative to the last array element, with the last array element corresponding to `fromIndex = -1`.
 *
@@ -39,7 +38,7 @@ import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = lastIndexOf( x, 2, 3 );
+* var idx = indexOfSameValue( x, 2, 0 );
 * // returns 1
 *
 * @example
@@ -47,12 +46,12 @@ import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var idx = lastIndexOf( x, 2, 3 );
+* var idx = indexOfSameValue( x, 2, 0 );
 * // returns 1
 */
-declare function lastIndexOf( x: Collection | AccessorArrayLike<unknown>, searchElement: unknown, fromIndex: number ): number;
+declare function indexOfSameValue( x: Collection | AccessorArrayLike<unknown>, searchElement: unknown, fromIndex: number ): number;
 
 
 // EXPORTS //
 
-export = lastIndexOf;
+export = indexOfSameValue;

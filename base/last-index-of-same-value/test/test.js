@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -24,14 +24,14 @@ var tape = require( 'tape' );
 var AccessorArray = require( './../../../base/accessor' );
 var Float64Array = require( './../../../float64' );
 var Int32Array = require( './../../../int32' );
-var lastIndexOf = require( './../lib' );
+var lastIndexOfSameValue = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof lastIndexOf, 'function', 'main export is a function' );
+	t.strictEqual( typeof lastIndexOfSameValue, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -41,42 +41,42 @@ tape( 'the function returns the last index of an element which equals a provided
 
 	x = [ 1, 1, 2, 2, 3, 3 ];
 
-	actual = lastIndexOf( x, 1, 5 );
+	actual = lastIndexOfSameValue( x, 1, 5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 5 );
+	actual = lastIndexOfSameValue( x, 2, 5 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 5 );
+	actual = lastIndexOfSameValue( x, 3, 5 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Nonnegative starting index...
-	actual = lastIndexOf( x, 1, 0 );
+	actual = lastIndexOfSameValue( x, 1, 0 );
 	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 2 );
+	actual = lastIndexOfSameValue( x, 2, 2 );
 	t.strictEqual( actual, 2, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 4 );
+	actual = lastIndexOfSameValue( x, 3, 4 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 100 );
+	actual = lastIndexOfSameValue( x, 3, 100 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Negative starting index...
-	actual = lastIndexOf( x, 1, -1 );
+	actual = lastIndexOfSameValue( x, 1, -1 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -2 );
+	actual = lastIndexOfSameValue( x, 3, -2 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 1, -5 );
+	actual = lastIndexOfSameValue( x, 1, -5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, -3 );
+	actual = lastIndexOfSameValue( x, 2, -3 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -1 );
+	actual = lastIndexOfSameValue( x, 3, -1 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	t.end();
@@ -88,42 +88,42 @@ tape( 'the function returns the last index of an element which equals a provided
 
 	x = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
 
-	actual = lastIndexOf( x, 1.0, 5 );
+	actual = lastIndexOfSameValue( x, 1.0, 5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2.0, 5 );
+	actual = lastIndexOfSameValue( x, 2.0, 5 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3.0, 5 );
+	actual = lastIndexOfSameValue( x, 3.0, 5 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Nonnegative starting index...
-	actual = lastIndexOf( x, 1.0, 0 );
+	actual = lastIndexOfSameValue( x, 1.0, 0 );
 	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2.0, 2 );
+	actual = lastIndexOfSameValue( x, 2.0, 2 );
 	t.strictEqual( actual, 2, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3.0, 4 );
+	actual = lastIndexOfSameValue( x, 3.0, 4 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3.0, 100 );
+	actual = lastIndexOfSameValue( x, 3.0, 100 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Negative starting index...
-	actual = lastIndexOf( x, 1.0, -1 );
+	actual = lastIndexOfSameValue( x, 1.0, -1 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3.0, -2 );
+	actual = lastIndexOfSameValue( x, 3.0, -2 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 1.0, -5 );
+	actual = lastIndexOfSameValue( x, 1.0, -5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2.0, -3 );
+	actual = lastIndexOfSameValue( x, 2.0, -3 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3.0, -1 );
+	actual = lastIndexOfSameValue( x, 3.0, -1 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	t.end();
@@ -135,42 +135,42 @@ tape( 'the function returns the last index of an element which equals a provided
 
 	x = new Int32Array( [ 1, 1, 2, 2, 3, 3 ] );
 
-	actual = lastIndexOf( x, 1, 5 );
+	actual = lastIndexOfSameValue( x, 1, 5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 5 );
+	actual = lastIndexOfSameValue( x, 2, 5 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 5 );
+	actual = lastIndexOfSameValue( x, 3, 5 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Nonnegative starting index...
-	actual = lastIndexOf( x, 1, 0 );
+	actual = lastIndexOfSameValue( x, 1, 0 );
 	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 2 );
+	actual = lastIndexOfSameValue( x, 2, 2 );
 	t.strictEqual( actual, 2, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 4 );
+	actual = lastIndexOfSameValue( x, 3, 4 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 100 );
+	actual = lastIndexOfSameValue( x, 3, 100 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Negative starting index...
-	actual = lastIndexOf( x, 1, -1 );
+	actual = lastIndexOfSameValue( x, 1, -1 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -2 );
+	actual = lastIndexOfSameValue( x, 3, -2 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 1, -5 );
+	actual = lastIndexOfSameValue( x, 1, -5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, -3 );
+	actual = lastIndexOfSameValue( x, 2, -3 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -1 );
+	actual = lastIndexOfSameValue( x, 3, -1 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	t.end();
@@ -182,42 +182,42 @@ tape( 'the function returns the last index of an element which equals a provided
 
 	x = new AccessorArray( [ 1, 1, 2, 2, 3, 3 ] );
 
-	actual = lastIndexOf( x, 1, 5 );
+	actual = lastIndexOfSameValue( x, 1, 5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 5 );
+	actual = lastIndexOfSameValue( x, 2, 5 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 5 );
+	actual = lastIndexOfSameValue( x, 3, 5 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Nonnegative starting index...
-	actual = lastIndexOf( x, 1, 0 );
+	actual = lastIndexOfSameValue( x, 1, 0 );
 	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 2 );
+	actual = lastIndexOfSameValue( x, 2, 2 );
 	t.strictEqual( actual, 2, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 4 );
+	actual = lastIndexOfSameValue( x, 3, 4 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 100 );
+	actual = lastIndexOfSameValue( x, 3, 100 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Negative starting index...
-	actual = lastIndexOf( x, 1, -1 );
+	actual = lastIndexOfSameValue( x, 1, -1 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -2 );
+	actual = lastIndexOfSameValue( x, 3, -2 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 1, -5 );
+	actual = lastIndexOfSameValue( x, 1, -5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, -3 );
+	actual = lastIndexOfSameValue( x, 2, -3 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -1 );
+	actual = lastIndexOfSameValue( x, 3, -1 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	t.end();
@@ -237,42 +237,42 @@ tape( 'the function returns the last index of an element which equals a provided
 		'5': 3
 	};
 
-	actual = lastIndexOf( x, 1, 5 );
+	actual = lastIndexOfSameValue( x, 1, 5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 5 );
+	actual = lastIndexOfSameValue( x, 2, 5 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 5 );
+	actual = lastIndexOfSameValue( x, 3, 5 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Nonnegative starting index...
-	actual = lastIndexOf( x, 1, 0 );
+	actual = lastIndexOfSameValue( x, 1, 0 );
 	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, 2 );
+	actual = lastIndexOfSameValue( x, 2, 2 );
 	t.strictEqual( actual, 2, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 4 );
+	actual = lastIndexOfSameValue( x, 3, 4 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, 100 );
+	actual = lastIndexOfSameValue( x, 3, 100 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	// Negative starting index...
-	actual = lastIndexOf( x, 1, -1 );
+	actual = lastIndexOfSameValue( x, 1, -1 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -2 );
+	actual = lastIndexOfSameValue( x, 3, -2 );
 	t.strictEqual( actual, 4, 'returns expected value' );
 
-	actual = lastIndexOf( x, 1, -5 );
+	actual = lastIndexOfSameValue( x, 1, -5 );
 	t.strictEqual( actual, 1, 'returns expected value' );
 
-	actual = lastIndexOf( x, 2, -3 );
+	actual = lastIndexOfSameValue( x, 2, -3 );
 	t.strictEqual( actual, 3, 'returns expected value' );
 
-	actual = lastIndexOf( x, 3, -1 );
+	actual = lastIndexOfSameValue( x, 3, -1 );
 	t.strictEqual( actual, 5, 'returns expected value' );
 
 	t.end();
@@ -282,45 +282,84 @@ tape( 'the function returns `-1` if provided an empty array', function test( t )
 	var actual;
 	var x;
 
-	actual = lastIndexOf( [], 0, 0 );
+	actual = lastIndexOfSameValue( [], 0, 0 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
-	actual = lastIndexOf( new Float64Array( [] ), 0, 0 );
+	actual = lastIndexOfSameValue( new Float64Array( [] ), 0, 0 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
-	actual = lastIndexOf( new Int32Array( [] ), 0, 0 );
+	actual = lastIndexOfSameValue( new Int32Array( [] ), 0, 0 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
-	actual = lastIndexOf( new AccessorArray( [] ), 0, 0 );
+	actual = lastIndexOfSameValue( new AccessorArray( [] ), 0, 0 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
 	x = {
 		'length': 0
 	};
-	actual = lastIndexOf( x, 0, 0 );
+	actual = lastIndexOfSameValue( x, 0, 0 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
 	t.end();
 });
 
-tape( 'the function returns `-1` if provided a search element equal to `NaN`', function test( t ) {
+tape( 'the function supports NaN equality', function test( t ) {
 	var actual;
 	var x;
 
-	actual = lastIndexOf( [ NaN ], NaN, 0 );
-	t.strictEqual( actual, -1, 'returns expected value' );
+	actual = lastIndexOfSameValue( [ NaN ], NaN, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( new Float64Array( [ NaN ] ), NaN, 0 );
-	t.strictEqual( actual, -1, 'returns expected value' );
+	actual = lastIndexOfSameValue( new Float64Array( [ NaN ] ), NaN, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
 
-	actual = lastIndexOf( new AccessorArray( [ NaN ] ), NaN, 0 );
-	t.strictEqual( actual, -1, 'returns expected value' );
+	actual = lastIndexOfSameValue( new AccessorArray( [ NaN ] ), NaN, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
 
 	x = {
 		'length': 1,
 		'0': NaN
 	};
-	actual = lastIndexOf( x, NaN, 0 );
+	actual = lastIndexOfSameValue( x, NaN, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function supports signed zero equality', function test( t ) {
+	var actual;
+	var x;
+
+	actual = lastIndexOfSameValue( [ -0.0 ], -0.0, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( new Float64Array( [ -0.0 ] ), -0.0, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( new AccessorArray( [ -0.0 ] ), -0.0, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	x = {
+		'length': 1,
+		'0': -0.0
+	};
+	actual = lastIndexOfSameValue( x, -0.0, 0 );
+	t.strictEqual( actual, 0, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( [ -0.0 ], 0.0, 0 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( new Float64Array( [ -0.0 ] ), 0.0, 0 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
+	actual = lastIndexOfSameValue( new AccessorArray( [ -0.0 ] ), 0.0, 0 );
+	t.strictEqual( actual, -1, 'returns expected value' );
+
+	x = {
+		'length': 1,
+		'0': -0.0
+	};
+	actual = lastIndexOfSameValue( x, 0.0, 0 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
 	t.end();
@@ -330,16 +369,16 @@ tape( 'the function returns `-1` if provided a starting index which exceeds the 
 	var actual;
 	var x;
 
-	actual = lastIndexOf( [ 1, 2, 3 ], 0, -20 );
+	actual = lastIndexOfSameValue( [ 1, 2, 3 ], 0, -20 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
-	actual = lastIndexOf( new Float64Array( [ 1.0, 2.0, 3.0 ] ), 0, -20 );
+	actual = lastIndexOfSameValue( new Float64Array( [ 1.0, 2.0, 3.0 ] ), 0, -20 ); // eslint-disable-line max-len
 	t.strictEqual( actual, -1, 'returns expected value' );
 
-	actual = lastIndexOf( new Int32Array( [ 1, 2, 3 ] ), 0, -20 );
+	actual = lastIndexOfSameValue( new Int32Array( [ 1, 2, 3 ] ), 0, -20 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
-	actual = lastIndexOf( new AccessorArray( [ 1, 2, 3 ] ), 0, -20 );
+	actual = lastIndexOfSameValue( new AccessorArray( [ 1, 2, 3 ] ), 0, -20 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
 	x = {
@@ -348,7 +387,7 @@ tape( 'the function returns `-1` if provided a starting index which exceeds the 
 		'1': 2,
 		'2': 3
 	};
-	actual = lastIndexOf( x, 0, -20 );
+	actual = lastIndexOfSameValue( x, 0, -20 );
 	t.strictEqual( actual, -1, 'returns expected value' );
 
 	t.end();

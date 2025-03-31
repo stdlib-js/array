@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,32 +21,13 @@
 // MODULES //
 
 var arraylike2object = require( './../../../base/arraylike2object' );
+var isSameValue = require( '@stdlib/assert/is-same-value' );
 
 
 // FUNCTIONS //
 
 /**
-* Tests whether an object has a specified method.
-*
-* @private
-* @param {Object} obj - input object
-* @param {string} method - method name
-* @returns {boolean} boolean indicating whether an object has a specified method
-*
-* @example
-* var bool = hasMethod( [], 'indexOf' );
-* // returns true
-*
-* @example
-* var bool = hasMethod( [], 'beep' );
-* // returns false
-*/
-function hasMethod( obj, method ) {
-	return ( typeof obj[ method ] === 'function' );
-}
-
-/**
-* Returns the index of the first element which equals a provided search element.
+* Returns the index of the last element which equals a provided search element according to the same value algorithm.
 *
 * @private
 * @param {Collection} x - input array
@@ -57,13 +38,13 @@ function hasMethod( obj, method ) {
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = internal( x, 2, 0 );
+* var idx = internal( x, 2, 3 );
 * // returns 1
 */
 function internal( x, searchElement, fromIndex ) {
 	var i;
-	for ( i = fromIndex; i < x.length; i++ ) {
-		if ( searchElement === x[ i ] ) {
+	for ( i = fromIndex; i >= 0; i-- ) {
+		if ( isSameValue( searchElement, x[ i ] ) ) {
 			return i;
 		}
 	}
@@ -71,7 +52,7 @@ function internal( x, searchElement, fromIndex ) {
 }
 
 /**
-* Returns the index of the first element which equals a provided search element.
+* Returns the index of the last element which equals a provided search element according to the same value algorithm.
 *
 * @private
 * @param {Object} x - input array object
@@ -85,7 +66,7 @@ function internal( x, searchElement, fromIndex ) {
 *
 * var x = arraylike2object( toAccessorArray( [ 1, 2, 3, 4 ] ) );
 *
-* var idx = accessors( x, 2, 0 );
+* var idx = accessors( x, 2, 3 );
 * // returns 1
 */
 function accessors( x, searchElement, fromIndex ) {
@@ -96,8 +77,8 @@ function accessors( x, searchElement, fromIndex ) {
 	data = x.data;
 	get = x.accessors[ 0 ];
 
-	for ( i = fromIndex; i < data.length; i++ ) {
-		if ( searchElement === get( data, i ) ) {
+	for ( i = fromIndex; i >= 0; i-- ) {
+		if ( isSameValue( searchElement, get( data, i ) ) ) {
 			return i;
 		}
 	}
@@ -108,7 +89,7 @@ function accessors( x, searchElement, fromIndex ) {
 // MAIN //
 
 /**
-* Returns the index of the first element which equals a provided search element.
+* Returns the index of the last element which equals a provided search element according to the same value algorithm.
 *
 * ## Notes
 *
@@ -122,7 +103,7 @@ function accessors( x, searchElement, fromIndex ) {
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = indexOf( x, 2, 0 );
+* var idx = lastIndexOfSameValue( x, 2, 3 );
 * // returns 1
 *
 * @example
@@ -130,19 +111,18 @@ function accessors( x, searchElement, fromIndex ) {
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var idx = indexOf( x, 2, 0 );
+* var idx = lastIndexOfSameValue( x, 2, 3 );
 * // returns 1
 */
-function indexOf( x, searchElement, fromIndex ) {
+function lastIndexOfSameValue( x, searchElement, fromIndex ) {
 	var obj;
-	if ( hasMethod( x, 'indexOf' ) ) {
-		return x.indexOf( searchElement, fromIndex );
-	}
 	if ( fromIndex < 0 ) {
 		fromIndex += x.length;
 		if ( fromIndex < 0 ) {
-			fromIndex = 0;
+			return -1;
 		}
+	} else if ( fromIndex > x.length ) {
+		fromIndex = x.length - 1;
 	}
 	obj = arraylike2object( x );
 	if ( obj.accessorProtocol ) {
@@ -154,4 +134,4 @@ function indexOf( x, searchElement, fromIndex ) {
 
 // EXPORTS //
 
-module.exports = indexOf;
+module.exports = lastIndexOfSameValue;

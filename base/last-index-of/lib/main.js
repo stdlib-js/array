@@ -21,7 +21,6 @@
 // MODULES //
 
 var arraylike2object = require( './../../../base/arraylike2object' );
-var isnan = require( '@stdlib/math/base/assert/is-nan' );
 
 
 // FUNCTIONS //
@@ -53,25 +52,16 @@ function hasMethod( obj, method ) {
 * @param {Collection} x - input array
 * @param {*} searchElement - search element
 * @param {NonNegativeInteger} fromIndex - starting index (inclusive)
-* @param {boolean} equalNaNs - boolean indicating whether NaNs should be considered equal
 * @returns {integer} index
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = internal( x, 2, 3, false );
+* var idx = internal( x, 2, 3 );
 * // returns 1
 */
-function internal( x, searchElement, fromIndex, equalNaNs ) {
+function internal( x, searchElement, fromIndex ) {
 	var i;
-	if ( equalNaNs && isnan( searchElement ) ) {
-		for ( i = fromIndex; i >= 0; i-- ) {
-			if ( isnan( x[ i ] ) ) {
-				return i;
-			}
-		}
-		return -1;
-	}
 	for ( i = fromIndex; i >= 0; i-- ) {
 		if ( searchElement === x[ i ] ) {
 			return i;
@@ -87,7 +77,6 @@ function internal( x, searchElement, fromIndex, equalNaNs ) {
 * @param {Object} x - input array object
 * @param {*} searchElement - search element
 * @param {NonNegativeInteger} fromIndex - starting index (inclusive)
-* @param {boolean} equalNaNs - boolean indicating whether NaNs should be considered equal
 * @returns {integer} index
 *
 * @example
@@ -96,10 +85,10 @@ function internal( x, searchElement, fromIndex, equalNaNs ) {
 *
 * var x = arraylike2object( toAccessorArray( [ 1, 2, 3, 4 ] ) );
 *
-* var idx = accessors( x, 2, 3, false );
+* var idx = accessors( x, 2, 3 );
 * // returns 1
 */
-function accessors( x, searchElement, fromIndex, equalNaNs ) {
+function accessors( x, searchElement, fromIndex ) {
 	var data;
 	var get;
 	var i;
@@ -107,14 +96,6 @@ function accessors( x, searchElement, fromIndex, equalNaNs ) {
 	data = x.data;
 	get = x.accessors[ 0 ];
 
-	if ( equalNaNs && isnan( searchElement ) ) {
-		for ( i = fromIndex; i >= 0; i-- ) {
-			if ( isnan( get( data, i ) ) ) {
-				return i;
-			}
-		}
-		return -1;
-	}
 	for ( i = fromIndex; i >= 0; i-- ) {
 		if ( searchElement === get( data, i ) ) {
 			return i;
@@ -136,13 +117,12 @@ function accessors( x, searchElement, fromIndex, equalNaNs ) {
 * @param {Collection} x - input array
 * @param {*} searchElement - search element
 * @param {integer} fromIndex - starting index (inclusive)
-* @param {boolean} equalNaNs - boolean indicating whether NaNs should be considered equal
 * @returns {integer} index
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = lastIndexOf( x, 2, 3, false );
+* var idx = lastIndexOf( x, 2, 3 );
 * // returns 1
 *
 * @example
@@ -150,12 +130,12 @@ function accessors( x, searchElement, fromIndex, equalNaNs ) {
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var idx = lastIndexOf( x, 2, 3, false );
+* var idx = lastIndexOf( x, 2, 3 );
 * // returns 1
 */
-function lastIndexOf( x, searchElement, fromIndex, equalNaNs ) {
+function lastIndexOf( x, searchElement, fromIndex ) {
 	var obj;
-	if ( hasMethod( x, 'lastIndexOf' ) && equalNaNs === false ) {
+	if ( hasMethod( x, 'lastIndexOf' ) ) {
 		return x.lastIndexOf( searchElement, fromIndex );
 	}
 	if ( fromIndex < 0 ) {
@@ -168,9 +148,9 @@ function lastIndexOf( x, searchElement, fromIndex, equalNaNs ) {
 	}
 	obj = arraylike2object( x );
 	if ( obj.accessorProtocol ) {
-		return accessors( obj, searchElement, fromIndex, equalNaNs );
+		return accessors( obj, searchElement, fromIndex );
 	}
-	return internal( x, searchElement, fromIndex, equalNaNs );
+	return internal( x, searchElement, fromIndex );
 }
 
 
