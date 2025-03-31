@@ -1626,6 +1626,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`9998d76`](https://github.com/stdlib-js/stdlib/commit/9998d768131de91b59e2808ddf4ee552407d4175) - **docs:** update namespace table of contents [(#6461)](https://github.com/stdlib-js/stdlib/pull/6461) _(by stdlib-bot)_
 -   [`7899d23`](https://github.com/stdlib-js/stdlib/commit/7899d23195464e9fc0a10b1f0e57b5aa230de5e2) - **feat:** update namespace TypeScript declarations [(#6459)](https://github.com/stdlib-js/stdlib/pull/6459) _(by stdlib-bot)_
 -   [`74d2527`](https://github.com/stdlib-js/stdlib/commit/74d2527745106957e4b6228975dceb3578adcc5a) - **feat:** add specialized support for complex number and boolean arrays _(by Athan Reines)_
 -   [`b27b960`](https://github.com/stdlib-js/stdlib/commit/b27b96086d569c9b6c99f7a5f2a24d74c8d41618) - **test:** add test cases _(by Athan Reines)_
