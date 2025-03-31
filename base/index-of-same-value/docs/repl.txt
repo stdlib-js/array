@@ -9,6 +9,8 @@
     If unable to find an element which equals a provided search element, the
     function returns -1.
 
+    The function treats `-0` and `+0` as distinct and `NaNs` as the same.
+
     Parameters
     ----------
     x: ArrayLikeObject

@@ -765,6 +765,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`b68b283`](https://github.com/stdlib-js/stdlib/commit/b68b28358b19ba7e4d23d9a87acfb283c3c0ea3d) - add specialized support for complex number and boolean arrays
 -   [`c7f571e`](https://github.com/stdlib-js/stdlib/commit/c7f571ef00c124a120847f0c8fa59053c7c27dba) - add `array/base/index-of-same-value`
 
 </section>
@@ -1623,6 +1624,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c7f060f`](https://github.com/stdlib-js/stdlib/commit/c7f060f6549d45a4c7faa06b25ff55a882ee6299) - **test:** add test cases _(by Athan Reines)_
+-   [`b68b283`](https://github.com/stdlib-js/stdlib/commit/b68b28358b19ba7e4d23d9a87acfb283c3c0ea3d) - **feat:** add specialized support for complex number and boolean arrays _(by Athan Reines)_
 -   [`e8bb580`](https://github.com/stdlib-js/stdlib/commit/e8bb580f445dcbeeb03e458def428d9e820ab808) - **feat:** add `lastIndexOfSameValue` to namespace _(by Athan Reines)_
 -   [`25fd7dd`](https://github.com/stdlib-js/stdlib/commit/25fd7dd71923e473865bb8c814fdef3981b17593) - **feat:** add `array/base/last-index-of-same-value` _(by Athan Reines)_
 -   [`e8a96a1`](https://github.com/stdlib-js/stdlib/commit/e8a96a17652f957f69c041a2f7292bee1b827aeb) - **feat:** add `indexOfSameValue` to namespace _(by Athan Reines)_
