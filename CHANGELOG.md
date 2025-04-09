@@ -904,6 +904,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-linspace2d-unreleased">
+
+#### [@stdlib/array/base/linspace2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/linspace2d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b0da3de`](https://github.com/stdlib-js/stdlib/commit/b0da3de9a0fa3d1e657ee5a05dcca053fe74e515) - `add array/base/linspace2d` [(#5464)](https://github.com/stdlib-js/stdlib/pull/5464)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-map-unreleased">
 
 #### [@stdlib/array/base/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/map)
@@ -1649,6 +1671,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b0da3de`](https://github.com/stdlib-js/stdlib/commit/b0da3de9a0fa3d1e657ee5a05dcca053fe74e515) - **feat:** `add array/base/linspace2d` [(#5464)](https://github.com/stdlib-js/stdlib/pull/5464) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`40de89d`](https://github.com/stdlib-js/stdlib/commit/40de89d0b84ab345f198d6a90696c0762efde887) - **feat:** add `array/base/reshape` [(#5639)](https://github.com/stdlib-js/stdlib/pull/5639) _(by Muhammad Haris, Athan Reines)_
 -   [`54534dd`](https://github.com/stdlib-js/stdlib/commit/54534ddb74b35d0b99915f8017ed9d9e692a7502) - **chore:** address commit comments [(#5978)](https://github.com/stdlib-js/stdlib/pull/5978) _(by Jay Soni, Athan Reines, stdlib-bot)_
 -   [`e28064f`](https://github.com/stdlib-js/stdlib/commit/e28064f9d93a232d82297842a9a4bd2895952a55) - **docs:** update namespace TypeScript declarations [(#6478)](https://github.com/stdlib-js/stdlib/pull/6478) _(by stdlib-bot)_
