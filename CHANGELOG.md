@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-03)
+## Unreleased (2025-04-09)
 
 <section class="packages">
 
@@ -1074,6 +1074,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-reshape-unreleased">
+
+#### [@stdlib/array/base/reshape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/reshape)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`40de89d`](https://github.com/stdlib-js/stdlib/commit/40de89d0b84ab345f198d6a90696c0762efde887) - add `array/base/reshape` [(#5639)](https://github.com/stdlib-js/stdlib/pull/5639)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-scatter-filled-unreleased">
 
 #### [@stdlib/array/base/scatter-filled](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/scatter-filled)
@@ -1627,6 +1649,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`40de89d`](https://github.com/stdlib-js/stdlib/commit/40de89d0b84ab345f198d6a90696c0762efde887) - **feat:** add `array/base/reshape` [(#5639)](https://github.com/stdlib-js/stdlib/pull/5639) _(by Muhammad Haris, Athan Reines)_
 -   [`54534dd`](https://github.com/stdlib-js/stdlib/commit/54534ddb74b35d0b99915f8017ed9d9e692a7502) - **chore:** address commit comments [(#5978)](https://github.com/stdlib-js/stdlib/pull/5978) _(by Jay Soni, Athan Reines, stdlib-bot)_
 -   [`e28064f`](https://github.com/stdlib-js/stdlib/commit/e28064f9d93a232d82297842a9a4bd2895952a55) - **docs:** update namespace TypeScript declarations [(#6478)](https://github.com/stdlib-js/stdlib/pull/6478) _(by stdlib-bot)_
 -   [`f2c38e2`](https://github.com/stdlib-js/stdlib/commit/f2c38e218661b2aa21fe58bf2e56ed7c57c2e013) - **docs:** update namespace table of contents [(#6480)](https://github.com/stdlib-js/stdlib/pull/6480) _(by stdlib-bot)_
