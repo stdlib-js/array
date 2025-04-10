@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-09)
+## Unreleased (2025-04-10)
 
 <section class="packages">
 
@@ -451,6 +451,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-count-ifs-unreleased">
+
+#### [@stdlib/array/base/count-ifs](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/count-ifs)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ae78e67`](https://github.com/stdlib-js/stdlib/commit/ae78e67351f0fdd6c42988d32d48bab0ae6ec65c) - add `array/base/count-ifs` [(#5952)](https://github.com/stdlib-js/stdlib/pull/5952)
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -1671,6 +1693,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ae78e67`](https://github.com/stdlib-js/stdlib/commit/ae78e67351f0fdd6c42988d32d48bab0ae6ec65c) - **feat:** add `array/base/count-ifs` [(#5952)](https://github.com/stdlib-js/stdlib/pull/5952) _(by Muhammad Haris, Athan Reines)_
 -   [`b0da3de`](https://github.com/stdlib-js/stdlib/commit/b0da3de9a0fa3d1e657ee5a05dcca053fe74e515) - **feat:** `add array/base/linspace2d` [(#5464)](https://github.com/stdlib-js/stdlib/pull/5464) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`40de89d`](https://github.com/stdlib-js/stdlib/commit/40de89d0b84ab345f198d6a90696c0762efde887) - **feat:** add `array/base/reshape` [(#5639)](https://github.com/stdlib-js/stdlib/pull/5639) _(by Muhammad Haris, Athan Reines)_
 -   [`54534dd`](https://github.com/stdlib-js/stdlib/commit/54534ddb74b35d0b99915f8017ed9d9e692a7502) - **chore:** address commit comments [(#5978)](https://github.com/stdlib-js/stdlib/pull/5978) _(by Jay Soni, Athan Reines, stdlib-bot)_
