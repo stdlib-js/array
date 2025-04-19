@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-10)
+## Unreleased (2025-04-19)
 
 <section class="packages">
 
@@ -165,6 +165,28 @@
 ##### Features
 
 -   [`5a848eb`](https://github.com/stdlib-js/stdlib/commit/5a848ebda6a2ff9cc34cfa5cf93ffce65b8bab0e) - add `array/base/assert/is-sorted-ascending`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-banded-unreleased">
+
+#### [@stdlib/array/base/banded](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/banded)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8213823`](https://github.com/stdlib-js/stdlib/commit/8213823c17f02cc771671778ab3de0205256e33e) - add `array/base/banded` namespace
 
 </section>
 
@@ -1206,6 +1228,50 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="array-base-symmetric-unreleased">
+
+#### [@stdlib/array/base/symmetric](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/symmetric)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`61b8b4b`](https://github.com/stdlib-js/stdlib/commit/61b8b4b9d65ccda7f6e4b39f7d7b0830b1d8c4f7) - add `array/base/symmetric` namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="array-base-symmetric-banded-unreleased">
+
+#### [@stdlib/array/base/symmetric-banded](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/symmetric-banded)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c58adef`](https://github.com/stdlib-js/stdlib/commit/c58adefe40e133648a8ccdbbea987fde9b6e9bd8) - add `array/base/symmetric-banded` namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="array-base-symmetric-banded-filled2d-by-unreleased">
 
 #### [@stdlib/array/base/symmetric-banded/filled2d-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/symmetric-banded/filled2d-by)
@@ -1693,6 +1759,9 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c58adef`](https://github.com/stdlib-js/stdlib/commit/c58adefe40e133648a8ccdbbea987fde9b6e9bd8) - **feat:** add `array/base/symmetric-banded` namespace _(by Athan Reines)_
+-   [`61b8b4b`](https://github.com/stdlib-js/stdlib/commit/61b8b4b9d65ccda7f6e4b39f7d7b0830b1d8c4f7) - **feat:** add `array/base/symmetric` namespace _(by Athan Reines)_
+-   [`8213823`](https://github.com/stdlib-js/stdlib/commit/8213823c17f02cc771671778ab3de0205256e33e) - **feat:** add `array/base/banded` namespace _(by Athan Reines)_
 -   [`ae78e67`](https://github.com/stdlib-js/stdlib/commit/ae78e67351f0fdd6c42988d32d48bab0ae6ec65c) - **feat:** add `array/base/count-ifs` [(#5952)](https://github.com/stdlib-js/stdlib/pull/5952) _(by Muhammad Haris, Athan Reines)_
 -   [`b0da3de`](https://github.com/stdlib-js/stdlib/commit/b0da3de9a0fa3d1e657ee5a05dcca053fe74e515) - **feat:** `add array/base/linspace2d` [(#5464)](https://github.com/stdlib-js/stdlib/pull/5464) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`40de89d`](https://github.com/stdlib-js/stdlib/commit/40de89d0b84ab345f198d6a90696c0762efde887) - **feat:** add `array/base/reshape` [(#5639)](https://github.com/stdlib-js/stdlib/pull/5639) _(by Muhammad Haris, Athan Reines)_
