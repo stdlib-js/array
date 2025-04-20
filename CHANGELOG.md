@@ -1763,6 +1763,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a973708`](https://github.com/stdlib-js/stdlib/commit/a973708c85ff1696483ab503201191353125b964) - **docs:** update namespace table of contents [(#6741)](https://github.com/stdlib-js/stdlib/pull/6741) _(by stdlib-bot)_
 -   [`28a1564`](https://github.com/stdlib-js/stdlib/commit/28a1564b9977c9c0aebb9806c2a4cbb10336b234) - **feat:** add `reshape` to namespace _(by Athan Reines)_
 -   [`7d4246f`](https://github.com/stdlib-js/stdlib/commit/7d4246ff5c4607dc228a37c36a9a792181ba2c11) - **feat:** add `linspace2d` to namespace _(by Athan Reines)_
 -   [`60bcff3`](https://github.com/stdlib-js/stdlib/commit/60bcff3e6b8998206890401c120501459c7bbf7d) - **feat:** add `countIfs` to namespace _(by Athan Reines)_
