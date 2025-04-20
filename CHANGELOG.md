@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-19)
+## Unreleased (2025-04-20)
 
 <section class="packages">
 
@@ -64,6 +64,10 @@
 
 ##### Features
 
+-   [`28a1564`](https://github.com/stdlib-js/stdlib/commit/28a1564b9977c9c0aebb9806c2a4cbb10336b234) - add `reshape` to namespace
+-   [`7d4246f`](https://github.com/stdlib-js/stdlib/commit/7d4246ff5c4607dc228a37c36a9a792181ba2c11) - add `linspace2d` to namespace
+-   [`60bcff3`](https://github.com/stdlib-js/stdlib/commit/60bcff3e6b8998206890401c120501459c7bbf7d) - add `countIfs` to namespace
+-   [`8f14b84`](https://github.com/stdlib-js/stdlib/commit/8f14b84ea7dfb85088efe9ad99548c91c06c47d3) - add `banded`, `symmetric`, and `symmetricBanded` to namespace
 -   [`7899d23`](https://github.com/stdlib-js/stdlib/commit/7899d23195464e9fc0a10b1f0e57b5aa230de5e2) - update namespace TypeScript declarations [(#6459)](https://github.com/stdlib-js/stdlib/pull/6459)
 -   [`e8bb580`](https://github.com/stdlib-js/stdlib/commit/e8bb580f445dcbeeb03e458def428d9e820ab808) - add `lastIndexOfSameValue` to namespace
 -   [`e8a96a1`](https://github.com/stdlib-js/stdlib/commit/e8a96a17652f957f69c041a2f7292bee1b827aeb) - add `indexOfSameValue` to namespace
@@ -1759,6 +1763,10 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`28a1564`](https://github.com/stdlib-js/stdlib/commit/28a1564b9977c9c0aebb9806c2a4cbb10336b234) - **feat:** add `reshape` to namespace _(by Athan Reines)_
+-   [`7d4246f`](https://github.com/stdlib-js/stdlib/commit/7d4246ff5c4607dc228a37c36a9a792181ba2c11) - **feat:** add `linspace2d` to namespace _(by Athan Reines)_
+-   [`60bcff3`](https://github.com/stdlib-js/stdlib/commit/60bcff3e6b8998206890401c120501459c7bbf7d) - **feat:** add `countIfs` to namespace _(by Athan Reines)_
+-   [`8f14b84`](https://github.com/stdlib-js/stdlib/commit/8f14b84ea7dfb85088efe9ad99548c91c06c47d3) - **feat:** add `banded`, `symmetric`, and `symmetricBanded` to namespace _(by Athan Reines)_
 -   [`c58adef`](https://github.com/stdlib-js/stdlib/commit/c58adefe40e133648a8ccdbbea987fde9b6e9bd8) - **feat:** add `array/base/symmetric-banded` namespace _(by Athan Reines)_
 -   [`61b8b4b`](https://github.com/stdlib-js/stdlib/commit/61b8b4b9d65ccda7f6e4b39f7d7b0830b1d8c4f7) - **feat:** add `array/base/symmetric` namespace _(by Athan Reines)_
 -   [`8213823`](https://github.com/stdlib-js/stdlib/commit/8213823c17f02cc771671778ab3de0205256e33e) - **feat:** add `array/base/banded` namespace _(by Athan Reines)_
