@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-20)
+## Unreleased (2025-04-21)
 
 <section class="packages">
 
@@ -748,51 +748,6 @@ This release closes the following issue:
 
     -   To migrate, users should use `array/base/index-of-same-value` which
         treats `NaN` values as equal.
-        ---
-        type: pre_commit_static_analysis_report
-        description: Results of running static analysis checks when committing changes.
-        report:
-          - task: lint_filenames
-            status: passed
-          - task: lint_editorconfig
-            status: passed
-          - task: lint_markdown
-            status: passed
-          - task: lint_package_json
-            status: na
-          - task: lint_repl_help
-            status: passed
-          - task: lint_javascript_src
-            status: passed
-          - task: lint_javascript_cli
-            status: na
-          - task: lint_javascript_examples
-            status: passed
-          - task: lint_javascript_tests
-            status: passed
-          - task: lint_javascript_benchmarks
-            status: passed
-          - task: lint_python
-            status: na
-          - task: lint_r
-            status: na
-          - task: lint_c_src
-            status: na
-          - task: lint_c_examples
-            status: na
-          - task: lint_c_benchmarks
-            status: na
-          - task: lint_c_tests_fixtures
-            status: na
-          - task: lint_shell
-            status: na
-          - task: lint_typescript_declarations
-            status: passed
-          - task: lint_typescript_tests
-            status: passed
-          - task: lint_license_headers
-            status: passed
-        ---
 
 </section>
 
@@ -873,51 +828,6 @@ This release closes the following issue:
 
     -   To migrate, users should use `array/base/last-index-of-same-value`
         which treats `NaN` values as equal.
-        ---
-        type: pre_commit_static_analysis_report
-        description: Results of running static analysis checks when committing changes.
-        report:
-          - task: lint_filenames
-            status: passed
-          - task: lint_editorconfig
-            status: passed
-          - task: lint_markdown
-            status: passed
-          - task: lint_package_json
-            status: na
-          - task: lint_repl_help
-            status: passed
-          - task: lint_javascript_src
-            status: passed
-          - task: lint_javascript_cli
-            status: na
-          - task: lint_javascript_examples
-            status: passed
-          - task: lint_javascript_tests
-            status: passed
-          - task: lint_javascript_benchmarks
-            status: passed
-          - task: lint_python
-            status: na
-          - task: lint_r
-            status: na
-          - task: lint_c_src
-            status: na
-          - task: lint_c_examples
-            status: na
-          - task: lint_c_benchmarks
-            status: na
-          - task: lint_c_tests_fixtures
-            status: na
-          - task: lint_shell
-            status: na
-          - task: lint_typescript_declarations
-            status: passed
-          - task: lint_typescript_tests
-            status: passed
-          - task: lint_license_headers
-            status: passed
-        ---
 
 </section>
 
@@ -1616,101 +1526,11 @@ A total of 12 issues were closed in this release:
 
     -   To migrate, users should use `array/base/last-index-of-same-value`
         which treats `NaN` values as equal.
-        ---
-        type: pre_commit_static_analysis_report
-        description: Results of running static analysis checks when committing changes.
-        report:
-          - task: lint_filenames
-            status: passed
-          - task: lint_editorconfig
-            status: passed
-          - task: lint_markdown
-            status: passed
-          - task: lint_package_json
-            status: na
-          - task: lint_repl_help
-            status: passed
-          - task: lint_javascript_src
-            status: passed
-          - task: lint_javascript_cli
-            status: na
-          - task: lint_javascript_examples
-            status: passed
-          - task: lint_javascript_tests
-            status: passed
-          - task: lint_javascript_benchmarks
-            status: passed
-          - task: lint_python
-            status: na
-          - task: lint_r
-            status: na
-          - task: lint_c_src
-            status: na
-          - task: lint_c_examples
-            status: na
-          - task: lint_c_benchmarks
-            status: na
-          - task: lint_c_tests_fixtures
-            status: na
-          - task: lint_shell
-            status: na
-          - task: lint_typescript_declarations
-            status: passed
-          - task: lint_typescript_tests
-            status: passed
-          - task: lint_license_headers
-            status: passed
-        ---
 
 -   [`8575ee7`](https://github.com/stdlib-js/stdlib/commit/8575ee7d7d239a16afd5e3bf396e5a0da281f537): remove `equalnans` support
 
     -   To migrate, users should use `array/base/index-of-same-value` which
         treats `NaN` values as equal.
-        ---
-        type: pre_commit_static_analysis_report
-        description: Results of running static analysis checks when committing changes.
-        report:
-          - task: lint_filenames
-            status: passed
-          - task: lint_editorconfig
-            status: passed
-          - task: lint_markdown
-            status: passed
-          - task: lint_package_json
-            status: na
-          - task: lint_repl_help
-            status: passed
-          - task: lint_javascript_src
-            status: passed
-          - task: lint_javascript_cli
-            status: na
-          - task: lint_javascript_examples
-            status: passed
-          - task: lint_javascript_tests
-            status: passed
-          - task: lint_javascript_benchmarks
-            status: passed
-          - task: lint_python
-            status: na
-          - task: lint_r
-            status: na
-          - task: lint_c_src
-            status: na
-          - task: lint_c_examples
-            status: na
-          - task: lint_c_benchmarks
-            status: na
-          - task: lint_c_tests_fixtures
-            status: na
-          - task: lint_shell
-            status: na
-          - task: lint_typescript_declarations
-            status: passed
-          - task: lint_typescript_tests
-            status: passed
-          - task: lint_license_headers
-            status: passed
-        ---
 
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec): update namespace declarations
 
@@ -1763,6 +1583,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`90bb3d0`](https://github.com/stdlib-js/stdlib/commit/90bb3d0febf36f2a4284255fa5348c5ef557a36a) - **docs:** fix signature _(by Athan Reines)_
 -   [`a973708`](https://github.com/stdlib-js/stdlib/commit/a973708c85ff1696483ab503201191353125b964) - **docs:** update namespace table of contents [(#6741)](https://github.com/stdlib-js/stdlib/pull/6741) _(by stdlib-bot)_
 -   [`28a1564`](https://github.com/stdlib-js/stdlib/commit/28a1564b9977c9c0aebb9806c2a4cbb10336b234) - **feat:** add `reshape` to namespace _(by Athan Reines)_
 -   [`7d4246f`](https://github.com/stdlib-js/stdlib/commit/7d4246ff5c4607dc228a37c36a9a792181ba2c11) - **feat:** add `linspace2d` to namespace _(by Athan Reines)_
