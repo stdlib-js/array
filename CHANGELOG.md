@@ -1583,6 +1583,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`c3320f1`](https://github.com/stdlib-js/stdlib/commit/c3320f1da27e449679eecd2f19f865ae60f72aa5) - **docs:** update namespace table of contents [(#6764)](https://github.com/stdlib-js/stdlib/pull/6764) _(by stdlib-bot)_
 -   [`90bb3d0`](https://github.com/stdlib-js/stdlib/commit/90bb3d0febf36f2a4284255fa5348c5ef557a36a) - **docs:** fix signature _(by Athan Reines)_
 -   [`a973708`](https://github.com/stdlib-js/stdlib/commit/a973708c85ff1696483ab503201191353125b964) - **docs:** update namespace table of contents [(#6741)](https://github.com/stdlib-js/stdlib/pull/6741) _(by stdlib-bot)_
 -   [`28a1564`](https://github.com/stdlib-js/stdlib/commit/28a1564b9977c9c0aebb9806c2a4cbb10336b234) - **feat:** add `reshape` to namespace _(by Athan Reines)_
