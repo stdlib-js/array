@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-25)
+## Unreleased (2025-04-29)
 
 <section class="features">
 
@@ -168,6 +168,7 @@ A total of 29 issues were closed in this release:
 
 <details>
 
+-   [`1f7e55f`](https://github.com/stdlib-js/stdlib/commit/1f7e55f344d26c42e0c2ae001f8ac3ce16f1999a) - **docs:** remove unused packages [(#6837)](https://github.com/stdlib-js/stdlib/pull/6837) _(by Shabareesh Shetty)_
 -   [`5edbc25`](https://github.com/stdlib-js/stdlib/commit/5edbc2524bf509bd0bbde5c6432c77f06e55a65d) - **feat:** add index data type kinds _(by Athan Reines)_
 -   [`6606a96`](https://github.com/stdlib-js/stdlib/commit/6606a96c6f200945d5506523f82f232538a2bc2d) - **feat:** add index data type defaults _(by Athan Reines)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
@@ -383,7 +384,7 @@ A total of 29 issues were closed in this release:
 
 ### Contributors
 
-A total of 14 people contributed to this release. Thank you to the following contributors:
+A total of 15 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -398,6 +399,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 -   Neeraj Pathak
 -   Philipp Burckhardt
 -   Rylan Yang
+-   Shabareesh Shetty
 -   Vinit Pandit
 
 </section>
