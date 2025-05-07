@@ -22,13 +22,13 @@
 
 var isAccessorArray = require( './../../../../base/assert/is-accessor-array' );
 var resolveGetter = require( './../../../../base/resolve-getter' );
-var hasProp = require( '@stdlib/assert/has-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // FUNCTIONS //
 
 /**
-* Tests whether at least one element in a provided indexed array has a specified property, either own or inherited.
+* Tests whether at least one element in a provided indexed array has a specified own property.
 *
 * @private
 * @param {Collection} arr - input array
@@ -53,12 +53,12 @@ var hasProp = require( '@stdlib/assert/has-property' );
 * // returns false
 *
 * bool = indexed( [ o1, o2, o3 ], 'toString' );
-* // returns true
+* // returns false
 */
 function indexed( arr, prop ) {
 	var i;
 	for ( i = 0; i < arr.length; i++ ) {
-		if ( hasProp( arr[ i ], prop ) ) {
+		if ( hasOwnProp( arr[ i ], prop ) ) {
 			return true;
 		}
 	}
@@ -66,7 +66,7 @@ function indexed( arr, prop ) {
 }
 
 /**
-* Tests whether at least one element in a provided accessor array has a specified property, either own or inherited.
+* Tests whether at least one element in a provided accessor array has a specified own property.
 *
 * @private
 * @param {Collection} arr - input array
@@ -93,7 +93,7 @@ function indexed( arr, prop ) {
 * // returns false
 *
 * bool = accessors( toAccessorArray( [ o1, o2, o3 ] ), 'toString' );
-* // returns true
+* // returns false
 */
 function accessors( arr, prop ) {
 	var get;
@@ -101,7 +101,7 @@ function accessors( arr, prop ) {
 
 	get = resolveGetter( arr );
 	for ( i = 0; i < arr.length; i++ ) {
-		if ( hasProp( get( arr, i ), prop ) ) {
+		if ( hasOwnProp( get( arr, i ), prop ) ) {
 			return true;
 		}
 	}
@@ -112,7 +112,7 @@ function accessors( arr, prop ) {
 // MAIN //
 
 /**
-* Tests whether at least one element in a provided array has a specified property, either own or inherited.
+* Tests whether at least one element in a provided array has a specified own property.
 *
 * @param {Collection} arr - input array
 * @param {(string|symbol)} prop - property
@@ -129,16 +129,16 @@ function accessors( arr, prop ) {
 *     'c': 3
 * };
 *
-* var bool = anyHasProp( [ o1, o2, o3 ], 'b' );
+* var bool = anyHasOwnProp( [ o1, o2, o3 ], 'b' );
 * // returns true
 *
-* bool = anyHasProp( [ o1, o2, o3 ], 'd' );
+* bool = anyHasOwnProp( [ o1, o2, o3 ], 'd' );
 * // returns false
 *
-* bool = anyHasProp( [ o1, o2, o3 ], 'toString' );
-* // returns true
+* bool = anyHasOwnProp( [ o1, o2, o3 ], 'toString' );
+* // returns false
 */
-function anyHasProp( arr, prop ) {
+function anyHasOwnProp( arr, prop ) {
 	if ( isAccessorArray( arr ) ) {
 		return accessors( arr, prop );
 	}
@@ -148,4 +148,4 @@ function anyHasProp( arr, prop ) {
 
 // EXPORTS //
 
-module.exports = anyHasProp;
+module.exports = anyHasOwnProp;

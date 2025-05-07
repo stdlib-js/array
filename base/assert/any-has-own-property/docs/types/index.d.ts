@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,16 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="@stdlib/types"/>
+
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+import { PropertyName } from '@stdlib/types/object';
 
 /**
-* Test whether at least one element in a provided array has a specified property, either own or inherited.
+* Tests whether at least one element in a provided array has a specified own property.
 *
-* @module @stdlib/array/base/assert/any-has-property
+* @param arr - input array
+* @param prop - property
+* @returns result
 *
 * @example
-* var anyHasProp = require( '@stdlib/array/base/assert/any-has-property' );
-*
 * var o1 = {
 *     'a': 1
 * };
@@ -36,21 +41,18 @@
 *     'c': 3
 * };
 *
-* var bool = anyHasProp( [ o1, o2, o3 ], 'b' );
+* var bool = anyHasOwnProp( [ o1, o2, o3 ], 'b' );
 * // returns true
 *
-* bool = anyHasProp( [ o1, o2, o3 ], 'd' );
+* bool = anyHasOwnProp( [ o1, o2, o3 ], 'd' );
 * // returns false
 *
-* bool = anyHasProp( [ o1, o2, o3 ], 'toString' );
-* // returns true
+* bool = anyHasOwnProp( [ o1, o2, o3 ], 'toString' );
+* // returns false
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function anyHasOwnProp( arr: Collection<unknown> | AccessorArrayLike<unknown>, prop: PropertyName | number ): boolean;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = anyHasOwnProp;

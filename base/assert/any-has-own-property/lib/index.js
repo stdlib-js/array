@@ -19,12 +19,12 @@
 'use strict';
 
 /**
-* Test whether at least one element in a provided array has a specified property, either own or inherited.
+* Test whether at least one element in a provided array has a specified own property.
 *
-* @module @stdlib/array/base/assert/any-has-property
+* @module @stdlib/array/base/assert/any-has-own-property
 *
 * @example
-* var anyHasProp = require( '@stdlib/array/base/assert/any-has-property' );
+* var anyHasOwnProp = require( '@stdlib/array/base/assert/any-has-own-property' );
 *
 * var o1 = {
 *     'a': 1
@@ -36,14 +36,14 @@
 *     'c': 3
 * };
 *
-* var bool = anyHasProp( [ o1, o2, o3 ], 'b' );
+* var bool = anyHasOwnProp( [ o1, o2, o3 ], 'b' );
 * // returns true
 *
-* bool = anyHasProp( [ o1, o2, o3 ], 'd' );
+* bool = anyHasOwnProp( [ o1, o2, o3 ], 'd' );
 * // returns false
 *
-* bool = anyHasProp( [ o1, o2, o3 ], 'toString' );
-* // returns true
+* bool = anyHasOwnProp( [ o1, o2, o3 ], 'toString' );
+* // returns false
 */
 
 // MODULES //

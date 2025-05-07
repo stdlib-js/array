@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`8b2c875`](https://github.com/stdlib-js/stdlib/commit/8b2c875e56586bdff1698fd768cec5d568ab24a0) - add `anyHasOwnProp` to namespace
+-   [`533df61`](https://github.com/stdlib-js/stdlib/commit/533df61c24c654e67a6d3dbf84b878ec0f8c9520) - add `array/base/assert/any-has-own-property`
 -   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - add `anyHasProp` to namespace
 -   [`ccd5ca6`](https://github.com/stdlib-js/stdlib/commit/ccd5ca60ccf12f9480f930547afb60da9732bf59) - add `array/base/assert/any-has-property`
 -   [`5edbc25`](https://github.com/stdlib-js/stdlib/commit/5edbc2524bf509bd0bbde5c6432c77f06e55a65d) - add index data type kinds
@@ -170,6 +172,9 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`8b2c875`](https://github.com/stdlib-js/stdlib/commit/8b2c875e56586bdff1698fd768cec5d568ab24a0) - **feat:** add `anyHasOwnProp` to namespace _(by Athan Reines)_
+-   [`533df61`](https://github.com/stdlib-js/stdlib/commit/533df61c24c654e67a6d3dbf84b878ec0f8c9520) - **feat:** add `array/base/assert/any-has-own-property` _(by Athan Reines)_
+-   [`80b1cec`](https://github.com/stdlib-js/stdlib/commit/80b1cec874dbe423a50ed26c1a6c3a7f5fc05cd9) - **docs:** update examples _(by Athan Reines)_
 -   [`d1a712d`](https://github.com/stdlib-js/stdlib/commit/d1a712db9218350f4e37926ac993b97573b65ba9) - **docs:** demonstrate prototype property _(by Athan Reines)_
 -   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - **feat:** add `anyHasProp` to namespace _(by Athan Reines)_
 -   [`ccd5ca6`](https://github.com/stdlib-js/stdlib/commit/ccd5ca60ccf12f9480f930547afb60da9732bf59) - **feat:** add `array/base/assert/any-has-property` _(by Athan Reines)_
