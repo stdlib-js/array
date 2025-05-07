@@ -37,6 +37,15 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name anyHasProp
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/any-has-property}
+*/
+setReadOnly( ns, 'anyHasProp', require( './../../../base/assert/any-has-property' ) );
+
+/**
 * @name contains
 * @memberof ns
 * @readonly

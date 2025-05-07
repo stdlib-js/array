@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-05)
+## Unreleased (2025-05-07)
 
 <section class="features">
 
 ### Features
 
+-   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - add `anyHasProp` to namespace
+-   [`ccd5ca6`](https://github.com/stdlib-js/stdlib/commit/ccd5ca60ccf12f9480f930547afb60da9732bf59) - add `array/base/assert/any-has-property`
 -   [`5edbc25`](https://github.com/stdlib-js/stdlib/commit/5edbc2524bf509bd0bbde5c6432c77f06e55a65d) - add index data type kinds
 -   [`6606a96`](https://github.com/stdlib-js/stdlib/commit/6606a96c6f200945d5506523f82f232538a2bc2d) - add index data type defaults
 -   [`28a1564`](https://github.com/stdlib-js/stdlib/commit/28a1564b9977c9c0aebb9806c2a4cbb10336b234) - add `reshape` to namespace
@@ -168,6 +170,9 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`d1a712d`](https://github.com/stdlib-js/stdlib/commit/d1a712db9218350f4e37926ac993b97573b65ba9) - **docs:** demonstrate prototype property _(by Athan Reines)_
+-   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - **feat:** add `anyHasProp` to namespace _(by Athan Reines)_
+-   [`ccd5ca6`](https://github.com/stdlib-js/stdlib/commit/ccd5ca60ccf12f9480f930547afb60da9732bf59) - **feat:** add `array/base/assert/any-has-property` _(by Athan Reines)_
 -   [`ecdd35d`](https://github.com/stdlib-js/stdlib/commit/ecdd35d1580a9b4460e6a220f47bcf252c8e77bc) - **chore:** fix EditorConfig lint errors [(#6932)](https://github.com/stdlib-js/stdlib/pull/6932) _(by Lalit Narayan Yadav)_
 -   [`ddff844`](https://github.com/stdlib-js/stdlib/commit/ddff84477a48d5f684eb4c828a2067a90849382d) - **chore:** fix EditorConfig lint errors [(#6869)](https://github.com/stdlib-js/stdlib/pull/6869) _(by zhanggy)_
 -   [`1f7e55f`](https://github.com/stdlib-js/stdlib/commit/1f7e55f344d26c42e0c2ae001f8ac3ce16f1999a) - **docs:** remove unused packages [(#6837)](https://github.com/stdlib-js/stdlib/pull/6837) _(by Shabareesh Shetty)_
