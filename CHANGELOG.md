@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - add `anyIsEntry` to namespace
+-   [`fbffea0`](https://github.com/stdlib-js/stdlib/commit/fbffea0a7be15b6013111fd0b613548d7c09a1b7) - add `array/base/assert/any-is-entry`
+-   [`dc8942d`](https://github.com/stdlib-js/stdlib/commit/dc8942da05af3ed631f67fc679c7c1730954e1be) - add `anyIsEntryIn` to namespace
+-   [`c9edc1a`](https://github.com/stdlib-js/stdlib/commit/c9edc1ab611674fe14def4df00cf8ca407ec4cce) - add `array/base/assert/any-is-entry-in`
 -   [`8b2c875`](https://github.com/stdlib-js/stdlib/commit/8b2c875e56586bdff1698fd768cec5d568ab24a0) - add `anyHasOwnProp` to namespace
 -   [`533df61`](https://github.com/stdlib-js/stdlib/commit/533df61c24c654e67a6d3dbf84b878ec0f8c9520) - add `array/base/assert/any-has-own-property`
 -   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - add `anyHasProp` to namespace
@@ -172,6 +176,10 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - **feat:** add `anyIsEntry` to namespace _(by Athan Reines)_
+-   [`fbffea0`](https://github.com/stdlib-js/stdlib/commit/fbffea0a7be15b6013111fd0b613548d7c09a1b7) - **feat:** add `array/base/assert/any-is-entry` _(by Athan Reines)_
+-   [`dc8942d`](https://github.com/stdlib-js/stdlib/commit/dc8942da05af3ed631f67fc679c7c1730954e1be) - **feat:** add `anyIsEntryIn` to namespace _(by Athan Reines)_
+-   [`c9edc1a`](https://github.com/stdlib-js/stdlib/commit/c9edc1ab611674fe14def4df00cf8ca407ec4cce) - **feat:** add `array/base/assert/any-is-entry-in` _(by Athan Reines)_
 -   [`8b2c875`](https://github.com/stdlib-js/stdlib/commit/8b2c875e56586bdff1698fd768cec5d568ab24a0) - **feat:** add `anyHasOwnProp` to namespace _(by Athan Reines)_
 -   [`533df61`](https://github.com/stdlib-js/stdlib/commit/533df61c24c654e67a6d3dbf84b878ec0f8c9520) - **feat:** add `array/base/assert/any-has-own-property` _(by Athan Reines)_
 -   [`80b1cec`](https://github.com/stdlib-js/stdlib/commit/80b1cec874dbe423a50ed26c1a6c3a7f5fc05cd9) - **docs:** update examples _(by Athan Reines)_

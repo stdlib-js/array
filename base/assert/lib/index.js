@@ -55,6 +55,24 @@ setReadOnly( ns, 'anyHasOwnProp', require( './../../../base/assert/any-has-own-p
 setReadOnly( ns, 'anyHasProp', require( './../../../base/assert/any-has-property' ) );
 
 /**
+* @name anyIsEntry
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/any-is-entry}
+*/
+setReadOnly( ns, 'anyIsEntry', require( './../../../base/assert/any-is-entry' ) );
+
+/**
+* @name anyIsEntryIn
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/assert/any-is-entry-in}
+*/
+setReadOnly( ns, 'anyIsEntryIn', require( './../../../base/assert/any-is-entry-in' ) );
+
+/**
 * @name contains
 * @memberof ns
 * @readonly
