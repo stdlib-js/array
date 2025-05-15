@@ -122,6 +122,7 @@
 
 ### Bug Fixes
 
+-   [`c54d1e0`](https://github.com/stdlib-js/stdlib/commit/c54d1e095143ad68529927fe76e8ddc435592a19) - revert iterator type change
 -   [`09ff0ce`](https://github.com/stdlib-js/stdlib/commit/09ff0ce53ae1c659591a4106c7f44b9df29bcdfd) - add missing index normalization and add associated tests
 -   [`165c7fb`](https://github.com/stdlib-js/stdlib/commit/165c7fb75861f4c1ee28940aadbe44ba4f6e8268) - use the correct TypeScript callback signature and update docs for `array/base/for-each` [(#5448)](https://github.com/stdlib-js/stdlib/pull/5448)
 -   [`78087d9`](https://github.com/stdlib-js/stdlib/commit/78087d9a551783d642d885fb42b89b4e23acd671) - provide missing argument to function
@@ -176,6 +177,8 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`f633319`](https://github.com/stdlib-js/stdlib/commit/f63331919c71fc22a6022ef6df2151d0d2ef3aab) - **docs:** update examples _(by Athan Reines)_
+-   [`c54d1e0`](https://github.com/stdlib-js/stdlib/commit/c54d1e095143ad68529927fe76e8ddc435592a19) - **fix:** revert iterator type change _(by Athan Reines)_
 -   [`b6df817`](https://github.com/stdlib-js/stdlib/commit/b6df81722b97af36092f9c6850f33e6d4795aaa4) - **docs:** fix types _(by Athan Reines)_
 -   [`c29e97b`](https://github.com/stdlib-js/stdlib/commit/c29e97b6388cecff97906f3613880765b601da2a) - **docs:** update namespace table of contents [(#6948)](https://github.com/stdlib-js/stdlib/pull/6948) _(by stdlib-bot, Athan Reines)_
 -   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - **feat:** add `anyIsEntry` to namespace _(by Athan Reines)_

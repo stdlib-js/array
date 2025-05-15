@@ -16,7 +16,6 @@
 * limitations under the License.
 */
 
-import array2iterator = require( './../../../to-iterator' );
 import ArrayBuffer = require( './../../../buffer' );
 import typedarray = require( './index' );
 
@@ -27,7 +26,6 @@ import typedarray = require( './index' );
 {
 	typedarray(); // $ExpectType Float64Array
 	typedarray( [ 1, 2, 3 ] ); // $ExpectType Float64Array
-	typedarray( array2iterator( [ 1, 2, 3 ] ) ); // $ExpectType Float64Array
 	typedarray( new ArrayBuffer( 10 ) ); // $ExpectType Float64Array
 
 	typedarray( 'float32' ); // $ExpectType Float32Array

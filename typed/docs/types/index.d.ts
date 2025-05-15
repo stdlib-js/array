@@ -23,7 +23,6 @@
 /// <reference types="@stdlib/types"/>
 
 import { RealOrComplexTypedArray, TypedDataTypeMap, Collection } from '@stdlib/types/array';
-import { Iterator } from '@stdlib/types/iter';
 import ArrayBuffer = require( './../../../buffer' );
 
 /**
@@ -101,7 +100,7 @@ declare function typedarray<T extends keyof TypedDataTypeMap = 'float64'>( typed
 * var arr = typedarray( [ 5, -3 ], 'int32' );
 * // returns <Int32Array>[ 5, -3 ]
 */
-declare function typedarray<T extends keyof TypedDataTypeMap = 'float64'>( obj: Collection<unknown> | Iterator, dtype?: T ): TypedDataTypeMap[T];
+declare function typedarray<T extends keyof TypedDataTypeMap = 'float64'>( obj: Collection<unknown> | Iterable<unknown>, dtype?: T ): TypedDataTypeMap[T];
 
 /**
 * Creates a typed array.
