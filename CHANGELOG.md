@@ -177,6 +177,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`b6b1bb1`](https://github.com/stdlib-js/stdlib/commit/b6b1bb1cac8664502e870976f41dc3d1143e229c) - **refactor:** update import paths _(by Athan Reines)_
 -   [`efe6e5d`](https://github.com/stdlib-js/stdlib/commit/efe6e5d6a5b1cac0d56c3c96170f45192959299e) - **docs:** add comment _(by Athan Reines)_
 -   [`f633319`](https://github.com/stdlib-js/stdlib/commit/f63331919c71fc22a6022ef6df2151d0d2ef3aab) - **docs:** update examples _(by Athan Reines)_
 -   [`c54d1e0`](https://github.com/stdlib-js/stdlib/commit/c54d1e095143ad68529927fe76e8ddc435592a19) - **fix:** revert iterator type change _(by Athan Reines)_
