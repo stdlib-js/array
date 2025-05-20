@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-05-20)
 
 <section class="features">
 
@@ -177,6 +177,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`99f515d`](https://github.com/stdlib-js/stdlib/commit/99f515d651fe793e13b1df6ff95f39200fad0ff1) - **docs:** update parameter types _(by Athan Reines)_
 -   [`02109aa`](https://github.com/stdlib-js/stdlib/commit/02109aa28a0c48a2d6b92de3423614204a39431e) - **chore:** address commit comments for commit `fbffea0` [(#7038)](https://github.com/stdlib-js/stdlib/pull/7038) _(by Sachin Raj, Philipp Burckhardt)_
 -   [`a98ddb6`](https://github.com/stdlib-js/stdlib/commit/a98ddb6a05fd9c1c383857ee0abc3ed4efbac8d2) - **test:** fix require path _(by Athan Reines)_
 -   [`b6b1bb1`](https://github.com/stdlib-js/stdlib/commit/b6b1bb1cac8664502e870976f41dc3d1143e229c) - **refactor:** update import paths _(by Athan Reines)_
