@@ -100,6 +100,42 @@ setReadOnly( ns, 'anyBy', require( './../../base/any-by' ) );
 setReadOnly( ns, 'anyByRight', require( './../../base/any-by-right' ) );
 
 /**
+* @name anyHasOwnProp
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/any-has-own-property}
+*/
+setReadOnly( ns, 'anyHasOwnProp', require( './../../base/any-has-own-property' ) );
+
+/**
+* @name anyHasProp
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/any-has-property}
+*/
+setReadOnly( ns, 'anyHasProp', require( './../../base/any-has-property' ) );
+
+/**
+* @name anyIsEntry
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/any-is-entry}
+*/
+setReadOnly( ns, 'anyIsEntry', require( './../../base/any-is-entry' ) );
+
+/**
+* @name anyIsEntryIn
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/any-is-entry-in}
+*/
+setReadOnly( ns, 'anyIsEntryIn', require( './../../base/any-is-entry-in' ) );
+
+/**
 * @name arraylike2object
 * @memberof ns
 * @readonly

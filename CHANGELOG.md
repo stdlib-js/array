@@ -4,12 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-20)
+## Unreleased (2025-05-21)
 
 <section class="features">
 
 ### Features
 
+-   [`79efa56`](https://github.com/stdlib-js/stdlib/commit/79efa566515a8c7453fb59b9e18050be37969830) - add `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, and `anyIsEntryIn` to namespace
+-   [`9d04faf`](https://github.com/stdlib-js/stdlib/commit/9d04fafb8ff8cbba366950b2659de2c652953597) - add `array/base/any-is-entry-in`
+-   [`1090b61`](https://github.com/stdlib-js/stdlib/commit/1090b61370d43c7224595f0038a086257fdb0113) - add `array/base/any-is-entry`
+-   [`4226d6d`](https://github.com/stdlib-js/stdlib/commit/4226d6d1dc95edfc037489a444cc8300cedfad2e) - add `array/base/any-has-property`
+-   [`73cfffd`](https://github.com/stdlib-js/stdlib/commit/73cfffd015cbde73fed35b630512c71752bf4934) - add `array/base/any-has-own-property`
 -   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - add `anyIsEntry` to namespace
 -   [`fbffea0`](https://github.com/stdlib-js/stdlib/commit/fbffea0a7be15b6013111fd0b613548d7c09a1b7) - add `array/base/assert/any-is-entry`
 -   [`dc8942d`](https://github.com/stdlib-js/stdlib/commit/dc8942da05af3ed631f67fc679c7c1730954e1be) - add `anyIsEntryIn` to namespace
@@ -141,6 +146,35 @@
 
 ### BREAKING CHANGES
 
+-   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4): remove `array/base/assert/any-is-entry-in`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array/base/any-is-entry-in` which provides the same API and
+        implementation.
+
+-   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce): remove `array/base/assert/any-is-entry`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array/base/any-is-entry` which provides the same API and
+        implementation.
+
+-   [`87f46a0`](https://github.com/stdlib-js/stdlib/commit/87f46a023aab832c4adb03b772ffa8d3fd114406): remove `array/base/assert/any-has-property`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array/base/any-has-property` which provides the same API and
+        implementation.
+
+-   [`44e6405`](https://github.com/stdlib-js/stdlib/commit/44e64052156d8f89c2701616e0e2bf267746329b): remove `array/base/assert/any-has-own-property`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array/base/any-has-own-property` which provides the same API and
+        implementation.
+
+-   [`23e8953`](https://github.com/stdlib-js/stdlib/commit/23e89539dc1a96e17f06ab1bde7a11e76fddd83b): remove `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, `anyIsEntryIn`
+
+    -   To migrate, users should access the same symbols via the
+        `@stdlib/array/base` namespace.
+
 -   [`82ee31f`](https://github.com/stdlib-js/stdlib/commit/82ee31f3193dc0854b0767ddf9e9effed62ba878): remove `equalNaNs` support
 
     -   To migrate, users should use `array/base/last-index-of-same-value`
@@ -177,6 +211,16 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4) - **remove:** remove `array/base/assert/any-is-entry-in` _(by Athan Reines)_
+-   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce) - **remove:** remove `array/base/assert/any-is-entry` _(by Athan Reines)_
+-   [`87f46a0`](https://github.com/stdlib-js/stdlib/commit/87f46a023aab832c4adb03b772ffa8d3fd114406) - **remove:** remove `array/base/assert/any-has-property` _(by Athan Reines)_
+-   [`44e6405`](https://github.com/stdlib-js/stdlib/commit/44e64052156d8f89c2701616e0e2bf267746329b) - **remove:** remove `array/base/assert/any-has-own-property` _(by Athan Reines)_
+-   [`23e8953`](https://github.com/stdlib-js/stdlib/commit/23e89539dc1a96e17f06ab1bde7a11e76fddd83b) - **remove:** remove `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, `anyIsEntryIn` from namespace _(by Athan Reines)_
+-   [`79efa56`](https://github.com/stdlib-js/stdlib/commit/79efa566515a8c7453fb59b9e18050be37969830) - **feat:** add `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, and `anyIsEntryIn` to namespace _(by Athan Reines)_
+-   [`9d04faf`](https://github.com/stdlib-js/stdlib/commit/9d04fafb8ff8cbba366950b2659de2c652953597) - **feat:** add `array/base/any-is-entry-in` _(by Athan Reines)_
+-   [`1090b61`](https://github.com/stdlib-js/stdlib/commit/1090b61370d43c7224595f0038a086257fdb0113) - **feat:** add `array/base/any-is-entry` _(by Athan Reines)_
+-   [`4226d6d`](https://github.com/stdlib-js/stdlib/commit/4226d6d1dc95edfc037489a444cc8300cedfad2e) - **feat:** add `array/base/any-has-property` _(by Athan Reines)_
+-   [`73cfffd`](https://github.com/stdlib-js/stdlib/commit/73cfffd015cbde73fed35b630512c71752bf4934) - **feat:** add `array/base/any-has-own-property` _(by Athan Reines)_
 -   [`89d9dc3`](https://github.com/stdlib-js/stdlib/commit/89d9dc316985aa3c194222afbf8146e58ff6d761) - **docs:** update namespace table of contents [(#7046)](https://github.com/stdlib-js/stdlib/pull/7046) _(by stdlib-bot)_
 -   [`99f515d`](https://github.com/stdlib-js/stdlib/commit/99f515d651fe793e13b1df6ff95f39200fad0ff1) - **docs:** update parameter types _(by Athan Reines)_
 -   [`02109aa`](https://github.com/stdlib-js/stdlib/commit/02109aa28a0c48a2d6b92de3423614204a39431e) - **chore:** address commit comments for commit `fbffea0` [(#7038)](https://github.com/stdlib-js/stdlib/pull/7038) _(by Sachin Raj, Philipp Burckhardt)_
