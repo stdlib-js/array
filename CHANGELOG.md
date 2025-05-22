@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-21)
+## Unreleased (2025-05-22)
 
 <section class="features">
 
@@ -211,6 +211,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`d3e9442`](https://github.com/stdlib-js/stdlib/commit/d3e9442155e8d093988fed8988489fbe7b549dbf) - **docs:** update namespace table of contents [(#7062)](https://github.com/stdlib-js/stdlib/pull/7062) _(by stdlib-bot)_
 -   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4) - **remove:** remove `array/base/assert/any-is-entry-in` _(by Athan Reines)_
 -   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce) - **remove:** remove `array/base/assert/any-is-entry` _(by Athan Reines)_
 -   [`87f46a0`](https://github.com/stdlib-js/stdlib/commit/87f46a023aab832c4adb03b772ffa8d3fd114406) - **remove:** remove `array/base/assert/any-has-property` _(by Athan Reines)_
