@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-22)
+## Unreleased (2025-05-29)
 
 <section class="features">
 
@@ -211,6 +211,9 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`4951a9d`](https://github.com/stdlib-js/stdlib/commit/4951a9dabc0a1cd2a9a93d8db024538db302b801) - **refactor:** tighten types _(by Athan Reines)_
+-   [`3fa6ce1`](https://github.com/stdlib-js/stdlib/commit/3fa6ce1f3ef526cb91a02c2dffd2cbfd215b4f8c) - **refactor:** tighten types _(by Athan Reines)_
+-   [`979807b`](https://github.com/stdlib-js/stdlib/commit/979807b5577c8a68aa06ba159ad2d905742eaf46) - **bench:** fix invocation _(by Athan Reines)_
 -   [`d3e9442`](https://github.com/stdlib-js/stdlib/commit/d3e9442155e8d093988fed8988489fbe7b549dbf) - **docs:** update namespace table of contents [(#7062)](https://github.com/stdlib-js/stdlib/pull/7062) _(by stdlib-bot)_
 -   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4) - **remove:** remove `array/base/assert/any-is-entry-in` _(by Athan Reines)_
 -   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce) - **remove:** remove `array/base/assert/any-is-entry` _(by Athan Reines)_
