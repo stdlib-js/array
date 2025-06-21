@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-29)
+## Unreleased (2025-06-21)
 
 <section class="features">
 
 ### Features
 
+-   [`7f0421e`](https://github.com/stdlib-js/stdlib/commit/7f0421e54502fdd9e92758d9c9123216372287fd) - add inital implementation of `array/struct-factory`
 -   [`79efa56`](https://github.com/stdlib-js/stdlib/commit/79efa566515a8c7453fb59b9e18050be37969830) - add `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, and `anyIsEntryIn` to namespace
 -   [`9d04faf`](https://github.com/stdlib-js/stdlib/commit/9d04fafb8ff8cbba366950b2659de2c652953597) - add `array/base/any-is-entry-in`
 -   [`1090b61`](https://github.com/stdlib-js/stdlib/commit/1090b61370d43c7224595f0038a086257fdb0113) - add `array/base/any-is-entry`
@@ -127,6 +128,7 @@
 
 ### Bug Fixes
 
+-   [`4252199`](https://github.com/stdlib-js/stdlib/commit/42521999bf5751baf748fb1e9528c9c4b31a9116) - ensure byte offset is a multiple of data type byte length
 -   [`c54d1e0`](https://github.com/stdlib-js/stdlib/commit/c54d1e095143ad68529927fe76e8ddc435592a19) - revert iterator type change
 -   [`09ff0ce`](https://github.com/stdlib-js/stdlib/commit/09ff0ce53ae1c659591a4106c7f44b9df29bcdfd) - add missing index normalization and add associated tests
 -   [`165c7fb`](https://github.com/stdlib-js/stdlib/commit/165c7fb75861f4c1ee28940aadbe44ba4f6e8268) - use the correct TypeScript callback signature and update docs for `array/base/for-each` [(#5448)](https://github.com/stdlib-js/stdlib/pull/5448)
@@ -211,6 +213,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`7f0421e`](https://github.com/stdlib-js/stdlib/commit/7f0421e54502fdd9e92758d9c9123216372287fd) - **feat:** add inital implementation of `array/struct-factory` _(by Athan Reines)_
+-   [`4252199`](https://github.com/stdlib-js/stdlib/commit/42521999bf5751baf748fb1e9528c9c4b31a9116) - **fix:** ensure byte offset is a multiple of data type byte length _(by Athan Reines)_
 -   [`4951a9d`](https://github.com/stdlib-js/stdlib/commit/4951a9dabc0a1cd2a9a93d8db024538db302b801) - **refactor:** tighten types _(by Athan Reines)_
 -   [`3fa6ce1`](https://github.com/stdlib-js/stdlib/commit/3fa6ce1f3ef526cb91a02c2dffd2cbfd215b4f8c) - **refactor:** tighten types _(by Athan Reines)_
 -   [`979807b`](https://github.com/stdlib-js/stdlib/commit/979807b5577c8a68aa06ba159ad2d905742eaf46) - **bench:** fix invocation _(by Athan Reines)_
