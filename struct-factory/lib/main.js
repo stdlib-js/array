@@ -23,7 +23,6 @@
 // MODULES //
 
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
-var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
 var isArrayBuffer = require( '@stdlib/assert/is-arraybuffer' );
 var isCollection = require( '@stdlib/assert/is-collection' );
@@ -43,6 +42,7 @@ var accessorGetter = require( './../../base/accessor-getter' );
 var gcopy = require( '@stdlib/blas/base/gcopy' ).ndarray;
 var structFactory = require( '@stdlib/dstructs/struct' );
 var format = require( '@stdlib/string/format' );
+var isStructConstructor = require( './is_struct_constructor.js' );
 var fromArray = require( './from_array.js' );
 var fromIterator = require( './from_iterator.js' );
 
@@ -51,28 +51,6 @@ var fromIterator = require( './from_iterator.js' );
 
 var HAS_ITERATOR_SYMBOL = hasIteratorSymbolSupport();
 var CTOR_NAME = 'StructArray';
-
-
-// FUNCTIONS //
-
-/**
-* Returns a boolean indicating if a value is a `struct` constructor.
-*
-* @private
-* @param {*} value - value to test
-* @returns {boolean} boolean indicating if a value is a `struct` constructor
-*/
-function isStructConstructor( value ) {
-	return (
-		isFunction( value ) &&
-		isPositiveInteger( value.alignment ) &&
-		isPositiveInteger( value.byteLength ) &&
-		isFunction( value.byteLengthOf ) &&
-		isFunction( value.byteOffsetOf ) &&
-		isFunction( value.bufferOf ) &&
-		isFunction( value.viewOf )
-	);
-}
 
 
 // MAIN //

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-21)
+## Unreleased (2025-06-22)
 
 <section class="features">
 
@@ -213,6 +213,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`74f2d2f`](https://github.com/stdlib-js/stdlib/commit/74f2d2fbf3eb548d043ef8c67c66120a67d97e17) - **refactor:** move function to file _(by Athan Reines)_
 -   [`7f0421e`](https://github.com/stdlib-js/stdlib/commit/7f0421e54502fdd9e92758d9c9123216372287fd) - **feat:** add inital implementation of `array/struct-factory` _(by Athan Reines)_
 -   [`4252199`](https://github.com/stdlib-js/stdlib/commit/42521999bf5751baf748fb1e9528c9c4b31a9116) - **fix:** ensure byte offset is a multiple of data type byte length _(by Athan Reines)_
 -   [`4951a9d`](https://github.com/stdlib-js/stdlib/commit/4951a9dabc0a1cd2a9a93d8db024538db302b801) - **refactor:** tighten types _(by Athan Reines)_
