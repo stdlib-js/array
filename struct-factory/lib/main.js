@@ -147,7 +147,7 @@ function factory( arg ) { // eslint-disable-line stdlib/jsdoc-require-throws-tag
 	} else if ( isStructConstructor( arg ) ) {
 		Struct = arg;
 	} else {
-		throw new TypeError( format( 'invalid argument. First argument must be either a struct constructor or struct schema. Value: `%s`.', Struct ) );
+		throw new TypeError( format( 'invalid argument. First argument must be either a struct constructor or struct schema. Value: `%s`.', arg ) );
 	}
 	BYTES_PER_ELEMENT = Struct.byteLength;
 	LAYOUT = Struct.layout; // TODO: consider whether to lazily materialize the struct layout, as this could potentially be a long string (hence increased memory consumption) depending on the complexity of the struct

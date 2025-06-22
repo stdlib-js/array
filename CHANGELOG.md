@@ -128,6 +128,7 @@
 
 ### Bug Fixes
 
+-   [`179f005`](https://github.com/stdlib-js/stdlib/commit/179f005163d265ff38f7571465c2514f8ccb22cf) - use correct variable name
 -   [`4252199`](https://github.com/stdlib-js/stdlib/commit/42521999bf5751baf748fb1e9528c9c4b31a9116) - ensure byte offset is a multiple of data type byte length
 -   [`c54d1e0`](https://github.com/stdlib-js/stdlib/commit/c54d1e095143ad68529927fe76e8ddc435592a19) - revert iterator type change
 -   [`09ff0ce`](https://github.com/stdlib-js/stdlib/commit/09ff0ce53ae1c659591a4106c7f44b9df29bcdfd) - add missing index normalization and add associated tests
@@ -213,6 +214,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`179f005`](https://github.com/stdlib-js/stdlib/commit/179f005163d265ff38f7571465c2514f8ccb22cf) - **fix:** use correct variable name _(by Athan Reines)_
 -   [`74f2d2f`](https://github.com/stdlib-js/stdlib/commit/74f2d2fbf3eb548d043ef8c67c66120a67d97e17) - **refactor:** move function to file _(by Athan Reines)_
 -   [`7f0421e`](https://github.com/stdlib-js/stdlib/commit/7f0421e54502fdd9e92758d9c9123216372287fd) - **feat:** add inital implementation of `array/struct-factory` _(by Athan Reines)_
 -   [`4252199`](https://github.com/stdlib-js/stdlib/commit/42521999bf5751baf748fb1e9528c9c4b31a9116) - **fix:** ensure byte offset is a multiple of data type byte length _(by Athan Reines)_
