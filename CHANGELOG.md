@@ -128,6 +128,8 @@
 
 ### Bug Fixes
 
+-   [`d3426a4`](https://github.com/stdlib-js/stdlib/commit/d3426a41ee92d8024bf7fc03d200aa98fb62a6f0) - use correct dimensions for array
+-   [`aa59ef8`](https://github.com/stdlib-js/stdlib/commit/aa59ef8461be08dc612cf4826bb020915d362239) - pass in correct number of arguments
 -   [`179f005`](https://github.com/stdlib-js/stdlib/commit/179f005163d265ff38f7571465c2514f8ccb22cf) - use correct variable name
 -   [`4252199`](https://github.com/stdlib-js/stdlib/commit/42521999bf5751baf748fb1e9528c9c4b31a9116) - ensure byte offset is a multiple of data type byte length
 -   [`c54d1e0`](https://github.com/stdlib-js/stdlib/commit/c54d1e095143ad68529927fe76e8ddc435592a19) - revert iterator type change
@@ -214,6 +216,13 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`b128b6a`](https://github.com/stdlib-js/stdlib/commit/b128b6a25775d9b319c83a9dbb521d8d9c45b8c2) - **chore:** fix ExpectType by supplying correct number of generic parameters _(by Philipp Burckhardt)_
+-   [`4ec1d6d`](https://github.com/stdlib-js/stdlib/commit/4ec1d6d67d746b2231ae18bfaaeb2ee5a9f40697) - **docs:** minor clean-up _(by Philipp Burckhardt)_
+-   [`d3426a4`](https://github.com/stdlib-js/stdlib/commit/d3426a41ee92d8024bf7fc03d200aa98fb62a6f0) - **fix:** use correct dimensions for array _(by Philipp Burckhardt)_
+-   [`27d6b62`](https://github.com/stdlib-js/stdlib/commit/27d6b6263dca9fe45e1977103f142226d09a08be) - **docs:** minor clean-up _(by Philipp Burckhardt)_
+-   [`2773163`](https://github.com/stdlib-js/stdlib/commit/2773163cd9baa364dcfe3c070afcc00bf4e98c27) - **chore:** update initial value and clean-up _(by Philipp Burckhardt)_
+-   [`aa59ef8`](https://github.com/stdlib-js/stdlib/commit/aa59ef8461be08dc612cf4826bb020915d362239) - **fix:** pass in correct number of arguments _(by Philipp Burckhardt)_
+-   [`28a6474`](https://github.com/stdlib-js/stdlib/commit/28a64749d12c05ecd840af6f5a4e14a343c6efc0) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`f925c9c`](https://github.com/stdlib-js/stdlib/commit/f925c9cacd01012cc8a8f74eb3f45cbe69a4bbb0) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`21bfa5b`](https://github.com/stdlib-js/stdlib/commit/21bfa5b1ebed46573ed2b501de7dae2b927c4513) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`fd7b7eb`](https://github.com/stdlib-js/stdlib/commit/fd7b7eb341227a6627d70044979b5edfebd5f692) - **refactor:** use assert utility _(by Athan Reines)_
