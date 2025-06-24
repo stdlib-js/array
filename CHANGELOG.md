@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-23)
+## Unreleased (2025-06-24)
 
 <section class="features">
 
@@ -214,6 +214,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`f925c9c`](https://github.com/stdlib-js/stdlib/commit/f925c9cacd01012cc8a8f74eb3f45cbe69a4bbb0) - **chore:** minor clean-up _(by Philipp Burckhardt)_
+-   [`21bfa5b`](https://github.com/stdlib-js/stdlib/commit/21bfa5b1ebed46573ed2b501de7dae2b927c4513) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`fd7b7eb`](https://github.com/stdlib-js/stdlib/commit/fd7b7eb341227a6627d70044979b5edfebd5f692) - **refactor:** use assert utility _(by Athan Reines)_
 -   [`179f005`](https://github.com/stdlib-js/stdlib/commit/179f005163d265ff38f7571465c2514f8ccb22cf) - **fix:** use correct variable name _(by Athan Reines)_
 -   [`74f2d2f`](https://github.com/stdlib-js/stdlib/commit/74f2d2fbf3eb548d043ef8c67c66120a67d97e17) - **refactor:** move function to file _(by Athan Reines)_
