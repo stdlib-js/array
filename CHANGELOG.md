@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-24)
+## Unreleased (2025-06-25)
 
 <section class="features">
 
@@ -216,6 +216,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`bc3632a`](https://github.com/stdlib-js/stdlib/commit/bc3632a5a7b48a8973b1418e861ddc45b3e8d0fa) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`b128b6a`](https://github.com/stdlib-js/stdlib/commit/b128b6a25775d9b319c83a9dbb521d8d9c45b8c2) - **chore:** fix ExpectType by supplying correct number of generic parameters _(by Philipp Burckhardt)_
 -   [`4ec1d6d`](https://github.com/stdlib-js/stdlib/commit/4ec1d6d67d746b2231ae18bfaaeb2ee5a9f40697) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`d3426a4`](https://github.com/stdlib-js/stdlib/commit/d3426a41ee92d8024bf7fc03d200aa98fb62a6f0) - **fix:** use correct dimensions for array _(by Philipp Burckhardt)_
