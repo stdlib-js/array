@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-25)
+## Unreleased (2025-07-13)
 
 <section class="features">
 
@@ -128,6 +128,7 @@
 
 ### Bug Fixes
 
+-   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - use correct package names in package.json
 -   [`d3426a4`](https://github.com/stdlib-js/stdlib/commit/d3426a41ee92d8024bf7fc03d200aa98fb62a6f0) - use correct dimensions for array
 -   [`aa59ef8`](https://github.com/stdlib-js/stdlib/commit/aa59ef8461be08dc612cf4826bb020915d362239) - pass in correct number of arguments
 -   [`179f005`](https://github.com/stdlib-js/stdlib/commit/179f005163d265ff38f7571465c2514f8ccb22cf) - use correct variable name
@@ -216,6 +217,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - **fix:** use correct package names in package.json _(by Philipp Burckhardt)_
 -   [`7c9afed`](https://github.com/stdlib-js/stdlib/commit/7c9afed6a288c9e7d3048dfa0ac8f085759d73f4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`bc3632a`](https://github.com/stdlib-js/stdlib/commit/bc3632a5a7b48a8973b1418e861ddc45b3e8d0fa) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`b128b6a`](https://github.com/stdlib-js/stdlib/commit/b128b6a25775d9b319c83a9dbb521d8d9c45b8c2) - **chore:** fix ExpectType by supplying correct number of generic parameters _(by Philipp Burckhardt)_
