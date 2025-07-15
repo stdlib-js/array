@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-13)
+## Unreleased (2025-07-15)
 
 <section class="features">
 
 ### Features
 
+-   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - add `hasAlmostEqualValues` to namespace
+-   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - add `array/base/assert/has-almost-equal-values`
 -   [`7f0421e`](https://github.com/stdlib-js/stdlib/commit/7f0421e54502fdd9e92758d9c9123216372287fd) - add inital implementation of `array/struct-factory`
 -   [`79efa56`](https://github.com/stdlib-js/stdlib/commit/79efa566515a8c7453fb59b9e18050be37969830) - add `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, and `anyIsEntryIn` to namespace
 -   [`9d04faf`](https://github.com/stdlib-js/stdlib/commit/9d04fafb8ff8cbba366950b2659de2c652953597) - add `array/base/any-is-entry-in`
@@ -217,6 +219,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - **feat:** add `hasAlmostEqualValues` to namespace _(by Athan Reines)_
+-   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - **feat:** add `array/base/assert/has-almost-equal-values` _(by Athan Reines)_
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - **fix:** use correct package names in package.json _(by Philipp Burckhardt)_
 -   [`7c9afed`](https://github.com/stdlib-js/stdlib/commit/7c9afed6a288c9e7d3048dfa0ac8f085759d73f4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`bc3632a`](https://github.com/stdlib-js/stdlib/commit/bc3632a5a7b48a8973b1418e861ddc45b3e8d0fa) - **chore:** minor clean-up _(by Philipp Burckhardt)_
