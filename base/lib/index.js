@@ -1953,6 +1953,15 @@ setReadOnly( ns, 'zeros5d', require( './../../base/zeros5d' ) );
 */
 setReadOnly( ns, 'zerosnd', require( './../../base/zerosnd' ) );
 
+/**
+* @name zip2object
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/zip2object}
+*/
+setReadOnly( ns, 'zip2object', require( './../../base/zip2object' ) );
+
 
 // EXPORTS //
 
