@@ -293,3 +293,41 @@ tape( 'the function zips three arrays to an array of objects (accessors)', funct
 
 	t.end();
 });
+
+tape( 'the function returns views on the input arrays (indexed)', function test( t ) {
+	var expected;
+	var actual;
+	var labels;
+	var x;
+	var y;
+
+	labels = [ 'x', 'y' ];
+
+	x = [ 1, 2 ];
+	y = [ 3, 4 ];
+
+	actual = zip2views( [ x, y ], labels );
+
+	t.strictEqual( actual[ 0 ].x, 1, 'returns expected value' );
+	t.strictEqual( actual[ 0 ].y, 3, 'returns expected value' );
+
+	t.strictEqual( actual[ 1 ].x, 2, 'returns expected value' );
+	t.strictEqual( actual[ 1 ].y, 4, 'returns expected value' );
+
+	actual[ 0 ].x = -99;
+	actual[ 1 ].y = 99;
+
+	t.strictEqual( actual[ 0 ].x, -99, 'returns expected value' );
+	t.strictEqual( actual[ 0 ].y, 3, 'returns expected value' );
+
+	t.strictEqual( actual[ 1 ].x, 2, 'returns expected value' );
+	t.strictEqual( actual[ 1 ].y, 99, 'returns expected value' );
+
+	expected = [ -99, 2 ];
+	t.deepEqual( x, expected, 'returns expected value' );
+
+	expected = [ 3, 99 ];
+	t.deepEqual( y, expected, 'returns expected value' );
+
+	t.end();
+});
