@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-26)
+## Unreleased (2025-07-27)
 
 <section class="features">
 
 ### Features
 
+-   [`302966e`](https://github.com/stdlib-js/stdlib/commit/302966e9b30769c05537f07169c2bda2fbee83f1) - add `zip` to namespace
+-   [`e669353`](https://github.com/stdlib-js/stdlib/commit/e669353fc68d57800199dcb773accd5ce9943cef) - add `array/base/zip`
+-   [`1626ce4`](https://github.com/stdlib-js/stdlib/commit/1626ce436f5b49949f6f49c70f351d3d25149097) - add `zip2objects` to namespace
+-   [`44a8a87`](https://github.com/stdlib-js/stdlib/commit/44a8a871353908788328432c303704843c4a5eb4) - add `array/base/zip2objects`
 -   [`44d590b`](https://github.com/stdlib-js/stdlib/commit/44d590b9dd5f64e263fc3687ba12a52c14bccb8d) - add `zip2object` to namespace
 -   [`455c0d4`](https://github.com/stdlib-js/stdlib/commit/455c0d44ca137051ceb8a331ef66890ee74bd45c) - add `array/base/zip2object`
 -   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - add `hasAlmostEqualValues` to namespace
@@ -221,6 +225,11 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`302966e`](https://github.com/stdlib-js/stdlib/commit/302966e9b30769c05537f07169c2bda2fbee83f1) - **feat:** add `zip` to namespace _(by Athan Reines)_
+-   [`e669353`](https://github.com/stdlib-js/stdlib/commit/e669353fc68d57800199dcb773accd5ce9943cef) - **feat:** add `array/base/zip` _(by Athan Reines)_
+-   [`73b048a`](https://github.com/stdlib-js/stdlib/commit/73b048a2cef0d2e2ab0ea10887f45fe7365c71bb) - **bench:** fix assertions _(by Athan Reines)_
+-   [`1626ce4`](https://github.com/stdlib-js/stdlib/commit/1626ce436f5b49949f6f49c70f351d3d25149097) - **feat:** add `zip2objects` to namespace _(by Athan Reines)_
+-   [`44a8a87`](https://github.com/stdlib-js/stdlib/commit/44a8a871353908788328432c303704843c4a5eb4) - **feat:** add `array/base/zip2objects` _(by Athan Reines)_
 -   [`44d590b`](https://github.com/stdlib-js/stdlib/commit/44d590b9dd5f64e263fc3687ba12a52c14bccb8d) - **feat:** add `zip2object` to namespace _(by Athan Reines)_
 -   [`455c0d4`](https://github.com/stdlib-js/stdlib/commit/455c0d44ca137051ceb8a331ef66890ee74bd45c) - **feat:** add `array/base/zip2object` _(by Athan Reines)_
 -   [`5388bba`](https://github.com/stdlib-js/stdlib/commit/5388bba36044d2de93dacb0134c6e5539b02928c) - **chore:** minor clean-up _(by Philipp Burckhardt)_
