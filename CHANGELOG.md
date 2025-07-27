@@ -227,6 +227,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`c95312a`](https://github.com/stdlib-js/stdlib/commit/c95312a79a73fb3424d20e2aa76a869304baa4d2) - **test:** add tests _(by Athan Reines)_
 -   [`1d9b865`](https://github.com/stdlib-js/stdlib/commit/1d9b865020ea004692013ee403cbcc4580d9bbab) - **test:** add mutation tests _(by Athan Reines)_
 -   [`53948cc`](https://github.com/stdlib-js/stdlib/commit/53948cc063bbf85d538b84ae678c1dc5117f864b) - **docs:** fix missing variable declaration _(by Athan Reines)_
 -   [`cd23042`](https://github.com/stdlib-js/stdlib/commit/cd23042ad42089fb6b69783060bd67004d879ebe) - **feat:** add `zip2views` to namespace _(by Athan Reines)_
