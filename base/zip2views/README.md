@@ -18,36 +18,62 @@ limitations under the License.
 
 -->
 
-# zip2objects
+# zip2views
 
-> Zip one or more arrays to an array of objects.
+> Zip one or more arrays to an array of composite views.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var zip2objects = require( '@stdlib/array/base/zip2objects' );
+var zip2views = require( '@stdlib/array/base/zip2views' );
 ```
 
-#### zip2objects( arrays, labels )
+#### zip2views( arrays, labels )
 
-Zips one or more arrays to an array of objects.
+Zips one or more arrays to an array of composite views.
 
 ```javascript
-var x = [ 1, 2 ];
-var y = [ 3, 4 ];
+var x = [ 1, 2, 3 ];
+var y = [ 'a', 'b', 'c' ];
 
 var labels = [ 'x', 'y' ];
 
-var out = zip2objects( [ x, y ], labels );
-// returns [ { 'x': 1, 'y': 3 }, { 'x': 2, 'y': 4 } ]
+var z = zip2views( [ x, y ], labels );
+// returns [ <Object>, <Object>, <Object> ]
+
+var v0 = z[ 0 ].toJSON();
+// returns { 'x': 1, 'y': 'a' }
+
+var v1 = z[ 1 ].toJSON();
+// returns { 'x': 2, 'y': 'b' }
+
+var v2 = z[ 2 ].toJSON();
+// returns { 'x': 3, 'y': 'c' }
+
+// Mutate one of the input arrays:
+x[ 0 ] = 5;
+
+v0 = z[ 0 ].toJSON();
+// returns { 'x': 5, 'y': 'a' }
+
+// Set a view property:
+z[ 1 ].y = 'beep';
+
+v1 = z[ 1 ].toJSON();
+// returns { 'x': 2, 'y': 'beep' }
+
+var y1 = y.slice();
+// returns [ 'a', 'beep', 'c' ]
 ```
 
 The function supports the following parameters:
 
 -   **arrays**: list of arrays to zip.
 -   **labels**: list of array labels.
+
+Each element in the returned array is a class instance having prototype properties corresponding to the list of array labels. As demonstrated in the example above, to convert an element to a regular object, invoke an element's `toJSON` method. Note, however, that the object returned by an element's `toJSON` method no longer shares the same memory as the provided input arrays.
 
 </section>
 
@@ -57,6 +83,7 @@ The function supports the following parameters:
 
 -   The function assumes that the list of arrays to be zipped all have the same length.
 -   The number of provided array labels should equal the number of arrays to be zipped.
+-   Each view in the returned array shares the same memory as the corresponding elements in the input arrays. Accordingly, mutation of either an input array or a view will mutate the other.
 
 </section>
 
@@ -71,14 +98,14 @@ The function supports the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
-var zip2objects = require( '@stdlib/array/base/zip2objects' );
+var zip2views = require( '@stdlib/array/base/zip2views' );
 
 var x = zeroTo( 10 );
 var y = discreteUniform( x.length, -100, 100 );
 
 var labels = [ 'x', 'y' ];
 
-var out = zip2objects( [ x, y ], labels );
+var out = zip2views( [ x, y ], labels );
 // returns [...]
 ```
 

@@ -1980,6 +1980,15 @@ setReadOnly( ns, 'zip2object', require( './../../base/zip2object' ) );
 */
 setReadOnly( ns, 'zip2objects', require( './../../base/zip2objects' ) );
 
+/**
+* @name zip2views
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/zip2views}
+*/
+setReadOnly( ns, 'zip2views', require( './../../base/zip2views' ) );
+
 
 // EXPORTS //
 

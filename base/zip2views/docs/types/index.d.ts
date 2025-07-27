@@ -28,12 +28,13 @@ import { Collection, AccessorArrayLike, ArrayLike } from '@stdlib/types/array';
 type PropertyKey = string | number | symbol;
 
 /**
-* Zips one or more arrays to an array of objects.
+* Zips one or more arrays to an array of composite views.
 *
 * ## Notes
 *
 * -   The function assumes that the list of arrays to be zipped all have the same length.
 * -   The number of provided array labels should equal the number of arrays to be zipped.
+* -   Each view in the returned array shares the same memory as the corresponding elements in the input arrays. Accordingly, mutation of either an input array or a view will mutate the other.
 *
 * @param arrays - list of arrays to be zipped
 * @param labels - list of array labels
@@ -45,12 +46,36 @@ type PropertyKey = string | number | symbol;
 *
 * var labels = [ 'x', 'y' ];
 *
-* var z = zip2objects( [ x, y ], labels );
-* // returns [ { 'x': 1, 'y': 'a' }, { 'x': 2, 'y': 'b' }, { 'x': 3, 'y': 'c' } ]
+* var z = zip2views( [ x, y ], labels );
+* // returns [ <Object>, <Object>, <Object> ]
+*
+* var v0 = z[ 0 ].toJSON();
+* // returns { 'x': 1, 'y': 'a' }
+*
+* var v1 = z[ 1 ].toJSON();
+* // returns { 'x': 2, 'y': 'b' }
+*
+* var v2 = z[ 2 ].toJSON();
+* // returns { 'x': 3, 'y': 'c' }
+*
+* // Mutate one of the input arrays:
+* x[ 0 ] = 5;
+*
+* v0 = z[ 0 ].toJSON();
+* // returns { 'x': 5, 'y': 'a' }
+*
+* // Set a view property:
+* z[ 1 ].y = 'beep';
+*
+* v1 = z[ 1 ].toJSON();
+* // returns { 'x': 2, 'y': 'beep' }
+*
+* var y1 = y.slice();
+* // returns [ 'a', 'beep', 'c' ]
 */
-declare function zip2objects<T = unknown, U extends PropertyKey = PropertyKey>( arrays: ArrayLike<Collection<T> | AccessorArrayLike<T>>, labels: Collection<U> | AccessorArrayLike<U> ): Array<Record<U, T>>;
+declare function zip2views<T = unknown, U extends PropertyKey = PropertyKey>( arrays: ArrayLike<Collection<T> | AccessorArrayLike<T>>, labels: Collection<U> | AccessorArrayLike<U> ): Array<Record<U, T>>;
 
 
 // EXPORTS //
 
-export = zip2objects;
+export = zip2views;

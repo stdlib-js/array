@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`cd23042`](https://github.com/stdlib-js/stdlib/commit/cd23042ad42089fb6b69783060bd67004d879ebe) - add `zip2views` to namespace
+-   [`4a651c7`](https://github.com/stdlib-js/stdlib/commit/4a651c7b6d1ea9a814ac420a91c0d94de3956917) - add `array/base/zip2views`
 -   [`302966e`](https://github.com/stdlib-js/stdlib/commit/302966e9b30769c05537f07169c2bda2fbee83f1) - add `zip` to namespace
 -   [`e669353`](https://github.com/stdlib-js/stdlib/commit/e669353fc68d57800199dcb773accd5ce9943cef) - add `array/base/zip`
 -   [`1626ce4`](https://github.com/stdlib-js/stdlib/commit/1626ce436f5b49949f6f49c70f351d3d25149097) - add `zip2objects` to namespace
@@ -225,6 +227,10 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`53948cc`](https://github.com/stdlib-js/stdlib/commit/53948cc063bbf85d538b84ae678c1dc5117f864b) - **docs:** fix missing variable declaration _(by Athan Reines)_
+-   [`cd23042`](https://github.com/stdlib-js/stdlib/commit/cd23042ad42089fb6b69783060bd67004d879ebe) - **feat:** add `zip2views` to namespace _(by Athan Reines)_
+-   [`4a651c7`](https://github.com/stdlib-js/stdlib/commit/4a651c7b6d1ea9a814ac420a91c0d94de3956917) - **feat:** add `array/base/zip2views` _(by Athan Reines)_
+-   [`75a09fd`](https://github.com/stdlib-js/stdlib/commit/75a09fdda6729788ada783e66412521bbb03ba3e) - **docs:** update notes _(by Athan Reines)_
 -   [`302966e`](https://github.com/stdlib-js/stdlib/commit/302966e9b30769c05537f07169c2bda2fbee83f1) - **feat:** add `zip` to namespace _(by Athan Reines)_
 -   [`e669353`](https://github.com/stdlib-js/stdlib/commit/e669353fc68d57800199dcb773accd5ce9943cef) - **feat:** add `array/base/zip` _(by Athan Reines)_
 -   [`73b048a`](https://github.com/stdlib-js/stdlib/commit/73b048a2cef0d2e2ab0ea10887f45fe7365c71bb) - **bench:** fix assertions _(by Athan Reines)_
