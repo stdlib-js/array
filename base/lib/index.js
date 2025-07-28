@@ -622,6 +622,24 @@ setReadOnly( ns, 'cunone', require( './../../base/cunone' ) );
 setReadOnly( ns, 'dedupe', require( './../../base/dedupe' ) );
 
 /**
+* @name entries2objects
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/entries2objects}
+*/
+setReadOnly( ns, 'entries2objects', require( './../../base/entries2objects' ) );
+
+/**
+* @name entries2views
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/entries2views}
+*/
+setReadOnly( ns, 'entries2views', require( './../../base/entries2views' ) );
+
+/**
 * @name every
 * @memberof ns
 * @readonly

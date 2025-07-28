@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-27)
+## Unreleased (2025-07-28)
 
 <section class="features">
 
 ### Features
 
+-   [`0482e74`](https://github.com/stdlib-js/stdlib/commit/0482e7449c3d3d59fd0f89f1352cb90e59127756) - add `entries2views` to namespace
+-   [`7e5f17b`](https://github.com/stdlib-js/stdlib/commit/7e5f17bf1d04ec84b0c137454a467ebee1370cf0) - add `array/base/entries2views`
+-   [`62be202`](https://github.com/stdlib-js/stdlib/commit/62be202d080ca6b785ae018c95570242cbbf5873) - add `entries2objects` to namespace
+-   [`f3d7a2f`](https://github.com/stdlib-js/stdlib/commit/f3d7a2fbe39b5aa81ed02f702bdd86103a2fd31b) - add `array/base/entries2objects`
 -   [`cd23042`](https://github.com/stdlib-js/stdlib/commit/cd23042ad42089fb6b69783060bd67004d879ebe) - add `zip2views` to namespace
 -   [`4a651c7`](https://github.com/stdlib-js/stdlib/commit/4a651c7b6d1ea9a814ac420a91c0d94de3956917) - add `array/base/zip2views`
 -   [`302966e`](https://github.com/stdlib-js/stdlib/commit/302966e9b30769c05537f07169c2bda2fbee83f1) - add `zip` to namespace
@@ -227,6 +231,10 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`0482e74`](https://github.com/stdlib-js/stdlib/commit/0482e7449c3d3d59fd0f89f1352cb90e59127756) - **feat:** add `entries2views` to namespace _(by Athan Reines)_
+-   [`7e5f17b`](https://github.com/stdlib-js/stdlib/commit/7e5f17bf1d04ec84b0c137454a467ebee1370cf0) - **feat:** add `array/base/entries2views` _(by Athan Reines)_
+-   [`62be202`](https://github.com/stdlib-js/stdlib/commit/62be202d080ca6b785ae018c95570242cbbf5873) - **feat:** add `entries2objects` to namespace _(by Athan Reines)_
+-   [`f3d7a2f`](https://github.com/stdlib-js/stdlib/commit/f3d7a2fbe39b5aa81ed02f702bdd86103a2fd31b) - **feat:** add `array/base/entries2objects` _(by Athan Reines)_
 -   [`c95312a`](https://github.com/stdlib-js/stdlib/commit/c95312a79a73fb3424d20e2aa76a869304baa4d2) - **test:** add tests _(by Athan Reines)_
 -   [`1d9b865`](https://github.com/stdlib-js/stdlib/commit/1d9b865020ea004692013ee403cbcc4580d9bbab) - **test:** add mutation tests _(by Athan Reines)_
 -   [`53948cc`](https://github.com/stdlib-js/stdlib/commit/53948cc063bbf85d538b84ae678c1dc5117f864b) - **docs:** fix missing variable declaration _(by Athan Reines)_
