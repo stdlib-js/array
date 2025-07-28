@@ -1576,6 +1576,15 @@ setReadOnly( ns, 'quinary5d', require( './../../base/quinary5d' ) );
 setReadOnly( ns, 'reject', require( './../../base/reject' ) );
 
 /**
+* @name rekey
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/rekey}
+*/
+setReadOnly( ns, 'rekey', require( './../../base/rekey' ) );
+
+/**
 * @name removeAt
 * @memberof ns
 * @readonly
