@@ -22,25 +22,25 @@
 
 var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
-var zeroTo = require( './../../../base/zero-to' );
+var filled2d = require( './../../../base/filled2d' );
 var pkg = require( './../package.json' ).name;
-var entries2views = require( './../lib' );
+var nested2views = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+':len=10', function benchmark( b ) {
+bench( pkg+':size=100', function benchmark( b ) {
 	var fields;
 	var x;
 	var i;
 	var v;
 
 	fields = [ 'x', 'y' ];
-	x = zeroTo( 10 );
+	x = filled2d( 10, [ 50, 2 ] );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		v = entries2views( x, fields );
+		v = nested2views( x, fields );
 		if ( typeof v !== 'object' ) {
 			b.fail( 'should return an array' );
 		}

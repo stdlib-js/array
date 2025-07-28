@@ -56,8 +56,9 @@ function entries2objects( arr, fields ) {
 	if ( N < 1 ) {
 		return [];
 	}
-	k = fields[ 0 ];
-	v = fields[ 1 ];
+	get = resolveGetter( fields );
+	k = get( fields, 0 );
+	v = get( fields, 1 );
 
 	get = resolveGetter( arr );
 	out = [];

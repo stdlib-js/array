@@ -1351,6 +1351,24 @@ setReadOnly( ns, 'mskunary5d', require( './../../base/mskunary5d' ) );
 setReadOnly( ns, 'nCartesianProduct', require( './../../base/n-cartesian-product' ) );
 
 /**
+* @name nested2objects
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/nested2objects}
+*/
+setReadOnly( ns, 'nested2objects', require( './../../base/nested2objects' ) );
+
+/**
+* @name nested2views
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/nested2views}
+*/
+setReadOnly( ns, 'nested2views', require( './../../base/nested2views' ) );
+
+/**
 * @name none
 * @memberof ns
 * @readonly

@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`1535192`](https://github.com/stdlib-js/stdlib/commit/1535192162a5b372854dd62cb028c2c5e32d7c0a) - add `nested2views` to namespace
+-   [`e484f42`](https://github.com/stdlib-js/stdlib/commit/e484f42a6bd37fcafb4309bcecad5c4270c132cc) - add `array/base/nested2views`
+-   [`e83fc9a`](https://github.com/stdlib-js/stdlib/commit/e83fc9abdd3c0bbd6d7ba91794ced8774757aeae) - add `nested2objects` to namespace
+-   [`0c087b7`](https://github.com/stdlib-js/stdlib/commit/0c087b783f86d415abe0a0698b54b6755f72cbaa) - add `array/base/nested2objects`
 -   [`0482e74`](https://github.com/stdlib-js/stdlib/commit/0482e7449c3d3d59fd0f89f1352cb90e59127756) - add `entries2views` to namespace
 -   [`7e5f17b`](https://github.com/stdlib-js/stdlib/commit/7e5f17bf1d04ec84b0c137454a467ebee1370cf0) - add `array/base/entries2views`
 -   [`62be202`](https://github.com/stdlib-js/stdlib/commit/62be202d080ca6b785ae018c95570242cbbf5873) - add `entries2objects` to namespace
@@ -142,6 +146,8 @@
 
 ### Bug Fixes
 
+-   [`f53879d`](https://github.com/stdlib-js/stdlib/commit/f53879de98a2f80792d3d97c7748fd7425800aac) - ensure support for outer accessor arrays
+-   [`5741019`](https://github.com/stdlib-js/stdlib/commit/57410198f53879784c97784af6bbe0b482b235ae) - ensure accessor support for provided fields
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - use correct package names in package.json
 -   [`d3426a4`](https://github.com/stdlib-js/stdlib/commit/d3426a41ee92d8024bf7fc03d200aa98fb62a6f0) - use correct dimensions for array
 -   [`aa59ef8`](https://github.com/stdlib-js/stdlib/commit/aa59ef8461be08dc612cf4826bb020915d362239) - pass in correct number of arguments
@@ -231,6 +237,16 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`d25ee66`](https://github.com/stdlib-js/stdlib/commit/d25ee665c0ae01b053bb4aeae117db1a27a282fd) - **bench:** fix sample array _(by Athan Reines)_
+-   [`4fd7c3c`](https://github.com/stdlib-js/stdlib/commit/4fd7c3c4193f809283db6672754b35bbe00fd79f) - **bench:** fix sample array _(by Athan Reines)_
+-   [`1535192`](https://github.com/stdlib-js/stdlib/commit/1535192162a5b372854dd62cb028c2c5e32d7c0a) - **feat:** add `nested2views` to namespace _(by Athan Reines)_
+-   [`e484f42`](https://github.com/stdlib-js/stdlib/commit/e484f42a6bd37fcafb4309bcecad5c4270c132cc) - **feat:** add `array/base/nested2views` _(by Athan Reines)_
+-   [`f389a19`](https://github.com/stdlib-js/stdlib/commit/f389a19fcb158cc48a624577d2dea87391a0be13) - **refactor:** remove unnecessary variable _(by Athan Reines)_
+-   [`e83fc9a`](https://github.com/stdlib-js/stdlib/commit/e83fc9abdd3c0bbd6d7ba91794ced8774757aeae) - **feat:** add `nested2objects` to namespace _(by Athan Reines)_
+-   [`f53879d`](https://github.com/stdlib-js/stdlib/commit/f53879de98a2f80792d3d97c7748fd7425800aac) - **fix:** ensure support for outer accessor arrays _(by Athan Reines)_
+-   [`0c087b7`](https://github.com/stdlib-js/stdlib/commit/0c087b783f86d415abe0a0698b54b6755f72cbaa) - **feat:** add `array/base/nested2objects` _(by Athan Reines)_
+-   [`5741019`](https://github.com/stdlib-js/stdlib/commit/57410198f53879784c97784af6bbe0b482b235ae) - **fix:** ensure accessor support for provided fields _(by Athan Reines)_
+-   [`7f0568c`](https://github.com/stdlib-js/stdlib/commit/7f0568c02fad49db0292ed2c15eed93e281b3d3f) - **bench:** fix descriptions _(by Athan Reines)_
 -   [`0482e74`](https://github.com/stdlib-js/stdlib/commit/0482e7449c3d3d59fd0f89f1352cb90e59127756) - **feat:** add `entries2views` to namespace _(by Athan Reines)_
 -   [`7e5f17b`](https://github.com/stdlib-js/stdlib/commit/7e5f17bf1d04ec84b0c137454a467ebee1370cf0) - **feat:** add `array/base/entries2views` _(by Athan Reines)_
 -   [`62be202`](https://github.com/stdlib-js/stdlib/commit/62be202d080ca6b785ae018c95570242cbbf5873) - **feat:** add `entries2objects` to namespace _(by Athan Reines)_

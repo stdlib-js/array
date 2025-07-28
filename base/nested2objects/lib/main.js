@@ -27,60 +27,57 @@ var copy = require( './../../../base/copy' );
 // MAIN //
 
 /**
-* Zips one or more arrays to an array of objects.
+* Converts each nested array to an object.
 *
 * ## Notes
 *
-* -   The function assumes that the list of arrays to be zipped all have the same length.
-* -   The number of provided array labels should equal the number of arrays to be zipped.
+* -   The function assumes that all nested arrays have the same length.
+* -   The number of provided array labels should equal the length of each nested array.
 *
-* @param {Collection<Collection>} arrays - list of arrays to be zipped
-* @param {ArrayLikeObject<string>} labels - list of array labels
+* @param {Collection<Collection>} arr - input array
+* @param {ArrayLikeObject<string>} fields - list of field names
 * @returns {Array<Object>} output array
 *
 * @example
-* var x = [ 1, 2, 3 ];
-* var y = [ 'a', 'b', 'c' ];
+* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+* var fields = [ 'x', 'y' ];
 *
-* var labels = [ 'x', 'y' ];
-*
-* var z = zip2objects( [ x, y ], labels );
-* // returns [ { 'x': 1, 'y': 'a' }, { 'x': 2, 'y': 'b' }, { 'x': 3, 'y': 'c' } ]
+* var out = nested2objects( x, fields );
+* // returns [ { 'x': 1, 'y': 2 }, { 'x': 3, 'y': 4 } ]
 */
-function zip2objects( arrays, labels ) {
-	var getters;
-	var list;
-	var keys;
+function nested2objects( arr, fields ) {
+	var names;
+	var oget;
 	var get;
 	var out;
 	var obj;
+	var tmp;
 	var M;
 	var N;
 	var i;
 	var j;
 
-	M = arrays.length;
+	M = arr.length;
 	if ( M < 1 ) {
 		return [];
 	}
-	list = copy( arrays );
-	N = list[ 0 ].length;
+	// Resolve the accessor for the outer array:
+	oget = resolveGetter( arr );
+
+	N = oget( arr, 0 ).length;
 	if ( N < 1 ) {
 		return [];
 	}
-	getters = [];
+	// Copy the list of fields to an indexed array to avoid repeated accessor calls:
+	names = copy( fields );
 
-	get = resolveGetter( labels );
-	keys = [];
-	for ( j = 0; j < M; j++ ) {
-		getters.push( resolveGetter( list[ j ] ) );
-		keys.push( get( labels, j ) );
-	}
 	out = [];
-	for ( i = 0; i < N; i++ ) {
+	for ( i = 0; i < M; i++ ) {
+		tmp = oget( arr, i );
+		get = resolveGetter( tmp );
 		obj = {};
-		for ( j = 0; j < M; j++ ) {
-			obj[ keys[ j ] ] = getters[ j ]( list[ j ], i );
+		for ( j = 0; j < N; j++ ) {
+			obj[ names[ j ] ] = get( tmp, j );
 		}
 		out.push( obj );
 	}
@@ -90,4 +87,4 @@ function zip2objects( arrays, labels ) {
 
 // EXPORTS //
 
-module.exports = zip2objects;
+module.exports = nested2objects;
