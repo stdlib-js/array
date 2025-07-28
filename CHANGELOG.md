@@ -150,6 +150,7 @@
 
 ### Bug Fixes
 
+-   [`8cdfd62`](https://github.com/stdlib-js/stdlib/commit/8cdfd621717a7a41428526107a42364a921b07ae) - ensure proper cache invalidation
 -   [`f53879d`](https://github.com/stdlib-js/stdlib/commit/f53879de98a2f80792d3d97c7748fd7425800aac) - ensure support for outer accessor arrays
 -   [`5741019`](https://github.com/stdlib-js/stdlib/commit/57410198f53879784c97784af6bbe0b482b235ae) - ensure accessor support for provided fields
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - use correct package names in package.json
@@ -241,6 +242,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`8cdfd62`](https://github.com/stdlib-js/stdlib/commit/8cdfd621717a7a41428526107a42364a921b07ae) - **fix:** ensure proper cache invalidation _(by Athan Reines)_
 -   [`d5a7391`](https://github.com/stdlib-js/stdlib/commit/d5a73912f19ca4825ce2f361fa4a37d193030ee3) - **feat:** add `rekey` to namespace _(by Athan Reines)_
 -   [`74dc3c3`](https://github.com/stdlib-js/stdlib/commit/74dc3c37f9b0c66051ba2ab143035cb3a4460970) - **feat:** add `array/base/rekey` _(by Athan Reines)_
 -   [`25a75d7`](https://github.com/stdlib-js/stdlib/commit/25a75d7ca2026a01c949a10d04a3a668b40e2e13) - **feat:** add `groupValuesOnKey` to namespace _(by Athan Reines)_

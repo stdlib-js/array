@@ -227,3 +227,65 @@ tape( 'the function returns views on the input arrays (accessors)', function tes
 
 	t.end();
 });
+
+tape( 'the function supports outer array mutation (indexed)', function test( t ) {
+	var actual;
+	var fields;
+	var tmp;
+	var x;
+
+	fields = [ 'x', 'y' ];
+
+	x = [ [ 1, 2 ], [ 3, 4 ] ];
+
+	actual = nested2views( x, fields );
+
+	t.strictEqual( actual[ 0 ].x, 1, 'returns expected value' );
+	t.strictEqual( actual[ 0 ].y, 2, 'returns expected value' );
+
+	t.strictEqual( actual[ 1 ].x, 3, 'returns expected value' );
+	t.strictEqual( actual[ 1 ].y, 4, 'returns expected value' );
+
+	tmp = x[ 0 ];
+	x[ 0 ] = x[ 1 ];
+	x[ 1 ] = tmp;
+
+	t.strictEqual( actual[ 0 ].x, 3, 'returns expected value' );
+	t.strictEqual( actual[ 0 ].y, 4, 'returns expected value' );
+
+	t.strictEqual( actual[ 1 ].x, 1, 'returns expected value' );
+	t.strictEqual( actual[ 1 ].y, 2, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function supports outer array mutation (accessors)', function test( t ) {
+	var actual;
+	var fields;
+	var tmp;
+	var x;
+
+	fields = [ 'x', 'y' ];
+
+	x = [ [ 1, 2 ], [ 3, 4 ] ];
+
+	actual = nested2views( toAccessorArray( x ), fields );
+
+	t.strictEqual( actual[ 0 ].x, 1, 'returns expected value' );
+	t.strictEqual( actual[ 0 ].y, 2, 'returns expected value' );
+
+	t.strictEqual( actual[ 1 ].x, 3, 'returns expected value' );
+	t.strictEqual( actual[ 1 ].y, 4, 'returns expected value' );
+
+	tmp = x[ 0 ];
+	x[ 0 ] = x[ 1 ];
+	x[ 1 ] = tmp;
+
+	t.strictEqual( actual[ 0 ].x, 3, 'returns expected value' );
+	t.strictEqual( actual[ 0 ].y, 4, 'returns expected value' );
+
+	t.strictEqual( actual[ 1 ].x, 1, 'returns expected value' );
+	t.strictEqual( actual[ 1 ].y, 2, 'returns expected value' );
+
+	t.end();
+});
