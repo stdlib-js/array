@@ -1063,6 +1063,15 @@ setReadOnly( ns, 'groupValues', require( './../../base/group-values' ) );
 setReadOnly( ns, 'groupValuesBy', require( './../../base/group-values-by' ) );
 
 /**
+* @name groupValuesOnKey
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/group-values-on-key}
+*/
+setReadOnly( ns, 'groupValuesOnKey', require( './../../base/group-values-on-key' ) );
+
+/**
 * @name incrspace
 * @memberof ns
 * @readonly

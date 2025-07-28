@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`25a75d7`](https://github.com/stdlib-js/stdlib/commit/25a75d7ca2026a01c949a10d04a3a668b40e2e13) - add `groupValuesOnKey` to namespace
+-   [`30a49c3`](https://github.com/stdlib-js/stdlib/commit/30a49c3a5c27d0a5d4cf8b75a82802faba76a145) - add `array/base/group-values-on-key`
 -   [`1535192`](https://github.com/stdlib-js/stdlib/commit/1535192162a5b372854dd62cb028c2c5e32d7c0a) - add `nested2views` to namespace
 -   [`e484f42`](https://github.com/stdlib-js/stdlib/commit/e484f42a6bd37fcafb4309bcecad5c4270c132cc) - add `array/base/nested2views`
 -   [`e83fc9a`](https://github.com/stdlib-js/stdlib/commit/e83fc9abdd3c0bbd6d7ba91794ced8774757aeae) - add `nested2objects` to namespace
@@ -237,6 +239,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`25a75d7`](https://github.com/stdlib-js/stdlib/commit/25a75d7ca2026a01c949a10d04a3a668b40e2e13) - **feat:** add `groupValuesOnKey` to namespace _(by Athan Reines)_
+-   [`30a49c3`](https://github.com/stdlib-js/stdlib/commit/30a49c3a5c27d0a5d4cf8b75a82802faba76a145) - **feat:** add `array/base/group-values-on-key` _(by Athan Reines)_
 -   [`d25ee66`](https://github.com/stdlib-js/stdlib/commit/d25ee665c0ae01b053bb4aeae117db1a27a282fd) - **bench:** fix sample array _(by Athan Reines)_
 -   [`4fd7c3c`](https://github.com/stdlib-js/stdlib/commit/4fd7c3c4193f809283db6672754b35bbe00fd79f) - **bench:** fix sample array _(by Athan Reines)_
 -   [`1535192`](https://github.com/stdlib-js/stdlib/commit/1535192162a5b372854dd62cb028c2c5e32d7c0a) - **feat:** add `nested2views` to namespace _(by Athan Reines)_
