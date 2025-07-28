@@ -289,3 +289,36 @@ tape( 'the function supports outer array mutation (accessors)', function test( t
 
 	t.end();
 });
+
+tape( 'the returned views have a toJSON method which includes all fields', function test( t ) {
+	var expected;
+	var actual;
+	var fields;
+	var x;
+
+	fields = [ 'a', 'b', 'c', 'd', 'e' ];
+
+	x = [ [ 1, 2, 3, 4, 5 ], [ 6, 7, 8, 9, 10 ] ];
+
+	actual = nested2views( x, fields );
+
+	expected = {
+		'a': 1,
+		'b': 2,
+		'c': 3,
+		'd': 4,
+		'e': 5
+	};
+	t.deepEqual( actual[ 0 ].toJSON(), expected, 'returns expected value for first element' );
+
+	expected = {
+		'a': 6,
+		'b': 7,
+		'c': 8,
+		'd': 9,
+		'e': 10
+	};
+	t.deepEqual( actual[ 1 ].toJSON(), expected, 'returns expected value for second element' );
+
+	t.end();
+});

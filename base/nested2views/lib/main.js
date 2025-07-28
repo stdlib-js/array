@@ -204,7 +204,7 @@ function nested2views( arr, fields ) {
 		var i;
 
 		out = {};
-		for ( i = 0; i < M; i++ ) {
+		for ( i = 0; i < N; i++ ) {
 			k = keys[ i ];
 			out[ k ] = this[ k ];
 		}

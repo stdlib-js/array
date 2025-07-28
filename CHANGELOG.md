@@ -150,6 +150,8 @@
 
 ### Bug Fixes
 
+-   [`d3b0f25`](https://github.com/stdlib-js/stdlib/commit/d3b0f251b37fdc27cd3a02ac794dddba0b2f7b36) - correct loop bounds in toJSON method for `nested2views`
+-   [`fbc5910`](https://github.com/stdlib-js/stdlib/commit/fbc5910c2290928c2fdc730a6b166b39e637d304) - remove unnecessary loop in toJSON method for entries2views
 -   [`8cdfd62`](https://github.com/stdlib-js/stdlib/commit/8cdfd621717a7a41428526107a42364a921b07ae) - ensure proper cache invalidation
 -   [`f53879d`](https://github.com/stdlib-js/stdlib/commit/f53879de98a2f80792d3d97c7748fd7425800aac) - ensure support for outer accessor arrays
 -   [`5741019`](https://github.com/stdlib-js/stdlib/commit/57410198f53879784c97784af6bbe0b482b235ae) - ensure accessor support for provided fields
@@ -242,6 +244,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`d3b0f25`](https://github.com/stdlib-js/stdlib/commit/d3b0f251b37fdc27cd3a02ac794dddba0b2f7b36) - **fix:** correct loop bounds in toJSON method for `nested2views` _(by Philipp Burckhardt)_
+-   [`fbc5910`](https://github.com/stdlib-js/stdlib/commit/fbc5910c2290928c2fdc730a6b166b39e637d304) - **fix:** remove unnecessary loop in toJSON method for entries2views _(by Philipp Burckhardt)_
 -   [`8cdfd62`](https://github.com/stdlib-js/stdlib/commit/8cdfd621717a7a41428526107a42364a921b07ae) - **fix:** ensure proper cache invalidation _(by Athan Reines)_
 -   [`d5a7391`](https://github.com/stdlib-js/stdlib/commit/d5a73912f19ca4825ce2f361fa4a37d193030ee3) - **feat:** add `rekey` to namespace _(by Athan Reines)_
 -   [`74dc3c3`](https://github.com/stdlib-js/stdlib/commit/74dc3c37f9b0c66051ba2ab143035cb3a4460970) - **feat:** add `array/base/rekey` _(by Athan Reines)_
