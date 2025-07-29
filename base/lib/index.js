@@ -1585,6 +1585,15 @@ setReadOnly( ns, 'reject', require( './../../base/reject' ) );
 setReadOnly( ns, 'rekey', require( './../../base/rekey' ) );
 
 /**
+* @name rekeyViews
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/rekey-views}
+*/
+setReadOnly( ns, 'rekeyViews', require( './../../base/rekey-views' ) );
+
+/**
 * @name removeAt
 * @memberof ns
 * @readonly
