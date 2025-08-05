@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-29)
+## Unreleased (2025-08-05)
 
 <section class="features">
 
@@ -246,6 +246,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`8a0618b`](https://github.com/stdlib-js/stdlib/commit/8a0618bf4e79916cd2e32e9159e0299b7c1bcf34) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
+-   [`2c927e4`](https://github.com/stdlib-js/stdlib/commit/2c927e403da0ed8841b6ce19296262a88c9856e0) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`c8567dc`](https://github.com/stdlib-js/stdlib/commit/c8567dc46194708845553af0631c54cc81b25170) - **feat:** add `rekeyViews` to namespace _(by Athan Reines)_
 -   [`768090d`](https://github.com/stdlib-js/stdlib/commit/768090def5056f9bb863878fd253b35e23a1f786) - **feat:** add `array/base/rekey-views` _(by Athan Reines)_
 -   [`d3b0f25`](https://github.com/stdlib-js/stdlib/commit/d3b0f251b37fdc27cd3a02ac794dddba0b2f7b36) - **fix:** correct loop bounds in toJSON method for `nested2views` _(by Philipp Burckhardt)_
