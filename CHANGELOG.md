@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-05)
+## Unreleased (2025-08-12)
 
 <section class="features">
 
@@ -246,6 +246,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`0f7607a`](https://github.com/stdlib-js/stdlib/commit/0f7607a1d5bc88b5ee38d5091725678eafd304f6) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`8a0618b`](https://github.com/stdlib-js/stdlib/commit/8a0618bf4e79916cd2e32e9159e0299b7c1bcf34) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`2c927e4`](https://github.com/stdlib-js/stdlib/commit/2c927e403da0ed8841b6ce19296262a88c9856e0) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`c8567dc`](https://github.com/stdlib-js/stdlib/commit/c8567dc46194708845553af0631c54cc81b25170) - **feat:** add `rekeyViews` to namespace _(by Athan Reines)_
