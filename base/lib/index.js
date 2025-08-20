@@ -595,6 +595,24 @@ setReadOnly( ns, 'countTruthy', require( './../../base/count-truthy' ) );
 setReadOnly( ns, 'cuany', require( './../../base/cuany' ) );
 
 /**
+* @name cuanyBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cuany-by}
+*/
+setReadOnly( ns, 'cuanyBy', require( './../../base/cuany-by' ) );
+
+/**
+* @name cuanyByRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cuany-by-right}
+*/
+setReadOnly( ns, 'cuanyByRight', require( './../../base/cuany-by-right' ) );
+
+/**
 * @name cuevery
 * @memberof ns
 * @readonly
@@ -604,6 +622,24 @@ setReadOnly( ns, 'cuany', require( './../../base/cuany' ) );
 setReadOnly( ns, 'cuevery', require( './../../base/cuevery' ) );
 
 /**
+* @name cueveryBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cuevery-by}
+*/
+setReadOnly( ns, 'cueveryBy', require( './../../base/cuevery-by' ) );
+
+/**
+* @name cueveryByRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cuevery-by-right}
+*/
+setReadOnly( ns, 'cueveryByRight', require( './../../base/cuevery-by-right' ) );
+
+/**
 * @name cunone
 * @memberof ns
 * @readonly
@@ -611,6 +647,51 @@ setReadOnly( ns, 'cuevery', require( './../../base/cuevery' ) );
 * @see {@link module:@stdlib/array/base/cunone}
 */
 setReadOnly( ns, 'cunone', require( './../../base/cunone' ) );
+
+/**
+* @name cunoneBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cunone-by}
+*/
+setReadOnly( ns, 'cunoneBy', require( './../../base/cunone-by' ) );
+
+/**
+* @name cunoneByRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cunone-by-right}
+*/
+setReadOnly( ns, 'cunoneByRight', require( './../../base/cunone-by-right' ) );
+
+/**
+* @name cusome
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cusome}
+*/
+setReadOnly( ns, 'cusome', require( './../../base/cusome' ) );
+
+/**
+* @name cusomeBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cusome-by}
+*/
+setReadOnly( ns, 'cusomeBy', require( './../../base/cusome-by' ) );
+
+/**
+* @name cusomeByRight
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/cusome-by-right}
+*/
+setReadOnly( ns, 'cusomeByRight', require( './../../base/cusome-by-right' ) );
 
 /**
 * @name dedupe
@@ -991,6 +1072,15 @@ setReadOnly( ns, 'flipud4d', require( './../../base/flipud4d' ) );
 setReadOnly( ns, 'flipud5d', require( './../../base/flipud5d' ) );
 
 /**
+* @name forEach
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/for-each}
+*/
+setReadOnly( ns, 'forEach', require( './../../base/for-each' ) );
+
+/**
 * @name strided2array
 * @memberof ns
 * @readonly
@@ -1171,6 +1261,15 @@ setReadOnly( ns, 'linspace2d', require( './../../base/linspace2d' ) );
 setReadOnly( ns, 'logspace', require( './../../base/logspace' ) );
 
 /**
+* @name map
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/map}
+*/
+setReadOnly( ns, 'map', require( './../../base/map' ) );
+
+/**
 * @name map2d
 * @memberof ns
 * @readonly
@@ -1313,6 +1412,15 @@ setReadOnly( ns, 'mskput', require( './../../base/mskput' ) );
 * @see {@link module:@stdlib/array/base/mskreject}
 */
 setReadOnly( ns, 'mskreject', require( './../../base/mskreject' ) );
+
+/**
+* @name mskrejectMap
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/mskreject-map}
+*/
+setReadOnly( ns, 'mskrejectMap', require( './../../base/mskreject-map' ) );
 
 /**
 * @name mskunary2d
@@ -1754,6 +1862,15 @@ setReadOnly( ns, 'takeIndexed', require( './../../base/take-indexed' ) );
 * @see {@link module:@stdlib/array/base/take-indexed2}
 */
 setReadOnly( ns, 'takeIndexed2', require( './../../base/take-indexed2' ) );
+
+/**
+* @name takeMap
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/take-map}
+*/
+setReadOnly( ns, 'takeMap', require( './../../base/take-map' ) );
 
 /**
 * @name take2d

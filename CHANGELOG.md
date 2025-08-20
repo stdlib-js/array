@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-18)
+## Unreleased (2025-08-20)
 
 <section class="features">
 
 ### Features
 
+-   [`b066b48`](https://github.com/stdlib-js/stdlib/commit/b066b488b56954ec0761d625f3b0f820a65ff94c) - add missing functions to namespace
 -   [`c8567dc`](https://github.com/stdlib-js/stdlib/commit/c8567dc46194708845553af0631c54cc81b25170) - add `rekeyViews` to namespace
 -   [`768090d`](https://github.com/stdlib-js/stdlib/commit/768090def5056f9bb863878fd253b35e23a1f786) - add `array/base/rekey-views`
 -   [`d5a7391`](https://github.com/stdlib-js/stdlib/commit/d5a73912f19ca4825ce2f361fa4a37d193030ee3) - add `rekey` to namespace
@@ -246,6 +247,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`cedc9bb`](https://github.com/stdlib-js/stdlib/commit/cedc9bb0f92c950200128079cac8ab1da99ec7ed) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`b066b48`](https://github.com/stdlib-js/stdlib/commit/b066b488b56954ec0761d625f3b0f820a65ff94c) - **feat:** add missing functions to namespace _(by Philipp Burckhardt)_
 -   [`8cea287`](https://github.com/stdlib-js/stdlib/commit/8cea2870cc30848a616b76259b3274caae387b10) - **docs:** fix return annotation values _(by Philipp Burckhardt)_
 -   [`4535885`](https://github.com/stdlib-js/stdlib/commit/453588520ecebd68ae1c7f730ac16b206d0f0760) - **test:** fix test descriptions to use ordinal numbers correctly _(by Philipp Burckhardt)_
 -   [`6f85067`](https://github.com/stdlib-js/stdlib/commit/6f8506775cdf2b3edf740216340ff7a0a82677dc) - **test:** fix malformed test descriptions from strictEqual migration _(by Philipp Burckhardt)_
