@@ -247,6 +247,8 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`5acfd64`](https://github.com/stdlib-js/stdlib/commit/5acfd64326637640433a7e3ffc5d101db23ab1d8) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`4f3789b`](https://github.com/stdlib-js/stdlib/commit/4f3789b25e01908dab6c31b910573b73e5709ac5) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`cedc9bb`](https://github.com/stdlib-js/stdlib/commit/cedc9bb0f92c950200128079cac8ab1da99ec7ed) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`b066b48`](https://github.com/stdlib-js/stdlib/commit/b066b488b56954ec0761d625f3b0f820a65ff94c) - **feat:** add missing functions to namespace _(by Philipp Burckhardt)_
 -   [`8cea287`](https://github.com/stdlib-js/stdlib/commit/8cea2870cc30848a616b76259b3274caae387b10) - **docs:** fix return annotation values _(by Philipp Burckhardt)_
