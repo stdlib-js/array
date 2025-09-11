@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-10)
+## Unreleased (2025-09-11)
 
 <section class="features">
 
@@ -247,6 +247,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`7808da1`](https://github.com/stdlib-js/stdlib/commit/7808da1fbe8e2100ba60704afee2636fa9d5f091) - **docs:** add missing quote and replace incorrect closing curly braces _(by Philipp Burckhardt)_
 -   [`3b9d924`](https://github.com/stdlib-js/stdlib/commit/3b9d92469dabccb5e006dc55086752b5cdfbc7ed) - **docs:** add missing quotes _(by Philipp Burckhardt)_
 -   [`8b0b780`](https://github.com/stdlib-js/stdlib/commit/8b0b78084a2ff5d7a76ba3c5945b13d7f0906f4f) - **docs:** fix TypeScript declaration linting errors _(by Philipp Burckhardt)_
 -   [`a36e532`](https://github.com/stdlib-js/stdlib/commit/a36e5328871d2e351a19a00e75eb0d386702e870) - **chore:** address commit comments for commit `5acfd64` [(#7919)](https://github.com/stdlib-js/stdlib/pull/7919) _(by Nakul Krishnakumar)_
