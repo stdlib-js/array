@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,31 +16,30 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
 /**
-* Removes an element from an array.
+* Insert an element into an array.
 *
-* ## Notes
-*
-* -   The function mutates the input array.
-*
-* @param x - input array
-* @param index - element index
-* @returns input array
+* @module @stdlib/array/base/insert-at
 *
 * @example
+* var insertAt = require( '@stdlib/array/base/insert-at' );
+*
 * var x = [ 1, 1, 2, 3, 3 ];
 *
-* var y = removeAt( x, -3 );
-* // returns [ 1, 1, 3, 3 ]
+* var y = insertAt( x, -3, 4 );
+* // returns [ 1, 1, 4, 2, 3, 3 ]
 *
 * var bool = ( x === y );
 * // returns true
 */
-declare function removeAt<T = unknown>( x: Array<T>, index: number ): Array<T>;
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = removeAt;
+module.exports = main;

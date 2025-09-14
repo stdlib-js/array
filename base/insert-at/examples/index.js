@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,31 +16,22 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
 
-/**
-* Removes an element from an array.
-*
-* ## Notes
-*
-* -   The function mutates the input array.
-*
-* @param x - input array
-* @param index - element index
-* @returns input array
-*
-* @example
-* var x = [ 1, 1, 2, 3, 3 ];
-*
-* var y = removeAt( x, -3 );
-* // returns [ 1, 1, 3, 3 ]
-*
-* var bool = ( x === y );
-* // returns true
-*/
-declare function removeAt<T = unknown>( x: Array<T>, index: number ): Array<T>;
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var randi = require( '@stdlib/random/base/discrete-uniform' );
+var insertAt = require( './../lib' );
 
+// Create an array of random numbers:
+var x = discreteUniform( 10, 0, 5, {
+	'dtype': 'generic'
+});
+// returns [...]
 
-// EXPORTS //
+console.log( x );
 
-export = removeAt;
+// Insert a random element:
+var y = insertAt( x, randi( 0, x.length ), randi( 100, 105 ) );
+// returns [...]
+
+console.log( y );

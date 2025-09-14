@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Removes an element from an array.
+* Inserts an element into an array.
 *
 * ## Notes
 *
@@ -27,20 +27,21 @@
 *
 * @param x - input array
 * @param index - element index
+* @param value - value to insert
 * @returns input array
 *
 * @example
 * var x = [ 1, 1, 2, 3, 3 ];
 *
-* var y = removeAt( x, -3 );
-* // returns [ 1, 1, 3, 3 ]
+* var y = insertAt( x, -3, 4 );
+* // returns [ 1, 1, 4, 2, 3, 3 ]
 *
 * var bool = ( x === y );
 * // returns true
 */
-declare function removeAt<T = unknown>( x: Array<T>, index: number ): Array<T>;
+declare function insertAt<T = unknown>( x: Array<T>, index: number, value: T ): Array<T>;
 
 
 // EXPORTS //
 
-export = removeAt;
+export = insertAt;

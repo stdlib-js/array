@@ -1198,6 +1198,15 @@ setReadOnly( ns, 'indexOfSameValue', require( './../../base/index-of-same-value'
 setReadOnly( ns, 'indicesComplement', require( './../../base/indices-complement' ) );
 
 /**
+* @name insertAt
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/insert-at}
+*/
+setReadOnly( ns, 'insertAt', require( './../../base/insert-at' ) );
+
+/**
 * @name join
 * @memberof ns
 * @readonly
@@ -1943,6 +1952,15 @@ setReadOnly( ns, 'toAccessorArray', require( './../../base/to-accessor-array' ) 
 * @see {@link module:@stdlib/array/base/to-deduped}
 */
 setReadOnly( ns, 'toDeduped', require( './../../base/to-deduped' ) );
+
+/**
+* @name toInsertedAt
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/to-inserted-at}
+*/
+setReadOnly( ns, 'toInsertedAt', require( './../../base/to-inserted-at' ) );
 
 /**
 * @name toReversed

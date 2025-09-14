@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`addcce3`](https://github.com/stdlib-js/stdlib/commit/addcce3ebb1f88d8c258f34a03c61b6eb14e5c87) - add `toInsertedAt` to namespace
+-   [`b0b7cf6`](https://github.com/stdlib-js/stdlib/commit/b0b7cf605445a13f21685c78d55a477cf86e2655) - add `insertAt` to namespace
+-   [`8d0488a`](https://github.com/stdlib-js/stdlib/commit/8d0488a14aeae75e8d9bba5b37157eff56cc61ec) - add `array/base/insert-at`
 -   [`77e0108`](https://github.com/stdlib-js/stdlib/commit/77e010849948df11c24123f781e9ca7689be44ff) - add `array/base/to-inserted-at` [(#6807)](https://github.com/stdlib-js/stdlib/pull/6807)
 -   [`b066b48`](https://github.com/stdlib-js/stdlib/commit/b066b488b56954ec0761d625f3b0f820a65ff94c) - add missing functions to namespace
 -   [`c8567dc`](https://github.com/stdlib-js/stdlib/commit/c8567dc46194708845553af0631c54cc81b25170) - add `rekeyViews` to namespace
@@ -248,6 +251,10 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`addcce3`](https://github.com/stdlib-js/stdlib/commit/addcce3ebb1f88d8c258f34a03c61b6eb14e5c87) - **feat:** add `toInsertedAt` to namespace _(by Athan Reines)_
+-   [`b0b7cf6`](https://github.com/stdlib-js/stdlib/commit/b0b7cf605445a13f21685c78d55a477cf86e2655) - **feat:** add `insertAt` to namespace _(by Athan Reines)_
+-   [`8d0488a`](https://github.com/stdlib-js/stdlib/commit/8d0488a14aeae75e8d9bba5b37157eff56cc61ec) - **feat:** add `array/base/insert-at` _(by Athan Reines)_
+-   [`2384637`](https://github.com/stdlib-js/stdlib/commit/2384637c93769537900b4b4bde3b183dabe80912) - **docs:** fix example _(by Athan Reines)_
 -   [`77e0108`](https://github.com/stdlib-js/stdlib/commit/77e010849948df11c24123f781e9ca7689be44ff) - **feat:** add `array/base/to-inserted-at` [(#6807)](https://github.com/stdlib-js/stdlib/pull/6807) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`627ead4`](https://github.com/stdlib-js/stdlib/commit/627ead48e08fcf20d5cb72c14014bb9df478adf9) - **docs:** fix example _(by Athan Reines)_
 -   [`ef39db1`](https://github.com/stdlib-js/stdlib/commit/ef39db15d5ced85b67f9652862ce8c51321b6bcc) - **docs:** fix example _(by Athan Reines)_
