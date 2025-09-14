@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`77e0108`](https://github.com/stdlib-js/stdlib/commit/77e010849948df11c24123f781e9ca7689be44ff) - add `array/base/to-inserted-at` [(#6807)](https://github.com/stdlib-js/stdlib/pull/6807)
 -   [`b066b48`](https://github.com/stdlib-js/stdlib/commit/b066b488b56954ec0761d625f3b0f820a65ff94c) - add missing functions to namespace
 -   [`c8567dc`](https://github.com/stdlib-js/stdlib/commit/c8567dc46194708845553af0631c54cc81b25170) - add `rekeyViews` to namespace
 -   [`768090d`](https://github.com/stdlib-js/stdlib/commit/768090def5056f9bb863878fd253b35e23a1f786) - add `array/base/rekey-views`
@@ -247,6 +248,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`77e0108`](https://github.com/stdlib-js/stdlib/commit/77e010849948df11c24123f781e9ca7689be44ff) - **feat:** add `array/base/to-inserted-at` [(#6807)](https://github.com/stdlib-js/stdlib/pull/6807) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`627ead4`](https://github.com/stdlib-js/stdlib/commit/627ead48e08fcf20d5cb72c14014bb9df478adf9) - **docs:** fix example _(by Athan Reines)_
 -   [`ef39db1`](https://github.com/stdlib-js/stdlib/commit/ef39db15d5ced85b67f9652862ce8c51321b6bcc) - **docs:** fix example _(by Athan Reines)_
 -   [`7808da1`](https://github.com/stdlib-js/stdlib/commit/7808da1fbe8e2100ba60704afee2636fa9d5f091) - **docs:** add missing quote and replace incorrect closing curly braces _(by Philipp Burckhardt)_
