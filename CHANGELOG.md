@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-14)
+## Unreleased (2025-09-15)
 
 <section class="features">
 
@@ -251,6 +251,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`0042479`](https://github.com/stdlib-js/stdlib/commit/0042479157f9756dfbb87f6e9eeae51f5084d5fa) - **style:** remove extra spaces in return annotation comments _(by Philipp Burckhardt)_
 -   [`addcce3`](https://github.com/stdlib-js/stdlib/commit/addcce3ebb1f88d8c258f34a03c61b6eb14e5c87) - **feat:** add `toInsertedAt` to namespace _(by Athan Reines)_
 -   [`b0b7cf6`](https://github.com/stdlib-js/stdlib/commit/b0b7cf605445a13f21685c78d55a477cf86e2655) - **feat:** add `insertAt` to namespace _(by Athan Reines)_
 -   [`8d0488a`](https://github.com/stdlib-js/stdlib/commit/8d0488a14aeae75e8d9bba5b37157eff56cc61ec) - **feat:** add `array/base/insert-at` _(by Athan Reines)_
