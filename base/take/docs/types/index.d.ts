@@ -110,7 +110,7 @@ interface Take {
 	* @returns output array
 	*
 	* @example
-	* var Complex128Array = require( './../../../../float64' );
+	* var Complex128Array = require( './../../../../complex128' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var out = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );

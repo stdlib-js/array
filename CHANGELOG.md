@@ -4,12 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-15)
+## Unreleased (2025-09-21)
 
 <section class="features">
 
 ### Features
 
+-   [`5cf5331`](https://github.com/stdlib-js/stdlib/commit/5cf533172ba0fb480dcdbbe03861cfc14aded211) - update `array/base` TypeScript declarations
+-   [`029ac45`](https://github.com/stdlib-js/stdlib/commit/029ac457518cedb513351f5196fa078ad0a78ede) - update `array/base/symmetric` TypeScript declarations
+-   [`b090daa`](https://github.com/stdlib-js/stdlib/commit/b090daacf3b51a2afa50c08a06973ac13724e9df) - update `array/base/symmetric-banded` TypeScript declarations
+-   [`be9a2ed`](https://github.com/stdlib-js/stdlib/commit/be9a2ed77ea1e2013a8aaaf4f4d55aa964ff27f9) - update `array/base/banded` TypeScript declarations
+-   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - update `array/base/assert` TypeScript declarations
 -   [`addcce3`](https://github.com/stdlib-js/stdlib/commit/addcce3ebb1f88d8c258f34a03c61b6eb14e5c87) - add `toInsertedAt` to namespace
 -   [`b0b7cf6`](https://github.com/stdlib-js/stdlib/commit/b0b7cf605445a13f21685c78d55a477cf86e2655) - add `insertAt` to namespace
 -   [`8d0488a`](https://github.com/stdlib-js/stdlib/commit/8d0488a14aeae75e8d9bba5b37157eff56cc61ec) - add `array/base/insert-at`
@@ -251,6 +256,14 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`5cf5331`](https://github.com/stdlib-js/stdlib/commit/5cf533172ba0fb480dcdbbe03861cfc14aded211) - **feat:** update `array/base` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`c92ba2d`](https://github.com/stdlib-js/stdlib/commit/c92ba2d92c3ae4ea40f9b86fc5d620d7f9579f55) - **docs:** clean-up code in TSDoc examples and remove self-requires _(by Philipp Burckhardt)_
+-   [`3f48135`](https://github.com/stdlib-js/stdlib/commit/3f48135698dc83762b7b304b748a783eb5813fed) - **docs:** clean-up code in TSDoc examples _(by Philipp Burckhardt)_
+-   [`3dc5f1e`](https://github.com/stdlib-js/stdlib/commit/3dc5f1ef335565c05ee4be5878de5b587c7f28d6) - **docs:** fix require paths for complex arrays _(by Philipp Burckhardt)_
+-   [`029ac45`](https://github.com/stdlib-js/stdlib/commit/029ac457518cedb513351f5196fa078ad0a78ede) - **feat:** update `array/base/symmetric` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`b090daa`](https://github.com/stdlib-js/stdlib/commit/b090daacf3b51a2afa50c08a06973ac13724e9df) - **feat:** update `array/base/symmetric-banded` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`be9a2ed`](https://github.com/stdlib-js/stdlib/commit/be9a2ed77ea1e2013a8aaaf4f4d55aa964ff27f9) - **feat:** update `array/base/banded` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - **feat:** update `array/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`0042479`](https://github.com/stdlib-js/stdlib/commit/0042479157f9756dfbb87f6e9eeae51f5084d5fa) - **style:** remove extra spaces in return annotation comments _(by Philipp Burckhardt)_
 -   [`addcce3`](https://github.com/stdlib-js/stdlib/commit/addcce3ebb1f88d8c258f34a03c61b6eb14e5c87) - **feat:** add `toInsertedAt` to namespace _(by Athan Reines)_
 -   [`b0b7cf6`](https://github.com/stdlib-js/stdlib/commit/b0b7cf605445a13f21685c78d55a477cf86e2655) - **feat:** add `insertAt` to namespace _(by Athan Reines)_
