@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-21)
+## Unreleased (2025-09-22)
 
 <section class="features">
 
@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`2b52cb2`](https://github.com/stdlib-js/stdlib/commit/2b52cb2762dd0c715a444a6dd65f7de8cfcbcf3f) - **docs:** propagate fixes in TSDoc example code to namespace declarations [(#8126)](https://github.com/stdlib-js/stdlib/pull/8126) _(by stdlib-bot)_
 -   [`5cf5331`](https://github.com/stdlib-js/stdlib/commit/5cf533172ba0fb480dcdbbe03861cfc14aded211) - **feat:** update `array/base` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`c92ba2d`](https://github.com/stdlib-js/stdlib/commit/c92ba2d92c3ae4ea40f9b86fc5d620d7f9579f55) - **docs:** clean-up code in TSDoc examples and remove self-requires _(by Philipp Burckhardt)_
 -   [`3f48135`](https://github.com/stdlib-js/stdlib/commit/3f48135698dc83762b7b304b748a783eb5813fed) - **docs:** clean-up code in TSDoc examples _(by Philipp Burckhardt)_
