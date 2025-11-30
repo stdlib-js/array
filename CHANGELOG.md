@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-25)
+## Unreleased (2025-11-30)
 
 <section class="features">
 
@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`985e111`](https://github.com/stdlib-js/stdlib/commit/985e1117c5836c62d3d9fca351c4815cfa099913) - **docs:** refactor example _(by Athan Reines)_
 -   [`c520b5a`](https://github.com/stdlib-js/stdlib/commit/c520b5a0cae0c85e946f8a646e7cc8c01b3b5673) - **docs:** address TSDoc lint errors and add doctest aliases _(by Philipp Burckhardt)_
 -   [`3f7b1ed`](https://github.com/stdlib-js/stdlib/commit/3f7b1ed405cdb77a3357d424f462e8d3b2276df5) - **docs:** fix code in TSDoc examples _(by Philipp Burckhardt)_
 -   [`7f55434`](https://github.com/stdlib-js/stdlib/commit/7f554349e50fc601e7ab4206ba1da0eceae93518) - **docs:** fix TSDoc comments example code and return annotation values _(by Philipp Burckhardt)_
