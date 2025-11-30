@@ -30,7 +30,7 @@ type InputArray<T> = Collection<T> | AccessorArrayLike<T>;
 /**
 * Interface describing `oneTo`.
 */
-interface ZeroTo {
+interface OneTo {
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1 starting from one.
 	*
@@ -84,7 +84,7 @@ interface ZeroTo {
 * var arr = oneTo.assign( out, -1, out.length-1 );
 * // returns [ 6, 5, 4, 3, 2, 1 ]
 */
-declare var oneTo: ZeroTo;
+declare var oneTo: OneTo;
 
 
 // EXPORTS //

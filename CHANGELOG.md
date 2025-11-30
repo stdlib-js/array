@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`322eefc`](https://github.com/stdlib-js/stdlib/commit/322eefcff2e0d83f4e302c02bd57cee2a442b8f0) - **docs:** fix interface name in `array/base/one-to` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`f223373`](https://github.com/stdlib-js/stdlib/commit/f223373e1c5b86f2ba763cb92472b03096485604) - **chore:** simplify declarations _(by Athan Reines)_
 -   [`d22a58e`](https://github.com/stdlib-js/stdlib/commit/d22a58eaa5cea695ecb9809f85edea36d1199c74) - **refactor:** simplify declarations _(by Athan Reines)_
 -   [`b66cf8e`](https://github.com/stdlib-js/stdlib/commit/b66cf8efdf5b793040fce1236fa3adcdcd5067a7) - **docs:** update examples _(by Athan Reines)_
