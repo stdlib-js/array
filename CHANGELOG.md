@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`3c1ebd1`](https://github.com/stdlib-js/stdlib/commit/3c1ebd167342711cdb0ed712c9591a8033aa8497) - **docs:** improve doctests for complex number instances in `array/base/accessor-setter` [(#8645)](https://github.com/stdlib-js/stdlib/pull/8645) _(by Divyanshu)_
 -   [`b4bc4a9`](https://github.com/stdlib-js/stdlib/commit/b4bc4a97a705a981e343345f4c2b0d5aee7104ff) - **docs:** improve doctests for complex number instances in `array/base/accessor-getter` [(#8644)](https://github.com/stdlib-js/stdlib/pull/8644) _(by Divyanshu)_
 -   [`322eefc`](https://github.com/stdlib-js/stdlib/commit/322eefcff2e0d83f4e302c02bd57cee2a442b8f0) - **docs:** fix interface name in `array/base/one-to` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`f223373`](https://github.com/stdlib-js/stdlib/commit/f223373e1c5b86f2ba763cb92472b03096485604) - **chore:** simplify declarations _(by Athan Reines)_
