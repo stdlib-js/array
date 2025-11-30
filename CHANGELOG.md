@@ -256,6 +256,10 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`f223373`](https://github.com/stdlib-js/stdlib/commit/f223373e1c5b86f2ba763cb92472b03096485604) - **chore:** simplify declarations _(by Athan Reines)_
+-   [`d22a58e`](https://github.com/stdlib-js/stdlib/commit/d22a58eaa5cea695ecb9809f85edea36d1199c74) - **refactor:** simplify declarations _(by Athan Reines)_
+-   [`b66cf8e`](https://github.com/stdlib-js/stdlib/commit/b66cf8efdf5b793040fce1236fa3adcdcd5067a7) - **docs:** update examples _(by Athan Reines)_
+-   [`eb00b1b`](https://github.com/stdlib-js/stdlib/commit/eb00b1b80848018e05fbc2a20d5985e747557977) - **docs:** fix example _(by Athan Reines)_
 -   [`985e111`](https://github.com/stdlib-js/stdlib/commit/985e1117c5836c62d3d9fca351c4815cfa099913) - **docs:** refactor example _(by Athan Reines)_
 -   [`c520b5a`](https://github.com/stdlib-js/stdlib/commit/c520b5a0cae0c85e946f8a646e7cc8c01b3b5673) - **docs:** address TSDoc lint errors and add doctest aliases _(by Philipp Burckhardt)_
 -   [`3f7b1ed`](https://github.com/stdlib-js/stdlib/commit/3f7b1ed405cdb77a3357d424f462e8d3b2276df5) - **docs:** fix code in TSDoc examples _(by Philipp Burckhardt)_
