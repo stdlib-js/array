@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-30)
+## Unreleased (2025-12-01)
 
 <section class="features">
 
@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`d745259`](https://github.com/stdlib-js/stdlib/commit/d745259e39acdcc3f80b3b569185491daef92145) - **docs:** add missing spaces and update parameter type _(by Philipp Burckhardt)_
 -   [`e7054b7`](https://github.com/stdlib-js/stdlib/commit/e7054b7e99fbf83588f207bc7f7fd4d713ba93c1) - **bench:** refactor to use string interpolation in `array/base/any` [(#8649)](https://github.com/stdlib-js/stdlib/pull/8649) _(by Aman Singh)_
 -   [`3c1ebd1`](https://github.com/stdlib-js/stdlib/commit/3c1ebd167342711cdb0ed712c9591a8033aa8497) - **docs:** improve doctests for complex number instances in `array/base/accessor-setter` [(#8645)](https://github.com/stdlib-js/stdlib/pull/8645) _(by Divyanshu)_
 -   [`b4bc4a9`](https://github.com/stdlib-js/stdlib/commit/b4bc4a97a705a981e343345f4c2b0d5aee7104ff) - **docs:** improve doctests for complex number instances in `array/base/accessor-getter` [(#8644)](https://github.com/stdlib-js/stdlib/pull/8644) _(by Divyanshu)_
