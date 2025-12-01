@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`9c3b5b8`](https://github.com/stdlib-js/stdlib/commit/9c3b5b898d6c0691177e75900bba8125ad89b22f) - **bench:** refactor to use string interpolation in `array/base/any-by` [(#8650)](https://github.com/stdlib-js/stdlib/pull/8650) _(by Aman Singh)_
 -   [`d745259`](https://github.com/stdlib-js/stdlib/commit/d745259e39acdcc3f80b3b569185491daef92145) - **docs:** add missing spaces and update parameter type _(by Philipp Burckhardt)_
 -   [`e7054b7`](https://github.com/stdlib-js/stdlib/commit/e7054b7e99fbf83588f207bc7f7fd4d713ba93c1) - **bench:** refactor to use string interpolation in `array/base/any` [(#8649)](https://github.com/stdlib-js/stdlib/pull/8649) _(by Aman Singh)_
 -   [`3c1ebd1`](https://github.com/stdlib-js/stdlib/commit/3c1ebd167342711cdb0ed712c9591a8033aa8497) - **docs:** improve doctests for complex number instances in `array/base/accessor-setter` [(#8645)](https://github.com/stdlib-js/stdlib/pull/8645) _(by Divyanshu)_
