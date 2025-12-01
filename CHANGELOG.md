@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`f20a4e4`](https://github.com/stdlib-js/stdlib/commit/f20a4e40425bc0e8eb292cca68453950d6df89d6) - **bench:** refactor to use string interpolation in `array/base/any-has-own-property` [(#8653)](https://github.com/stdlib-js/stdlib/pull/8653) _(by Aman Singh)_
 -   [`3517633`](https://github.com/stdlib-js/stdlib/commit/3517633448701ec6c74a6b84a32e6cabce1f5d58) - **bench:** refactor to use string interpolation in `array/base/any-by-right` [(#8652)](https://github.com/stdlib-js/stdlib/pull/8652) _(by Aman Singh)_
 -   [`9c3b5b8`](https://github.com/stdlib-js/stdlib/commit/9c3b5b898d6c0691177e75900bba8125ad89b22f) - **bench:** refactor to use string interpolation in `array/base/any-by` [(#8650)](https://github.com/stdlib-js/stdlib/pull/8650) _(by Aman Singh)_
 -   [`d745259`](https://github.com/stdlib-js/stdlib/commit/d745259e39acdcc3f80b3b569185491daef92145) - **docs:** add missing spaces and update parameter type _(by Philipp Burckhardt)_
