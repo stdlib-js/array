@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`db85f69`](https://github.com/stdlib-js/stdlib/commit/db85f697acea61131500a6dc823835b19d76bdc7) - **docs:** improve doctests for complex number instances in `array/base/at` [(#8654)](https://github.com/stdlib-js/stdlib/pull/8654) _(by Aryan kumar, Athan Reines)_
 -   [`d07452d`](https://github.com/stdlib-js/stdlib/commit/d07452d17c9e97ff292fb8882044000aeed0fe1c) - **docs:** improve doctests for complex number instances in `array/base/resolve-getter` [(#8669)](https://github.com/stdlib-js/stdlib/pull/8669) _(by Aryan kumar, Athan Reines, stdlib-bot)_
 -   [`95d33f1`](https://github.com/stdlib-js/stdlib/commit/95d33f1571a6bc992d1ef8d222477cb8d211fe06) - **docs:** improve doctests for complex number instances in `array/base/last` [(#8668)](https://github.com/stdlib-js/stdlib/pull/8668) _(by Aryan kumar)_
 -   [`f774fb9`](https://github.com/stdlib-js/stdlib/commit/f774fb91d2d1704ee91588613a0ac0d68c766c6c) - **bench:** refactor to use string interpolation in `array/base/accessors` [(#8665)](https://github.com/stdlib-js/stdlib/pull/8665) _(by Rohit R Bhat)_
