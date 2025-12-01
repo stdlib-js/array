@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`dc36299`](https://github.com/stdlib-js/stdlib/commit/dc36299e2dbbda5ab1482e5777334567529e5459) - **bench:** refactor to use string interpolation in `array/base/accessor-setter` [(#8662)](https://github.com/stdlib-js/stdlib/pull/8662) _(by Rohit R Bhat)_
 -   [`ea0d5a6`](https://github.com/stdlib-js/stdlib/commit/ea0d5a623b80a5963e7079cd58cf29e7b01b5d57) - **bench:** refactor to use string interpolation in `array/base/any-is-entry` [(#8663)](https://github.com/stdlib-js/stdlib/pull/8663) _(by Aman Singh)_
 -   [`565c8eb`](https://github.com/stdlib-js/stdlib/commit/565c8eb009e4aff052e40dfe1a282d3c9936cfac) - **bench:** refactor to use string interpolation in `array/base/any-has-property` [(#8660)](https://github.com/stdlib-js/stdlib/pull/8660) _(by Aman Singh)_
 -   [`f20a4e4`](https://github.com/stdlib-js/stdlib/commit/f20a4e40425bc0e8eb292cca68453950d6df89d6) - **bench:** refactor to use string interpolation in `array/base/any-has-own-property` [(#8653)](https://github.com/stdlib-js/stdlib/pull/8653) _(by Aman Singh)_
@@ -626,7 +627,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 21 people contributed to this release. Thank you to the following contributors:
+A total of 22 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -645,6 +646,7 @@ A total of 21 people contributed to this release. Thank you to the following con
 -   Nakul Krishnakumar
 -   Neeraj Pathak
 -   Philipp Burckhardt
+-   Rohit R Bhat
 -   Rylan Yang
 -   Sachin Raj
 -   Shabareesh Shetty
