@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`95d33f1`](https://github.com/stdlib-js/stdlib/commit/95d33f1571a6bc992d1ef8d222477cb8d211fe06) - **docs:** improve doctests for complex number instances in `array/base/last` [(#8668)](https://github.com/stdlib-js/stdlib/pull/8668) _(by Aryan kumar)_
 -   [`f774fb9`](https://github.com/stdlib-js/stdlib/commit/f774fb91d2d1704ee91588613a0ac0d68c766c6c) - **bench:** refactor to use string interpolation in `array/base/accessors` [(#8665)](https://github.com/stdlib-js/stdlib/pull/8665) _(by Rohit R Bhat)_
 -   [`e7b7521`](https://github.com/stdlib-js/stdlib/commit/e7b75217911ae3e84967293e40893e9f4a36075b) - **bench:** refactor to use string interpolation in `array/base/accessor-getter` [(#8659)](https://github.com/stdlib-js/stdlib/pull/8659) _(by Rohit R Bhat)_
 -   [`dc36299`](https://github.com/stdlib-js/stdlib/commit/dc36299e2dbbda5ab1482e5777334567529e5459) - **bench:** refactor to use string interpolation in `array/base/accessor-setter` [(#8662)](https://github.com/stdlib-js/stdlib/pull/8662) _(by Rohit R Bhat)_
@@ -629,7 +630,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 22 people contributed to this release. Thank you to the following contributors:
+A total of 23 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -637,6 +638,7 @@ A total of 22 people contributed to this release. Thank you to the following con
 -   Ahmed Kashkoush
 -   Aman Singh
 -   Anshu Kumar
+-   Aryan kumar
 -   Athan Reines
 -   Divyanshu
 -   Geo Daoyu
