@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`61b2514`](https://github.com/stdlib-js/stdlib/commit/61b2514faeb8b0bc5ba985cc60e1ffe2de68dba6) - **bench:** refactor to use string interpolation in `array/base/any-is-entry-in` [(#8682)](https://github.com/stdlib-js/stdlib/pull/8682) _(by Aman Singh)_
 -   [`4c8449f`](https://github.com/stdlib-js/stdlib/commit/4c8449fefd90216408e4eb8d1b03bdca98a78be1) - **docs:** improve doctests for complex number instances in `array/base/resolve-getter` [(#8695)](https://github.com/stdlib-js/stdlib/pull/8695) _(by Divyanshu, Athan Reines)_
 -   [`db85f69`](https://github.com/stdlib-js/stdlib/commit/db85f697acea61131500a6dc823835b19d76bdc7) - **docs:** improve doctests for complex number instances in `array/base/at` [(#8654)](https://github.com/stdlib-js/stdlib/pull/8654) _(by Aryan kumar, Athan Reines)_
 -   [`d07452d`](https://github.com/stdlib-js/stdlib/commit/d07452d17c9e97ff292fb8882044000aeed0fe1c) - **docs:** improve doctests for complex number instances in `array/base/resolve-getter` [(#8669)](https://github.com/stdlib-js/stdlib/pull/8669) _(by Aryan kumar, Athan Reines, stdlib-bot)_
