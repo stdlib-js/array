@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`4ce0979`](https://github.com/stdlib-js/stdlib/commit/4ce097938211ea17c855b0e70a4ecb4329810542) - **bench:** refactor to use string interpolation in `array/base/bifurcate-entries` [(#8692)](https://github.com/stdlib-js/stdlib/pull/8692) _(by Aman Singh)_
 -   [`68083d6`](https://github.com/stdlib-js/stdlib/commit/68083d60de8199eb42bf63fbae39838e3b23bdd7) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values` [(#8691)](https://github.com/stdlib-js/stdlib/pull/8691) _(by Rohit R Bhat)_
 -   [`ac0438f`](https://github.com/stdlib-js/stdlib/commit/ac0438f675d717acdd81ffe3965e681999f352b9) - **bench:** refactor to use string interpolation in `array/base/assert/has-almost-equal-values` [(#8690)](https://github.com/stdlib-js/stdlib/pull/8690) _(by Rohit R Bhat)_
 -   [`b527ab1`](https://github.com/stdlib-js/stdlib/commit/b527ab1153bf572ec1e89e6c479528c52f1a811d) - **bench:** refactor to use string interpolation in `array/base/arraylike2object` [(#8689)](https://github.com/stdlib-js/stdlib/pull/8689) _(by Rohit R Bhat)_
