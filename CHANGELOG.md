@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`68083d6`](https://github.com/stdlib-js/stdlib/commit/68083d60de8199eb42bf63fbae39838e3b23bdd7) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values` [(#8691)](https://github.com/stdlib-js/stdlib/pull/8691) _(by Rohit R Bhat)_
 -   [`ac0438f`](https://github.com/stdlib-js/stdlib/commit/ac0438f675d717acdd81ffe3965e681999f352b9) - **bench:** refactor to use string interpolation in `array/base/assert/has-almost-equal-values` [(#8690)](https://github.com/stdlib-js/stdlib/pull/8690) _(by Rohit R Bhat)_
 -   [`b527ab1`](https://github.com/stdlib-js/stdlib/commit/b527ab1153bf572ec1e89e6c479528c52f1a811d) - **bench:** refactor to use string interpolation in `array/base/arraylike2object` [(#8689)](https://github.com/stdlib-js/stdlib/pull/8689) _(by Rohit R Bhat)_
 -   [`61b2514`](https://github.com/stdlib-js/stdlib/commit/61b2514faeb8b0bc5ba985cc60e1ffe2de68dba6) - **bench:** refactor to use string interpolation in `array/base/any-is-entry-in` [(#8682)](https://github.com/stdlib-js/stdlib/pull/8682) _(by Aman Singh)_
