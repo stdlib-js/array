@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-02)
+## Unreleased (2025-12-03)
 
 <section class="features">
 
@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`ac675fb`](https://github.com/stdlib-js/stdlib/commit/ac675fb2564167fc1b522333a568bf5ab8a8cd33) - **bench:** refactor to use string interpolation in `array/fixed-endian-factory` [(#8693)](https://github.com/stdlib-js/stdlib/pull/8693) _(by Muskaan Shraogi)_
 -   [`09b5fe0`](https://github.com/stdlib-js/stdlib/commit/09b5fe06008d4361b47b5f506bda4eafc7aa9d37) - **bench:** refactor to use string interpolation in `array/base/bifurcate-entries-by` [(#8694)](https://github.com/stdlib-js/stdlib/pull/8694) _(by Aman Singh)_
 -   [`4ce0979`](https://github.com/stdlib-js/stdlib/commit/4ce097938211ea17c855b0e70a4ecb4329810542) - **bench:** refactor to use string interpolation in `array/base/bifurcate-entries` [(#8692)](https://github.com/stdlib-js/stdlib/pull/8692) _(by Aman Singh)_
 -   [`68083d6`](https://github.com/stdlib-js/stdlib/commit/68083d60de8199eb42bf63fbae39838e3b23bdd7) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values` [(#8691)](https://github.com/stdlib-js/stdlib/pull/8691) _(by Rohit R Bhat)_
@@ -639,7 +640,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 23 people contributed to this release. Thank you to the following contributors:
+A total of 24 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -656,6 +657,7 @@ A total of 23 people contributed to this release. Thank you to the following con
 -   Kshitij-Dale
 -   Lalit Narayan Yadav
 -   Muhammad Haris
+-   Muskaan Shraogi
 -   Nakul Krishnakumar
 -   Neeraj Pathak
 -   Philipp Burckhardt
