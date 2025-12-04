@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`411223a`](https://github.com/stdlib-js/stdlib/commit/411223a6481a811970e1dd14feeeef758789cc3d) - **docs:** carry over example code fixes to namespace declarations _(by Philipp Burckhardt)_
 -   [`546d714`](https://github.com/stdlib-js/stdlib/commit/546d71415bfaa6861cb8757741e1c465c7759590) - **docs:** fix example code and return annotations in TSDoc declarations _(by Philipp Burckhardt)_
 -   [`ac675fb`](https://github.com/stdlib-js/stdlib/commit/ac675fb2564167fc1b522333a568bf5ab8a8cd33) - **bench:** refactor to use string interpolation in `array/fixed-endian-factory` [(#8693)](https://github.com/stdlib-js/stdlib/pull/8693) _(by Muskaan Shraogi)_
 -   [`09b5fe0`](https://github.com/stdlib-js/stdlib/commit/09b5fe06008d4361b47b5f506bda4eafc7aa9d37) - **bench:** refactor to use string interpolation in `array/base/bifurcate-entries-by` [(#8694)](https://github.com/stdlib-js/stdlib/pull/8694) _(by Aman Singh)_
