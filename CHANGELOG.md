@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`71af1a0`](https://github.com/stdlib-js/stdlib/commit/71af1a07d17630e96be2349ac6d4ee76db3e1270) - **docs:** fix type _(by Athan Reines)_
 -   [`9b50472`](https://github.com/stdlib-js/stdlib/commit/9b504729537c53298de78068c1b02dbb64170c88) - **bench:** refactor to use string interpolation in `array/base/assert/is-sorted-ascending` [(#8749)](https://github.com/stdlib-js/stdlib/pull/8749) _(by Rohit R Bhat)_
 -   [`411223a`](https://github.com/stdlib-js/stdlib/commit/411223a6481a811970e1dd14feeeef758789cc3d) - **docs:** carry over example code fixes to namespace declarations _(by Philipp Burckhardt)_
 -   [`546d714`](https://github.com/stdlib-js/stdlib/commit/546d71415bfaa6861cb8757741e1c465c7759590) - **docs:** fix example code and return annotations in TSDoc declarations _(by Philipp Burckhardt)_
