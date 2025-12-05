@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`e90c33d`](https://github.com/stdlib-js/stdlib/commit/e90c33d923ee90a55993a02d5b3802a8f83c7ee4) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary3d` [(#8809)](https://github.com/stdlib-js/stdlib/pull/8809) _(by Kate Suraev)_
 -   [`b7e39fd`](https://github.com/stdlib-js/stdlib/commit/b7e39fd40f3113966cdb40d479f73825cd23b1e4) - **bench:** refactor to use string interpolation in `array/base/binary2d` [(#8802)](https://github.com/stdlib-js/stdlib/pull/8802) _(by Kate Suraev)_
 -   [`981c470`](https://github.com/stdlib-js/stdlib/commit/981c4701b0560daeb42f6235c837a661fc82beaa) - **bench:** refactor to use string interpolation in `array/base/banded/filled2d-by` [(#8801)](https://github.com/stdlib-js/stdlib/pull/8801) _(by Kate Suraev)_
 -   [`4c6da75`](https://github.com/stdlib-js/stdlib/commit/4c6da75d5efe773301912258d2b10f7e7121f4e0) - **bench:** refactor to use string interpolation in `array/base/assert/is-complex64array` [(#8784)](https://github.com/stdlib-js/stdlib/pull/8784) _(by Rohit R Bhat)_
