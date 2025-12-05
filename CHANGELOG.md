@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`34c2666`](https://github.com/stdlib-js/stdlib/commit/34c2666e48e25c5a508aeae1337f666a3b404684) - **bench:** refactor to use string interpolation in `array/base/binary4d` [(#8804)](https://github.com/stdlib-js/stdlib/pull/8804) _(by Kate Suraev)_
 -   [`e61d351`](https://github.com/stdlib-js/stdlib/commit/e61d351ccb623f92717c726b0dad660df25e9eb6) - **bench:** refactor to use string interpolation in `array/base/binary5d` [(#8805)](https://github.com/stdlib-js/stdlib/pull/8805) _(by Kate Suraev)_
 -   [`a2b58c3`](https://github.com/stdlib-js/stdlib/commit/a2b58c373dc63124d0ba75dd22697b11c998d361) - **bench:** refactor to use string interpolation in `array/base/binarynd` [(#8806)](https://github.com/stdlib-js/stdlib/pull/8806) _(by Kate Suraev)_
 -   [`f11ec58`](https://github.com/stdlib-js/stdlib/commit/f11ec582954487ae134d60517caf8ab6b908208e) - **bench:** refactor to use string interpolation in `array/base/broadcast-array` [(#8807)](https://github.com/stdlib-js/stdlib/pull/8807) _(by Kate Suraev)_
