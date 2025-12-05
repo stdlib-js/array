@@ -29,7 +29,6 @@ var add = require( '@stdlib/number/float64/base/add' );
 var filled3dBy = require( './../../../base/filled3d-by' );
 var zeros3d = require( './../../../base/zeros3d' );
 var numel = require( '@stdlib/ndarray/base/numel' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var binary3d = require( './../lib' );
 
@@ -115,7 +114,7 @@ function main() {
 		N = floor( pow( pow( 10, i ), 1.0/3.0 ) );
 		sh = [ N, N, N ];
 		f = createBenchmark( sh );
-		bench( format( '%s::equidimensional:size=%d', pkg, numel( sh ) ), f );
+		bench( pkg+'::equidimensional:size='+numel( sh ), f );
 	}
 }
 

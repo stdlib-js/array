@@ -29,7 +29,6 @@ var add = require( '@stdlib/number/float64/base/add' );
 var filledndBy = require( './../../../base/fillednd-by' );
 var zerosnd = require( './../../../base/zerosnd' );
 var numel = require( '@stdlib/ndarray/base/numel' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var binarynd = require( './../lib' );
 
@@ -112,7 +111,7 @@ function main() {
 		N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
 		sh = [ N, N ];
 		f = createBenchmark( sh );
-		bench( format( '%s::2d,equidimensional:size=%d', pkg, numel( sh ) ), f );
+		bench( pkg+'::2d,equidimensional:size='+numel( sh ), f );
 	}
 }
 

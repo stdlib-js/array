@@ -24,7 +24,6 @@ var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
 var isEven = require( '@stdlib/math/base/assert/is-even' );
 var zerosnd = require( './../../../base/zerosnd' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var broadcastArray = require( './../lib' );
 
@@ -110,7 +109,7 @@ function main() {
 
 	for ( i = min; i <= max; i++ ) {
 		f = createBenchmark( i );
-		bench( format( '%s:dimensions=%d', pkg, i ), f );
+		bench( pkg+':dimensions='+i, f );
 	}
 }
 

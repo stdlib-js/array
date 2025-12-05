@@ -256,11 +256,6 @@ A total of 33 issues were closed in this release:
 
 <details>
 
--   [`5f49874`](https://github.com/stdlib-js/stdlib/commit/5f498740352d6ac14ac7a8df0284e640c21c2f12) - **bench:** refactor to use string interpolation in `array/base/binary3d` [(#8803)](https://github.com/stdlib-js/stdlib/pull/8803) _(by Kate Suraev)_
--   [`34c2666`](https://github.com/stdlib-js/stdlib/commit/34c2666e48e25c5a508aeae1337f666a3b404684) - **bench:** refactor to use string interpolation in `array/base/binary4d` [(#8804)](https://github.com/stdlib-js/stdlib/pull/8804) _(by Kate Suraev)_
--   [`e61d351`](https://github.com/stdlib-js/stdlib/commit/e61d351ccb623f92717c726b0dad660df25e9eb6) - **bench:** refactor to use string interpolation in `array/base/binary5d` [(#8805)](https://github.com/stdlib-js/stdlib/pull/8805) _(by Kate Suraev)_
--   [`a2b58c3`](https://github.com/stdlib-js/stdlib/commit/a2b58c373dc63124d0ba75dd22697b11c998d361) - **bench:** refactor to use string interpolation in `array/base/binarynd` [(#8806)](https://github.com/stdlib-js/stdlib/pull/8806) _(by Kate Suraev)_
--   [`f11ec58`](https://github.com/stdlib-js/stdlib/commit/f11ec582954487ae134d60517caf8ab6b908208e) - **bench:** refactor to use string interpolation in `array/base/broadcast-array` [(#8807)](https://github.com/stdlib-js/stdlib/pull/8807) _(by Kate Suraev)_
 -   [`6dcee29`](https://github.com/stdlib-js/stdlib/commit/6dcee29958b1d4e11445247099549a8fcf06710c) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary2d` [(#8808)](https://github.com/stdlib-js/stdlib/pull/8808) _(by Kate Suraev)_
 -   [`e90c33d`](https://github.com/stdlib-js/stdlib/commit/e90c33d923ee90a55993a02d5b3802a8f83c7ee4) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary3d` [(#8809)](https://github.com/stdlib-js/stdlib/pull/8809) _(by Kate Suraev)_
 -   [`b7e39fd`](https://github.com/stdlib-js/stdlib/commit/b7e39fd40f3113966cdb40d479f73825cd23b1e4) - **bench:** refactor to use string interpolation in `array/base/binary2d` [(#8802)](https://github.com/stdlib-js/stdlib/pull/8802) _(by Kate Suraev)_
