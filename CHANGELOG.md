@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`53365b8`](https://github.com/stdlib-js/stdlib/commit/53365b8c311a4ea4bdc1b886fe890ad7bfc61d1c) - **bench:** refactor to use string interpolation in `array/base/copy` [(#8821)](https://github.com/stdlib-js/stdlib/pull/8821) _(by Aman Singh)_
 -   [`3a0b3cc`](https://github.com/stdlib-js/stdlib/commit/3a0b3cc30d966f8739511d4f0cedc73b07376e59) - **fix:** improve `entries` return type and examples in `array/complex128` types _(by Philipp Burckhardt)_
 -   [`582ef31`](https://github.com/stdlib-js/stdlib/commit/582ef3182ea40031f2bff23af519b1a7e7952d57) - **refactor:** wrap `blas/ext/base/gjoin` _(by Athan Reines)_
 -   [`5f49874`](https://github.com/stdlib-js/stdlib/commit/5f498740352d6ac14ac7a8df0284e640c21c2f12) - **bench:** refactor to use string interpolation in `array/base/binary3d` [(#8803)](https://github.com/stdlib-js/stdlib/pull/8803) _(by Kate Suraev)_
