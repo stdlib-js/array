@@ -256,6 +256,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`4c6da75`](https://github.com/stdlib-js/stdlib/commit/4c6da75d5efe773301912258d2b10f7e7121f4e0) - **bench:** refactor to use string interpolation in `array/base/assert/is-complex64array` [(#8784)](https://github.com/stdlib-js/stdlib/pull/8784) _(by Rohit R Bhat)_
 -   [`e7258ae`](https://github.com/stdlib-js/stdlib/commit/e7258ae18bab179392875a2aa810646f33da80e6) - **bench:** refactor to use string interpolation in `array/base/assert/is-complex128array` [(#8782)](https://github.com/stdlib-js/stdlib/pull/8782) _(by Rohit R Bhat)_
 -   [`71af1a0`](https://github.com/stdlib-js/stdlib/commit/71af1a07d17630e96be2349ac6d4ee76db3e1270) - **docs:** fix type _(by Athan Reines)_
 -   [`9b50472`](https://github.com/stdlib-js/stdlib/commit/9b504729537c53298de78068c1b02dbb64170c88) - **bench:** refactor to use string interpolation in `array/base/assert/is-sorted-ascending` [(#8749)](https://github.com/stdlib-js/stdlib/pull/8749) _(by Rohit R Bhat)_
