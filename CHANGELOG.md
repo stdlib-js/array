@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-05)
+## Unreleased (2025-12-06)
 
 <section class="features">
 
@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`741d69e`](https://github.com/stdlib-js/stdlib/commit/741d69e63e3467605f6fb777136fcdb8dc6f8492) - **docs:** update examples in `array` TypeScript declarations [(#8836)](https://github.com/stdlib-js/stdlib/pull/8836) _(by stdlib-bot)_
 -   [`53365b8`](https://github.com/stdlib-js/stdlib/commit/53365b8c311a4ea4bdc1b886fe890ad7bfc61d1c) - **bench:** refactor to use string interpolation in `array/base/copy` [(#8821)](https://github.com/stdlib-js/stdlib/pull/8821) _(by Aman Singh)_
 -   [`3a0b3cc`](https://github.com/stdlib-js/stdlib/commit/3a0b3cc30d966f8739511d4f0cedc73b07376e59) - **fix:** improve `entries` return type and examples in `array/complex128` types _(by Philipp Burckhardt)_
 -   [`582ef31`](https://github.com/stdlib-js/stdlib/commit/582ef3182ea40031f2bff23af519b1a7e7952d57) - **refactor:** wrap `blas/ext/base/gjoin` _(by Athan Reines)_
