@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`dd20818`](https://github.com/stdlib-js/stdlib/commit/dd20818a40cdd215a614a7cb1ec580c95f8fde80) - **bench:** refactor to use string interpolation in `array/base/assert/contains` [(#8844)](https://github.com/stdlib-js/stdlib/pull/8844) _(by ashutoshsao)_
 -   [`257b05e`](https://github.com/stdlib-js/stdlib/commit/257b05e78857f4b4ff76b3764565eadd8ce75946) - **bench:** refactor to use string interpolation in `array/base/assert/has-same-values` [(#8847)](https://github.com/stdlib-js/stdlib/pull/8847) _(by ashutoshsao)_
 -   [`cb96e8f`](https://github.com/stdlib-js/stdlib/commit/cb96e8f86be54682f17fc6a4f47338aea2ad30a9) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values-indexed` [(#8846)](https://github.com/stdlib-js/stdlib/pull/8846) _(by ashutoshsao)_
 -   [`7764a25`](https://github.com/stdlib-js/stdlib/commit/7764a25a72cab240473982486844795e42787673) - **bench:** refactor to use string interpolation in `array/base/bifurcate-indices-by` [(#8850)](https://github.com/stdlib-js/stdlib/pull/8850) _(by ashutoshsao)_
