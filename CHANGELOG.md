@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`e7f3da3`](https://github.com/stdlib-js/stdlib/commit/e7f3da39694b2faadcf4204b9e772fe40d57f506) - **bench:** refactor to use string interpolation in `array/base/fliplr2d` [(#8857)](https://github.com/stdlib-js/stdlib/pull/8857) _(by Ullas)_
 -   [`9836337`](https://github.com/stdlib-js/stdlib/commit/9836337952ec885367411bbea26d393aff18aef1) - **bench:** refactor to use string interpolation in `array/base/bifurcate-indices` [(#8851)](https://github.com/stdlib-js/stdlib/pull/8851) _(by ashutoshsao)_
 -   [`b8beb65`](https://github.com/stdlib-js/stdlib/commit/b8beb6541969d801b04d8937a8a10d5aa184b796) - **bench:** refactor to use string interpolation in `array/base/cuany` [(#8853)](https://github.com/stdlib-js/stdlib/pull/8853) _(by Aman Singh)_
 -   [`741d69e`](https://github.com/stdlib-js/stdlib/commit/741d69e63e3467605f6fb777136fcdb8dc6f8492) - **docs:** update examples in `array` TypeScript declarations [(#8836)](https://github.com/stdlib-js/stdlib/pull/8836) _(by stdlib-bot)_
@@ -662,7 +663,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 26 people contributed to this release. Thank you to the following contributors:
+A total of 27 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -688,6 +689,7 @@ A total of 26 people contributed to this release. Thank you to the following con
 -   Rylan Yang
 -   Sachin Raj
 -   Shabareesh Shetty
+-   Ullas
 -   Vinit Pandit
 -   ashutoshsao
 
