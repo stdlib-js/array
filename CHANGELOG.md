@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`b8beb65`](https://github.com/stdlib-js/stdlib/commit/b8beb6541969d801b04d8937a8a10d5aa184b796) - **bench:** refactor to use string interpolation in `array/base/cuany` [(#8853)](https://github.com/stdlib-js/stdlib/pull/8853) _(by Aman Singh)_
 -   [`741d69e`](https://github.com/stdlib-js/stdlib/commit/741d69e63e3467605f6fb777136fcdb8dc6f8492) - **docs:** update examples in `array` TypeScript declarations [(#8836)](https://github.com/stdlib-js/stdlib/pull/8836) _(by stdlib-bot)_
 -   [`53365b8`](https://github.com/stdlib-js/stdlib/commit/53365b8c311a4ea4bdc1b886fe890ad7bfc61d1c) - **bench:** refactor to use string interpolation in `array/base/copy` [(#8821)](https://github.com/stdlib-js/stdlib/pull/8821) _(by Aman Singh)_
 -   [`3a0b3cc`](https://github.com/stdlib-js/stdlib/commit/3a0b3cc30d966f8739511d4f0cedc73b07376e59) - **fix:** improve `entries` return type and examples in `array/complex128` types _(by Philipp Burckhardt)_
