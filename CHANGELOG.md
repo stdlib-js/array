@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`7764a25`](https://github.com/stdlib-js/stdlib/commit/7764a25a72cab240473982486844795e42787673) - **bench:** refactor to use string interpolation in `array/base/bifurcate-indices-by` [(#8850)](https://github.com/stdlib-js/stdlib/pull/8850) _(by ashutoshsao)_
 -   [`e7f3da3`](https://github.com/stdlib-js/stdlib/commit/e7f3da39694b2faadcf4204b9e772fe40d57f506) - **bench:** refactor to use string interpolation in `array/base/fliplr2d` [(#8857)](https://github.com/stdlib-js/stdlib/pull/8857) _(by Ullas)_
 -   [`9836337`](https://github.com/stdlib-js/stdlib/commit/9836337952ec885367411bbea26d393aff18aef1) - **bench:** refactor to use string interpolation in `array/base/bifurcate-indices` [(#8851)](https://github.com/stdlib-js/stdlib/pull/8851) _(by ashutoshsao)_
 -   [`b8beb65`](https://github.com/stdlib-js/stdlib/commit/b8beb6541969d801b04d8937a8a10d5aa184b796) - **bench:** refactor to use string interpolation in `array/base/cuany` [(#8853)](https://github.com/stdlib-js/stdlib/pull/8853) _(by Aman Singh)_
