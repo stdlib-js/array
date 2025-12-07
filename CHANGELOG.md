@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-06)
+## Unreleased (2025-12-07)
 
 <section class="features">
 
@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`d00c1ad`](https://github.com/stdlib-js/stdlib/commit/d00c1adc5eec7c5fc80c211d1ba8b6d6f9cd9336) - **bench:** refactor to use string interpolation in `array/base/cuany-by` [(#8861)](https://github.com/stdlib-js/stdlib/pull/8861) _(by Aman Singh)_
 -   [`dd20818`](https://github.com/stdlib-js/stdlib/commit/dd20818a40cdd215a614a7cb1ec580c95f8fde80) - **bench:** refactor to use string interpolation in `array/base/assert/contains` [(#8844)](https://github.com/stdlib-js/stdlib/pull/8844) _(by ashutoshsao)_
 -   [`257b05e`](https://github.com/stdlib-js/stdlib/commit/257b05e78857f4b4ff76b3764565eadd8ce75946) - **bench:** refactor to use string interpolation in `array/base/assert/has-same-values` [(#8847)](https://github.com/stdlib-js/stdlib/pull/8847) _(by ashutoshsao)_
 -   [`cb96e8f`](https://github.com/stdlib-js/stdlib/commit/cb96e8f86be54682f17fc6a4f47338aea2ad30a9) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values-indexed` [(#8846)](https://github.com/stdlib-js/stdlib/pull/8846) _(by ashutoshsao)_
