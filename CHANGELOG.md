@@ -257,6 +257,8 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`dbed163`](https://github.com/stdlib-js/stdlib/commit/dbed1634dd8b7ead7c189cfd463e3c13eb3fab02) - **bench:** refactor to use string interpolation in `array/base/accessor` [(#8865)](https://github.com/stdlib-js/stdlib/pull/8865) _(by ashutoshsao, Athan Reines)_
+-   [`38b0080`](https://github.com/stdlib-js/stdlib/commit/38b0080b91acf8fd7c654097a5c4576fb5dea5e7) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary5d` [(#8838)](https://github.com/stdlib-js/stdlib/pull/8838) _(by Kate Suraev)_
 -   [`3b91149`](https://github.com/stdlib-js/stdlib/commit/3b911493a58cfc9b75cd6fc05b8d349a7753e377) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary4d` [(#8839)](https://github.com/stdlib-js/stdlib/pull/8839) _(by Kate Suraev)_
 -   [`79d8751`](https://github.com/stdlib-js/stdlib/commit/79d87513f078e1ba278a00b9345e7bb17d96ab52) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quaternary2d` [(#8840)](https://github.com/stdlib-js/stdlib/pull/8840) _(by Kate Suraev)_
 -   [`c8d88a1`](https://github.com/stdlib-js/stdlib/commit/c8d88a11332fedb85d5dc664fcd4ee496b26dd00) - **bench:** refactor to use string interpolation in `array/base/cuany-by-right` [(#8863)](https://github.com/stdlib-js/stdlib/pull/8863) _(by Aman Singh)_
