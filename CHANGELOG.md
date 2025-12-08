@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-07)
+## Unreleased (2025-12-08)
 
 <section class="features">
 
@@ -257,6 +257,8 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`1b8be24`](https://github.com/stdlib-js/stdlib/commit/1b8be2499186830f3350dbced11d7c6ef0baa644) - **bench:** refactor to use string interpolation in `array/base/cusome` [(#8881)](https://github.com/stdlib-js/stdlib/pull/8881) _(by Aman Singh)_
+-   [`286d36b`](https://github.com/stdlib-js/stdlib/commit/286d36b62d7d7254b7261296a784a9931ea76e6f) - **bench:** refactor to use string interpolation in `array/base/cuevery` [(#8867)](https://github.com/stdlib-js/stdlib/pull/8867) _(by Aman Singh)_
 -   [`dbed163`](https://github.com/stdlib-js/stdlib/commit/dbed1634dd8b7ead7c189cfd463e3c13eb3fab02) - **bench:** refactor to use string interpolation in `array/base/accessor` [(#8865)](https://github.com/stdlib-js/stdlib/pull/8865) _(by ashutoshsao, Athan Reines)_
 -   [`38b0080`](https://github.com/stdlib-js/stdlib/commit/38b0080b91acf8fd7c654097a5c4576fb5dea5e7) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary5d` [(#8838)](https://github.com/stdlib-js/stdlib/pull/8838) _(by Kate Suraev)_
 -   [`3b91149`](https://github.com/stdlib-js/stdlib/commit/3b911493a58cfc9b75cd6fc05b8d349a7753e377) - **bench:** refactor to use string interpolation in `array/base/broadcasted-binary4d` [(#8839)](https://github.com/stdlib-js/stdlib/pull/8839) _(by Kate Suraev)_
