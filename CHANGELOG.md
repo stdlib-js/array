@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-08)
+## Unreleased (2025-12-09)
 
 <section class="features">
 
@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`e823a35`](https://github.com/stdlib-js/stdlib/commit/e823a3537257e5bfb6f0c59cb983fd8ca7752ff2) - **bench:** refactor to use string interpolation in `array/base/filled` [(#8900)](https://github.com/stdlib-js/stdlib/pull/8900) _(by Rohit R Bhat, Athan Reines)_
 -   [`1b8be24`](https://github.com/stdlib-js/stdlib/commit/1b8be2499186830f3350dbced11d7c6ef0baa644) - **bench:** refactor to use string interpolation in `array/base/cusome` [(#8881)](https://github.com/stdlib-js/stdlib/pull/8881) _(by Aman Singh)_
 -   [`286d36b`](https://github.com/stdlib-js/stdlib/commit/286d36b62d7d7254b7261296a784a9931ea76e6f) - **bench:** refactor to use string interpolation in `array/base/cuevery` [(#8867)](https://github.com/stdlib-js/stdlib/pull/8867) _(by Aman Singh)_
 -   [`dbed163`](https://github.com/stdlib-js/stdlib/commit/dbed1634dd8b7ead7c189cfd463e3c13eb3fab02) - **bench:** refactor to use string interpolation in `array/base/accessor` [(#8865)](https://github.com/stdlib-js/stdlib/pull/8865) _(by ashutoshsao, Athan Reines)_
