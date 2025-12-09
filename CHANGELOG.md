@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`2bf7cbf`](https://github.com/stdlib-js/stdlib/commit/2bf7cbf148aab4f2506f08aefc367749fae12293) - **bench:** refactor to use string interpolation in `array/base/fill-by` [(#8899)](https://github.com/stdlib-js/stdlib/pull/8899) _(by Rohit R Bhat, Athan Reines)_
 -   [`e823a35`](https://github.com/stdlib-js/stdlib/commit/e823a3537257e5bfb6f0c59cb983fd8ca7752ff2) - **bench:** refactor to use string interpolation in `array/base/filled` [(#8900)](https://github.com/stdlib-js/stdlib/pull/8900) _(by Rohit R Bhat, Athan Reines)_
 -   [`1b8be24`](https://github.com/stdlib-js/stdlib/commit/1b8be2499186830f3350dbced11d7c6ef0baa644) - **bench:** refactor to use string interpolation in `array/base/cusome` [(#8881)](https://github.com/stdlib-js/stdlib/pull/8881) _(by Aman Singh)_
 -   [`286d36b`](https://github.com/stdlib-js/stdlib/commit/286d36b62d7d7254b7261296a784a9931ea76e6f) - **bench:** refactor to use string interpolation in `array/base/cuevery` [(#8867)](https://github.com/stdlib-js/stdlib/pull/8867) _(by Aman Singh)_
