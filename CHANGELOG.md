@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-09)
+## Unreleased (2025-12-13)
 
 <section class="features">
 
@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`e7292ba`](https://github.com/stdlib-js/stdlib/commit/e7292bab3952c64edf9b66f89a8a2d803f0fbaf8) - **bench:** refactor to use string interpolation in `array/base/take` [(#9026)](https://github.com/stdlib-js/stdlib/pull/9026) _(by DivitJain26, Philipp Burckhardt)_
 -   [`3138d95`](https://github.com/stdlib-js/stdlib/commit/3138d952a5f61a9f145424e7a4611e9727d8ab49) - **bench:** refactor to use string interpolation in `array/base/filled-by` [(#8901)](https://github.com/stdlib-js/stdlib/pull/8901) _(by Rohit R Bhat)_
 -   [`c377b56`](https://github.com/stdlib-js/stdlib/commit/c377b5679b136519dda29dd875dc4465693957e3) - **bench:** refactor to use string interpolation in `array/base/filled2d` [(#8902)](https://github.com/stdlib-js/stdlib/pull/8902) _(by Rohit R Bhat, Philipp Burckhardt)_
 -   [`4e547d4`](https://github.com/stdlib-js/stdlib/commit/4e547d4b67f772a0950a4f2c6b1744620c827667) - **bench:** refactor to use string interpolation in `array/base/cusome-by` [(#8903)](https://github.com/stdlib-js/stdlib/pull/8903) _(by Aman Singh)_
@@ -681,7 +682,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 27 people contributed to this release. Thank you to the following contributors:
+A total of 28 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -691,6 +692,7 @@ A total of 27 people contributed to this release. Thank you to the following con
 -   Anshu Kumar
 -   Aryan kumar
 -   Athan Reines
+-   DivitJain26
 -   Divyanshu
 -   Geo Daoyu
 -   Gururaj Gurram
