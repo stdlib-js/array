@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-13)
+## Unreleased (2025-12-15)
 
 <section class="features">
 
@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`07f9e6e`](https://github.com/stdlib-js/stdlib/commit/07f9e6e124eb63218ec9229faa5b4da0385bc5a7) - **bench:** refactor to use string interpolation in `array/base/filled2d-by` [(#8994)](https://github.com/stdlib-js/stdlib/pull/8994) _(by Rohit R Bhat)_
 -   [`e7292ba`](https://github.com/stdlib-js/stdlib/commit/e7292bab3952c64edf9b66f89a8a2d803f0fbaf8) - **bench:** refactor to use string interpolation in `array/base/take` [(#9026)](https://github.com/stdlib-js/stdlib/pull/9026) _(by DivitJain26, Philipp Burckhardt)_
 -   [`3138d95`](https://github.com/stdlib-js/stdlib/commit/3138d952a5f61a9f145424e7a4611e9727d8ab49) - **bench:** refactor to use string interpolation in `array/base/filled-by` [(#8901)](https://github.com/stdlib-js/stdlib/pull/8901) _(by Rohit R Bhat)_
 -   [`c377b56`](https://github.com/stdlib-js/stdlib/commit/c377b5679b136519dda29dd875dc4465693957e3) - **bench:** refactor to use string interpolation in `array/base/filled2d` [(#8902)](https://github.com/stdlib-js/stdlib/pull/8902) _(by Rohit R Bhat, Philipp Burckhardt)_
