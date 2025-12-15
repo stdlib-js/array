@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`9ee9547`](https://github.com/stdlib-js/stdlib/commit/9ee95477edb00d544ab96cf8aadc655a8ff18f9e) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quaternary3d` [(#8957)](https://github.com/stdlib-js/stdlib/pull/8957) _(by Sujal charati)_
 -   [`a5e79dd`](https://github.com/stdlib-js/stdlib/commit/a5e79ddd6eda016a0e3628f719f674f140e362e2) - **bench:** refactor to use string interpolation in `array/base/atnd` [(#8955)](https://github.com/stdlib-js/stdlib/pull/8955) _(by Sujal charati, Athan Reines)_
 -   [`9a19f44`](https://github.com/stdlib-js/stdlib/commit/9a19f4491b96074f4728ff47b6a3ec73d6d0e27c) - **bench:** refactor to use string interpolation in `array/base/cunone` [(#8947)](https://github.com/stdlib-js/stdlib/pull/8947) _(by Aman Singh)_
 -   [`07f9e6e`](https://github.com/stdlib-js/stdlib/commit/07f9e6e124eb63218ec9229faa5b4da0385bc5a7) - **bench:** refactor to use string interpolation in `array/base/filled2d-by` [(#8994)](https://github.com/stdlib-js/stdlib/pull/8994) _(by Rohit R Bhat)_
