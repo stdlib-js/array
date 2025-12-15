@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`a5e79dd`](https://github.com/stdlib-js/stdlib/commit/a5e79ddd6eda016a0e3628f719f674f140e362e2) - **bench:** refactor to use string interpolation in `array/base/atnd` [(#8955)](https://github.com/stdlib-js/stdlib/pull/8955) _(by Sujal charati, Athan Reines)_
 -   [`9a19f44`](https://github.com/stdlib-js/stdlib/commit/9a19f4491b96074f4728ff47b6a3ec73d6d0e27c) - **bench:** refactor to use string interpolation in `array/base/cunone` [(#8947)](https://github.com/stdlib-js/stdlib/pull/8947) _(by Aman Singh)_
 -   [`07f9e6e`](https://github.com/stdlib-js/stdlib/commit/07f9e6e124eb63218ec9229faa5b4da0385bc5a7) - **bench:** refactor to use string interpolation in `array/base/filled2d-by` [(#8994)](https://github.com/stdlib-js/stdlib/pull/8994) _(by Rohit R Bhat)_
 -   [`e7292ba`](https://github.com/stdlib-js/stdlib/commit/e7292bab3952c64edf9b66f89a8a2d803f0fbaf8) - **bench:** refactor to use string interpolation in `array/base/take` [(#9026)](https://github.com/stdlib-js/stdlib/pull/9026) _(by DivitJain26, Philipp Burckhardt)_
@@ -684,7 +685,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 28 people contributed to this release. Thank you to the following contributors:
+A total of 29 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -711,6 +712,7 @@ A total of 28 people contributed to this release. Thank you to the following con
 -   Rylan Yang
 -   Sachin Raj
 -   Shabareesh Shetty
+-   Sujal charati
 -   Ullas
 -   Vinit Pandit
 -   ashutoshsao
