@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`66dec1e`](https://github.com/stdlib-js/stdlib/commit/66dec1ea2a3186a8b461abc11ad69f1e42b1c478) - **bench:** refactor to use string interpolation in `array/base/take2d` [(#9051)](https://github.com/stdlib-js/stdlib/pull/9051) _(by DivitJain26, Athan Reines)_
 -   [`2be0aaf`](https://github.com/stdlib-js/stdlib/commit/2be0aaf5336c2ec9e2194f1e9e3087ad56cfdb85) - **bench:** refactor to use string interpolation in `array/base/take-map` [(#9050)](https://github.com/stdlib-js/stdlib/pull/9050) _(by DivitJain26)_
 -   [`140d915`](https://github.com/stdlib-js/stdlib/commit/140d9159047d42d7c6e4cc455a6e26f5f47edfd5) - **bench:** refactor to use string interpolation in `array/base/take-indexed2` [(#9049)](https://github.com/stdlib-js/stdlib/pull/9049) _(by DivitJain26)_
 -   [`646dd31`](https://github.com/stdlib-js/stdlib/commit/646dd311efc708a3ec45134b6e8fc1ccb1a92470) - **bench:** refactor to use string interpolation in `array/base/take-indexed` [(#9048)](https://github.com/stdlib-js/stdlib/pull/9048) _(by DivitJain26, Athan Reines)_
