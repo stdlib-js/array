@@ -257,6 +257,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`646dd31`](https://github.com/stdlib-js/stdlib/commit/646dd311efc708a3ec45134b6e8fc1ccb1a92470) - **bench:** refactor to use string interpolation in `array/base/take-indexed` [(#9048)](https://github.com/stdlib-js/stdlib/pull/9048) _(by DivitJain26, Athan Reines)_
 -   [`b2b3432`](https://github.com/stdlib-js/stdlib/commit/b2b343206f3a2d3b398354b493003c1fec519761) - **bench:** refactor to use string interpolation `array/base/filled3d` [(#8995)](https://github.com/stdlib-js/stdlib/pull/8995) _(by Rohit R Bhat)_
 -   [`9ee9547`](https://github.com/stdlib-js/stdlib/commit/9ee95477edb00d544ab96cf8aadc655a8ff18f9e) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quaternary3d` [(#8957)](https://github.com/stdlib-js/stdlib/pull/8957) _(by Sujal charati)_
 -   [`a5e79dd`](https://github.com/stdlib-js/stdlib/commit/a5e79ddd6eda016a0e3628f719f674f140e362e2) - **bench:** refactor to use string interpolation in `array/base/atnd` [(#8955)](https://github.com/stdlib-js/stdlib/pull/8955) _(by Sujal charati, Athan Reines)_
