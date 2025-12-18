@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196)
 -   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - add `hasAlmostSameValues` to namespace
 -   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - add `array/base/assert/has-almost-same-values`
 -   [`5cf5331`](https://github.com/stdlib-js/stdlib/commit/5cf533172ba0fb480dcdbbe03861cfc14aded211) - update `array/base` TypeScript declarations
@@ -259,6 +260,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - **feat:** update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196) _(by stdlib-bot)_
 -   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
 -   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - **feat:** add `hasAlmostSameValues` to namespace _(by Athan Reines)_
 -   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - **feat:** add `array/base/assert/has-almost-same-values` _(by Athan Reines)_
