@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,11 +22,11 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var floor = require( '@stdlib/math/base/special/floor' );
-var isArrayArray = require( '@stdlib/assert/is-array-array' );
+var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
+var zeros = require( './../../../../base/zeros' );
 var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
-var filled4d = require( './../lib' );
+var hasAlmostSameValues = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -35,10 +35,11 @@ var filled4d = require( './../lib' );
 * Creates a benchmark function.
 *
 * @private
-* @param {PositiveInteger} N - array lengths
+* @param {PositiveInteger} len - array length
 * @returns {Function} benchmark function
 */
-function createBenchmark( N ) {
+function createBenchmark( len ) {
+	var x = zeros( len );
 	return benchmark;
 
 	/**
@@ -53,14 +54,14 @@ function createBenchmark( N ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = filled4d( i, [ N, N, N, N ] );
-			if ( typeof out !== 'object' ) {
-				b.fail( 'should return an array of arrays' );
+			out = hasAlmostSameValues( x, x, 1 );
+			if ( typeof out !== 'boolean' ) {
+				b.fail( 'should return a boolean' );
 			}
 		}
 		b.toc();
-		if ( !isArrayArray( out ) ) {
-			b.fail( 'should return an array of arrays' );
+		if ( !isBoolean( out ) ) {
+			b.fail( 'should return a boolean' );
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
@@ -76,9 +77,9 @@ function createBenchmark( N ) {
 * @private
 */
 function main() {
+	var len;
 	var min;
 	var max;
-	var N;
 	var f;
 	var i;
 
@@ -86,10 +87,10 @@ function main() {
 	max = 6; // 10^max
 
 	for ( i = min; i <= max; i++ ) {
-		N = floor( pow( pow( 10, i ), 1.0/4.0 ) );
+		len = pow( 10, i );
 
-		f = createBenchmark( N );
-		bench( format( '%s::equidimensional:size=%d', pkg, N*N*N*N ), f );
+		f = createBenchmark( len );
+		bench( format( '%s:dtype=generic,len=%s', pkg, len ), f );
 	}
 }
 

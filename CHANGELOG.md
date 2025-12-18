@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - add `hasAlmostSameValues` to namespace
+-   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - add `array/base/assert/has-almost-same-values`
 -   [`5cf5331`](https://github.com/stdlib-js/stdlib/commit/5cf533172ba0fb480dcdbbe03861cfc14aded211) - update `array/base` TypeScript declarations
 -   [`029ac45`](https://github.com/stdlib-js/stdlib/commit/029ac457518cedb513351f5196fa078ad0a78ede) - update `array/base/symmetric` TypeScript declarations
 -   [`b090daa`](https://github.com/stdlib-js/stdlib/commit/b090daacf3b51a2afa50c08a06973ac13724e9df) - update `array/base/symmetric-banded` TypeScript declarations
@@ -257,6 +259,10 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - **feat:** add `hasAlmostSameValues` to namespace _(by Athan Reines)_
+-   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - **feat:** add `array/base/assert/has-almost-same-values` _(by Athan Reines)_
+-   [`40e817d`](https://github.com/stdlib-js/stdlib/commit/40e817dca3683fef6bfaf07526e8428ac3d089d8) - **bench:** refactor to use string interpolation in `array/base/filled4d` [(#9186)](https://github.com/stdlib-js/stdlib/pull/9186) _(by Rohit R Bhat)_
+-   [`ce79dc0`](https://github.com/stdlib-js/stdlib/commit/ce79dc05e70a1a631c3d23c2f0d2127420537b38) - **bench:** refactor to use string interpolation in `array/base/filled4d-by` [(#9188)](https://github.com/stdlib-js/stdlib/pull/9188) _(by Rohit R Bhat)_
 -   [`ae947b7`](https://github.com/stdlib-js/stdlib/commit/ae947b78961fba28af4cdc2f4ba54fa5df8b35b3) - **bench:** refactor to use string interpolation in `array/base/filled5d` [(#9189)](https://github.com/stdlib-js/stdlib/pull/9189) _(by Rohit R Bhat)_
 -   [`028d3db`](https://github.com/stdlib-js/stdlib/commit/028d3db4147f5e4735d81babd193a65c983d87c9) - **bench:** refactor to use string interpolation in `array/base/take3d` [(#9053)](https://github.com/stdlib-js/stdlib/pull/9053) _(by DivitJain26, Athan Reines)_
 -   [`66dec1e`](https://github.com/stdlib-js/stdlib/commit/66dec1ea2a3186a8b461abc11ad69f1e42b1c478) - **bench:** refactor to use string interpolation in `array/base/take2d` [(#9051)](https://github.com/stdlib-js/stdlib/pull/9051) _(by DivitJain26, Athan Reines)_
