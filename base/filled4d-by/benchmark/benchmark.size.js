@@ -25,7 +25,6 @@ var pow = require( '@stdlib/math/base/special/pow' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var isArrayArray = require( '@stdlib/assert/is-array-array' );
 var constantFunction = require( '@stdlib/utils/constant-function' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var filled4dBy = require( './../lib' );
 
@@ -93,7 +92,7 @@ function main() {
 		N = floor( pow( pow( 10, i ), 1.0/4.0 ) );
 
 		f = createBenchmark( N );
-		bench( format( '%s::equidimensional:size=%d', pkg, N*N*N*N ), f );
+		bench( pkg+'::equidimensional:size='+(N*N*N*N), f );
 	}
 }
 
