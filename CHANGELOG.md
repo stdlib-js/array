@@ -260,6 +260,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`fff219f`](https://github.com/stdlib-js/stdlib/commit/fff219fbf68d726e25e56c304bbd8b4274f0b2df) - **bench:** refactor to use string interpolation in `array/base/filled3d-by` [(#9185)](https://github.com/stdlib-js/stdlib/pull/9185) _(by Rohit R Bhat)_
 -   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - **feat:** update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196) _(by stdlib-bot)_
 -   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
 -   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - **feat:** add `hasAlmostSameValues` to namespace _(by Athan Reines)_
