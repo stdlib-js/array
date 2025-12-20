@@ -260,6 +260,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`5bfa5e8`](https://github.com/stdlib-js/stdlib/commit/5bfa5e8ac36fe7abb9c8799560fb90c787999360) - **bench:** refactor to use string interpolation in `array/base/zeros4d` [(#9277)](https://github.com/stdlib-js/stdlib/pull/9277) _(by anee3)_
 -   [`1c08d9e`](https://github.com/stdlib-js/stdlib/commit/1c08d9e6efa0af32176a2fcfbbbd4a10002cd66c) - **bench:** refactor to use string interpolation in `array/base/zeros5d` [(#9266)](https://github.com/stdlib-js/stdlib/pull/9266) _(by anee3, Athan Reines)_
 -   [`fff219f`](https://github.com/stdlib-js/stdlib/commit/fff219fbf68d726e25e56c304bbd8b4274f0b2df) - **bench:** refactor to use string interpolation in `array/base/filled3d-by` [(#9185)](https://github.com/stdlib-js/stdlib/pull/9185) _(by Rohit R Bhat)_
 -   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - **feat:** update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196) _(by stdlib-bot)_
