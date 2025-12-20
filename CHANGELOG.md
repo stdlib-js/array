@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-18)
+## Unreleased (2025-12-20)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`1c08d9e`](https://github.com/stdlib-js/stdlib/commit/1c08d9e6efa0af32176a2fcfbbbd4a10002cd66c) - **bench:** refactor to use string interpolation in `array/base/zeros5d` [(#9266)](https://github.com/stdlib-js/stdlib/pull/9266) _(by anee3, Athan Reines)_
 -   [`fff219f`](https://github.com/stdlib-js/stdlib/commit/fff219fbf68d726e25e56c304bbd8b4274f0b2df) - **bench:** refactor to use string interpolation in `array/base/filled3d-by` [(#9185)](https://github.com/stdlib-js/stdlib/pull/9185) _(by Rohit R Bhat)_
 -   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - **feat:** update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196) _(by stdlib-bot)_
 -   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
@@ -703,7 +704,7 @@ A total of 33 issues were closed in this release:
 
 ### Contributors
 
-A total of 29 people contributed to this release. Thank you to the following contributors:
+A total of 30 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -733,6 +734,7 @@ A total of 29 people contributed to this release. Thank you to the following con
 -   Sujal charati
 -   Ullas
 -   Vinit Pandit
+-   anee3
 -   ashutoshsao
 
 </section>
