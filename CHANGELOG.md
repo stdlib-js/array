@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-20)
+## Unreleased (2025-12-27)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`6ce0275`](https://github.com/stdlib-js/stdlib/commit/6ce0275d3eec598ce3ecb8da74a1c82f0de3a482) - **docs:** remove incorrect hyphens from JSDoc `returns` annotations _(by Philipp Burckhardt)_
 -   [`b45d635`](https://github.com/stdlib-js/stdlib/commit/b45d6355de87bcd65764a9c07f5551e2423e83cb) - **bench:** refactor to use string interpolation in `array/base/filled5d-by` [(#9283)](https://github.com/stdlib-js/stdlib/pull/9283) _(by Rohit R Bhat)_
 -   [`5bfa5e8`](https://github.com/stdlib-js/stdlib/commit/5bfa5e8ac36fe7abb9c8799560fb90c787999360) - **bench:** refactor to use string interpolation in `array/base/zeros4d` [(#9277)](https://github.com/stdlib-js/stdlib/pull/9277) _(by anee3)_
 -   [`1c08d9e`](https://github.com/stdlib-js/stdlib/commit/1c08d9e6efa0af32176a2fcfbbbd4a10002cd66c) - **bench:** refactor to use string interpolation in `array/base/zeros5d` [(#9266)](https://github.com/stdlib-js/stdlib/pull/9266) _(by anee3, Athan Reines)_

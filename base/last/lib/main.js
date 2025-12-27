@@ -29,7 +29,7 @@ var resolveGetter = require( './../../../base/resolve-getter' );
 * Returns the last element of an array-like object.
 *
 * @param {Collection} arr - input array
-* @returns {*} - last element
+* @returns {*} last element
 *
 * @example
 * var out = last( [ 1, 2, 3 ] );
