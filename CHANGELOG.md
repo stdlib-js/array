@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-05)
+## Unreleased (2026-01-06)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`ff76be4`](https://github.com/stdlib-js/stdlib/commit/ff76be4bd7eb9ced1fc74441b9766d1e5e6d6d31) - **bench:** use string interpolation for benchmark names [(#9517)](https://github.com/stdlib-js/stdlib/pull/9517) _(by KovidhRaj)_
 -   [`b0c05c9`](https://github.com/stdlib-js/stdlib/commit/b0c05c934c6654a95eee523ed88fb34e12fd552b) - **chore:** fix JavaScript lint errors [(#9546)](https://github.com/stdlib-js/stdlib/pull/9546) _(by DivitJain26)_
 -   [`d866858`](https://github.com/stdlib-js/stdlib/commit/d866858cf3082f7692f1c51883490c1da36d1879) - **bench:** refactor to use string interpolation in `array/uint8` [(#9518)](https://github.com/stdlib-js/stdlib/pull/9518) _(by Shubham)_
 -   [`0ac2495`](https://github.com/stdlib-js/stdlib/commit/0ac2495ffcce896b3dfc737aca766b70f0ad9cb6) - **bench:** refactor to use string interpolation in `array/base/assert/is-accessor-array` [(#9458)](https://github.com/stdlib-js/stdlib/pull/9458) _(by KovidhRaj, Athan Reines, stdlib-bot)_
