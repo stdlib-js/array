@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-06)
+## Unreleased (2026-01-09)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`bfab153`](https://github.com/stdlib-js/stdlib/commit/bfab1532d8a54a05baac781a2913db458a1e8570) - **bench:** refactor to use string interpolation in `array/base/bifurcate-values-by` [(#9607)](https://github.com/stdlib-js/stdlib/pull/9607) _(by Bhargav Dabhade)_
 -   [`ff76be4`](https://github.com/stdlib-js/stdlib/commit/ff76be4bd7eb9ced1fc74441b9766d1e5e6d6d31) - **bench:** use string interpolation for benchmark names [(#9517)](https://github.com/stdlib-js/stdlib/pull/9517) _(by KovidhRaj)_
 -   [`b0c05c9`](https://github.com/stdlib-js/stdlib/commit/b0c05c934c6654a95eee523ed88fb34e12fd552b) - **chore:** fix JavaScript lint errors [(#9546)](https://github.com/stdlib-js/stdlib/pull/9546) _(by DivitJain26)_
 -   [`d866858`](https://github.com/stdlib-js/stdlib/commit/d866858cf3082f7692f1c51883490c1da36d1879) - **bench:** refactor to use string interpolation in `array/uint8` [(#9518)](https://github.com/stdlib-js/stdlib/pull/9518) _(by Shubham)_
@@ -711,7 +712,7 @@ A total of 34 issues were closed in this release:
 
 ### Contributors
 
-A total of 32 people contributed to this release. Thank you to the following contributors:
+A total of 33 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -721,6 +722,7 @@ A total of 32 people contributed to this release. Thank you to the following con
 -   Anshu Kumar
 -   Aryan kumar
 -   Athan Reines
+-   Bhargav Dabhade
 -   DivitJain26
 -   Divyanshu
 -   Geo Daoyu
