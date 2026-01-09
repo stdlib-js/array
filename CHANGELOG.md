@@ -260,6 +260,7 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`676581b`](https://github.com/stdlib-js/stdlib/commit/676581b4f1f4ffbece1ae5234a2e6ef1e8fca9f1) - **bench:** refactor to use string interpolation in `array/cartesian-power` [(#9653)](https://github.com/stdlib-js/stdlib/pull/9653) _(by Diyan)_
 -   [`bfab153`](https://github.com/stdlib-js/stdlib/commit/bfab1532d8a54a05baac781a2913db458a1e8570) - **bench:** refactor to use string interpolation in `array/base/bifurcate-values-by` [(#9607)](https://github.com/stdlib-js/stdlib/pull/9607) _(by Bhargav Dabhade)_
 -   [`ff76be4`](https://github.com/stdlib-js/stdlib/commit/ff76be4bd7eb9ced1fc74441b9766d1e5e6d6d31) - **bench:** use string interpolation for benchmark names [(#9517)](https://github.com/stdlib-js/stdlib/pull/9517) _(by KovidhRaj)_
 -   [`b0c05c9`](https://github.com/stdlib-js/stdlib/commit/b0c05c934c6654a95eee523ed88fb34e12fd552b) - **chore:** fix JavaScript lint errors [(#9546)](https://github.com/stdlib-js/stdlib/pull/9546) _(by DivitJain26)_
@@ -712,7 +713,7 @@ A total of 34 issues were closed in this release:
 
 ### Contributors
 
-A total of 33 people contributed to this release. Thank you to the following contributors:
+A total of 34 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -725,6 +726,7 @@ A total of 33 people contributed to this release. Thank you to the following con
 -   Bhargav Dabhade
 -   DivitJain26
 -   Divyanshu
+-   Diyan
 -   Geo Daoyu
 -   Gururaj Gurram
 -   Jay Soni
