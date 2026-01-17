@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-16)
+## Unreleased (2026-01-17)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`c11b35c`](https://github.com/stdlib-js/stdlib/commit/c11b35c2be07283d370662abf5438b9935b49fff) - **bench:** refactor to use string interpolation in `array/base/fillednd` [(#9779)](https://github.com/stdlib-js/stdlib/pull/9779) _(by Rohit R Bhat)_
 -   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`7b347fa`](https://github.com/stdlib-js/stdlib/commit/7b347facd7397468a643699e102d2c3b6e379198) - **style:** resolve lint failure _(by Athan Reines)_
 -   [`72af2aa`](https://github.com/stdlib-js/stdlib/commit/72af2aacb1ff59c6e96de88b5994790ca756aca4) - **chore:** fix spelling errors in `array` [(#9768)](https://github.com/stdlib-js/stdlib/pull/9768) _(by Shubham, Philipp Burckhardt)_
