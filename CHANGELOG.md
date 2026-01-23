@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-17)
+## Unreleased (2026-01-23)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`cccf137`](https://github.com/stdlib-js/stdlib/commit/cccf1373cfe50773b96a7d2a4a538ed54987780b) - **bench:** refactor to use string interpolation in `array/pool` [(#9862)](https://github.com/stdlib-js/stdlib/pull/9862) _(by Sagar Ratna Chaudhary)_
 -   [`c11b35c`](https://github.com/stdlib-js/stdlib/commit/c11b35c2be07283d370662abf5438b9935b49fff) - **bench:** refactor to use string interpolation in `array/base/fillednd` [(#9779)](https://github.com/stdlib-js/stdlib/pull/9779) _(by Rohit R Bhat)_
 -   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`7b347fa`](https://github.com/stdlib-js/stdlib/commit/7b347facd7397468a643699e102d2c3b6e379198) - **style:** resolve lint failure _(by Athan Reines)_
@@ -718,7 +719,7 @@ A total of 35 issues were closed in this release:
 
 ### Contributors
 
-A total of 34 people contributed to this release. Thank you to the following contributors:
+A total of 35 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -747,6 +748,7 @@ A total of 34 people contributed to this release. Thank you to the following con
 -   Rohit R Bhat
 -   Rylan Yang
 -   Sachin Raj
+-   Sagar Ratna Chaudhary
 -   Shabareesh Shetty
 -   Shubham
 -   Sujal charati
