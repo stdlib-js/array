@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-25)
+## Unreleased (2026-01-26)
 
 <section class="features">
 
@@ -246,9 +246,9 @@
 
 ### Closed Issues
 
-A total of 35 issues were closed in this release:
+A total of 36 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180), [#5836](https://github.com/stdlib-js/stdlib/issues/5836), [#5894](https://github.com/stdlib-js/stdlib/issues/5894), [#6416](https://github.com/stdlib-js/stdlib/issues/6416), [#6867](https://github.com/stdlib-js/stdlib/issues/6867), [#7030](https://github.com/stdlib-js/stdlib/issues/7030), [#7913](https://github.com/stdlib-js/stdlib/issues/7913), [#9544](https://github.com/stdlib-js/stdlib/issues/9544), [#9767](https://github.com/stdlib-js/stdlib/issues/9767)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180), [#5836](https://github.com/stdlib-js/stdlib/issues/5836), [#5894](https://github.com/stdlib-js/stdlib/issues/5894), [#6416](https://github.com/stdlib-js/stdlib/issues/6416), [#6867](https://github.com/stdlib-js/stdlib/issues/6867), [#7030](https://github.com/stdlib-js/stdlib/issues/7030), [#7913](https://github.com/stdlib-js/stdlib/issues/7913), [#8294](https://github.com/stdlib-js/stdlib/issues/8294), [#9544](https://github.com/stdlib-js/stdlib/issues/9544), [#9767](https://github.com/stdlib-js/stdlib/issues/9767)
 
 </section>
 
@@ -260,6 +260,8 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`7fbc3d9`](https://github.com/stdlib-js/stdlib/commit/7fbc3d91696d37d3f3f37377d14bd8e5e4d22358) - **bench:** use string interpolation in benchmark descriptions [(#9601)](https://github.com/stdlib-js/stdlib/pull/9601) _(by KovidhRaj)_
+-   [`86da9c3`](https://github.com/stdlib-js/stdlib/commit/86da9c36f2d5aab25056a563688ae2b9cc42616b) - **chore:** fix JavaScript lint errors [(#9560)](https://github.com/stdlib-js/stdlib/pull/9560) _(by Shreelaxmi Hegde)_
 -   [`bcac5a8`](https://github.com/stdlib-js/stdlib/commit/bcac5a8416e8cc611010ee290899cd72177087b1) - **bench:** refactor to use string interpolation in various `assert` packages [(#9786)](https://github.com/stdlib-js/stdlib/pull/9786) _(by Anant Sharma, Athan Reines)_
 -   [`cccf137`](https://github.com/stdlib-js/stdlib/commit/cccf1373cfe50773b96a7d2a4a538ed54987780b) - **bench:** refactor to use string interpolation in `array/pool` [(#9862)](https://github.com/stdlib-js/stdlib/pull/9862) _(by Sagar Ratna Chaudhary)_
 -   [`c11b35c`](https://github.com/stdlib-js/stdlib/commit/c11b35c2be07283d370662abf5438b9935b49fff) - **bench:** refactor to use string interpolation in `array/base/fillednd` [(#9779)](https://github.com/stdlib-js/stdlib/pull/9779) _(by Rohit R Bhat)_
@@ -720,7 +722,7 @@ A total of 35 issues were closed in this release:
 
 ### Contributors
 
-A total of 36 people contributed to this release. Thank you to the following contributors:
+A total of 37 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -752,6 +754,7 @@ A total of 36 people contributed to this release. Thank you to the following con
 -   Sachin Raj
 -   Sagar Ratna Chaudhary
 -   Shabareesh Shetty
+-   Shreelaxmi Hegde
 -   Shubham
 -   Sujal charati
 -   Ullas
