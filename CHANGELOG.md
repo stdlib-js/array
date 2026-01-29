@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`d049e52`](https://github.com/stdlib-js/stdlib/commit/d049e5243020569ca3918432053c8b81e7652047) - **bench:** refactor to use string interpolation in `array/one-to` [(#9950)](https://github.com/stdlib-js/stdlib/pull/9950) _(by Aman Singh)_
 -   [`c78d081`](https://github.com/stdlib-js/stdlib/commit/c78d081deff5ed3bc95010860bc5003cfb0a0563) - **bench:** refactor to use string interpolation in `array/one-to-like` [(#9952)](https://github.com/stdlib-js/stdlib/pull/9952) _(by Aman Singh)_
 -   [`2c83b54`](https://github.com/stdlib-js/stdlib/commit/2c83b54c7edbcdfe83002fe8d161a6ba7ffc15f0) - **bench:** refactor to use string interpolation in `array/full` [(#9929)](https://github.com/stdlib-js/stdlib/pull/9929) _(by Sagar Ratna Chaudhary)_
 -   [`7fbc3d9`](https://github.com/stdlib-js/stdlib/commit/7fbc3d91696d37d3f3f37377d14bd8e5e4d22358) - **bench:** use string interpolation in benchmark descriptions [(#9601)](https://github.com/stdlib-js/stdlib/pull/9601) _(by KovidhRaj)_
