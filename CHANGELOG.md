@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`c300ff9`](https://github.com/stdlib-js/stdlib/commit/c300ff914062f53a0fcf2d195f694bbb90cc96a2) - **bench:** refactor to use string interpolation in `array/ones` [(#9970)](https://github.com/stdlib-js/stdlib/pull/9970) _(by Aman Singh)_
 -   [`d42b8ed`](https://github.com/stdlib-js/stdlib/commit/d42b8edf519d8397417cabdfde090e34d9729021) - **bench:** refactor to use string interpolation in `array/ones-like` [(#9971)](https://github.com/stdlib-js/stdlib/pull/9971) _(by Aman Singh)_
 -   [`ec5723e`](https://github.com/stdlib-js/stdlib/commit/ec5723e300a5d71760c93a7e03b6aff9c9a62148) - **bench:** refactor to use string interpolation in `array/nans` [(#9948)](https://github.com/stdlib-js/stdlib/pull/9948) _(by Aman Singh)_
 -   [`e0024f5`](https://github.com/stdlib-js/stdlib/commit/e0024f57d0cb09f2c897025dbc466732706f1eb8) - **bench:** refactor to use string interpolation in `array/nans-like` [(#9949)](https://github.com/stdlib-js/stdlib/pull/9949) _(by Aman Singh)_
