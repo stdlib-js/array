@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`e487975`](https://github.com/stdlib-js/stdlib/commit/e487975ccd8c36a0c13d3765bac19de5995104d5) - **bench:** refactor to use string interpolation in `array/filled` [(#10321)](https://github.com/stdlib-js/stdlib/pull/10321) _(by Shubham)_
 -   [`1e31792`](https://github.com/stdlib-js/stdlib/commit/1e31792b8dc259eab7ccf802a688556ce376bfb5) - **bench:** refactor to use string interpolation in `array/int16` [(#10274)](https://github.com/stdlib-js/stdlib/pull/10274) _(by Shubham, Philipp Burckhardt)_
 -   [`e1fa36c`](https://github.com/stdlib-js/stdlib/commit/e1fa36c2e0773845bab939eb700d3ee665a5cec9) - **bench:** refactor to use string interpolation in `array/complex128` [(#10301)](https://github.com/stdlib-js/stdlib/pull/10301) _(by Shubham)_
 -   [`9efe7df`](https://github.com/stdlib-js/stdlib/commit/9efe7df13c315e32a9e938830a15f874fb1cb4a0) - **bench:** refactor to use string interpolation in `array/complex64` [(#10302)](https://github.com/stdlib-js/stdlib/pull/10302) _(by Shubham)_
