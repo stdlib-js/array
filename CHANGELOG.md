@@ -260,6 +260,8 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`ddc5bee`](https://github.com/stdlib-js/stdlib/commit/ddc5beeef572cad7d02537bb0086ba434ef77a23) - **bench:** refactor to use string interpolation in `array/uint8` [(#10337)](https://github.com/stdlib-js/stdlib/pull/10337) _(by Shubham)_
+-   [`45bbad6`](https://github.com/stdlib-js/stdlib/commit/45bbad6ba1be96aa1bfdcf7229b6747fa207b043) - **bench:** refactor to use string interpolation in `array/uint8c` [(#10338)](https://github.com/stdlib-js/stdlib/pull/10338) _(by Shubham)_
 -   [`56a8cb7`](https://github.com/stdlib-js/stdlib/commit/56a8cb7fe77a856743eadfec5e2715a06dc86453) - **bench:** refactor to use string interpolation in `array/uint16` [(#10339)](https://github.com/stdlib-js/stdlib/pull/10339) _(by Shubham)_
 -   [`9d0b88a`](https://github.com/stdlib-js/stdlib/commit/9d0b88a0ac8a16ec7eb28b7e300cf239cc580096) - **bench:** refactor to use string interpolation in `array/uint32` [(#10340)](https://github.com/stdlib-js/stdlib/pull/10340) _(by Shubham)_
 -   [`1ebdf55`](https://github.com/stdlib-js/stdlib/commit/1ebdf55506f7035fd461b57300609ae6cb432934) - **bench:** refactor to use string interpolation in `array/filled-by` [(#10319)](https://github.com/stdlib-js/stdlib/pull/10319) _(by Shubham)_
