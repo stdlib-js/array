@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isUint8Array = require( '@stdlib/assert/is-uint8array' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:reverse', pkg ), function benchmark( b ) {
+bench( pkg+':reverse', function benchmark( b ) {
 	var out;
 	var arr;
 	var i;

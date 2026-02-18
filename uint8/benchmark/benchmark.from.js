@@ -23,7 +23,6 @@
 var bench = require( '@stdlib/bench' );
 var ITERATOR_SYMBOL = require( '@stdlib/symbol/iterator' );
 var isUint8Array = require( '@stdlib/assert/is-uint8array' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
@@ -37,7 +36,7 @@ var opts = {
 
 // MAIN //
 
-bench( format( '%s::typed_array:from', pkg ), function benchmark( b ) {
+bench( pkg+'::typed_array:from', function benchmark( b ) {
 	var buf;
 	var arr;
 	var i;
@@ -59,7 +58,7 @@ bench( format( '%s::typed_array:from', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::typed_array,clbk:from', pkg ), function benchmark( b ) {
+bench( pkg+'::typed_array,clbk:from', function benchmark( b ) {
 	var buf;
 	var arr;
 	var i;
@@ -85,7 +84,7 @@ bench( format( '%s::typed_array,clbk:from', pkg ), function benchmark( b ) {
 	}
 });
 
-bench( format( '%s::array:from', pkg ), function benchmark( b ) {
+bench( pkg+'::array:from', function benchmark( b ) {
 	var buf;
 	var arr;
 	var i;
@@ -107,7 +106,7 @@ bench( format( '%s::array:from', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::array,clbk:from', pkg ), function benchmark( b ) {
+bench( pkg+'::array,clbk:from', function benchmark( b ) {
 	var buf;
 	var arr;
 	var i;
@@ -133,7 +132,7 @@ bench( format( '%s::array,clbk:from', pkg ), function benchmark( b ) {
 	}
 });
 
-bench( format( '%s::iterable:from', pkg ), opts, function benchmark( b ) {
+bench( pkg+'::iterable:from', opts, function benchmark( b ) {
 	var arr;
 	var i;
 
@@ -183,7 +182,7 @@ bench( format( '%s::iterable:from', pkg ), opts, function benchmark( b ) {
 	}
 });
 
-bench( format( '%s::iterable,clbk:from:', pkg ), opts, function benchmark( b ) {
+bench( pkg+'::iterable,clbk:from:', opts, function benchmark( b ) {
 	var arr;
 	var i;
 

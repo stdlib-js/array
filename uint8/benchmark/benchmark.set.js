@@ -21,14 +21,13 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s::array:set', pkg ), function benchmark( b ) {
+bench( pkg+'::array:set', function benchmark( b ) {
 	var values;
 	var buf;
 	var arr;
@@ -61,7 +60,7 @@ bench( format( '%s::array:set', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::typed_array:set', pkg ), function benchmark( b ) {
+bench( pkg+'::typed_array:set', function benchmark( b ) {
 	var values;
 	var buf;
 	var arr;

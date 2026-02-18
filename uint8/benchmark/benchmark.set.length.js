@@ -23,7 +23,6 @@
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var randi = require( '@stdlib/random/base/randi' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
@@ -108,7 +107,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( format( '%s:set:len=%d', pkg, len ), f );
+		bench( pkg+':set:len='+len, f );
 	}
 }
 

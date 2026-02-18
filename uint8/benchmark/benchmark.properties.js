@@ -23,14 +23,13 @@
 var bench = require( '@stdlib/bench' );
 var isArrayBuffer = require( '@stdlib/assert/is-arraybuffer' );
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s::get:buffer', pkg ), function benchmark( b ) {
+bench( pkg+'::get:buffer', function benchmark( b ) {
 	var arr;
 	var v;
 	var i;
@@ -53,7 +52,7 @@ bench( format( '%s::get:buffer', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::get:byteLength', pkg ), function benchmark( b ) {
+bench( pkg+'::get:byteLength', function benchmark( b ) {
 	var arr;
 	var v;
 	var i;
@@ -76,7 +75,7 @@ bench( format( '%s::get:byteLength', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::get:byteOffset', pkg ), function benchmark( b ) {
+bench( pkg+'::get:byteOffset', function benchmark( b ) {
 	var arr;
 	var v;
 	var i;
@@ -99,7 +98,7 @@ bench( format( '%s::get:byteOffset', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::get:BYTES_PER_ELEMENT', pkg ), function benchmark( b ) {
+bench( pkg+'::get:BYTES_PER_ELEMENT', function benchmark( b ) {
 	var arr;
 	var v;
 	var i;
@@ -122,7 +121,7 @@ bench( format( '%s::get:BYTES_PER_ELEMENT', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::get:length', pkg ), function benchmark( b ) {
+bench( pkg+'::get:length', function benchmark( b ) {
 	var arr;
 	var v;
 	var i;

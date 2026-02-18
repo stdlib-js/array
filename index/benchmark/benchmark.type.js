@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var ArrayIndex = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:type', pkg ), function benchmark( b ) {
+bench( pkg+':type', function benchmark( b ) {
 	var values;
 	var opts;
 	var v;

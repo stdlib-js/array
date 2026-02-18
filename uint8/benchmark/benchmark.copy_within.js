@@ -21,14 +21,13 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:copyWithin', pkg ), function benchmark( b ) {
+bench( pkg+':copyWithin', function benchmark( b ) {
 	var arr;
 	var v;
 	var i;

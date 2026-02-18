@@ -21,14 +21,13 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:keys', pkg ), function benchmark( b ) {
+bench( pkg+':keys', function benchmark( b ) {
 	var iter;
 	var arr;
 	var i;

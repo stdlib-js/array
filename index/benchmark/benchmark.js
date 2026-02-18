@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var instanceOf = require( '@stdlib/assert/instance-of' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var ArrayIndex = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s::instantiation,new', pkg ), function benchmark( b ) {
+bench( pkg+'::instantiation,new', function benchmark( b ) {
 	var values;
 	var v;
 	var i;
@@ -55,7 +54,7 @@ bench( format( '%s::instantiation,new', pkg ), function benchmark( b ) {
 	b.end();
 });
 
-bench( format( '%s::instantiation,no_new', pkg ), function benchmark( b ) {
+bench( pkg+'::instantiation,no_new', function benchmark( b ) {
 	var values;
 	var idx;
 	var v;

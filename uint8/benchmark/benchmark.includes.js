@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:includes', pkg ), function benchmark( b ) {
+bench( pkg+':includes', function benchmark( b ) {
 	var bool;
 	var arr;
 	var v;

@@ -23,14 +23,13 @@
 var bench = require( '@stdlib/bench' );
 var randi = require( '@stdlib/random/base/randi' );
 var isUint8Array = require( '@stdlib/assert/is-uint8array' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:sort', pkg ), function benchmark( b ) {
+bench( pkg+':sort', function benchmark( b ) {
 	var out;
 	var arr;
 	var i;

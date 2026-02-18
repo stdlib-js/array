@@ -22,7 +22,6 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
@@ -88,7 +87,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( format( '%s:fill:len=%d', pkg, len ), f );
+		bench( pkg+':fill:len='+len, f );
 	}
 }
 

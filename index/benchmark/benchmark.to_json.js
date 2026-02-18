@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isPlainObject = require( '@stdlib/assert/is-plain-object' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var ArrayIndex = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:toJSON:len=3', pkg ), function benchmark( b ) {
+bench( pkg+':toJSON:len=3', function benchmark( b ) {
 	var values;
 	var opts;
 	var v;

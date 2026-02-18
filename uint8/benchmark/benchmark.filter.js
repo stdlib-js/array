@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isUint8Array = require( '@stdlib/assert/is-uint8array' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:filter', pkg ), function benchmark( b ) {
+bench( pkg+':filter', function benchmark( b ) {
 	var arr;
 	var out;
 	var i;
@@ -55,7 +54,7 @@ bench( format( '%s:filter', pkg ), function benchmark( b ) {
 	}
 });
 
-bench( format( '%s::this_context:filter', pkg ), function benchmark( b ) {
+bench( pkg+'::this_context:filter', function benchmark( b ) {
 	var arr;
 	var out;
 	var i;

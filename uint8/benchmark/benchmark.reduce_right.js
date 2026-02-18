@@ -21,14 +21,13 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var Uint8Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:reduceRight', pkg ), function benchmark( b ) {
+bench( pkg+':reduceRight', function benchmark( b ) {
 	var out;
 	var arr;
 	var i;
@@ -54,7 +53,7 @@ bench( format( '%s:reduceRight', pkg ), function benchmark( b ) {
 	}
 });
 
-bench( format( '%s::initial_value:reduceRight', pkg ), function benchmark( b ) {
+bench( pkg+'::initial_value:reduceRight', function benchmark( b ) {
 	var out;
 	var arr;
 	var i;

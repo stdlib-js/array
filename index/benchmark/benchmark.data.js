@@ -22,14 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isCollection = require( '@stdlib/assert/is-collection' );
-var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var ArrayIndex = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:data', pkg ), function benchmark( b ) {
+bench( pkg+':data', function benchmark( b ) {
 	var values;
 	var opts;
 	var v;
