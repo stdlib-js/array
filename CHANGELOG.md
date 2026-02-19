@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-18)
+## Unreleased (2026-02-19)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`d8c8201`](https://github.com/stdlib-js/stdlib/commit/d8c8201ac4ca8c5e2150a5a970a98a551672ac48) - **bench:** refactor to use string interpolation in `array/zero-to` [(#10351)](https://github.com/stdlib-js/stdlib/pull/10351) _(by Shubham)_
 -   [`1c5a33e`](https://github.com/stdlib-js/stdlib/commit/1c5a33ead802b48aa8b7eab6d816923df6ce8aa9) - **bench:** refactor to use string interpolation in `array/base/fillednd-by` [(#10334)](https://github.com/stdlib-js/stdlib/pull/10334) _(by Rohit R Bhat)_
 -   [`b241151`](https://github.com/stdlib-js/stdlib/commit/b241151321d4ccfe331d708cd47c384bd1359032) - **bench:** refactor to use string interpolation in `array/index` [(#10336)](https://github.com/stdlib-js/stdlib/pull/10336) _(by Shubham)_
 -   [`ddc5bee`](https://github.com/stdlib-js/stdlib/commit/ddc5beeef572cad7d02537bb0086ba434ef77a23) - **bench:** refactor to use string interpolation in `array/uint8` [(#10337)](https://github.com/stdlib-js/stdlib/pull/10337) _(by Shubham)_
