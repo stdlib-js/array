@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-19)
+## Unreleased (2026-02-23)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`e2b91ec`](https://github.com/stdlib-js/stdlib/commit/e2b91ec8f083aa6724029bd2f3d180d07230cf9e) - **bench:** refactor to use string interpolation in `array/bool` [(#10370)](https://github.com/stdlib-js/stdlib/pull/10370) _(by Shubham, Athan Reines)_
 -   [`8452bac`](https://github.com/stdlib-js/stdlib/commit/8452bacd27b9cb267bc12c5d87d0e80fb4955f4d) - **bench:** refactor to use string interpolation in `array/zeros-like` [(#10349)](https://github.com/stdlib-js/stdlib/pull/10349) _(by Shubham)_
 -   [`bad91bf`](https://github.com/stdlib-js/stdlib/commit/bad91bf9fad4693af649750fd4ebe30640358e48) - **bench:** refactor to use string interpolation in `array/zero-to-like` [(#10350)](https://github.com/stdlib-js/stdlib/pull/10350) _(by Shubham)_
 -   [`d8c8201`](https://github.com/stdlib-js/stdlib/commit/d8c8201ac4ca8c5e2150a5a970a98a551672ac48) - **bench:** refactor to use string interpolation in `array/zero-to` [(#10351)](https://github.com/stdlib-js/stdlib/pull/10351) _(by Shubham)_
