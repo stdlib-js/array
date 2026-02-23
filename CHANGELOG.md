@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`7bf88ba`](https://github.com/stdlib-js/stdlib/commit/7bf88bae362e09e9fd53718b05af4bd11e6f79af) - **bench:** refactor to use string interpolation in `array/fixed-endian-float64` [(#10342)](https://github.com/stdlib-js/stdlib/pull/10342) _(by Bhargav Dabhade, Athan Reines)_
 -   [`e2b91ec`](https://github.com/stdlib-js/stdlib/commit/e2b91ec8f083aa6724029bd2f3d180d07230cf9e) - **bench:** refactor to use string interpolation in `array/bool` [(#10370)](https://github.com/stdlib-js/stdlib/pull/10370) _(by Shubham, Athan Reines)_
 -   [`8452bac`](https://github.com/stdlib-js/stdlib/commit/8452bacd27b9cb267bc12c5d87d0e80fb4955f4d) - **bench:** refactor to use string interpolation in `array/zeros-like` [(#10349)](https://github.com/stdlib-js/stdlib/pull/10349) _(by Shubham)_
 -   [`bad91bf`](https://github.com/stdlib-js/stdlib/commit/bad91bf9fad4693af649750fd4ebe30640358e48) - **bench:** refactor to use string interpolation in `array/zero-to-like` [(#10350)](https://github.com/stdlib-js/stdlib/pull/10350) _(by Shubham)_
