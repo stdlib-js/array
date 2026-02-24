@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`c695d88`](https://github.com/stdlib-js/stdlib/commit/c695d883771b97f493c0d370973fbd2bd39d521e) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quinary2d` [(#10438)](https://github.com/stdlib-js/stdlib/pull/10438) _(by anee3)_
 -   [`6564170`](https://github.com/stdlib-js/stdlib/commit/6564170f3bf0724a927a23b64f3c624294978182) - **bench:** refactor to use string interpolation in `array/empty` [(#10439)](https://github.com/stdlib-js/stdlib/pull/10439) _(by Aman Singh)_
 -   [`7bf88ba`](https://github.com/stdlib-js/stdlib/commit/7bf88bae362e09e9fd53718b05af4bd11e6f79af) - **bench:** refactor to use string interpolation in `array/fixed-endian-float64` [(#10342)](https://github.com/stdlib-js/stdlib/pull/10342) _(by Bhargav Dabhade, Athan Reines)_
 -   [`e2b91ec`](https://github.com/stdlib-js/stdlib/commit/e2b91ec8f083aa6724029bd2f3d180d07230cf9e) - **bench:** refactor to use string interpolation in `array/bool` [(#10370)](https://github.com/stdlib-js/stdlib/pull/10370) _(by Shubham, Athan Reines)_
