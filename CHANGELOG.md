@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`05e2a72`](https://github.com/stdlib-js/stdlib/commit/05e2a7238d6385111152d041b60e1f27d478db97) - **bench:** refactor to use string interpolation in `array/fixed-endian-float32` [(#10486)](https://github.com/stdlib-js/stdlib/pull/10486) _(by Aman Singh)_
 -   [`157ea4e`](https://github.com/stdlib-js/stdlib/commit/157ea4e1fe500feee3e8252c9e03162da1b53db7) - **chore:** use relative paths _(by Philipp Burckhardt)_
 -   [`e9e7da0`](https://github.com/stdlib-js/stdlib/commit/e9e7da08db53d90feb98a6926e29d388c5de117e) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quaternary4d` [(#10436)](https://github.com/stdlib-js/stdlib/pull/10436) _(by anee3)_
 -   [`c695d88`](https://github.com/stdlib-js/stdlib/commit/c695d883771b97f493c0d370973fbd2bd39d521e) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quinary2d` [(#10438)](https://github.com/stdlib-js/stdlib/pull/10438) _(by anee3)_
