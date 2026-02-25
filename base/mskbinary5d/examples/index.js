@@ -23,7 +23,7 @@ var bernoulli = require( '@stdlib/random/base/bernoulli' ).factory;
 var filled5dBy = require( './../../../base/filled5d-by' );
 var zeros5d = require( './../../../base/zeros5d' );
 var add = require( '@stdlib/number/float64/base/add' );
-var mskbinary5d = require( './../../../base/mskbinary5d/lib' );
+var mskbinary5d = require( './../lib' );
 
 var shape = [ 1, 2, 1, 3, 3 ];
 

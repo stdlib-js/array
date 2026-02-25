@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var add = require( '@stdlib/number/float64/base/add' );
 var zeros5d = require( './../../../base/zeros5d' );
-var mskbinary5d = require( './../../../base/mskbinary5d/lib' );
+var mskbinary5d = require( './../lib' );
 
 
 // TESTS //
