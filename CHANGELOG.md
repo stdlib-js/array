@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-25)
+## Unreleased (2026-02-26)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`5cad666`](https://github.com/stdlib-js/stdlib/commit/5cad666695971ba8af5bc2392893d1f32687a1f1) - **bench:** refactor to use string interpolation in `array/empty-like` [(#10484)](https://github.com/stdlib-js/stdlib/pull/10484) _(by Aman Singh)_
 -   [`05e2a72`](https://github.com/stdlib-js/stdlib/commit/05e2a7238d6385111152d041b60e1f27d478db97) - **bench:** refactor to use string interpolation in `array/fixed-endian-float32` [(#10486)](https://github.com/stdlib-js/stdlib/pull/10486) _(by Aman Singh)_
 -   [`157ea4e`](https://github.com/stdlib-js/stdlib/commit/157ea4e1fe500feee3e8252c9e03162da1b53db7) - **chore:** use relative paths _(by Philipp Burckhardt)_
 -   [`e9e7da0`](https://github.com/stdlib-js/stdlib/commit/e9e7da08db53d90feb98a6926e29d388c5de117e) - **bench:** refactor to use string interpolation in `array/base/broadcasted-quaternary4d` [(#10436)](https://github.com/stdlib-js/stdlib/pull/10436) _(by anee3)_
