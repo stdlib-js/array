@@ -28,7 +28,7 @@ An accessor array is defined as either an [`Array`][mdn-array], [`Typed Array`][
 
 </section>
 
-<!-- ./intro -->
+<!-- /.intro -->
 
 <section class="usage">
 
@@ -125,7 +125,7 @@ bool = isAccessorArray( new Uint8Array( 10 ) );
 bool = isAccessorArray( new Uint8ClampedArray( 10 ) );
 // returns false
 
-bool = isAccessorArray( { 'length': 0 } );
+bool = isAccessorArray({ 'length': 0 });
 // returns false
 ```
 

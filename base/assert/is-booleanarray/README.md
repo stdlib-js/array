@@ -26,7 +26,7 @@ limitations under the License.
 
 </section>
 
-<!-- ./intro -->
+<!-- /.intro -->
 
 <section class="usage">
 
@@ -124,7 +124,7 @@ bool = isBooleanArray( new Uint8Array( 10 ) );
 bool = isBooleanArray( new Uint8ClampedArray( 10 ) );
 // returns false
 
-bool = isBooleanArray( { 'length': 0 } );
+bool = isBooleanArray({ 'length': 0 });
 // returns false
 ```
 

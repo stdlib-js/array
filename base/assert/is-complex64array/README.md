@@ -26,7 +26,7 @@ limitations under the License.
 
 </section>
 
-<!-- ./intro -->
+<!-- /.intro -->
 
 <section class="usage">
 
@@ -120,7 +120,7 @@ bool = isComplex64Array( new Uint8Array( 10 ) );
 bool = isComplex64Array( new Uint8ClampedArray( 10 ) );
 // returns false
 
-bool = isComplex64Array( { 'length': 0 } );
+bool = isComplex64Array({ 'length': 0 });
 // returns false
 ```
 
