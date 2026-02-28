@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-27)
+## Unreleased (2026-02-28)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`040efaf`](https://github.com/stdlib-js/stdlib/commit/040efaff1efa5576e2625694c19e3a5644c92f5c) - **bench:** refactor to use string interpolation in `array/typed-real` [(#10036)](https://github.com/stdlib-js/stdlib/pull/10036) _(by Aman Singh)_
 -   [`b721461`](https://github.com/stdlib-js/stdlib/commit/b721461895b04dd66f0915c76347244a7cc56148) - **docs:** revert style changes _(by Athan Reines)_
 -   [`3024bb3`](https://github.com/stdlib-js/stdlib/commit/3024bb37f70bf55295d9c4bf81107ff57c15ff8a) - **docs:** fix section comments and lint errors in `array` and `assert` READMEs _(by Philipp Burckhardt)_
 -   [`5cad666`](https://github.com/stdlib-js/stdlib/commit/5cad666695971ba8af5bc2392893d1f32687a1f1) - **bench:** refactor to use string interpolation in `array/empty-like` [(#10484)](https://github.com/stdlib-js/stdlib/pull/10484) _(by Aman Singh)_
