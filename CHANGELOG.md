@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-02)
+## Unreleased (2026-03-03)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`71a3394`](https://github.com/stdlib-js/stdlib/commit/71a339452ce742461f52af49a9767fdacfe87ee7) - **bench:** refactor to use string interpolation in `array/base/first` [(#10647)](https://github.com/stdlib-js/stdlib/pull/10647) _(by Rohit R Bhat)_
 -   [`3b764ec`](https://github.com/stdlib-js/stdlib/commit/3b764ec4b17ebce14902ac68a42bc5df62c3aef5) - **docs:** remove stray console.log _(by Athan Reines)_
 -   [`f101dfa`](https://github.com/stdlib-js/stdlib/commit/f101dfa3d4cdd280ab58690114862ab15e8993ef) - **style:** fix line wrapping and remove trailing whitespace _(by Athan Reines)_
 -   [`040efaf`](https://github.com/stdlib-js/stdlib/commit/040efaff1efa5576e2625694c19e3a5644c92f5c) - **bench:** refactor to use string interpolation in `array/typed-real` [(#10036)](https://github.com/stdlib-js/stdlib/pull/10036) _(by Aman Singh)_
