@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-03)
+## Unreleased (2026-03-08)
 
 <section class="features">
 
@@ -246,9 +246,9 @@
 
 ### Closed Issues
 
-A total of 36 issues were closed in this release:
+A total of 37 issues were closed in this release:
 
-[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180), [#5836](https://github.com/stdlib-js/stdlib/issues/5836), [#5894](https://github.com/stdlib-js/stdlib/issues/5894), [#6416](https://github.com/stdlib-js/stdlib/issues/6416), [#6867](https://github.com/stdlib-js/stdlib/issues/6867), [#7030](https://github.com/stdlib-js/stdlib/issues/7030), [#7913](https://github.com/stdlib-js/stdlib/issues/7913), [#8294](https://github.com/stdlib-js/stdlib/issues/8294), [#9544](https://github.com/stdlib-js/stdlib/issues/9544), [#9767](https://github.com/stdlib-js/stdlib/issues/9767)
+[#3135](https://github.com/stdlib-js/stdlib/issues/3135), [#3138](https://github.com/stdlib-js/stdlib/issues/3138), [#3140](https://github.com/stdlib-js/stdlib/issues/3140), [#3145](https://github.com/stdlib-js/stdlib/issues/3145), [#3146](https://github.com/stdlib-js/stdlib/issues/3146), [#3147](https://github.com/stdlib-js/stdlib/issues/3147), [#3149](https://github.com/stdlib-js/stdlib/issues/3149), [#3150](https://github.com/stdlib-js/stdlib/issues/3150), [#3151](https://github.com/stdlib-js/stdlib/issues/3151), [#3152](https://github.com/stdlib-js/stdlib/issues/3152), [#3155](https://github.com/stdlib-js/stdlib/issues/3155), [#3162](https://github.com/stdlib-js/stdlib/issues/3162), [#3164](https://github.com/stdlib-js/stdlib/issues/3164), [#3165](https://github.com/stdlib-js/stdlib/issues/3165), [#3166](https://github.com/stdlib-js/stdlib/issues/3166), [#3167](https://github.com/stdlib-js/stdlib/issues/3167), [#3168](https://github.com/stdlib-js/stdlib/issues/3168), [#3169](https://github.com/stdlib-js/stdlib/issues/3169), [#3171](https://github.com/stdlib-js/stdlib/issues/3171), [#3173](https://github.com/stdlib-js/stdlib/issues/3173), [#3174](https://github.com/stdlib-js/stdlib/issues/3174), [#3175](https://github.com/stdlib-js/stdlib/issues/3175), [#3176](https://github.com/stdlib-js/stdlib/issues/3176), [#3177](https://github.com/stdlib-js/stdlib/issues/3177), [#3178](https://github.com/stdlib-js/stdlib/issues/3178), [#3179](https://github.com/stdlib-js/stdlib/issues/3179), [#3180](https://github.com/stdlib-js/stdlib/issues/3180), [#5836](https://github.com/stdlib-js/stdlib/issues/5836), [#5894](https://github.com/stdlib-js/stdlib/issues/5894), [#6416](https://github.com/stdlib-js/stdlib/issues/6416), [#6867](https://github.com/stdlib-js/stdlib/issues/6867), [#7030](https://github.com/stdlib-js/stdlib/issues/7030), [#7913](https://github.com/stdlib-js/stdlib/issues/7913), [#8294](https://github.com/stdlib-js/stdlib/issues/8294), [#9544](https://github.com/stdlib-js/stdlib/issues/9544), [#9767](https://github.com/stdlib-js/stdlib/issues/9767), [#10801](https://github.com/stdlib-js/stdlib/issues/10801)
 
 </section>
 
@@ -260,6 +260,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`12db091`](https://github.com/stdlib-js/stdlib/commit/12db091f535461d7b4a0df5d3d47627ad9234da2) - **chore:** fix JavaScript lint errors\" [(#10804)](https://github.com/stdlib-js/stdlib/pull/10804) _(by Aniket Sonawane)_
 -   [`4ef61be`](https://github.com/stdlib-js/stdlib/commit/4ef61be14fae1ba8a9f1bc2d6ef0caaf648ee5be) - **bench:** refactor to use string interpolation in `array/base/flatten-by` [(#10678)](https://github.com/stdlib-js/stdlib/pull/10678) _(by Siddhartha Mondal)_
 -   [`c1b4d2c`](https://github.com/stdlib-js/stdlib/commit/c1b4d2c8d7097c74e941eb9ebbee8e4f8c6f2b29) - **bench:** refactor to use string interpolation in `array/base/filter` [(#10644)](https://github.com/stdlib-js/stdlib/pull/10644) _(by Rohit R Bhat)_
 -   [`71a3394`](https://github.com/stdlib-js/stdlib/commit/71a339452ce742461f52af49a9767fdacfe87ee7) - **bench:** refactor to use string interpolation in `array/base/first` [(#10647)](https://github.com/stdlib-js/stdlib/pull/10647) _(by Rohit R Bhat)_
@@ -764,7 +765,7 @@ A total of 36 issues were closed in this release:
 
 ### Contributors
 
-A total of 38 people contributed to this release. Thank you to the following contributors:
+A total of 39 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -772,6 +773,7 @@ A total of 38 people contributed to this release. Thank you to the following con
 -   Ahmed Kashkoush
 -   Aman Singh
 -   Anant Sharma
+-   Aniket Sonawane
 -   Anshu Kumar
 -   Aryan kumar
 -   Athan Reines
