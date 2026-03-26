@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-03-26)
 
 <section class="features">
 
@@ -260,6 +260,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`df7737d`](https://github.com/stdlib-js/stdlib/commit/df7737db3596bbb6dae75d5af8b6f8e904ab8695) - **bench:** refactor to use string interpolation in `array/little-endian-factory` [(#11141)](https://github.com/stdlib-js/stdlib/pull/11141) _(by Harshit Verma)_
 -   [`1edd771`](https://github.com/stdlib-js/stdlib/commit/1edd7712b2a114f8717a751714624f9e23af1bc4) - **bench:** refactor to use string interpolation in `array/float64` [(#11094)](https://github.com/stdlib-js/stdlib/pull/11094) _(by Partha Das, Athan Reines)_
 -   [`12db091`](https://github.com/stdlib-js/stdlib/commit/12db091f535461d7b4a0df5d3d47627ad9234da2) - **chore:** fix JavaScript lint errors [(#10804)](https://github.com/stdlib-js/stdlib/pull/10804) _(by Aniket Sonawane)_
 -   [`4ef61be`](https://github.com/stdlib-js/stdlib/commit/4ef61be14fae1ba8a9f1bc2d6ef0caaf648ee5be) - **bench:** refactor to use string interpolation in `array/base/flatten-by` [(#10678)](https://github.com/stdlib-js/stdlib/pull/10678) _(by Siddhartha Mondal)_
@@ -766,7 +767,7 @@ A total of 37 issues were closed in this release:
 
 ### Contributors
 
-A total of 40 people contributed to this release. Thank you to the following contributors:
+A total of 41 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -784,6 +785,7 @@ A total of 40 people contributed to this release. Thank you to the following con
 -   Diyan
 -   Geo Daoyu
 -   Gururaj Gurram
+-   Harshit Verma
 -   Jay Soni
 -   Kate Suraev
 -   KovidhRaj
