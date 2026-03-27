@@ -260,6 +260,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`3bf34ec`](https://github.com/stdlib-js/stdlib/commit/3bf34ec6df7f894f7cbee125eb3f655ebb2d6a4e) - **chore:** fix typos, grammar, and minor issues across multiple packages [(#11167)](https://github.com/stdlib-js/stdlib/pull/11167) _(by Philipp Burckhardt)_
 -   [`7fb96a3`](https://github.com/stdlib-js/stdlib/commit/7fb96a36dea954ceb18b65b02e511aaea505b25d) - **bench:** add missing method name in benchmark description [(#11155)](https://github.com/stdlib-js/stdlib/pull/11155) _(by Matt Van Horn)_
 -   [`df7737d`](https://github.com/stdlib-js/stdlib/commit/df7737db3596bbb6dae75d5af8b6f8e904ab8695) - **bench:** refactor to use string interpolation in `array/little-endian-factory` [(#11141)](https://github.com/stdlib-js/stdlib/pull/11141) _(by Harshit Verma)_
 -   [`1edd771`](https://github.com/stdlib-js/stdlib/commit/1edd7712b2a114f8717a751714624f9e23af1bc4) - **bench:** refactor to use string interpolation in `array/float64` [(#11094)](https://github.com/stdlib-js/stdlib/pull/11094) _(by Partha Das, Athan Reines)_
