@@ -748,6 +748,15 @@ setReadOnly( ns, 'everyBy', require( './../../base/every-by' ) );
 setReadOnly( ns, 'everyByRight', require( './../../base/every-by-right' ) );
 
 /**
+* @name falses
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/falses}
+*/
+setReadOnly( ns, 'falses', require( './../../base/falses' ) );
+
+/**
 * @name fancySlice
 * @memberof ns
 * @readonly
@@ -1970,6 +1979,15 @@ setReadOnly( ns, 'toInsertedAt', require( './../../base/to-inserted-at' ) );
 * @see {@link module:@stdlib/array/base/to-reversed}
 */
 setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
+
+/**
+* @name trues
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/trues}
+*/
+setReadOnly( ns, 'trues', require( './../../base/trues' ) );
 
 /**
 * @name unary2d

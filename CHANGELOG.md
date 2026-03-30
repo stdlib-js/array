@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-27)
+## Unreleased (2026-03-30)
 
 <section class="features">
 
 ### Features
 
+-   [`9165bd6`](https://github.com/stdlib-js/stdlib/commit/9165bd6bd22746c8e69c14e75fd931485515a194) - add `falses` to namespace
+-   [`836f561`](https://github.com/stdlib-js/stdlib/commit/836f5610785c2b1eb8efd5d5234fec349dac8f1d) - add `array/base/falses`
+-   [`afb3293`](https://github.com/stdlib-js/stdlib/commit/afb32938742a510a3357156736067ee8fdaba07d) - add `trues` to namespace
+-   [`1579050`](https://github.com/stdlib-js/stdlib/commit/1579050c61243f45711b9b4708c8c5fda7ad9c06) - add `array/base/trues`
 -   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196)
 -   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - add `hasAlmostSameValues` to namespace
 -   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - add `array/base/assert/has-almost-same-values`
@@ -260,6 +264,10 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`9165bd6`](https://github.com/stdlib-js/stdlib/commit/9165bd6bd22746c8e69c14e75fd931485515a194) - **feat:** add `falses` to namespace _(by Athan Reines)_
+-   [`836f561`](https://github.com/stdlib-js/stdlib/commit/836f5610785c2b1eb8efd5d5234fec349dac8f1d) - **feat:** add `array/base/falses` _(by Athan Reines)_
+-   [`afb3293`](https://github.com/stdlib-js/stdlib/commit/afb32938742a510a3357156736067ee8fdaba07d) - **feat:** add `trues` to namespace _(by Athan Reines)_
+-   [`1579050`](https://github.com/stdlib-js/stdlib/commit/1579050c61243f45711b9b4708c8c5fda7ad9c06) - **feat:** add `array/base/trues` _(by Athan Reines)_
 -   [`3bf34ec`](https://github.com/stdlib-js/stdlib/commit/3bf34ec6df7f894f7cbee125eb3f655ebb2d6a4e) - **chore:** fix typos, grammar, and minor issues across multiple packages [(#11167)](https://github.com/stdlib-js/stdlib/pull/11167) _(by Philipp Burckhardt)_
 -   [`7fb96a3`](https://github.com/stdlib-js/stdlib/commit/7fb96a36dea954ceb18b65b02e511aaea505b25d) - **bench:** add missing method name in benchmark description [(#11155)](https://github.com/stdlib-js/stdlib/pull/11155) _(by Matt Van Horn)_
 -   [`df7737d`](https://github.com/stdlib-js/stdlib/commit/df7737db3596bbb6dae75d5af8b6f8e904ab8695) - **bench:** refactor to use string interpolation in `array/little-endian-factory` [(#11141)](https://github.com/stdlib-js/stdlib/pull/11141) _(by Harshit Verma)_
