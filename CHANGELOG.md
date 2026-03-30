@@ -266,6 +266,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`5e93594`](https://github.com/stdlib-js/stdlib/commit/5e93594dd241e229cc3605b53dfa4290168526fc) - **docs:** update namespace table of contents [(#11214)](https://github.com/stdlib-js/stdlib/pull/11214) _(by stdlib-bot)_
 -   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - **feat:** add `nulls` to namespace _(by Athan Reines)_
 -   [`419efe1`](https://github.com/stdlib-js/stdlib/commit/419efe14ee9dfc8224b419864f9314614f27786b) - **feat:** add `array/nulls` _(by Athan Reines)_
 -   [`3186ff6`](https://github.com/stdlib-js/stdlib/commit/3186ff670bcc66153a58b94111f5688fa59170e7) - **docs:** fix alias _(by Athan Reines)_
