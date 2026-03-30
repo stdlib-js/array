@@ -264,6 +264,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`3186ff6`](https://github.com/stdlib-js/stdlib/commit/3186ff670bcc66153a58b94111f5688fa59170e7) - **docs:** fix alias _(by Athan Reines)_
 -   [`a4557ba`](https://github.com/stdlib-js/stdlib/commit/a4557ba86aebbc0535f0989f59ba3461ad6b1d89) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
 -   [`bfc9322`](https://github.com/stdlib-js/stdlib/commit/bfc9322020792df4f47ea649d6fbed509284f6bd) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
 -   [`b85a1da`](https://github.com/stdlib-js/stdlib/commit/b85a1da40b6ea52d966f7294933908c5d4c839d9) - **refactor:** perform expliict dtype argument validation _(by Athan Reines)_
