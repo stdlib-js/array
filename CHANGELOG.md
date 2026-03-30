@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - add `nulls` to namespace
+-   [`419efe1`](https://github.com/stdlib-js/stdlib/commit/419efe14ee9dfc8224b419864f9314614f27786b) - add `array/nulls`
 -   [`9165bd6`](https://github.com/stdlib-js/stdlib/commit/9165bd6bd22746c8e69c14e75fd931485515a194) - add `falses` to namespace
 -   [`836f561`](https://github.com/stdlib-js/stdlib/commit/836f5610785c2b1eb8efd5d5234fec349dac8f1d) - add `array/base/falses`
 -   [`afb3293`](https://github.com/stdlib-js/stdlib/commit/afb32938742a510a3357156736067ee8fdaba07d) - add `trues` to namespace
@@ -264,6 +266,8 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - **feat:** add `nulls` to namespace _(by Athan Reines)_
+-   [`419efe1`](https://github.com/stdlib-js/stdlib/commit/419efe14ee9dfc8224b419864f9314614f27786b) - **feat:** add `array/nulls` _(by Athan Reines)_
 -   [`3186ff6`](https://github.com/stdlib-js/stdlib/commit/3186ff670bcc66153a58b94111f5688fa59170e7) - **docs:** fix alias _(by Athan Reines)_
 -   [`a4557ba`](https://github.com/stdlib-js/stdlib/commit/a4557ba86aebbc0535f0989f59ba3461ad6b1d89) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
 -   [`bfc9322`](https://github.com/stdlib-js/stdlib/commit/bfc9322020792df4f47ea649d6fbed509284f6bd) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
