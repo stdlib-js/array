@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213)
 -   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - add `nulls` to namespace
 -   [`419efe1`](https://github.com/stdlib-js/stdlib/commit/419efe14ee9dfc8224b419864f9314614f27786b) - add `array/nulls`
 -   [`9165bd6`](https://github.com/stdlib-js/stdlib/commit/9165bd6bd22746c8e69c14e75fd931485515a194) - add `falses` to namespace
@@ -266,6 +267,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - **feat:** update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213) _(by stdlib-bot)_
 -   [`5e93594`](https://github.com/stdlib-js/stdlib/commit/5e93594dd241e229cc3605b53dfa4290168526fc) - **docs:** update namespace table of contents [(#11214)](https://github.com/stdlib-js/stdlib/pull/11214) _(by stdlib-bot)_
 -   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - **feat:** add `nulls` to namespace _(by Athan Reines)_
 -   [`419efe1`](https://github.com/stdlib-js/stdlib/commit/419efe14ee9dfc8224b419864f9314614f27786b) - **feat:** add `array/nulls` _(by Athan Reines)_
