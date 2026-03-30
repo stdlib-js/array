@@ -20,9 +20,18 @@
 
 // MODULES //
 
+var contains = require( './../../base/assert/contains' ).factory;
 var oneTo = require( './../../one-to' );
 var dtype = require( './../../dtype' );
+var dtypes = require( './../../dtypes' );
+var join = require( './../../base/join' );
 var format = require( '@stdlib/string/format' );
+
+
+// VARIABLES //
+
+var DTYPES = dtypes( 'numeric_and_generic' );
+var isValidDType = contains( DTYPES );
 
 
 // MAIN //
@@ -51,6 +60,11 @@ function oneToLike( x ) {
 	}
 	if ( arguments.length > 1 ) {
 		dt = arguments[ 1 ];
+		if ( !isValidDType( dt ) ) {
+			throw new TypeError( format( 'invalid argument. Second argument must be one of the following: "%s". Value: `%s`.', join( DTYPES, '", "' ), dt ) );
+		}
+	} else if ( !isValidDType( dt ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must have one of the following data types: "%s". Value: `%s`.', join( DTYPES, '", "' ), dt ) );
 	}
 	return oneTo( x.length, dt );
 }

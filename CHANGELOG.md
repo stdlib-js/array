@@ -264,6 +264,14 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`a4557ba`](https://github.com/stdlib-js/stdlib/commit/a4557ba86aebbc0535f0989f59ba3461ad6b1d89) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
+-   [`bfc9322`](https://github.com/stdlib-js/stdlib/commit/bfc9322020792df4f47ea649d6fbed509284f6bd) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
+-   [`b85a1da`](https://github.com/stdlib-js/stdlib/commit/b85a1da40b6ea52d966f7294933908c5d4c839d9) - **refactor:** perform expliict dtype argument validation _(by Athan Reines)_
+-   [`9d06cf9`](https://github.com/stdlib-js/stdlib/commit/9d06cf9a66cd23f2640a7b20652748152cb90ee9) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
+-   [`68ef3ce`](https://github.com/stdlib-js/stdlib/commit/68ef3cef76a8f6080cf8cf4171b9a449c969315b) - **refactor:** perform explicit dtype validation _(by Athan Reines)_
+-   [`5706abd`](https://github.com/stdlib-js/stdlib/commit/5706abd84b709abebb6ac0721cf6cc5caded2906) - **refactor:** clean-up dtype validation logic _(by Athan Reines)_
+-   [`dfccbcd`](https://github.com/stdlib-js/stdlib/commit/dfccbcd1e30c2b7afc9b1c133b94ca96ac5751d2) - **refactor:** use dedicated utility for joining array elements _(by Athan Reines)_
+-   [`3323474`](https://github.com/stdlib-js/stdlib/commit/3323474c193b0a1cf6501ea8bf54381392562af6) - **refactor:** explicitly validate a provided input dtype _(by Athan Reines)_
 -   [`9165bd6`](https://github.com/stdlib-js/stdlib/commit/9165bd6bd22746c8e69c14e75fd931485515a194) - **feat:** add `falses` to namespace _(by Athan Reines)_
 -   [`836f561`](https://github.com/stdlib-js/stdlib/commit/836f5610785c2b1eb8efd5d5234fec349dac8f1d) - **feat:** add `array/base/falses` _(by Athan Reines)_
 -   [`afb3293`](https://github.com/stdlib-js/stdlib/commit/afb32938742a510a3357156736067ee8fdaba07d) - **feat:** add `trues` to namespace _(by Athan Reines)_
