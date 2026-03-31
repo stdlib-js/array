@@ -62,6 +62,7 @@ import mskreject = require( './../../mskreject' );
 import nans = require( './../../nans' );
 import nansLike = require( './../../nans-like' );
 import nextDataType = require( './../../next-dtype' );
+import nulls = require( './../../nulls' );
 import oneTo = require( './../../one-to' );
 import oneToLike = require( './../../one-to-like' );
 import ones = require( './../../ones' );
@@ -1007,6 +1008,27 @@ interface Namespace {
 	* // returns 'float64'
 	*/
 	nextDataType: typeof nextDataType;
+
+	/**
+	* Creates an array filled with nulls and having a specified length.
+	*
+	* The function recognizes the following data types:
+	*
+	* -   `generic`: generic JavaScript values
+	*
+	* @param length - array length
+	* @param dtype - data type (default: 'generic')
+	* @returns filled array
+	*
+	* @example
+	* var arr = ns.nulls( 2 );
+	* // returns [ null, null ]
+	*
+	* @example
+	* var arr = ns.nulls( 2, 'generic' );
+	* // returns [ null, null ]
+	*/
+	nulls: typeof nulls;
 
 	/**
 	* Generates a linearly spaced numeric array whose elements increment by 1 starting from one.

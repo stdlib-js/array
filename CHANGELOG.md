@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-30)
+## Unreleased (2026-03-31)
 
 <section class="features">
 
 ### Features
 
+-   [`889f7b2`](https://github.com/stdlib-js/stdlib/commit/889f7b26c0cd56cfe9fd71d160ebcb22a4f3d99f) - update `array` TypeScript declarations [(#11237)](https://github.com/stdlib-js/stdlib/pull/11237)
 -   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213)
 -   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - add `nulls` to namespace
 -   [`419efe1`](https://github.com/stdlib-js/stdlib/commit/419efe14ee9dfc8224b419864f9314614f27786b) - add `array/nulls`
@@ -267,6 +268,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`889f7b2`](https://github.com/stdlib-js/stdlib/commit/889f7b26c0cd56cfe9fd71d160ebcb22a4f3d99f) - **feat:** update `array` TypeScript declarations [(#11237)](https://github.com/stdlib-js/stdlib/pull/11237) _(by stdlib-bot)_
 -   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - **feat:** update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213) _(by stdlib-bot)_
 -   [`5e93594`](https://github.com/stdlib-js/stdlib/commit/5e93594dd241e229cc3605b53dfa4290168526fc) - **docs:** update namespace table of contents [(#11214)](https://github.com/stdlib-js/stdlib/pull/11214) _(by stdlib-bot)_
 -   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - **feat:** add `nulls` to namespace _(by Athan Reines)_
