@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-31)
+## Unreleased (2026-04-02)
 
 <section class="features">
 
@@ -268,6 +268,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`a467bf0`](https://github.com/stdlib-js/stdlib/commit/a467bf0083da8f346611e53a684a78212f76d426) - **chore:** fix typos and incorrect test values [(#11270)](https://github.com/stdlib-js/stdlib/pull/11270) _(by Philipp Burckhardt)_
 -   [`889f7b2`](https://github.com/stdlib-js/stdlib/commit/889f7b26c0cd56cfe9fd71d160ebcb22a4f3d99f) - **feat:** update `array` TypeScript declarations [(#11237)](https://github.com/stdlib-js/stdlib/pull/11237) _(by stdlib-bot)_
 -   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - **feat:** update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213) _(by stdlib-bot)_
 -   [`5e93594`](https://github.com/stdlib-js/stdlib/commit/5e93594dd241e229cc3605b53dfa4290168526fc) - **docs:** update namespace table of contents [(#11214)](https://github.com/stdlib-js/stdlib/pull/11214) _(by stdlib-bot)_
