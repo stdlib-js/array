@@ -173,6 +173,7 @@
 
 ### Bug Fixes
 
+-   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - ensure support for boolean arrays in polyfill
 -   [`3a0b3cc`](https://github.com/stdlib-js/stdlib/commit/3a0b3cc30d966f8739511d4f0cedc73b07376e59) - improve `entries` return type and examples in `array/complex128` types
 -   [`d3b0f25`](https://github.com/stdlib-js/stdlib/commit/d3b0f251b37fdc27cd3a02ac794dddba0b2f7b36) - correct loop bounds in toJSON method for `nested2views`
 -   [`fbc5910`](https://github.com/stdlib-js/stdlib/commit/fbc5910c2290928c2fdc730a6b166b39e637d304) - remove unnecessary loop in toJSON method for entries2views
@@ -268,6 +269,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - **fix:** ensure support for boolean arrays in polyfill _(by Athan Reines)_
 -   [`08624f9`](https://github.com/stdlib-js/stdlib/commit/08624f9135cd19871865ea671a232f4d3149e639) - **docs:** improve doctests for complex number instances in `array/complex128` [(#10718)](https://github.com/stdlib-js/stdlib/pull/10718) _(by Aniket Sonawane, Athan Reines, stdlib-bot)_
 -   [`a467bf0`](https://github.com/stdlib-js/stdlib/commit/a467bf0083da8f346611e53a684a78212f76d426) - **chore:** fix typos and incorrect test values [(#11270)](https://github.com/stdlib-js/stdlib/pull/11270) _(by Philipp Burckhardt)_
 -   [`889f7b2`](https://github.com/stdlib-js/stdlib/commit/889f7b26c0cd56cfe9fd71d160ebcb22a4f3d99f) - **feat:** update `array` TypeScript declarations [(#11237)](https://github.com/stdlib-js/stdlib/pull/11237) _(by stdlib-bot)_

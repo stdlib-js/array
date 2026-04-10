@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var BooleanArray = require( './../../bool' );
 var zeros = require( './../../zeros' );
 
 
@@ -44,8 +45,14 @@ var zeros = require( './../../zeros' );
 * // returns <Float32Array>
 */
 function empty( length ) {
+	var dt;
 	if ( arguments.length > 1 ) {
-		return zeros( length, arguments[ 1 ] );
+		dt = arguments[ 1 ];
+		if ( dt === 'bool' ) {
+			// Special handle boolean arrays as `zeros` only supports numeric data types:
+			return new BooleanArray( length );
+		}
+		return zeros( length, dt );
 	}
 	return zeros( length );
 }
