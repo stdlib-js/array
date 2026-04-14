@@ -30,6 +30,7 @@ var add = require( '@stdlib/number/float64/base/add' );
 var filled4dBy = require( './../../../base/filled4d-by' );
 var zeros4d = require( './../../../base/zeros4d' );
 var numel = require( '@stdlib/ndarray/base/numel' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var mskbinary4d = require( './../lib' );
 
@@ -120,7 +121,7 @@ function main() {
 		N = floor( pow( pow( 10, i ), 1.0/4.0 ) );
 		sh = [ N, N, N, N ];
 		f = createBenchmark( sh );
-		bench( pkg+'::equidimensional:size='+numel( sh ), f );
+		bench( format( '%s::equidimensional:size=%d', pkg, numel( sh ) ), f );
 	}
 }
 

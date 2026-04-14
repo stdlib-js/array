@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-11)
+## Unreleased (2026-04-14)
 
 <section class="features">
 
@@ -269,6 +269,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`56bc531`](https://github.com/stdlib-js/stdlib/commit/56bc5310298aec8f6eca5ca07ccff333c4792a40) - **bench:** refactor to use string interpolation in `@stdlib/array` [(#11412)](https://github.com/stdlib-js/stdlib/pull/11412) _(by Karan Anand, Athan Reines)_
 -   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - **fix:** ensure support for boolean arrays in polyfill _(by Athan Reines)_
 -   [`08624f9`](https://github.com/stdlib-js/stdlib/commit/08624f9135cd19871865ea671a232f4d3149e639) - **docs:** improve doctests for complex number instances in `array/complex128` [(#10718)](https://github.com/stdlib-js/stdlib/pull/10718) _(by Aniket Sonawane, Athan Reines, stdlib-bot)_
 -   [`a467bf0`](https://github.com/stdlib-js/stdlib/commit/a467bf0083da8f346611e53a684a78212f76d426) - **chore:** fix typos and incorrect test values [(#11270)](https://github.com/stdlib-js/stdlib/pull/11270) _(by Philipp Burckhardt)_
@@ -799,7 +800,7 @@ A total of 38 issues were closed in this release:
 
 ### Contributors
 
-A total of 42 people contributed to this release. Thank you to the following contributors:
+A total of 43 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -819,6 +820,7 @@ A total of 42 people contributed to this release. Thank you to the following con
 -   Gururaj Gurram
 -   Harshit Verma
 -   Jay Soni
+-   Karan Anand
 -   Kate Suraev
 -   KovidhRaj
 -   Kshitij-Dale
