@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-14)
+## Unreleased (2026-04-19)
 
 <section class="features">
 
@@ -173,6 +173,7 @@
 
 ### Bug Fixes
 
+-   [`2d234cc`](https://github.com/stdlib-js/stdlib/commit/2d234cc858ceeea867610d7c86dd309766990dcd) - use `empty` instead of `zeros` in `array/from-scalar` [(#11628)](https://github.com/stdlib-js/stdlib/pull/11628)
 -   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - ensure support for boolean arrays in polyfill
 -   [`3a0b3cc`](https://github.com/stdlib-js/stdlib/commit/3a0b3cc30d966f8739511d4f0cedc73b07376e59) - improve `entries` return type and examples in `array/complex128` types
 -   [`d3b0f25`](https://github.com/stdlib-js/stdlib/commit/d3b0f251b37fdc27cd3a02ac794dddba0b2f7b36) - correct loop bounds in toJSON method for `nested2views`
@@ -269,6 +270,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`2d234cc`](https://github.com/stdlib-js/stdlib/commit/2d234cc858ceeea867610d7c86dd309766990dcd) - **fix:** use `empty` instead of `zeros` in `array/from-scalar` [(#11628)](https://github.com/stdlib-js/stdlib/pull/11628) _(by Karan Anand)_
 -   [`56bc531`](https://github.com/stdlib-js/stdlib/commit/56bc5310298aec8f6eca5ca07ccff333c4792a40) - **bench:** refactor to use string interpolation in `@stdlib/array` [(#11412)](https://github.com/stdlib-js/stdlib/pull/11412) _(by Karan Anand, Athan Reines)_
 -   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - **fix:** ensure support for boolean arrays in polyfill _(by Athan Reines)_
 -   [`08624f9`](https://github.com/stdlib-js/stdlib/commit/08624f9135cd19871865ea671a232f4d3149e639) - **docs:** improve doctests for complex number instances in `array/complex128` [(#10718)](https://github.com/stdlib-js/stdlib/pull/10718) _(by Aniket Sonawane, Athan Reines, stdlib-bot)_
