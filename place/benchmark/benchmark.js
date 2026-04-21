@@ -24,13 +24,14 @@ var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
 var zeroTo = require( './../../base/zero-to' );
 var ones = require( './../../base/ones' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var place = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+'::no_broadcasting:len=100', function benchmark( b ) {
+bench( format( '%s::no_broadcasting:len=100', pkg ), function benchmark( b ) {
 	var mask;
 	var x;
 	var i;
@@ -54,7 +55,7 @@ bench( pkg+'::no_broadcasting:len=100', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::broadcasting:len=100', function benchmark( b ) {
+bench( format( '%s::broadcasting:len=100', pkg ), function benchmark( b ) {
 	var mask;
 	var x;
 	var i;

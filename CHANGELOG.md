@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-19)
+## Unreleased (2026-04-21)
 
 <section class="features">
 
@@ -270,6 +270,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`81e87d4`](https://github.com/stdlib-js/stdlib/commit/81e87d4457c65ba7481c7ab3701d2ee97d50c052) - **bench:** refactor to use string interpolation in `array` [(#11413)](https://github.com/stdlib-js/stdlib/pull/11413) _(by Karan Anand)_
 -   [`2d234cc`](https://github.com/stdlib-js/stdlib/commit/2d234cc858ceeea867610d7c86dd309766990dcd) - **fix:** use `empty` instead of `zeros` in `array/from-scalar` [(#11628)](https://github.com/stdlib-js/stdlib/pull/11628) _(by Karan Anand)_
 -   [`56bc531`](https://github.com/stdlib-js/stdlib/commit/56bc5310298aec8f6eca5ca07ccff333c4792a40) - **bench:** refactor to use string interpolation in `@stdlib/array` [(#11412)](https://github.com/stdlib-js/stdlib/pull/11412) _(by Karan Anand, Athan Reines)_
 -   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - **fix:** ensure support for boolean arrays in polyfill _(by Athan Reines)_
