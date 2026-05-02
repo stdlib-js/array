@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-28)
+## Unreleased (2026-05-02)
 
 <section class="features">
 
@@ -270,6 +270,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`394c99f`](https://github.com/stdlib-js/stdlib/commit/394c99ff634519d6219987acc2fd7bcca0399b55) - **docs:** add missing stub sections [(#11871)](https://github.com/stdlib-js/stdlib/pull/11871) _(by Philipp Burckhardt)_
 -   [`d689d2d`](https://github.com/stdlib-js/stdlib/commit/d689d2dcba1570eedbbe3b7689dcbe1921ba11eb) - **chore:** propagate `node/` -> `n/` eslint plugin prefix update across README directives [(#11826)](https://github.com/stdlib-js/stdlib/pull/11826) _(by Philipp Burckhardt)_
 -   [`81e87d4`](https://github.com/stdlib-js/stdlib/commit/81e87d4457c65ba7481c7ab3701d2ee97d50c052) - **bench:** refactor to use string interpolation in `array` [(#11413)](https://github.com/stdlib-js/stdlib/pull/11413) _(by Karan Anand)_
 -   [`2d234cc`](https://github.com/stdlib-js/stdlib/commit/2d234cc858ceeea867610d7c86dd309766990dcd) - **fix:** use `empty` instead of `zeros` in `array/from-scalar` [(#11628)](https://github.com/stdlib-js/stdlib/pull/11628) _(by Karan Anand)_
