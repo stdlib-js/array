@@ -270,6 +270,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`bca55a9`](https://github.com/stdlib-js/stdlib/commit/bca55a9363c921a4a04dd3b2c38a518cb10cac11) - **docs:** fix `arraylike2object` example in `array/base` namespace declarations [(#11971)](https://github.com/stdlib-js/stdlib/pull/11971) _(by Karan Anand)_
 -   [`50ffb8e`](https://github.com/stdlib-js/stdlib/commit/50ffb8e96b19a07cc4de32920e94b2863d1ff5ed) - **docs:** improve doctests for complex number instances in `array/to-fancy` [(#11974)](https://github.com/stdlib-js/stdlib/pull/11974) _(by Karan Anand)_
 -   [`ccec3e4`](https://github.com/stdlib-js/stdlib/commit/ccec3e43076042d67dbaa814e5140c10f1b85b58) - **docs:** improve doctests for complex number instances in `array/complex128` [(#11973)](https://github.com/stdlib-js/stdlib/pull/11973) _(by Karan Anand)_
 -   [`a67c356`](https://github.com/stdlib-js/stdlib/commit/a67c35688a0009092f281d79378c4c53cb226bd5) - **docs:** improve doctests for complex number instances in `array/complex64` [(#11972)](https://github.com/stdlib-js/stdlib/pull/11972) _(by Karan Anand)_
