@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-02)
+## Unreleased (2026-05-06)
 
 <section class="features">
 
@@ -270,6 +270,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`8decd39`](https://github.com/stdlib-js/stdlib/commit/8decd399a17fed37bad4642b0a8efc4b2cb7a5a8) - **docs:** fix accessor example arguments in `array/base/arraylike2object` [(#11969)](https://github.com/stdlib-js/stdlib/pull/11969) _(by Karan Anand)_
 -   [`394c99f`](https://github.com/stdlib-js/stdlib/commit/394c99ff634519d6219987acc2fd7bcca0399b55) - **docs:** add missing stub sections [(#11871)](https://github.com/stdlib-js/stdlib/pull/11871) _(by Philipp Burckhardt)_
 -   [`d689d2d`](https://github.com/stdlib-js/stdlib/commit/d689d2dcba1570eedbbe3b7689dcbe1921ba11eb) - **chore:** propagate `node/` -> `n/` eslint plugin prefix update across README directives [(#11826)](https://github.com/stdlib-js/stdlib/pull/11826) _(by Philipp Burckhardt)_
 -   [`81e87d4`](https://github.com/stdlib-js/stdlib/commit/81e87d4457c65ba7481c7ab3701d2ee97d50c052) - **bench:** refactor to use string interpolation in `array` [(#11413)](https://github.com/stdlib-js/stdlib/pull/11413) _(by Karan Anand)_
