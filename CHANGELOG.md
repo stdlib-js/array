@@ -270,6 +270,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`923db7f`](https://github.com/stdlib-js/stdlib/commit/923db7f63656e408cf390029bd7985b4e736b518) - **docs:** improve doctests for complex number instances in `array/base/accessors` [(#11970)](https://github.com/stdlib-js/stdlib/pull/11970) _(by Karan Anand)_
 -   [`8decd39`](https://github.com/stdlib-js/stdlib/commit/8decd399a17fed37bad4642b0a8efc4b2cb7a5a8) - **docs:** fix accessor example arguments in `array/base/arraylike2object` [(#11969)](https://github.com/stdlib-js/stdlib/pull/11969) _(by Karan Anand)_
 -   [`394c99f`](https://github.com/stdlib-js/stdlib/commit/394c99ff634519d6219987acc2fd7bcca0399b55) - **docs:** add missing stub sections [(#11871)](https://github.com/stdlib-js/stdlib/pull/11871) _(by Philipp Burckhardt)_
 -   [`d689d2d`](https://github.com/stdlib-js/stdlib/commit/d689d2dcba1570eedbbe3b7689dcbe1921ba11eb) - **chore:** propagate `node/` -> `n/` eslint plugin prefix update across README directives [(#11826)](https://github.com/stdlib-js/stdlib/pull/11826) _(by Philipp Burckhardt)_
