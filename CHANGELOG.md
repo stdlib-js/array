@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-06)
+## Unreleased (2026-05-09)
 
 <section class="features">
 
 ### Features
 
+-   [`e2ef372`](https://github.com/stdlib-js/stdlib/commit/e2ef372bf436c4b95e676da66d90ad6d9904df02) - add `array/float16` [(#7435)](https://github.com/stdlib-js/stdlib/pull/7435)
 -   [`889f7b2`](https://github.com/stdlib-js/stdlib/commit/889f7b26c0cd56cfe9fd71d160ebcb22a4f3d99f) - update `array` TypeScript declarations [(#11237)](https://github.com/stdlib-js/stdlib/pull/11237)
 -   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213)
 -   [`33b4e79`](https://github.com/stdlib-js/stdlib/commit/33b4e79ad1e9cba8605ed44989d02f9a46b79663) - add `nulls` to namespace
@@ -270,6 +271,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`e2ef372`](https://github.com/stdlib-js/stdlib/commit/e2ef372bf436c4b95e676da66d90ad6d9904df02) - **feat:** add `array/float16` [(#7435)](https://github.com/stdlib-js/stdlib/pull/7435) _(by Uday Kakade, Athan Reines, Gururaj Gurram)_
 -   [`bca55a9`](https://github.com/stdlib-js/stdlib/commit/bca55a9363c921a4a04dd3b2c38a518cb10cac11) - **docs:** fix `arraylike2object` example in `array/base` namespace declarations [(#11971)](https://github.com/stdlib-js/stdlib/pull/11971) _(by Karan Anand)_
 -   [`50ffb8e`](https://github.com/stdlib-js/stdlib/commit/50ffb8e96b19a07cc4de32920e94b2863d1ff5ed) - **docs:** improve doctests for complex number instances in `array/to-fancy` [(#11974)](https://github.com/stdlib-js/stdlib/pull/11974) _(by Karan Anand)_
 -   [`ccec3e4`](https://github.com/stdlib-js/stdlib/commit/ccec3e43076042d67dbaa814e5140c10f1b85b58) - **docs:** improve doctests for complex number instances in `array/complex128` [(#11973)](https://github.com/stdlib-js/stdlib/pull/11973) _(by Karan Anand)_
@@ -811,7 +813,7 @@ A total of 38 issues were closed in this release:
 
 ### Contributors
 
-A total of 43 people contributed to this release. Thank you to the following contributors:
+A total of 44 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Abhijit Raut
@@ -852,6 +854,7 @@ A total of 43 people contributed to this release. Thank you to the following con
 -   Shubham
 -   Siddhartha Mondal
 -   Sujal charati
+-   Uday Kakade
 -   Ullas
 -   Vinit Pandit
 -   anee3
