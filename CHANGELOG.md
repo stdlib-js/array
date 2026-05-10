@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-09)
+## Unreleased (2026-05-10)
 
 <section class="features">
 
 ### Features
 
+-   [`ffc488f`](https://github.com/stdlib-js/stdlib/commit/ffc488fef22a3f7e6bda7c2b4ec4bbbe9a9eecbf) - add `Float16Array` to namespace
 -   [`e2ef372`](https://github.com/stdlib-js/stdlib/commit/e2ef372bf436c4b95e676da66d90ad6d9904df02) - add `array/float16` [(#7435)](https://github.com/stdlib-js/stdlib/pull/7435)
 -   [`889f7b2`](https://github.com/stdlib-js/stdlib/commit/889f7b26c0cd56cfe9fd71d160ebcb22a4f3d99f) - update `array` TypeScript declarations [(#11237)](https://github.com/stdlib-js/stdlib/pull/11237)
 -   [`1596184`](https://github.com/stdlib-js/stdlib/commit/159618429a64de56dbe457f7bb901a117d5e9af2) - update `array/base` TypeScript declarations [(#11213)](https://github.com/stdlib-js/stdlib/pull/11213)
@@ -271,6 +272,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`ffc488f`](https://github.com/stdlib-js/stdlib/commit/ffc488fef22a3f7e6bda7c2b4ec4bbbe9a9eecbf) - **feat:** add `Float16Array` to namespace _(by Athan Reines)_
 -   [`e2ef372`](https://github.com/stdlib-js/stdlib/commit/e2ef372bf436c4b95e676da66d90ad6d9904df02) - **feat:** add `array/float16` [(#7435)](https://github.com/stdlib-js/stdlib/pull/7435) _(by Uday Kakade, Athan Reines, Gururaj Gurram)_
 -   [`bca55a9`](https://github.com/stdlib-js/stdlib/commit/bca55a9363c921a4a04dd3b2c38a518cb10cac11) - **docs:** fix `arraylike2object` example in `array/base` namespace declarations [(#11971)](https://github.com/stdlib-js/stdlib/pull/11971) _(by Karan Anand)_
 -   [`50ffb8e`](https://github.com/stdlib-js/stdlib/commit/50ffb8e96b19a07cc4de32920e94b2863d1ff5ed) - **docs:** improve doctests for complex number instances in `array/to-fancy` [(#11974)](https://github.com/stdlib-js/stdlib/pull/11974) _(by Karan Anand)_
