@@ -272,6 +272,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`02f0b0f`](https://github.com/stdlib-js/stdlib/commit/02f0b0fc4c6b8913d3bb30a33de136627757843d) - **docs:** fix `Complex64Array` import in `array/base/take` [(#12066)](https://github.com/stdlib-js/stdlib/pull/12066) _(by Karan Anand)_
 -   [`32af5b8`](https://github.com/stdlib-js/stdlib/commit/32af5b8558638f4e0a35432fb355affd8bce097d) - **test:** fix `Complex128` import in `array/complex128` [(#12064)](https://github.com/stdlib-js/stdlib/pull/12064) _(by Karan Anand)_
 -   [`24634ce`](https://github.com/stdlib-js/stdlib/commit/24634ceba68fe9e1f0ebf700a9a8b0fdc0c2902b) - **test:** fix `Uint8Array` import in `array/bool` [(#12063)](https://github.com/stdlib-js/stdlib/pull/12063) _(by Karan Anand)_
 -   [`72cadc5`](https://github.com/stdlib-js/stdlib/commit/72cadc507e082900aded8d025d0b65048fa66675) - **docs:** fix `Complex64` import in `array/from-scalar` [(#12038)](https://github.com/stdlib-js/stdlib/pull/12038) _(by Karan Anand)_
