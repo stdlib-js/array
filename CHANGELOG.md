@@ -272,6 +272,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`24634ce`](https://github.com/stdlib-js/stdlib/commit/24634ceba68fe9e1f0ebf700a9a8b0fdc0c2902b) - **test:** fix `Uint8Array` import in `array/bool` [(#12063)](https://github.com/stdlib-js/stdlib/pull/12063) _(by Karan Anand)_
 -   [`72cadc5`](https://github.com/stdlib-js/stdlib/commit/72cadc507e082900aded8d025d0b65048fa66675) - **docs:** fix `Complex64` import in `array/from-scalar` [(#12038)](https://github.com/stdlib-js/stdlib/pull/12038) _(by Karan Anand)_
 -   [`ffc488f`](https://github.com/stdlib-js/stdlib/commit/ffc488fef22a3f7e6bda7c2b4ec4bbbe9a9eecbf) - **feat:** add `Float16Array` to namespace _(by Athan Reines)_
 -   [`e2ef372`](https://github.com/stdlib-js/stdlib/commit/e2ef372bf436c4b95e676da66d90ad6d9904df02) - **feat:** add `array/float16` [(#7435)](https://github.com/stdlib-js/stdlib/pull/7435) _(by Uday Kakade, Athan Reines, Gururaj Gurram)_
