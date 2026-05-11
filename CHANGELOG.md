@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`91f9e66`](https://github.com/stdlib-js/stdlib/commit/91f9e662810fe97879caefabb9fdd92c3ee7d3ec) - add `toFilled` to namespace
 -   [`e007cc9`](https://github.com/stdlib-js/stdlib/commit/e007cc9a39f4a47b7de07c3b13b147f9c8a454a4) - add `array/base/to-filled` [(#11954)](https://github.com/stdlib-js/stdlib/pull/11954)
 -   [`ffc488f`](https://github.com/stdlib-js/stdlib/commit/ffc488fef22a3f7e6bda7c2b4ec4bbbe9a9eecbf) - add `Float16Array` to namespace
 -   [`e2ef372`](https://github.com/stdlib-js/stdlib/commit/e2ef372bf436c4b95e676da66d90ad6d9904df02) - add `array/float16` [(#7435)](https://github.com/stdlib-js/stdlib/pull/7435)
@@ -273,6 +274,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`91f9e66`](https://github.com/stdlib-js/stdlib/commit/91f9e662810fe97879caefabb9fdd92c3ee7d3ec) - **feat:** add `toFilled` to namespace _(by Athan Reines)_
 -   [`e007cc9`](https://github.com/stdlib-js/stdlib/commit/e007cc9a39f4a47b7de07c3b13b147f9c8a454a4) - **feat:** add `array/base/to-filled` [(#11954)](https://github.com/stdlib-js/stdlib/pull/11954) _(by Muhammad Haris, Athan Reines)_
 -   [`97a16c0`](https://github.com/stdlib-js/stdlib/commit/97a16c0cb60755f05223176714532bb47d2c914d) - **docs:** improve doctests for complex number typed arrays in `array/complex64` [(#12072)](https://github.com/stdlib-js/stdlib/pull/12072) _(by Karan Anand)_
 -   [`7ae30c3`](https://github.com/stdlib-js/stdlib/commit/7ae30c37a2db6298fc32bcfce8e52db8e940d1e5) - **docs:** improve doctests for complex number typed arrays in `array/complex128` [(#12071)](https://github.com/stdlib-js/stdlib/pull/12071) _(by Karan Anand)_

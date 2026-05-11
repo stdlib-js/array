@@ -1963,6 +1963,15 @@ setReadOnly( ns, 'toAccessorArray', require( './../../base/to-accessor-array' ) 
 setReadOnly( ns, 'toDeduped', require( './../../base/to-deduped' ) );
 
 /**
+* @name toFilled
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/array/base/to-filled}
+*/
+setReadOnly( ns, 'toFilled', require( './../../base/to-filled' ) );
+
+/**
 * @name toInsertedAt
 * @memberof ns
 * @readonly
