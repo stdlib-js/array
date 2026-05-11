@@ -274,6 +274,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`c534f97`](https://github.com/stdlib-js/stdlib/commit/c534f971488b2a5ebacca4dccf73a9d9b4e09bc7) - **docs:** update namespace table of contents [(#12092)](https://github.com/stdlib-js/stdlib/pull/12092) _(by stdlib-bot)_
 -   [`91f9e66`](https://github.com/stdlib-js/stdlib/commit/91f9e662810fe97879caefabb9fdd92c3ee7d3ec) - **feat:** add `toFilled` to namespace _(by Athan Reines)_
 -   [`e007cc9`](https://github.com/stdlib-js/stdlib/commit/e007cc9a39f4a47b7de07c3b13b147f9c8a454a4) - **feat:** add `array/base/to-filled` [(#11954)](https://github.com/stdlib-js/stdlib/pull/11954) _(by Muhammad Haris, Athan Reines)_
 -   [`97a16c0`](https://github.com/stdlib-js/stdlib/commit/97a16c0cb60755f05223176714532bb47d2c914d) - **docs:** improve doctests for complex number typed arrays in `array/complex64` [(#12072)](https://github.com/stdlib-js/stdlib/pull/12072) _(by Karan Anand)_

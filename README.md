@@ -79,6 +79,7 @@ The namespace exports the following array constructors:
 <div class="namespace-toc">
 
 -   <span class="signature">[`ArrayBuffer( size )`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">constructor which returns an object used to represent a generic, fixed-length raw binary data buffer.</span>
+-   <span class="signature">[`Float16Array()`][@stdlib/array/float16]</span><span class="delimiter">: </span><span class="description">16-bit half-precision floating-point number array.</span>
 -   <span class="signature">[`Float32Array()`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of single-precision floating-point numbers in the platform byte order.</span>
 -   <span class="signature">[`Float64Array()`][@stdlib/array/float64]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of double-precision floating-point numbers in the platform byte order.</span>
 -   <span class="signature">[`Int16Array()`][@stdlib/array/int16]</span><span class="delimiter">: </span><span class="description">typed array constructor which returns a typed array representing an array of twos-complement 16-bit signed integers in the platform byte order.</span>
@@ -546,6 +547,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/typed]: https://github.com/stdlib-js/array/tree/main/typed
 
 [@stdlib/array/buffer]: https://github.com/stdlib-js/array/tree/main/buffer
+
+[@stdlib/array/float16]: https://github.com/stdlib-js/array/tree/main/float16
 
 [@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32
 
