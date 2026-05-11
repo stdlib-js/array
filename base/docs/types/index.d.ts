@@ -234,6 +234,7 @@ import ternary4d = require( './../../../base/ternary4d' );
 import ternary5d = require( './../../../base/ternary5d' );
 import toAccessorArray = require( './../../../base/to-accessor-array' );
 import toDeduped = require( './../../../base/to-deduped' );
+import toFilled = require( './../../../base/to-filled' );
 import toInsertedAt = require( './../../../base/to-inserted-at' );
 import toReversed = require( './../../../base/to-reversed' );
 import trues = require( './../../../base/trues' );
@@ -5667,6 +5668,35 @@ interface Namespace {
 	* // returns false
 	*/
 	toDeduped: typeof toDeduped;
+
+	/**
+	* Returns a new array with all elements within a specified range replaced with a provided value.
+	*
+	* @param x - input array
+	* @param value - fill value
+	* @param start - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @returns output array
+	*
+	* @example
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = ns.toFilled( x, 5, 1, 3 );
+	* // returns [ 1, 5, 5, 4 ]
+	*
+	* @example
+	* var Float64Array = require( './../../../float64' );
+	*
+	* var x = [ 1, 2, 3, 4 ];
+	*
+	* var out = new Float64Array( [ 0, 0, 0, 0 ] );
+	* var arr = ns.toFilled.assign( x, 5, 1, 3, out, 1, 0 );
+	* // returns <Float64Array>[ 1, 5, 5, 4 ]
+	*
+	* var bool = ( arr === out );
+	* // returns true
+	*/
+	toFilled: typeof toFilled;
 
 	/**
 	* Returns a new array containing every element from an input array and with a provided value inserted at a specified index.

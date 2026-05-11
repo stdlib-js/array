@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`513fc61`](https://github.com/stdlib-js/stdlib/commit/513fc61205a9a4748a1e4ecc58c664a11f443ec4) - update `array/base` TypeScript declarations [(#12090)](https://github.com/stdlib-js/stdlib/pull/12090)
 -   [`91f9e66`](https://github.com/stdlib-js/stdlib/commit/91f9e662810fe97879caefabb9fdd92c3ee7d3ec) - add `toFilled` to namespace
 -   [`e007cc9`](https://github.com/stdlib-js/stdlib/commit/e007cc9a39f4a47b7de07c3b13b147f9c8a454a4) - add `array/base/to-filled` [(#11954)](https://github.com/stdlib-js/stdlib/pull/11954)
 -   [`ffc488f`](https://github.com/stdlib-js/stdlib/commit/ffc488fef22a3f7e6bda7c2b4ec4bbbe9a9eecbf) - add `Float16Array` to namespace
@@ -274,6 +275,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`513fc61`](https://github.com/stdlib-js/stdlib/commit/513fc61205a9a4748a1e4ecc58c664a11f443ec4) - **feat:** update `array/base` TypeScript declarations [(#12090)](https://github.com/stdlib-js/stdlib/pull/12090) _(by stdlib-bot)_
 -   [`c534f97`](https://github.com/stdlib-js/stdlib/commit/c534f971488b2a5ebacca4dccf73a9d9b4e09bc7) - **docs:** update namespace table of contents [(#12092)](https://github.com/stdlib-js/stdlib/pull/12092) _(by stdlib-bot)_
 -   [`91f9e66`](https://github.com/stdlib-js/stdlib/commit/91f9e662810fe97879caefabb9fdd92c3ee7d3ec) - **feat:** add `toFilled` to namespace _(by Athan Reines)_
 -   [`e007cc9`](https://github.com/stdlib-js/stdlib/commit/e007cc9a39f4a47b7de07c3b13b147f9c8a454a4) - **feat:** add `array/base/to-filled` [(#11954)](https://github.com/stdlib-js/stdlib/pull/11954) _(by Muhammad Haris, Athan Reines)_
