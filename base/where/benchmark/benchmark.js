@@ -25,13 +25,14 @@ var isArray = require( '@stdlib/assert/is-array' );
 var zeroTo = require( './../../../base/zero-to' );
 var zeros = require( './../../../base/zeros' );
 var ones = require( './../../../base/ones' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var where = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+'::copy:len=100', function benchmark( b ) {
+bench( format( '%s::copy:len=100', pkg ), function benchmark( b ) {
 	var conditions;
 	var x;
 	var y;
