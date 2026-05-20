@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-18)
+## Unreleased (2026-05-20)
 
 <section class="features">
 
@@ -276,6 +276,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`24639c3`](https://github.com/stdlib-js/stdlib/commit/24639c346a9784f031e2ad6b7cfc9fd76bcd4c10) - **bench:** fix validation _(by Athan Reines)_
 -   [`d660241`](https://github.com/stdlib-js/stdlib/commit/d660241b4827a4c598b2334173552247ad4b839f) - **bench:** refactor to use string interpolation in `array` [(#11414)](https://github.com/stdlib-js/stdlib/pull/11414) _(by Karan Anand, Athan Reines)_
 -   [`a1aabee`](https://github.com/stdlib-js/stdlib/commit/a1aabee8d9e187f3c9bc35be085a2a434f15a515) - **chore:** normalize `main` field to `./lib` in `array/base` and `array/float16` package.json [(#12110)](https://github.com/stdlib-js/stdlib/pull/12110) _(by Philipp Burckhardt)_
 -   [`53f64c8`](https://github.com/stdlib-js/stdlib/commit/53f64c8d115c1a2edae5bf708b947a5d905e4e5b) - **feat:** update `array` TypeScript declarations [(#12098)](https://github.com/stdlib-js/stdlib/pull/12098) _(by stdlib-bot, Athan Reines)_
