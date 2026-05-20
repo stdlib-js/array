@@ -276,6 +276,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`00885d3`](https://github.com/stdlib-js/stdlib/commit/00885d3e6afd8118ce2b6e5f7a1c544d5b6d4ffb) - **bench:** refactor to use string interpolation in `array` [(#11411)](https://github.com/stdlib-js/stdlib/pull/11411) _(by Karan Anand, Athan Reines)_
 -   [`24639c3`](https://github.com/stdlib-js/stdlib/commit/24639c346a9784f031e2ad6b7cfc9fd76bcd4c10) - **bench:** fix validation _(by Athan Reines)_
 -   [`d660241`](https://github.com/stdlib-js/stdlib/commit/d660241b4827a4c598b2334173552247ad4b839f) - **bench:** refactor to use string interpolation in `array` [(#11414)](https://github.com/stdlib-js/stdlib/pull/11414) _(by Karan Anand, Athan Reines)_
 -   [`a1aabee`](https://github.com/stdlib-js/stdlib/commit/a1aabee8d9e187f3c9bc35be085a2a434f15a515) - **chore:** normalize `main` field to `./lib` in `array/base` and `array/float16` package.json [(#12110)](https://github.com/stdlib-js/stdlib/pull/12110) _(by Philipp Burckhardt)_
