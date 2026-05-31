@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-24)
+## Unreleased (2026-05-31)
 
 <section class="features">
 
@@ -179,6 +179,8 @@
 
 ### Bug Fixes
 
+-   [`003cb6e`](https://github.com/stdlib-js/stdlib/commit/003cb6ec82ce83ad9dd4d972aabe316a10da382d) - ensure error message is consistent with project conventions
+-   [`4f28e69`](https://github.com/stdlib-js/stdlib/commit/4f28e6916d4242d02918457f6480b01d42f980c9) - ensure consistent error messages
 -   [`2d234cc`](https://github.com/stdlib-js/stdlib/commit/2d234cc858ceeea867610d7c86dd309766990dcd) - use `empty` instead of `zeros` in `array/from-scalar` [(#11628)](https://github.com/stdlib-js/stdlib/pull/11628)
 -   [`ae32f26`](https://github.com/stdlib-js/stdlib/commit/ae32f26441101c24f0faf1a04ecceb3e66387578) - ensure support for boolean arrays in polyfill
 -   [`3a0b3cc`](https://github.com/stdlib-js/stdlib/commit/3a0b3cc30d966f8739511d4f0cedc73b07376e59) - improve `entries` return type and examples in `array/complex128` types
@@ -276,6 +278,8 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`003cb6e`](https://github.com/stdlib-js/stdlib/commit/003cb6ec82ce83ad9dd4d972aabe316a10da382d) - **fix:** ensure error message is consistent with project conventions _(by Athan Reines)_
+-   [`4f28e69`](https://github.com/stdlib-js/stdlib/commit/4f28e6916d4242d02918457f6480b01d42f980c9) - **fix:** ensure consistent error messages _(by Athan Reines)_
 -   [`6742bc8`](https://github.com/stdlib-js/stdlib/commit/6742bc8b4bee95d10b29c7d8d8446e3416057441) - **docs:** follow-up fixes for commits merged to `develop` on 2026-05-24 [(#12265)](https://github.com/stdlib-js/stdlib/pull/12265) _(by Philipp Burckhardt)_
 -   [`da0bf4e`](https://github.com/stdlib-js/stdlib/commit/da0bf4e0579edef12373a0e3c4eadbcbf402e192) - **docs:** update related packages sections [(#12237)](https://github.com/stdlib-js/stdlib/pull/12237) _(by stdlib-bot, Athan Reines)_
 -   [`00885d3`](https://github.com/stdlib-js/stdlib/commit/00885d3e6afd8118ce2b6e5f7a1c544d5b6d4ffb) - **bench:** refactor to use string interpolation in `array` [(#11411)](https://github.com/stdlib-js/stdlib/pull/11411) _(by Karan Anand, Athan Reines)_
