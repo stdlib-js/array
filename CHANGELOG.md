@@ -2,6 +2,52 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-06)
+
+<section class="features">
+
+### Features
+
+-   [`75279e1`](https://github.com/stdlib-js/stdlib/commit/75279e1a91ce93a79a05d38b48d99001b34b5326) - add `falses` to namespace
+-   [`072a39a`](https://github.com/stdlib-js/stdlib/commit/072a39a8afdae4106db271ec11494af952c62783) - add `array/falses`
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`75279e1`](https://github.com/stdlib-js/stdlib/commit/75279e1a91ce93a79a05d38b48d99001b34b5326) - **feat:** add `falses` to namespace _(by Athan Reines)_
+-   [`072a39a`](https://github.com/stdlib-js/stdlib/commit/072a39a8afdae4106db271ec11494af952c62783) - **feat:** add `array/falses` _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.5.1">
 
 ## 0.5.1 (2026-06-05)
