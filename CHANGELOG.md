@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`c35efe7`](https://github.com/stdlib-js/stdlib/commit/c35efe7f66c7e7d41c60cb30e1d72f4590169d8a) - add `trues` to namespace
+-   [`f8df9c7`](https://github.com/stdlib-js/stdlib/commit/f8df9c7df3bad72abb6a5b53ad8e0e217df4fcbd) - add `array/trues`
 -   [`75279e1`](https://github.com/stdlib-js/stdlib/commit/75279e1a91ce93a79a05d38b48d99001b34b5326) - add `falses` to namespace
 -   [`072a39a`](https://github.com/stdlib-js/stdlib/commit/072a39a8afdae4106db271ec11494af952c62783) - add `array/falses`
 
@@ -23,6 +25,9 @@
 
 <details>
 
+-   [`517d71c`](https://github.com/stdlib-js/stdlib/commit/517d71c36df0c363bab9cfa9d6122fd538882dce) - **docs:** fix default value _(by Athan Reines)_
+-   [`c35efe7`](https://github.com/stdlib-js/stdlib/commit/c35efe7f66c7e7d41c60cb30e1d72f4590169d8a) - **feat:** add `trues` to namespace _(by Athan Reines)_
+-   [`f8df9c7`](https://github.com/stdlib-js/stdlib/commit/f8df9c7df3bad72abb6a5b53ad8e0e217df4fcbd) - **feat:** add `array/trues` _(by Athan Reines)_
 -   [`75279e1`](https://github.com/stdlib-js/stdlib/commit/75279e1a91ce93a79a05d38b48d99001b34b5326) - **feat:** add `falses` to namespace _(by Athan Reines)_
 -   [`072a39a`](https://github.com/stdlib-js/stdlib/commit/072a39a8afdae4106db271ec11494af952c62783) - **feat:** add `array/falses` _(by Athan Reines)_
 

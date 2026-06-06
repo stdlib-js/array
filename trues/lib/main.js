@@ -38,7 +38,7 @@ var DEFAULT_DTYPE = defaults.get( 'dtypes.boolean' );
 // MAIN //
 
 /**
-* Creates an array filled with false values and having a specified length.
+* Creates an array filled with true values and having a specified length.
 *
 * @param {NonNegativeInteger} length - array length
 * @param {string} [dtype="bool"] - data type
@@ -47,14 +47,14 @@ var DEFAULT_DTYPE = defaults.get( 'dtypes.boolean' );
 * @returns {(BooleanArray|Array)} array or typed array
 *
 * @example
-* var arr = falses( 2 );
-* // returns <BooleanArray>[ false, false ]
+* var arr = trues( 2 );
+* // returns <BooleanArray>[ true, true ]
 *
 * @example
-* var arr = falses( 2, 'generic' );
-* // returns [ false, false ]
+* var arr = trues( 2, 'generic' );
+* // returns [ true, true ]
 */
-function falses( length ) {
+function trues( length ) {
 	var dtype;
 
 	if ( arguments.length > 1 ) {
@@ -65,10 +65,10 @@ function falses( length ) {
 	} else {
 		dtype = DEFAULT_DTYPE;
 	}
-	return full( length, false, dtype );
+	return full( length, true, dtype );
 }
 
 
 // EXPORTS //
 
-module.exports = falses;
+module.exports = trues;
