@@ -35,20 +35,32 @@ limitations under the License.
 
 > Arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ArrayBuffer, ArrayIndex, BooleanArray, Complex128Array, Complex64Array, DataView, Float16Array, Float32Array, Float32ArrayFE, Float32ArrayLE, Float64Array, Float64ArrayFE, Float64ArrayLE, Int16Array, Int32Array, Int8Array, SharedArrayBuffer, Uint16Array, Uint32Array, Uint8Array, Uint8ClampedArray, array2fancy, array2iterator, array2iteratorRight, arrayview2iterator, arrayview2iteratorRight, base, byteOrders, cartesianPower, cartesianProduct, cartesianSquare, circarray2iterator, complexarray, complexarrayCtors, complexarrayDataTypes, constants, convert, convertSame, ctors, datespace, defaults, dtype, dtypes, empty, emptyLike, falses, filled, filledBy, fixedEndianFactory, floatarrayCtors, floatarrayDataTypes, full, fullLike, incrspace, intarrayCtors, intarrayDataTypes, intarraySignedCtors, intarraySignedDataTypes, intarrayUnsignedCtors, intarrayUnsignedDataTypes, iterator2array, linspace, littleEndianFactory, logspace, minDataType, mostlySafeCasts, mskfilter, mskput, mskreject, nans, nansLike, nextDataType, nulls, oneTo, oneToLike, ones, onesLike, place, promotionRules, put, realarray, realarrayCtors, realarrayDataTypes, realarrayFloatCtors, realarrayFloatDataTypes, safeCasts, sameKindCasts, scalar2array, shape, slice, sparsearray2iterator, sparsearray2iteratorRight, stridedarray2iterator, take, trues, typedarray, typedarray2json, typedarrayCtors, typedarrayDataTypes, typedarrayReviver, typedarraypool, zeroTo, zeroToLike, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var ns = require( '@stdlib/array' );
 ```
 
 #### ns
@@ -193,6 +205,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`dtype( array )`][@stdlib/array/dtype]</span><span class="delimiter">: </span><span class="description">return the data type of an array.</span>
 -   <span class="signature">[`emptyLike( x[, dtype] )`][@stdlib/array/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized array having the same length and data type as a provided array.</span>
 -   <span class="signature">[`empty( length[, dtype] )`][@stdlib/array/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized array having a specified length.</span>
+-   <span class="signature">[`falses( length[, dtype] )`][@stdlib/array/falses]</span><span class="delimiter">: </span><span class="description">create an array filled with `false` values and having a specified length.</span>
 -   <span class="signature">[`filledBy()`][@stdlib/array/filled-by]</span><span class="delimiter">: </span><span class="description">create a filled array according to a provided callback function.</span>
 -   <span class="signature">[`filled()`][@stdlib/array/filled]</span><span class="delimiter">: </span><span class="description">create a filled array.</span>
 -   <span class="signature">[`fixedEndianFactory( dtype )`][@stdlib/array/fixed-endian-factory]</span><span class="delimiter">: </span><span class="description">return a typed array constructor for creating typed arrays having a specified byte order.</span>
@@ -238,6 +251,7 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 -   <span class="signature">[`stridedarray2iterator( N, src, stride, offset[, mapFcn[, thisArg]] )`][@stdlib/array/to-strided-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from a strided array-like object.</span>
 -   <span class="signature">[`arrayview2iteratorRight( src[, begin[, end]][, mapFcn[, thisArg]] )`][@stdlib/array/to-view-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view, iterating from right to left.</span>
 -   <span class="signature">[`arrayview2iterator( src[, begin[, end]][, mapFcn[, thisArg]] )`][@stdlib/array/to-view-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view.</span>
+-   <span class="signature">[`trues( length[, dtype] )`][@stdlib/array/trues]</span><span class="delimiter">: </span><span class="description">create an array filled with `true` values and having a specified length.</span>
 -   <span class="signature">[`complexarray()`][@stdlib/array/typed-complex]</span><span class="delimiter">: </span><span class="description">create a complex number typed array.</span>
 -   <span class="signature">[`realarray()`][@stdlib/array/typed-real]</span><span class="delimiter">: </span><span class="description">create a typed array.</span>
 -   <span class="signature">[`zeroToLike( x[, dtype] )`][@stdlib/array/zero-to-like]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by `1` starting from zero and having the same length and data type as a provided input array.</span>
@@ -262,8 +276,8 @@ Lastly, the namespace contains various other functions for dealing with arrays, 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/array' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -289,7 +303,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -384,6 +398,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/empty]: https://github.com/stdlib-js/array/tree/main/empty
 
+[@stdlib/array/falses]: https://github.com/stdlib-js/array/tree/main/falses
+
 [@stdlib/array/filled-by]: https://github.com/stdlib-js/array/tree/main/filled-by
 
 [@stdlib/array/filled]: https://github.com/stdlib-js/array/tree/main/filled
@@ -473,6 +489,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/to-view-iterator-right]: https://github.com/stdlib-js/array/tree/main/to-view-iterator-right
 
 [@stdlib/array/to-view-iterator]: https://github.com/stdlib-js/array/tree/main/to-view-iterator
+
+[@stdlib/array/trues]: https://github.com/stdlib-js/array/tree/main/trues
 
 [@stdlib/array/typed-complex]: https://github.com/stdlib-js/array/tree/main/typed-complex
 
