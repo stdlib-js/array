@@ -26,6 +26,8 @@
 
 <details>
 
+-   [`86dc341`](https://github.com/stdlib-js/stdlib/commit/86dc341d3454ec7a1fd1aa16cbeae3b579d82f4c) - **bench:** use `empty` rather than `zeros` _(by Athan Reines)_
+-   [`0962cbd`](https://github.com/stdlib-js/stdlib/commit/0962cbd0669a21d5118d4805dfe39f4a3db9f9ad) - **bench:** use `empty` rather than `zeros` _(by Athan Reines)_
 -   [`4a317ad`](https://github.com/stdlib-js/stdlib/commit/4a317ad7b24684e64cb2dfce1c204902ac62349d) - **feat:** update `array` TypeScript declarations [(#12655)](https://github.com/stdlib-js/stdlib/pull/12655) _(by stdlib-bot)_
 -   [`8d0b8f2`](https://github.com/stdlib-js/stdlib/commit/8d0b8f2b73e653844c958e5a76411a6bbb6760f3) - **docs:** update namespace table of contents [(#12663)](https://github.com/stdlib-js/stdlib/pull/12663) _(by stdlib-bot)_
 -   [`d935b4a`](https://github.com/stdlib-js/stdlib/commit/d935b4a88d82fc3a68362bceeea5381625c28695) - **chore:** follow-up fixes for previous commits [(#12641)](https://github.com/stdlib-js/stdlib/pull/12641) _(by Philipp Burckhardt, Athan Reines)_
