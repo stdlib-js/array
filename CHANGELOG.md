@@ -25,6 +25,7 @@
 
 <details>
 
+-   [`8d0b8f2`](https://github.com/stdlib-js/stdlib/commit/8d0b8f2b73e653844c958e5a76411a6bbb6760f3) - **docs:** update namespace table of contents [(#12663)](https://github.com/stdlib-js/stdlib/pull/12663) _(by stdlib-bot)_
 -   [`d935b4a`](https://github.com/stdlib-js/stdlib/commit/d935b4a88d82fc3a68362bceeea5381625c28695) - **chore:** follow-up fixes for previous commits [(#12641)](https://github.com/stdlib-js/stdlib/pull/12641) _(by Philipp Burckhardt, Athan Reines)_
 -   [`517d71c`](https://github.com/stdlib-js/stdlib/commit/517d71c36df0c363bab9cfa9d6122fd538882dce) - **docs:** fix default value _(by Athan Reines)_
 -   [`c35efe7`](https://github.com/stdlib-js/stdlib/commit/c35efe7f66c7e7d41c60cb30e1d72f4590169d8a) - **feat:** add `trues` to namespace _(by Athan Reines)_
