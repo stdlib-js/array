@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`4a317ad`](https://github.com/stdlib-js/stdlib/commit/4a317ad7b24684e64cb2dfce1c204902ac62349d) - update `array` TypeScript declarations [(#12655)](https://github.com/stdlib-js/stdlib/pull/12655)
 -   [`c35efe7`](https://github.com/stdlib-js/stdlib/commit/c35efe7f66c7e7d41c60cb30e1d72f4590169d8a) - add `trues` to namespace
 -   [`f8df9c7`](https://github.com/stdlib-js/stdlib/commit/f8df9c7df3bad72abb6a5b53ad8e0e217df4fcbd) - add `array/trues`
 -   [`75279e1`](https://github.com/stdlib-js/stdlib/commit/75279e1a91ce93a79a05d38b48d99001b34b5326) - add `falses` to namespace
@@ -25,6 +26,7 @@
 
 <details>
 
+-   [`4a317ad`](https://github.com/stdlib-js/stdlib/commit/4a317ad7b24684e64cb2dfce1c204902ac62349d) - **feat:** update `array` TypeScript declarations [(#12655)](https://github.com/stdlib-js/stdlib/pull/12655) _(by stdlib-bot)_
 -   [`8d0b8f2`](https://github.com/stdlib-js/stdlib/commit/8d0b8f2b73e653844c958e5a76411a6bbb6760f3) - **docs:** update namespace table of contents [(#12663)](https://github.com/stdlib-js/stdlib/pull/12663) _(by stdlib-bot)_
 -   [`d935b4a`](https://github.com/stdlib-js/stdlib/commit/d935b4a88d82fc3a68362bceeea5381625c28695) - **chore:** follow-up fixes for previous commits [(#12641)](https://github.com/stdlib-js/stdlib/pull/12641) _(by Philipp Burckhardt, Athan Reines)_
 -   [`517d71c`](https://github.com/stdlib-js/stdlib/commit/517d71c36df0c363bab9cfa9d6122fd538882dce) - **docs:** fix default value _(by Athan Reines)_

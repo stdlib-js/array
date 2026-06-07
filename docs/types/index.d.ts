@@ -39,6 +39,7 @@ import dtype = require( './../../dtype' );
 import dtypes = require( './../../dtypes' );
 import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
+import falses = require( './../../falses' );
 import filled = require( './../../filled' );
 import filledBy = require( './../../filled-by' );
 import Float16Array = require( './../../float16' );
@@ -89,6 +90,7 @@ import sparsearray2iteratorRight = require( './../../to-sparse-iterator-right' )
 import stridedarray2iterator = require( './../../to-strided-iterator' );
 import arrayview2iterator = require( './../../to-view-iterator' );
 import arrayview2iteratorRight = require( './../../to-view-iterator-right' );
+import trues = require( './../../trues' );
 import typedarray = require( './../../typed' );
 import complexarray = require( './../../typed-complex' );
 import complexarrayCtors = require( './../../typed-complex-ctors' );
@@ -585,6 +587,28 @@ interface Namespace {
 	* // returns <Float32Array>
 	*/
 	emptyLike: typeof emptyLike;
+
+	/**
+	* Creates an array filled with false values and having a specified length.
+	*
+	* The function recognizes the following data types:
+	*
+	* -   `bool`: boolean values
+	* -   `generic`: generic JavaScript values
+	*
+	* @param length - array length
+	* @param dtype - data type (default: 'bool')
+	* @returns filled array
+	*
+	* @example
+	* var arr = ns.falses( 2 );
+	* // returns <BooleanArray>[ false, false ]
+	*
+	* @example
+	* var arr = ns.falses( 2, 'generic' );
+	* // returns [ false, false ]
+	*/
+	falses: typeof falses;
 
 	/**
 	* Returns a filled typed array view of an `ArrayBuffer`.
@@ -1691,6 +1715,28 @@ interface Namespace {
 	* // returns true
 	*/
 	arrayview2iteratorRight: typeof arrayview2iteratorRight;
+
+	/**
+	* Creates an array filled with true values and having a specified length.
+	*
+	* The function recognizes the following data types:
+	*
+	* -   `bool`: boolean values
+	* -   `generic`: generic JavaScript values
+	*
+	* @param length - array length
+	* @param dtype - data type (default: 'bool')
+	* @returns filled array
+	*
+	* @example
+	* var arr = ns.trues( 2 );
+	* // returns <BooleanArray>[ true, true ]
+	*
+	* @example
+	* var arr = ns.trues( 2, 'generic' );
+	* // returns [ true, true ]
+	*/
+	trues: typeof trues;
 
 	/**
 	* Creates a typed array.
