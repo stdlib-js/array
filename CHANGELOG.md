@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`0e0f44e`](https://github.com/stdlib-js/stdlib/commit/0e0f44e35b616bbc1b6b333a75c7b742f4eaa1e7) - add float16 datatype support in `array/same-kind-casts` [(#12700)](https://github.com/stdlib-js/stdlib/pull/12700)
 -   [`12ccf2e`](https://github.com/stdlib-js/stdlib/commit/12ccf2e393440f9e4f14ae013462d76dc43bc644) - add float16 dtype support in `array/typed-ctors` [(#12710)](https://github.com/stdlib-js/stdlib/pull/12710)
 -   [`544e175`](https://github.com/stdlib-js/stdlib/commit/544e175ed420534e7c343b52b8360b2724c6219b) - add float16 datatype support in `array/ctors` [(#12703)](https://github.com/stdlib-js/stdlib/pull/12703)
 -   [`4a317ad`](https://github.com/stdlib-js/stdlib/commit/4a317ad7b24684e64cb2dfce1c204902ac62349d) - update `array` TypeScript declarations [(#12655)](https://github.com/stdlib-js/stdlib/pull/12655)
@@ -28,6 +29,7 @@
 
 <details>
 
+-   [`0e0f44e`](https://github.com/stdlib-js/stdlib/commit/0e0f44e35b616bbc1b6b333a75c7b742f4eaa1e7) - **feat:** add float16 datatype support in `array/same-kind-casts` [(#12700)](https://github.com/stdlib-js/stdlib/pull/12700) _(by Gururaj Gurram)_
 -   [`12ccf2e`](https://github.com/stdlib-js/stdlib/commit/12ccf2e393440f9e4f14ae013462d76dc43bc644) - **feat:** add float16 dtype support in `array/typed-ctors` [(#12710)](https://github.com/stdlib-js/stdlib/pull/12710) _(by Gururaj Gurram)_
 -   [`544e175`](https://github.com/stdlib-js/stdlib/commit/544e175ed420534e7c343b52b8360b2724c6219b) - **feat:** add float16 datatype support in `array/ctors` [(#12703)](https://github.com/stdlib-js/stdlib/pull/12703) _(by Gururaj Gurram)_
 -   [`86dc341`](https://github.com/stdlib-js/stdlib/commit/86dc341d3454ec7a1fd1aa16cbeae3b579d82f4c) - **bench:** use `empty` rather than `zeros` _(by Athan Reines)_
