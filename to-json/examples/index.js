@@ -20,6 +20,7 @@
 
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
 var Int16Array = require( './../../int16' );
@@ -50,6 +51,15 @@ console.log( typedarray2json( arr ) );
 	}
 */
 
+arr = new Float16Array( [ 5.0, -3.0 ] );
+console.log( typedarray2json( arr ) );
+/* =>
+	{
+		'type': 'Float16Array',
+		'data': [ 5.0, -3.0 ]
+	}
+*/
+
 arr = new Complex128Array( [ 5.0, -3.0 ] );
 console.log( typedarray2json( arr ) );
 /* =>
@@ -71,10 +81,10 @@ console.log( typedarray2json( arr ) );
 arr = new BooleanArray( [ true, false ] );
 console.log( typedarray2json( arr ) );
 /* =>
-    {
-        'type': 'BooleanArray',
-        'data': [ 1, 0 ]
-    }
+	{
+		'type': 'BooleanArray',
+		'data': [ 1, 0 ]
+	}
 */
 
 arr = new Int32Array( [ -5, 3 ] );

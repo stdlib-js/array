@@ -29,6 +29,7 @@ var Int16Array = require( './../../int16' );
 var Uint16Array = require( './../../uint16' );
 var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
+var Float16Array = require( './../../float16' );
 var Float32Array = require( './../../float32' );
 var Float64Array = require( './../../float64' );
 var Complex64Array = require( './../../complex64' );
@@ -53,6 +54,7 @@ tape( 'if provided a typed array, the function returns the closest typed array t
 	values = [
 		new Float64Array( [ 5.0, 3.0 ] ),
 		new Float32Array( [ 5.0, 3.0 ] ),
+		new Float16Array( [ 5.0, 3.0 ] ),
 		new Int32Array( [ 5, 3 ] ),
 		new Uint32Array( [ 5, 3 ] ),
 		new Int16Array( [ 5, 3 ] ),
@@ -68,6 +70,7 @@ tape( 'if provided a typed array, the function returns the closest typed array t
 	expected = [
 		'Float64Array',
 		'Float32Array',
+		'Float16Array',
 		'Int32Array',
 		'Uint32Array',
 		'Int16Array',
@@ -99,6 +102,7 @@ tape( 'if provided a typed array from a different realm, the function returns th
 	values = [
 		new Float64Array( [ 5.0, 3.0 ] ),
 		new Float32Array( [ 5.0, 3.0 ] ),
+		new Float16Array( [ 5.0, 3.0 ] ),
 		new Int32Array( [ 5, 3 ] ),
 		new Uint32Array( [ 5, 3 ] ),
 		new Int16Array( [ 5, 3 ] ),
@@ -114,6 +118,7 @@ tape( 'if provided a typed array from a different realm, the function returns th
 	expected = [
 		'Float64Array',
 		'Float32Array',
+		'Float16Array',
 		'Int32Array',
 		'Uint32Array',
 		'Int16Array',
