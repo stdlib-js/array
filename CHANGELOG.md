@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8f96e06`](https://github.com/stdlib-js/stdlib/commit/8f96e060e05149da6a7d598e4c54b1c327d94abb) - add float16 dtype support in `array/next-dtype` [(#12706)](https://github.com/stdlib-js/stdlib/pull/12706)
 -   [`40bd8d6`](https://github.com/stdlib-js/stdlib/commit/40bd8d6381f5a91d08312ff01c04b53f1765dfdd) - add float16 datatype support in `array/mostly-safe-casts` [(#12702)](https://github.com/stdlib-js/stdlib/pull/12702)
 -   [`94be3e9`](https://github.com/stdlib-js/stdlib/commit/94be3e9010f0da86f3a05c016a78bf6a68f4cf8a) - add float16 datatype support in `array/safe-casts` [(#12701)](https://github.com/stdlib-js/stdlib/pull/12701)
 -   [`0e0f44e`](https://github.com/stdlib-js/stdlib/commit/0e0f44e35b616bbc1b6b333a75c7b742f4eaa1e7) - add float16 datatype support in `array/same-kind-casts` [(#12700)](https://github.com/stdlib-js/stdlib/pull/12700)
@@ -31,6 +32,7 @@
 
 <details>
 
+-   [`8f96e06`](https://github.com/stdlib-js/stdlib/commit/8f96e060e05149da6a7d598e4c54b1c327d94abb) - **feat:** add float16 dtype support in `array/next-dtype` [(#12706)](https://github.com/stdlib-js/stdlib/pull/12706) _(by Gururaj Gurram)_
 -   [`40bd8d6`](https://github.com/stdlib-js/stdlib/commit/40bd8d6381f5a91d08312ff01c04b53f1765dfdd) - **feat:** add float16 datatype support in `array/mostly-safe-casts` [(#12702)](https://github.com/stdlib-js/stdlib/pull/12702) _(by Gururaj Gurram)_
 -   [`94be3e9`](https://github.com/stdlib-js/stdlib/commit/94be3e9010f0da86f3a05c016a78bf6a68f4cf8a) - **feat:** add float16 datatype support in `array/safe-casts` [(#12701)](https://github.com/stdlib-js/stdlib/pull/12701) _(by Gururaj Gurram)_
 -   [`0e0f44e`](https://github.com/stdlib-js/stdlib/commit/0e0f44e35b616bbc1b6b333a75c7b742f4eaa1e7) - **feat:** add float16 datatype support in `array/same-kind-casts` [(#12700)](https://github.com/stdlib-js/stdlib/pull/12700) _(by Gururaj Gurram)_
