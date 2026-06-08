@@ -21,6 +21,7 @@
 import Complex128Array = require( './../../../complex128' );
 import Complex64Array = require( './../../../complex64' );
 import BooleanArray = require( './../../../bool' );
+import Float16Array = require( './../../../float16' );
 
 /**
 * Returns a `Float64Array` constructor.
@@ -45,6 +46,18 @@ declare function ctors( dtype: 'float64' ): typeof Float64Array;
 * // returns <Function>
 */
 declare function ctors( dtype: 'float32' ): typeof Float32Array;
+
+/**
+* Returns a `Float16Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'float16' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'float16' ): typeof Float16Array;
 
 /**
 * Returns a `Complex128Array` constructor.

@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-07)
+## Unreleased (2026-06-08)
 
 <section class="features">
 
 ### Features
 
+-   [`544e175`](https://github.com/stdlib-js/stdlib/commit/544e175ed420534e7c343b52b8360b2724c6219b) - add float16 datatype support in `array/ctors` [(#12703)](https://github.com/stdlib-js/stdlib/pull/12703)
 -   [`4a317ad`](https://github.com/stdlib-js/stdlib/commit/4a317ad7b24684e64cb2dfce1c204902ac62349d) - update `array` TypeScript declarations [(#12655)](https://github.com/stdlib-js/stdlib/pull/12655)
 -   [`c35efe7`](https://github.com/stdlib-js/stdlib/commit/c35efe7f66c7e7d41c60cb30e1d72f4590169d8a) - add `trues` to namespace
 -   [`f8df9c7`](https://github.com/stdlib-js/stdlib/commit/f8df9c7df3bad72abb6a5b53ad8e0e217df4fcbd) - add `array/trues`
@@ -26,6 +27,7 @@
 
 <details>
 
+-   [`544e175`](https://github.com/stdlib-js/stdlib/commit/544e175ed420534e7c343b52b8360b2724c6219b) - **feat:** add float16 datatype support in `array/ctors` [(#12703)](https://github.com/stdlib-js/stdlib/pull/12703) _(by Gururaj Gurram)_
 -   [`86dc341`](https://github.com/stdlib-js/stdlib/commit/86dc341d3454ec7a1fd1aa16cbeae3b579d82f4c) - **bench:** use `empty` rather than `zeros` _(by Athan Reines)_
 -   [`0962cbd`](https://github.com/stdlib-js/stdlib/commit/0962cbd0669a21d5118d4805dfe39f4a3db9f9ad) - **bench:** use `empty` rather than `zeros` _(by Athan Reines)_
 -   [`4a317ad`](https://github.com/stdlib-js/stdlib/commit/4a317ad7b24684e64cb2dfce1c204902ac62349d) - **feat:** update `array` TypeScript declarations [(#12655)](https://github.com/stdlib-js/stdlib/pull/12655) _(by stdlib-bot)_
@@ -47,9 +49,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Philipp Burckhardt
 
 </section>
