@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-08)
+## Unreleased (2026-06-09)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`9630dd7`](https://github.com/stdlib-js/stdlib/commit/9630dd78446c77a6fbd9c666ba1eb1e7d480b096) - **docs:** order `float16` before `float32` in data type lists [(#12735)](https://github.com/stdlib-js/stdlib/pull/12735) _(by Philipp Burckhardt)_
 -   [`cbba7f4`](https://github.com/stdlib-js/stdlib/commit/cbba7f44e7fab218c8c49cf6b71349c89f1c35b5) - **feat:** add float16 dtype support in `array/to-json` [(#12709)](https://github.com/stdlib-js/stdlib/pull/12709) _(by Gururaj Gurram)_
 -   [`52599f6`](https://github.com/stdlib-js/stdlib/commit/52599f691c05f744f17c423e5ccb890a8c2a5cea) - **feat:** add float16 dtype support in `array/promotion-rules` [(#12707)](https://github.com/stdlib-js/stdlib/pull/12707) _(by Gururaj Gurram)_
 -   [`8f96e06`](https://github.com/stdlib-js/stdlib/commit/8f96e060e05149da6a7d598e4c54b1c327d94abb) - **feat:** add float16 dtype support in `array/next-dtype` [(#12706)](https://github.com/stdlib-js/stdlib/pull/12706) _(by Gururaj Gurram)_
