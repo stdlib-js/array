@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`ce083db`](https://github.com/stdlib-js/stdlib/commit/ce083dbe8cdc2bd70dc469fb9785c60d3470f10f) - **docs:** update `array` TypeScript declarations [(#12927)](https://github.com/stdlib-js/stdlib/pull/12927) _(by stdlib-bot)_
 -   [`dbe4c82`](https://github.com/stdlib-js/stdlib/commit/dbe4c820ea98330253b4054a5bc9b04b2293415b) - **docs:** propagate fixes to sibling packages [(#12677)](https://github.com/stdlib-js/stdlib/pull/12677) _(by Philipp Burckhardt, Athan Reines)_
 -   [`3901886`](https://github.com/stdlib-js/stdlib/commit/3901886ff5ff6bdbcfd65ea52109fee0b0e1ff03) - **docs:** fix examples and descriptions in top-level `array` declarations [(#12375)](https://github.com/stdlib-js/stdlib/pull/12375) _(by Philipp Burckhardt, Athan Reines)_
 -   [`9630dd7`](https://github.com/stdlib-js/stdlib/commit/9630dd78446c77a6fbd9c666ba1eb1e7d480b096) - **docs:** order `float16` before `float32` in data type lists [(#12735)](https://github.com/stdlib-js/stdlib/pull/12735) _(by Philipp Burckhardt)_
