@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`565a326`](https://github.com/stdlib-js/stdlib/commit/565a326bc43d0b0521752f94c321662fe90c58d8) - add initial `float16` support
 -   [`4467556`](https://github.com/stdlib-js/stdlib/commit/44675569bea3c9d21c1f9afc835f7efb4344a22c) - add float16 dtype support to `array/typed` [(#13053)](https://github.com/stdlib-js/stdlib/pull/13053)
 -   [`04bb25b`](https://github.com/stdlib-js/stdlib/commit/04bb25bced7df02acb26573be9bdb760e4490eb3) - add float16 dtype support to `array/typed-real-float-ctors` [(#13050)](https://github.com/stdlib-js/stdlib/pull/13050)
 -   [`74d89e2`](https://github.com/stdlib-js/stdlib/commit/74d89e2fd26df1f23180e86e34e074c97de018cd) - add float16 dtype support to `array/typed-real-ctors` [(#13049)](https://github.com/stdlib-js/stdlib/pull/13049)
@@ -50,6 +51,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`565a326`](https://github.com/stdlib-js/stdlib/commit/565a326bc43d0b0521752f94c321662fe90c58d8) - **feat:** add initial `float16` support _(by Athan Reines)_
 -   [`4467556`](https://github.com/stdlib-js/stdlib/commit/44675569bea3c9d21c1f9afc835f7efb4344a22c) - **feat:** add float16 dtype support to `array/typed` [(#13053)](https://github.com/stdlib-js/stdlib/pull/13053) _(by Gururaj Gurram, Athan Reines)_
 -   [`04bb25b`](https://github.com/stdlib-js/stdlib/commit/04bb25bced7df02acb26573be9bdb760e4490eb3) - **feat:** add float16 dtype support to `array/typed-real-float-ctors` [(#13050)](https://github.com/stdlib-js/stdlib/pull/13050) _(by Gururaj Gurram)_
 -   [`74d89e2`](https://github.com/stdlib-js/stdlib/commit/74d89e2fd26df1f23180e86e34e074c97de018cd) - **feat:** add float16 dtype support to `array/typed-real-ctors` [(#13049)](https://github.com/stdlib-js/stdlib/pull/13049) _(by Gururaj Gurram)_
