@@ -22,6 +22,7 @@
 
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int16Array = require( './../../int16' );
 var Int32Array = require( './../../int32' );
 var Int8Array = require( './../../int8' );
@@ -37,6 +38,7 @@ var Uint8ClampedArray = require( './../../uint8c' );
 var ctors = {
 	'float64': Float64Array,
 	'float32': Float32Array,
+	'float16': Float16Array,
 	'int16': Int16Array,
 	'int32': Int32Array,
 	'int8': Int8Array,

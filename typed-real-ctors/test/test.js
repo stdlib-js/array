@@ -24,6 +24,7 @@ var tape = require( 'tape' );
 var dtypes = require( './../../typed-real-dtypes' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int16Array = require( './../../int16' );
 var Int32Array = require( './../../int32' );
 var Int8Array = require( './../../int8' );
@@ -52,6 +53,7 @@ tape( 'the function returns typed array constructors', function test( t ) {
 	dtypes = [
 		'float64',
 		'float32',
+		'float16',
 		'int16',
 		'int32',
 		'int8',
@@ -63,6 +65,7 @@ tape( 'the function returns typed array constructors', function test( t ) {
 	expected = [
 		Float64Array,
 		Float32Array,
+		Float16Array,
 		Int16Array,
 		Int32Array,
 		Int8Array,
