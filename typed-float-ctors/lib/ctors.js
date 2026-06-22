@@ -22,6 +22,7 @@
 
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Complex128Array = require( './../../complex128' );
 var Complex64Array = require( './../../complex64' );
 
@@ -32,6 +33,7 @@ var Complex64Array = require( './../../complex64' );
 var ctors = {
 	'float64': Float64Array,
 	'float32': Float32Array,
+	'float16': Float16Array,
 	'complex128': Complex128Array,
 	'complex64': Complex64Array
 };
