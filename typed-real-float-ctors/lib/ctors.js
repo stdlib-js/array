@@ -22,6 +22,7 @@
 
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 
 
 // MAIN //
@@ -29,7 +30,8 @@ var Float32Array = require( './../../float32' );
 // Mapping from data types to constructors...
 var ctors = {
 	'float64': Float64Array,
-	'float32': Float32Array
+	'float32': Float32Array,
+	'float16': Float16Array
 };
 
 

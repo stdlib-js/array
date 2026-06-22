@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`04bb25b`](https://github.com/stdlib-js/stdlib/commit/04bb25bced7df02acb26573be9bdb760e4490eb3) - add float16 dtype support to `array/typed-real-float-ctors` [(#13050)](https://github.com/stdlib-js/stdlib/pull/13050)
 -   [`74d89e2`](https://github.com/stdlib-js/stdlib/commit/74d89e2fd26df1f23180e86e34e074c97de018cd) - add float16 dtype support to `array/typed-real-ctors` [(#13049)](https://github.com/stdlib-js/stdlib/pull/13049)
 -   [`cf1992a`](https://github.com/stdlib-js/stdlib/commit/cf1992a4cc74bce29f953c111c530d7951fbe768) - add float16 dtype support to `array/typed-float-ctors` [(#13048)](https://github.com/stdlib-js/stdlib/pull/13048)
 -   [`cbba7f4`](https://github.com/stdlib-js/stdlib/commit/cbba7f44e7fab218c8c49cf6b71349c89f1c35b5) - add float16 dtype support in `array/to-json` [(#12709)](https://github.com/stdlib-js/stdlib/pull/12709)
@@ -48,6 +49,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`04bb25b`](https://github.com/stdlib-js/stdlib/commit/04bb25bced7df02acb26573be9bdb760e4490eb3) - **feat:** add float16 dtype support to `array/typed-real-float-ctors` [(#13050)](https://github.com/stdlib-js/stdlib/pull/13050) _(by Gururaj Gurram)_
 -   [`74d89e2`](https://github.com/stdlib-js/stdlib/commit/74d89e2fd26df1f23180e86e34e074c97de018cd) - **feat:** add float16 dtype support to `array/typed-real-ctors` [(#13049)](https://github.com/stdlib-js/stdlib/pull/13049) _(by Gururaj Gurram)_
 -   [`cf1992a`](https://github.com/stdlib-js/stdlib/commit/cf1992a4cc74bce29f953c111c530d7951fbe768) - **feat:** add float16 dtype support to `array/typed-float-ctors` [(#13048)](https://github.com/stdlib-js/stdlib/pull/13048) _(by Gururaj Gurram)_
 -   [`ed5107b`](https://github.com/stdlib-js/stdlib/commit/ed5107b9f6d4e5f74a2a6205f6382cfddef0367b) - **docs:** fix return annotation _(by Athan Reines)_

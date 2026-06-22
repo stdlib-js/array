@@ -24,6 +24,7 @@ var tape = require( 'tape' );
 var dtypes = require( './../../typed-real-float-dtypes' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var ctors = require( './../lib' );
 
@@ -44,11 +45,13 @@ tape( 'the function returns typed array constructors', function test( t ) {
 
 	dtypes = [
 		'float64',
-		'float32'
+		'float32',
+		'float16'
 	];
 	expected = [
 		Float64Array,
-		Float32Array
+		Float32Array,
+		Float16Array
 	];
 	for ( i = 0; i < dtypes.length; i++ ) {
 		ctor = ctors( dtypes[ i ] );
