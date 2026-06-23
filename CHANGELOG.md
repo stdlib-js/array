@@ -63,6 +63,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`66a4a6a`](https://github.com/stdlib-js/stdlib/commit/66a4a6aa28e16cb8da36680587e027b81552c1bc) - **bench:** fix description and fix JSDoc annotation [(#13090)](https://github.com/stdlib-js/stdlib/pull/13090) _(by Philipp Burckhardt)_
 -   [`d417bed`](https://github.com/stdlib-js/stdlib/commit/d417bed62e7c17d9561ab46fce6ad283c98568f5) - **docs:** update example [(#13073)](https://github.com/stdlib-js/stdlib/pull/13073) _(by stdlib-bot)_
 -   [`b4e4ef2`](https://github.com/stdlib-js/stdlib/commit/b4e4ef2ab4b4818c248e41bedf68f2ff5c3dbcce) - **feat:** add float16 datatype support in `array/dtypes` [(#9809)](https://github.com/stdlib-js/stdlib/pull/9809) _(by Gururaj Gurram, Athan Reines)_
 -   [`6af7f0b`](https://github.com/stdlib-js/stdlib/commit/6af7f0b1b9e0e8d7f616de17e47d035a2ae1abfd) - **feat:** add float16 datatype support in `array/dtype` [(#9808)](https://github.com/stdlib-js/stdlib/pull/9808) _(by Gururaj Gurram, Athan Reines)_
