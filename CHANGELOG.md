@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-22)
+## Unreleased (2026-06-23)
 
 <section class="features">
 
@@ -33,6 +33,16 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`5b6be64`](https://github.com/stdlib-js/stdlib/commit/5b6be64587688c406328bccb5e3c3bb2bd60e5ef) - avoid cyclic dependency and update return annotations
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="issues">
 
 ### Closed Issues
@@ -51,6 +61,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`5b6be64`](https://github.com/stdlib-js/stdlib/commit/5b6be64587688c406328bccb5e3c3bb2bd60e5ef) - **fix:** avoid cyclic dependency and update return annotations _(by Athan Reines)_
 -   [`a45fc67`](https://github.com/stdlib-js/stdlib/commit/a45fc6763b36e4f137674c8e66c652549b293341) - **test:** update test _(by Athan Reines)_
 -   [`565a326`](https://github.com/stdlib-js/stdlib/commit/565a326bc43d0b0521752f94c321662fe90c58d8) - **feat:** add initial `float16` support _(by Athan Reines)_
 -   [`4467556`](https://github.com/stdlib-js/stdlib/commit/44675569bea3c9d21c1f9afc835f7efb4344a22c) - **feat:** add float16 dtype support to `array/typed` [(#13053)](https://github.com/stdlib-js/stdlib/pull/13053) _(by Gururaj Gurram, Athan Reines)_
