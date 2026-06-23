@@ -19,6 +19,7 @@
 import Complex128Array = require( './../../../complex128' );
 import Complex64Array = require( './../../../complex64' );
 import BooleanArray = require( './../../../bool' );
+import Float16Array = require( './../../../float16' );
 import dtype = require( './index' );
 
 
@@ -28,6 +29,7 @@ import dtype = require( './index' );
 {
 	dtype( new Float64Array( 10 ) ); // $ExpectType "float64"
 	dtype( new Float32Array( 10 ) ); // $ExpectType "float32"
+	dtype( new Float16Array( 10 ) ); // $ExpectType "float16"
 	dtype( new Complex128Array( 10 ) ); // $ExpectType "complex128"
 	dtype( new Complex64Array( 10 ) ); // $ExpectType "complex64"
 	dtype( new Int32Array( 10 ) ); // $ExpectType "int32"
