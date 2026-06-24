@@ -23,6 +23,7 @@
 var tape = require( 'tape' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
 var Int16Array = require( './../../int16' );
@@ -177,6 +178,20 @@ tape( 'the function returns a filled array (dtype=float32)', function test( t ) 
 
 	arr = zeroTo( 5, 'float32' );
 	t.strictEqual( instanceOf( arr, Float32Array ), true, 'returns expected value' );
+	t.strictEqual( arr.length, expected.length, 'returns expected value' );
+	t.deepEqual( arr, expected, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns a filled array (dtype=float16)', function test( t ) {
+	var expected;
+	var arr;
+
+	expected = new Float16Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
+
+	arr = zeroTo( 5, 'float16' );
+	t.strictEqual( instanceOf( arr, Float16Array ), true, 'returns expected value' );
 	t.strictEqual( arr.length, expected.length, 'returns expected value' );
 	t.deepEqual( arr, expected, 'returns expected value' );
 
@@ -340,6 +355,11 @@ tape( 'if `n` is zero, the function returns an empty array', function test( t ) 
 	expected = new Float32Array( [] );
 	arr = zeroTo( 0, 'float32' );
 	t.strictEqual( instanceOf( arr, Float32Array ), true, 'returns expected value' );
+	t.strictEqual( arr.length, expected.length, 'returns expected value' );
+
+	expected = new Float16Array( [] );
+	arr = zeroTo( 0, 'float16' );
+	t.strictEqual( instanceOf( arr, Float16Array ), true, 'returns expected value' );
 	t.strictEqual( arr.length, expected.length, 'returns expected value' );
 
 	expected = new Int32Array( [] );
