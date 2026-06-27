@@ -4,13 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-24)
+## Unreleased (2026-06-27)
 
 <section class="features">
 
 ### Features
 
--   [`9d75cdf`](https://github.com/stdlib-js/stdlib/commit/9d75cdf60d77a0ed0322e64fba978a3187b98d1f) - add float16 dtype support to `array/zero-to` [(#13054)](https://github.com/stdlib-js/stdlib/pull/13054)
+-   [`0fbbe42`](https://github.com/stdlib-js/stdlib/commit/0fbbe42ac5285b2fc13893c2c62667a59aedf272) - add float16 dtype support to `array/zero-to` [(#13054)](https://github.com/stdlib-js/stdlib/pull/13054)
 -   [`b4e4ef2`](https://github.com/stdlib-js/stdlib/commit/b4e4ef2ab4b4818c248e41bedf68f2ff5c3dbcce) - add float16 datatype support in `array/dtypes` [(#9809)](https://github.com/stdlib-js/stdlib/pull/9809)
 -   [`6af7f0b`](https://github.com/stdlib-js/stdlib/commit/6af7f0b1b9e0e8d7f616de17e47d035a2ae1abfd) - add float16 datatype support in `array/dtype` [(#9808)](https://github.com/stdlib-js/stdlib/pull/9808)
 -   [`565a326`](https://github.com/stdlib-js/stdlib/commit/565a326bc43d0b0521752f94c321662fe90c58d8) - add initial `float16` support
@@ -64,8 +64,9 @@ This release closes the following issue:
 
 <details>
 
--   [`9d75cdf`](https://github.com/stdlib-js/stdlib/commit/9d75cdf60d77a0ed0322e64fba978a3187b98d1f) - **feat:** add float16 dtype support to `array/zero-to` [(#13054)](https://github.com/stdlib-js/stdlib/pull/13054) _(by Gururaj Gurram, Athan Reines)_
--   [`66a4a6a`](https://github.com/stdlib-js/stdlib/commit/66a4a6aa28e16cb8da36680587e027b81552c1bc) - **bench:** fix description and fix JSDoc annotation [(#13090)](https://github.com/stdlib-js/stdlib/pull/13090) _(by Philipp Burckhardt)_
+-   [`1428ba4`](https://github.com/stdlib-js/stdlib/commit/1428ba4e084c92135e0fe4d2568e7180de91731e) - **docs:** update related packages sections [(#13158)](https://github.com/stdlib-js/stdlib/pull/13158) _(by stdlib-bot)_
+-   [`0fbbe42`](https://github.com/stdlib-js/stdlib/commit/0fbbe42ac5285b2fc13893c2c62667a59aedf272) - **feat:** add float16 dtype support to `array/zero-to` [(#13054)](https://github.com/stdlib-js/stdlib/pull/13054) _(by Gururaj Gurram, Athan Reines)_
+-   [`0f81ad2`](https://github.com/stdlib-js/stdlib/commit/0f81ad2fd3441f93d03b305c65fe500155bda08c) - **bench:** fix description and fix JSDoc annotation [(#13090)](https://github.com/stdlib-js/stdlib/pull/13090) _(by Philipp Burckhardt)_
 -   [`d417bed`](https://github.com/stdlib-js/stdlib/commit/d417bed62e7c17d9561ab46fce6ad283c98568f5) - **docs:** update example [(#13073)](https://github.com/stdlib-js/stdlib/pull/13073) _(by stdlib-bot)_
 -   [`b4e4ef2`](https://github.com/stdlib-js/stdlib/commit/b4e4ef2ab4b4818c248e41bedf68f2ff5c3dbcce) - **feat:** add float16 datatype support in `array/dtypes` [(#9809)](https://github.com/stdlib-js/stdlib/pull/9809) _(by Gururaj Gurram, Athan Reines)_
 -   [`6af7f0b`](https://github.com/stdlib-js/stdlib/commit/6af7f0b1b9e0e8d7f616de17e47d035a2ae1abfd) - **feat:** add float16 datatype support in `array/dtype` [(#9808)](https://github.com/stdlib-js/stdlib/pull/9808) _(by Gururaj Gurram, Athan Reines)_
