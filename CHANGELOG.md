@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`c38afb1`](https://github.com/stdlib-js/stdlib/commit/c38afb1481f0785a09095561486cb0e987609d37) - add float16 dtype support for `array/base/getter` [(#13223)](https://github.com/stdlib-js/stdlib/pull/13223)
 -   [`c81fa28`](https://github.com/stdlib-js/stdlib/commit/c81fa285dfb9908737f43e73032197a9c535e7a9) - add float16 dtype support to `array/filled` [(#13052)](https://github.com/stdlib-js/stdlib/pull/13052)
 -   [`0fbbe42`](https://github.com/stdlib-js/stdlib/commit/0fbbe42ac5285b2fc13893c2c62667a59aedf272) - add float16 dtype support to `array/zero-to` [(#13054)](https://github.com/stdlib-js/stdlib/pull/13054)
 -   [`b4e4ef2`](https://github.com/stdlib-js/stdlib/commit/b4e4ef2ab4b4818c248e41bedf68f2ff5c3dbcce) - add float16 datatype support in `array/dtypes` [(#9809)](https://github.com/stdlib-js/stdlib/pull/9809)
@@ -65,6 +66,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`c38afb1`](https://github.com/stdlib-js/stdlib/commit/c38afb1481f0785a09095561486cb0e987609d37) - **feat:** add float16 dtype support for `array/base/getter` [(#13223)](https://github.com/stdlib-js/stdlib/pull/13223) _(by Gururaj Gurram, Athan Reines)_
 -   [`c81fa28`](https://github.com/stdlib-js/stdlib/commit/c81fa285dfb9908737f43e73032197a9c535e7a9) - **feat:** add float16 dtype support to `array/filled` [(#13052)](https://github.com/stdlib-js/stdlib/pull/13052) _(by Gururaj Gurram, Athan Reines)_
 -   [`1428ba4`](https://github.com/stdlib-js/stdlib/commit/1428ba4e084c92135e0fe4d2568e7180de91731e) - **docs:** update related packages sections [(#13158)](https://github.com/stdlib-js/stdlib/pull/13158) _(by stdlib-bot)_
 -   [`0fbbe42`](https://github.com/stdlib-js/stdlib/commit/0fbbe42ac5285b2fc13893c2c62667a59aedf272) - **feat:** add float16 dtype support to `array/zero-to` [(#13054)](https://github.com/stdlib-js/stdlib/pull/13054) _(by Gururaj Gurram, Athan Reines)_
