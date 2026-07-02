@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-01)
+## Unreleased (2026-07-02)
 
 <section class="features">
 
@@ -66,6 +66,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`be9507b`](https://github.com/stdlib-js/stdlib/commit/be9507b981abf8c8b38a72b401b5051f71473840) - **docs:** update example [(#13226)](https://github.com/stdlib-js/stdlib/pull/13226) _(by stdlib-bot)_
 -   [`c38afb1`](https://github.com/stdlib-js/stdlib/commit/c38afb1481f0785a09095561486cb0e987609d37) - **feat:** add float16 dtype support for `array/base/getter` [(#13223)](https://github.com/stdlib-js/stdlib/pull/13223) _(by Gururaj Gurram, Athan Reines)_
 -   [`c81fa28`](https://github.com/stdlib-js/stdlib/commit/c81fa285dfb9908737f43e73032197a9c535e7a9) - **feat:** add float16 dtype support to `array/filled` [(#13052)](https://github.com/stdlib-js/stdlib/pull/13052) _(by Gururaj Gurram, Athan Reines)_
 -   [`1428ba4`](https://github.com/stdlib-js/stdlib/commit/1428ba4e084c92135e0fe4d2568e7180de91731e) - **docs:** update related packages sections [(#13158)](https://github.com/stdlib-js/stdlib/pull/13158) _(by stdlib-bot)_
