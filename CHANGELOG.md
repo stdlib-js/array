@@ -66,6 +66,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`7fbca26`](https://github.com/stdlib-js/stdlib/commit/7fbca26c260e75cc31902488cf09f43163a58c17) - **chore:** remove extra space and fix license header [(#13228)](https://github.com/stdlib-js/stdlib/pull/13228) _(by Philipp Burckhardt)_
 -   [`be9507b`](https://github.com/stdlib-js/stdlib/commit/be9507b981abf8c8b38a72b401b5051f71473840) - **docs:** update example [(#13226)](https://github.com/stdlib-js/stdlib/pull/13226) _(by stdlib-bot)_
 -   [`c38afb1`](https://github.com/stdlib-js/stdlib/commit/c38afb1481f0785a09095561486cb0e987609d37) - **feat:** add float16 dtype support for `array/base/getter` [(#13223)](https://github.com/stdlib-js/stdlib/pull/13223) _(by Gururaj Gurram, Athan Reines)_
 -   [`c81fa28`](https://github.com/stdlib-js/stdlib/commit/c81fa285dfb9908737f43e73032197a9c535e7a9) - **feat:** add float16 dtype support to `array/filled` [(#13052)](https://github.com/stdlib-js/stdlib/pull/13052) _(by Gururaj Gurram, Athan Reines)_
