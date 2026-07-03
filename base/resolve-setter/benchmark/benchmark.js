@@ -1,0 +1,336 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var bench = require( '@stdlib/bench' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var isFunction = require( '@stdlib/assert/is-function' );
+var isnan = require( '@stdlib/math/base/assert/is-nan' );
+var filledBy = require( './../../../filled-by' );
+var format = require( '@stdlib/string/format' );
+var pkg = require( './../package.json' ).name;
+var resolveSetter = require( './../lib' );
+
+
+// VARIABLES //
+
+var rand = discreteUniform( 0, 127 );
+
+
+// MAIN //
+
+bench( pkg, function benchmark( b ) {
+	var values;
+	var set;
+	var i;
+
+	values = [
+		filledBy( 10, 'generic', rand ),
+		filledBy( 10, 'float64', rand ),
+		filledBy( 10, 'float32', rand ),
+		filledBy( 10, 'int32', rand ),
+		filledBy( 10, 'uint32', rand )
+	];
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		set = resolveSetter( values[ i%values.length ] );
+		if ( typeof set !== 'function' ) {
+			b.fail( 'should return a function' );
+		}
+	}
+	b.toc();
+	if ( !isFunction( set ) ) {
+		b.fail( 'should return a function' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=generic', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'generic', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=float64', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'float64', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=float32', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'float32', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=int32', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'int32', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=int16', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'int16', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=int8', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'int8', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=uint32', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'uint32', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=uint16', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'uint16', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=uint8', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'uint8', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( format( '%s:dtype=uint8c', pkg ), function benchmark( b ) {
+	var arr;
+	var set;
+	var i;
+	var j;
+	var v;
+
+	arr = filledBy( 100, 'uint8c', rand );
+	set = resolveSetter( arr );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = i % arr.length;
+		set( arr, j, i%128 );
+		v = arr[ j ];
+		if ( v !== v ) {
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( v ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
