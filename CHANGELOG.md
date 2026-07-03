@@ -68,6 +68,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b71a63d`](https://github.com/stdlib-js/stdlib/commit/b71a63d212d3943412faa229884d0ee56ee429da) - **style:** remove stray spaces [(#13248)](https://github.com/stdlib-js/stdlib/pull/13248) _(by Philipp Burckhardt)_
 -   [`d78d6f3`](https://github.com/stdlib-js/stdlib/commit/d78d6f3c29cc0132542f6679599c93ddafabae19) - **feat:** add float16 support in `array/base/assert/is-complex-floating-point-data-type` [(#13241)](https://github.com/stdlib-js/stdlib/pull/13241) _(by Gururaj Gurram)_
 -   [`e0dc901`](https://github.com/stdlib-js/stdlib/commit/e0dc901387fe527854525a12ac5049cbc002c5ed) - **feat:** add float16 support in `array/base/assert/is-floating-point-data-type` [(#13245)](https://github.com/stdlib-js/stdlib/pull/13245) _(by Gururaj Gurram)_
 -   [`7fbca26`](https://github.com/stdlib-js/stdlib/commit/7fbca26c260e75cc31902488cf09f43163a58c17) - **chore:** remove extra space and fix license header [(#13228)](https://github.com/stdlib-js/stdlib/pull/13228) _(by Philipp Burckhardt)_
