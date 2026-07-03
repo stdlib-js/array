@@ -26,6 +26,7 @@ var parseJSON = require( '@stdlib/utils/parse-json' );
 var toJSON = require( './../../to-json' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
 var Int16Array = require( './../../int16' );
@@ -151,6 +152,23 @@ tape( 'the function will revive a JSON-serialized typed array (Float32Array)', f
 	out = parseJSON( json, reviveTypedArray );
 
 	t.strictEqual( out instanceof Float32Array, true, 'is an instance' );
+	t.strictEqual( out[ 0 ], arr[ 0 ], true, 'has expected value' );
+	t.strictEqual( out[ 1 ], arr[ 1 ], true, 'has expected value' );
+
+	t.end();
+});
+
+tape( 'the function will revive a JSON-serialized typed array (Float16Array)', function test( t ) {
+	var json;
+	var arr;
+	var out;
+
+	arr = new Float16Array( [ 3.14, -3.14 ] );
+	json = JSON.stringify( toJSON( arr ) );
+
+	out = parseJSON( json, reviveTypedArray );
+
+	t.strictEqual( out instanceof Float16Array, true, 'is an instance' );
 	t.strictEqual( out[ 0 ], arr[ 0 ], true, 'has expected value' );
 	t.strictEqual( out[ 1 ], arr[ 1 ], true, 'has expected value' );
 
