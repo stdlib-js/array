@@ -27,6 +27,7 @@ var Int16Array = require( './../../../../int16' );
 var Uint16Array = require( './../../../../uint16' );
 var Int32Array = require( './../../../../int32' );
 var Uint32Array = require( './../../../../uint32' );
+var Float16Array = require( './../../../../float16' );
 var Float32Array = require( './../../../../float32' );
 var Float64Array = require( './../../../../float64' );
 var Complex128Array = require( './../../../../complex128' );
@@ -46,6 +47,9 @@ console.log( isComplexTypedArray( new Float64Array( 10 ) ) );
 // => false
 
 console.log( isComplexTypedArray( new Float32Array( 10 ) ) );
+// => false
+
+console.log( isComplexTypedArray( new Float16Array( 10 ) ) );
 // => false
 
 console.log( isComplexTypedArray( new Int32Array( 10 ) ) );
