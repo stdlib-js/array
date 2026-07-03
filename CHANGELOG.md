@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056)
 -   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243)
 -   [`1417800`](https://github.com/stdlib-js/stdlib/commit/1417800c00ee273cb261e3c6df9b676b5e6b9af5) - add float16 dtype support in `array/reviver` [(#13246)](https://github.com/stdlib-js/stdlib/pull/13246)
 -   [`49dd389`](https://github.com/stdlib-js/stdlib/commit/49dd389fcd29bf8dcf237b6694dbf4c35f65d5a6) - add float16 dtype support in `array/base/assert/is-data-type` [(#13244)](https://github.com/stdlib-js/stdlib/pull/13244)
@@ -72,6 +73,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - **feat:** add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056) _(by Gururaj Gurram)_
 -   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - **feat:** add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243) _(by Gururaj Gurram)_
 -   [`1417800`](https://github.com/stdlib-js/stdlib/commit/1417800c00ee273cb261e3c6df9b676b5e6b9af5) - **feat:** add float16 dtype support in `array/reviver` [(#13246)](https://github.com/stdlib-js/stdlib/pull/13246) _(by Gururaj Gurram)_
 -   [`49dd389`](https://github.com/stdlib-js/stdlib/commit/49dd389fcd29bf8dcf237b6694dbf4c35f65d5a6) - **feat:** add float16 dtype support in `array/base/assert/is-data-type` [(#13244)](https://github.com/stdlib-js/stdlib/pull/13244) _(by Gururaj Gurram, Athan Reines)_
