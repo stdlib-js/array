@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`f765960`](https://github.com/stdlib-js/stdlib/commit/f765960c33022d964a5fde355f3a38caf7a17021) - add float16 support in `array/base/assert/is-accessor-array` [(#13242)](https://github.com/stdlib-js/stdlib/pull/13242)
 -   [`d78d6f3`](https://github.com/stdlib-js/stdlib/commit/d78d6f3c29cc0132542f6679599c93ddafabae19) - add float16 support in `array/base/assert/is-complex-floating-point-data-type` [(#13241)](https://github.com/stdlib-js/stdlib/pull/13241)
 -   [`e0dc901`](https://github.com/stdlib-js/stdlib/commit/e0dc901387fe527854525a12ac5049cbc002c5ed) - add float16 support in `array/base/assert/is-floating-point-data-type` [(#13245)](https://github.com/stdlib-js/stdlib/pull/13245)
 -   [`c38afb1`](https://github.com/stdlib-js/stdlib/commit/c38afb1481f0785a09095561486cb0e987609d37) - add float16 dtype support for `array/base/getter` [(#13223)](https://github.com/stdlib-js/stdlib/pull/13223)
@@ -68,6 +69,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`f765960`](https://github.com/stdlib-js/stdlib/commit/f765960c33022d964a5fde355f3a38caf7a17021) - **feat:** add float16 support in `array/base/assert/is-accessor-array` [(#13242)](https://github.com/stdlib-js/stdlib/pull/13242) _(by Gururaj Gurram)_
 -   [`b71a63d`](https://github.com/stdlib-js/stdlib/commit/b71a63d212d3943412faa229884d0ee56ee429da) - **style:** remove stray spaces [(#13248)](https://github.com/stdlib-js/stdlib/pull/13248) _(by Philipp Burckhardt)_
 -   [`d78d6f3`](https://github.com/stdlib-js/stdlib/commit/d78d6f3c29cc0132542f6679599c93ddafabae19) - **feat:** add float16 support in `array/base/assert/is-complex-floating-point-data-type` [(#13241)](https://github.com/stdlib-js/stdlib/pull/13241) _(by Gururaj Gurram)_
 -   [`e0dc901`](https://github.com/stdlib-js/stdlib/commit/e0dc901387fe527854525a12ac5049cbc002c5ed) - **feat:** add float16 support in `array/base/assert/is-floating-point-data-type` [(#13245)](https://github.com/stdlib-js/stdlib/pull/13245) _(by Gururaj Gurram)_
