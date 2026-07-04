@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-03)
+## Unreleased (2026-07-04)
 
 <section class="features">
 
@@ -73,6 +73,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`ab8583f`](https://github.com/stdlib-js/stdlib/commit/ab8583f50fae5501ca8b810a467a049014b8589c) - **docs:** update `array` TypeScript declaration TSDoc [(#13255)](https://github.com/stdlib-js/stdlib/pull/13255) _(by stdlib-bot)_
 -   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - **feat:** add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056) _(by Gururaj Gurram)_
 -   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - **feat:** add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243) _(by Gururaj Gurram)_
 -   [`1417800`](https://github.com/stdlib-js/stdlib/commit/1417800c00ee273cb261e3c6df9b676b5e6b9af5) - **feat:** add float16 dtype support in `array/reviver` [(#13246)](https://github.com/stdlib-js/stdlib/pull/13246) _(by Gururaj Gurram)_
