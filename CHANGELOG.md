@@ -73,6 +73,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
 -   [`e954cb2`](https://github.com/stdlib-js/stdlib/commit/e954cb27d752f444cc937a94278a68ac1e22c58d) - **docs:** update `array/base/assert` TS declarations example code [(#13254)](https://github.com/stdlib-js/stdlib/pull/13254) _(by stdlib-bot)_
 -   [`ab8583f`](https://github.com/stdlib-js/stdlib/commit/ab8583f50fae5501ca8b810a467a049014b8589c) - **docs:** update `array` TypeScript declaration TSDoc [(#13255)](https://github.com/stdlib-js/stdlib/pull/13255) _(by stdlib-bot)_
 -   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - **feat:** add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056) _(by Gururaj Gurram)_
