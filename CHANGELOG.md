@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-04)
+## Unreleased (2026-07-05)
 
 <section class="features">
 
 ### Features
 
+-   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051)
 -   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056)
 -   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243)
 -   [`1417800`](https://github.com/stdlib-js/stdlib/commit/1417800c00ee273cb261e3c6df9b676b5e6b9af5) - add float16 dtype support in `array/reviver` [(#13246)](https://github.com/stdlib-js/stdlib/pull/13246)
@@ -73,6 +74,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - **feat:** add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051) _(by Gururaj Gurram, Athan Reines)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
 -   [`e954cb2`](https://github.com/stdlib-js/stdlib/commit/e954cb27d752f444cc937a94278a68ac1e22c58d) - **docs:** update `array/base/assert` TS declarations example code [(#13254)](https://github.com/stdlib-js/stdlib/pull/13254) _(by stdlib-bot)_
 -   [`ab8583f`](https://github.com/stdlib-js/stdlib/commit/ab8583f50fae5501ca8b810a467a049014b8589c) - **docs:** update `array` TypeScript declaration TSDoc [(#13255)](https://github.com/stdlib-js/stdlib/pull/13255) _(by stdlib-bot)_
