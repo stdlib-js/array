@@ -74,6 +74,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`e6f8766`](https://github.com/stdlib-js/stdlib/commit/e6f8766fa9a929d09d40422d0f8edd0ca7a422ea) - **refactor:** extend defined interface _(by Athan Reines)_
 -   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - **feat:** add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051) _(by Gururaj Gurram, Athan Reines)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
 -   [`e954cb2`](https://github.com/stdlib-js/stdlib/commit/e954cb27d752f444cc937a94278a68ac1e22c58d) - **docs:** update `array/base/assert` TS declarations example code [(#13254)](https://github.com/stdlib-js/stdlib/pull/13254) _(by stdlib-bot)_
