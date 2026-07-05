@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055)
 -   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051)
 -   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056)
 -   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243)
@@ -74,6 +75,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - **feat:** add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055) _(by Gururaj Gurram, Athan Reines)_
 -   [`e6f8766`](https://github.com/stdlib-js/stdlib/commit/e6f8766fa9a929d09d40422d0f8edd0ca7a422ea) - **refactor:** extend defined interface _(by Athan Reines)_
 -   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - **feat:** add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051) _(by Gururaj Gurram, Athan Reines)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
