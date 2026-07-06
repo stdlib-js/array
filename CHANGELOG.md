@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-05)
+## Unreleased (2026-07-06)
 
 <section class="features">
 
@@ -75,6 +75,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`21dc834`](https://github.com/stdlib-js/stdlib/commit/21dc834bf84debd42bc94aae3d29d20eb0f2ae60) - **docs:** update notes [(#13317)](https://github.com/stdlib-js/stdlib/pull/13317) _(by stdlib-bot)_
 -   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - **feat:** add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055) _(by Gururaj Gurram, Athan Reines)_
 -   [`e6f8766`](https://github.com/stdlib-js/stdlib/commit/e6f8766fa9a929d09d40422d0f8edd0ca7a422ea) - **refactor:** extend defined interface _(by Athan Reines)_
 -   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - **feat:** add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051) _(by Gururaj Gurram, Athan Reines)_
