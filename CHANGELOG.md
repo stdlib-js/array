@@ -51,6 +51,7 @@
 
 ### Bug Fixes
 
+-   [`6b88a63`](https://github.com/stdlib-js/stdlib/commit/6b88a637281fd936f6526c40df69299cf72463c5) - add missing index signature to Float16Array class declaration [(#13332)](https://github.com/stdlib-js/stdlib/pull/13332)
 -   [`5b6be64`](https://github.com/stdlib-js/stdlib/commit/5b6be64587688c406328bccb5e3c3bb2bd60e5ef) - avoid cyclic dependency and update return annotations
 
 </section>
@@ -75,6 +76,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`6b88a63`](https://github.com/stdlib-js/stdlib/commit/6b88a637281fd936f6526c40df69299cf72463c5) - **fix:** add missing index signature to Float16Array class declaration [(#13332)](https://github.com/stdlib-js/stdlib/pull/13332) _(by Philipp Burckhardt, Athan Reines)_
 -   [`21dc834`](https://github.com/stdlib-js/stdlib/commit/21dc834bf84debd42bc94aae3d29d20eb0f2ae60) - **docs:** update notes [(#13317)](https://github.com/stdlib-js/stdlib/pull/13317) _(by stdlib-bot)_
 -   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - **feat:** add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055) _(by Gururaj Gurram, Athan Reines)_
 -   [`e6f8766`](https://github.com/stdlib-js/stdlib/commit/e6f8766fa9a929d09d40422d0f8edd0ca7a422ea) - **refactor:** extend defined interface _(by Athan Reines)_
