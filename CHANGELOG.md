@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-07)
+## Unreleased (2026-07-09)
 
 <section class="features">
 
@@ -76,6 +76,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`669fa61`](https://github.com/stdlib-js/stdlib/commit/669fa61233ff20dd079ca971291e30cc36992046) - **docs:** fix examples to use supported dtypes [(#13392)](https://github.com/stdlib-js/stdlib/pull/13392) _(by Philipp Burckhardt)_
 -   [`f1eeb72`](https://github.com/stdlib-js/stdlib/commit/f1eeb7279dd2bd1dbec48234ac146791a97a406d) - **chore:** update keywords [(#13334)](https://github.com/stdlib-js/stdlib/pull/13334) _(by Philipp Burckhardt)_
 -   [`6b88a63`](https://github.com/stdlib-js/stdlib/commit/6b88a637281fd936f6526c40df69299cf72463c5) - **fix:** add missing index signature to Float16Array class declaration [(#13332)](https://github.com/stdlib-js/stdlib/pull/13332) _(by Philipp Burckhardt, Athan Reines)_
 -   [`21dc834`](https://github.com/stdlib-js/stdlib/commit/21dc834bf84debd42bc94aae3d29d20eb0f2ae60) - **docs:** update notes [(#13317)](https://github.com/stdlib-js/stdlib/pull/13317) _(by stdlib-bot)_
