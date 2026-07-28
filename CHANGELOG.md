@@ -77,6 +77,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b9ea7bd`](https://github.com/stdlib-js/stdlib/commit/b9ea7bd1bcd07e3a6be9369d395afdf3d5fe481d) - **chore:** clean-up [(#13723)](https://github.com/stdlib-js/stdlib/pull/13723) _(by Philipp Burckhardt)_
 -   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - **feat:** add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562) _(by Divit Jain, Athan Reines)_
 -   [`669fa61`](https://github.com/stdlib-js/stdlib/commit/669fa61233ff20dd079ca971291e30cc36992046) - **docs:** fix examples to use supported dtypes [(#13392)](https://github.com/stdlib-js/stdlib/pull/13392) _(by Philipp Burckhardt)_
 -   [`f1eeb72`](https://github.com/stdlib-js/stdlib/commit/f1eeb7279dd2bd1dbec48234ac146791a97a406d) - **chore:** update keywords [(#13334)](https://github.com/stdlib-js/stdlib/pull/13334) _(by Philipp Burckhardt)_
