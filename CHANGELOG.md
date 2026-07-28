@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-09)
+## Unreleased (2026-07-28)
 
 <section class="features">
 
 ### Features
 
+-   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562)
 -   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055)
 -   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051)
 -   [`8ccb4c3`](https://github.com/stdlib-js/stdlib/commit/8ccb4c3ad9a84fd6fb9c5a161ddf269d54c0e6d9) - add float16 dtype support to `array/zeros` [(#13056)](https://github.com/stdlib-js/stdlib/pull/13056)
@@ -76,6 +77,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - **feat:** add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562) _(by Divit Jain, Athan Reines)_
 -   [`669fa61`](https://github.com/stdlib-js/stdlib/commit/669fa61233ff20dd079ca971291e30cc36992046) - **docs:** fix examples to use supported dtypes [(#13392)](https://github.com/stdlib-js/stdlib/pull/13392) _(by Philipp Burckhardt)_
 -   [`f1eeb72`](https://github.com/stdlib-js/stdlib/commit/f1eeb7279dd2bd1dbec48234ac146791a97a406d) - **chore:** update keywords [(#13334)](https://github.com/stdlib-js/stdlib/pull/13334) _(by Philipp Burckhardt)_
 -   [`6b88a63`](https://github.com/stdlib-js/stdlib/commit/6b88a637281fd936f6526c40df69299cf72463c5) - **fix:** add missing index signature to Float16Array class declaration [(#13332)](https://github.com/stdlib-js/stdlib/pull/13332) _(by Philipp Burckhardt, Athan Reines)_
@@ -146,9 +148,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Divit Jain
 -   Gururaj Gurram
 -   Philipp Burckhardt
 -   titanniya542-spec
