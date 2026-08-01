@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-30)
+## Unreleased (2026-08-01)
 
 <section class="features">
 
 ### Features
 
+-   [`24405b6`](https://github.com/stdlib-js/stdlib/commit/24405b647f170b8737700ebc9d08752bd5cc1ea5) - add `at` method to `array/uint64` [(#13830)](https://github.com/stdlib-js/stdlib/pull/13830)
 -   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562)
 -   [`e003221`](https://github.com/stdlib-js/stdlib/commit/e0032216ae67175b756688e6ddaf8e00da70b0aa) - add float16 dtype support to `array/zero-to-like` [(#13055)](https://github.com/stdlib-js/stdlib/pull/13055)
 -   [`8db6085`](https://github.com/stdlib-js/stdlib/commit/8db608576aaa5fd5fd1fc8b0d43915388d203f83) - add float16 dtype support to `array/zeros-like` [(#13051)](https://github.com/stdlib-js/stdlib/pull/13051)
@@ -77,6 +78,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`24405b6`](https://github.com/stdlib-js/stdlib/commit/24405b647f170b8737700ebc9d08752bd5cc1ea5) - **feat:** add `at` method to `array/uint64` [(#13830)](https://github.com/stdlib-js/stdlib/pull/13830) _(by Divit Jain)_
 -   [`10ee0a5`](https://github.com/stdlib-js/stdlib/commit/10ee0a56ed60ae3d051ff0426b8e203a29c44cdc) - **chore:** clean-up [(#13754)](https://github.com/stdlib-js/stdlib/pull/13754) _(by Philipp Burckhardt)_
 -   [`b9ea7bd`](https://github.com/stdlib-js/stdlib/commit/b9ea7bd1bcd07e3a6be9369d395afdf3d5fe481d) - **chore:** clean-up [(#13723)](https://github.com/stdlib-js/stdlib/pull/13723) _(by Philipp Burckhardt)_
 -   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - **feat:** add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562) _(by Divit Jain, Athan Reines)_
