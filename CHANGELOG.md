@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-01)
+## Unreleased (2026-08-05)
 
 <section class="features">
 
@@ -78,6 +78,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`cf6c136`](https://github.com/stdlib-js/stdlib/commit/cf6c136826ef37b3802b5b045c5ce2ae40726f82) - **test:** update import _(by Athan Reines)_
 -   [`24405b6`](https://github.com/stdlib-js/stdlib/commit/24405b647f170b8737700ebc9d08752bd5cc1ea5) - **feat:** add `at` method to `array/uint64` [(#13830)](https://github.com/stdlib-js/stdlib/pull/13830) _(by Divit Jain)_
 -   [`10ee0a5`](https://github.com/stdlib-js/stdlib/commit/10ee0a56ed60ae3d051ff0426b8e203a29c44cdc) - **chore:** clean-up [(#13754)](https://github.com/stdlib-js/stdlib/pull/13754) _(by Philipp Burckhardt)_
 -   [`b9ea7bd`](https://github.com/stdlib-js/stdlib/commit/b9ea7bd1bcd07e3a6be9369d395afdf3d5fe481d) - **chore:** clean-up [(#13723)](https://github.com/stdlib-js/stdlib/pull/13723) _(by Philipp Burckhardt)_
