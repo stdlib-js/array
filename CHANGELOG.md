@@ -79,6 +79,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`ad9d109`](https://github.com/stdlib-js/stdlib/commit/ad9d1092d73c1635a10bb0ac4400c92dd50722eb) - **chore:** clean-up [(#13949)](https://github.com/stdlib-js/stdlib/pull/13949) _(by Philipp Burckhardt, Athan Reines)_
 -   [`1935a5f`](https://github.com/stdlib-js/stdlib/commit/1935a5f7306c6e1f01f3880f4374dfeadf52f371) - **chore:** clean-up [(#13951)](https://github.com/stdlib-js/stdlib/pull/13951) _(by Philipp Burckhardt)_
 -   [`b5ff3b6`](https://github.com/stdlib-js/stdlib/commit/b5ff3b66fe639b073761be77dfe1a3b57773d6f6) - **feat:** add `entries` method to `array/uint64` [(#13888)](https://github.com/stdlib-js/stdlib/pull/13888) _(by Divit Jain, Athan Reines)_
 -   [`cf6c136`](https://github.com/stdlib-js/stdlib/commit/cf6c136826ef37b3802b5b045c5ce2ae40726f82) - **test:** update import _(by Athan Reines)_
