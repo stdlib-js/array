@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-06)
+## Unreleased (2026-08-10)
 
 <section class="features">
 
 ### Features
 
+-   [`7cc4708`](https://github.com/stdlib-js/stdlib/commit/7cc47082117a2d68d704d4d54a49d068da41477b) - add float16 dtype support to `array/one-to` [(#14151)](https://github.com/stdlib-js/stdlib/pull/14151)
 -   [`b5ff3b6`](https://github.com/stdlib-js/stdlib/commit/b5ff3b66fe639b073761be77dfe1a3b57773d6f6) - add `entries` method to `array/uint64` [(#13888)](https://github.com/stdlib-js/stdlib/pull/13888)
 -   [`24405b6`](https://github.com/stdlib-js/stdlib/commit/24405b647f170b8737700ebc9d08752bd5cc1ea5) - add `at` method to `array/uint64` [(#13830)](https://github.com/stdlib-js/stdlib/pull/13830)
 -   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562)
@@ -79,6 +80,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`7cc4708`](https://github.com/stdlib-js/stdlib/commit/7cc47082117a2d68d704d4d54a49d068da41477b) - **feat:** add float16 dtype support to `array/one-to` [(#14151)](https://github.com/stdlib-js/stdlib/pull/14151) _(by Gururaj Gurram)_
 -   [`ad9d109`](https://github.com/stdlib-js/stdlib/commit/ad9d1092d73c1635a10bb0ac4400c92dd50722eb) - **chore:** clean-up [(#13949)](https://github.com/stdlib-js/stdlib/pull/13949) _(by Philipp Burckhardt, Athan Reines)_
 -   [`1935a5f`](https://github.com/stdlib-js/stdlib/commit/1935a5f7306c6e1f01f3880f4374dfeadf52f371) - **chore:** clean-up [(#13951)](https://github.com/stdlib-js/stdlib/pull/13951) _(by Philipp Burckhardt)_
 -   [`b5ff3b6`](https://github.com/stdlib-js/stdlib/commit/b5ff3b66fe639b073761be77dfe1a3b57773d6f6) - **feat:** add `entries` method to `array/uint64` [(#13888)](https://github.com/stdlib-js/stdlib/pull/13888) _(by Divit Jain, Athan Reines)_
