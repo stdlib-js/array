@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`800db1b`](https://github.com/stdlib-js/stdlib/commit/800db1bdcd2d4e3fa76067addd8395f006cea5ad) - add float16 dtype support to `array/min-dtype` [(#14018)](https://github.com/stdlib-js/stdlib/pull/14018)
 -   [`bd39888`](https://github.com/stdlib-js/stdlib/commit/bd3988874fec8e11dcb2ea04afc3e9c2a45207e5) - add float16 dtype support to `array/nans-like` [(#14122)](https://github.com/stdlib-js/stdlib/pull/14122)
 -   [`0078b7e`](https://github.com/stdlib-js/stdlib/commit/0078b7ed60fc8040a9d11a6d1c4d94bc34e4df5a) - add float16 dtype support to `array/ones-like` [(#14124)](https://github.com/stdlib-js/stdlib/pull/14124)
 -   [`2e31902`](https://github.com/stdlib-js/stdlib/commit/2e31902b44dfa195f9caa5ece57b1649a000e47a) - add float16 dtype support to `array/ones` [(#14123)](https://github.com/stdlib-js/stdlib/pull/14123)
@@ -89,6 +90,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`800db1b`](https://github.com/stdlib-js/stdlib/commit/800db1bdcd2d4e3fa76067addd8395f006cea5ad) - **feat:** add float16 dtype support to `array/min-dtype` [(#14018)](https://github.com/stdlib-js/stdlib/pull/14018) _(by Samarth Kolarkar, Athan Reines, gururaj1512)_
 -   [`bd39888`](https://github.com/stdlib-js/stdlib/commit/bd3988874fec8e11dcb2ea04afc3e9c2a45207e5) - **feat:** add float16 dtype support to `array/nans-like` [(#14122)](https://github.com/stdlib-js/stdlib/pull/14122) _(by Gururaj Gurram, Athan Reines)_
 -   [`e805b48`](https://github.com/stdlib-js/stdlib/commit/e805b48af03299edd06969a72e9bf03ccb344aa5) - **bench:** fix assignment operation _(by Athan Reines)_
 -   [`3fdf0b9`](https://github.com/stdlib-js/stdlib/commit/3fdf0b943c342271e5ee4b80d7bf30cb2b5de1e1) - **bench:** reassign variable _(by Athan Reines)_
@@ -182,12 +184,13 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Divit Jain
 -   Gururaj Gurram
 -   Philipp Burckhardt
+-   Samarth Kolarkar
 -   titanniya542-spec
 
 </section>
