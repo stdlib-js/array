@@ -88,6 +88,11 @@ This release closes the following issue:
 
 <details>
 
+-   [`e805b48`](https://github.com/stdlib-js/stdlib/commit/e805b48af03299edd06969a72e9bf03ccb344aa5) - **bench:** fix assignment operation _(by Athan Reines)_
+-   [`3fdf0b9`](https://github.com/stdlib-js/stdlib/commit/3fdf0b943c342271e5ee4b80d7bf30cb2b5de1e1) - **bench:** reassign variable _(by Athan Reines)_
+-   [`075283f`](https://github.com/stdlib-js/stdlib/commit/075283f8cdb22dd49286c6fa7ddc874b584af48d) - **bench:** reassign variable _(by Athan Reines)_
+-   [`d47c19d`](https://github.com/stdlib-js/stdlib/commit/d47c19dbaa8eaae1e440307c9b4b6727f227fa07) - **bench:** add `copyWithin` benchmarks _(by Athan Reines)_
+-   [`35f9d71`](https://github.com/stdlib-js/stdlib/commit/35f9d71411350aefc5992d63febbf0ad71bbff12) - **bench:** fix benchmarks _(by Athan Reines)_
 -   [`0078b7e`](https://github.com/stdlib-js/stdlib/commit/0078b7ed60fc8040a9d11a6d1c4d94bc34e4df5a) - **feat:** add float16 dtype support to `array/ones-like` [(#14124)](https://github.com/stdlib-js/stdlib/pull/14124) _(by Gururaj Gurram)_
 -   [`2e31902`](https://github.com/stdlib-js/stdlib/commit/2e31902b44dfa195f9caa5ece57b1649a000e47a) - **feat:** add float16 dtype support to `array/ones` [(#14123)](https://github.com/stdlib-js/stdlib/pull/14123) _(by Gururaj Gurram)_
 -   [`4d0ce60`](https://github.com/stdlib-js/stdlib/commit/4d0ce60011997633aac407dbba435da1763a2550) - **feat:** add float16 dtype support to `array/convert-same` [(#14126)](https://github.com/stdlib-js/stdlib/pull/14126) _(by Gururaj Gurram)_

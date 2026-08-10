@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,10 +22,11 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-boolean' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var reinterpret = require( '@stdlib/strided/base/reinterpret-complex128' );
 var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
-var BooleanArray = require( './../lib' );
+var Complex128Array = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -44,9 +45,9 @@ function createBenchmark( len ) {
 
 	arr = [];
 	for ( i = 0; i < len+1; i++ ) {
-		arr.push( i%2 );
+		arr.push( new Complex128( i, i ) );
 	}
-	arr = new BooleanArray( arr );
+	arr = new Complex128Array( arr );
 	buf = reinterpret( arr, 0 );
 
 	return benchmark;
@@ -62,7 +63,7 @@ function createBenchmark( len ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			buf[ 0 ] = i%2;
+			buf[ 0 ] = i;
 			arr = arr.copyWithin( 1, 0 );
 			if ( typeof arr !== 'object' ) {
 				b.fail( 'unexpected result' );

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,11 +21,11 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-complex64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var reinterpret = require( '@stdlib/strided/base/reinterpret-complex128' );
 var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
-var Complex64Array = require( './../lib' );
+var Complex128Array = require( './../lib' );
 
 
 // MAIN //
@@ -37,9 +37,9 @@ bench( format( '%s:copyWithin:len=5', pkg ), function benchmark( b ) {
 
 	arr = [];
 	for ( i = 0; i < 5; i++ ) {
-		arr.push( new Complex64( i, i ) );
+		arr.push( new Complex128( i, i ) );
 	}
-	arr = new Complex64Array( arr );
+	arr = new Complex128Array( arr );
 	buf = reinterpret( arr, 0 );
 
 	b.tic();
