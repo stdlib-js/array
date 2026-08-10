@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`28c1b87`](https://github.com/stdlib-js/stdlib/commit/28c1b877001ac4db853b9a958d9ec33bd1bd8288) - add float16 dtype support to `array/one-to-like` [(#14148)](https://github.com/stdlib-js/stdlib/pull/14148)
 -   [`7816c92`](https://github.com/stdlib-js/stdlib/commit/7816c92b5fac04969200126d7516f89cf056f7ec) - add float16 dtype support to `array/full` [(#14149)](https://github.com/stdlib-js/stdlib/pull/14149)
 -   [`de466c1`](https://github.com/stdlib-js/stdlib/commit/de466c1c7555e09de12ae363285fffaefedce4ef) - add float16 dtype support to `array/full-like` [(#14150)](https://github.com/stdlib-js/stdlib/pull/14150)
 -   [`7cc4708`](https://github.com/stdlib-js/stdlib/commit/7cc47082117a2d68d704d4d54a49d068da41477b) - add float16 dtype support to `array/one-to` [(#14151)](https://github.com/stdlib-js/stdlib/pull/14151)
@@ -82,6 +83,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`28c1b87`](https://github.com/stdlib-js/stdlib/commit/28c1b877001ac4db853b9a958d9ec33bd1bd8288) - **feat:** add float16 dtype support to `array/one-to-like` [(#14148)](https://github.com/stdlib-js/stdlib/pull/14148) _(by Gururaj Gurram)_
 -   [`7816c92`](https://github.com/stdlib-js/stdlib/commit/7816c92b5fac04969200126d7516f89cf056f7ec) - **feat:** add float16 dtype support to `array/full` [(#14149)](https://github.com/stdlib-js/stdlib/pull/14149) _(by Gururaj Gurram)_
 -   [`de466c1`](https://github.com/stdlib-js/stdlib/commit/de466c1c7555e09de12ae363285fffaefedce4ef) - **feat:** add float16 dtype support to `array/full-like` [(#14150)](https://github.com/stdlib-js/stdlib/pull/14150) _(by Gururaj Gurram)_
 -   [`7cc4708`](https://github.com/stdlib-js/stdlib/commit/7cc47082117a2d68d704d4d54a49d068da41477b) - **feat:** add float16 dtype support to `array/one-to` [(#14151)](https://github.com/stdlib-js/stdlib/pull/14151) _(by Gururaj Gurram)_
