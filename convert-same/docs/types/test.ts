@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Float16Array = require( './../../../float16' );
 import Complex128Array = require( './../../../complex128' );
 import Complex64Array = require( './../../../complex64' );
 import BooleanArray = require( './../../../bool' );
@@ -28,6 +29,7 @@ import convertSame = require( './index' );
 {
 	convertSame( [ 1.0, 2.0, 3.0, 4.0 ], new Float64Array( 0 ) ); // $ExpectType Float64Array
 	convertSame( [ 1.0, 2.0, 3.0, 4.0 ], new Float32Array( 0 ) ); // $ExpectType Float32Array
+	convertSame( [ 1.0, 2.0, 3.0, 4.0 ], new Float16Array( 0 ) ); // $ExpectType Float16ArrayFallback
 	convertSame( [ 1.0, 2.0, 3.0, 4.0 ], new Int32Array( 0 ) ); // $ExpectType Int32Array
 	convertSame( [ 1.0, 2.0, 3.0, 4.0 ], new Int16Array( 0 ) ); // $ExpectType Int16Array
 	convertSame( [ 1.0, 2.0, 3.0, 4.0 ], new Int8Array( 0 ) ); // $ExpectType Int8Array

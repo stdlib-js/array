@@ -25,6 +25,7 @@ var pow = require( '@stdlib/math/base/special/pow' );
 var isCollection = require( '@stdlib/assert/is-collection' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int32Array = require( './../../int32' );
 var Int16Array = require( './../../int16' );
 var Int8Array = require( './../../int8' );
@@ -115,6 +116,9 @@ function main() {
 
 		f = createBenchmark( len, new Float32Array( 0 ) );
 		bench( format( '%s:len=%d,dtype=float32', pkg, len ), f );
+
+		f = createBenchmark( len, new Float16Array( 0 ) );
+		bench( format( '%s:len=%d,dtype=float16', pkg, len ), f );
 
 		f = createBenchmark( len, new Int32Array( 0 ) );
 		bench( format( '%s:len=%d,dtype=int32', pkg, len ), f );
