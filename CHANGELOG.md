@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`823ccaa`](https://github.com/stdlib-js/stdlib/commit/823ccaae2a34ef2fc8d0795f885b0503394ddae8) - add float16 dtype support to `array/convert` [(#14125)](https://github.com/stdlib-js/stdlib/pull/14125)
+-   [`f95a2e1`](https://github.com/stdlib-js/stdlib/commit/f95a2e1e1f7fb5bd69f9d403cc8f9b40a7b1defb) - add float16 dtype support to `array/nans` [(#14127)](https://github.com/stdlib-js/stdlib/pull/14127)
 -   [`28c1b87`](https://github.com/stdlib-js/stdlib/commit/28c1b877001ac4db853b9a958d9ec33bd1bd8288) - add float16 dtype support to `array/one-to-like` [(#14148)](https://github.com/stdlib-js/stdlib/pull/14148)
 -   [`7816c92`](https://github.com/stdlib-js/stdlib/commit/7816c92b5fac04969200126d7516f89cf056f7ec) - add float16 dtype support to `array/full` [(#14149)](https://github.com/stdlib-js/stdlib/pull/14149)
 -   [`de466c1`](https://github.com/stdlib-js/stdlib/commit/de466c1c7555e09de12ae363285fffaefedce4ef) - add float16 dtype support to `array/full-like` [(#14150)](https://github.com/stdlib-js/stdlib/pull/14150)
@@ -83,6 +85,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`823ccaa`](https://github.com/stdlib-js/stdlib/commit/823ccaae2a34ef2fc8d0795f885b0503394ddae8) - **feat:** add float16 dtype support to `array/convert` [(#14125)](https://github.com/stdlib-js/stdlib/pull/14125) _(by Gururaj Gurram)_
+-   [`f95a2e1`](https://github.com/stdlib-js/stdlib/commit/f95a2e1e1f7fb5bd69f9d403cc8f9b40a7b1defb) - **feat:** add float16 dtype support to `array/nans` [(#14127)](https://github.com/stdlib-js/stdlib/pull/14127) _(by Gururaj Gurram, Athan Reines)_
 -   [`28c1b87`](https://github.com/stdlib-js/stdlib/commit/28c1b877001ac4db853b9a958d9ec33bd1bd8288) - **feat:** add float16 dtype support to `array/one-to-like` [(#14148)](https://github.com/stdlib-js/stdlib/pull/14148) _(by Gururaj Gurram)_
 -   [`7816c92`](https://github.com/stdlib-js/stdlib/commit/7816c92b5fac04969200126d7516f89cf056f7ec) - **feat:** add float16 dtype support to `array/full` [(#14149)](https://github.com/stdlib-js/stdlib/pull/14149) _(by Gururaj Gurram)_
 -   [`de466c1`](https://github.com/stdlib-js/stdlib/commit/de466c1c7555e09de12ae363285fffaefedce4ef) - **feat:** add float16 dtype support to `array/full-like` [(#14150)](https://github.com/stdlib-js/stdlib/pull/14150) _(by Gururaj Gurram)_
