@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`bd39888`](https://github.com/stdlib-js/stdlib/commit/bd3988874fec8e11dcb2ea04afc3e9c2a45207e5) - add float16 dtype support to `array/nans-like` [(#14122)](https://github.com/stdlib-js/stdlib/pull/14122)
 -   [`0078b7e`](https://github.com/stdlib-js/stdlib/commit/0078b7ed60fc8040a9d11a6d1c4d94bc34e4df5a) - add float16 dtype support to `array/ones-like` [(#14124)](https://github.com/stdlib-js/stdlib/pull/14124)
 -   [`2e31902`](https://github.com/stdlib-js/stdlib/commit/2e31902b44dfa195f9caa5ece57b1649a000e47a) - add float16 dtype support to `array/ones` [(#14123)](https://github.com/stdlib-js/stdlib/pull/14123)
 -   [`4d0ce60`](https://github.com/stdlib-js/stdlib/commit/4d0ce60011997633aac407dbba435da1763a2550) - add float16 dtype support to `array/convert-same` [(#14126)](https://github.com/stdlib-js/stdlib/pull/14126)
@@ -88,6 +89,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`bd39888`](https://github.com/stdlib-js/stdlib/commit/bd3988874fec8e11dcb2ea04afc3e9c2a45207e5) - **feat:** add float16 dtype support to `array/nans-like` [(#14122)](https://github.com/stdlib-js/stdlib/pull/14122) _(by Gururaj Gurram, Athan Reines)_
 -   [`e805b48`](https://github.com/stdlib-js/stdlib/commit/e805b48af03299edd06969a72e9bf03ccb344aa5) - **bench:** fix assignment operation _(by Athan Reines)_
 -   [`3fdf0b9`](https://github.com/stdlib-js/stdlib/commit/3fdf0b943c342271e5ee4b80d7bf30cb2b5de1e1) - **bench:** reassign variable _(by Athan Reines)_
 -   [`075283f`](https://github.com/stdlib-js/stdlib/commit/075283f8cdb22dd49286c6fa7ddc874b584af48d) - **bench:** reassign variable _(by Athan Reines)_

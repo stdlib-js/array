@@ -23,8 +23,10 @@
 var tape = require( 'tape' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );
+var isnanf16 = require( '@stdlib/number/float16/base/assert/is-nan' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Complex64Array = require( './../../complex64' );
 var Complex128Array = require( './../../complex128' );
 var reinterpret64 = require( '@stdlib/strided/base/reinterpret-complex64' );
@@ -198,6 +200,40 @@ tape( 'the function returns a NaN-filled array (dtype=float32)', function test( 
 
 	for ( i = 0; i < arr.length; i++ ) {
 		t.strictEqual( isnanf( arr[ i ] ), true, 'returns expected value for element '+i );
+	}
+	t.end();
+});
+
+tape( 'the function returns a NaN-filled array (float16)', function test( t ) {
+	var arr;
+	var x;
+	var i;
+
+	x = new Float16Array( 5 );
+
+	arr = nansLike( x );
+	t.strictEqual( instanceOf( arr, Float16Array ), true, 'returns expected value' );
+	t.strictEqual( arr.length, x.length, 'returns expected value' );
+
+	for ( i = 0; i < arr.length; i++ ) {
+		t.strictEqual( isnanf16( arr[ i ] ), true, 'returns expected value for element '+i );
+	}
+	t.end();
+});
+
+tape( 'the function returns a NaN-filled array (dtype=float16)', function test( t ) {
+	var arr;
+	var x;
+	var i;
+
+	x = new Float64Array( 5 );
+
+	arr = nansLike( x, 'float16' );
+	t.strictEqual( instanceOf( arr, Float16Array ), true, 'returns expected value' );
+	t.strictEqual( arr.length, x.length, 'returns expected value' );
+
+	for ( i = 0; i < arr.length; i++ ) {
+		t.strictEqual( isnanf16( arr[ i ] ), true, 'returns expected value for element '+i );
 	}
 	t.end();
 });
