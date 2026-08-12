@@ -23,6 +23,7 @@
 var tape = require( 'tape' );
 var Float64Array = require( './../../float64' );
 var Float32Array = require( './../../float32' );
+var Float16Array = require( './../../float16' );
 var Int32Array = require( './../../int32' );
 var Uint32Array = require( './../../uint32' );
 var Int16Array = require( './../../int16' );
@@ -165,6 +166,16 @@ tape( 'the function returns an empty array (dtype=float32)', function test( t ) 
 
 	arr = empty( 5, 'float32' );
 	t.strictEqual( instanceOf( arr, Float32Array ), true, 'returns expected value' );
+	t.strictEqual( arr.length, 5, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns an empty array (dtype=float16)', function test( t ) {
+	var arr;
+
+	arr = empty( 5, 'float16' );
+	t.strictEqual( instanceOf( arr, Float16Array ), true, 'returns expected value' );
 	t.strictEqual( arr.length, 5, 'returns expected value' );
 
 	t.end();
