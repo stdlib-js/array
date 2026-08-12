@@ -92,6 +92,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`e4f3ef7`](https://github.com/stdlib-js/stdlib/commit/e4f3ef731e18c919c7d8b0d8c176ae818f4dc3a9) - **docs:** update example [(#14184)](https://github.com/stdlib-js/stdlib/pull/14184) _(by stdlib-bot)_
 -   [`29242e0`](https://github.com/stdlib-js/stdlib/commit/29242e0a53ae80a91a7d0b780c9a5e8b59f108cc) - **feat:** add float16 dtype support to `array/empty` [(#14166)](https://github.com/stdlib-js/stdlib/pull/14166) _(by Samarth Kolarkar, Athan Reines, Gururaj Gurram)_
 -   [`28ee55f`](https://github.com/stdlib-js/stdlib/commit/28ee55fd41821fd27d576225220db607053777e5) - **feat:** add float16 dtype support to `array/typed-real` [(#14172)](https://github.com/stdlib-js/stdlib/pull/14172) _(by Gururaj Gurram, Athan Reines)_
 -   [`268c592`](https://github.com/stdlib-js/stdlib/commit/268c592f0a6ce0c0d0f05943c3e287bac555bdeb) - **docs:** update descriptions [(#14157)](https://github.com/stdlib-js/stdlib/pull/14157) _(by stdlib-bot)_
