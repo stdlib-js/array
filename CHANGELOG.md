@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-11)
+## Unreleased (2026-08-12)
 
 <section class="features">
 
 ### Features
 
+-   [`28ee55f`](https://github.com/stdlib-js/stdlib/commit/28ee55fd41821fd27d576225220db607053777e5) - add float16 dtype support to `array/typed-real` [(#14172)](https://github.com/stdlib-js/stdlib/pull/14172)
 -   [`800db1b`](https://github.com/stdlib-js/stdlib/commit/800db1bdcd2d4e3fa76067addd8395f006cea5ad) - add float16 dtype support to `array/min-dtype` [(#14018)](https://github.com/stdlib-js/stdlib/pull/14018)
 -   [`bd39888`](https://github.com/stdlib-js/stdlib/commit/bd3988874fec8e11dcb2ea04afc3e9c2a45207e5) - add float16 dtype support to `array/nans-like` [(#14122)](https://github.com/stdlib-js/stdlib/pull/14122)
 -   [`0078b7e`](https://github.com/stdlib-js/stdlib/commit/0078b7ed60fc8040a9d11a6d1c4d94bc34e4df5a) - add float16 dtype support to `array/ones-like` [(#14124)](https://github.com/stdlib-js/stdlib/pull/14124)
@@ -90,6 +91,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`28ee55f`](https://github.com/stdlib-js/stdlib/commit/28ee55fd41821fd27d576225220db607053777e5) - **feat:** add float16 dtype support to `array/typed-real` [(#14172)](https://github.com/stdlib-js/stdlib/pull/14172) _(by Gururaj Gurram, Athan Reines)_
 -   [`268c592`](https://github.com/stdlib-js/stdlib/commit/268c592f0a6ce0c0d0f05943c3e287bac555bdeb) - **docs:** update descriptions [(#14157)](https://github.com/stdlib-js/stdlib/pull/14157) _(by stdlib-bot)_
 -   [`800db1b`](https://github.com/stdlib-js/stdlib/commit/800db1bdcd2d4e3fa76067addd8395f006cea5ad) - **feat:** add float16 dtype support to `array/min-dtype` [(#14018)](https://github.com/stdlib-js/stdlib/pull/14018) _(by Samarth Kolarkar, Athan Reines, gururaj1512)_
 -   [`bd39888`](https://github.com/stdlib-js/stdlib/commit/bd3988874fec8e11dcb2ea04afc3e9c2a45207e5) - **feat:** add float16 dtype support to `array/nans-like` [(#14122)](https://github.com/stdlib-js/stdlib/pull/14122) _(by Gururaj Gurram, Athan Reines)_
