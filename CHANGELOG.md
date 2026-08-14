@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-12)
+## Unreleased (2026-08-14)
 
 <section class="features">
 
@@ -93,6 +93,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`513eef6`](https://github.com/stdlib-js/stdlib/commit/513eef6f9c2c70bff4dc3c0a719d4c6dbfe2e8a4) - **docs:** add missing space and fix punctuation [(#14226)](https://github.com/stdlib-js/stdlib/pull/14226) _(by Philipp Burckhardt)_
 -   [`d6c5a8b`](https://github.com/stdlib-js/stdlib/commit/d6c5a8b0ab1b4414cbe893963d5a7d7cc02e1282) - **feat:** add float16 dtype support to `array/empty-like` [(#14190)](https://github.com/stdlib-js/stdlib/pull/14190) _(by Samarth Kolarkar)_
 -   [`e4f3ef7`](https://github.com/stdlib-js/stdlib/commit/e4f3ef731e18c919c7d8b0d8c176ae818f4dc3a9) - **docs:** update example [(#14184)](https://github.com/stdlib-js/stdlib/pull/14184) _(by stdlib-bot)_
 -   [`29242e0`](https://github.com/stdlib-js/stdlib/commit/29242e0a53ae80a91a7d0b780c9a5e8b59f108cc) - **feat:** add float16 dtype support to `array/empty` [(#14166)](https://github.com/stdlib-js/stdlib/pull/14166) _(by Samarth Kolarkar, Athan Reines, Gururaj Gurram)_
