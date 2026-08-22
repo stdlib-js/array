@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347)
 -   [`d6c5a8b`](https://github.com/stdlib-js/stdlib/commit/d6c5a8b0ab1b4414cbe893963d5a7d7cc02e1282) - add float16 dtype support to `array/empty-like` [(#14190)](https://github.com/stdlib-js/stdlib/pull/14190)
 -   [`29242e0`](https://github.com/stdlib-js/stdlib/commit/29242e0a53ae80a91a7d0b780c9a5e8b59f108cc) - add float16 dtype support to `array/empty` [(#14166)](https://github.com/stdlib-js/stdlib/pull/14166)
 -   [`28ee55f`](https://github.com/stdlib-js/stdlib/commit/28ee55fd41821fd27d576225220db607053777e5) - add float16 dtype support to `array/typed-real` [(#14172)](https://github.com/stdlib-js/stdlib/pull/14172)
@@ -93,6 +94,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - **feat:** add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347) _(by Samarth Kolarkar)_
 -   [`fdbc822`](https://github.com/stdlib-js/stdlib/commit/fdbc82241f30438af95d53f451c1c4cd4523859f) - **chore:** remove unnecessary `format` calls [(#14520)](https://github.com/stdlib-js/stdlib/pull/14520) _(by Philipp Burckhardt)_
 -   [`72b23ea`](https://github.com/stdlib-js/stdlib/commit/72b23ea594cad1265cd358ade0e366d682f5858d) - **chore:** clean-up [(#14383)](https://github.com/stdlib-js/stdlib/pull/14383) _(by Philipp Burckhardt)_
 -   [`513eef6`](https://github.com/stdlib-js/stdlib/commit/513eef6f9c2c70bff4dc3c0a719d4c6dbfe2e8a4) - **docs:** add missing space and fix punctuation [(#14226)](https://github.com/stdlib-js/stdlib/pull/14226) _(by Philipp Burckhardt)_
