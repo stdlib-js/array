@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-23)
+## Unreleased (2026-08-25)
 
 <section class="features">
 
@@ -95,6 +95,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`ad8d282`](https://github.com/stdlib-js/stdlib/commit/ad8d282c031255d1215c4a2a50d1232e1d7fe0ad) - **test:** add test cases _(by Athan Reines)_
 -   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - **fix:** correctly copying collection values and use correct assertion utility _(by Athan Reines)_
 -   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - **feat:** add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347) _(by Samarth Kolarkar)_
 -   [`fdbc822`](https://github.com/stdlib-js/stdlib/commit/fdbc82241f30438af95d53f451c1c4cd4523859f) - **chore:** remove unnecessary `format` calls [(#14520)](https://github.com/stdlib-js/stdlib/pull/14520) _(by Philipp Burckhardt)_
