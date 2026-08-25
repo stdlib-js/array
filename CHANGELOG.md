@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188)
 -   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347)
 -   [`d6c5a8b`](https://github.com/stdlib-js/stdlib/commit/d6c5a8b0ab1b4414cbe893963d5a7d7cc02e1282) - add float16 dtype support to `array/empty-like` [(#14190)](https://github.com/stdlib-js/stdlib/pull/14190)
 -   [`29242e0`](https://github.com/stdlib-js/stdlib/commit/29242e0a53ae80a91a7d0b780c9a5e8b59f108cc) - add float16 dtype support to `array/empty` [(#14166)](https://github.com/stdlib-js/stdlib/pull/14166)
@@ -95,6 +96,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - **feat:** add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188) _(by Nakul Krishnakumar, Athan Reines)_
 -   [`ad8d282`](https://github.com/stdlib-js/stdlib/commit/ad8d282c031255d1215c4a2a50d1232e1d7fe0ad) - **test:** add test cases _(by Athan Reines)_
 -   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - **fix:** correctly copying collection values and use correct assertion utility _(by Athan Reines)_
 -   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - **feat:** add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347) _(by Samarth Kolarkar)_
@@ -200,11 +202,12 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Divit Jain
 -   Gururaj Gurram
+-   Nakul Krishnakumar
 -   Philipp Burckhardt
 -   Samarth Kolarkar
 -   titanniya542-spec
