@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-25)
+## Unreleased (2026-08-27)
 
 <section class="features">
 
@@ -96,6 +96,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`607bbc6`](https://github.com/stdlib-js/stdlib/commit/607bbc6e104c273e5b26cabfb21a8c06f3d5d375) - **build:** avoid false positives in ESLint rule `jsdoc-doctest-decimal-point` [(#14644)](https://github.com/stdlib-js/stdlib/pull/14644) _(by Philipp Burckhardt, Athan Reines)_
 -   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - **feat:** add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188) _(by Nakul Krishnakumar, Athan Reines)_
 -   [`ad8d282`](https://github.com/stdlib-js/stdlib/commit/ad8d282c031255d1215c4a2a50d1232e1d7fe0ad) - **test:** add test cases _(by Athan Reines)_
 -   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - **fix:** correctly copying collection values and use correct assertion utility _(by Athan Reines)_
