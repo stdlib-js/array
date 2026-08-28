@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603)
 -   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188)
 -   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347)
 -   [`d6c5a8b`](https://github.com/stdlib-js/stdlib/commit/d6c5a8b0ab1b4414cbe893963d5a7d7cc02e1282) - add float16 dtype support to `array/empty-like` [(#14190)](https://github.com/stdlib-js/stdlib/pull/14190)
@@ -96,6 +97,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - **feat:** add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603) _(by Samarth Kolarkar)_
 -   [`a1d379b`](https://github.com/stdlib-js/stdlib/commit/a1d379b12e1bf2bc546f670ab522cacf92fc1682) - **docs:** update related packages sections [(#14735)](https://github.com/stdlib-js/stdlib/pull/14735) _(by stdlib-bot)_
 -   [`607bbc6`](https://github.com/stdlib-js/stdlib/commit/607bbc6e104c273e5b26cabfb21a8c06f3d5d375) - **build:** avoid false positives in ESLint rule `jsdoc-doctest-decimal-point` [(#14644)](https://github.com/stdlib-js/stdlib/pull/14644) _(by Philipp Burckhardt, Athan Reines)_
 -   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - **feat:** add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188) _(by Nakul Krishnakumar, Athan Reines)_
