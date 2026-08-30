@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`acbf27e`](https://github.com/stdlib-js/stdlib/commit/acbf27eda949e3828ade6fd30bcec8a27e5bdd15) - add float16 dtype support to `array/from-scalar` [(#14621)](https://github.com/stdlib-js/stdlib/pull/14621)
 -   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603)
 -   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188)
 -   [`10fddbc`](https://github.com/stdlib-js/stdlib/commit/10fddbcafd82c5f87803171010b8b994b059c448) - add float16 dtype support to `array/filled-by` [(#14347)](https://github.com/stdlib-js/stdlib/pull/14347)
@@ -97,6 +98,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`acbf27e`](https://github.com/stdlib-js/stdlib/commit/acbf27eda949e3828ade6fd30bcec8a27e5bdd15) - **feat:** add float16 dtype support to `array/from-scalar` [(#14621)](https://github.com/stdlib-js/stdlib/pull/14621) _(by Samarth Kolarkar, Gururaj Gurram)_
 -   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
 -   [`2b093f3`](https://github.com/stdlib-js/stdlib/commit/2b093f3f407b9ae769f81c7e42f246567c1d3cb4) - **docs:** update related packages sections [(#14762)](https://github.com/stdlib-js/stdlib/pull/14762) _(by stdlib-bot)_
 -   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - **feat:** add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603) _(by Samarth Kolarkar)_
