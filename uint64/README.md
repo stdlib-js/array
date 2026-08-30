@@ -494,6 +494,26 @@ logEach( '%s', out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/buffer`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">ArrayBuffer.</span>
+-   <span class="package-name">[`@stdlib/array/bool`][@stdlib/array/bool]</span><span class="delimiter">: </span><span class="description">BooleanArray.</span>
+-   <span class="package-name">[`@stdlib/array/float16`][@stdlib/array/float16]</span><span class="delimiter">: </span><span class="description">Float16Array.</span>
+-   <span class="package-name">[`@stdlib/array/float32`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">Float32Array.</span>
+-   <span class="package-name">[`@stdlib/array/float64`][@stdlib/array/float64]</span><span class="delimiter">: </span><span class="description">Float64Array.</span>
+-   <span class="package-name">[`@stdlib/array/int64`][@stdlib/array/int64]</span><span class="delimiter">: </span><span class="description">Int64Array.</span>
+-   <span class="package-name">[`@stdlib/array/int32`][@stdlib/array/int32]</span><span class="delimiter">: </span><span class="description">Int32Array.</span>
+-   <span class="package-name">[`@stdlib/array/int16`][@stdlib/array/int16]</span><span class="delimiter">: </span><span class="description">Int16Array.</span>
+-   <span class="package-name">[`@stdlib/array/int8`][@stdlib/array/int8]</span><span class="delimiter">: </span><span class="description">Int8Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint16`][@stdlib/array/uint16]</span><span class="delimiter">: </span><span class="description">Uint16Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint32`][@stdlib/array/uint32]</span><span class="delimiter">: </span><span class="description">Uint32Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint8`][@stdlib/array/uint8]</span><span class="delimiter">: </span><span class="description">Uint8Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint8c`][@stdlib/array/uint8c]</span><span class="delimiter">: </span><span class="description">Uint8ClampedArray.</span>
+-   <span class="package-name">[`@stdlib/array/complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
+-   <span class="package-name">[`@stdlib/array/complex64`][@stdlib/array/complex64]</span><span class="delimiter">: </span><span class="description">Complex64Array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -513,6 +533,38 @@ logEach( '%s', out );
 [@stdlib/number/uint64/ctor]: https://github.com/stdlib-js/number-uint64-ctor
 
 [@stdlib/bigint/ctor]: https://github.com/stdlib-js/bigint-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/array/bool]: https://github.com/stdlib-js/array/tree/main/bool
+
+[@stdlib/array/float16]: https://github.com/stdlib-js/array/tree/main/float16
+
+[@stdlib/array/float32]: https://github.com/stdlib-js/array/tree/main/float32
+
+[@stdlib/array/float64]: https://github.com/stdlib-js/array/tree/main/float64
+
+[@stdlib/array/int64]: https://github.com/stdlib-js/array/tree/main/int64
+
+[@stdlib/array/int32]: https://github.com/stdlib-js/array/tree/main/int32
+
+[@stdlib/array/int16]: https://github.com/stdlib-js/array/tree/main/int16
+
+[@stdlib/array/int8]: https://github.com/stdlib-js/array/tree/main/int8
+
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array/tree/main/uint16
+
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array/tree/main/uint32
+
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array/tree/main/uint8
+
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array/tree/main/uint8c
+
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array/tree/main/complex128
+
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array/tree/main/complex64
+
+<!-- </related-links> -->
 
 </section>
 

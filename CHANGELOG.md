@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-29)
+## Unreleased (2026-08-30)
 
 <section class="features">
 
@@ -97,6 +97,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
 -   [`2b093f3`](https://github.com/stdlib-js/stdlib/commit/2b093f3f407b9ae769f81c7e42f246567c1d3cb4) - **docs:** update related packages sections [(#14762)](https://github.com/stdlib-js/stdlib/pull/14762) _(by stdlib-bot)_
 -   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - **feat:** add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603) _(by Samarth Kolarkar)_
 -   [`a1d379b`](https://github.com/stdlib-js/stdlib/commit/a1d379b12e1bf2bc546f670ab522cacf92fc1682) - **docs:** update related packages sections [(#14735)](https://github.com/stdlib-js/stdlib/pull/14735) _(by stdlib-bot)_
