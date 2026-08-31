@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-30)
+## Unreleased (2026-08-31)
 
 <section class="features">
 
@@ -98,6 +98,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`768c964`](https://github.com/stdlib-js/stdlib/commit/768c96486fa432d831248d04e342bce1dfc52820) - **docs:** update related packages sections [(#14834)](https://github.com/stdlib-js/stdlib/pull/14834) _(by stdlib-bot)_
 -   [`acbf27e`](https://github.com/stdlib-js/stdlib/commit/acbf27eda949e3828ade6fd30bcec8a27e5bdd15) - **feat:** add float16 dtype support to `array/from-scalar` [(#14621)](https://github.com/stdlib-js/stdlib/pull/14621) _(by Samarth Kolarkar, Gururaj Gurram)_
 -   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
 -   [`2b093f3`](https://github.com/stdlib-js/stdlib/commit/2b093f3f407b9ae769f81c7e42f246567c1d3cb4) - **docs:** update related packages sections [(#14762)](https://github.com/stdlib-js/stdlib/pull/14762) _(by stdlib-bot)_
