@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`688eb54`](https://github.com/stdlib-js/stdlib/commit/688eb549a9c06731795328d477e2a31577f7f737) - add float16 dtype support to `array/to-fancy` [(#14858)](https://github.com/stdlib-js/stdlib/pull/14858)
 -   [`8365440`](https://github.com/stdlib-js/stdlib/commit/8365440ed4124fd16ba399f15eee6179ac6ae9a9) - add float16 dtype support to `array/take` [(#14857)](https://github.com/stdlib-js/stdlib/pull/14857)
 -   [`b853474`](https://github.com/stdlib-js/stdlib/commit/b853474ea8ebd410f2e4f40dfe40af14803f65bc) - add float16 dtype support to `array/pool` [(#14855)](https://github.com/stdlib-js/stdlib/pull/14855)
 -   [`acbf27e`](https://github.com/stdlib-js/stdlib/commit/acbf27eda949e3828ade6fd30bcec8a27e5bdd15) - add float16 dtype support to `array/from-scalar` [(#14621)](https://github.com/stdlib-js/stdlib/pull/14621)
@@ -100,6 +101,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`688eb54`](https://github.com/stdlib-js/stdlib/commit/688eb549a9c06731795328d477e2a31577f7f737) - **feat:** add float16 dtype support to `array/to-fancy` [(#14858)](https://github.com/stdlib-js/stdlib/pull/14858) _(by Gururaj Gurram)_
 -   [`8365440`](https://github.com/stdlib-js/stdlib/commit/8365440ed4124fd16ba399f15eee6179ac6ae9a9) - **feat:** add float16 dtype support to `array/take` [(#14857)](https://github.com/stdlib-js/stdlib/pull/14857) _(by Gururaj Gurram)_
 -   [`b853474`](https://github.com/stdlib-js/stdlib/commit/b853474ea8ebd410f2e4f40dfe40af14803f65bc) - **feat:** add float16 dtype support to `array/pool` [(#14855)](https://github.com/stdlib-js/stdlib/pull/14855) _(by Gururaj Gurram)_
 -   [`768c964`](https://github.com/stdlib-js/stdlib/commit/768c96486fa432d831248d04e342bce1dfc52820) - **docs:** update related packages sections [(#14834)](https://github.com/stdlib-js/stdlib/pull/14834) _(by stdlib-bot)_
