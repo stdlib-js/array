@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-31)
+## Unreleased (2026-09-01)
 
 <section class="features">
 
 ### Features
 
+-   [`b853474`](https://github.com/stdlib-js/stdlib/commit/b853474ea8ebd410f2e4f40dfe40af14803f65bc) - add float16 dtype support to `array/pool` [(#14855)](https://github.com/stdlib-js/stdlib/pull/14855)
 -   [`acbf27e`](https://github.com/stdlib-js/stdlib/commit/acbf27eda949e3828ade6fd30bcec8a27e5bdd15) - add float16 dtype support to `array/from-scalar` [(#14621)](https://github.com/stdlib-js/stdlib/pull/14621)
 -   [`2a82abb`](https://github.com/stdlib-js/stdlib/commit/2a82abbf6aa34b8e545993b750d3eccf9b4cdd15) - add float16 dtype support to `array/linspace` [(#14603)](https://github.com/stdlib-js/stdlib/pull/14603)
 -   [`30dd612`](https://github.com/stdlib-js/stdlib/commit/30dd6120c99b444564ff3cfdb370b327765d1205) - add `array/int64` [(#14188)](https://github.com/stdlib-js/stdlib/pull/14188)
@@ -98,6 +99,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b853474`](https://github.com/stdlib-js/stdlib/commit/b853474ea8ebd410f2e4f40dfe40af14803f65bc) - **feat:** add float16 dtype support to `array/pool` [(#14855)](https://github.com/stdlib-js/stdlib/pull/14855) _(by Gururaj Gurram)_
 -   [`768c964`](https://github.com/stdlib-js/stdlib/commit/768c96486fa432d831248d04e342bce1dfc52820) - **docs:** update related packages sections [(#14834)](https://github.com/stdlib-js/stdlib/pull/14834) _(by stdlib-bot)_
 -   [`acbf27e`](https://github.com/stdlib-js/stdlib/commit/acbf27eda949e3828ade6fd30bcec8a27e5bdd15) - **feat:** add float16 dtype support to `array/from-scalar` [(#14621)](https://github.com/stdlib-js/stdlib/pull/14621) _(by Samarth Kolarkar, Gururaj Gurram)_
 -   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
