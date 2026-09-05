@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-04)
+## Unreleased (2026-09-05)
 
 <section class="features">
 
@@ -102,6 +102,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`2aec233`](https://github.com/stdlib-js/stdlib/commit/2aec2333cf1589f4eb5c980ecca74feba93c97de) - **docs:** update example [(#14992)](https://github.com/stdlib-js/stdlib/pull/14992) _(by stdlib-bot)_
 -   [`30e3116`](https://github.com/stdlib-js/stdlib/commit/30e31169773fecb73cef596931064d92513d993c) - **chore:** clean-up [(#14969)](https://github.com/stdlib-js/stdlib/pull/14969) _(by Philipp Burckhardt)_
 -   [`1038f59`](https://github.com/stdlib-js/stdlib/commit/1038f593e4cd4b7167f99bc8aee9e5106416b03a) - **feat:** add float16 dtype support to `array/base/*` [(#14896)](https://github.com/stdlib-js/stdlib/pull/14896) _(by Gururaj Gurram, Athan Reines)_
 -   [`688eb54`](https://github.com/stdlib-js/stdlib/commit/688eb549a9c06731795328d477e2a31577f7f737) - **feat:** add float16 dtype support to `array/to-fancy` [(#14858)](https://github.com/stdlib-js/stdlib/pull/14858) _(by Gururaj Gurram)_
