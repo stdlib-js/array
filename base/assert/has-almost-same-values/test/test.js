@@ -23,9 +23,11 @@
 var tape = require( 'tape' );
 var FLOAT64_EPS = require( '@stdlib/constants/float64/eps' );
 var FLOAT32_EPS = require( '@stdlib/constants/float32/eps' );
+var FLOAT16_EPS = require( '@stdlib/constants/float16/eps' );
 var AccessorArray = require( './../../../../base/accessor' );
 var Float64Array = require( './../../../../float64' );
 var Float32Array = require( './../../../../float32' );
+var Float16Array = require( './../../../../float16' );
 var Complex64Array = require( './../../../../complex64' );
 var Complex128Array = require( './../../../../complex128' );
 var BooleanArray = require( './../../../../bool' );
@@ -94,6 +96,15 @@ tape( 'if provided empty collections, the function returns `true` (real typed ar
 	out = hasAlmostSameValues( x, y, 0 );
 	t.strictEqual( out, true, 'returns expected value' );
 
+	x = new Float16Array( [] );
+	out = hasAlmostSameValues( x, x, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float16Array( [] );
+	y = new Float16Array( [] );
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
 	t.end();
 });
 
@@ -108,6 +119,16 @@ tape( 'if provided empty collections, the function returns `true` (mixed)', func
 	t.strictEqual( out, true, 'returns expected value' );
 
 	x = new Float64Array( [] );
+	y = [];
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [];
+	y = new Float16Array( [] );
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float16Array( [] );
 	y = [];
 	out = hasAlmostSameValues( x, y, 0 );
 	t.strictEqual( out, true, 'returns expected value' );
@@ -226,6 +247,20 @@ tape( 'the function returns `true` if both arrays have respective elements which
 	out = hasAlmostSameValues( x, y, 1 );
 	t.strictEqual( out, true, 'returns expected value' );
 
+	x = new Float16Array( [ 0.0, 2.0, 0.0 ] );
+	out = hasAlmostSameValues( x, x, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float16Array( [ 0.0, 2.0, NaN ] );
+	y = new Float16Array( [ 0.0, 2.0, NaN ] );
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float16Array( [ 0.0, 2.0, 1.0+FLOAT16_EPS ] );
+	y = new Float16Array( [ 0.0, 2.0, 1.0 ] );
+	out = hasAlmostSameValues( x, y, 1 );
+	t.strictEqual( out, true, 'returns expected value' );
+
 	t.end();
 });
 
@@ -252,6 +287,21 @@ tape( 'the function returns `true` if both arrays have respective elements which
 
 	x = new Float64Array( [ 0.0, 2.0, 0.0 ] );
 	y = new Float32Array( [ 0.0, 2.0, 0.0 ] );
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float16Array( [ 0.0, 2.0, 0.0 ] );
+	y = [ 0.0, 2.0, 0.0 ];
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [ 0.0, 2.0, 0.0 ];
+	y = new Float16Array( [ 0.0, 2.0, 0.0 ] );
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float16Array( [ 0.0, 2.0, 0.0 ] );
+	y = new Float64Array( [ 0.0, 2.0, 0.0 ] );
 	out = hasAlmostSameValues( x, y, 0 );
 	t.strictEqual( out, true, 'returns expected value' );
 
@@ -435,6 +485,16 @@ tape( 'the function returns `false` if both arrays do not have respective elemen
 	out = hasAlmostSameValues( x, y, 1 );
 	t.strictEqual( out, false, 'returns expected value' );
 
+	x = new Float16Array( [ 0.0, 0.0, -0.0 ] );
+	y = new Float16Array( [ 0.0, 0.0, 0.0 ] );
+	out = hasAlmostSameValues( x, y, 0 );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float16Array( [ 0.0, 0.0, 1.0+FLOAT16_EPS+FLOAT16_EPS ] );
+	y = new Float16Array( [ 0.0, 0.0, 1.0 ] );
+	out = hasAlmostSameValues( x, y, 1 );
+	t.strictEqual( out, false, 'returns expected value' );
+
 	t.end();
 });
 
@@ -449,6 +509,16 @@ tape( 'the function returns `false` if both arrays do not have respective elemen
 	t.strictEqual( out, false, 'returns expected value' );
 
 	x = new Float64Array( [ 0.0, 0.0, 1.0 ] );
+	y = [ 0.0, 0.0, 0.0 ];
+	out = hasAlmostSameValues( x, y, 1 );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = [ 0.0, 0.0, 0.0 ];
+	y = new Float16Array( [ 0.0, 0.0, 1.0 ] );
+	out = hasAlmostSameValues( x, y, 1 );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float16Array( [ 0.0, 0.0, 1.0 ] );
 	y = [ 0.0, 0.0, 0.0 ];
 	out = hasAlmostSameValues( x, y, 1 );
 	t.strictEqual( out, false, 'returns expected value' );
