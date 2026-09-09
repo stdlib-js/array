@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-07)
+## Unreleased (2026-09-09)
 
 <section class="features">
 
@@ -104,6 +104,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`40e70bd`](https://github.com/stdlib-js/stdlib/commit/40e70bded21ba149de91c11f258db705af69cc23) - **docs:** update related packages sections [(#15115)](https://github.com/stdlib-js/stdlib/pull/15115) _(by stdlib-bot)_
 -   [`544991c`](https://github.com/stdlib-js/stdlib/commit/544991cfb16384a6b678e0dcd6b91ac6d93cdf2b) - **docs:** update related packages sections [(#15057)](https://github.com/stdlib-js/stdlib/pull/15057) _(by stdlib-bot)_
 -   [`7bb89c2`](https://github.com/stdlib-js/stdlib/commit/7bb89c2db43b096eadb6c6405174569d843582f1) - **feat:** add float16 dtype support to `array/base/assert/has-almost-same-values` [(#15028)](https://github.com/stdlib-js/stdlib/pull/15028) _(by Gururaj Gurram)_
 -   [`9dcb954`](https://github.com/stdlib-js/stdlib/commit/9dcb95400559523692b16d156e31df5a72308105) - **feat:** add float16 dtype support to `array/base/assert/has-almost-equal-values` [(#15027)](https://github.com/stdlib-js/stdlib/pull/15027) _(by Gururaj Gurram)_
