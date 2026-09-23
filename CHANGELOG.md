@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-18)
+## Unreleased (2026-09-23)
 
 <section class="features">
 
 ### Features
 
+-   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453)
 -   [`7bb89c2`](https://github.com/stdlib-js/stdlib/commit/7bb89c2db43b096eadb6c6405174569d843582f1) - add float16 dtype support to `array/base/assert/has-almost-same-values` [(#15028)](https://github.com/stdlib-js/stdlib/pull/15028)
 -   [`9dcb954`](https://github.com/stdlib-js/stdlib/commit/9dcb95400559523692b16d156e31df5a72308105) - add float16 dtype support to `array/base/assert/has-almost-equal-values` [(#15027)](https://github.com/stdlib-js/stdlib/pull/15027)
 -   [`1038f59`](https://github.com/stdlib-js/stdlib/commit/1038f593e4cd4b7167f99bc8aee9e5106416b03a) - add float16 dtype support to `array/base/*` [(#14896)](https://github.com/stdlib-js/stdlib/pull/14896)
@@ -104,6 +105,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - **feat:** add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453) _(by Gururaj Gurram)_
 -   [`5a4f246`](https://github.com/stdlib-js/stdlib/commit/5a4f246b10955fa9b744fcb099dfdf1192675a90) - **docs:** update related packages sections [(#15311)](https://github.com/stdlib-js/stdlib/pull/15311) _(by stdlib-bot)_
 -   [`40e70bd`](https://github.com/stdlib-js/stdlib/commit/40e70bded21ba149de91c11f258db705af69cc23) - **docs:** update related packages sections [(#15115)](https://github.com/stdlib-js/stdlib/pull/15115) _(by stdlib-bot)_
 -   [`544991c`](https://github.com/stdlib-js/stdlib/commit/544991cfb16384a6b678e0dcd6b91ac6d93cdf2b) - **docs:** update related packages sections [(#15057)](https://github.com/stdlib-js/stdlib/pull/15057) _(by stdlib-bot)_
