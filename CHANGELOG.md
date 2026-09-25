@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-23)
+## Unreleased (2026-09-25)
 
 <section class="features">
 
@@ -91,9 +91,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#12890](https://github.com/stdlib-js/stdlib/issues/12890)
+[#12890](https://github.com/stdlib-js/stdlib/issues/12890), [#15176](https://github.com/stdlib-js/stdlib/issues/15176)
 
 </section>
 
@@ -105,6 +105,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b3d5c20`](https://github.com/stdlib-js/stdlib/commit/b3d5c20526a6d64f3c01599096639ef7b7733769) - **chore:** fix JavaScript lint errors [(#15177)](https://github.com/stdlib-js/stdlib/pull/15177) _(by Aditya Pratap Singh)_
 -   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - **feat:** add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453) _(by Gururaj Gurram)_
 -   [`5a4f246`](https://github.com/stdlib-js/stdlib/commit/5a4f246b10955fa9b744fcb099dfdf1192675a90) - **docs:** update related packages sections [(#15311)](https://github.com/stdlib-js/stdlib/pull/15311) _(by stdlib-bot)_
 -   [`40e70bd`](https://github.com/stdlib-js/stdlib/commit/40e70bded21ba149de91c11f258db705af69cc23) - **docs:** update related packages sections [(#15115)](https://github.com/stdlib-js/stdlib/pull/15115) _(by stdlib-bot)_
@@ -230,8 +231,9 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
+-   Aditya Pratap Singh
 -   Athan Reines
 -   Divit Jain
 -   Gururaj Gurram
