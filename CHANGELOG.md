@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-25)
+## Unreleased (2026-09-26)
 
 <section class="features">
 
@@ -105,6 +105,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`4c05b09`](https://github.com/stdlib-js/stdlib/commit/4c05b0952098ded5b6c14f41bfb0c483e87cf31f) - **docs:** update related packages sections [(#15549)](https://github.com/stdlib-js/stdlib/pull/15549) _(by stdlib-bot)_
 -   [`b3d5c20`](https://github.com/stdlib-js/stdlib/commit/b3d5c20526a6d64f3c01599096639ef7b7733769) - **chore:** fix JavaScript lint errors [(#15177)](https://github.com/stdlib-js/stdlib/pull/15177) _(by Aditya Pratap Singh)_
 -   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - **feat:** add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453) _(by Gururaj Gurram)_
 -   [`5a4f246`](https://github.com/stdlib-js/stdlib/commit/5a4f246b10955fa9b744fcb099dfdf1192675a90) - **docs:** update related packages sections [(#15311)](https://github.com/stdlib-js/stdlib/pull/15311) _(by stdlib-bot)_
