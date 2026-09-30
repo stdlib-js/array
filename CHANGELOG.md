@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-26)
+## Unreleased (2026-09-30)
 
 <section class="features">
 
 ### Features
 
+-   [`5945917`](https://github.com/stdlib-js/stdlib/commit/59459177f3a0662a39714b8b89be4f6aefd2eed0) - add `uint64` and `int64` support for `array/base/assert/has-equal-values` [(#14238)](https://github.com/stdlib-js/stdlib/pull/14238)
 -   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453)
 -   [`7bb89c2`](https://github.com/stdlib-js/stdlib/commit/7bb89c2db43b096eadb6c6405174569d843582f1) - add float16 dtype support to `array/base/assert/has-almost-same-values` [(#15028)](https://github.com/stdlib-js/stdlib/pull/15028)
 -   [`9dcb954`](https://github.com/stdlib-js/stdlib/commit/9dcb95400559523692b16d156e31df5a72308105) - add float16 dtype support to `array/base/assert/has-almost-equal-values` [(#15027)](https://github.com/stdlib-js/stdlib/pull/15027)
@@ -105,6 +106,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`5945917`](https://github.com/stdlib-js/stdlib/commit/59459177f3a0662a39714b8b89be4f6aefd2eed0) - **feat:** add `uint64` and `int64` support for `array/base/assert/has-equal-values` [(#14238)](https://github.com/stdlib-js/stdlib/pull/14238) _(by Divit Jain, Athan Reines)_
 -   [`4c05b09`](https://github.com/stdlib-js/stdlib/commit/4c05b0952098ded5b6c14f41bfb0c483e87cf31f) - **docs:** update related packages sections [(#15549)](https://github.com/stdlib-js/stdlib/pull/15549) _(by stdlib-bot)_
 -   [`b3d5c20`](https://github.com/stdlib-js/stdlib/commit/b3d5c20526a6d64f3c01599096639ef7b7733769) - **chore:** fix JavaScript lint errors [(#15177)](https://github.com/stdlib-js/stdlib/pull/15177) _(by Aditya Pratap Singh)_
 -   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - **feat:** add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453) _(by Gururaj Gurram)_
