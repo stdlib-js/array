@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-11)
+## Unreleased (2026-10-12)
 
 <section class="features">
 
@@ -106,6 +106,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
 -   [`6744a7e`](https://github.com/stdlib-js/stdlib/commit/6744a7e926973c9ea1bb932793fca76064a4f0fa) - **docs:** update related packages sections [(#16023)](https://github.com/stdlib-js/stdlib/pull/16023) _(by stdlib-bot)_
 -   [`5945917`](https://github.com/stdlib-js/stdlib/commit/59459177f3a0662a39714b8b89be4f6aefd2eed0) - **feat:** add `uint64` and `int64` support for `array/base/assert/has-equal-values` [(#14238)](https://github.com/stdlib-js/stdlib/pull/14238) _(by Divit Jain, Athan Reines)_
 -   [`4c05b09`](https://github.com/stdlib-js/stdlib/commit/4c05b0952098ded5b6c14f41bfb0c483e87cf31f) - **docs:** update related packages sections [(#15549)](https://github.com/stdlib-js/stdlib/pull/15549) _(by stdlib-bot)_
