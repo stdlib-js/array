@@ -1,0 +1,1191 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var tape = require( 'tape' );
+var AccessorArray = require( './../../../../base/accessor' );
+var Float64Array = require( './../../../../float64' );
+var Complex64Array = require( './../../../../complex64' );
+var Complex128Array = require( './../../../../complex128' );
+var Float32Array = require( './../../../../float32' );
+var Int32Array = require( './../../../../int32' );
+var Uint32Array = require( './../../../../uint32' );
+var Int8Array = require( './../../../../int8' );
+var Uint8Array = require( './../../../../uint8' );
+var Uint64Array = require( './../../../../uint64' );
+var Int64Array = require( './../../../../int64' );
+var Uint64 = require( '@stdlib/number/uint64/ctor' );
+var Int64 = require( '@stdlib/number/int64/ctor' );
+var BooleanArray = require( './../../../../bool' );
+var MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
+var MIN_SAFE_INTEGER = require( '@stdlib/constants/float64/min-safe-integer' );
+var UINT32_MAX = require( '@stdlib/constants/uint32/max' );
+var INT32_MAX = require( '@stdlib/constants/int32/max' );
+var INT32_MIN = require( '@stdlib/constants/int32/min' );
+var UINT8_MAX = require( '@stdlib/constants/uint8/max' );
+var INT8_MAX = require( '@stdlib/constants/int8/max' );
+var INT8_MIN = require( '@stdlib/constants/int8/min' );
+var hasEqualValues = require( './../lib' );
+
+
+// VARIABLES //
+
+var TWO_32 = 0x100000000; // 2^32
+var TWO_53 = 0x20000000000000; // 2^53
+var TWO_63 = 0x8000000000000000; // 2^63
+var TWO_64 = 0x10000000000000000; // 2^64
+
+
+// TESTS //
+
+tape( 'main export is a function', function test( t ) {
+	t.ok( true, __filename );
+	t.strictEqual( typeof hasEqualValues, 'function', 'main export is a function' );
+	t.end();
+});
+
+tape( 'if provided collections of unequal length, the function returns `false`', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [];
+	y = [ 1, 2, 3 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = [ 1, 2 ];
+	y = [ 1, 2, 3 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float64Array( [ 1 ] );
+	y = [];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (generic)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [];
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [];
+	y = [];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (real typed array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Float64Array( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float64Array( [] );
+	y = new Float64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (mixed)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [];
+	y = new Float64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float64Array( [] );
+	y = [];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new BooleanArray( [] );
+	y = [];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [];
+	y = new BooleanArray( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [] );
+	y = [];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [];
+	y = new Uint64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [] );
+	y = new Float64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [] );
+	y = new Int64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [] );
+	y = new Uint32Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int32Array( [] );
+	y = new Int64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [] );
+	y = new Int32Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint32Array( [] );
+	y = new Int64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (boolean array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new BooleanArray( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new BooleanArray( [] );
+	y = new BooleanArray( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (complex typed array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Complex64Array( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Complex64Array( [] );
+	y = new Complex64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Complex128Array( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Complex128Array( [] );
+	y = new Complex128Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (64-bit unsigned integer array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Uint64Array( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [] );
+	y = new Uint64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (64-bit signed integer array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Int64Array( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [] );
+	y = new Int64Array( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'if provided empty collections, the function returns `true` (accessor)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new AccessorArray( [] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new AccessorArray( [] );
+	y = new AccessorArray( [] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (generic)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [ 1, 0, 3 ];
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [ 1, 0, 3 ];
+	y = [ 1, 0, 3 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (real typed array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Float64Array( [ 0.0, 2.0, 0.0 ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float64Array( [ 0.0, 2.0, 0.0 ] );
+	y = new Float64Array( [ 0.0, 2.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (mixed)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [ 0.0, 2.0, 0.0 ];
+	y = new Float64Array( [ 0.0, 2.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Float64Array( [ 0.0, 2.0, 0.0 ] );
+	y = [ 0.0, 2.0, 0.0 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new BooleanArray( [ true, false, true ] );
+	y = [ true, false, true ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [ true, false, true ];
+	y = new BooleanArray( [ true, false, true ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [ 0, 2, 0 ] );
+	y = [ 0, 2, 0 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [ 0, 2, 0 ];
+	y = new Uint64Array( [ 0, 2, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ 0, -2, 0 ] );
+	y = [ 0, -2, 0 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = [ 0, -2, 0 ];
+	y = new Int64Array( [ 0, -2, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (boolean array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new BooleanArray( [ true, false, true ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new BooleanArray( [ true, false, true ] );
+	y = new BooleanArray( [ true, false, true ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (complex typed array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Complex64Array( [ 0.0, 2.0, 0.0, 0.0 ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Complex64Array( [ 0.0, 2.0, 0.0, 0.0 ] );
+	y = new Complex64Array( [ 0.0, 2.0, 0.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Complex128Array( [ 0.0, 0.0, 3.0, 0.0 ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Complex128Array( [ 0.0, 0.0, 3.0, 0.0 ] );
+	y = new Complex128Array( [ 0.0, 0.0, 3.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (64-bit unsigned integer array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Uint64Array( [ 0, 0, 3, 0 ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [ 0, 0, 3, 0 ] );
+	y = new Uint64Array( [ 0, 0, 3, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Values spanning both words (2^32-1, 2^32, and 2^32+1):
+	x = new Uint64Array( [ UINT32_MAX, TWO_32, TWO_32+1 ] );
+	y = new Uint64Array([
+		Uint64.of( 0x00000000, 0xFFFFFFFF ),
+		Uint64.of( 0x00000001, 0x00000000 ),
+		Uint64.of( 0x00000001, 0x00000001 )
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Safe and unsafe integers (2^53-1, 2^53, 2^53+1, and 2^64-1):
+	x = new Uint64Array([
+		MAX_SAFE_INTEGER,
+		TWO_53,
+		Uint64.of( 0x00200000, 0x00000001 ),
+		Uint64.of( 0xFFFFFFFF, 0xFFFFFFFF )
+	]);
+	y = new Uint64Array([
+		Uint64.of( 0x001FFFFF, 0xFFFFFFFF ),
+		Uint64.of( 0x00200000, 0x00000000 ),
+		Uint64.of( 0x00200000, 0x00000001 ),
+		Uint64.of( 0xFFFFFFFF, 0xFFFFFFFF )
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (64-bit signed integer array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Int64Array( [ 0, -1, 3, 0 ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ 0, -1, 3, 0 ] );
+	y = new Int64Array( [ 0, -1, 3, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Negative values in two's complement (-1, -2^31, -2^32, and -2^32-1):
+	x = new Int64Array( [ -1, INT32_MIN, -TWO_32, -TWO_32-1 ] );
+	y = new Int64Array([
+		Int64.of( 0xFFFFFFFF, 0xFFFFFFFF ),
+		Int64.of( 0xFFFFFFFF, 0x80000000 ),
+		Int64.of( 0xFFFFFFFF, 0x00000000 ),
+		Int64.of( 0xFFFFFFFE, 0xFFFFFFFF )
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Safe and unsafe integers (-(2^53-1), -2^53, -2^53-1, 2^53-1, 2^53, 2^53+1, -2^63, and 2^63-1):
+	x = new Int64Array([
+		MIN_SAFE_INTEGER,
+		-TWO_53,
+		Int64.of( 0xFFDFFFFF, 0xFFFFFFFF ),
+		MAX_SAFE_INTEGER,
+		TWO_53,
+		Int64.of( 0x00200000, 0x00000001 ),
+		-TWO_63,
+		Int64.of( 0x7FFFFFFF, 0xFFFFFFFF )
+	]);
+	y = new Int64Array([
+		Int64.of( 0xFFE00000, 0x00000001 ),
+		Int64.of( 0xFFE00000, 0x00000000 ),
+		Int64.of( 0xFFDFFFFF, 0xFFFFFFFF ),
+		Int64.of( 0x001FFFFF, 0xFFFFFFFF ),
+		Int64.of( 0x00200000, 0x00000000 ),
+		Int64.of( 0x00200000, 0x00000001 ),
+		Int64.of( 0x80000000, 0x00000000 ),
+		Int64.of( 0x7FFFFFFF, 0xFFFFFFFF )
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (mixed 64-bit integer arrays)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	// Signed and unsigned 64-bit integer arrays:
+	x = new Uint64Array( [ 0, 1, 2, 3 ] );
+	y = new Int64Array( [ 0, 1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Nonnegative values having the sign bit unset (2^53+1 and 2^63-1):
+	x = new Uint64Array([
+		Uint64.of( 0x00200000, 0x00000001 ),
+		Uint64.of( 0x7FFFFFFF, 0xFFFFFFFF )
+	]);
+	y = new Int64Array([
+		Int64.of( 0x00200000, 0x00000001 ),
+		Int64.of( 0x7FFFFFFF, 0xFFFFFFFF )
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Safe integers (2^32-1, 2^32, and 2^53-1):
+	x = new Uint64Array( [ 0, UINT32_MAX, TWO_32, MAX_SAFE_INTEGER ] );
+	y = new Float64Array( [ 0.0, UINT32_MAX, TWO_32, MAX_SAFE_INTEGER ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array([
+		MIN_SAFE_INTEGER,
+		-TWO_32,
+		-1,
+		0,
+		1,
+		TWO_32,
+		MAX_SAFE_INTEGER
+	]);
+	y = new Float64Array([
+		MIN_SAFE_INTEGER,
+		-TWO_32,
+		-1.0,
+		0.0,
+		1.0,
+		TWO_32,
+		MAX_SAFE_INTEGER
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Unsafe integers which are exactly representable as double-precision floating-point numbers (2^53, 2^60, and 2^64-2^11):
+	x = new Uint64Array([
+		Uint64.of( 0x00200000, 0x00000000 ),
+		Uint64.of( 0x10000000, 0x00000000 ),
+		Uint64.of( 0xFFFFFFFF, 0xFFFFF800 )
+	]);
+	y = new Float64Array([
+		TWO_53,
+		0x1000000000000000,
+		0xFFFFFFFFFFFFF800
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Unsafe integers which are exactly representable as double-precision floating-point numbers (-2^63, -2^53, 2^53, and 2^63-2^10):
+	x = new Int64Array([
+		Int64.of( 0x80000000, 0x00000000 ),
+		Int64.of( 0xFFE00000, 0x00000000 ),
+		Int64.of( 0x00200000, 0x00000000 ),
+		Int64.of( 0x7FFFFFFF, 0xFFFFFC00 )
+	]);
+	y = new Float64Array([
+		-TWO_63,
+		-TWO_53,
+		TWO_53,
+		0x7FFFFFFFFFFFFC00
+	]);
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Lower precision integer arrays:
+	x = new Uint64Array( [ 0, 1, 2, UINT32_MAX ] );
+	y = new Uint32Array( [ 0, 1, 2, UINT32_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ INT32_MIN, -1, 0, INT32_MAX ] );
+	y = new Int32Array( [ INT32_MIN, -1, 0, INT32_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [ 0, 1, 2, UINT8_MAX ] );
+	y = new Uint8Array( [ 0, 1, 2, UINT8_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ INT8_MIN, -1, 0, INT8_MAX ] );
+	y = new Int8Array( [ INT8_MIN, -1, 0, INT8_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Uint64Array( [ 0, 1, 2, 3 ] );
+	y = new Int32Array( [ 0, 1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Unsigned 32-bit values exceeding the maximum 32-bit signed integer (2^31 and 2^32-1):
+	x = new Int64Array( [ 0, INT32_MAX+1, UINT32_MAX ] );
+	y = new Uint32Array( [ 0, INT32_MAX+1, UINT32_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ 0, 1, 2, 3 ] );
+	y = new Uint8Array( [ 0, 1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Floating-point arrays:
+	x = new Uint64Array( [ 0, 1, 2, 3 ] );
+	y = new Float32Array( [ 0.0, 1.0, 2.0, 3.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ 0, -1, 2, -3 ] );
+	y = new Float32Array( [ 0.0, -1.0, 2.0, -3.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	// Accessor arrays:
+	x = new Uint64Array( [ 0, 1, 2, 3 ] );
+	y = new AccessorArray( [ 0, 1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new Int64Array( [ 0, -1, 2, 3 ] );
+	y = new AccessorArray( [ 0, -1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (accessor)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new AccessorArray( [ 0, 2, 3 ] );
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = new AccessorArray( [ 0, 2, 3 ] );
+	y = new AccessorArray( [ 0, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `true` if both arrays have equal values (array-like object)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = {
+		'length': 3,
+		'0': 1,
+		'1': 0,
+		'2': 0
+	};
+	out = hasEqualValues( x, x );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	x = {
+		'length': 3,
+		'0': 1,
+		'1': 0,
+		'2': 0
+	};
+	y = {
+		'length': 3,
+		'0': 1,
+		'1': 0,
+		'2': 0
+	};
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, true, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (generic)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [ 0, 0, 0 ];
+	y = [ 0, 1, 0 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (real typed array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Float64Array( [ 0.0, 0.0, 0.0 ] );
+	y = new Float64Array( [ 0.0, 0.0, 1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float64Array( [ 0.0, NaN, 1.0 ] );
+	y = new Float64Array( [ 0.0, NaN, 1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (mixed)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = [ 0.0, 0.0, 0.0 ];
+	y = new Float64Array( [ 0.0, 0.0, 1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float64Array( [ 0.0, 0.0, 1.0 ] );
+	y = [ 0.0, 0.0, 0.0 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float64Array( [ 0.0, 0.0, 1.0, 0.0 ] );
+	y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Uint64Array( [ 0, 0, 1 ] );
+	y = new Float64Array( [ 0.0, 0.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Float64Array( [ 0.0, 0.0, 0.0 ] );
+	y = new Uint64Array( [ 0, 0, 1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Int64Array( [ 0, 0, -1 ] );
+	y = [ 0, 0, 1 ];
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = [ 0, 0, 1 ];
+	y = new Int64Array( [ 0, 0, -1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (boolean array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new BooleanArray( [ true, false, false, true ] );
+	y = new BooleanArray( [ true, true, false, false ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (complex typed array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
+	y = new Complex64Array( [ 0.0, 0.0, 0.0, 1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0 ] );
+	y = new Complex128Array( [ 1.0, 0.0, 0.0, 0.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (64-bit unsigned integer array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Uint64Array( [ 0, 0, 0, 0 ] );
+	y = new Uint64Array( [ 1, 0, 0, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same low word, but different high words (1 and 2^32+1):
+	x = new Uint64Array( [ Uint64.of( 0x00000000, 0x00000001 ) ] );
+	y = new Uint64Array( [ Uint64.of( 0x00000001, 0x00000001 ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same high word, but different low words (2^32 and 2^32+1):
+	x = new Uint64Array( [ Uint64.of( 0x00000001, 0x00000000 ) ] );
+	y = new Uint64Array( [ Uint64.of( 0x00000001, 0x00000001 ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsafe integers which are indistinguishable when converted to double-precision floating-point numbers (2^53 and 2^53+1):
+	x = new Uint64Array( [ Uint64.of( 0x00200000, 0x00000000 ) ] );
+	y = new Uint64Array( [ Uint64.of( 0x00200000, 0x00000001 ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsafe integers which are indistinguishable when converted to double-precision floating-point numbers (2^64-1 and 2^64-2):
+	x = new Uint64Array( [ Uint64.of( 0xFFFFFFFF, 0xFFFFFFFF ) ] );
+	y = new Uint64Array( [ Uint64.of( 0xFFFFFFFF, 0xFFFFFFFE ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (64-bit signed integer array)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new Int64Array( [ 0, 0, 0, 0 ] );
+	y = new Int64Array( [ -1, 0, 0, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Int64Array( [ 1, 0, 0, 0 ] );
+	y = new Int64Array( [ -1, 0, 0, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Values differing only in the sign bit (2^63-1 and -1):
+	x = new Int64Array( [ Int64.of( 0x7FFFFFFF, 0xFFFFFFFF ) ] );
+	y = new Int64Array( [ -1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same low word, but different high words (-1 and 2^32-1):
+	x = new Int64Array( [ Int64.of( 0xFFFFFFFF, 0xFFFFFFFF ) ] );
+	y = new Int64Array( [ Int64.of( 0x00000000, 0xFFFFFFFF ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsafe integers which are indistinguishable when converted to double-precision floating-point numbers (2^53 and 2^53+1):
+	x = new Int64Array( [ Int64.of( 0x00200000, 0x00000000 ) ] );
+	y = new Int64Array( [ Int64.of( 0x00200000, 0x00000001 ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsafe integers which are indistinguishable when converted to double-precision floating-point numbers (-2^53 and -2^53-1):
+	x = new Int64Array( [ Int64.of( 0xFFE00000, 0x00000000 ) ] );
+	y = new Int64Array( [ Int64.of( 0xFFDFFFFF, 0xFFFFFFFF ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (mixed 64-bit unsigned integer arrays)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	// Same bit pattern, but different values (2^64-1 and -1):
+	x = new Uint64Array( [ 0, Uint64.of( 0xFFFFFFFF, 0xFFFFFFFF ) ] );
+	y = new Int64Array( [ 0, -1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same bit pattern, but different values (2^63 and -2^63):
+	x = new Uint64Array( [ Uint64.of( 0x80000000, 0x00000000 ) ] );
+	y = new Int64Array( [ Int64.of( 0x80000000, 0x00000000 ) ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Uint64Array( [ 0, 1 ] );
+	y = new Int64Array( [ 0, 2 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same low word, but different high words (2^32+1 and 1):
+	x = new Uint64Array( [ Uint64.of( 0x00000001, 0x00000001 ) ] );
+	y = new Float64Array( [ 1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Uint64Array( [ 1 ] );
+	y = new Float64Array( [ TWO_32+1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same high word, but different low words (2^32+1 and 2^32+2):
+	x = new Uint64Array( [ Uint64.of( 0x00000001, 0x00000001 ) ] );
+	y = new Float64Array( [ TWO_32+2 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsafe integers which are not exactly representable as double-precision floating-point numbers (2^53+1 versus 2^53):
+	x = new Uint64Array( [ Uint64.of( 0x00200000, 0x00000001 ) ] );
+	y = new Float64Array( [ TWO_53 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Note: as a double-precision floating-point number, the literal 2^53+1 rounds to 2^53 and, thus, does not equal the exact 64-bit integer 2^53+1:
+	y = new Float64Array( [ TWO_53+1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsafe integers which are not exactly representable as double-precision floating-point numbers (2^64-1 versus 2^64):
+	x = new Uint64Array( [ Uint64.of( 0xFFFFFFFF, 0xFFFFFFFF ) ] );
+	y = new Float64Array( [ TWO_64-1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Values which cannot be represented as 64-bit unsigned integers:
+	x = new Uint64Array( [ 1 ] );
+	y = new Float64Array( [ 1.5 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	y = new Float64Array( [ NaN ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	y = new Float64Array( [ Infinity ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	y = new Float64Array( [ -1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	y = new Int32Array( [ -1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// 2^64 (which would wrap to zero if naively truncated to 64 bits):
+	x = new Uint64Array( [ 0 ] );
+	y = new Float64Array( [ TWO_64 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (mixed 64-bit signed integer arrays)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	// Unsafe integers which are not exactly representable as double-precision floating-point numbers (-2^53-1 versus -2^53):
+	x = new Int64Array( [ Int64.of( 0xFFDFFFFF, 0xFFFFFFFF ) ] );
+	y = new Float64Array( [ -TWO_53 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Values which cannot be represented as 64-bit signed integers (-2^63 versus 2^63 and -2^63-2^11):
+	x = new Int64Array( [ Int64.of( 0x80000000, 0x00000000 ) ] );
+	y = new Float64Array( [ TWO_63 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	y = new Float64Array( [ -TWO_63-2048 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// 2^63-1 (which, as a double-precision floating-point number, rounds to 2^63 and cannot be represented as a 64-bit signed integer):
+	x = new Int64Array( [ Int64.of( 0x7FFFFFFF, 0xFFFFFFFF ) ] );
+	y = new Float64Array( [ TWO_63-1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Int64Array( [ -1 ] );
+	y = new Float64Array( [ 1.0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	y = new Float64Array( [ -1.5 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same low word bit pattern (-1 and 2^32-1):
+	y = new Uint32Array( [ UINT32_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (mixed 64-bit and 32-bit integer arrays)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	// Same signedness:
+	x = new Uint64Array( [ 0, 1, 2, 3 ] );
+	y = new Uint32Array( [ 0, 1, 2, 4 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Int64Array( [ 0, -1, 2, -3 ] );
+	y = new Int32Array( [ 0, -1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same low word, but different high words (2^32 and 0):
+	x = new Uint64Array( [ Uint64.of( 0x00000001, 0x00000000 ) ] );
+	y = new Uint32Array( [ 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	x = new Int64Array( [ Int64.of( 0x00000001, 0x00000000 ) ] );
+	y = new Int32Array( [ 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same low word, but different high words (-2^32 and 0):
+	x = new Int64Array( [ Int64.of( 0xFFFFFFFF, 0x00000000 ) ] );
+	y = new Int32Array( [ 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Unsigned 64-bit versus signed 32-bit:
+	x = new Uint64Array( [ 0, 1, 2, 3 ] );
+	y = new Int32Array( [ 0, 1, 2, -3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same bit pattern in the low word (2^32-1 and -1):
+	x = new Uint64Array( [ UINT32_MAX ] );
+	y = new Int32Array( [ -1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Negative 32-bit values can never equal unsigned 64-bit values (2^31 and -2^31):
+	x = new Uint64Array( [ 0x80000000 ] );
+	y = new Int32Array( [ INT32_MIN ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Signed 64-bit versus unsigned 32-bit:
+	x = new Int64Array( [ 0, -1, 2, 3 ] );
+	y = new Uint32Array( [ 0, 1, 2, 3 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Same bit pattern in the low word (-1 and 2^32-1):
+	x = new Int64Array( [ -1 ] );
+	y = new Uint32Array( [ UINT32_MAX ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	// Negative 64-bit values can never equal unsigned 32-bit values (-2^31 and 2^31):
+	x = new Int64Array( [ INT32_MIN ] );
+	y = new Uint32Array( [ INT32_MAX+1 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	out = hasEqualValues( y, x );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (accessor)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = new AccessorArray( [ 0, 0, 1 ] );
+	y = new AccessorArray( [ 0, 0, 0 ] );
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if both arrays do not have equal values (array-like object)', function test( t ) {
+	var out;
+	var x;
+	var y;
+
+	x = {
+		'length': 3,
+		'0': 0,
+		'1': 1,
+		'2': 0
+	};
+	y = {
+		'length': 3,
+		'0': 0,
+		'1': 0,
+		'2': 0
+	};
+	out = hasEqualValues( x, y );
+	t.strictEqual( out, false, 'returns expected value' );
+
+	t.end();
+});
