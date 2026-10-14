@@ -106,6 +106,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`a800ae0`](https://github.com/stdlib-js/stdlib/commit/a800ae09acaf3af1ddc728ed50228189181795a7) - **docs:** fix examples and notes [(#16144)](https://github.com/stdlib-js/stdlib/pull/16144) _(by Philipp Burckhardt)_
 -   [`a73d38b`](https://github.com/stdlib-js/stdlib/commit/a73d38bb5fb3def53498a3d74f8e4efe0c24f7f8) - **test:** remove excess whitespace in descriptions [(#16145)](https://github.com/stdlib-js/stdlib/pull/16145) _(by Philipp Burckhardt)_
 -   [`acc3ee3`](https://github.com/stdlib-js/stdlib/commit/acc3ee32ee4296e6b129ee6a6991283342367ec7) - **refactor:** move repeated logic to internal helper [(#14495)](https://github.com/stdlib-js/stdlib/pull/14495) _(by Divit Jain, Athan Reines)_
 -   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
