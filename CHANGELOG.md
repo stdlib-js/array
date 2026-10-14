@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-13)
+## Unreleased (2026-10-14)
 
 <section class="features">
 
@@ -106,6 +106,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`a73d38b`](https://github.com/stdlib-js/stdlib/commit/a73d38bb5fb3def53498a3d74f8e4efe0c24f7f8) - **test:** remove excess whitespace in descriptions [(#16145)](https://github.com/stdlib-js/stdlib/pull/16145) _(by Philipp Burckhardt)_
 -   [`acc3ee3`](https://github.com/stdlib-js/stdlib/commit/acc3ee32ee4296e6b129ee6a6991283342367ec7) - **refactor:** move repeated logic to internal helper [(#14495)](https://github.com/stdlib-js/stdlib/pull/14495) _(by Divit Jain, Athan Reines)_
 -   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
 -   [`6744a7e`](https://github.com/stdlib-js/stdlib/commit/6744a7e926973c9ea1bb932793fca76064a4f0fa) - **docs:** update related packages sections [(#16023)](https://github.com/stdlib-js/stdlib/pull/16023) _(by stdlib-bot)_
