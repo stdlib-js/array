@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-24)
+## Unreleased (2026-10-29)
 
 <section class="features">
 
@@ -80,6 +80,7 @@
 
 ### Bug Fixes
 
+-   [`a163565`](https://github.com/stdlib-js/stdlib/commit/a163565462a09f6d4c2dcadd39048eb6632b7b7f) - avoid mutating source array [(#16346)](https://github.com/stdlib-js/stdlib/pull/16346)
 -   [`57405d9`](https://github.com/stdlib-js/stdlib/commit/57405d982378b2ead89e16dc4861054b04e61c5b) - address incorrect argument interpolation [(#16243)](https://github.com/stdlib-js/stdlib/pull/16243)
 -   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - correctly copying collection values and use correct assertion utility
 -   [`6b88a63`](https://github.com/stdlib-js/stdlib/commit/6b88a637281fd936f6526c40df69299cf72463c5) - add missing index signature to Float16Array class declaration [(#13332)](https://github.com/stdlib-js/stdlib/pull/13332)
@@ -107,6 +108,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`a163565`](https://github.com/stdlib-js/stdlib/commit/a163565462a09f6d4c2dcadd39048eb6632b7b7f) - **fix:** avoid mutating source array [(#16346)](https://github.com/stdlib-js/stdlib/pull/16346) _(by SARTHAK)_
 -   [`57405d9`](https://github.com/stdlib-js/stdlib/commit/57405d982378b2ead89e16dc4861054b04e61c5b) - **fix:** address incorrect argument interpolation [(#16243)](https://github.com/stdlib-js/stdlib/pull/16243) _(by Philipp Burckhardt)_
 -   [`a800ae0`](https://github.com/stdlib-js/stdlib/commit/a800ae09acaf3af1ddc728ed50228189181795a7) - **docs:** fix examples and notes [(#16144)](https://github.com/stdlib-js/stdlib/pull/16144) _(by Philipp Burckhardt)_
 -   [`a73d38b`](https://github.com/stdlib-js/stdlib/commit/a73d38bb5fb3def53498a3d74f8e4efe0c24f7f8) - **test:** remove excess whitespace in descriptions [(#16145)](https://github.com/stdlib-js/stdlib/pull/16145) _(by Philipp Burckhardt)_
@@ -241,7 +243,7 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Pratap Singh
 -   Athan Reines
@@ -249,6 +251,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 -   Gururaj Gurram
 -   Nakul Krishnakumar
 -   Philipp Burckhardt
+-   SARTHAK
 -   Samarth Kolarkar
 -   titanniya542-spec
 
