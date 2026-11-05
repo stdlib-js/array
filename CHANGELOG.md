@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-03)
+## Unreleased (2026-11-05)
 
 <section class="features">
 
@@ -108,6 +108,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`7cf5642`](https://github.com/stdlib-js/stdlib/commit/7cf56423a8fe3e959bd334981a00f8428d086127) - **chore:** clean-up [(#16491)](https://github.com/stdlib-js/stdlib/pull/16491) _(by Philipp Burckhardt)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`a163565`](https://github.com/stdlib-js/stdlib/commit/a163565462a09f6d4c2dcadd39048eb6632b7b7f) - **fix:** avoid mutating source array [(#16346)](https://github.com/stdlib-js/stdlib/pull/16346) _(by SARTHAK)_
 -   [`57405d9`](https://github.com/stdlib-js/stdlib/commit/57405d982378b2ead89e16dc4861054b04e61c5b) - **fix:** address incorrect argument interpolation [(#16243)](https://github.com/stdlib-js/stdlib/pull/16243) _(by Philipp Burckhardt)_
