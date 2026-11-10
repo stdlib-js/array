@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-07)
+## Unreleased (2026-11-10)
 
 <section class="features">
 
@@ -108,6 +108,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`38b2adb`](https://github.com/stdlib-js/stdlib/commit/38b2adb22b72f7bbf75b2a4ed423ae9da986965a) - **docs:** improve doctests for complex number instances in `array/linspace` [(#16569)](https://github.com/stdlib-js/stdlib/pull/16569) _(by Mustansir-06)_
 -   [`d1e7d4b`](https://github.com/stdlib-js/stdlib/commit/d1e7d4bb16be8ec93a295dacf4c03cf4214b3fc3) - **docs:** update related packages sections [(#16528)](https://github.com/stdlib-js/stdlib/pull/16528) _(by stdlib-bot)_
 -   [`8f624de`](https://github.com/stdlib-js/stdlib/commit/8f624de7eaf721da6bdb42adc299c4876a856c0f) - **style:** add missing whitespace [(#16522)](https://github.com/stdlib-js/stdlib/pull/16522) _(by Philipp Burckhardt)_
 -   [`7349dff`](https://github.com/stdlib-js/stdlib/commit/7349dffeddd90289879f06e70acc1be8544af75b) - **style:** add missing whitespace [(#16507)](https://github.com/stdlib-js/stdlib/pull/16507) _(by Philipp Burckhardt)_
@@ -248,12 +249,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 9 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Pratap Singh
 -   Athan Reines
 -   Divit Jain
 -   Gururaj Gurram
+-   Mustansir-06
 -   Nakul Krishnakumar
 -   Philipp Burckhardt
 -   SARTHAK
