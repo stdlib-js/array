@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173)
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146)
 -   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
 -   [`5945917`](https://github.com/stdlib-js/stdlib/commit/59459177f3a0662a39714b8b89be4f6aefd2eed0) - add `uint64` and `int64` support for `array/base/assert/has-equal-values` [(#14238)](https://github.com/stdlib-js/stdlib/pull/14238)
@@ -110,6 +111,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - **feat:** add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173) _(by Divit Jain, Athan Reines)_
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - **feat:** add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146) _(by Divit Jain)_
 -   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
 -   [`38b2adb`](https://github.com/stdlib-js/stdlib/commit/38b2adb22b72f7bbf75b2a4ed423ae9da986965a) - **docs:** improve doctests for complex number instances in `array/linspace` [(#16569)](https://github.com/stdlib-js/stdlib/pull/16569) _(by Mustansir-06)_
