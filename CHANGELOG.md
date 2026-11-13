@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-10)
+## Unreleased (2026-11-13)
 
 <section class="features">
 
 ### Features
 
+-   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
 -   [`5945917`](https://github.com/stdlib-js/stdlib/commit/59459177f3a0662a39714b8b89be4f6aefd2eed0) - add `uint64` and `int64` support for `array/base/assert/has-equal-values` [(#14238)](https://github.com/stdlib-js/stdlib/pull/14238)
 -   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453)
 -   [`7bb89c2`](https://github.com/stdlib-js/stdlib/commit/7bb89c2db43b096eadb6c6405174569d843582f1) - add float16 dtype support to `array/base/assert/has-almost-same-values` [(#15028)](https://github.com/stdlib-js/stdlib/pull/15028)
@@ -108,6 +109,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
 -   [`38b2adb`](https://github.com/stdlib-js/stdlib/commit/38b2adb22b72f7bbf75b2a4ed423ae9da986965a) - **docs:** improve doctests for complex number instances in `array/linspace` [(#16569)](https://github.com/stdlib-js/stdlib/pull/16569) _(by Mustansir-06)_
 -   [`d1e7d4b`](https://github.com/stdlib-js/stdlib/commit/d1e7d4bb16be8ec93a295dacf4c03cf4214b3fc3) - **docs:** update related packages sections [(#16528)](https://github.com/stdlib-js/stdlib/pull/16528) _(by stdlib-bot)_
 -   [`8f624de`](https://github.com/stdlib-js/stdlib/commit/8f624de7eaf721da6bdb42adc299c4876a856c0f) - **style:** add missing whitespace [(#16522)](https://github.com/stdlib-js/stdlib/pull/16522) _(by Philipp Burckhardt)_
