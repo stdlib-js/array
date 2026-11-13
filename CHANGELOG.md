@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298)
 -   [`2e62f0a`](https://github.com/stdlib-js/stdlib/commit/2e62f0a06fdcc2be4edb82b137eff0b635cdedc6) - add `find` method to `array/uint64` [(#14270)](https://github.com/stdlib-js/stdlib/pull/14270)
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251)
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173)
@@ -113,6 +114,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - **feat:** add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298) _(by Divit Jain, Athan Reines)_
 -   [`2e62f0a`](https://github.com/stdlib-js/stdlib/commit/2e62f0a06fdcc2be4edb82b137eff0b635cdedc6) - **feat:** add `find` method to `array/uint64` [(#14270)](https://github.com/stdlib-js/stdlib/pull/14270) _(by Divit Jain, Athan Reines)_
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - **feat:** add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251) _(by Divit Jain, Athan Reines)_
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - **feat:** add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173) _(by Divit Jain, Athan Reines)_
