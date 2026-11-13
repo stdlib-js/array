@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251)
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173)
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146)
 -   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
@@ -111,6 +112,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - **feat:** add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251) _(by Divit Jain, Athan Reines)_
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - **feat:** add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173) _(by Divit Jain, Athan Reines)_
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - **feat:** add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146) _(by Divit Jain)_
 -   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
