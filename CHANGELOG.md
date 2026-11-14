@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-13)
+## Unreleased (2026-11-14)
 
 <section class="features">
 
 ### Features
 
+-   [`355c33d`](https://github.com/stdlib-js/stdlib/commit/355c33d2f29c7aab23189fcfa40b5b91d6c6a547) - add `findLast` method to `array/uint64` [(#15080)](https://github.com/stdlib-js/stdlib/pull/15080)
 -   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298)
 -   [`2e62f0a`](https://github.com/stdlib-js/stdlib/commit/2e62f0a06fdcc2be4edb82b137eff0b635cdedc6) - add `find` method to `array/uint64` [(#14270)](https://github.com/stdlib-js/stdlib/pull/14270)
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251)
@@ -114,6 +115,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`355c33d`](https://github.com/stdlib-js/stdlib/commit/355c33d2f29c7aab23189fcfa40b5b91d6c6a547) - **feat:** add `findLast` method to `array/uint64` [(#15080)](https://github.com/stdlib-js/stdlib/pull/15080) _(by Divit Jain, Athan Reines)_
 -   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - **feat:** add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298) _(by Divit Jain, Athan Reines)_
 -   [`2e62f0a`](https://github.com/stdlib-js/stdlib/commit/2e62f0a06fdcc2be4edb82b137eff0b635cdedc6) - **feat:** add `find` method to `array/uint64` [(#14270)](https://github.com/stdlib-js/stdlib/pull/14270) _(by Divit Jain, Athan Reines)_
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - **feat:** add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251) _(by Divit Jain, Athan Reines)_
