@@ -115,6 +115,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`9880230`](https://github.com/stdlib-js/stdlib/commit/988023056a9a8ba063d8e7cacc1ca864023de05f) - **test:** fix description [(#16625)](https://github.com/stdlib-js/stdlib/pull/16625) _(by Philipp Burckhardt)_
 -   [`7dc1831`](https://github.com/stdlib-js/stdlib/commit/7dc18312d916c5f20e5b63dd45b44307093336d0) - **docs:** fix heading levels [(#16624)](https://github.com/stdlib-js/stdlib/pull/16624) _(by Philipp Burckhardt)_
 -   [`355c33d`](https://github.com/stdlib-js/stdlib/commit/355c33d2f29c7aab23189fcfa40b5b91d6c6a547) - **feat:** add `findLast` method to `array/uint64` [(#15080)](https://github.com/stdlib-js/stdlib/pull/15080) _(by Divit Jain, Athan Reines)_
 -   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - **feat:** add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298) _(by Divit Jain, Athan Reines)_
