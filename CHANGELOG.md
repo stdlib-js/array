@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`fbd295d`](https://github.com/stdlib-js/stdlib/commit/fbd295d6db373d05bd5c9462ed57ee4b716a3b6f) - add `findLastIndex` method to `array/int64` [(#16688)](https://github.com/stdlib-js/stdlib/pull/16688)
 -   [`b20463e`](https://github.com/stdlib-js/stdlib/commit/b20463e4c005028a19fac294e7cccd6da2b17eec) - add `findLastIndex` method to `array/uint64` [(#15093)](https://github.com/stdlib-js/stdlib/pull/15093)
 -   [`1435afa`](https://github.com/stdlib-js/stdlib/commit/1435afaf064f7cc491a0dde896ab7c9f41f27652) - add various methods to `array/int64` [(#16684)](https://github.com/stdlib-js/stdlib/pull/16684)
 -   [`355c33d`](https://github.com/stdlib-js/stdlib/commit/355c33d2f29c7aab23189fcfa40b5b91d6c6a547) - add `findLast` method to `array/uint64` [(#15080)](https://github.com/stdlib-js/stdlib/pull/15080)
@@ -117,6 +118,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`fbd295d`](https://github.com/stdlib-js/stdlib/commit/fbd295d6db373d05bd5c9462ed57ee4b716a3b6f) - **feat:** add `findLastIndex` method to `array/int64` [(#16688)](https://github.com/stdlib-js/stdlib/pull/16688) _(by Divit Jain)_
 -   [`b20463e`](https://github.com/stdlib-js/stdlib/commit/b20463e4c005028a19fac294e7cccd6da2b17eec) - **feat:** add `findLastIndex` method to `array/uint64` [(#15093)](https://github.com/stdlib-js/stdlib/pull/15093) _(by Divit Jain)_
 -   [`1435afa`](https://github.com/stdlib-js/stdlib/commit/1435afaf064f7cc491a0dde896ab7c9f41f27652) - **feat:** add various methods to `array/int64` [(#16684)](https://github.com/stdlib-js/stdlib/pull/16684) _(by Divit Jain)_
 -   [`f91b31b`](https://github.com/stdlib-js/stdlib/commit/f91b31b6f7b190b4929ec93cd691416e5db67db3) - **docs:** update namespace table of contents [(#16635)](https://github.com/stdlib-js/stdlib/pull/16635) _(by stdlib-bot)_
