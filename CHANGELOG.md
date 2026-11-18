@@ -4,19 +4,20 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-15)
+## Unreleased (2026-11-18)
 
 <section class="features">
 
 ### Features
 
+-   [`1435afa`](https://github.com/stdlib-js/stdlib/commit/1435afaf064f7cc491a0dde896ab7c9f41f27652) - add various methods to `array/int64` [(#16684)](https://github.com/stdlib-js/stdlib/pull/16684)
 -   [`355c33d`](https://github.com/stdlib-js/stdlib/commit/355c33d2f29c7aab23189fcfa40b5b91d6c6a547) - add `findLast` method to `array/uint64` [(#15080)](https://github.com/stdlib-js/stdlib/pull/15080)
 -   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298)
 -   [`2e62f0a`](https://github.com/stdlib-js/stdlib/commit/2e62f0a06fdcc2be4edb82b137eff0b635cdedc6) - add `find` method to `array/uint64` [(#14270)](https://github.com/stdlib-js/stdlib/pull/14270)
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251)
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173)
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146)
--   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
+-   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithin` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
 -   [`5945917`](https://github.com/stdlib-js/stdlib/commit/59459177f3a0662a39714b8b89be4f6aefd2eed0) - add `uint64` and `int64` support for `array/base/assert/has-equal-values` [(#14238)](https://github.com/stdlib-js/stdlib/pull/14238)
 -   [`e6ef385`](https://github.com/stdlib-js/stdlib/commit/e6ef3852ca447bfd266c34dc8250b66c261a2096) - add float16 dtype support to `array/base/assert/*` [(#15453)](https://github.com/stdlib-js/stdlib/pull/15453)
 -   [`7bb89c2`](https://github.com/stdlib-js/stdlib/commit/7bb89c2db43b096eadb6c6405174569d843582f1) - add float16 dtype support to `array/base/assert/has-almost-same-values` [(#15028)](https://github.com/stdlib-js/stdlib/pull/15028)
@@ -115,6 +116,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`1435afa`](https://github.com/stdlib-js/stdlib/commit/1435afaf064f7cc491a0dde896ab7c9f41f27652) - **feat:** add various methods to `array/int64` [(#16684)](https://github.com/stdlib-js/stdlib/pull/16684) _(by Divit Jain)_
 -   [`f91b31b`](https://github.com/stdlib-js/stdlib/commit/f91b31b6f7b190b4929ec93cd691416e5db67db3) - **docs:** update namespace table of contents [(#16635)](https://github.com/stdlib-js/stdlib/pull/16635) _(by stdlib-bot)_
 -   [`9880230`](https://github.com/stdlib-js/stdlib/commit/988023056a9a8ba063d8e7cacc1ca864023de05f) - **test:** fix description [(#16625)](https://github.com/stdlib-js/stdlib/pull/16625) _(by Philipp Burckhardt)_
 -   [`7dc1831`](https://github.com/stdlib-js/stdlib/commit/7dc18312d916c5f20e5b63dd45b44307093336d0) - **docs:** fix heading levels [(#16624)](https://github.com/stdlib-js/stdlib/pull/16624) _(by Philipp Burckhardt)_
@@ -124,7 +126,7 @@ A total of 2 issues were closed in this release:
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - **feat:** add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251) _(by Divit Jain, Athan Reines)_
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - **feat:** add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173) _(by Divit Jain, Athan Reines)_
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - **feat:** add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146) _(by Divit Jain)_
--   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
+-   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithin` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
 -   [`38b2adb`](https://github.com/stdlib-js/stdlib/commit/38b2adb22b72f7bbf75b2a4ed423ae9da986965a) - **docs:** improve doctests for complex number instances in `array/linspace` [(#16569)](https://github.com/stdlib-js/stdlib/pull/16569) _(by Mustansir-06)_
 -   [`d1e7d4b`](https://github.com/stdlib-js/stdlib/commit/d1e7d4bb16be8ec93a295dacf4c03cf4214b3fc3) - **docs:** update related packages sections [(#16528)](https://github.com/stdlib-js/stdlib/pull/16528) _(by stdlib-bot)_
 -   [`8f624de`](https://github.com/stdlib-js/stdlib/commit/8f624de7eaf721da6bdb42adc299c4876a856c0f) - **style:** add missing whitespace [(#16522)](https://github.com/stdlib-js/stdlib/pull/16522) _(by Philipp Burckhardt)_
