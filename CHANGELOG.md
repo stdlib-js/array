@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-18)
+## Unreleased (2026-11-19)
 
 <section class="features">
 
@@ -118,6 +118,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`54bdd06`](https://github.com/stdlib-js/stdlib/commit/54bdd06c4ea2c4ff401cbfa40ca953d13ebb8184) - **docs:** update related packages sections [(#16699)](https://github.com/stdlib-js/stdlib/pull/16699) _(by stdlib-bot)_
 -   [`fbd295d`](https://github.com/stdlib-js/stdlib/commit/fbd295d6db373d05bd5c9462ed57ee4b716a3b6f) - **feat:** add `findLastIndex` method to `array/int64` [(#16688)](https://github.com/stdlib-js/stdlib/pull/16688) _(by Divit Jain)_
 -   [`b20463e`](https://github.com/stdlib-js/stdlib/commit/b20463e4c005028a19fac294e7cccd6da2b17eec) - **feat:** add `findLastIndex` method to `array/uint64` [(#15093)](https://github.com/stdlib-js/stdlib/pull/15093) _(by Divit Jain)_
 -   [`1435afa`](https://github.com/stdlib-js/stdlib/commit/1435afaf064f7cc491a0dde896ab7c9f41f27652) - **feat:** add various methods to `array/int64` [(#16684)](https://github.com/stdlib-js/stdlib/pull/16684) _(by Divit Jain)_
