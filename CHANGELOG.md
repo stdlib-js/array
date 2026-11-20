@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-19)
+## Unreleased (2026-11-20)
 
 <section class="features">
 
 ### Features
 
+-   [`c5f6d45`](https://github.com/stdlib-js/stdlib/commit/c5f6d451890ca632686fb23b9407ce47c0f7b497) - add `keys` method to `array/int64` [(#16694)](https://github.com/stdlib-js/stdlib/pull/16694)
 -   [`fbd295d`](https://github.com/stdlib-js/stdlib/commit/fbd295d6db373d05bd5c9462ed57ee4b716a3b6f) - add `findLastIndex` method to `array/int64` [(#16688)](https://github.com/stdlib-js/stdlib/pull/16688)
 -   [`b20463e`](https://github.com/stdlib-js/stdlib/commit/b20463e4c005028a19fac294e7cccd6da2b17eec) - add `findLastIndex` method to `array/uint64` [(#15093)](https://github.com/stdlib-js/stdlib/pull/15093)
 -   [`1435afa`](https://github.com/stdlib-js/stdlib/commit/1435afaf064f7cc491a0dde896ab7c9f41f27652) - add various methods to `array/int64` [(#16684)](https://github.com/stdlib-js/stdlib/pull/16684)
@@ -118,6 +119,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`c5f6d45`](https://github.com/stdlib-js/stdlib/commit/c5f6d451890ca632686fb23b9407ce47c0f7b497) - **feat:** add `keys` method to `array/int64` [(#16694)](https://github.com/stdlib-js/stdlib/pull/16694) _(by Kartik, Athan Reines)_
 -   [`54bdd06`](https://github.com/stdlib-js/stdlib/commit/54bdd06c4ea2c4ff401cbfa40ca953d13ebb8184) - **docs:** update related packages sections [(#16699)](https://github.com/stdlib-js/stdlib/pull/16699) _(by stdlib-bot)_
 -   [`fbd295d`](https://github.com/stdlib-js/stdlib/commit/fbd295d6db373d05bd5c9462ed57ee4b716a3b6f) - **feat:** add `findLastIndex` method to `array/int64` [(#16688)](https://github.com/stdlib-js/stdlib/pull/16688) _(by Divit Jain)_
 -   [`b20463e`](https://github.com/stdlib-js/stdlib/commit/b20463e4c005028a19fac294e7cccd6da2b17eec) - **feat:** add `findLastIndex` method to `array/uint64` [(#15093)](https://github.com/stdlib-js/stdlib/pull/15093) _(by Divit Jain)_
@@ -273,12 +275,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 11 people contributed to this release. Thank you to the following contributors:
 
 -   Aditya Pratap Singh
 -   Athan Reines
 -   Divit Jain
 -   Gururaj Gurram
+-   Kartik
 -   Mustansir-06
 -   Nakul Krishnakumar
 -   Philipp Burckhardt
