@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b76818c`](https://github.com/stdlib-js/stdlib/commit/b76818c58c9d5299aa1e2acf93dee1678dce78de) - add `forEach` method to `array/int64` [(#16713)](https://github.com/stdlib-js/stdlib/pull/16713)
 -   [`76625da`](https://github.com/stdlib-js/stdlib/commit/76625da6544c983b37ccbea34a25b697da34260a) - add `forEach` method to `array/uint64` [(#15371)](https://github.com/stdlib-js/stdlib/pull/15371)
 -   [`c5f6d45`](https://github.com/stdlib-js/stdlib/commit/c5f6d451890ca632686fb23b9407ce47c0f7b497) - add `keys` method to `array/int64` [(#16694)](https://github.com/stdlib-js/stdlib/pull/16694)
 -   [`fbd295d`](https://github.com/stdlib-js/stdlib/commit/fbd295d6db373d05bd5c9462ed57ee4b716a3b6f) - add `findLastIndex` method to `array/int64` [(#16688)](https://github.com/stdlib-js/stdlib/pull/16688)
@@ -120,6 +121,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`b76818c`](https://github.com/stdlib-js/stdlib/commit/b76818c58c9d5299aa1e2acf93dee1678dce78de) - **feat:** add `forEach` method to `array/int64` [(#16713)](https://github.com/stdlib-js/stdlib/pull/16713) _(by Divit Jain, Athan Reines)_
 -   [`76625da`](https://github.com/stdlib-js/stdlib/commit/76625da6544c983b37ccbea34a25b697da34260a) - **feat:** add `forEach` method to `array/uint64` [(#15371)](https://github.com/stdlib-js/stdlib/pull/15371) _(by Divit Jain, Athan Reines)_
 -   [`c5f6d45`](https://github.com/stdlib-js/stdlib/commit/c5f6d451890ca632686fb23b9407ce47c0f7b497) - **feat:** add `keys` method to `array/int64` [(#16694)](https://github.com/stdlib-js/stdlib/pull/16694) _(by Kartik, Athan Reines)_
 -   [`54bdd06`](https://github.com/stdlib-js/stdlib/commit/54bdd06c4ea2c4ff401cbfa40ca953d13ebb8184) - **docs:** update related packages sections [(#16699)](https://github.com/stdlib-js/stdlib/pull/16699) _(by stdlib-bot)_
