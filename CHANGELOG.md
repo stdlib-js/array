@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1309e9c`](https://github.com/stdlib-js/stdlib/commit/1309e9cfafab03509dd186e5934bba07f895c97a) - add `includes` method to `array/uint64` [(#15416)](https://github.com/stdlib-js/stdlib/pull/15416)
 -   [`b74095f`](https://github.com/stdlib-js/stdlib/commit/b74095fd517947a41df660e9613229a0e23dd45a) - add `includes` method to `array/int64` [(#16714)](https://github.com/stdlib-js/stdlib/pull/16714)
 -   [`b76818c`](https://github.com/stdlib-js/stdlib/commit/b76818c58c9d5299aa1e2acf93dee1678dce78de) - add `forEach` method to `array/int64` [(#16713)](https://github.com/stdlib-js/stdlib/pull/16713)
 -   [`76625da`](https://github.com/stdlib-js/stdlib/commit/76625da6544c983b37ccbea34a25b697da34260a) - add `forEach` method to `array/uint64` [(#15371)](https://github.com/stdlib-js/stdlib/pull/15371)
@@ -122,6 +123,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`1309e9c`](https://github.com/stdlib-js/stdlib/commit/1309e9cfafab03509dd186e5934bba07f895c97a) - **feat:** add `includes` method to `array/uint64` [(#15416)](https://github.com/stdlib-js/stdlib/pull/15416) _(by Divit Jain, Athan Reines)_
 -   [`b74095f`](https://github.com/stdlib-js/stdlib/commit/b74095fd517947a41df660e9613229a0e23dd45a) - **feat:** add `includes` method to `array/int64` [(#16714)](https://github.com/stdlib-js/stdlib/pull/16714) _(by Divit Jain, Athan Reines)_
 -   [`b76818c`](https://github.com/stdlib-js/stdlib/commit/b76818c58c9d5299aa1e2acf93dee1678dce78de) - **feat:** add `forEach` method to `array/int64` [(#16713)](https://github.com/stdlib-js/stdlib/pull/16713) _(by Divit Jain, Athan Reines)_
 -   [`76625da`](https://github.com/stdlib-js/stdlib/commit/76625da6544c983b37ccbea34a25b697da34260a) - **feat:** add `forEach` method to `array/uint64` [(#15371)](https://github.com/stdlib-js/stdlib/pull/15371) _(by Divit Jain, Athan Reines)_
