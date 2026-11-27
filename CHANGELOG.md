@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2402f0e`](https://github.com/stdlib-js/stdlib/commit/2402f0e510495e9600938cc564f95d7c3c803336) - add `indexOf` method to `array/int64` [(#16715)](https://github.com/stdlib-js/stdlib/pull/16715)
 -   [`5cae5c4`](https://github.com/stdlib-js/stdlib/commit/5cae5c4d8cda3923ed66c5123d9bd2ddab6bf086) - add `indexOf` method to `array/uint64` [(#15442)](https://github.com/stdlib-js/stdlib/pull/15442)
 -   [`1309e9c`](https://github.com/stdlib-js/stdlib/commit/1309e9cfafab03509dd186e5934bba07f895c97a) - add `includes` method to `array/uint64` [(#15416)](https://github.com/stdlib-js/stdlib/pull/15416)
 -   [`b74095f`](https://github.com/stdlib-js/stdlib/commit/b74095fd517947a41df660e9613229a0e23dd45a) - add `includes` method to `array/int64` [(#16714)](https://github.com/stdlib-js/stdlib/pull/16714)
@@ -124,6 +125,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`2402f0e`](https://github.com/stdlib-js/stdlib/commit/2402f0e510495e9600938cc564f95d7c3c803336) - **feat:** add `indexOf` method to `array/int64` [(#16715)](https://github.com/stdlib-js/stdlib/pull/16715) _(by Divit Jain, Athan Reines)_
 -   [`5cae5c4`](https://github.com/stdlib-js/stdlib/commit/5cae5c4d8cda3923ed66c5123d9bd2ddab6bf086) - **feat:** add `indexOf` method to `array/uint64` [(#15442)](https://github.com/stdlib-js/stdlib/pull/15442) _(by Divit Jain, Athan Reines)_
 -   [`d0c06b4`](https://github.com/stdlib-js/stdlib/commit/d0c06b4c996b06c373eba8450b0e5d1f888c507a) - **bench:** update value generation to avoid overflow [(#16895)](https://github.com/stdlib-js/stdlib/pull/16895) _(by Philipp Burckhardt, Athan Reines)_
 -   [`1309e9c`](https://github.com/stdlib-js/stdlib/commit/1309e9cfafab03509dd186e5934bba07f895c97a) - **feat:** add `includes` method to `array/uint64` [(#15416)](https://github.com/stdlib-js/stdlib/pull/15416) _(by Divit Jain, Athan Reines)_
