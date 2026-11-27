@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2461cb7`](https://github.com/stdlib-js/stdlib/commit/2461cb7ff65c224779bfb9cce26ccbd55d1bb08b) - add `join` method to `array/int64` [(#16716)](https://github.com/stdlib-js/stdlib/pull/16716)
 -   [`91d464d`](https://github.com/stdlib-js/stdlib/commit/91d464d412d638e96fb037dc0aa1beccd1b70481) - add `join` method to `array/uint64` [(#15678)](https://github.com/stdlib-js/stdlib/pull/15678)
 -   [`2402f0e`](https://github.com/stdlib-js/stdlib/commit/2402f0e510495e9600938cc564f95d7c3c803336) - add `indexOf` method to `array/int64` [(#16715)](https://github.com/stdlib-js/stdlib/pull/16715)
 -   [`5cae5c4`](https://github.com/stdlib-js/stdlib/commit/5cae5c4d8cda3923ed66c5123d9bd2ddab6bf086) - add `indexOf` method to `array/uint64` [(#15442)](https://github.com/stdlib-js/stdlib/pull/15442)
@@ -126,6 +127,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`2461cb7`](https://github.com/stdlib-js/stdlib/commit/2461cb7ff65c224779bfb9cce26ccbd55d1bb08b) - **feat:** add `join` method to `array/int64` [(#16716)](https://github.com/stdlib-js/stdlib/pull/16716) _(by Divit Jain, Athan Reines)_
 -   [`91d464d`](https://github.com/stdlib-js/stdlib/commit/91d464d412d638e96fb037dc0aa1beccd1b70481) - **feat:** add `join` method to `array/uint64` [(#15678)](https://github.com/stdlib-js/stdlib/pull/15678) _(by Divit Jain, Athan Reines)_
 -   [`2402f0e`](https://github.com/stdlib-js/stdlib/commit/2402f0e510495e9600938cc564f95d7c3c803336) - **feat:** add `indexOf` method to `array/int64` [(#16715)](https://github.com/stdlib-js/stdlib/pull/16715) _(by Divit Jain, Athan Reines)_
 -   [`5cae5c4`](https://github.com/stdlib-js/stdlib/commit/5cae5c4d8cda3923ed66c5123d9bd2ddab6bf086) - **feat:** add `indexOf` method to `array/uint64` [(#15442)](https://github.com/stdlib-js/stdlib/pull/15442) _(by Divit Jain, Athan Reines)_
