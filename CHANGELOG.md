@@ -123,6 +123,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`d0c06b4`](https://github.com/stdlib-js/stdlib/commit/d0c06b4c996b06c373eba8450b0e5d1f888c507a) - **bench:** update value generation to avoid overflow [(#16895)](https://github.com/stdlib-js/stdlib/pull/16895) _(by Philipp Burckhardt, Athan Reines)_
 -   [`1309e9c`](https://github.com/stdlib-js/stdlib/commit/1309e9cfafab03509dd186e5934bba07f895c97a) - **feat:** add `includes` method to `array/uint64` [(#15416)](https://github.com/stdlib-js/stdlib/pull/15416) _(by Divit Jain, Athan Reines)_
 -   [`b74095f`](https://github.com/stdlib-js/stdlib/commit/b74095fd517947a41df660e9613229a0e23dd45a) - **feat:** add `includes` method to `array/int64` [(#16714)](https://github.com/stdlib-js/stdlib/pull/16714) _(by Divit Jain, Athan Reines)_
 -   [`b76818c`](https://github.com/stdlib-js/stdlib/commit/b76818c58c9d5299aa1e2acf93dee1678dce78de) - **feat:** add `forEach` method to `array/int64` [(#16713)](https://github.com/stdlib-js/stdlib/pull/16713) _(by Divit Jain, Athan Reines)_
